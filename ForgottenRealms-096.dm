@@ -1,11 +1,9 @@
-#modname "Forgotten Realms 0.96 (Community patch)"
+#modname "Forgotten Realms 0.96 (Community Patch)"
 #icon "FRExperimentalLogo.tga"
 #version 0.96
 #domversion 6.00
 
-#description "This is the active development build for the planned community update, 0.96. 
-
-Games in this build are likely to break unexpectedly. Use 0.94 for stable gaming. "
+#description "This is the active development build for the planned community update, 0.96. "
 
 #clearmercs
 #disableoldnations
@@ -9213,10 +9211,8 @@ The Northlanders were believed to be related to the Uthgardt barbarians and trac
 #sailing 500 5
 #stealthy 10
 #pillagebonus 3
-#hp 24
 #inspirational 1
 #end
-
 
 
 -- 5079 -- Noble Lady 
@@ -9815,7 +9811,7 @@ Occasionally, a redcap would soak its cap in demon ichor instead of blood. This 
 #weapon 167 -- Poison Sling
 #maxage 150
 #stealthy 20
-#holy
+#researchbonus -4
 #end
 
 -- 5093 -- Madcap
@@ -9850,8 +9846,8 @@ Occasionally, a redcap would soak its cap in demon ichor instead of blood. This 
 #stealthy 20
 #deathfire 5
 #patrolbonus 5
+#researchbonus -10
 #douse 1
-#holy
 #end
 
 
@@ -14918,19 +14914,25 @@ New mechanics: Bigger, stronger, more health, thicker scales, more diverse magic
 #descr "Goblin society was tribal by nature, generally led by the strongest (and sometimes smartest) around, who normally had access to the best weapons. Leaders among the race often came to power through betrayal or aggression rather than by more peaceful means, or as clerics of the goblin gods. Because of the violent nature of goblin culture, it was not uncommon for goblins to come under the domination of individuals from a larger, more physically powerful culture, most typically larger goblinoids such as hobgoblins or bugbears.
 
 Being bullied by bigger, stronger creatures had taught goblins to exploit what few advantages they had, namely sheer numbers and malicious ingenuity. They favored ambushes, overwhelming odds, dirty tricks, and any other edges they could devise, the concept of a fair fight being meaningless in their society."
-#weapon 6 -- shortsword
+#gcost 6
+#rpcost 3
+#clearweapons
+#cleararmor
+#weapon 746 -- Scimitar
 #weapon 1832 -- Elite Javelin
+#armor 119 -- r leather cap
+#armor 6 --ring mail cuirass
+#armor 2 -- shield
 #mountainsurvival
 #forestsurvival
 #stealthy 15
 #pillagebonus 2
 #chaosrec 1
-#rpcost 3
 #str 8
 #att 8
 #def 8
 #prec 9
-#darkvision 60
+#darkvision 80
 #end
 
 -- 6724 -- Gnoll Hunters 
@@ -15734,7 +15736,7 @@ While Hippogriffs look impressive, they are not as powerful as their half-lion G
 #maxage 60
 #end
 
--- 6754 -- Field Wizard
+-- 6754 -- Field Wizard 
 #newmonster 6754
 #copystats 6740
 #spr1 "ForgottenRealms/fieldwizard.tga"
@@ -16117,17 +16119,30 @@ Religion is a relatively unimportant fixture in hill giant society, though each 
 #mountainsurvival
 #end
 
--- 6773 -- TROOP: GOBLIN WOLFRIDER: {282}									caverec
+-- 6773 -- Goblin Wolfrider
 #newmonster 6773
-#copystats 282
+#copystats 1392
 #spr1 "ForgottenRealms/goblinwolfrider.tga"
 #spr2 "ForgottenRealms/goblinwolfrider2.tga"
+#mountmnr 3532
+#unmountedspr1 "ForgottenRealms/dogslicer.tga"
+#unmountedspr2 "ForgottenRealms/dogslicer2.tga"
 #name "Goblin Wolfrider"
-#descr "Goblins have an affinity for rats and wolves, raising them to serve as companions and mounts, respectively. Like rats, goblins shun sunlight and sleep underground during the day. Like wolves, they are pack hunters, made bolder by their numbers. When they hunt from the backs of wolves, goblins use hit-and-run attacks."
-#rcost 8
+#descr "Goblins have an affinity for rats and wolves, raising them to serve as companions and mounts, respectively. Like rats, goblins shun sunlight and sleep underground during the day. Like wolves, they are pack hunters, made bolder by their numbers. When they hunt from the backs of wolves, using hit-and-run attacks."
+#gcost 20
+#rcost 2
+#rpcost 10
 #mountainsurvival
+#forestsurvival
 #chaosrec 1
 #darkvision 60
+#clearweapons
+#cleararmor
+#weapon 746 -- Scimitar
+#weapon 1832 -- Elite Javelin
+#armor 119 -- r leather cap
+#armor 6 --ring mail cuirass
+#armor 2 -- shield
 #end
 
 -- 6774 -- TROOP: Drow Hunter 
@@ -16233,7 +16248,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #size 1
 #prot 1
 #mr 5
-#mor 49
+#mor 9
 #noleader
 #nomagicleader
 #noundeadleader
@@ -16538,7 +16553,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #size 1
 #prot 1
 #mr 5
-#mor 49
+#mor 8
 #noleader
 #nomagicleader
 #noundeadleader
@@ -16860,7 +16875,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #size 1
 #prot 1
 #mr 5
-#mor 49
+#mor 8
 #noleader
 #nomagicleader
 #noundeadleader
@@ -17175,7 +17190,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #size 1
 #prot 1
 #mr 5
-#mor 49
+#mor 9
 #noleader
 #nomagicleader
 #noundeadleader
@@ -17233,7 +17248,7 @@ At 8 XP, they become Juvenile Dragons, gaining mobility and the first faint glim
 #size 1
 #prot 5
 #mr 16
-#mor 15
+#mor 9
 #noleader
 #nomagicleader
 #noundeadleader
@@ -17484,7 +17499,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #size 1
 #prot 1
 #mr 5
-#mor 49
+#mor 8
 #noleader
 #nomagicleader
 #noundeadleader
@@ -17974,7 +17989,8 @@ Cloud giants commonly had superiority complexes, considering other creatures to 
 Young goblins were taught from an early age to rely only on themselves, and that to survive, they needed to be aggressive and ruthless. To a goblin, it didn't seem logical to treat others as well or better than you would treat yourself; rather, they believed in preemptively removing potential rivals before they could become a threat. Expatriated goblins would sometimes try to recreate the circumstances of their culture, preying on the weaknesses of others in non-goblin communities.
 
 Goblin Dead-eyes wielded shortbows, and though they were not strong, they were plenty accurate enough to cause panic on the front lines."
-#rpcost 10000
+#gcost 6
+#rpcost 8
 #weapon 6 -- shortsword
 #weapon 1831 -- Elite Shortbow
 #prec 11
@@ -18790,6 +18806,7 @@ Defense Organizer - boosts PD by 1 per turn to a max of 19"
 -- 3835 -- Dendar the Night Serpent
 #newmonster 6835
 #copystats 2791
+#clearspec
 #spr1 "ForgottenRealms/dendar.tga"
 #spr2 "ForgottenRealms/dendar2.tga"
 #name "Eater of the World"
@@ -18798,7 +18815,7 @@ Defense Organizer - boosts PD by 1 per turn to a max of 19"
 
 In the jungles of Chult, worshippers of Ubtao called her 'Eater of the World.' According to their mythos, Ubtao, who was also a primordial, betrayed his kind and trapped Dendar beneath an iron door in the Peaks of Flame. In exchange for his deed, the gods promised never to extend their dominion into the Chultan subcontinent. While imprisoned, however, Dendar has continued to feed. Should Ubtao ever fall, or should he and his followers fail to keep Dendar imprisoned, the world of Toril will almost certainly be consumed by the Eater of the World."
 #unique
-#clearspec
+#nowish
 #hp 500
 #size 10
 #prot 25
@@ -18833,13 +18850,13 @@ In the jungles of Chult, worshippers of Ubtao called her 'Eater of the World.' A
 #reinvigoration 3
 #airshield 1
 #stormimmune
-#fear 10
+#fear 20
 #insanify 20
 #farthronekill 100
 #magicskill 4 8
 #magicskill 5 8
 #magicskill 8 8
-#onebattlespell 677
+#onebattlespell 864
 #end
 
 -- 3836 -- Wemic Proudspear
@@ -25971,6 +25988,7 @@ They were often sent as servants of Corellon Larethian, Mielikki, Mystra, Silvan
 #magicbeing
 #autohealer 1
 #autodishealer 1
+#poorleader 
 #end 
 
 -- 4071 -- Owlbear
@@ -26754,8 +26772,7 @@ Among their weaknesses, vampires were eternally bound to their coffins and the u
 #hp 44
 #female
 #gcost 10065
-#onebattlespell 662
-#onebattlespell 677
+#onebattlespell 864
 #magicskill 5 3
 #magicskill 8 3
 #regeneration 10
@@ -26792,15 +26809,14 @@ Among their weaknesses, vampires were eternally bound to their coffins and the u
 #fixedname "Strahd von Zarovich"
 #descr "Among the most legendary vampires in all the Realms, Strahd von Zarovich forged a pact with the Dark Powers of the Shadowfell in order to achieve immortality and take his brother Sergei's wife Tatyana, with whom he had fallen madly in love. That love proved unrequited, and Tatyana flung herself from a cliff in fear, anger, and sorrow. Now cursed with vampirism and forever alone, Barovia was transported into the Shadowfell and became a prison from which Strahd could never escape. Over time, Strahd became the realm itself, telepathically aware of all that happened within Barovia.
 
-By summoning Strahd, you are essentially merging the entire province in which the spell is cast with the Shadowfell realm of Barovia. Over time, Strahd will drain the province of population, but also bring enormous wealth in death gems to your nation. While now somewhat freed of his bonds, Strahd remains spiritually linked to his summoned province and will lose one-third of his health each turn he spends away from his home. Strahd's immortality will always return him to this province, but if the province is lost, Barovia will soon be transported back to the Shadowfell and Strahd will need to be resummoned. Note also that Strahd is unique. Resummoning him while he is part of your nation will not result in having a clone. Other nations can also summon him, resulting in losing your original summon."
+By summoning Strahd, you are essentially merging the entire province in which the spell is cast with the Shadowfell realm of Barovia. Over time, Strahd will drain the province of population, but also bring enormous wealth in death gems to your nation. While now somewhat freed of his bonds, Strahd remains spiritually linked to his summoned province and will lose one-third of his health each turn he spends away from his home. Strahd's immortality will always return him to this province, so long as he remains within friendly dominion."
 #unique
 #gcost 10090
 #hp 104
-#onebattlespell 662
-#onebattlespell 677
+#onebattlespell 864
 #magicskill 1 2
-#magicskill 4 3
-#magicskill 5 5
+#magicskill 5 4
+#magicskill 7 3
 #magicskill 8 3
 #clearweapons
 #weapon 63
@@ -26841,7 +26857,7 @@ By summoning Strahd, you are essentially merging the entire province in which th
 #incunrest -100
 #patrolbonus 500
 #domsummon 7092 -- bats
-#summon1 
+#domsummon 284 -- wolves
 #douse 3
 #animalawe 3
 #beastmaster 6
@@ -37222,7 +37238,7 @@ Mechanic: Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP). "
 #size 1
 #prot 1
 #mr 5
-#mor 49
+#mor 9
 #noleader
 #nomagicleader
 #noundeadleader
@@ -39856,7 +39872,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #size 1
 #prot 1
 #mr 5
-#mor 49
+#mor 9
 #noleader
 #nomagicleader
 #noundeadleader
@@ -49962,7 +49978,7 @@ Leaders, nobles, loremasters, and many who inherited wealth and status venerated
 #spr2 "ForgottenRealms/tethdruid2.tga"
 #name "Tethyrian Druid"
 #nametype 281 -- Tethyrian Female Names
-#descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common, with most choosing the wildshape form of the gryphon.
+#descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common. Silvanus, Mielikki and especially Eldath, the Green Goddess and Mother Guardian of Groves were the most common deities worshipped by Tethyrian Druids. Most choose the wildshape form of the gryphon.
 
 Take care of your equipment. The gryphon form taken by the Tethyrian Druid allows for her armor, helm, boots, and misc items to be retained, but weapons may be lost in combat. Adjust accordingly.""
 #female
@@ -49996,13 +50012,12 @@ Take care of your equipment. The gryphon form taken by the Tethyrian Druid allow
 #shapechange 7731 -- Tethyrian Druid Wildshape
 #end
 
-
 -- 7731 -- Tethyrian Druid Wildshape
 #newmonster 7731
 #copystats 6679 -- Calishite Template
 #copyspr 2131 -- gryphon
 #name "Tethyrian Druid Wildshape"
-#descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common, with most choosing the wildshape form of the gryphon.
+#descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common. Silvanus, Mielikki and especially Eldath, the Green Goddess and Mother Guardian of Groves were the most common deities worshipped by Tethyrian Druids. Most choose the wildshape form of the gryphon.
 
 Take care of your equipment. The Gryphon form taken by the Tethyrian Druid allows for armor, helms, boots, and misc items to be retained, but weapons may be lost in combat. Adjust accordingly."
 #female
@@ -50031,6 +50046,102 @@ Take care of your equipment. The Gryphon form taken by the Tethyrian Druid allow
 #maxage 65
 #end
 
+
+-- 7732 -- Illuskan Reaver
+#newmonster 7732
+#copystats 2344
+#copyspr 2344
+#name "Northlander Reaver"
+#descr "The Northlanders, or sometimes Northmen, were seafaring people who inhabited the northern parts of the Moonshae Isles. Descendants of raiders from the island of Ruathym, the Northlanders were a sturdy, war-ready people. Unlike the Ffolk, who also inhabited the Moonshaes, the Northlanders were not interested in the subtle beauty of nature and were more comfortable out at sea. The Northlanders were believed to be related to the Uthgardt barbarians and traced their lineage back to the people's of Luskan."
+#stealthy 10
+#pillagebonus 1
+#unrest 1
+#end
+
+
+-- 7733 -- Uthgardt Berserker
+#newmonster 7733
+#copystats 3071
+#copyspr 3071
+#name "Uthgardt Berserker"
+#descr "The Uthgardt Tribes were formed in the years following Uthgar of Rauthym's invasion of the Sword Coast and sacking of the city of Illusk in the first century DR. He slew the city's magocrats but his boats were burned and his soldiers chose to expand further and further inland in search of supplies and plunder. Many cities and town swore fealty to him in exchange for protection and he lived up to his end of the bargain when a horde of orcs descended from the Spine of the World in 100 DR and Uthgar and his armies met them in battle again and again for more than 20 years. Uthgar finally sent the orcs fleeing back into their mountains when slew the Lord of the Pale Giants, Gurt, and sustained mortal wounds of his own. For his prowess and bravery, Tempus, the God of War, granted Uthgar the honor of divinity.
+
+The Berserker tradition is strong among the Uthgardt tribes. They venerate their tribal namesake primarily, but a few have traded Uthgar for the worship of  Malar, Umberlee, and Talos. The most direct path to leadership among the tribes is the winning of honor in battle, and most rise up through the ranks of the Berserkers."
+#holy
+
+#stealthy 20
+#pillagebonus 2
+#mapmove 20
+#unrest 4
+#end
+
+-- 7734 -- Illuskan Lord
+#newmonster 7734
+#copystats 2355
+#spr1 "ForgottenRealms/illuskjarl.tga"
+#spr2 "ForgottenRealms/illuskjarl2tga"
+#name "Illuskan Lord"
+
+#descr "The peoples of the Sword Coast North, the Trackless Sea, the Dessarin River Valley, and the Uthgardt Tribes were collectively known as the Illuskan. They traced their lineage to the Northlanders on the Isle of Rauthym who founded the city of Luskan in -3000 DR and conquered lands occupied by giants and orcish hordes. They would trade with the elves of Illefarn and Earlann and watch from the frozen coasts as the Netherese Empire rose and then tragically fell. They absorbed refugees from Netheril's fall, drawing in parts of their culture and arcane bloodlines and traditions. 
+
+Their wars with the orcs and drow and their alliances with the elves and dwarves of region are legendary and laid the foundations of Illuskan culture today. They founded the cities of Neverwinter and Waterdeep and Silverymoon, built the tradeway and dug the mines of Mirabar. Among their most famous sons and daughters are the likes of Khelben the Blackstaff, the seven daughters of the Goddess of Magic known as the Seven Sisters, and the Hero-Gods Valkur of Mintarn and Uthgar, who founded the eleven barbaric tribes who bear his name. " 
+#hp 20
+#mor 14
+#str 12
+#att 12
+#def 12
+#sailing 500 5
+#goodleader
+#inspirational 1
+#end
+
+
+
+
+-- 7735 -- Norland White-beard
+#newmonster 7735
+#copystats 1710
+#copyspr 1710
+#name "Northlander Whitebeard"
+#descr "Those warriors who had seen many battles and lived to old age were venerated in Northlander culture. The Jarls, as brutal as they had to be to hold on to their power, turned to White-beard wisdom often. 
+
+The White-beards ensured the youth were well versed in hardship and suffering with regular lashing and brow-beating. This was their right of passage to adulthood, and it also ensured the Reavers gave them a healthy respect and helped curb their rowdy behavor when things went too far.
+
+This unit cancels the unrest caused by up to 40 Reavers and adds a PD bonus of +2 per turn. The White-beards are also able to mentor (recruit) one berserker into the ranks each turn." 
+#clearmagic
+#clearspec
+#decunrest 40
+#incprovdef 2
+#sailing 123 3
+#inspirational 1
+#darkvision 60
+#makemonsters1 5077 -- Berserker
+#end
+
+-- 7736 -- Northland Storm Maiden
+#newmonster 7736
+#copystats 1164
+#spr1 "ForgottenRealms/stormmaiden.tga"
+#spr2 "ForgottenRealms/stormmaiden2.tga"
+#name "Storm Maiden"
+#descr "The women in Northlander culture had many examples of great female warriors to emulate. As such, the women of the islands tested their mettle early and often and won respect at the end of their sharpened blades. Some resented their biological need to reproduce and instead took on a life of celibacy to keep open the door to glory in battle. These women came to be known as Storm Maidens and were often found at the head of great fleets and were harbingers of momentous shifts in power in the Northlands.
+
+Astrid was a famous Storm Maiden and grand-daughter of Jarl Rault the Wise who was long the most powerful Jarl in the Northland Archipelago. An ally of House Kendrick, Atrid's grandfather was under constant and intensifying pressure to declare independence. At 85 years of age, many believed the old man would never die and they needed to take matters into their own hands. Astrid found herself caught in the middle, and would soon have to decide her own fate and declare her own independence, or otherwise suffer the knife of her own friends and countrymen."
+#holy
+#hp 36
+#expertleader
+#inspirational 1
+#sailing 999 5
+#batstartsum5d6 1165 -- Shield Maidens
+#domsummon 1163
+#incscale 0 -- increases turmoil
+#defector 4
+#indepmove 50
+#pillagebonus 5
+#incunrest 10
+#makemonsters3 1165 -- Shield Maidens
+#mor 18
+#end
 
 
 -- 7732 -- Illuskan
@@ -50135,7 +50246,6 @@ They are magnetic leaders of their kind, and able to draw other whales and sea c
 
 Nahaal, the famed whale bard of Serôs, born in 613 DR, was the famous of all Leviathans. He led an enormous entourage and chorus of whales. During the Twelfth Serôs War, Nahaal was hunted down and killed by Iakhovas in order to gain the total trust of his sahuagin subjects. His death was deeply mourned. Perhaps you will help him avoid his fate. "
 #name "Sacred Leviathan"
-#drawsize -20
 #gcost 100
 #size 8
 #hp 165
@@ -58537,190 +58647,247 @@ This nation is merely for watching games in the background. It is located in the
 #end
 
 #newsite 1708
-#name "dummy"
+#name "The Stone of Clans' Parting"
 #level 1
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 4
+#incscale 5 -- increases drain
 #end
 
 #newsite 1709
-#name "dummy"
+#name "Duskwood Dell"
 #level 1
-#rarity 5
+#rarity 12
 #path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#gems 2 1
+#claim
+#gems 4 2
+#gems 6 3
+#dominion 1
+#enchcost 20
+#summon2 7070 -- Unicorn 
+#com 7347 -- Stormfire Druid
+#com 7328 -- Spiritbound Druid 
 #end
 
 #newsite 1710
-#name "dummy"
+#name "Tree City of Eldathyn"
 #level 1
 #rarity 5
 #path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#gems 1 1
+#gems 7 1
+#mon 7720 -- Tethyrian Brigand
+#com 7730 -- Tethyrian Druid 
+#com 6615 -- Ranger of the Emerald Enclave
 #end
 
 #newsite 1711
-#name "dummy"
+#name "Holy City of Elturel"
 #level 1
-#rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#rarity 11
+#path 4
+#gems 3 1
+#com 6605 -- Cleric of Lathander
+#com 5044 -- Cleric of Tymora
+#com 6700 -- Battlechaplain of Tempus
+#com 7003 -- Priestess of Chauntea
+#com 7007 -- Watchwarden of Helm
+#com 6705 -- Cleric of Ilmater
+#claim 
+#gems 4 3
+#dominion 1
+#thaucost 20
 #end
 
 #newsite 1712
-#name "dummy"
+#name "High Hall of Elturel"
 #level 1
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 9
+#gold 50
+#mon 7684 -- Rethari Pikemen
+#mon 2359 -- Holy Knight
+#com 6754 -- Field Wizard 
+#com 5084 -- Court Wizard
+#com 7008 -- Trueblade of Torm
 #end
 
 #newsite 1713
-#name "dummy"
+#name "Forest of Wyrms"
 #level 1
 #rarity 5
 #path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#gems 6 2
+#mon 239 -- Stirge
+#mon 6678 -- Hill Giant Brute
+#mon 1859 -- Hydra Hatchling
+#mon 6856 -- Behir
+#mon 6672 -- Wyvern
+#com 6772 -- Hill Giant Shaman
+#com 1850 -- Hydra
+-- Hill Giants, Stirges, Behirs, Hydras, and Wyverns
 #end
 
 #newsite 1714
-#name "dummy"
+#name "Boareskyr Bridge"
 #level 1
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 8
+#gems 5 1
+#incscale 4 -- increases misfortune
+#incscale 3 -- increases death
 #end
 
 #newsite 1715
-#name "dummy"
+#name "Scornubel - Caravan City"
 #level 1
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 9
+#gold 50
+#mon 7686 -- Vaedric Axeman
+#com 6622 -- Merchant Prince
+#com 6925 -- Wanted: Fighters
+#com 6913 -- Wanted: Spellcasters
+#com 6703 -- Goldeye Cleric of Waukeen
+#com 5113 -- lesser illithid
+#com 5116 -- illithid
 #end
 
 #newsite 1716
-#name "dummy"
+#name "Ss'thar'tiss'ssun"
 #level 1
-#rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#rarity 11
+#path 7
+#gems 7 3
+#mon 6830 -- Yuan-ti Temple Guard
+#com 6829 -- Yuan-ti Malison
+#com 6831 -- Yuan-ti Abomination
+#com 6832 -- Yuan-ti Assassin
+#claim
+#gems 4 3
+#dominion 1
+#conjcost 20
+#com 7177 -- Sarrukh
 #end
 
 #newsite 1717
-#name "dummy"
+#name "Dragonspear Castle"
 #level 1
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 5
+#gems 3 1
+#gems 5 1
+#incscale 0 -- increases turmoil
+#com 6737 	-- Orcish King
+#com 6801 	-- Cleric of Gruumsh	
+#com 6772 	-- Hill Giant Shaman
+#com 6811	-- Bugbear Champion
+#mon 6676	-- Orc Marauders
+#mon 6678 	-- Hill Giant Brute
+#mon 6773 	-- Goblin Wolfrider
 #end
 
 #newsite 1718
-#name "dummy"
-#level 1
+#name "Gateway to Avernus"
+#level 2
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 8
+#gems 0 1
+#gems 8 2
+#bloodcost 10
+#incscale 0 -- increases turmoil
+#incscale 1 -- increases sloth
+#incscale 3 -- increases death
+#decscale 5 -- increases magic
 #end
 
 #newsite 1719
-#name "dummy"
+#name "Orogoth"
 #level 1
-#rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#rarity 11
+#path 5
+#gems 5 1
+#incscale 0 -- increases turmoil
+#com 6737 	-- Orcish King
+#com 6811	-- Bugbear Champion
+#com 6801 	-- Cleric of Gruumsh	
+#com 7411	-- Dragonkin Captain
+#com 7412	-- Dragonkin Sorcerer
+#mon 6676	-- Orc Marauders
+#mon 6773 	-- Goblin Wolfrider
+#mon 7410 	-- Dragonkin Savage
 #end
 
 #newsite 1720
-#name "dummy"
+#name "The Misty Forest"
 #level 1
 #rarity 5
 #path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#gems 2 1
+#gems 6 1
+#gems 7 1
+#mon 7720 -- Tethyrian Brigand
+#mon 7348 -- Wood Elf Ranger
+#mon 7071 -- Owlbear
+#com 6617 -- Seldarine Cleric
+#com 7471 -- Wood Elf Warden
+#com 7730 -- Tethyrian Druid 
+#com 7328 -- Spiritbound Druid
+#com 7172 -- Sword Dancer of Eilistraee
 #end
 
 #newsite 1721
-#name "dummy"
+#name "Daggerford"
 #level 1
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 9
+#gold 25
+#mon 7716 -- Tethyrian Knight
+#com 6925 -- Wanted: Fighters
+#com 6913 -- Wanted: Spellcasters
 #end
 
 #newsite 1722
-#name "dummy"
+#name "Secomber"
 #level 1
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 3
+#gems 3 1
+#mon 7456 -- Half-elf Renegade
+#mon 6874 -- Dwarven Miners
+#com 7457 -- Half-elf Renegade Captain
+#com 7419 -- Arcane Archer
+#com 7414 -- Moon Elf Shadow
+#com 6616 -- Cleric of Moradin
 #end
 
 #newsite 1723
-#name "dummy"
+#name "Crypts of the Deepening Moon"
 #level 1
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 5
+#incscale 0 -- increase turmoil
+#gems 4 1
+#gems 5 1
+#mon 7397 -- Eldreth Veluuthra Blade
+#mon 7481 -- Wild Elf Warrior
+#com 7484 -- Wild Elf Clan Leader
+#com 7482 -- Wild Elf Druid
 #end
 
 #newsite 1724
-#name "dummy"
+#name "Dancing Dell and Greenglade"
 #level 1
 #rarity 5
-#path 6
--- #gems 6 1
--- #mon 
--- #com 
--- #com 
+#path 7
+#gems 6 1
+#gems 7 1
+#com 7415 -- Moon Elf Enchantress
+#com 7414 -- Moon Elf Shadow
+#com 6938 -- Wildshape Druid
+#com 7328 -- Spiritbound Druid
+#com 7172 -- Sword Dancer of Eilistraee
 #end
 
 #newsite 1725
@@ -63067,6 +63234,141 @@ This nation is merely for watching games in the background. It is located in the
 #com 7036 -- Shadow Thief Cloakmaster
 #end
 
+#newsite 2996
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 2997
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 2998
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 2999
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3000
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3001
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3002
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3003
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3004
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3005
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3006
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3007
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3008
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3009
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
+#newsite 3010
+#name "dummy"
+#path 8
+#level 0
+#rarity 5
+--#mon 
+--#com 
+#end
+
 ---------------- Removed Random Magic Sites ----------------
 #selectsite 1091 -- Monastery of Light
 #rarity 5 
@@ -63851,7 +64153,7 @@ This nation is merely for watching games in the background. It is located in the
 #effect 10021
 #damage 7050
 #nreff 1
-#fatiguecost 20000
+#fatiguecost 24000
 #end
 
 
@@ -66462,7 +66764,7 @@ This nation is merely for watching games in the background. It is located in the
 #researchlevel 3
 #path 0 8
 #pathlevel 0 2
-#fatiguecost 1200
+#fatiguecost 3000
 #effect 10021
 #nreff 1
 #onlyowndst 1
@@ -70719,13 +71021,10 @@ The silencing of the God of Murders, Bhaal, by the Black Hand of Bane kicked off
 #header 2
 #req_turn 13
 #req_maxturn 13
-#msg "- The Darkstalker Wars Conclude - 
+#msg "- The Darkstalker Wars Conclude - [Qysagghani Fortress]"
 #removesite 2995
 #decscale1 0 -- decreases turmoil by 1 step
 #gold 125
-Myrkul and Bane betrayed their brother, Bhaal, but in many lands, the Shadow Thieves clung on, weakened but alive. Such was not the case in Calimshan, where the Rundeen Slavers Guild, the Dusk Daggers, and the Syl-Pasha all worked to permanently remove the agents and influence of the Lord of Murders. 
-
-The vaults of the Thieves Guild have been looted in ##landname##, and their shrines to Bhaal destroyed. [Shadow Thieves Guild]"
 #end
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
