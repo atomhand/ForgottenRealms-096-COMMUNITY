@@ -97,13 +97,14 @@ Fixes
    * Genies had some improperly set paths due to incorrect use of #magicskill command (e.g. Marid had unintended 1F)
    * Dragon Turtle had a typo in paths (set the same path twice) - I interpreted the original intention as 3W2A + 2x50% W/E
  * Other stats anomalies
+   * Mariliths are female
+   * Mariliths have 6 arms, as god intended
    * Huge elementals & The Walking Statue should not have Immobile tag (prevents movement in combat) - #mapmove 0 is sufficient to prevent strategic movement
    * Standardise dwarves and duergar at Size 3, and fix a few size 2 elves and humans
      * Duerger Mindmaster and Blackguard sailing capacity adapted to fit their new size
    * Sailing for Lady Luck (needs to fit in her own boat)
    * Missing Calishite nametype for Maribir General and Calishite Cavalry Commander
    * Remove Xpshape for Dwarven Battlesmith (it targeted an empty montag, insufficient context to fix properly)
-   * Mariliths are female
    * Clashing monster id between Wild Elf Druid adventurer (6943) and cavalier adventurer
    * Wild Elf Druid (6943, shambling mound type) had a typo in #shapechange command
    * Essyllissian Dervish should be the same size as other lizardfolk (4->3)

@@ -34863,8 +34863,8 @@ They were able to gate in a large variety of other types of tanar'ri."
 #incscale 0
 --#onebattlespell 1013
 #combatcaster
-#itemslots 860702
 #naga
+#itemslots 860798
 #female
 #end
 
