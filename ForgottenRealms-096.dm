@@ -30664,7 +30664,7 @@ The Phaerimm were known to employ Bloodfire Oozes, as were the Red Wizards of Th
 #att 15
 #def 8
 #mr 10
-#mor 30
+#mor 50
 #ap 14
 #mapmove 16
 #slashres
@@ -30674,7 +30674,6 @@ The Phaerimm were known to employ Bloodfire Oozes, as were the Red Wizards of Th
 #trample
 #trampswallow
 #digest 6
-#mindless
 #neednoteat
 #coldres -20
 #fireres 45
@@ -31320,7 +31319,7 @@ Some black puddings  managed to survive for a very long time and came to be know
 #att 7
 #def 1
 #mr 10
-#mor 30
+#mor 50
 #ap 4
 #mapmove 12
 #slashres
@@ -31330,7 +31329,6 @@ Some black puddings  managed to survive for a very long time and came to be know
 #trample
 #trampswallow
 #digest 6
-#mindless
 #neednoteat
 #fireres -5
 #poisonres 25
@@ -34025,7 +34023,7 @@ The Phaerimm were known to employ Bloodfire Oozes, as were the Red Wizards of Th
 #att 15
 #def 8
 #mr 10
-#mor 30
+#mor 50
 #ap 14
 #mapmove 16
 #slashres
@@ -34035,7 +34033,6 @@ The Phaerimm were known to employ Bloodfire Oozes, as were the Red Wizards of Th
 #trample
 #trampswallow
 #digest 6
-#mindless
 #neednoteat
 #coldres -20
 #fireres 45
@@ -34151,7 +34148,7 @@ Shrines and temples devoted to Ghaunadaur were foul. Rooms often were filled wit
 #bluntres
 #pierceres
 #magicbeing
-#mindless
+#mor 50
 #neednoteat
 #fireres -5
 #poisonres 25
@@ -34185,7 +34182,7 @@ Some black puddings managed to survive for a very long time and came to be known
 #att 7
 #def 1
 #mr 10
-#mor 30
+#mor 50
 #ap 4
 #mapmove 12
 #slashres
@@ -34195,7 +34192,6 @@ Some black puddings managed to survive for a very long time and came to be known
 #trample
 #trampswallow
 #digest 6
-#mindless
 #neednoteat
 #fireres -5
 #poisonres 25
@@ -36576,7 +36572,6 @@ These poor souls are the fate of those that have succumbed to an aboleth's fears
 
 Woe to the wayward soul who finds himeself, through idiotic bravery or foolish curiosity, in the presence of an aboleths of the deep. "
 #landdamage 35
-#mindless
 -- #stealthy 5
 #size 3
 #amphibian
@@ -42390,7 +42385,7 @@ Fecund, pregnant females laid up to a hundred eggs in an underground nest lined 
 #hp 12
 #size 4
 #prot 14
-#mor 15
+#mor 50
 #mr 11
 #str 12
 #att 11
@@ -42408,7 +42403,6 @@ Fecund, pregnant females laid up to a hundred eggs in an underground nest lined 
 #poisonres 10
 #undisciplined
 #animal
-#mindless
 #amphibian
 #skirmisher 2
 #weapon 322 -- Bite
@@ -42536,7 +42530,6 @@ Khelben Arunson costructed the first of the Walking Statues, though it was not t
 #itemslots 1 -- no items
 #inanimate
 #neednoteat
-#mindless
 #weapon 747 -- Golden Fist
 #weapon 1822 -- Giant Stomp
 #end

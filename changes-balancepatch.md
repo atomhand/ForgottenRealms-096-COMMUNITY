@@ -96,3 +96,6 @@ Fixes
    * Essyllissian Dervish should be the same size as other lizardfolk (4->3)
    * Sekolahn Dreadknights shark retinue uses the montag directly instead of the #firstshape template shark wihch doesn't work
    * Erroneous paths on wildshapes for Wildshape Druid (Owlbear, Bat) and Wild Elf Druid (Shambling Mound) adventurers
+   * Creatures had a useless "#mindless" command (mindless is set by fixing morale to 50)
+     * Bloodfire Ooze, Black Pudding, Unholy Bloodfire Ooze, Ooze Lord Cultist, Unholy Black Pudding, Carrion Crawler
+     * Skum, The Walking Statue also had useless command but did have morale set correctly
