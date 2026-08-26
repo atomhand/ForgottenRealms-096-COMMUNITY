@@ -85,6 +85,7 @@ Fixes
    * Barbazu's Infernal Glaive wrong secondaryeffect (was Dream Touch, should be Bleeding)
    * Cavalier Adventurer should not have old-style hoof attack (has a mount)
  * Other stats anomalies
+   * Dragon Turtle had a typo in paths (set the same path twice) - I interpreted the original intention as 3W2A + 2x50% W/E
    * Huge elementals & The Walking Statue should not have Immobile tag (prevents movement in combat) - #mapmove 0 is sufficient to prevent strategic movement
    * Standardise dwarves and duergar at Size 3, and fix a few size 2 elves and humans
      * Duerger Mindmaster and Blackguard sailing capacity adapted to fit their new size

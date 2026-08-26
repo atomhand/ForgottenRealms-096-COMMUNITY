@@ -20344,7 +20344,7 @@ In some places, Dragon turtles were worshipped as gods by primitive undersea dwe
 #holy
 #okleader
 #magicskill 1 2
-#magicskill 1 3
+#magicskill 2 3
 #mastersmith -3
 #researchbonus -5
 #custommagic 1536 50 -- WE
