@@ -61963,7 +61963,7 @@ This nation is merely for watching games in the background. It is located in the
 #com 7041 -- High Artificer
 #claim
 #dominion 1
-#conjcost 20
+#constcost 20
 #goddomdrain 1
 #end
 

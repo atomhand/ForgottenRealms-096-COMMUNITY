@@ -64,6 +64,8 @@ Fixes
  * Recruitment anomalies
    * Missing rpcost for Halruaan Skyship, Proudspear, Wemic Huntress, Wemic Warrior, Wemic Firemane, Wemic Shaman, Tomb Tapper
    * Impiltur cap site: Holy Knights should be recruitable as troops, not commanders
+ * Sites
+   * High Holy Crafthouse of Inspiration: Should have const discount, not conj discount
  * Equipment & mount anomalies
    * Earth, Air and Fire elementals could not use their fists due to not being humanoid
    * Murabir General should not be naked and unarmed 
