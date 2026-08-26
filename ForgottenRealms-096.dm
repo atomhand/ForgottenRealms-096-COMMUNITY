@@ -22439,7 +22439,6 @@ The gregarious lifestyle of Faerun's halflings meant they were often in the comp
 #armor 21 -- Full Helm
 #weapon 12 -- Mace
 #weapon 4 -- Lance
-#weapon 615 -- Hoof 15 dmg
 #hp 30
 #gcost 10040
 #att 13
@@ -51432,7 +51431,7 @@ Jherek starts in his Whalefriend form. At 50 XP he will upgrade to his Taker's B
 #spiritsight
 #end
 
-#newitem
+#newitem 1000
 #copyitem 430 -- The Flying Ship
 #copyspr 430
 #constlevel 11
@@ -51501,7 +51500,7 @@ The original creation of Skyships dated back to Netheril and were a carefully gu
 #wastesurvival
 #forestsurvival
 #swampsurvival
-#startitem "Halruaan Flight Mechanism" -- flight mechanism
+#startitem 1000 -- flight mechanism
 #end
 
 

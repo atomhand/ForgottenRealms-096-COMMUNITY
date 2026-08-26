@@ -82,6 +82,7 @@ Fixes
    * Owlbear and Owlbear Wildshape missing claw attacks
    * Tethyrian Druid Wildshape (Gryphon) missing attacks
    * Barbazu's Infernal Glaive wrong secondaryeffect (was Dream Touch, should be Bleeding)
+   * Cavalier Adventurer should not have old-style hoof attack (has a mount)
  * Other stats anomalies
    * Huge elementals & The Walking Statue should not have Immobile tag (prevents movement in combat) - #mapmove 0 is sufficient to prevent strategic movement
    * Standardise dwarves and duergar at Size 3, and fix a few size 2 elves and humans
@@ -90,7 +91,8 @@ Fixes
    * Missing Calishite nametype for Maribir General and Calishite Cavalry Commander
    * Remove Xpshape for Dwarven Battlesmith (it targeted an empty montag, insufficient context to fix properly)
    * Mariliths are female
-   * Wild Elf Druid (6943, shambling mound type) clashed monster id with another unit, and had a typo in #shapechange command
+   * Clashing monster id between Wild Elf Druid adventurer (6943) and cavalier adventurer
+   * Wild Elf Druid (6943, shambling mound type) had a typo in #shapechange command
    * Essyllissian Dervish should be the same size as other lizardfolk (4->3)
    * Sekolahn Dreadknights shark retinue uses the montag directly instead of the #firstshape template shark wihch doesn't work
    * Erroneous paths on wildshapes for Wildshape Druid (Owlbear, Bat) and Wild Elf Druid (Shambling Mound) adventurers
