@@ -5086,7 +5086,8 @@
 #name "Coral Shield"
 #rcost 2
 #prot 16
-#def -1
+#def 4
+#enc 1
 #end
 
 -- 421 -- Pearl Armor
