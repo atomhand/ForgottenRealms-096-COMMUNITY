@@ -14513,6 +14513,7 @@ A Shaitan is a genie born of the elemental plane of Earth. There is a 1% chance 
 #pooramphibian
 #darkpower 2
 #maxage 2500
+#gcost 0 -- Summoned unit only
 #end
 
 -- 3710 Bound Djinn
@@ -14550,6 +14551,7 @@ The most powerful of the noble genies have eventually outwitted their masters an
 #pooramphibian
 #stormpower 2
 #maxage 2500
+#gcost 0 -- Summoned unit only
 #end
 
 -- 3711 Bound Marid
@@ -14589,6 +14591,7 @@ Armed with a Crystal Coin, the Qysaghanni Vizar of Calimshan is uniquely suited 
 #amphibian
 #coldpower 2
 #maxage 2500
+#gcost 0 -- Summoned unit only
 #end
 
 -- 3712 Bound Efreet
@@ -14625,6 +14628,7 @@ The most powerful of the noble genies have eventually outwitted their masters an
 #defector 1
 #firepower 2
 #maxage 2500
+#gcost 0 -- Summoned unit only
 #end
 
 ----------------------------------------------------------------------------------------------------------
@@ -14651,6 +14655,7 @@ A Shaitan is a genie born of the elemental plane of Earth. Now unbound, their po
 #magicskill 3 5
 #magicskill 7 3
 #indepmove 10
+#gcost 0 -- Summoned unit only
 #end
 
 -- 3714 Unbound Djinn
@@ -14673,6 +14678,7 @@ A Djinn is a genie born of the elemental plane of Air. Now unbound, their powers
 #magicskill 3 2
 #magicskill 7 3
 #indepmove 10
+#gcost 0 -- Summoned unit only
 #end
 
 -- 3715 Unbound Marid
@@ -14695,6 +14701,7 @@ A Marid is a genie born of the elemental plane of Water. Now unbound, their powe
 #magicskill 3 3
 #magicskill 7 3
 #indepmove 10
+#gcost 0 -- Summoned unit only
 #end
 
 -- 3716 Unbound Efreet
@@ -14717,6 +14724,7 @@ An Efreet is a genie born of the elemental plane of Fire. Now unbound, their pow
 #magicskill 3 3
 #magicskill 7 3
 #indepmove 10
+#gcost 0 -- Summoned unit only
 #end
 
 ---------------------------------------------------------------------------------------------
@@ -18978,6 +18986,7 @@ In the jungles of Chult, worshippers of Ubtao called her 'Eater of the World.' A
 #magicskill 5 8
 #magicskill 8 8
 #onebattlespell 864
+#gcost 0 -- Summoned unit only
 #end
 
 -- 3836 -- Wemic Proudspear
@@ -19748,6 +19757,7 @@ A behir usually bites and grabs its prey first, then either swallows or constric
 #weapon 20 -- bite
 #mountainsurvival
 #shockres 25
+#gcost 0 -- Summoned unit only
 #end
 
 -- 6857 Thayan Infantry
@@ -20349,6 +20359,7 @@ In some places, Dragon turtles were worshipped as gods by primitive undersea dwe
 #researchbonus -5
 #custommagic 1536 50 -- WE
 #custommagic 1536 50 -- WE
+#gcost 0 -- Summoned unit only
 #end
 
 -- 6876 -- Gilgeam
@@ -25142,8 +25153,7 @@ The skin of a dretch exudes a noxious stench that causes fatigue to those who co
 #ap 9
 #mapmove 14
 #poisonskin 3
-#addupkeep -4
-#gcost 5
+#gcost 0 -- Summoned unit only
 #undisciplined
 #stealthy 5
 #end
@@ -25310,6 +25320,7 @@ They are capable of free-summoning Vrocks by command."
 #douse 1
 --#onebattlespell 1013
 --#gemprod 8 2
+#gcost 0 -- Summoned unit only
 #end
 
 
@@ -25367,6 +25378,7 @@ Finally, Balors are also able to free-summon hordes of dretches or smaller numbe
 #douse 1
 #uwfireshield 10
 #nowish
+#gcost 0 -- Summoned unit only
 #end
   
 -- 7052 -- Grazzt
@@ -26281,6 +26293,7 @@ They could not only see invisible and shapeshifting beings for who and what they
 #weapon 821 -- magic bite
 #awe 2
 #maxage 6000
+#gcost 0 -- Summoned unit only
 #end
 
 -- 4075 -- Warden Archon 
@@ -26596,6 +26609,7 @@ They lived underground, at least until they erupted from the earth to attack. Th
 #nomagicleader
 #noundeadleader
 #siegebonus 50
+#gcost 0 -- Summoned unit only
 #end
 
 -- 4083 -- Stock Conjurer
@@ -27032,6 +27046,7 @@ By summoning Strahd, you are essentially merging the entire province in which th
 #animalawe 3
 #beastmaster 6
 #heal
+#gcost 0 -- Summoned unit only
 #end
 
 -- 4092 -- Bat
@@ -27051,6 +27066,7 @@ By summoning Strahd, you are essentially merging the entire province in which th
 #stealthy 50
 #neednoteat
 #animal
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7093 -- Kenku Sneak
@@ -29240,7 +29256,7 @@ Despite the cultural shunning of driders some drow wizards and sorcerers develop
 Lolth created all driders sexless because she did not want to have a race of capable enemies to the drow. "
 #clearspec
 #nametype 270 -- Drow female 
-#gcost 10085
+#gcost 0 -- Summoned unit only
 #weapon 8 -- broadsword
 #weapon 827
 #weapon 261
@@ -34599,7 +34615,7 @@ They had natural resistances to fire, acid, cold, and poison."
 Silveraiths retained all the memories and experiences they once had in life. Their lack of a physical form, while preventing them from interacting directly with the material plane, did not prevent them from piercing the veil and causing great harm to the living. The merest touch of a Silveraith was capable of killing lesser mortals in an instant, such was the potency of the negative energies they channeled. Silveraiths also had a number of resistances uncommon to incorporeal undead, including an imperviousness to cold and electricity.
 
 Like other wraiths, they are weakened significantly by sunlight."
-#gcost 10060
+#gcost 0 -- Summoned unit only
 #hp 24
 #size 4
 #prot 0
@@ -35306,7 +35322,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #magicskill 7 2
 #stealthy 30
 #inspiringres 1
-#inspi
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7351 -- Spirit Naga -- CR9 
@@ -35363,6 +35379,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #magicskill 8 2
 #magicskill 9 2
 #stealthy 50
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7352 -- Guardian Naga -- CR10 
@@ -35457,6 +35474,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #neednoteat
 #unsurr 2
 #bodyguard 3
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7354 -- Water Naga -- CR7 
@@ -35510,6 +35528,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #magicskill 9 1
 #custommagic 384 200
 #stealthy 50
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7355 -- Banelar Naga -- CR8 
@@ -35564,6 +35583,7 @@ From their chins, Banelars sported beards of tentacles capable of wielding rings
 #magicskill 5 2
 #magicskill 7 2
 #magicskill 9 3
+#gcost 0 -- Summoned unit only
 #end
 
 
@@ -36586,6 +36606,7 @@ Woe to the wayward soul who finds himeself, through idiotic bravery or foolish c
 #mor 50
 #holy
 #magicbeing
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7376 -- Grick
@@ -37389,6 +37410,7 @@ The main purpose of mindwitnesses within illithid colonies was to improve and ac
 In combat, a mindwitness behaved, unsurprisingly, much like a combination of mind flayer and beholder; using both the flight and eye rays of a beholder, and the illithid's fearsome psionic and brain extraction abilities. After stunning or otherwise befuddling its target, a mindwitness would then attempt to attach all its tentacles to its opponent's head so as to extract its brain."
 #clearspec
 #rpcost 10000
+#gcost 0 -- Summoned unit only
 #hp 65
 #unsurr 99
 #prot 18
@@ -42370,6 +42392,7 @@ Only the oldest and most physically weak drow wizards were completely inducted i
 #magicbeing
 #invulnerable 25
 #unsurr 2
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7514 -- Carrion Crawler
@@ -42395,7 +42418,7 @@ Fecund, pregnant females laid up to a hundred eggs in an underground nest lined 
 #ap 18
 #rcost 1
 #rpcost 6
-#gcost 8
+#gcost 0 -- Summoned unit only
 #darkpower 1
 #darkvision 60
 #noleader
@@ -45157,7 +45180,7 @@ They can summon sharks each turn via a special command on the unit card. This ab
 #spr2 "ForgottenRealms/greatshark2.tga"
 #descr "The Great White Shark is the among the largest predators in the sea. Adapted to hunting at depths no other shark can reach, they made ideal guardians for the Sahuagin in trenches even they were loathe to sound."
 #name "Great White Shark"
-#gcost 55
+#gcost 0 -- Summoned unit only
 #hp 45
 #prot 12
 #size 6
@@ -47173,6 +47196,7 @@ Wastriliths were master summoners, preferring to call in minions over fighting d
 #fixedresearch 0
 --#onebattlespell 1013
 #waterrange 3
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7635 -- Corrupt Medium Water Elemental
@@ -48083,6 +48107,7 @@ In 1358 DR, an insane Calishite wizard, Shond Tharovin, discovered the Tome and 
 #superiorleader
 #superiorundeadleader
 #fear 10
+#gcost 0 -- Summoned unit only
 #end
 
 
@@ -48130,6 +48155,7 @@ Shoon VII drank the souls of Zallanora's friends, and then chose to take possesi
 #researchbonus 10
 #mastersmith 3
 #forestsurvival
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7663 -- Tabarzin
@@ -48303,6 +48329,7 @@ They would, over their 400 year existence, come to rule many of the city-states 
 #incscale 3
 #popkill 1
 #makemonsters2 7269 -- wraith
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7669 -- Calimaronn Guard
@@ -48386,6 +48413,7 @@ During the Shoon Imperium, the peaceful Araneas were made to suffer greatly, and
 
 #selectmonster 3555 -- Hunter Spider
 #descr "Aranea were known to associate and cultivate relations with many species of spider, including great Hunter Spiders."
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7673 -- Rundeen Assassin
@@ -49102,6 +49130,7 @@ Mercenary Captains largely equip themselves, reducing their overall resource cos
 #shockres 5
 #animal
 #holy
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7696 -- Chondathan Missionary
@@ -49436,6 +49465,7 @@ Much like ghouls, ghasts spoke whatever language they did in life. They often la
 #maxdeadhp 6
 #raiseonkill 25
 #raiseshape 7288 -- Unsated Ghoul
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7705 -- Heucuva -- Recruitable
@@ -49568,6 +49598,7 @@ Unlike many other forms of undead, Mohrgs were fast, with quicker reflexes than 
 #holy 
 #weapon 236 -- Claw
 #weapon 1871 -- Paralyzing Tongue Bite -- Mohrg
+#gcost 0 -- Summoned unit only
 #end
 
 -- 7708 -- Deathlock Wight -- Recruitable
@@ -50549,7 +50580,7 @@ They are magnetic leaders of their kind, and able to draw other whales and sea c
 
 Nahaal, the famed whale bard of Serôs, born in 613 DR, was the famous of all Leviathans. He led an enormous entourage and chorus of whales. During the Twelfth Serôs War, Nahaal was hunted down and killed by Iakhovas in order to gain the total trust of his sahuagin subjects. His death was deeply mourned. Perhaps you will help him avoid his fate. "
 #name "Sacred Leviathan"
-#gcost 100
+#gcost 0 -- Summoned unit only
 #size 8
 #hp 165
 #prot 14
@@ -50610,6 +50641,7 @@ It was rumored that Sahuagin Kings of old rode Megalodons into battle and deep s
 #woundfend 75
 #startage 300
 #maxage 500
+#gcost 0 -- Summoned unit only
 #end
 
 

@@ -103,3 +103,10 @@ Fixes
    * Creatures had a useless "#mindless" command (mindless is set by fixing morale to 50)
      * Bloodfire Ooze, Black Pudding, Unholy Bloodfire Ooze, Ooze Lord Cultist, Unholy Black Pudding, Carrion Crawler
      * Skum, The Walking Statue also had useless command but did have morale set correctly
+   * Removed gold cost from many summoned monsters
+     * Affected: Bound Shaitan, Bound Djinn, Bound Marid, Bound Efreet, Eater of the World (Dendar), Adult Behir, Dretch, Tanar-ri Glabrezu, Tanar'ri Balor, Hound Archon, Purple Worm, Strahd, Bat, Drider, Unsated Ghoul, Silveraith, Dark Naga, Spirit Naga, Guardian Naga, Bone Naga, Water Naga, Banelar Naga, Skum, Mindwitness, Jade Spider, Carrion Crawler, Great White Shark (7586), Wastrilith, The Necroqysar (and disguised), Runemaster, Celestial Lion, Ghast, Mohrg, Megalodon
+     * Exceptions:
+       * Some freespawn
+       * Mythellaric Enclave
+       * Any monster that is also recruitable (including as a mount)
+       * Nantarn sea creature summons (need to revisit this to separate them from the recruitable mounts)
