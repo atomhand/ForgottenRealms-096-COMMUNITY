@@ -14501,7 +14501,6 @@ A Shaitan is a genie born of the elemental plane of Earth. There is a 1% chance 
 #shockres -5
 #clearmagic
 #magicskill 0 1
-#magicskill 1 0
 #magicskill 2 1
 #magicskill 3 5
 #magicskill 4 3
@@ -14541,7 +14540,6 @@ The most powerful of the noble genies have eventually outwitted their masters an
 #poisonres 20
 #shockres 50
 #clearmagic
-#magicskill 0 0
 #magicskill 1 5
 #magicskill 2 1
 #magicskill 3 1
@@ -14581,7 +14579,6 @@ Armed with a Crystal Coin, the Qysaghanni Vizar of Calimshan is uniquely suited 
 #poisonres 20
 #shockres 50
 #clearmagic
-#magicskill 0 0
 #magicskill 1 1
 #magicskill 2 5
 #magicskill 3 1
@@ -14621,7 +14618,6 @@ The most powerful of the noble genies have eventually outwitted their masters an
 #clearmagic
 #magicskill 0 5
 #magicskill 1 1
-#magicskill 2 0
 #magicskill 3 1
 #magicskill 4 3
 #magicskill 7 3

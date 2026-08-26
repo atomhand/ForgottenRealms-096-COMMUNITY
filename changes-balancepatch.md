@@ -6,6 +6,13 @@ Balance Changes
    * Douse -1 to Kyton and Erinye Seductress
    * Madcap and Infernal Barghest generate 3 unrest
    * Sanguine Dowsing Rod cannot be used by demons
+ * Removed gold cost from many summoned monsters
+   * Affected: Bound Shaitan, Bound Djinn, Bound Marid, Bound Efreet, Eater of the World (Dendar), Adult Behir, Dretch, Tanar-ri Glabrezu, Tanar'ri Balor, Hound Archon, Purple Worm, Strahd, Bat, Drider, Unsated Ghoul, Silveraith, Dark Naga, Spirit Naga, Guardian Naga, Bone Naga, Water Naga, Banelar Naga, Skum, Mindwitness, Jade Spider, Carrion Crawler, Great White Shark (7586), Wastrilith, The Necroqysar (and disguised), Runemaster, Celestial Lion, Ghast, Mohrg, Megalodon
+   * Exceptions:
+     * Some freespawn
+     * Mythellaric Enclave
+     * Any monster that is also recruitable (including as a mount)
+     * Nantarn sea creature summons (need to revisit this to separate them from the recruitable mounts)
  * National roster tweaks and balance
    * Halruaa*
      * Give the Halruaan Skyship real airborne transporation (untransferrable duplicate of The Flying Ship)
@@ -86,8 +93,10 @@ Fixes
    * Tethyrian Druid Wildshape (Gryphon) missing attacks
    * Barbazu's Infernal Glaive wrong secondaryeffect (was Dream Touch, should be Bleeding)
    * Cavalier Adventurer should not have old-style hoof attack (has a mount)
- * Other stats anomalies
+ * Magic paths
+   * Genies had some improperly set paths due to incorrect use of #magicskill command (e.g. Marid had unintended 1F)
    * Dragon Turtle had a typo in paths (set the same path twice) - I interpreted the original intention as 3W2A + 2x50% W/E
+ * Other stats anomalies
    * Huge elementals & The Walking Statue should not have Immobile tag (prevents movement in combat) - #mapmove 0 is sufficient to prevent strategic movement
    * Standardise dwarves and duergar at Size 3, and fix a few size 2 elves and humans
      * Duerger Mindmaster and Blackguard sailing capacity adapted to fit their new size
@@ -103,10 +112,3 @@ Fixes
    * Creatures had a useless "#mindless" command (mindless is set by fixing morale to 50)
      * Bloodfire Ooze, Black Pudding, Unholy Bloodfire Ooze, Ooze Lord Cultist, Unholy Black Pudding, Carrion Crawler
      * Skum, The Walking Statue also had useless command but did have morale set correctly
-   * Removed gold cost from many summoned monsters
-     * Affected: Bound Shaitan, Bound Djinn, Bound Marid, Bound Efreet, Eater of the World (Dendar), Adult Behir, Dretch, Tanar-ri Glabrezu, Tanar'ri Balor, Hound Archon, Purple Worm, Strahd, Bat, Drider, Unsated Ghoul, Silveraith, Dark Naga, Spirit Naga, Guardian Naga, Bone Naga, Water Naga, Banelar Naga, Skum, Mindwitness, Jade Spider, Carrion Crawler, Great White Shark (7586), Wastrilith, The Necroqysar (and disguised), Runemaster, Celestial Lion, Ghast, Mohrg, Megalodon
-     * Exceptions:
-       * Some freespawn
-       * Mythellaric Enclave
-       * Any monster that is also recruitable (including as a mount)
-       * Nantarn sea creature summons (need to revisit this to separate them from the recruitable mounts)
