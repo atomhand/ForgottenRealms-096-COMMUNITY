@@ -4094,7 +4094,7 @@
 #copyweapon 308 --glaive
 #name "Infernal Glaive"
 #magic
-#secondaryeffect 803
+#secondaryeffect 1803 --Bleeding
 #end
 
 #newweapon 1803
@@ -6293,6 +6293,7 @@ The sea was the crucial trade way for the many people's of Faerûn. The coastal 
 #wastesurvival
 #snow
 #coldres 3
+#mountmnr 3574 --Armored Steppe Horse
 #end
 
 -- 136 -- Nar Horselord
@@ -7880,7 +7881,7 @@ Commonly consisting of adventurers and others who relied on a mixture of luck an
 #float
 #startage 26
 #maxage 1650
-#sailing 3 3 
+#sailing 6 6 -- boat should be large enough to carry herself
 #farsail 1
 -- #stealthy 45
 #patrolbonus 25
@@ -8331,6 +8332,7 @@ As one of Mystra's Chosen, Elminster will remain immortal, so long as he is with
 #descr "Halruaans congregated in numerous villages and cities scattered throughout the country's interior. Most were small settlements with no more than a few hundred inhabitants each, while the largest settlements were smaller than the cities of most other nations. The folk of the small villages usually relied on a venerated wizard to provide both protection and leadership, while likely also serving as mayor and a member of the Council of Elders, the ruling body of the country. The leader of the council was the Netyarch, or wizard-king." 
 #gcost 100
 #hp 40
+#size 3
 #armor 231 -- Heavy Magic Robes
 #armor 249 -- Cloth Headpiece
 #weapon 238 -- Magic Staff
@@ -9069,7 +9071,7 @@ Duergar were in some ways even better adapted to underground living than other d
 #armor 2
 #armor 13
 #armor 20
-#size 2
+#size 3
 #mountainsurvival
 #poisonres 15
 #darkvision 100
@@ -9369,6 +9371,7 @@ Still a prince, Tristan was the target of an assassination attempt by a Thayan w
 Many other plots threatened the Kingdom throughout Tristan's reign, but he saw the kingdom through and unified the Moonshae Islands until the auspicous re-emergence of the ancient Eladrin city of Karador in Myrloch Vale. The chaos that followed led Tristan to abdicate his throne to his daughter, Alicia, and join Queen Robyn in an attempt to contact the Earthmother for aid. The two disappeared into Myrloch Vale, never to be seen again."
 #gcost 10040
 #hp 50
+#size 3
 #str 16
 #enc 3
 #att 16
@@ -9514,6 +9517,13 @@ As the young Alicia grew into a young woman, Keane would go on to follow her in 
 #fixforgebonus 1
 #end
 
+#newweapon 1900
+#copyweapon 4
+#name "Silver Lance"
+#magic
+#dt_holy
+#end
+
 -- 5086 -- Sisters of Synnoria
 #newmonster 5086
 #copystats 3311 -- Lady Knights
@@ -9530,12 +9540,14 @@ They were scouts as well as warriors and used bows and swords. They dressed in w
 In the Year of the Saddle, 1345 DR, the Sisters were in service to Prince Tristan Kendrick of Corwell. They escorted the prince and his companions through Synnoria while holding off an army of Northmen. Another conflict they were involved in was the Battle of Freeman's Down and the siege of Caer Corwell, both against the Bloodriders, undead horsemen that served Kazgaroth the Beast."
 #nametype 274 -- Elves, Female
 #clearweapons
-#weapon 1812 -- silver longsword
-#weapon 613 -- Enchanted Bow
+#weapon 75 -- Enchanted Sword
+#weapon 1900 -- Silver Lance
+#weapon 613 -- Enchanted bow
 #rcost 5
 #cleararmor
 #armor 7 -- scalemail
 #armor 118 -- half helm
+#armor 1 -- buckler
 #hp 18
 #mor 15
 #mr 15
@@ -9561,15 +9573,20 @@ They were scouts as well as warriors and used bows and swords. They dressed in w
 
 In the Year of the Saddle, 1345 DR, the Sisters were in service to Prince Tristan Kendrick of Corwell. They escorted the prince and his companions through Synnoria while holding off an army of Northmen. Another conflict they were involved in was the Battle of Freeman's Down and the siege of Caer Corwell, both against the Bloodriders, undead horsemen that served Kazgaroth the Beast."
 #clearweapons
-#weapon 1812 -- silver longsword
-#weapon 613 -- Enchanted Bow
+#weapon 75 -- Enchanted Sword
+#weapon 1900 -- Silver Lance
+#weapon 613 -- Enchanted bow
 #cleararmor
 #armor 7 -- scalemail
 #armor 118 -- half helm
+#armor 1 -- buckler
 #rcost 5
 #hp 28
-#mor 15
-#mr 15
+#att 13
+#def 13
+#mor 16
+#mr 16
+#str 12
 #prec 15
 #inspirational 1
 #stealthy 5
@@ -9848,6 +9865,7 @@ Occasionally, a redcap would soak its cap in demon ichor instead of blood. This 
 #patrolbonus 5
 #researchbonus -10
 #douse 1
+#incunrest 30
 #end
 
 
@@ -10057,6 +10075,7 @@ Unlike the spendthrift Noble Lords, Noble Ladies's economic boosts are to the tr
 
 Of course, since Kazgaroth killed him, it now possesses his face..."
 #hp 185
+#size 3
 #str 16
 #enc 3
 #att 16
@@ -10137,6 +10156,12 @@ During the Darkwalker Wars, they successfully tainted several Moonwells, creatin
 #beastmaster 4
 #berserk 3
 #shapechange 5101 -- Black Blood Skinshifter
+#clearweapons
+#cleararmor
+#weapon 12 -- mace
+#weapon 23 -- short bow
+#armor 5 -- leather cuirass
+#armor 120 -- leather cap
 #end
 
 -- 5101 -- Black Blood Werewolf
@@ -10181,6 +10206,10 @@ During the Darkwalker Wars, they successfully tainted several Moonwells, creatin
 #beastmaster 4
 #berserk 3
 #shapechange 5100 -- Black Blood Skinshifter
+#clearweapons
+#weapon 20 -- bite
+#weapon 29 -- claw
+#weapon 29 -- claw
 #end
 
 -- 5102 -- Norland White-beard
@@ -10243,6 +10272,7 @@ She was freed from her petrification and joined the adventurers who rescued her 
 
 Branwen has returned home a champion and sees the brewing wars in the Moonshae's as an opportunity to serve her god once more. With the arrival on her temple steps of Jarl Rault the Wise and his grand daughter, Astrid - practically begging for help, Branwen has little option but to offer her oath."
 #hp 44
+#size 3
 #mor 25
 #str 13
 #att 13
@@ -10788,6 +10818,7 @@ In his youth, Zalathorn adventured with the infamous conjurer, Akhlaur. Together
 #fixedname "Zalathorm Kirkson"
 #unique
 #hp 36
+#size 3
 #clearmagic
 #cleararmor
 #clearweapons
@@ -10956,8 +10987,8 @@ This commander is IMMOBILE. They will summon 3d6 constables at the start of each
 #hp 14
 #str 11
 #enc 3
-#att 11
-#def 9
+#att 12
+#def 12
 #prec 10
 #mr 11
 #mor 14
@@ -11005,13 +11036,47 @@ This commander is IMMOBILE. They will summon 3d6 constables at the start of each
 #goodleader
 #end
 
+#newmonster 6001
+#copystats 3544
+#copyspr 3544
+#name "Griffon"
+#descr "Griffons were semi-intelligent beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
+#armor 252 -- Light Scale Barding
+#end
+
+#newweapon 1903
+#name "Blackfire Flames"
+#fire
+#armorpiercing
+#nostr
+#dmg 11
+#end
+
+#newweapon 1902
+#name "Blackfire Corrosion"
+#armorpiercing
+#acid
+#nostr
+#dmg 11
+#secondaryeffectalways 1903
+#end
+
+#newweapon 1901
+#copyweapon 4
+#name "Lance of Burning Blackfire"
+#magic
+#att 2
+#dmg 7
+#secondaryeffectalways 1902
+#end
+
 -- 6608 -- Griffon Riders
 #newmonster 6608
 #copystats 6600
 #spr1 "ForgottenRealms/griffridera.tga"
 #spr2 "ForgottenRealms/griffriderb.tga"
 #name "Griffon Rider"
-#mountmnr 3544 -- Gryphon
+#mountmnr 6001 -- Griffon (armored)
 #unmountedspr1 "ForgottenRealms/aumarrdismounted.tga"
 #unmountedspr2 "ForgottenRealms/aumarrdismounted2.tga"
 #descr "The history of the Gryphon Cavalry can perhaps be traced as far back as the second Trollwars (940 DR to 952 DR) when Ilithrew Belabranta rode his gryphon into battle. One of his later heirs, Lord Palinor Belabranta, did the same versus the orc hordes of the Black Claw tribe in the Year of Crimson Magics, 1026 DR. Since then, House Belabranta was a noble family associated with the breeding and training of griffons.
@@ -11020,15 +11085,16 @@ In the Year of the Black Horde, 1235 DR, Open Lord Ahghairon officially declared
 #armor 49 -- light weight scale mail
 #armor 20 -- iron cap
 #armor 2 -- shield
-#weapon 596 -- light lance
-#weapon 8 -- broadsword
+#weapon 1901 -- Lance of Burning Blackfire
+#weapon 8 -- Broad Sword
 #patrolbonus 2
 #size 3
 #hp 13
-#str 10
+#str 12
 #enc 3
-#att 11
-#def 9
+#att 13
+#def 13
+#skilledrider 2
 #prec 11
 #mr 11
 #mor 13
@@ -11344,7 +11410,7 @@ Hammers of Moradin are known to operate in other cities and realms throughout Fa
 #armor 403 -- Dwarven Kite Shield
 #unsurr 2
 #hp 30
-#size 2
+#size 3
 #str 14
 #enc 3
 #att 12
@@ -12332,8 +12398,8 @@ The Eye felt the deteriorating effects of its great age, and by 1370 DR it had b
 #armor 118 -- Half Helm
 #armor 13 -- Chain Hauberk
 #armor 2 -- Shield
-#weapon 6 -- Short Sword
-#weapon 357 -- Light Lance
+#weapon 6 -- Short sword
+#weapon 596 -- Light Lance (single use)
 #weapon 20 -- Bite
 #prot 0
 #size 3
@@ -13031,12 +13097,24 @@ Stalwarts make excellent bodyguards. Failure of that mission means death for the
 #patrolbonus 1
 #end
 
+#newmonster 6006
+#copystats 3584 -- Black Destrier
+#spr1 "ForgottenRealms/ardragon_mount.tga"
+#spr2 "ForgottenRealms/ardragon_mount1.tga"
+#mr 10
+#descr "The Zhentarim relied on intimidation. As elite leaders and representatives of the network, Ardragons had to be truly overwhelming figures. An imposing black steed equipped with an enchanted winged saddle supported their image and provided provided valuable mobility."
+#cleararmor
+#armor 276 -- Lightweight Cataphract Barding
+#flying
+#mapmove 24
+#end
+
 #newmonster 6666
 #copystats 6660
 #spr1 "ForgottenRealms/battlecaptain.tga"
 #spr2 "ForgottenRealms/battlecaptain1.tga"
 #name "Ardragon"
-#mountmnr 3584 -- black destrier
+#mountmnr 6006 -- black destrier with flying saddle
 #descr "The Ardragon rides across the battlefield atop a black horse fitted with a winged saddle.
 
 Pereghost was the most famous of the Ardragons. A fallen paladin, he led the military forces of Darkhold. "  
@@ -13416,7 +13494,31 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #mountainsurvival
 #end
 
+---------------------------------------------------------------------------------
+---------------------------- FORCES OF IMPILTUR---------------------------------
+--------------------------------USE Numbers 6000 to 6050 ------------------------
 
+#newmonster 6000
+#copystats 2899 --Kernou Cavalry
+#spr1 "ForgottenRealms/warsword_1.png"
+#spr2 "ForgottenRealms/warsword_2.png"
+#unmountedspr1 "ForgottenRealms/warsword_unmounted_1.png"
+#unmountedspr2 "ForgottenRealms/warsword_unmounted_2.png"
+#name "Warsword"
+#descr "The Warswords were the regular militia of Impiltur. Typically organised in patrols of twenty or more, they kept the peace on the roads and in settlements. The lords of the realm could also mobilise larger forces to scour major threats from orc to demon.
+
+Impiltur is a martial society and at any time the Warswords are continually deployed in patrols, training exercises or major expeditions. Accordingly the Warswords are composed of highly skilled veterans."  
+#basecost 10010
+#hp 12
+#att 11
+#def 11
+#mor 12
+#skilledrider 1
+#clearweapons
+#weapon 8 -- Broad Sword
+#weapon 4 -- Lance
+#patrolbonus 2
+#end
 
 ---------------------------------------------------------------------------------
 ---------------------------- FORCES OF CALIMSHAN---------------------------------
@@ -13445,7 +13547,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #mapmove 12
 #startage 22
 #maxage 65
-#nametype 266
+#nametype 267
 #end
 
 -- TROOPS
@@ -13674,6 +13776,14 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #expertleader
 #sailing 999 6
 #unsurr 6
+-- Judging by the sprite, not intended to be naked and unarmed
+#clearweapons
+#cleararmor
+#weapon 4 -- lance
+#weapon 746 -- scimitar
+#armor 9 -- plate cuirass
+#armor 118 -- half helm
+#armor 2 -- shield
 #end
 
 -- 6689 Merchant-Lord of Calimport 
@@ -13913,7 +14023,7 @@ Without any political enemies willing to risk setting themselves against el Pesa
 #armor 2
 #armor 13
 #armor 20
-#size 2
+#size 3
 #mor 7
 #slave
 #mountainsurvival
@@ -14929,8 +15039,8 @@ Being bullied by bigger, stronger creatures had taught goblins to exploit what f
 #pillagebonus 2
 #chaosrec 1
 #str 8
-#att 8
-#def 8
+#att 10
+#def 10
 #prec 9
 #darkvision 80
 #end
@@ -15091,6 +15201,9 @@ Basilisks could be found nearly everywhere, including subterranean biomes. Typic
 #weapon 261 -- web
 #darkvision 50
 #gcost 25
+#clearweapons
+#weapon 65 -- Venomous fangs
+#weapon 261 -- Web
 #end
 
 
@@ -15420,7 +15533,7 @@ The position of guidon is usually given to a blade or, in larger units, a Swordm
 #armor 21 -- Full Helm
 #armor 3 -- Kite Shield
 #weapon 4 -- Lance
-#weapon 16 -- Flail
+#weapon 347 -- Flail (one-handed)
 #standard 1
 #startage 25
 #maxage 50
@@ -17976,6 +18089,7 @@ Cloud giants commonly had superiority complexes, considering other creatures to 
 #gcost 10030
 #patrolbonus 5
 #fear 5
+#mr 8
 #end
 
 -- 6807 Goblin Shortbow
@@ -18003,6 +18117,8 @@ Goblin Dead-eyes wielded shortbows, and though they were not strong, they were p
 #pillagebonus 1
 #chaosrec 1
 #montag 13003
+#att 9
+#def 9
 #end
 
 
@@ -18172,6 +18288,10 @@ A twiceborn enchanted Stone Giant Elder becomes a Cairn Giants known as a Dodfor
 #weapon 261
 #fear 5
 #darkvision 60
+#clearweapons
+#weapon 65 -- Venomous fangs
+#weapon 261 -- Web
+#weapon 262 -- Web spit
 #end
 
 -- 6813 -- Elven Bladesinger
@@ -18892,7 +19012,8 @@ Some wemics lived solitary lives, like those found in the Dalelands, and shepher
 #mapmove 20
 #enc 3
 #gcost 10025
-#rcost 1
+#rpcost 1
+#rpcost 10000
 #patrolbonus 5
 #supplybonus -4
 #beastmaster 2
@@ -18931,6 +19052,7 @@ Some wemics lived solitary lives, like those found in the Dalelands, and shepher
 #patrolbonus 10
 #enc 3
 #gcost 10020
+#rpcost 10000
 #researchbonus -5
 #supplybonus -4
 #autohealer 1
@@ -18973,6 +19095,7 @@ Some wemics lived solitary lives, like those found in the Dalelands, and shepher
 #patrolbonus 2
 #enc 3
 #gcost 10015
+#rpcost 10000
 #supplybonus 3
 #rcost 1
 #mountedhumanoid
@@ -19019,6 +19142,7 @@ Firemanes assuming a feline form, either as their natural form or via magic, wer
 #magicskill 9 1
 #custommagic 24576 100
 #rcost 1
+#rpcost 10000
 #mountedhumanoid
 #end
 
@@ -19056,6 +19180,7 @@ Young wemics would remain with the rest of the pride until they were five years 
 #gcost 10015
 #mountedhumanoid
 #rcost 1
+#rpcost 10000
 #end
 
 -- 3841 -- Shaq'ar
@@ -19746,6 +19871,7 @@ While expensive, Tharchions are capable of raising slave armies composed of Thay
 #unsurr 2
 #wastesurvival
 #slaver 6859 -- thayan lancer
+#mountmnr 3531 --Cataphracted Mouflon
 #end
 
 -- 6863 Red Wizard
@@ -20166,7 +20292,7 @@ Dwarven Miners are typically recruited by slavers, but even when recruited in fr
 #def 9
 #mor 7
 #mr 11
-#size 2
+#size 3
 #resources 4
 #poisonres 10
 #darkvision 60
@@ -20510,8 +20636,6 @@ The Paladins of Gilgeam are some of the most fanatical paladins in the realms, b
 #def 14
 #prec 10
 #clearspec
-#weapon 12
-#weapon 4
 #holy
 #goodleader
 #okmagicleader
@@ -20522,6 +20646,14 @@ The Paladins of Gilgeam are some of the most fanatical paladins in the realms, b
 #magicskill 9 1
 #elegist 1
 #sailing 600 5
+#mountmnr 3583 -- holy Destrier
+#cleararmor
+#clearweapons
+#weapon 4 -- Lance
+#weapon 12 -- Mace
+#armor 18 -- Full chain mail
+#armor 21 -- Full helmet
+#armor 3 -- Kite shield
 #end
 
 -- 3886 -- Old Empire Slave Spear
@@ -20996,7 +21128,7 @@ There were two Orders within the clergy, the Sisters of Life and the Shield of t
 #def 12
 #prec 12
 #clearweapons
-#startitem 23 
+#weapon 99
 #armor 234
 #clearmagic
 #magicskill 1 1
@@ -22175,6 +22307,7 @@ An owlbear was a large magical or fey beast that looked like a cross between an 
 #magicboost 4 -2
 #magicboost 5 -2
 #magicboost 7 -1
+#magicboost 8 -2
 #magicboost 9 -1
 #holy
 #rcost 1
@@ -22186,6 +22319,11 @@ An owlbear was a large magical or fey beast that looked like a cross between an 
 #forestsurvival
 #swampsurvival
 #unsurr 6
+#clearweapons
+#weapon 20 -- bite
+#weapon 236 -- Claw (slotless)
+#weapon 236 -- Claw (slotless)
+#mr 15 -- Wildshape druid MR
 #end 
 
 -- 3940 -- Wildshape Bat
@@ -22208,6 +22346,7 @@ Bats and other small animals were often used as a means of escape or to increase
 #magicboost 4 -2
 #magicboost 5 -2
 #magicboost 7 0
+#magicboost 8 -2
 #magicboost 9 -1
 #spy
 #holy
@@ -22286,7 +22425,7 @@ The gregarious lifestyle of Faerun's halflings meant they were often in the comp
 #incunrest 5
 #end
 
-#newmonster 6943
+#newmonster 6970
 #copystats 6660
 #spr1 "ForgottenRealms/lance.tga"
 #spr2 "ForgottenRealms/lance1.tga"
@@ -22375,7 +22514,7 @@ Wild elves had lost the technical and cultural advances enjoyed by other elven c
 #okleader
 #researchbonus -8
 #incunrest 4
-#shapchange 6944 -- Adventuring Shambling Mound
+#shapechange 6944 -- Adventuring Shambling Mound
 #montag 13000
 #unsurr 4
 #end
@@ -22406,7 +22545,6 @@ They were surprisingly intelligent despite having no brain structures or any sim
 #prec 10
 #enc 2
 #ap 12
-#magicboost 6 -1
 #researchbonus - 20
 #mapmove 14
 #darkvision 60
@@ -22420,6 +22558,16 @@ They were surprisingly intelligent despite having no brain structures or any sim
 #undisciplined
 #appetite 2
 #holy
+#magicboost 0 -2
+#magicboost 1 -2
+#magicboost 2 -2
+#magicboost 3 -1 
+#magicboost 4 -2
+#magicboost 5 -2
+#magicboost 6 -1
+#magicboost 7 -2
+#magicboost 8 -2
+#magicboost 9 -1
 #shapechange 6943 -- Wild Elf Druid Adventurer
 #unsurr 4
 #end
@@ -23583,7 +23731,7 @@ Their capital and holy-city of Tantras was situated in The Vast, just west of Im
 #armor 13 -- Chain Hauberk
 #armor 20 -- Iron Cap
 #weapon 14 -- Maul
-#size 2
+#size 3
 #hp 13
 #str 12
 #enc 3
@@ -23619,7 +23767,7 @@ Their capital and holy-city of Tantras was situated in The Vast, just west of Im
 #armor 20 -- Iron Cap
 #weapon 13 -- Hammer
 #weapon 25 -- Crossbow
-#size 2
+#size 3
 #hp 12
 #str 11
 #enc 3
@@ -23901,6 +24049,7 @@ One of the original objectives of the Knights was said to have been to guard aga
 #magicskill 9 1
 #researchbonus -15
 #unsurr 4
+#size 5
 #end
 
 -- 4018 -- Elemental Template
@@ -23919,6 +24068,25 @@ One of the original objectives of the Knights was said to have been to guard aga
 #startage 10
 #maxage 100
 #poisonres 35
+#end
+
+-- Elemental weapons
+#newweapon 2000
+#name "Stone Fist"
+#copyweapon 562 -- Stone Fist
+#bonus
+#end
+
+#newweapon 2001
+#name "Flaming Fist"
+#copyweapon 320
+#bonus
+#end
+
+#newweapon 2002
+#name "Thunder Fist"
+#copyweapon 231
+#bonus
 #end
 
 
@@ -23964,7 +24132,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 10
 #prec 20
 #ap 8
-#weapon 562 -- Stone Fist
+#weapon 2000 -- Stone Fist
 #magicbeing
 #miscshape
 #decayres 1
@@ -24002,7 +24170,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 9
 #prec 20
 #ap 10
-#weapon 562 -- Stone Fist
+#weapon 2000 -- Stone Fist
 #magicbeing
 #miscshape
 #decayres 1
@@ -24040,8 +24208,8 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 9
 #prec 20
 #ap 10
-#weapon 562 -- Stone Fist
-#weapon 562 -- Stone Fist
+#weapon 2000 -- Stone Fist
+#weapon 2000 -- Stone Fist
 #magicbeing
 #miscshape
 #decayres 1
@@ -24079,8 +24247,8 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 9
 #prec 20
 #ap 12
-#weapon 562 -- Stone Fist
-#weapon 562 -- Stone Fist
+#weapon 2000 -- Stone Fist
+#weapon 2000 -- Stone Fist
 #ambidextrous 2
 #magicbeing
 #miscshape
@@ -24094,7 +24262,6 @@ Like other elementals, they were often conjured in combat either through spellcr
 #amphibian
 #gemprod 3 1
 #mapmove 0
-#immobile
 #siegebonus 30
 #castledef 30
 #noleader
@@ -24216,7 +24383,7 @@ Like other elementals, they had good darkvision. While physically weaker, air el
 #ap 20
 #flying
 #weapon 185 -- Lightning Swarm
-#weapon 231 -- Thunder Fist
+#weapon 2002 -- Thunder Fist
 --#trample
 --#trampswallow
 --#digest 1
@@ -24264,7 +24431,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #flying
 #weapon 185 -- Lightning Swarm
 #weapon 185 -- Lightning Swarm
-#weapon 231 -- Thunder Fist
+#weapon 2002 -- Thunder Fist
 --#trample
 --#trampswallow
 --#digest 1
@@ -24283,7 +24450,6 @@ Like other elementals, they were often conjured in combat either through spellcr
 #amphibian
 #gemprod 1 1
 #mapmove 0
-#immobile
 #airshield 90
 #stormimmune
 #unsurr 5
@@ -24306,7 +24472,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #armor 20 -- Iron Cap
 #weapon 18 -- Battleaxe
 #hp 35
-#size 2
+#size 3
 #str 15
 #enc 2
 #att 13
@@ -25299,7 +25465,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 14
 #prec 14
 #ap 18
-#weapon 320 -- Flaming Fist
+#weapon 2001 -- Flaming Fist
 #magicbeing
 #miscshape
 #fireres 25
@@ -25333,7 +25499,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 14
 #prec 13
 #ap 18
-#weapon 320 -- Flaming Fist
+#weapon 2001 -- Flaming Fist
 #magicbeing
 #miscshape
 #fireres 25
@@ -25367,8 +25533,8 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 15
 #prec 14
 #ap 18
-#weapon 320 -- Flaming Fist
-#weapon 320 -- Flaming Fist
+#weapon 2001 -- Flaming Fist
+#weapon 2001 -- Flaming Fist
 #ambidextrous 2
 #magicbeing
 #miscshape
@@ -25404,8 +25570,8 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 18
 #prec 16
 #ap 20
-#weapon 320 -- Flaming Fist
-#weapon 320 -- Flaming Fist
+#weapon 2001 -- Flaming Fist
+#weapon 2001 -- Flaming Fist
 #ambidextrous 2
 #magicbeing
 #miscshape
@@ -25424,7 +25590,6 @@ Like other elementals, they were often conjured in combat either through spellcr
 #nomagicleader
 #noundeadleader
 #mapmove 0
-#immobile
 #end
 
 -- 7058 -- Homunculus
@@ -25504,6 +25669,7 @@ Bound Barghests make excellent bloodhunters."
 #custommagic 20864 100 -- d6x
 #researchbonus -5
 #pillagebonus 10
+#incunrest 30
 #end
 
 
@@ -25847,7 +26013,6 @@ Like other elementals, they were often conjured in combat either through spellcr
 #amphibian
 #gemprod 2 1
 #mapmove 0
-#immobile
 #unsurr 2
 #noleader
 #nomagicleader
@@ -26007,6 +26172,11 @@ More cunning than an owl, these creatures were incredibly aggressive and obstina
 #weapon 20
 #supplybonus -2
 #berserk 3
+#clearweapons
+#weapon 20 -- bite
+#weapon 236 -- Claw (slotless)
+#weapon 236 -- Claw (slotless)
+#mr 9
 #end 
 
 -- 7072 -- Displacer Beast
@@ -27339,6 +27509,7 @@ Their prayers for Tchazzar's return are soon to be answered - though Tchazzar's 
 #heal
 #demon
 #humanoid
+#douse -1
 #end
 
 
@@ -27405,6 +27576,7 @@ Their prayers for Tchazzar's return are soon to be answered - though Tchazzar's 
 #magicskill 0 1
 #magicskill 7 1
 #magicskill 8 2
+#douse -1
 #end
 
 -- 4110 -- Osyluth
@@ -29301,6 +29473,7 @@ Guards were drawn from the lowest caste of serfs within kuo-toan society. Armed 
 #gcost 10010
 #rcost 1
 #rpcost 10000
+#size 3
 #hp 12
 #prot 0
 #mr 12
@@ -29364,7 +29537,7 @@ This unit promotes upon reaching 50 XP."
 #def 12
 #prec 9
 #resources 10
-#xpshape 50
+--#xpshape 50 -- Not yet implemented
 #unsurr 2
 #gcost 10020
 #end
@@ -30283,6 +30456,7 @@ Tomb tappers were known to lend aid to dwarves and deep gnomes, but were known t
 #transformation 1 
 #blind
 #gcost 165
+#rpcost 10000
 #spiritsight
 #poorleader
 #hp 75
@@ -30952,7 +31126,8 @@ They make excellent warriors when the fight reaches them, though they often pref
 
 -- 7231 -- Dwarven Battlerager (Mounted on a boar)
 #newmonster 7231
-#copystats 7181
+#copystats 1778 -- "Cu Chulainn" Hero
+#clearspec
 #name "Dwarven Battlerager"
 #spr1 "ForgottenRealms/dwarvenbattlerager.tga"
 #spr2 "ForgottenRealms/dwarvenbattlerager2.tga"
@@ -30965,13 +31140,35 @@ Despite this simple attitude, battleragers were a key element of dwarven warfare
 
 Although considered brave by their kin, most battleragers were outcasts, rarely engaging in conversation with other dwarves. Children were kept away from battleragers, owing to their aggressive nature and short temper."
 #gcost 10025
-#weapon 18 -- Adamantine Battleaxe
+#clearweapons
+#weapon 17 -- Axe
+#cleararmor
 #armor 400 -- Dwarven Platemail
 #armor 403 -- Dwarven Kite Shield
+-- dwarf template stats
+#nametype 271 -- dwarves
+#gcost 10010
+#rcost 1
+#rpcost 10000
+#hp 12
+#prot 0
+#mr 12
+#mor 13
+#str 12
+#att 11
+#def 9
+#prec 9
+#ap 10
+#mapmove 14
+#maxage 350
+#darkvision 80
+#mountainsurvival
+-- battlerager original stats
 #hp 16
 #str 14
 #att 12 
-#def 13
+#def 11 -- "almost suicidal"
+#mor 15 -- "almost suicidal"
 #unsurr 2
 #okleader
 #gcost 10030
@@ -31906,6 +32103,7 @@ Hydrocaps maintain a delicate pool of sticky water in the cupped cap atop their 
 #maxage 140
 #holy
 #taxcollector
+#okleader
 #end
 
 #newmonster 7257 -- Myconid Circle Leader -- (c)
@@ -31941,6 +32139,7 @@ Necrospores were deadly blood magic adepts, capable of summoning demonic forces.
 #elegist 2
 #holy
 #taxcollector
+#okleader
 #end
 
 #newmonster 7258 -- Myconid Circle Leader -- (f)
@@ -31974,6 +32173,7 @@ Greenbells commonly led agricultural circles, tending to the soils of auramycos 
 #maxage 140
 #holy
 #taxcollector
+#okleader
 #end
 
 
@@ -32060,6 +32260,7 @@ Myconid Sovereigns were the masters of their communities. They alone could sprea
 #startage 80
 #maxage 140
 #taxcollector
+#okleader
 #end
 
 #newmonster 7261 -- Myconid Sovereign -- (e)
@@ -32099,6 +32300,7 @@ Myconid Sovereigns were the masters of their communities. They alone could sprea
 #startage 80
 #maxage 140
 #taxcollector
+#okleader
 #end
 
 #newmonster 7262 -- Myconid Guardian 
@@ -32198,6 +32400,100 @@ These guardians were extremely costly for a myconid community to maintain, requi
 #maxage 40
 #end
 
+
+-- FORT DEFENDERS FIX/HACK
+-- Firstshapes should have the spr/stats of a valid equivalent monster
+
+
+#selectmonster 7254 -- Myconid Guardian Firstshape
+#copyspr 7263
+#name "Giant Redcap (PD)"
+#descr "A specialized duty among the myconids was defense. Guardian myconids grew to enormous sizes. 
+
+Giant Redcaps were armed with multiple claws and a toothy maw that could deliver poisonous spores. While not as large as their Mushrend cousins, they were less prone to homesickness, making them frequent companions of Necrospore expansion parties."
+#gcost 10150
+#rcost 20
+#rpcost 35
+#weapon 250 -- poisoned claw stunning
+#weapon 250 -- poisoned claw stunning
+#weapon 225 -- poisonous bite 
+#hp 50
+#size 6
+#prot 10
+#mr 14
+#str 12
+#att 8
+#def 4
+#prec 10
+#ap 10
+#mapmove 14
+#homesick 10
+#startage 30
+#maxage 40
+#end
+
+#selectmonster 7247 --Myconid sprout firstshape
+#copyspr 7250 --webcap
+#name "Tawny Webcap Sprout (PD)"
+#descr "A Tawny Webcap was known for its ability to paralyze aggressive intruders. It could do this in two ways. First, Tawny Webcaps could  release a cloud of silky mycelium that would coat their enemies in a tight web. But second, and perhaps more troubling, their entire internal reserve of pressurized mycelium would explode upon their deaths, covering everyone nearby in a gooey, half-baked spray of the stuff, paralyzing those in a wide proximity. This effect was also known to paralyze other myconids. Those who survived encounters with these myconids remarked that colonies often took tactical care to keep Tawny Webcaps in loose formations.
+
+Nearly all myconids rely on proximity to the soils from which they first sprang. Tawny Webcaps are no different.
+
+Myconids, also known as fungus folk, were a race of ambulatory fungus creatures. They were known for their peacefulness and appreciation of quiet, making their homes in the darker corners of the world.
+
+The life of a myconid was strictly scheduled and split evenly between sleep, work and 'melding'. Melding was the core of myconid society, with separation from the process viewed as a frightening and pitiful fate. Violence and disharmony was near unheard of within myconid societies as it adversely impacted the melding process and was largely unneeded.
+
+Although the majority of the fungus folk were peaceful, there existed a far more insidious variant of their kind. Contrary to the gradual growth of normal myconid communities they were heavily expansionist, seeking to quickly grow in both number and territory. In spite of their change in basic behavior they were not known to be evil."
+#gcost 10025
+#rcost 0
+#rpcost 10
+#hp 7
+#weapon 93 -- Fist
+#weapon 262 -- web spit
+#skirmisher 1
+#size 1
+#prot 0
+#mr 14
+#str 2
+#att 4
+#def 1
+#prec 10
+#ap 4
+#mapmove 10
+#homesick 25
+#deathparalyze 5
+#end
+
+#selectmonster 7255
+#copyspr 7256 -- Hydrocap circle leader
+#name "Hydrocap Circle Leader (PD)"
+#descr "Myconid society was composed of community groups known as circles. These tight social cliques of twenty or so members were presided over by as many as four circle leaders. 
+
+Members of a circle were very intimate with one another as they melded regularly. A community was typically comprised of 3 or more of these circles, each with their own specific niche. Known circle duties included agriculture, exploration, construction, and hunting for corpses to use as fertilizer or be reanimated by the sovereign. Circle leaders emerged in various forms during their animation.
+
+Hydrocaps maintain a delicate pool of sticky water in the cupped cap atop their head. The odd properties of the hydrocap fluid was a topic of curiosity and study among mages looking for alchemical reagents and spell components in their research."
+#gcost 10035
+#hp 19
+#size 4
+#prot 0
+#mr 14
+#str 5
+#att 6
+#def 6
+#prec 10
+#ap 3
+#mapmove 10
+#magicskill 7 1
+#magicskill 2 1
+#magicskill 4 2
+#deathpoison 8
+#homesick 25
+#startage 50
+#maxage 140
+#holy
+#taxcollector
+#okleader
+#end
 
 -- 7265 -- Zuggtmoy - PRETENDER
 #newmonster 7265 -- Zuggtmoy - PRETENDER
@@ -32667,7 +32963,8 @@ Being bullied by bigger, stronger creatures had taught goblins to exploit what f
 Dodforerir were known to require long periods of time before their corpus could reform."
 #magicskill 3 2
 #magicskill 5 3
-#reformtime 8
+#reformtime 2
+#makemonsters3 7279 -- Giant Skeleton First Shape
 #end
 
 -- 7278 -- Dodkong
@@ -32825,6 +33122,7 @@ The necromantic spell animate dead allowed spellcasters to create skeletons. The
 #descr "Cairnheim was a monarchial kingdom, ruled by a king and his council of Dodforerir, or 'Death Chiefs.' Both the king and the Dodforerir were all cairns, a form of undead stone giant lich. Each of the Dodforerir, raised from the dead by the king, had in life had served as a clan chieftain.
 
 Stone Giant Elders who receive the Twiceborn ritual become Dodforerir upon death, offering a much more cost-effective means of recruiting these units."
+#reformtime 2
 #magicskill 3 2
 #gcost 1150
 #slowrec
@@ -32962,7 +33260,7 @@ Used most often as undead guardians of tombs and the vaults of honored dead, mum
 #name "Essyllissian Dervish"
 #descr "Lizardfolk typically venerated Semuanya, their deity of fertility, but their original god was Essylliss, an aspect of the World Serpent. Following the creation of the lizardfolk by the Sarrukh, the World Serpent worried these new creations would turn to the worship of other gods and so broke off an aspect of itself to watch over them. Essyllis, however, was an utterly uncaring god. The plight of the Lizardfolk, particularly following the fall of the Sarrukh empires, led most to the worship of new gods. However, a rare few continued to venerate Essylliss and brought their trance-like ritualistic dance to the battlefield."
 #drawsize 10
-#size 4
+#size 3
 #hp 16
 #prot 8
 #mr 14
@@ -33101,7 +33399,8 @@ Amnian Steel were hardy warriors and the backbone of Amn's military. Consisting 
 #armor 126 -- Legionary Helmet
 #armor 12
 #armor 2
-#weapon 8
+#weapon 8 -- Broad sword
+#weapon 4 -- Lance
 #end
 
 #newmonster 7298 -- Sea Dog Swashbuckler 
@@ -34558,6 +34857,7 @@ They were able to gate in a large variety of other types of tanar'ri."
 #combatcaster
 #itemslots 860702
 #naga
+#female
 #end
 
 -- 7341 -- Infernal Succubus
@@ -37433,7 +37733,7 @@ The Lapaliiyan Coast of the Shining Sea and other Cities of the Seabreeze were w
 #spr2 "ForgottenRealms/griffriderb.tga"
 #name "Peacehammer"
 #nametype 266
-#mountmnr 3544 -- Gryphon
+#mountmnr 6001 -- Griffon (armored)
 #unmountedspr1 "ForgottenRealms/dwarvenhammer.tga"
 #unmountedspr2 "ForgottenRealms/dwarvenhammer2.tga"
 #descr "The gryphon-mounted Peacehammers of the Great Rift patrol the skies, ever watchful for the enemies of the gold dwarves. Their battle-cry, 'Hammers from High!' is dreaded by all their enemies. 
@@ -37444,8 +37744,8 @@ The Peacehammers formed a vital element of the defenses of the Great Rift's rim.
 #armor 2 -- shield
 #weapon 596 -- light lance
 #weapon 1815 -- dwrven battlehammer
-#patrolbonus 2
-#size 2
+#patrolbonus 1
+#size 3
 #hp 15
 #str 12
 #enc 3
@@ -37649,7 +37949,8 @@ These draconic beasts stood much taller than other humanoids, with scaled hides 
 
 During the 13th century DR, a tribe of dragonkin resided in the mountains overlooking the Bottomless Bogs in Vaasa. Recruited and trained by the Cult of the Draogn, they joined the Wearers of Purple in their quest to corrupt the Mythal in Myth Drannor and taint the Pool of Radiance underneath Castle Cormanthor." 
 #size 4
-#gcost 40
+#gcost 10040
+#rpcost 10020
 #clearweapons
 #cleararmor
 #weapon 1 -- Spear
@@ -37700,7 +38001,8 @@ During the 13th century DR, a tribe of dragonkin resided in the mountains overlo
 #size 5
 #clearweapons
 #cleararmor
-#gcost 10035
+#gcost 10040
+#rpcost 10000
 #weapon 8 -- Broadsword
 #weapon 408 -- Talons
 #weapon 676 -- Fiery Breath
@@ -37731,6 +38033,7 @@ During the 13th century DR, a tribe of dragonkin resided in the mountains overlo
 #pooramphibian
 #darkvision 80
 #magicbeing
+#okleader
 #okmagicleader
 #stealthy 10
 #pillagebonus 1
@@ -38206,7 +38509,7 @@ Value Guards are heavily armored for elven troops, and carry both longspears as 
 
 -- 7422 -- Great Eagle Cavalry
 #newmonster 7422
-#copystats 7181
+#copystats 7181 -- Dwarven template
 #name "Great Eagle Rider"
 #spr1 "ForgottenRealms/eaglecav.tga"
 #spr2 "ForgottenRealms/eaglecav2.tga"
@@ -38381,7 +38684,7 @@ Given the harsh and varied terrain of the Dalelands, it was often companies of t
 #mr 11
 #mor 12
 #str 11
-#att 10
+#att 11
 #def 11
 #prec 10
 #ap 12
@@ -41007,6 +41310,10 @@ During the Darkwalker Wars, they successfully tainted several Moonwells, creatin
 #beastmaster 4
 #berserk 3
 #shapechange 6650 -- Servant of Malar
+#clearweapons
+#weapon 20 -- bite
+#weapon 29 -- claw
+#weapon 29 -- claw
 #end
 
 -- 7486 -- Empty Placeholder
@@ -42217,7 +42524,6 @@ Khelben Arunson costructed the first of the Walking Statues, though it was not t
 #magicskill 9 2
 #holy
 #noleader
-#immobile
 #maxage 4800
 #spiritsight
 #magicbeing
@@ -44786,6 +45092,7 @@ They can summon sharks each turn via a special command on the unit card. This ab
 #animal
 #aquatic
 #firstshape -13014
+#watershape -13014
 #end
 
 -- 7584 -- Mako Shark
@@ -46000,7 +46307,9 @@ Due to their gills, sea elves could only leave the water for brief periods. Whil
 #mountmnr 7151 -- Deepwater Shark
 #unmountedspr1 "ForgottenRealms/sekolahn_dreadknight_dis.tga"
 #unmountedspr2 "ForgottenRealms/sekolahn_dreadknight_dis2.tga"
-#descr "The Sekolahn Dreadknights were holy warriors dedicated to the Shark Father. Never subtle, the Dreadknights of Sekolah chummed the water ahead of battle to attract even more sharks and to whip their allies into a frenzy."
+#descr "The Sekolahn Dreadknights were holy warriors dedicated to the Shark Father. Never subtle, the Dreadknights of Sekolah chummed the water ahead of battle to attract even more sharks and to whip their allies into a frenzy.
+
+Sekolahn Dreadknights are accompanied into battle by 1d6 sharks."
 #gcost 10012
 #rcost 1
 #clearweapons
@@ -46017,7 +46326,7 @@ Due to their gills, sea elves could only leave the water for brief periods. Whil
 #def 12
 #poisonres 10
 #darkvision 80
-#batstartsum1d6 7583 -- Shark Montag
+#batstartsum1d6 -13014 -- Shark Montag
 #beastmaster 3
 #berserk 3
 #goodleader
@@ -47296,7 +47605,7 @@ Guards were drawn from the lowest caste of serfs within kuo-toan society. Armed 
 #mor 16
 #holy
 #standard 1
-#formationfighter 1
+#formationfighter 2
 #ap 18
 #mapmove 18
 #reclimit 2
@@ -47324,7 +47633,7 @@ Take care in equipping him with anything other than a crown and 2 misc items, as
 #armor 403 -- Dwarven Kite Shield
 #unsurr 2
 #hp 30
-#size 2
+#size 3
 #str 14
 #enc 3
 #att 12
@@ -47705,8 +48014,7 @@ A Sylph's mastery over air gives them the ability to withstand prolonged exposur
 #ap 12
 #startage 30
 #wastesurvival
-#weapon 1 -- Spear
-#weapon 596 -- Light Lance
+#weapon 357 --Light Lance (re-usable)
 #armor 7 -- scale cuirass
 #armor 20 -- iron cap
 #armor 2 -- shield
@@ -50044,6 +50352,8 @@ Take care of your equipment. The Gryphon form taken by the Tethyrian Druid allow
 #holy
 #okleader
 #maxage 65
+#weapon 408 -- Talons
+#weapon 404 -- Beak
 #end
 
 
@@ -51122,6 +51432,15 @@ Jherek starts in his Whalefriend form. At 50 XP he will upgrade to his Taker's B
 #spiritsight
 #end
 
+#newitem
+#copyitem 430 -- The Flying Ship
+#copyspr 430
+#constlevel 11
+#name "Halruaan Flight Mechanism"
+#descr "This item allows the Halruaan Skyship to carry troops through the air."
+#cursed
+#nofind
+#end
 
 -- 8032 -- Halruaan Skyship
 #newmonster 8032
@@ -51133,7 +51452,7 @@ Jherek starts in his Whalefriend form. At 50 XP he will upgrade to his Taker's B
 
 The original creation of Skyships dated back to Netheril and were a carefully guarded secret of Halruaa for centuries. Levitated by a series of magical plates operated via control rod, the ships were otherwise powered by sails like a seagoing vessel and required masts, rigging, and substantial crews to operate. Most were luxury mercantile or research vessels, but Halruaa did utilize these ships for war on occassion. Most carried a ballista or two for self-defense and no crew operated without spellcasters aboard.
 
-- There is no perfect way to model units that float above melee. While airshield has been added to represent the difficulty of firing arrows to skyship altitudes, you'll still need to support your skyships with sufficient ground forces. Likewise, transporting troops by land and air is not a game engine option, so flying forces behind enemy lines will require access to the sea. Head-canon as you like."
+- There is no perfect way to model units that float above melee. While airshield has been added to represent the difficulty of firing arrows to skyship altitudes, you'll still need to support your skyships with sufficient ground forces."
 #drawsize -15
 #name "Halruaan Skyship"
 #nametype 277 -- Skyships
@@ -51141,6 +51460,7 @@ The original creation of Skyships dated back to Netheril and were a carefully gu
 #itemslots 1835008 -- 3 misc
 #gcost 10030
 #rcost 20
+#rpcost 10000
 #slowrec
 #hp 80
 #size 8
@@ -51181,6 +51501,7 @@ The original creation of Skyships dated back to Netheril and were a carefully gu
 #wastesurvival
 #forestsurvival
 #swampsurvival
+#startitem "Halruaan Flight Mechanism" -- flight mechanism
 #end
 
 
@@ -53117,6 +53438,62 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 -----------------------------AGLAROND------------------------------------
 --------------------------------------------------------------------------
 
+#selectmonster 56
+#name "Forester"
+#descr "The Foresters are an elite corps of rangers in service to the Aglarondan crown. Occupying the Yuirwood, they maintain contacts with the half-elven tribes and keep watch against invasion."
+#clearweapons
+#weapon 17 --Axe
+#weapon 17 --Axe
+#weapon 1830 --Elite Longbow
+#cleararmor
+#armor 120 --Leather cap
+#armor 10 --Leather hauberk
+#hp 12
+#mr 11
+#patrolbonus 2
+#ambidextrous 2
+#str 12
+#att 11
+#def 12
+#gcost 10014
+#end
+
+#newmonster 6004
+#copystats 6608
+#copyspr 6608
+#name "Griffon Ranger"
+#descr "Aglarond maintains a small unit of griffon-riders at the capital. They tend to be used as messengers and scouts rather than as shock troops."
+#clearweapons
+#weapon 357 -- Light Lance (re-usable)
+#weapon 1831 -- Elite shortbow
+#mountmnr 3544
+#str 11
+#hp 12
+#stealthy 0
+#patrolbonus 20
+#reclimit 2
+#gcost 10000
+#end
+
+#newmonster 6005
+#copystats 2129 -- Logrian Cavalry
+#spr1 "ForgottenRealms/aglarondan_cav_1.png"
+#spr2 "ForgottenRealms/aglarondan_cav_2.png"
+#unmountedspr1 "ForgottenRealms/aglarondan_cav_unmounted_1.png"
+#unmountedspr2 "ForgottenRealms/aglarondan_cav_unmounted_2.png"
+#name "Aglarondan Cavalry"
+#descr "The standing army stationed at Glarondar and Emmech included a small number of cavalry. Although few in number, the troops of the standing army were the front line of Aglarondan defense, and were well trained and equipped."
+#hp 11
+#def 11
+#cleararmor
+#armor 13 -- Chain hauberk
+#armor 20 -- Iron cap
+#armor 2 -- Shield
+#clearweapons
+#weapon 4 -- Lance
+#weapon 17 -- Axe
+#end
+
 #selectnation 214
 #era 2
 #name "Aglarond"
@@ -53273,8 +53650,7 @@ Practitioners of the Arcane Arts were commonly found in Impiltur. The nation fea
 #addrecunit 287		-- Swordsman
 #addrecunit 289 	-- Pikeneer
 #addrecunit 290		-- Crossbowmen
-#addrecunit 24 		-- Light Cavalry
-#addrecunit 20 		-- Heavy Cavalry
+#addrecunit 6000 	-- Warsword
 
 #addreccom 431	 	-- Scout
 #addreccom 291		-- Captain
@@ -54955,10 +55331,10 @@ But, while the slow and nonviolent spread of Auramycos was counted in miles per 
 #summary "This is a bizarre nation, perhaps best left in the hands of the ai. All of your myconid units suffer from homesickness, losing a percentage of their health each turn they spend away from the province from which they were born. You have no foreign recruitment, and very limited anywhere you have built a fort - not that your bramble forts are much worth building anyway. Your influence, however, extends well beyond Auramycos."  
 #flag "ForgottenRealms/flag_myconids.tga"
 #templepic 31 -- cave fort
-#fortera 0 
+#fortera 1
 #homefort 10 -- bramble fort
 #cavenation 2
-#buildfort 10
+#buildfort 28
 #noforeignrec
 --#defdeath 5
 
@@ -54988,13 +55364,13 @@ But, while the slow and nonviolent spread of Auramycos was counted in miles per 
 #addforeigncom 7258 -- Myconid Circle Leader -- (f) Nature
 
 
-#defcom1 7254 -- Myconid Guardian Firstshape
-#defcom2 7255 -- Myconid Circle Leader Firstshape -- (a, c, f,)
-#defunit1 7247 -- Myconid Sprout Firstshape
+#defcom1 -13010 -- Myconid Guardian Firstshape
+#defcom2 -13009 -- Myconid Circle Leader Firstshape -- (a, c, f,)
+#defunit1 -13007 -- Myconid Sprout Firstshape
 #defmult1 20
-#defunit1b 7247 -- Myconid Sprout Firstshape
+#defunit1b -13007 -- Myconid Sprout Firstshape
 #defmult1b 20
-#defunit2 7254 -- Myconid Guardian Firstshape
+#defunit2 -13010 -- Myconid Guardian Firstshape
 #defmult2 5
 
 ---------- DEFENCES
@@ -57622,6 +57998,7 @@ This nation is merely for watching games in the background. It is located in the
 #com 7006   -- Simbarch Apprentice
 #com 7005 	-- Simbarch Sorceress
 #mon 56 	-- Royal Forester
+#mon 6004 -- Griffon Ranger
 #end
 
 #newsite 1625
@@ -58034,7 +58411,7 @@ This nation is merely for watching games in the background. It is located in the
 #path 9
 #gems 4 1
 #com 440 -- Paladin
-#com 2359 -- Holy Knight
+#mon 2359 -- Holy Knight
 #end
 
 #newsite 1659
@@ -63968,7 +64345,11 @@ This nation is merely for watching games in the background. It is located in the
 #pathlevel 0 1
 #effect 13
 #damage 5005
-#spec 43980478234756
+-- difficult to negate with MR
+-- + armor negating
+-- + can use underwater
+-- + doesn't affect friendly
+#spec 17592194695296
 #range 30
 #casttime 100
 #aoe 0
@@ -63998,7 +64379,11 @@ This nation is merely for watching games in the background. It is located in the
 #sound 87 -- whip
 #strikesound 24 -- 24 is electricity
 #explspr 10008  -- play here 10101 - 10119
-#spec 72110370604728456
+-- difficult to negate with MR
+-- + armor negating
+-- + can use underwater
+-- + doesn't affect friendly
+#spec 17592194695296
 #casttime 100
 #aispellmod 50
 #end 
@@ -64061,7 +64446,7 @@ This nation is merely for watching games in the background. It is located in the
 #effect 10021
 #damage 7059
 #nreff 1
-#fatiguecost 2500
+#fatiguecost 4000
 #end
 
 #newspell 
@@ -64534,14 +64919,15 @@ This nation is merely for watching games in the background. It is located in the
 #effect 10021
 #damage 7109
 #nreff 1
-#fatiguecost 1400
+#fatiguecost 2800
 #end
 
 7509 -- Contract Devil
 #newspell 
 #name "Summon a Contract Devil"
 #descr "Contract Devils draw gold and resources to your cause in exchange for ongoing souls. They will consume 2 blood slaves each month in exchange for 50 gold and 25 resources."
-#school 6
+--#school 6
+#school -1 -- disabled for now
 #researchlevel 3
 #path 0 8 --B
 #path 1 0 --F
@@ -64550,7 +64936,7 @@ This nation is merely for watching games in the background. It is located in the
 #effect 10021
 #damage 7509 -- Contract Devil
 #nreff 1
-#fatiguecost 2400
+#fatiguecost 3000
 #end
 
 
@@ -64567,7 +64953,7 @@ This nation is merely for watching games in the background. It is located in the
 #effect 10021
 #damage 7107
 #nreff 1
-#fatiguecost 1000
+#fatiguecost 2000
 #end
 
 -- Osyluth
@@ -65343,7 +65729,7 @@ This nation is merely for watching games in the background. It is located in the
 
 #selectspell 244 -- "Fire Flies"
 #name "Spark"
-#descr "A burning spark shoots forth from the wizard's hand. The spark is precise, but has limited armor penetration.
+#descr "A burning spark shoots forth from the wizard's hand. The spark is precise, but has limited armor penetration."
 #nreff 1
 #prec 2
 #fatiguecost 10
@@ -66764,7 +67150,7 @@ This nation is merely for watching games in the background. It is located in the
 #researchlevel 3
 #path 0 8
 #pathlevel 0 2
-#fatiguecost 3000
+#fatiguecost 3600
 #effect 10021
 #nreff 1
 #onlyowndst 1
@@ -67636,7 +68022,7 @@ This nation is merely for watching games in the background. It is located in the
 #cleardef
 #defcom1 7258 -- Myconid Circle Leader -- (f) Nature
 #defcom2 7257 -- Myconid Circle Leader -- (c) Astral
-#defunit1 7247 -- Myconid Sprout Firstshape
+#defunit1 -13007 -- Myconid Sprout Firstshape
 #defmult1 20
 #addrecunit 7247 -- Myconid Sprout Firstshape
 #addrecunit 7254 -- Myconid Guardian Firstshape
@@ -67922,7 +68308,7 @@ This nation is merely for watching games in the background. It is located in the
 #clearrec
 #cleardef
 #defcom1 7384 -- Anguiliian Chieftain
-#defcom2 7370 -- Juvenile Kraken
+#defcom2 7307 -- Juvenile Kraken
 #defunit1 7383 -- Anguiliian Hunter
 #defunit1b 7179 -- Kuo-toan Goggler
 #defmult1 20
@@ -67933,8 +68319,8 @@ This nation is merely for watching games in the background. It is located in the
 #addrecunit 7383 -- Anguiliian Hunter
 #addrecunit 7561 -- Deep Vodyanoi
 #addreccom 7384 -- Anguiliian Chieftain
-#addreccom 7370 -- Juvenile Kraken
-#addreccom 7570 -- Adult Kraken
+#addreccom 7307 -- Juvenile Kraken
+#addreccom 7308 -- Adult Kraken
 #end
 
 #selectpoptype 192 -- Serôsian Poptype
@@ -68744,7 +69130,7 @@ This nation is merely for watching games in the background. It is located in the
 #fatiguecost 50
 #effect 1 -- summon monster
 #nreff 1
-#damage 7583 -- Shark Montag
+#damage -13014 -- Shark Montag
 #restricted 240 -- Aleaxtis
 #flightspr 10083 1 = red/pink thick particles
 #explspr 10043 -- explosion
@@ -68765,7 +69151,7 @@ This nation is merely for watching games in the background. It is located in the
 #fatiguecost 50
 #effect 1 -- summon monster
 #nreff 3
-#damage 7583 -- Shark Montag
+#damage -13014 -- Shark Montag
 #restricted 240 -- Aleaxtis
 #flightspr 10083 1 = red/pink thick particles
 #explspr 10043 -- explosion
@@ -68786,7 +69172,7 @@ This nation is merely for watching games in the background. It is located in the
 #fatiguecost 100
 #effect 1 -- summon monster
 #nreff 6
-#damage 7583 -- Shark Montag
+#damage -13014 -- Shark Montag
 #restricted 240 -- Aleaxtis
 #flightspr 10083 1 = red/pink thick particles
 #explspr 10043 -- explosion
@@ -68799,7 +69185,8 @@ This nation is merely for watching games in the background. It is located in the
 #copyspell 1014 -- Howl
 #name "Feast of Sekolah"
 #descr "Summons a constant stream of sharks to the combat from the edges of the battlefield. "
-#school 0
+--#school 0
+#school -1 -- Howl is hardcoded, modding it this way doesn't work
 #researchlevel 5
 #path 0 2
 #path 1 8
@@ -71021,7 +71408,10 @@ The silencing of the God of Murders, Bhaal, by the Black Hand of Bane kicked off
 #header 2
 #req_turn 13
 #req_maxturn 13
-#msg "- The Darkstalker Wars Conclude - [Qysagghani Fortress]"
+#msg "- The Darkstalker Wars Conclude - 
+Myrkul and Bane betrayed their brother, Bhaal, but in many lands, the Shadow Thieves clung on, weakened but alive. Such was not the case in Calimshan, where the Rundeen Slavers Guild, the Dusk Daggers, and the Syl-Pasha all worked to permanently remove the agents and influence of the Lord of Murders. 
+
+The vaults of the Thieves Guild have been looted in ##landname##, and their shrines to Bhaal destroyed. [Qysagghani Fortress]"
 #removesite 2995
 #decscale1 0 -- decreases turmoil by 1 step
 #gold 125
@@ -71071,3 +71461,68 @@ The silencing of the God of Murders, Bhaal, by the Black Hand of Bane kicked off
 -- #newsite 2001, "Demon Gate"
 -- #newsite 2002, "Abyssal Rift"
 
+
+------------------------------------------------------------------------------------------------------------------------------------
+-------------------------Cult of the Dragon Instability events by Hashashyyin-------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+#newsite 2200
+#name "Unstable Occupation"
+#path 8
+#rarity 5
+#decunrest -30
+#incscale 0 -- Turmoil
+#end
+
+#newevent
+#rarity 5
+#req_pregame 1
+#header 2
+#req_site 1
+#msg "THE CULT SEIZES SELGAUNT
+
+In a sudden attack, the Cult's strongest opponents in Selgaunt have been destroyed and the only remaining leaders are under our control, but the transition has not been gentle and the territory is in chaos. Great efforts will be required to consolidate the Cult's control here.
+
+Unrest will continue to rise for approximately the next 12 months. [Selgaunt]"
+#unrest 150
+#incscale3 0
+#addsite 2200
+#nolog
+#end
+
+#newevent
+#rarity 5
+#req_pregame 1
+#header 2
+#req_site 1
+#msg "THE CULT SEIZES WESTGATE
+
+In a sudden attack, the Cult's strongest opponents in Westgate have been destroyed and the only remaining leaders are under our control, but the transition has not been gentle and the territory is in chaos. Great efforts will be required to consolidate the Cult's control here.
+
+Unrest will continue to rise for approximately the next 12 months. [Westgate]"
+#unrest 150
+#incscale3 0
+#addsite 2200
+#nolog
+#end
+
+#newevent
+#rarity 5
+#req_rare 25
+#header 2
+#req_site 1
+#msg "Resistance ends in ##landname##
+
+The ringleaders have been hunted down and will no longer stir up dissidents in ##landname##. [Unstable Occupation]"
+#req_turn 10
+#removesite 2200
+#nolog
+#end
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+------------------- Items changes ----------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+#selectitem 393 -- Sanguine Dowsing Rod
+#nodemon
+#end
