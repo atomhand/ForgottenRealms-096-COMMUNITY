@@ -64313,6 +64313,30 @@ This nation is merely for watching games in the background. It is located in the
 #school -1
 #end
 
+#selectspell 1467 -- Summon Fay Archers
+#school -1
+#end
+
+#selectspell 1468 -- Summon Unseelie Folk
+#school -1
+#end
+
+#selectspell 1469 -- Summon Unseelie Soldiers
+#school -1
+#end
+
+#selectspell 1470 -- Summon Unseelie Archers
+#school -1
+#end
+
+#selectspell 1471 -- Summon Unseelie Knights
+#school -1
+#end
+
+#selectspell 1472 -- Summon Unseelie Prince
+#school -1
+#end
+
 #selectspell 985
 #name "Nest of Firesnakes"
 #end

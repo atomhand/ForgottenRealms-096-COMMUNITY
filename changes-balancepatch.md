@@ -60,6 +60,7 @@ Fixes
    * Cure Light Wounds had morale negates property
    * Chum the Water (+minor and major versions) used a template monster with a #firstshape command, which doesn't work for combat summons. Fixed by using the desired montag directly.
    * Disabled Feast of Sekolah (tried to change the creature type of Howl, but Howl is hardcoded)
+   * Disable new Unseelie spells/Fay Archers (consistency, other Fay summons are disabled)
  * Recruitment anomalies
    * Missing rpcost for Halruaan Skyship, Proudspear, Wemic Huntress, Wemic Warrior, Wemic Firemane, Wemic Shaman, Tomb Tapper
    * Impiltur cap site: Holy Knights should be recruitable as troops, not commanders
