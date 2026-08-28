@@ -66202,9 +66202,15 @@ This nation is merely for watching games in the background. It is located in the
 
 #selectspell "Shrink"
 #name "Reduce Person"
+#descr "This spell causes instant diminution of a humanoid creature"
+#details "Size -1, HP -30%, Str -3, Def +1, Map move -2.
+Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
 #aispellmod -95
 #researchlevel 1
 #path 0 4 --astral
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies; animals only
+-- can be cast underwater
+#spec 4785075418697732
 #end
 
 #newspell
@@ -71915,10 +71921,12 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #researchlevel 1
 #path 0 4 --astral
 #pathlevel 0 1
--- friendlies only; does not affect illusions, spiritform, demons, undead, animals, or void-sane
+-- friendlies only; does not affect illusions, inanimate, spiritform, demons, undead, animals, or void-sane
 -- can be cast underwater
 #spec 148618788521639940
-#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#details "Size +1, HP +30%, Str +3, Def -1.
+
+Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
 #end
 
 #selectspell 867 --Giant Warriors
@@ -71929,7 +71937,7 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #aoe 3001
 #fatiguecost 99
 #ainocast 1
--- friendlies only; does not affect illusions, spiritform, demons, undead, animals, or void-sane
+-- friendlies only; does not affect illusions, inanimate, spiritform, demons, undead, animals, or void-sane
 -- can be cast underwater
 #spec 148618788521639940
 #details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
@@ -72623,11 +72631,9 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #researchlevel 4
 #path 1 4 --astral
 #pathlevel 1 1
-#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
--- MR negates
--- does not affect mindless, illusions, spiritform, demons, undead, animals, or void-sane
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
 -- can be cast underwater
-#spec 148618788517580804
+#spec 148618788517711876
 #range 5020
 #end
 
@@ -72643,6 +72649,10 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #spec 8523776
 #end
 
+#selectspell "Dominate Person"
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#end
+
 #selectspell "Charm Animal"
 #name "Dominate Animal"
 #descr "The caster attempts to dominate the mind of an animal. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
@@ -72650,8 +72660,9 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #school 4 --Enchantment
 #path 1 9 --Holy
 #pathlevel 1 1
--- MR negates, mindless immune, void sane immune, illusion/spiritform immune demons/undead immune, animals only, can be cast underwater
-#spec 4785074881564676
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies; animals only
+-- can be cast underwater
+#spec 4785075418697732
 #end
 
 #selectspell "Paralyze"
@@ -72659,12 +72670,10 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #descr "The caster overloads the target humanoid's mind and effectively paralyzes the target for a very long time."
 #school 4 --Enchantment
 #researchlevel 2
-#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
 #path 0 7 --Glamour
--- MR negates
--- does not affect mindless, illusions, spiritform, demons, undead, animals, or void-sane
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
 -- can be cast underwater
-#spec 148618788517580804
+#spec 148618788517711876
 #end
 
 #newspell
@@ -72678,8 +72687,9 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #pathlevel 0 1
 #path 1 9 --Holy
 #pathlevel 1 1
--- MR negates, mindless immune, void sane immune, illusion/spiritform immune demons/undead immune, animals only, can be cast underwater
-#spec 4785074881564676
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies; animals only
+-- can be cast underwater
+#spec 4785075418697732
 #end
 
 #newspell
@@ -72694,6 +72704,10 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #spec 8523776
 #end
 
+#selectspell "Hold Person"
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#end
+
 #newspell
 #copyspell "Hold Person"
 #name "Mass Hold Person"
@@ -72704,8 +72718,6 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #path 1 4
 #pathlevel 1 2
 #aoe 3001
--- As Hold Person + only affects enemies
-#spec 148618788517842948
 #end
 
 #newspell
@@ -72716,8 +72728,6 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #pathlevel 0 5
 #pathlevel 1 3
 #aoe 3001
--- As Hold Monster + only affects enemies
-#spec 8785920
 #end
 
 #selectspell "Calm Emotions"
