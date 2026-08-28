@@ -6033,6 +6033,7 @@ Saltwater scrags found light, even that of merely a full moon, uncomfortable. Th
 #weapon 29
 #undisciplined
 #montag 13016 -- Greater Aquatic Slavetype
+#voidsanity 1 --giant
 #end
 
 -- x 2749 -- Troglodyte Druhyidd
@@ -6087,6 +6088,7 @@ The most notorious harpies lived within the Kingdom of Nix, where they were inst
 #douse 1
 #okmagicleader
 #darkvision 60
+#voidsanity 1 --Magical beast/aberration
 #end
 
 #selectmonster 239 -- Stirge
@@ -6099,6 +6101,7 @@ The most notorious harpies lived within the Kingdom of Nix, where they were inst
 #weapon 1825 -- Stirge Bite
 #str 3
 #size 2
+#voidsanity 1 --Magical beast/aberration
 #end
 
 #selectmonster 1301 -- Frost Giant Elder
@@ -6129,6 +6132,7 @@ Whenever frost giants of different clans met and their status was unclear, they 
 #mountainsurvival
 #snow
 #darkvision 50
+#voidsanity 1 --giant
 #end
 
 #selectmonster 2219
@@ -6144,6 +6148,7 @@ Whenever frost giants of different clans met and their status was unclear, they 
 #supplybonus -5
 #acidres -10
 #fireres -10
+#voidsanity 1 --giant
 #end
 
 #selectmonster 2220
@@ -6164,6 +6169,7 @@ Any culture they possessed was passed down orally, usually kept within a single 
 #supplybonus -5
 #acidres -10
 #fireres -10
+#voidsanity 1 --giant
 #end
 
 #selectmonster 2986
@@ -6384,6 +6390,14 @@ To gain access to Darkwell Bloodriders, you must send your blood priests into a 
 #holy
 #end
 
+#selectmonster 1831 --Hydra
+#descr "A hydra was a reptilian magical beast that had anywhere from five to twelve heads. Very rarely they could even have up to fifty heads.
+Hydras were not very intelligent, but they were deadly due to their regenerative capabilities.
+
+Hydras were typically found in the marshes of regions with a temperate climate. Many hydras were known to inhabit the Forest of Wyrms. They also were quite common in the jungles of Chult."
+#voidsanity 1 -- Magical beast
+#end
+
 #selectmonster 2185
 #amphibian
 #end
@@ -6479,6 +6493,23 @@ Deep gnome wizards who were not illusionists were frequently diviners, using the
 #hp 35
 #goodleader
 #end
+
+#selectmonster 2131 --Gryphon
+#name "Griffon"
+#descr "Griffons were semi-intelligent beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
+#voidsanity 1 -- Magical beast
+#end
+
+#selectmonster 2159 --Gelatinous Cube
+#voidsanity 1 --ooze
+#end
+
+#selectmonster 3544 --Gryphon
+#name "Griffon"
+#descr "Griffons were semi-intelligent beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
+#voidsanity 1 -- Magical beast
+#end
+
 --//////////////////////////////////////////////////////////////////////////////////////////////////////
 --//////////////////////////////////////////////////////////////////////////////////////////////////////
 --//////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -8611,6 +8642,7 @@ An elder brain marked also the ultimate goal in every mind flayer's life when it
 #drainimmune
 #maxage 1800
 #expertleader
+#voidsanity 10 --aberration
 #end
 
 -- 5050 - Alhoon - Twiceborn form
@@ -9666,6 +9698,7 @@ The simplistic and crude humans who now called her lands home, the Ffolk, ruled 
 #animalawe 5
 #superiorleader
 #superiormagicleader
+#voidsanity 1 --fey
 #end
 
 
@@ -9713,6 +9746,7 @@ LeShay Seers are among the most powerful spellcasters in all of Faerun."
 #indepspells 7
 #slowrec
 #okundeadleader
+#voidsanity 1 --fey
 #end
 
 -- 5090 -- Firbolg Druid 
@@ -9759,6 +9793,7 @@ However, while typically noble in their pursuits, their fanatic code and their s
 #holy
 #autohealer 1
 #airshield 20
+#voidsanity 1 --giant
 #end
 
 -- 5091 -- Firbolg Fanatic
@@ -9801,6 +9836,7 @@ However, while typically noble in their pursuits, their fanatic code and their s
 #airshield 20
 #gcost 10020
 -- #stealthy 45
+#voidsanity 1 --giant
 #end
 
 -- 5092 -- Redcap
@@ -9830,6 +9866,7 @@ Occasionally, a redcap would soak its cap in demon ichor instead of blood. This 
 #maxage 150
 #stealthy 20
 #researchbonus -4
+#voidsanity 1 --Fey
 #end
 
 -- 5093 -- Madcap
@@ -9867,6 +9904,7 @@ Occasionally, a redcap would soak its cap in demon ichor instead of blood. This 
 #researchbonus -10
 #douse 1
 #incunrest 30
+#voidsanity 1 --Fey
 #end
 
 
@@ -9910,6 +9948,7 @@ Settled on the task, she forged a route through the Feywild to Oman's Isle, cast
 #autohealer 1
 #autodishealer 1
 #airshield 20
+#voidsanity 1 --giant
 #end
 
 -- 5095 -- Corpuscle of Kazgaroth
@@ -9982,6 +10021,7 @@ At the conclusion of the Darkwalker War, Prince Tristan Kendrick believed he had
 #slashres 
 #bluntres 
 #shapechange 5097
+#voidsanity 1 -- Magical beast
 #end
 
 
@@ -10211,6 +10251,7 @@ During the Darkwalker Wars, they successfully tainted several Moonwells, creatin
 #weapon 20 -- bite
 #weapon 29 -- claw
 #weapon 29 -- claw
+#voidsanity 1 --Magical beast/aberration
 #end
 
 -- 5102 -- Norland White-beard
@@ -10374,6 +10415,7 @@ They were often known to keep pets and guard animals. Those that lived in high e
 #startage 250
 #maxage 650
 #mapmove 24
+#voidsanity 1 --giant
 #end
 
 #newmonster 5107 
@@ -12294,6 +12336,7 @@ The Eye felt the deteriorating effects of its great age, and by 1370 DR it had b
 #immobile
 #unique
 #makemonsters2 7391 -- Gazer
+#voidsanity 1 --aberration
 #end
 
 --#newmonster 6636 -- Sammereza Sulphontis
@@ -13322,7 +13365,6 @@ Hell hounds, being intelligent beasts of law, could be trained and commanded by 
 #size 4
 #quadruped
 #animal
-#magicbeing
 #wastesurvival
 #fireres 25
 #coldres -5
@@ -13342,6 +13384,7 @@ Hell hounds, being intelligent beasts of law, could be trained and commanded by 
 #ap 20
 #mapmove 22
 #darkvision 100
+#demon
 -- #stealthy 5
 #end
 
@@ -13354,6 +13397,7 @@ Hell hounds, being intelligent beasts of law, could be trained and commanded by 
 #transformation 1 
 #gcost 70
 #stealthy 10
+#voidsanity 1 -- Magical beast
 #end
 
 #newmonster 6673
@@ -13421,6 +13465,7 @@ Whenever frost giants of different clans met and their status was unclear, they 
 #berserk 3
 #mountainsurvival
 #snow
+#voidsanity 1 --Giant
 #end
 
 #newmonster 6676 -- Orc Marauders
@@ -13493,6 +13538,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #appetite 2
 #incunrest 3
 #mountainsurvival
+#voidsanity 1 --Giant
 #end
 
 ---------------------------------------------------------------------------------
@@ -14513,6 +14559,7 @@ A Shaitan is a genie born of the elemental plane of Earth. There is a 1% chance 
 #darkpower 2
 #maxage 2500
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --outsider
 #end
 
 -- 3710 Bound Djinn
@@ -14550,6 +14597,7 @@ The most powerful of the noble genies have eventually outwitted their masters an
 #stormpower 2
 #maxage 2500
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --outsider
 #end
 
 -- 3711 Bound Marid
@@ -14589,6 +14637,7 @@ Armed with a Crystal Coin, the Qysaghanni Vizar of Calimshan is uniquely suited 
 #coldpower 2
 #maxage 2500
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --outsider
 #end
 
 -- 3712 Bound Efreet
@@ -14625,6 +14674,7 @@ The most powerful of the noble genies have eventually outwitted their masters an
 #firepower 2
 #maxage 2500
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --outsider
 #end
 
 ----------------------------------------------------------------------------------------------------------
@@ -14652,6 +14702,7 @@ A Shaitan is a genie born of the elemental plane of Earth. Now unbound, their po
 #magicskill 7 3
 #indepmove 10
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --outsider
 #end
 
 -- 3714 Unbound Djinn
@@ -14675,6 +14726,7 @@ A Djinn is a genie born of the elemental plane of Air. Now unbound, their powers
 #magicskill 7 3
 #indepmove 10
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --outsider
 #end
 
 -- 3715 Unbound Marid
@@ -14698,6 +14750,7 @@ A Marid is a genie born of the elemental plane of Water. Now unbound, their powe
 #magicskill 7 3
 #indepmove 10
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --outsider
 #end
 
 -- 3716 Unbound Efreet
@@ -14721,6 +14774,7 @@ An Efreet is a genie born of the elemental plane of Fire. Now unbound, their pow
 #magicskill 7 3
 #indepmove 10
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --outsider
 #end
 
 ---------------------------------------------------------------------------------------------
@@ -14781,6 +14835,7 @@ Ancient Red Dragons also gain a heat aura dealing 8+ damage per turn to nearby c
 #unsurr 10
 #twiceborn 7458 -- DRACOLICH, RED
 #lich 7458 -- DRACOLICH, RED
+#voidsanity 1 --dragon
 #end
 
 -- 3718 Ancient Blue Dragon
@@ -14835,6 +14890,7 @@ New mechanics: Bigger, stronger, more health, thicker scales, more diverse magic
 #unsurr 10
 #twiceborn 7460 -- DRACOLICH, BLUE
 #lich 7460 -- DRACOLICH, BLUE
+#voidsanity 1 --dragon
 #end
 
 -- 3719 Ancient Green Dragon
@@ -14891,6 +14947,7 @@ Ancient Green Dragons are now much better amphibians. Mature dragons are capable
 #unsurr 10
 #twiceborn 7461 -- DRACOLICH, GREEN
 #lich 7461 -- DRACOLICH, GREEN
+#voidsanity 1 --dragon
 #end
 
 
@@ -14947,6 +15004,7 @@ New mechanics: Bigger, stronger, more health, thicker scales, more diverse magic
 #unsurr 10
 #twiceborn 7459 -- DRACOLICH, BLACK
 #lich 7459 -- DRACOLICH, BLACK
+#voidsanity 1 --dragon
 #end
 
 -- 3721 Ancient White Dragon
@@ -15002,6 +15060,7 @@ New mechanics: Bigger, stronger, more health, thicker scales, more diverse magic
 #unsurr 10
 #twiceborn 7462 -- DRACOLICH, WHITE
 #lich 7462 -- DRACOLICH, WHITE
+#voidsanity 1 --dragon
 #end
 
 
@@ -15123,6 +15182,7 @@ They are among the best raiders and pillagers in the game. They do, however, req
 #stealthy 30
 #berserk 3
 #chaosrec 1
+#voidsanity 1 --dragon
 #end
 
 -- 6727 -- Lizardfolk Scavenger
@@ -15166,6 +15226,7 @@ They will eat population so be sure to put them quietly in enemy lands."
 #incunrest 10
 #popkill 2
 #stealthy 5
+#voidsanity 1 --Magical beast/aberration/giant/monstrous humanoid
 #end
 
 -- 6729 -- Basilisk 
@@ -15188,12 +15249,8 @@ Basilisks could be found nearly everywhere, including subterranean biomes. Typic
 #att 14
 #def 9
 #darkvision 60
-#end
-
-
-
+#voidsanity 1 --magic beast
 #coldblood
-
 #end
 
 -- 6730 -- giant spider (782 needs gold cost)	forestrec					caverec
@@ -15381,6 +15438,7 @@ Fire Giants were often hostage takers and took payments from less powerful creat
 #gcost 10120
 #taxcollector
 #makemonsters5 6726 -- Fomorian
+#voidsanity 1 --giant
 #end
 
 
@@ -15667,6 +15725,7 @@ The nations of Aglarond and Cormyr were especially famous for their hippogriff-m
 #animal
 #flying
 #wastesurvival
+#voidsanity 1 -- Magical beast
 #end
 
 -- 6749 Commander: Purple Dragon Lancelord
@@ -16235,6 +16294,7 @@ Religion is a relatively unimportant fixture in hill giant society, though each 
 #custommagic 9344 50
 #batstartsum2d6 284 -- wolves
 #mountainsurvival
+#voidsanity 1 --giant
 #end
 
 -- 6773 -- Goblin Wolfrider
@@ -16329,6 +16389,7 @@ The powers of hags were as variable as they were, but there were several common 
 #autohealer 1
 #autodishealer 1
 #crossbreeder 8
+#voidsanity 1 --Magical beast/aberration/giant/monstrous humanoid
 #end
 
 ---------------------------------------------------------------------------------
@@ -16389,6 +16450,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #formationfighter 2
 #nametype 268
 #unsurr 10
+#voidsanity 1 --Dragon
 #end
 
 -- 6777 -- RED DRAGON HATCHLING
@@ -16451,6 +16513,7 @@ At 8 XP, they become Juvenile Dragons, gaining mobility and the first faint glim
 #nametype 266
 #unsurr 10
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 6778 -- RED DRAGON JUVENILE	
@@ -16516,6 +16579,7 @@ Juvenile dragons drain a region of population (20 pop per turn) and gold (-5 per
 #taxcollector
 #incprovdef 2
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3779 -- RED DRAGON YOUNG ADULT		
@@ -16580,6 +16644,7 @@ Young Adult dragons possess greater magic than juveniles. They kill more populat
 #taxcollector
 #incprovdef 2
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3780 -- RED DRAGON MATURE	
@@ -16638,6 +16703,7 @@ Bigger, stronger, more health, thicker scales, and more diverse magic, the Matur
 #taxcollector
 #incprovdef 3
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 
@@ -16697,6 +16763,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #forestsurvival
 #swampsurvival
 #unsurr 10
+#voidsanity 1 --Dragon
 #end
 
 -- 3782 -- black DRAGON HATCHLING
@@ -16758,6 +16825,7 @@ At 8 XP, they become Juvenile Dragons, gaining mobility and the first faint glim
 #swampsurvival
 #unsurr 10
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3783 -- black DRAGON JUVENILE		XP 26-50 	NO SLOTS
@@ -16827,6 +16895,7 @@ Juvenile dragons drain a region of population (20 pop per turn) and gold (-4 per
 #taxcollector
 #incprovdef 2
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3784 -- black DRAGON ADULT		
@@ -16895,6 +16964,7 @@ Young Adult dragons possess greater magic than juveniles. They kill more populat
 #taxcollector
 #incprovdef 2
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 6785 -- BLACK DRAGON MATURE	
@@ -16956,6 +17026,7 @@ Bigger, stronger, more health, thicker scales, and more diverse magic, the Matur
 #taxcollector
 #incprovdef 3
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3786 -- GREEN DRAGON EGG 			XP 0-6		NO SLOTS	IMMOBILE
@@ -17019,6 +17090,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #forestsurvival
 #mountainsurvival
 #unsurr 10
+#voidsanity 1 --Dragon
 #end
 
 -- 3787 -- GREEN DRAGON HATCHLING		XP 13-24	NO SLOTS	IMMOBILE
@@ -17079,6 +17151,7 @@ At 8 XP, they become Juvenile Dragons, gaining mobility and the first faint glim
 #stealthy 40
 #unsurr 10
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3788 -- GREEN DRAGON JUVENILE		XP 26-50 	NO SLOTS
@@ -17145,6 +17218,7 @@ Juvenile dragons drain a region of population (20 pop per turn) and gold (-4 per
 #taxcollector
 #incprovdef 2
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3789 -- GREEN DRAGON ADULT		
@@ -17211,6 +17285,7 @@ Young Adult dragons possess greater magic than juveniles. They kill more populat
 #taxcollector
 #incprovdef 2
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3785 -- GREEN DRAGON MATURE	
@@ -17271,6 +17346,7 @@ Bigger, stronger, more health, thicker scales, and more diverse magic, the Matur
 #taxcollector
 #incprovdef 3
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 
@@ -17331,6 +17407,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #formationfighter 2
 #nametype 268
 #unsurr 10
+#voidsanity 1 --Dragon
 #end
 
 -- 3792 -- blue DRAGON HATCHLING		XP 13-24	NO SLOTS	IMMOBILE
@@ -17393,6 +17470,7 @@ At 8 XP, they become Juvenile Dragons, gaining mobility and the first faint glim
 #stealthy 40
 #unsurr 10
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3793 -- BLUE DRAGON JUVENILE		XP 26-50 	NO SLOTS
@@ -17459,6 +17537,7 @@ Juvenile dragons drain a region of population (20 pop per turn) and gold (-5 per
 #taxcollector
 #incprovdef 2
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3794 -- BLUE DRAGON ADULT		
@@ -17523,6 +17602,7 @@ Young Adult dragons possess greater magic than juveniles. They kill more populat
 #taxcollector
 #incprovdef 2
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3795 -- Blue DRAGON MATURE	
@@ -17581,6 +17661,7 @@ Bigger, stronger, more health, thicker scales, and more diverse magic, the Matur
 #taxcollector
 #incprovdef 3
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 
@@ -17642,6 +17723,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #amphibian
 #snow
 #unsurr 10
+#voidsanity 1 --Dragon
 #end
 
 -- 3792 -- White DRAGON HATCHLING
@@ -17701,6 +17783,7 @@ At 8 XP, they become Juvenile Dragons, gaining mobility and the first faint glim
 #stealthy 40
 #unsurr 10
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3793 -- White DRAGON JUVENILE		XP 26-50 	NO SLOTS
@@ -17769,6 +17852,7 @@ Juvenile dragons drain a region of population (20 pop per turn) and gold (-5 per
 #taxcollector
 #incprovdef 3
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3794 -- White DRAGON ADULT		
@@ -17833,6 +17917,7 @@ Young Adult dragons possess greater magic than juveniles. They kill more populat
 #taxcollector
 #incprovdef 2
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 -- 3785 -- White DRAGON MATURE	
@@ -17893,6 +17978,7 @@ Bigger, stronger, more health, thicker scales, and more diverse magic, the Matur
 #taxcollector
 #incprovdef 3
 #nohof
+#voidsanity 1 --Dragon
 #end
 
 
@@ -18078,6 +18164,7 @@ Cloud giants commonly had superiority complexes, considering other creatures to 
 #castledef 20
 #startage 200
 #maxage 350
+#voidsanity 1 --giant
 #end
 
 -- 6806 -- KRENSHAR
@@ -18095,6 +18182,7 @@ Cloud giants commonly had superiority complexes, considering other creatures to 
 #patrolbonus 5
 #fear 5
 #mr 8
+#voidsanity 1 -- Magical beast
 #end
 
 -- 6807 Goblin Shortbow
@@ -18209,6 +18297,7 @@ Stealthy pillagers and raiders, they also do not require strongholds from which 
 #siegebonus 10
 #supplybonus -3
 #incunrest 5
+#voidsanity 1 --Giant
 #end
 
 -- 6810 Stone Giant Elder
@@ -18244,6 +18333,7 @@ A twiceborn enchanted Stone Giant Elder becomes a Cairn Giants known as a Dodfor
 #maxage 350
 #twiceborn 7277 -- Cairn Giant
 #lich 7277 -- Cairn Giant
+#voidsanity 1 --Giant
 #end
 
 
@@ -18362,6 +18452,7 @@ Since aarakocra avoided melee combat when possible, their combat tactics revolve
 #stormimmune
 #supplybonus -2
 #darkvision 50
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 6815 Aarokocra Shaman
@@ -18379,6 +18470,7 @@ The small number of aarakocra living in the North mainly worshiped Syranita as t
 #magicskill 9 1
 #researchbonus -3
 #darkvision 60
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 6816 Night Hag
@@ -18425,6 +18517,7 @@ Among the most infamous Night Hags were a coven known as The Sewn Sisters who ai
 #poorleader
 #goodmagicleader
 #expertundeadleader
+#voidsanity 1 --giant
 #end
 
 -- 3817 Barae of Ubtao
@@ -18763,6 +18856,7 @@ All Yuan-ti Abominations had the ability to polymorph and thus hide their identi
 #startage 30
 #maxage 90
 #crossbreeder 10
+#voidsanity 1 --aberration
 #end
 
 -- 6830 Yuan-ti Temple Guardian
@@ -18781,6 +18875,7 @@ All Yuan-ti Abominations had the ability to polymorph and thus hide their identi
 #stealthy 35
 #startage 30
 #maxage 90
+#voidsanity 1 --aberration
 #end
 
 -- 6831 Yuan-ti Abomination
@@ -18818,6 +18913,7 @@ All Yuan-ti Abominations had the ability to polymorph and thus hide their identi
 #startage 30
 #maxage 90
 #crossbreeder 10
+#voidsanity 1 --aberration
 #end
 
 
@@ -18854,6 +18950,7 @@ All Yuan-ti had the ability to polymorph and thus hide their identities, which i
 #noleader
 #noundeadleader
 #nomagicleader
+#voidsanity 1 --aberration
 #end
 
 ----6833 -- Merchant 
@@ -18983,6 +19080,7 @@ In the jungles of Chult, worshippers of Ubtao called her 'Eater of the World.' A
 #magicskill 8 8
 #onebattlespell 864
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --god
 #end
 
 -- 3836 -- Wemic Proudspear
@@ -19026,6 +19124,7 @@ Some wemics lived solitary lives, like those found in the Dalelands, and shepher
 #goodleader
 #animalawe 1
 #mountedhumanoid
+#voidsanity 1 --Monstrous humanoid
 #end
 
 -- 3837 -- Wemic Shaman
@@ -19069,6 +19168,7 @@ Some wemics lived solitary lives, like those found in the Dalelands, and shepher
 #animalawe 1
 #rcost 1
 #mountedhumanoid
+#voidsanity 1 --Monstrous humanoid
 #end
 
 -- 3838 -- Wemic Huntress
@@ -19105,6 +19205,7 @@ Some wemics lived solitary lives, like those found in the Dalelands, and shepher
 #supplybonus 3
 #rcost 1
 #mountedhumanoid
+#voidsanity 1 --Monstrous humanoid
 #end
 
 -- 6839 -- Wemic Firemane
@@ -19150,6 +19251,7 @@ Firemanes assuming a feline form, either as their natural form or via magic, wer
 #rcost 1
 #rpcost 10000
 #mountedhumanoid
+#voidsanity 1 --Monstrous humanoid
 #end
 
 -- 6840 -- Wemic Warrior
@@ -19187,6 +19289,7 @@ Young wemics would remain with the rest of the pride until they were five years 
 #mountedhumanoid
 #rcost 1
 #rpcost 10000
+#voidsanity 1 --Monstrous humanoid
 #end
 
 -- 3841 -- Shaq'ar
@@ -19226,6 +19329,7 @@ Prior to Shaq'ar, the leadership of the Golden Mane was under the lead of his un
 #inspirational 1
 #expertleader
 #mountedhumanoid
+#voidsanity 1 --Monstrous humanoid
 #end
 
 -- 6842 Minotaur Brute
@@ -19252,6 +19356,7 @@ A few Minotaurs made their way to civilization to work as mercenaries, guards, a
 #berserk 3
 #weapon 399 -- Intrinsic Gore
 #weapon 698 -- Bronze Battleaxe
+#voidsanity 1 --Monstrous humanoid
 #end
 
 -- 6843 Minotaur Elder
@@ -19282,6 +19387,7 @@ Their youth were taught to fight and master weapons at an early age. In minotaur
 #incprovdef 1
 #startage 50
 #maxage 60
+#voidsanity 1 --Monstrous humanoid
 #end
 
 
@@ -19753,7 +19859,7 @@ A behir usually bites and grabs its prey first, then either swallows or constric
 #weapon 20 -- bite
 #mountainsurvival
 #shockres 25
-#gcost 0 -- Summoned unit only
+#voidsanity 1 --magical beast
 #end
 
 -- 6857 Thayan Infantry
@@ -20181,6 +20287,7 @@ Black unicorns, like their more peaceful kin, had multiple magical abilities. Th
 #slaver 6860
 #taskmaster 1
 #appetite 2
+#voidsanity 1 --montrous humanoid
 #end
 
 -- 6870 -- Darkenbeast
@@ -20225,6 +20332,7 @@ The Red Wizards of Thay were well known for their use of darkenbeasts against th
 #mor 9
 #ap 15
 #mapmove 32
+#voidsanity 1 --magic beast
 #end
 
 -- 3872 -- Winged Monkey Scout
@@ -20246,6 +20354,7 @@ The Red Wizards of Thay were well known for their use of darkenbeasts against th
 #okmagicleader
 #noundeadleader
 #mor 11
+#voidsanity 1 --magical beast
 #end
 
 -- 6873 -- Halruaan Cavalry Commander
@@ -20356,6 +20465,7 @@ In some places, Dragon turtles were worshipped as gods by primitive undersea dwe
 #custommagic 1536 50 -- WE
 #custommagic 1536 50 -- WE
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --dragon
 #end
 
 -- 6876 -- Gilgeam
@@ -20781,6 +20891,7 @@ Like all mortalized gods, if Horus-Re dies in battle, he will reform but often w
 #maxprison 2
 #startage 3500 
 #maxage 6000
+#voidsanity 1 --god
 #end
 
 -- 3891 -- Thoth
@@ -20820,6 +20931,7 @@ Thoth is immortal within Mulhorand's dominion, but requires time to transmigrate
 #addupkeep 100
 #startage 3500
 #maxage 6000
+#voidsanity 1 --god
 #end
 
 -- 3892 -- Isis
@@ -20858,6 +20970,7 @@ Isis is immortal within Mulhorand's dominion, but requires time to transmigrate 
 #mapmove 0
 #startage 3500
 #maxage 6000
+#voidsanity 1 --god
 #end
 
 --3893 Anhur 
@@ -20905,6 +21018,7 @@ Anhur is immortal within Mulhorand's dominion, but requires time to transmigrate
 #mapmove 0
 #startage 3500
 #maxage 6000
+#voidsanity 1 --god
 #end
 
 -- 6894 -- Set -- Indie
@@ -20945,6 +21059,7 @@ The secret center of the church of Set was the Cavern of the Jackal, located ben
 #spiritsight
 #startage 3500
 #maxage 6000
+#voidsanity 1 --god
 #end
 
 
@@ -21368,6 +21483,7 @@ Malar and Sebek often came into conflict as they shared one-another's dominion o
 #secondshape 6908
 #batstartsum4 2185
 #batstartsum1 2186
+#voidsanity 1 --god
 #end
 
 
@@ -21402,6 +21518,7 @@ Malar and Sebek often came into conflict as they shared one-another's dominion o
 #spiritsight
 #stealthy 25
 #firstshape 6907
+#voidsanity 1 --god
 #end
 
 --3909 -- Osiris
@@ -21445,6 +21562,7 @@ The principle temples of the church of Osiris were the Crypt of Shadows located 
 #addupkeep 1000
 #immobile
 #unteleportable
+#voidsanity 1 --god
 #end
 
 --3910 -- Anhurite Crusader -- sacred troops 
@@ -22332,6 +22450,7 @@ An owlbear was a large magical or fey beast that looked like a cross between an 
 #weapon 236 -- Claw (slotless)
 #weapon 236 -- Claw (slotless)
 #mr 15 -- Wildshape druid MR
+#voidsanity 1 -- Magical beast
 #end 
 
 -- 3940 -- Wildshape Bat
@@ -22577,6 +22696,7 @@ They were surprisingly intelligent despite having no brain structures or any sim
 #magicboost 9 -1
 #shapechange 6943 -- Wild Elf Druid Adventurer
 #unsurr 4
+#voidsanity 1 --plant
 #end
 
 -- 6945 -- Moonbow Priestess
@@ -24075,6 +24195,7 @@ One of the original objectives of the Knights was said to have been to guard aga
 #startage 10
 #maxage 100
 #poisonres 35
+#voidsanity 1 --outsider
 #end
 
 -- Elemental weapons
@@ -24115,6 +24236,7 @@ One of the original objectives of the Knights was said to have been to guard aga
 #mr 10
 #ap 8
 #weapon 93 -- Fist
+#voidsanity 1 --outsider
 #end
 
 -- 7020 -- Small Earth Elemental
@@ -24153,6 +24275,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #mapmove 0
 #siegebonus 5
 #castledef 5
+#voidsanity 1 --outsider
 #end
 
 -- 7021 -- Medium Earth Elemental
@@ -24191,6 +24314,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #mapmove 0
 #siegebonus 10
 #castledef 10
+#voidsanity 1 --outsider
 #end
 
 -- 7022 -- Large Earth Elemental
@@ -24230,6 +24354,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #mapmove 0
 #siegebonus 15
 #castledef 15
+#voidsanity 1 --outsider
 #end
 
 -- 7023 -- Huge Earth Elemental
@@ -24274,6 +24399,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #noleader
 #nomagicleader
 #noundeadleader
+#voidsanity 1 --outsider
 #end
 
 
@@ -24299,6 +24425,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #stormpower 2
 #unsurr 5
 #stormimmune
+#voidsanity 1 --outsider
 #end
 
 -- 7025 -- Small Air Elemental
@@ -24333,6 +24460,7 @@ Like other elementals, they had good darkvision. While physically weaker, they h
 #mapmove 0
 #airshield 80
 #stormimmune
+#voidsanity 1 --outsider
 #end
 
 -- 7026 -- Medium Air Elemental
@@ -24368,6 +24496,7 @@ Like other elementals, they had good darkvision. While physically weaker, they h
 #airshield 80
 #stormimmune
 #unsurr 4
+#voidsanity 1 --outsider
 #end
 
 -- 7027 -- Large Air Elemental
@@ -24411,6 +24540,7 @@ Like other elementals, they had good darkvision. While physically weaker, air el
 #airshield 80
 #stormimmune
 #unsurr 4
+#voidsanity 1 --outsider
 #end
 
 -- 7028 -- Huge Air Elemental
@@ -24463,6 +24593,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #noleader
 #nomagicleader
 #noundeadleader
+#voidsanity 1 --outsider
 #end
 
 -- 7030-- DWARVEN LORD
@@ -24567,6 +24698,7 @@ The Flameguard were the footsoldiers, made of up of the young. Their lack of dis
 #magicbeing
 #incunrest 5
 #popkill 2
+#voidsanity 1 --outsider
 #end
 
 
@@ -25451,6 +25583,7 @@ Through these schemings and mischief, Graz'zt became the chief enemy of Waukeen,
 #mr 10
 #ap 8
 #weapon 229 -- Flame Strike
+#voidsanity 1 --outsider
 #end
 
 -- 7054 -- Small Fire Elemental
@@ -25485,6 +25618,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #bluntres
 #uwdamage 20
 #fireshield 4
+#voidsanity 1 --outsider
 #end
 
 -- 7055 -- Medium Fire Elemental
@@ -25519,6 +25653,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #bluntres
 #uwdamage 20
 #fireshield 8
+#voidsanity 1 --outsider
 #end
 
 -- 7056 -- Large Fire Elemental
@@ -25556,6 +25691,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #bluntres
 #uwdamage 20
 #fireshield 8
+#voidsanity 1 --outsider
 #end
 
 -- 7057 -- Huge Fire Elemental
@@ -25598,6 +25734,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #nomagicleader
 #noundeadleader
 #mapmove 0
+#voidsanity 1 --outsider
 #end
 
 -- 7058 -- Homunculus
@@ -25858,6 +25995,7 @@ Born in 800 DR, he lived a storied life as a heroic adventurer before turning to
 #mr 10
 #ap 8
 #weapon 90 -- Crush
+#voidsanity 1 --outsider
 #end
 
 -- 7064 -- Small Water Elemental
@@ -25897,6 +26035,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #bluntres
 #amphibian
 #mapmove 0
+#voidsanity 1 --outsider
 #end
 
 -- 7065 -- Medium Water Elemental
@@ -25937,6 +26076,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #bluntres
 #amphibian
 #mapmove 0
+#voidsanity 1 --outsider
 #end
 
 -- 7066 -- Large Water Elemental
@@ -25979,6 +26119,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #amphibian
 #mapmove 0
 #unsurr 2
+#voidsanity 1 --outsider
 #end
 
 -- 7067 -- Huge  Water Elemental
@@ -26025,6 +26166,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #noleader
 #nomagicleader
 #noundeadleader
+#voidsanity 1 --outsider
 #end
 
 -- 7068 -- Beholder
@@ -26084,6 +26226,7 @@ Beholder minds were divided into two separate entities. Each of these entities t
 #addupkeep -500
 #pooramphibian
 #fixedresearch 6
+#voidsanity 1 --aberration
 #end
 
 -- 7069 -- Thri-Kreen
@@ -26125,6 +26268,7 @@ Thri-kreen were also naturally psionic beings, possessing psionic energy and kno
 #mapmove 20
 #enc 2
 #montag 13003
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7070 -- "Unicorn Charger"
@@ -26162,6 +26306,7 @@ They were often sent as servants of Corellon Larethian, Mielikki, Mystra, Silvan
 #autohealer 1
 #autodishealer 1
 #poorleader 
+#voidsanity 1 --magical beast
 #end 
 
 -- 4071 -- Owlbear
@@ -26184,7 +26329,8 @@ More cunning than an owl, these creatures were incredibly aggressive and obstina
 #weapon 20 -- bite
 #weapon 236 -- Claw (slotless)
 #weapon 236 -- Claw (slotless)
-#mr 9
+#mr 13
+#voidsanity 1 -- Magical beast
 #end 
 
 -- 7072 -- Displacer Beast
@@ -26221,6 +26367,7 @@ Equally at home in woods, mountains, plains and even the underdark, they are kno
 #weapon 20 -- bite
 #airshield 20
 #glamour
+#voidsanity 1 -- Magical beast
 #end 
 
 -- 7073 -- Lantern Archon cr 1 xp 0-24
@@ -26252,6 +26399,7 @@ In the view of some scholars, lantern archons were not true archons but only 'pr
 #mor 30
 #maxage 6000
 #noundeadleader
+#voidsanity 1 --outsider
 #end
 
 -- 7074 -- Hound Archon 
@@ -26290,6 +26438,7 @@ They could not only see invisible and shapeshifting beings for who and what they
 #awe 2
 #maxage 6000
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --outsider
 #end
 
 -- 4075 -- Warden Archon 
@@ -26328,6 +26477,7 @@ They could not only see invisible and shapeshifting beings for who and what they
 #magicskill 9 2
 #noundeadleader
 #maxage 6000
+#voidsanity 1 --outsider
 #end
 
 -- 4076 -- Sword Archon 
@@ -26371,6 +26521,7 @@ Their twin, holy flaming longswords were extensions of their arms. A sword archo
 #superiormagicleader
 #noundeadleader
 #maxage 6000
+#voidsanity 1 --outsider
 #end
 
 -- 7077 -- Iron Golem
@@ -26450,6 +26601,7 @@ Salamander Nobles are the lords of their kind - organized, disciplined, and capa
 #fixforgebonus 1
 #expertmagicleader
 #magicbeing
+#voidsanity 1 --outsider
 #end
 
 
@@ -26483,6 +26635,7 @@ They are highly effective in sieges, both offensively and defensively."
 #siegebonus 50
 #castledef 25
 #invulnerable 20
+#inanimate
 #end
 
 
@@ -26515,6 +26668,7 @@ They are also effective in sieges, both offensively and defensively."
 #siegebonus 25
 #castledef 25
 #invulnerable 18
+#inanimate
 #end
 
 
@@ -26621,6 +26775,7 @@ They lived underground, at least until they erupted from the earth to attack. Th
 #name "Spawn of Sebek"
 #descr "The Mulhorandi god Sebek was a fecund god. Whether by emanation or by procreation, his worshippers were frequently blessed with offspring that bore great power and grew to incredible size. With the guile of a human and the ferocity of a great crocodile, the Spawn of Sebek were fearsome on the battlefield."
 #amphibian
+#voidsanity 1 --monstrous humanoid
 #end
 
 #selectmonster 3490 -- Rashemaar Hathran
@@ -26813,6 +26968,7 @@ Death was not feared in minotaur society. On the contrary, death was considered 
 #pillagebonus 5
 #combatcaster 
 #holy
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7087 -- Hornblower of Baphomet
@@ -26859,6 +27015,7 @@ Death was not feared in minotaur society. On the contrary, death was considered 
 #pillagebonus 10
 #combatcaster 
 #holy
+#voidsanity 1 --monstrous humanoid
 #end
 
 
@@ -27202,6 +27359,7 @@ Tiamat wanted to take control of the Realms, and even as she was thwarted again 
 #unsurr 10
 #holy
 #nowish
+#voidsanity 1 --dragon/god
 #end
 
 
@@ -28155,6 +28313,7 @@ Whips can take and effectively lead various lesser amphibious slaves, including 
 #slaverbonus 2
 #slaver 7564 -- Aquatic Slaves
 #taskmaster 4
+#voidsanity 1 --monstrous humanoid
 #end 
 
 -- 7145 -- Kuo-Toa Arch Priest
@@ -28201,6 +28360,7 @@ Each council member dictated a different element of kuo-toa society, with Poolgo
 #armor 43 -- hydra skin armor
 #armor 234 -- magic headdress
 #weapon 238 -- magic staff
+#voidsanity 1 --monstrous humanoid
 #end 
 
 -- 7146 -- Locathah Nomad
@@ -28301,6 +28461,7 @@ Free locathah live in communal tribes. Those of 100 members or less are usually 
 #descr "Though nearly impossible to domesticate, some deep-water races have managed to capture and pacify the mighty Serpents of the Sea and utilize them to terrorize their enemies. The cost of keeping and feeding them makes this practice difficult to sustain."
 #gcost 140
 #supplybonus -10
+#voidsanity 1 -- Magical beast
 #end
 
 
@@ -28361,6 +28522,7 @@ Acting as the eyes of the priest-kings, Inquisitors are both advisors and defend
 #darkvision 100
 #darkpower 3
 #poorleader
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7153 -- Kuo-Toan Pincer - UNIT
@@ -28398,6 +28560,7 @@ Acting as the eyes of the priest-kings, Inquisitors are both advisors and defend
 #bodyguard 5
 #standard 1
 #holy
+#voidsanity 1 --monstrous humanoid
 #end
 
 
@@ -28448,6 +28611,7 @@ Lashes conducted constant sacrifices in the name of their gods. Captives and sla
 #autodishealer 1
 #researchbonus -8
 #poorleader
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7155 -- Kuo-Toan Monitor 
@@ -28485,6 +28649,7 @@ The monitors practiced a special kuo-toan type of martial art that involved the 
 #poisonres 5
 #poorleader
 #holy
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7156 -- Kuo-Toan Harpooner - UNIT
@@ -28524,6 +28689,7 @@ Any kuo-toa who succumbed to madness was captured. The violent were either sacri
 #darkpower 3
 #poisonres 5
 #montag 13003
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7157 -- Kuo-Toan Cutter - UNIT
@@ -28563,6 +28729,7 @@ When kuo-toa reached semi-maturity, it was the Cutters who led the culling ritua
 #poisonres 5
 #montag 13003
 #holy
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7158 -- Gulper
@@ -28638,6 +28805,7 @@ Leviathans never left the water, preferring to maintain their advantage instead.
 #okleader
 #inspirational 4
 #taskmaster 2
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7160 -- Cloaker Lord
@@ -28692,6 +28860,7 @@ Cloakers preferred not to travel long distances and were generally reclusive, ho
 #itemslots 1
 #miscshape
 #goodleader
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7161 -- Cloaker
@@ -28737,6 +28906,7 @@ Cloakers preferred not to travel long distances and were generally reclusive, ho
 #maxage 300
 #itemslots 1
 #miscshape
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7162 -- Quaggoth Hunter
@@ -28779,6 +28949,7 @@ By the 14th century DR, a population of quaggoths, orcs, and half-breeds (called
 #stealthy 10
 #berserk 3
 #montag 13003
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7163 -- Quaggoth Jald
@@ -28819,6 +28990,7 @@ By the 14th century DR, a population of quaggoths, orcs, and half-breeds (called
 #stealthy 10
 #berserk 3
 #okleader
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7164 -- Quaggoth Thonot Shaman
@@ -28864,6 +29036,7 @@ By the 14th century DR, a population of quaggoths, orcs, and half-breeds (called
 #researchbonus -5
 #autohealer 1
 #holy
+#voidsanity 1 --monstrous humanoid
 #end
 
 
@@ -28905,6 +29078,7 @@ Umber hulks were solitary, not due to a hatred of one another but simply because
 #mor 10
 #darkvision 100
 #poorleader
+#voidsanity 1 --aberration
 #end
 
 -- 7166 -- Hook Horror 
@@ -28942,6 +29116,7 @@ Only when they were desperately hungry would hook horrors turn to foods such as 
 #poisonres 10
 #appetite -1
 #deathdisease 2
+#voidsanity 1 --aberration
 #end
 
 -- 7167 -- Drow Arch Mage 
@@ -29278,6 +29453,7 @@ Lolth created all driders sexless because she did not want to have a race of cap
 #mountedhumanoid
 #itemslots 860678
 #eyes 2
+#voidsanity 1 --aberration
 #end
 
 -- 7174 -- Drow Slaves
@@ -29391,6 +29567,7 @@ In the years that followed the collapse of their last empire, sometime around -3
 #magicskill 52 2
 #startage 1400
 #maxage 2000
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7178 -- Merrshaulk -- PRETENDER
@@ -29440,6 +29617,7 @@ Gogglers were excellent fishermen, capable of diving deep to collect mollusks, c
 #darkpower 3
 #poisonres 5
 #gcost 10006
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7180 -- Kuo-toan Guard
@@ -29471,6 +29649,7 @@ Guards were drawn from the lowest caste of serfs within kuo-toan society. Armed 
 #poisonres 5
 #gcost 10008
 #chaosrec 1
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7181 -- Dwarven Template
@@ -30117,6 +30296,7 @@ In 1328, Masoj ordered Guenhwyvar to kill his apprentice, but the panther's bond
 #mr 18
 #mor 30
 #hp 24
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7204 -- Catti-brie
@@ -30358,6 +30538,7 @@ Naturally cautious, Intellect Devourers preferred to work only in the dark and s
 #magicskill 7 1
 #researchbonus -10
 #holy
+#voidsanity 1 --aberration
 #end
 
 
@@ -30385,6 +30566,7 @@ Ogres were known to typically associate with goblinoids, orcs, and their fellow 
 #armor 408 -- thick skull
 #darkvision 50
 #montag 13005
+#voidsanity 1 --giant
 #end
 
 -- 7211 -- Phaerimm
@@ -30448,6 +30630,7 @@ Phaerimms dated back to the Days of Thunder. The wizards of the sarrukh empire b
 #thronekill
 #defector 99
 #nowish
+#voidsanity 1 --aberration
 #end
 
 
@@ -30816,6 +30999,7 @@ In combat, Ghaunadans were adept at waiting for the opponents to strike, then en
 #seduce 8
 #shapechange 7333
 #maxage 350
+#voidsanity 1 --ooze
 #end
           
 
@@ -30849,6 +31033,7 @@ Ochre jellies were known to exist in the dungeon of Xûl-Jarak in Thar. They cou
 #poisonres 30
 -- #firstshape 7220
 #shrinkhp 31
+#voidsanity 1 --ooze
 #end
 
 -- 7221 -- Ochre Jelly
@@ -30880,6 +31065,7 @@ Ochre jellies were known to exist in the dungeon of Xûl-Jarak in Thar. They cou
 #firstshape 7220
 --#batstartsum1 7221
 #shrinkhp 8
+#voidsanity 1 --ooze
 #end
 
 
@@ -30911,6 +31097,7 @@ Ochre jellies were known to exist in the dungeon of Xûl-Jarak in Thar. They cou
 -- #stealthy 20
 #poisonres 30
 --#batstartsum1 7222
+#voidsanity 1 --ooze
 #end
 
 -- 7224 -- Duergar Master Arcane Artisan
@@ -31352,6 +31539,7 @@ Some black puddings  managed to survive for a very long time and came to be know
 #woundfend 99
 #acidshield 8
 #xpshape 150
+#voidsanity 1 --ooze
 #end
 
 
@@ -31403,6 +31591,7 @@ Such puddings were considered sacred by the church of Ghaunadaur and are believe
 #acidshield 10
 #holy
 #amphibian
+#voidsanity 1 --ooze
 #end
 
 -- 7237 -- Duergar Thuldor Cleric
@@ -31467,6 +31656,7 @@ Many temples of Laduguer included large stables used to care for and breed these
 #darkvision 60
 -- #stealthy 15
 #holy
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7239 -- Duergar Kavalrachni 
@@ -31789,6 +31979,8 @@ Although the majority of the fungus folk were peaceful, there existed a far more
 #darkvision 80
 #startage 3
 #maxage 24
+#plant
+#voidsanity 1 --plant
 #end
 
 #newmonster 7247 -- Myconid Sprout Firstshape
@@ -32660,6 +32852,7 @@ They worshipped Lolth despite their hatred of the drow. While devout worshippers
 #poisonres 5
 #gcost 10014
 #montag 13003
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7268 -- Chitine Cleric
@@ -32690,6 +32883,7 @@ Choldriths and their chitine communities were found throughout the upper and mid
 #okleader
 #poisonres 15
 #gcost 10020
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7269 -- Wraith
@@ -32852,6 +33046,7 @@ Cockatrices ferociously attacked any creature that appeared to threaten them or 
 #darkvision 60
 #animal
 #undisciplined
+#voidsanity 1 -- Magical beast
 #end
 
 
@@ -33718,6 +33913,7 @@ Despite their aggressive, animalistic natures, they were quite intelligent and c
 #magicskill 1 1
 #researchbonus -10
 #mastersmith -2
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7308 -- Kraken Adult 
@@ -33758,6 +33954,7 @@ Despite their aggressive, animalistic natures, they were quite intelligent and c
 #startage 150
 #maxage 500
 #goodleader
+#voidsanity 1 --Magical beast/aberration
 #end
 
 #newmonster 7310 -- Death Knight Dreadlord
@@ -33856,6 +34053,7 @@ They worshipped Lolth despite their hatred of the drow. While devout worshippers
 #poisonres 5
 #slave
 #montag 13005
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- Human Slave
@@ -33924,6 +34122,7 @@ Though they had long ago been gifted with the ability to breathe underwater by t
 #slave
 --#montag 13005
 #undisciplined
+#voidsanity 1 --monstrous humanoid
 #end
 
 #newmonster 7317 -- Drow Commander
@@ -33971,6 +34170,7 @@ In the Feydark, fomorian rulers were typically known to enforce their rule throu
 #stealthy 35
 #berserk 3
 #okleader
+#voidsanity 1 --giant
 #end
 
 -- sacred armored black unicorn
@@ -33998,6 +34198,7 @@ In the Feydark, fomorian rulers were typically known to enforce their rule throu
 #mapmove 20
 #stealthy 20
 #holy
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7321 -- Waterdeep Crossbowmen
@@ -34173,6 +34374,7 @@ Shrines and temples devoted to Ghaunadaur were foul. Rooms often were filled wit
 #acidshield 8
 #heal
 #adeptsacr 1
+#voidsanity 1 --ooze
 #end
 
 -- 7326 -- Unholy Black Pudding
@@ -34475,6 +34677,7 @@ The Spiritbound Heirophant's animal companion is an illustrious gold dragon."
 #itemslots 17571840
 #fear 10
 #unsurr 10
+#voidsanity 1 --dragon
 #end
 
 -- 7333 -- Ghaunadan Shapeshift Form
@@ -34526,6 +34729,7 @@ In combat, Ghaunadans were adept at waiting for the opponents to strike, then en
 #seduce 8
 #shapechange 7219 -- Ghaunadan
 #maxage 350
+#voidsanity 1 --ooze
 #end
 
 -- 7334 -- Slithermorph
@@ -34562,6 +34766,7 @@ They had natural resistances to fire, acid, cold, and poison."
 #weapon 236 -- claw
 #weapon 20 -- bite
 #secondshape 7335 -- Slithermorph Ooze Form
+#voidsanity 1 --ooze
 #end
 
 -- 7335 -- Slithermorph Ooze Form
@@ -34596,6 +34801,7 @@ They had natural resistances to fire, acid, cold, and poison."
 #regenerate 10
 #heal
 #firstshape 7334 -- Slithermorph
+#voidsanity 1 --ooze
 #end
 
 
@@ -35319,6 +35525,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #stealthy 30
 #inspiringres 1
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --aberration
 #end
 
 -- 7351 -- Spirit Naga -- CR9 
@@ -35376,6 +35583,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #magicskill 9 2
 #stealthy 50
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --aberration
 #end
 
 -- 7352 -- Guardian Naga -- CR10 
@@ -35430,6 +35638,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #custommagic 384 200
 #stealthy 30
 #domimmortal
+#voidsanity 1 --aberration
 #end
 
 -- 7353 -- Bone Naga 
@@ -35471,6 +35680,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #unsurr 2
 #bodyguard 3
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --aberration
 #end
 
 -- 7354 -- Water Naga -- CR7 
@@ -35525,6 +35735,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #custommagic 384 200
 #stealthy 50
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --aberration
 #end
 
 -- 7355 -- Banelar Naga -- CR8 
@@ -35580,6 +35791,7 @@ From their chins, Banelars sported beards of tentacles capable of wielding rings
 #magicskill 7 2
 #magicskill 9 3
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --aberration
 #end
 
 
@@ -35640,6 +35852,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #magicskill 8 2
 #magicskill 9 2
 #stealthy 50
+#voidsanity 1 --aberration
 #end
 
 -- 7357 -- Dark Naga -- RECRUITABLE
@@ -35698,6 +35911,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #magicskill 7 2
 #stealthy 30
 #inspiringres 1
+#voidsanity 1 --aberration
 #end
 
 -- 7358 -- Water Naga -- RECRUITABLE
@@ -35754,6 +35968,7 @@ Nagas were first created by the sarrukh in the early days of Mhairshaulk as a se
 #magicskill 9 1
 #custommagic 384 200
 #stealthy 50
+#voidsanity 1 --aberration
 #end
 
 
@@ -36528,6 +36743,7 @@ They could often be found in the service of Aboleths and their presence often ma
 #prot 20
 #poisonres 20
 #montag 13016 -- Greater Aquatic Slavetype
+#voidsanity 1 --aberration
 #end
 
 -- 7374 -- The Shape of Water
@@ -36603,6 +36819,7 @@ Woe to the wayward soul who finds himeself, through idiotic bravery or foolish c
 #holy
 #magicbeing
 #gcost 0 -- Summoned unit only
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7376 -- Grick
@@ -36647,6 +36864,7 @@ They were known to serve a variety of masters, but the Abolethic Sovereignty was
 #bluntres 
 #pierceres
 #slashres
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7377 -- Locathah Hunter
@@ -36850,6 +37068,7 @@ Drifting to Faerun and other planets on the material plane, they hailed from the
 #weapon 1835 -- Nothic Gaze
 #undisciplined
 #skirmisher 2
+#voidsanity 1 --aberration
 #end
 
 
@@ -36951,6 +37170,7 @@ They lacked any form of priesthood or nobility and instead formed free-swimming 
 #weapon 600 -- crab claw
 #weapon 20 -- bite
 --#montag 13016 -- Greater Aquatic Slavetype
+#voidsanity 1 --Magical beast/aberration
 #end
 
 -- 7384 -- Anguillian Chieftain
@@ -36989,6 +37209,7 @@ They lacked any form of priesthood or nobility and instead formed free-swimming 
 -- #stealthy 5
 #weapon 642 -- Meteorite Trident
 #weapon 20 -- bite
+#voidsanity 1 --Magical beast/aberration
 #end
 
 -- 7385 -- Darkmantle Enveloper
@@ -37029,6 +37250,7 @@ Darkmantles had the magical power of flight and the ability to create an aura of
 #flying
 #poorleader
 #glamour
+#voidsanity 1 --Magical beast/aberration
 #end
 
 -- 7386 -- Darkmantle
@@ -37068,6 +37290,7 @@ They were quite small - a typical specimen weighed just 30 pounds (ten kilograms
 #flying
 #undisciplined
 #glamour
+#voidsanity 1 --Magical beast/aberration
 #end
 
 
@@ -37112,6 +37335,7 @@ They were quite small - a typical specimen weighed just 30 pounds (ten kilograms
 #addupkeep -500
 #patrolbonus 10
 #pooramphibian
+#voidsanity 1 --aberration
 #end
 
 -- 7388 -- Eye Tyrant
@@ -37168,6 +37392,7 @@ Occasionally, a beholder, while sleeping, would warp reality with its subconscio
 #addupkeep -500
 #pooramphibian
 #fixedresearch 10
+#voidsanity 1 --aberration
 #end
 
 
@@ -37236,6 +37461,7 @@ Twiceborn and Lich beholder mages become Death Tyrants. "
 #twiceborn 7390 -- Death Tyrant
 #lich 7390 -- Death Tyrant
 #pooramphibian
+#voidsanity 1 --aberration
 #end
 
 
@@ -37297,6 +37523,7 @@ Most beholders regarded Death Tyrants as abominations and they were rarely encou
 #diseaseres 99
 #immortal
 #undead
+#voidsanity 1 --aberration
 #end
 
 -- 7391 -- Gazer
@@ -37342,6 +37569,7 @@ In the mid-to-late 14th century DR, several evil spellcasters — including the 
 #maxage 120
 #flying
 #pooramphibian
+#voidsanity 1 --aberration
 #end
 
 
@@ -37390,6 +37618,7 @@ Like most beholders, Spectators can subsist off the raw magical energies that pe
 #neednoteat
 #pooramphibian
 #fixedresearch 4
+#voidsanity 1 --aberration
 #end
 
 -- 7393 -- Mindwitness
@@ -37442,6 +37671,7 @@ In combat, a mindwitness behaved, unsurprisingly, much like a combination of min
 #prophetshape 5049 -- Elder Brain
 #pooramphibian
 #fixedresearch 6
+#voidsanity 1 --aberration
 #end
 
 -- 7394 -- Imaskari Wizard
@@ -37578,6 +37808,7 @@ Mechanic: Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP). "
 #forestsurvival
 #swampsurvival
 #unsurr 10
+#voidsanity 1 --dragon
 #end
 
 
@@ -37997,6 +38228,7 @@ During the 13th century DR, a tribe of dragonkin resided in the mountains overlo
 #magicbeing
 #stealthy 10
 #pillagebonus 1
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7411 -- Dragonkin Captain
@@ -38050,6 +38282,7 @@ During the 13th century DR, a tribe of dragonkin resided in the mountains overlo
 #okmagicleader
 #stealthy 10
 #pillagebonus 1
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7412 -- Dragonkin Sorcerer
@@ -38104,6 +38337,7 @@ During the 13th century DR, a tribe of dragonkin resided in the mountains overlo
 #magicbeing
 -- #stealthy 10
 -- #pillagebonus 1
+#voidsanity 1 --monstrous humanoid
 #end
 
 
@@ -38587,6 +38821,7 @@ Giant eagles were found in the Nether, Rauvin, and Ice Mountains, as well as the
 #bravemount 50
 #smartmount 50
 #holy
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7424 -- Archenrider
@@ -40214,6 +40449,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #forestsurvival
 #swampsurvival
 #unsurr 10
+#voidsanity 1 --dragon
 #end
 
 -- 7464 -- Shadow DRAGON HATCHLING
@@ -40278,6 +40514,7 @@ Hatchlings grow into juvenile dragons at 8 months (8 XP) game time."
 #forestsurvival
 #swampsurvival
 #unsurr 10
+#voidsanity 1 --dragon
 #end
 
 -- 7465 -- Shadow DRAGON JUVENILE		XP 26-50 	NO SLOTS
@@ -40350,6 +40587,7 @@ Juvenile dragons drain a region of population (20 pop per turn) and gold (-4 per
 #incprovdef 2
 #stealthy 35
 #nohof
+#voidsanity 1 --dragon
 #end
 
 -- 7466 -- Shadow DRAGON YOUNG ADULT		
@@ -40423,6 +40661,7 @@ Young Adult dragons possess greater magic than juveniles. They kill more populat
 #incprovdef 2
 #stealthy 25
 #nohof
+#voidsanity 1 --dragon
 #end
 
 -- 7467 -- SHADOW DRAGON MATURE	
@@ -40488,6 +40727,7 @@ Bigger, stronger, more health, thicker scales, and more diverse magic, the Matur
 #incprovdef 3
 #stealthy 25
 #nohof
+#voidsanity 1 --dragon
 #end
 
 -- 7468 -- Ancient Shadow Dragon
@@ -40547,6 +40787,7 @@ New mechanics: Bigger, stronger, more health, thicker scales, more magic, but al
 #twiceborn 7469 -- DRACOLICH, SHADOW
 #lich 7469 -- DRACOLICH, SHADOW
 #nohof
+#voidsanity 1 --dragon
 #end
 
 
@@ -40730,6 +40971,7 @@ They were surprisingly intelligent despite having no brain structures or any sim
 -- #stealthy 10
 #undisciplined
 #appetite 2
+#voidsanity 1 --plant
 #end
 
 #newmonster 7473 -- Great Druid of the North 
@@ -40825,6 +41067,7 @@ For many years, Gildenfire took these matters into his own hands, fighting off o
 #startage 650
 #unique
 #nowish
+#voidsanity 1 --dragon
 #end
 
 -- 7475 -- Gildenfire - GOLD DRAGON
@@ -40886,6 +41129,7 @@ For many years, Gildenfire took these matters into his own hands, fighting off o
 #startage 650
 #unique
 #nowish
+#voidsanity 1 --dragon
 #end
 
 
@@ -41333,14 +41577,17 @@ During the Darkwalker Wars, they successfully tainted several Moonwells, creatin
 
 #selectmonster 981 
 #name "Voadkyn Wood Giant"
+#voidsanity 1 --plant
 #end
 
 #selectmonster 932
 #name "Vegepygmy"
+#voidsanity 1 --plant
 #end
 
 #selectmonster 330
-#name "Tendriculous"
+#name "Tendriculos"
+#voidsanity 1 --plant
 #end
 
 #selectmonster 3066
@@ -41352,6 +41599,7 @@ According to the Encyclopaedia Deifica, the existence of treants in Faerun preda
 Among the most famous of the Treants was Turlang, guardian of a grove named after himself in the northwester region of the High Forest. When Hellgate Keep was annihilated in 1369 DR, Turlang organized a massive effort to permanently seal the crater and prevent any surviving demons from escaping into the forest.
 
 All treants were known to enjoy mutually beneficial relationships with forest animals, even those that might be seen as dangerous monsters to outsiders."
+#voidsanity 1 --plant
 #end
 
 -- 7487 -- Centaur Huntsman
@@ -41363,6 +41611,7 @@ All treants were known to enjoy mutually beneficial relationships with forest an
 
 They had good relations with elves, being as they were both creatures of the forest. They generally despised humans and dwarves but weren't actively hostile toward them and tolerated gnomes and halflings. It was said that centaurs had a superstitious fear of dragons and giants."
 #appetite 2
+#voidsanity 1 --monstrous humanoid
 #end
 
 
@@ -41375,6 +41624,7 @@ They had good relations with elves, being as they were both creatures of the for
 
 They had good relations with elves, being as they were both creatures of the forest. They generally despised humans and dwarves but weren't actively hostile toward them and tolerated gnomes and halflings. It was said that centaurs had a superstitious fear of dragons and giants."
 #appetite 2
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7489 -- Centauride Thorncaller
@@ -41386,6 +41636,7 @@ They had good relations with elves, being as they were both creatures of the for
 #magicskill 6 2
 #magicskill 9 1
 #appetite 2
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7490 -- Centaur Windrunner
@@ -41403,6 +41654,7 @@ The Centaur Windrider was vital to his tribe, in ensuring its ability to feed it
 #magicskill 1 1
 #custommagic 8448 100
 #forestsurvival
+#voidsanity 1 --monstrous humanoid
 #end
 
 
@@ -41411,7 +41663,8 @@ The Centaur Windrider was vital to his tribe, in ensuring its ability to feed it
 #copyspr 1704 
 #copystats 1704 
 #name "Centaur Protector"
-#descr "Cantaurs disliked wearing clothes of any kind, but when dangers necessitated it, they were capable of strapping up. Every tribe travelled with a few members who were proficient in the use, making and maintainence of light armors specially designed for their bodies."
+#descr "Centaurs disliked wearing clothes of any kind, but when dangers necessitated it, they were capable of strapping up. Every tribe travelled with a few members who were proficient in the use, making and maintainence of light armors specially designed for their bodies."
+#voidsanity 1 --monstrous humanoid
 #end
 
 #selectmonster 466
@@ -41421,11 +41674,13 @@ The Centaur Windrider was vital to his tribe, in ensuring its ability to feed it
 #selectmonster 227
 #name "Satyr Sneak"
 #incunrest 5
+#voidsanity 1 --fey
 #end
 
 #selectmonster 228
 #name "Satyr"
 #incunrest 4
+#voidsanity 1 --fey
 #end
 
 #selectmonster 3509 -- Wizard's Apprentice
@@ -41435,7 +41690,6 @@ The front of the tower was adorned with a simple wooden door and the inside was 
 
 Instead, it was at the Twisted Tower where most students found themselves, walking the halls between library, scriptorium, and the mess hall, lost in books and dreams."  
 #clearspec
-
 #end
  
 
@@ -41523,6 +41777,7 @@ Equally at home in woods, mountains, plains and even the underdark, they are kno
 #wastesurvival
 #swampsurvival
 #shapechange 7482 -- Wild Elf Druid
+#voidsanity 1 --magic beast
 #end
 
 
@@ -42389,6 +42644,7 @@ Only the oldest and most physically weak drow wizards were completely inducted i
 #invulnerable 25
 #unsurr 2
 #gcost 0 -- Summoned unit only
+#inanimate
 #end
 
 -- 7514 -- Carrion Crawler
@@ -42429,6 +42685,7 @@ Fecund, pregnant females laid up to a hundred eggs in an underground nest lined 
 #weapon 1846 -- Carrion Crawler Tentacle
 #weapon 1846 -- Carrion Crawler Tentacle
 #montag 13016 -- Greater Aquatic Slavetype
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7515 -- Drow Adept
@@ -42698,6 +42955,7 @@ Hippocampi were most commonly found in the inner sea but they also had made thei
 #smartmount 85
 #nofalldmg
 #darkvision 50
+#voidsanity 1 --magic beast
 #end
 
 -- 7524 -- Koalinth Soldier
@@ -42865,6 +43123,7 @@ While Tritons could take to the land without fear, they lost many of their physi
 #weapon 1867 -- Coral Trident
 #armor 431 -- Shellmail Armor
 #holy
+#voidsanity 1 --outsider
 #end
 
 
@@ -42917,6 +43176,7 @@ Centuries ago, the triton fought a number of elemental evils within the Elementa
 #holy
 #poorleader
 #incprovdef 2
+#voidsanity 1 --outsider
 #end
 
 -- 7531 -- Triton Theurge -- Landshape
@@ -42966,6 +43226,7 @@ Centuries ago, the triton fought a number of elemental evils within the Elementa
 #holy
 #poorleader
 #incprovdef 2
+#voidsanity 1 --outsider
 #end
 
 
@@ -43001,12 +43262,13 @@ While Tritons could take to the land without fear, they lost many of their physi
 #maxage 350
 #amphibian
 #darkvision 80
-#darkpower 1
+#darkpower 1er
 #clearweapons
 #cleararmor 
 #weapon 1867 -- Coral Trident
 #armor 431 -- Shellmail Armor
 #holy
+#voidsanity 1 --outsider
 #end
 
 -- 7534 -- Mermaid Wavekeeper
@@ -43139,6 +43401,7 @@ Due to their gills, sea elves could only leave the water for brief periods. Whil
 #custommagic 3584 20 -- wes
 #okleader
 #inspirational -1
+#voidsanity 1 --outsider
 #end
 
 -- 7537 -- Triton Crusader -- Landshape
@@ -43180,6 +43443,7 @@ Due to their gills, sea elves could only leave the water for brief periods. Whil
 #custommagic 3584 20 -- wes
 #okleader
 #inspirational -1
+#voidsanity 1 --outsider
 #end
 
 -- 7538 -- Sea Elf Ranger -- Watershape
@@ -44049,6 +44313,7 @@ Now awake, he seeks his revenge."
 #startingaff 524288 -- Lost Eye
 #domimmortal
 #holy
+#voidsanity 1 --demigod
 #end
 
 -- 7558 -- Iakhovas Hybrid Form -- Watershape
@@ -44103,6 +44368,7 @@ For thousands of years, Iakhovas brooded, and eventually sought magical artifact
 #spiritsight
 #holy
 #domimmortal
+#voidsanity 1 --demigod
 #end
 
 
@@ -44160,6 +44426,7 @@ Now awake, he seeks his revenge."
 #spiritsight
 #holy
 #domimmortal
+#voidsanity 1 --demigod
 #end
 
 -- 7560 -- Iakhovas Human Form 
@@ -44215,6 +44482,7 @@ Now awake, he seeks his revenge."
 #researchbonus 5
 #holy
 #domimmortal
+#voidsanity 1 --demigod
 #end
 
 -- 7561 -- Deep Vodyanoi -- Aquatic Umberhulk
@@ -44258,6 +44526,7 @@ Panzuriel, an ancient and evil sea god, was often the deity of choice for vodyan
 #stealthy 50
 #pillagebonus 2
 #montag 13016 -- Greater Aquatic Slavetype
+#voidsanity 1 --aberration
 #end
 
 -- 7562 -- Scrag Shaman 
@@ -44304,6 +44573,7 @@ Saltwater scrags found light, even that of merely a full moon, uncomfortable. Th
 #magicskill 6 1
 #magicskill 8 1
 #custommagic 41472 100 
+#voidsanity 1 --giant
 #end
 
 
@@ -44347,6 +44617,7 @@ All ixitxachitls fanatically worshipped one dark god or another - most often Ilx
 #goodleader
 #stealthy 50
 #pillagebonus 5
+#voidsanity 1 --aberration
 #end
 
 
@@ -44393,6 +44664,7 @@ All demon rays fanatically worshipped one dark god or another - whichever aided 
 #stealthy 50
 #pillagebonus 1
 #holy
+#voidsanity 1 --aberration
 #end
 
 -- 7566 -- Merrow Behemoth -- Watershape
@@ -44433,6 +44705,7 @@ Merrow will lose half their hp each turn they remain on land."
 #armor 408 -- thick skull
 #darkvision 50
 #amphibian
+#voidsanity 1 --giant
 #end
 
 
@@ -44475,6 +44748,7 @@ In the Sunken City of Ascarle, located on the fringes of the Sea of Swords, a co
 #amphibian
 -- #landdamage 50
 #montag 13016 -- Greater Aquatic Slavetype
+#voidsanity 1 --giant
 #end
 
 
@@ -44516,6 +44790,7 @@ Merrow will lose half their hp each turn they remain on land."
 #darkvision 50
 #amphibian
 #okleader
+#voidsanity 1 --giant
 #end
 
 
@@ -44558,6 +44833,7 @@ Merrow will lose half their hp each turn they remain on land."
 #amphibian
 -- #landdamage 50
 #okleader
+#voidsanity 1 --giant
 #end
 
 -- 7570 -- Demon Ray Zealot
@@ -44599,6 +44875,7 @@ Merrow will lose half their hp each turn they remain on land."
 #taskmaster 5
 #expertleader
 #stealthy 50
+#voidsanity 1 --aberration
 #end
 
 -- 7571 -- Sahuagin Guard -- Landshape
@@ -45717,6 +45994,7 @@ While they could sense their surroundings with perfect precision, they abhored s
 #maxage 80
 #quadruped
 #itemslots 20709378
+#voidsanity 1 -- Aberration
 #end
 
 
@@ -45756,6 +46034,7 @@ Early descriptions of morkoths were vague, likely due to their variety. Their bo
 #maxage 80
 #quadruped
 #itemslots 20709378
+#voidsanity 1 -- Aberration
 #end
 
 
@@ -45802,6 +46081,7 @@ Morkoth Mages were the lowest rank among the magocratic elite. They ruled over t
 #magicskill 8 1 --B1
 #custommagic 102912 100 --WDBH
 #custommagic 102912 10 --WDBH
+#voidsanity 1 -- Aberration
 #end
 
 -- 7601 -- Morkoth Arcount
@@ -45849,6 +46129,7 @@ Morkoth reproduction was a gruesome affair - in case you were curious - female m
 #magicskill 8 2 --B2
 #custommagic 1920 100 -- FAWE
 #custommagic 102912 100 --WDBH
+#voidsanity 1 -- Aberration
 #end
 
 
@@ -45897,6 +46178,7 @@ Morkoth wizards could not utilize the spellbooks normally handled by air-breathi
 #magicskill 8 2 --B2
 #custommagic 1920 200 -- Elemental x2
 #custommagic 63488 200 -- Sorcery x2
+#voidsanity 1 -- Aberration
 #end
 
 -- 7603 -- Morkoth Captain
@@ -45938,6 +46220,7 @@ Early descriptions of morkoths were vague, likely due to their variety. Their bo
 #quadruped
 #itemslots 18685958
 #okleader
+#voidsanity 1 -- Aberration
 #end
 
 -- 7604 -- Sea Elf Paladin -- Landshape
@@ -46348,6 +46631,7 @@ Sekolahn Dreadknights are accompanied into battle by 1d6 sharks."
 #unsurr 4
 #skilledrider 3
 #aquatic
+#demon
 #end 
 
 -- 7614 -- Merfolk Knight Commander
@@ -46419,6 +46703,7 @@ The earliest evidence of merfolk in Faerûn comes from the Inner Sea. Carvings i
 #magicskill 6 3 --D1
 #magicskill 7 3 
 --#startitem 558 -- "Dukar Coral Hand"
+#voidsanity 1 -- Aberration
 #end
 
 -- 7616 -- Baelnorn
@@ -46617,6 +46902,7 @@ Centuries ago, the triton fought a number of elemental evils within the Elementa
 #holy
 #okleader
 #inspiration 1
+#voidsanity 1 --giant
 #end
 
 
@@ -46659,6 +46945,7 @@ Centuries ago, the triton fought a number of elemental evils within the Elementa
 #holy
 #okleader
 #inspirational 1
+#voidsanity 1 --giant
 #end
 
 -- 7621 -- Triton Crossbowman -- Watershape
@@ -46698,6 +46985,7 @@ While all Tritons could take to the land without fear, they lost many of their p
 #armor 140 -- Shell Armor
 #weapon 1859 -- uw Crossbow
 #holy
+#voidsanity 1 --giant
 #end
 
 -- 7622 -- Triton Crossbowman -- Landshape
@@ -46737,6 +47025,7 @@ While all Tritons could take to the land without fear, they lost many of their p
 #weapon 25 -- crossbow
 #armor 140 -- Shell Armor
 #holy
+#voidsanity 1 --giant
 #end
 
 -- 7623 -- Merfolk Skirmisher
@@ -46943,6 +47232,7 @@ While slightly more brittle than other golems, coral golems can regenerate while
 #siegebonus 50
 #castledef 25
 #invulnerable 15
+#inanimate
 #end
 
 
@@ -47441,6 +47731,7 @@ They had both lungs and gills, allowing them to survive in both land and water e
 #prec 8
 #ap 8
 #mapmove 10
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7643 -- Sea Cat UW
@@ -47469,6 +47760,7 @@ They had both lungs and gills, allowing them to survive in both land and water e
 #prec 11
 #ap 15
 #mapmove 20
+#voidsanity 1 -- Magical beast
 #end
 
 
@@ -47502,6 +47794,7 @@ They had both lungs and gills, allowing them to survive in both land and water e
 #shapechange 7545 -- Sea Elf Druid -- Landshape
 #poorleader
 #beastmaster 3
+#voidsanity 1 --Magical beast/aberration
 #end
 
 -- 7645 -- Sea Cat Wildshape UW
@@ -47533,6 +47826,7 @@ They had both lungs and gills, allowing them to survive in both land and water e
 #shapechange 7539 -- Sea Elf Druid -- Watershape
 #poorleader
 #beastmaster 3
+#voidsanity 1 --Magical beast
 #end
 
 
@@ -47565,6 +47859,7 @@ Gogglers were excellent fishermen, capable of diving deep to collect mollusks, c
 #slave
 #montag 13013
 #montag 13016 -- Greater Aquatic Slavetype
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7647 -- Kuo-toan Slave Guard
@@ -47597,6 +47892,7 @@ Guards were drawn from the lowest caste of serfs within kuo-toan society. Armed 
 #poisonres 5
 #montag 13016 -- Greater Aquatic Slavetype
 #slave
+#voidsanity 1 --monstrous humanoid
 #end
 
 -- 7648 -- Barronar's Valkyrie
@@ -47669,6 +47965,7 @@ Take care in equipping him with anything other than a crown and 2 misc items, as
 #fixforgebonus 1
 #mountainsurvival
 #shapechange 7650 -- Mithbarakaz
+#voidsanity 1 --dragon
 #end
 
 
@@ -47726,6 +48023,7 @@ In his human form, Mith Barak maintains the facade of a proud, aging dwarf - sti
 #twiceborn 7458 -- DRACOLICH, RED
 #lich 7458 -- DRACOLICH, RED
 #shapechange 7649 -- Mith Barak
+#voidsanity 1 --dragon
 #end
 
 
@@ -47842,6 +48140,7 @@ Many took up lives as entertainers or adventurers, though in regions where genas
 #startage 25
 #maxage 65
 #firstshape -13017
+#voidsanity 1 --native outsider
 #end
 
 -- 7655 -- Ifrit Soldier
@@ -47875,6 +48174,7 @@ Many took up lives as entertainers or adventurers, though in regions where genas
 #fireshield 6
 #berserk 3
 #darkvision 80
+#voidsanity 1 --native outsider
 #end
 
 -- 7656 -- Oread Soldier
@@ -47907,6 +48207,7 @@ Many took up lives as entertainers or adventurers, though in regions where genas
 #acidres 10
 #woundfend 80
 #darkvision 100
+#voidsanity 1 --native outsider
 #end
 
 -- 7657 -- Undine Soldier
@@ -47940,6 +48241,7 @@ Many took up lives as entertainers or adventurers, though in regions where genas
 #poisonres 10
 #darkvision 80
 #amphibian
+#voidsanity 1 --native outsider
 #end
 
 -- 7658 -- Sylph Soldier
@@ -47978,6 +48280,7 @@ A Sylph's mastery over air gives them the ability to withstand prolonged exposur
 #reinvigoration 1
 #darkvision 80
 #pooramphibian
+#voidsanity 1 --native outsider
 #end
 
 -- 7659 -- Yestaadi Archer
@@ -48405,11 +48708,13 @@ During the Shoon Imperium, the peaceful Araneas were made to suffer greatly, and
 #makemonsters1 3555 -- Hunter Spider
 #darkvision 80
 #darkpower 3
+#voidsanity 1 --magic beast
 #end
 
 #selectmonster 3555 -- Hunter Spider
 #descr "Aranea were known to associate and cultivate relations with many species of spider, including great Hunter Spiders."
 #gcost 0 -- Summoned unit only
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7673 -- Rundeen Assassin
@@ -49127,6 +49432,7 @@ Mercenary Captains largely equip themselves, reducing their overall resource cos
 #animal
 #holy
 #gcost 0 -- Summoned unit only
+#voidsanity 1 -- Magical beast
 #end
 
 -- 7696 -- Chondathan Missionary
@@ -49835,6 +50141,7 @@ Frost Giants were known to tame Remorhaz in the Spine of the World, using them a
 #deathfire 1
 #undisciplined
 #mountainsurvival
+#voidsanity 1 -- Magical beast
 #end
 
 
@@ -50681,6 +50988,7 @@ Naturally cautious, Intellect Devourers preferred to work only in the dark and s
 #researchbonus -10
 #holy
 #itemslots 1 -- no slots
+#voidsanity 1 --aberration
 #end
 
 
@@ -51085,6 +51393,7 @@ A sea hag's greatest weapon was the sheer atrocity that was their appearance, fo
 #crossbreeder 8
 #fear 10
 #goodundeadleader
+#voidsanity 1 --giant
 #end
 
 
@@ -51185,6 +51494,7 @@ Hippocampi were most commonly found in the inner sea but they also had made thei
 #darkvision 50
 #montag 13015
 #neednoteat
+#voidsanity 1 -- Magical beast
 #end
 
 -- 8026 -- King Vhaemas
@@ -71608,7 +71918,7 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 -- friendlies only; does not affect illusions, spiritform, demons, undead, animals, or void-sane
 -- can be cast underwater
 #spec 148618788521639940
-#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
 #end
 
 #selectspell 867 --Giant Warriors
@@ -71622,7 +71932,7 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 -- friendlies only; does not affect illusions, spiritform, demons, undead, animals, or void-sane
 -- can be cast underwater
 #spec 148618788521639940
-#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
 #end
 
 #selectspell 1109 --Strength of Giants
@@ -71973,12 +72283,12 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #copyspell 867 --Giant Warriors
 #name "Animal Growth"
 #descr "A large group of animals are magically enlarged for the duration of the battle. Enlarged animals get increased size, hit points and strength."
-#details "The spell only affects animals."
+#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
 #researchlevel 4
 #path 0 6 --nature
 #pathlevel 0 3
--- allies only, animals only, can be cast underwater
-#spec 281474989293568
+-- allies only, animals only, no illusion/spiritform, no undead, no demon, no void sanity, can be cast underwater
+#spec 4785074885754884
 #end
 
 #selectmonster 2222 --frog
@@ -72313,7 +72623,7 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #researchlevel 4
 #path 1 4 --astral
 #pathlevel 1 1
-#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
 -- MR negates
 -- does not affect mindless, illusions, spiritform, demons, undead, animals, or void-sane
 -- can be cast underwater
@@ -72336,11 +72646,12 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #selectspell "Charm Animal"
 #name "Dominate Animal"
 #descr "The caster attempts to dominate the mind of an animal. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
+#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
 #school 4 --Enchantment
 #path 1 9 --Holy
 #pathlevel 1 1
--- MR negates, mindless immune, animals only, can be cast underwater
-#spec 281474985234432
+-- MR negates, mindless immune, void sane immune, illusion/spiritform immune demons/undead immune, animals only, can be cast underwater
+#spec 4785074881564676
 #end
 
 #selectspell "Paralyze"
@@ -72348,12 +72659,27 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #descr "The caster overloads the target humanoid's mind and effectively paralyzes the target for a very long time."
 #school 4 --Enchantment
 #researchlevel 2
-#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
 #path 0 7 --Glamour
 -- MR negates
 -- does not affect mindless, illusions, spiritform, demons, undead, animals, or void-sane
 -- can be cast underwater
 #spec 148618788517580804
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Hold Animal"
+#descr "The caster overloads the target animal's primal instincts and effectively paralyzes the target for a very long time."
+#school 4 --Enchantment
+#researchlevel 1
+#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
+#path 0 6 --Nature
+#pathlevel 0 1
+#path 1 9 --Holy
+#pathlevel 1 1
+-- MR negates, mindless immune, void sane immune, illusion/spiritform immune demons/undead immune, animals only, can be cast underwater
+#spec 4785074881564676
 #end
 
 #newspell
@@ -72373,7 +72699,7 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #name "Mass Hold Person"
 #descr "The caster overloads the minds of a group of humanoids, effectively paralyzing them for a very long time."
 #researchlevel 6
-#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
 #pathlevel 0 4
 #path 1 4
 #pathlevel 1 2
@@ -72410,13 +72736,14 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #copyspell "Calm Emotions"
 #name "Calm Animals"
 #descr "This spell calms agitated animals. The targets calm down and lose their berserker rage."
-#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates).
+Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
 #school 4 --Enchantment
 #researchlevel 1
 #path 0 6 --Nature
 #pathlevel 0 1
--- mr negates, animals only, can be cast underwater, does not affect mindless
-#spec 281474985234432
+-- MR negates, mindless immune, void sane immune, illusion/spiritform immune demons/undead immune, animals only, can be cast underwater
+#spec 4785074881564676
 #end
 
 #selectspell "Hand of Death"
