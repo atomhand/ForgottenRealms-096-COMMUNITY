@@ -64373,38 +64373,22 @@ This nation is merely for watching games in the background. It is located in the
 #name "Prison of Umberlee"
 #end
 
-
-
 -----------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------- New Spells----------------------------------------------------------------
 --new spells include Cure Light Wounds, Magic Missile, various summons, and no more persistent summoned monster spam---------
 -----------------------------------------------------------------------------------------------------------------------------
 
 #newspell
-#copyspell 639 -- Water Strike
-#name "Cure Light Wounds"
-#descr "Divine spellcasters can seal combat wounds by means of this basic channeling."
-#school 4
-#researchlevel 0
-#path 0 9
-#pathlevel 0 1
-#effect 13
-#damage 5005
--- difficult to negate with MR
--- + armor negating
--- + can use underwater
--- + doesn't affect friendly
-#spec 17592194695296
-#range 30
-#casttime 100
-#aoe 0
-#nreff 1
-#precision 100
-#fatiguecost 10
-#explspr 10007 -- Falling light green
-#strikesound 29 -- Elf shot
-#aispellmod 35
-#end 
+#copyspell 775 --Gooey Water
+#name "Grease"
+#descr "The caster conjures an area of slimey grease. Units stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
+#spec 4096 -- Mr roll negates
+#school 0 --conjuration
+#researchlevel 1
+#path 0 4 --astral
+#path 1 7 --glamour (bards get grease too)
+#pathlevel 1 1
+#end
 
 #newspell
 #name "Magic Missile"
@@ -65794,7 +65778,7 @@ This nation is merely for watching games in the background. It is located in the
 #aispellmod -50
 #end
 
-#selectspell "Rage"
+#selectspell 1282 -- "Rage"
 #school -1
 #end
 
@@ -65898,9 +65882,28 @@ This nation is merely for watching games in the background. It is located in the
 #school -1
 #end
 
+#selectspell "Magic Duel"
+#school -1
+#end
+
+#selectspell "Soul Slay"
+#school -1
+#end
+
 #selectspell "Shrink"
 #name "Reduce Person"
 #aispellmod -95
+#researchlevel 1
+#path 0 4 --astral
+#end
+
+#newspell
+#copyspell "Reduce Person"
+#name "Mass Reduce Person"
+#researchlevel 4
+#pathlevel 0 3
+#fatiguecost 99
+#aoe 3001
 #end
 
 #selectspell "Incinerate"
@@ -66197,7 +66200,7 @@ This nation is merely for watching games in the background. It is located in the
 #ainocast 1
 #end
 
-#selectspell "Flying Shield"
+#selectspell 1122 --Flying Shield
 #ainocast 1
 #end
 
@@ -66245,7 +66248,7 @@ This nation is merely for watching games in the background. It is located in the
 #ainocast 1
 #end
 
-#selectspell "Air Shield"
+#selectspell 245 --"Air Shield"
 #ainocast 1
 #end
 
@@ -66536,7 +66539,7 @@ This nation is merely for watching games in the background. It is located in the
 #aispellmod -97
 #end
 
-#selectspell "Enlarge"
+#selectspell 783 --"Enlarge"
 #ainocast 1
 #end
 
@@ -66552,7 +66555,7 @@ This nation is merely for watching games in the background. It is located in the
 #aispellmod -96
 #end
 
-#selectspell "Touch of Madness"
+#selectspell 1307 --"Touch of Madness"
 #aispellmod -97
 #end
 
@@ -66568,7 +66571,7 @@ This nation is merely for watching games in the background. It is located in the
 #ainocast 1
 #end
 
-#selectspell "Battle Fury"
+#selectspell 1274 --"Battle Fury"
 #aispellmod -97
 #end
 
@@ -66580,7 +66583,7 @@ This nation is merely for watching games in the background. It is located in the
 #ainocast 1
 #end
 
-#selectspell "Strength of Giants"
+#selectspell 1109 --"Strength of Giants"
 #aispellmod -95
 #end
 
@@ -71570,4 +71573,1179 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 
 #selectitem 393 -- Sanguine Dowsing Rod
 #nodemon
+#end
+
+
+
+------------------------------------------------ Reworked Spells-------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+#selectspell 1122 --Flying Shield
+#name "Shield"
+#descr "The mage creates an invisible, tower shield-sized mobile disk of force that hovers in front of him. The shield will randomly block about half of the attacks against his person."
+#path 0 4 --astral
+#path 1 -1
+#fatiguecost 15
+#researchlevel 1
+#end
+
+#selectspell 1152 --Cloud Trapeze
+#name "Wind Walk"
+#descr "The caster alters the substance of their body to a cloudlike vapor and moves through the air at great speed, travelling to a province far away. Although much faster than normal flying, the caster does not really teleport and can have the path blocked by impassable mountains ranges or the Sea of Ice global enchantment."
+#school 1 -- Alteration
+#researchlevel 5
+#pathlevel 0 3
+#path 1 9 --holy
+#pathlevel 1 1
+#end
+
+#selectspell 783 --Enlarge
+#name "Enlarge Person"
+#descr "A few humanoid soldiers are magically enlarged for the duration of the battle. Enlarged soldiers get increased size, hit points and strength."
+#researchlevel 1
+#path 0 4 --astral
+#pathlevel 0 1
+-- friendlies only; does not affect illusions, spiritform, demons, undead, animals, or void-sane
+-- can be cast underwater
+#spec 148618788521639940
+#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#end
+
+#selectspell 867 --Giant Warriors
+#name "Mass Enlarge Person"
+#descr "A large group of humanoid soldiers are magically enlarged for the duration of the battle. Enlarged soldiers get increased size, hit points and strength."
+#researchlevel 4
+#path 0 4 --astral
+#aoe 3001
+#fatiguecost 99
+#ainocast 1
+-- friendlies only; does not affect illusions, spiritform, demons, undead, animals, or void-sane
+-- can be cast underwater
+#spec 148618788521639940
+#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#end
+
+#selectspell 1109 --Strength of Giants
+#name "Bull's Strength"
+#end
+
+#selectspell 1176 --Giant Strength Warriors
+#name "Mass Bull's Strength"
+#researchlevel 5
+#fatiguecost 99
+#aoe 3001
+#ainocast1
+#end
+
+#selectspell 1211 --Foul Vapors
+#name "Cloudkill"
+#descr "Poisonous gas will begin to seep from the ground shortly after this spell is cast. The gas will rise over a large area, covering the entire battlefield, and will continue to seep for the duration of the battle."
+#school 0
+#researchlevel 5
+#path 1 4 -- Astral
+#pathlevel 0 3
+#pathlevel 1 3
+#end
+
+-- unfortunately beam spells are not possible to implement
+#selectspell "Lightning Bolt"
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#researchlevel 3
+#nreff 4
+#dmg 3008
+#fatiguecost 40
+#end
+
+#selectspell "Fireball"
+#copyspell "Fire Blast"
+#name "Fireball"
+#descr "The caster launches a glowing pea-sized bead from their pointing finger. When it reaches the target the bead detonates with a low roar and blossoms into a fireball."
+#aoe 15
+#fatiguecost 50
+#researchlevel 3
+#path 0 0
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#range 5025
+#damage 4005
+#strikesound 89
+#end
+
+#selectspell "Rage"
+#name "Rage (disabled)"
+#school -1
+#end
+
+#selectspell "Touch of Madness"
+-- Overwriting the Rage spell name seems to cause issues for some reason
+#name "Enrage"
+#descr "A small group of soldiers are forced to go berserk. Berserkers never rout, get increased fighting skills, but do not care much for their own safety."
+#school 4 --enchantment
+#path 0 7  --Glamour
+#researchlevel 2
+-- Does not affect mindless, inanimate, enemy, undead, or the caster; can be cast underwater
+#spec 140738038464512
+#end
+
+#selectspell "Battle Fury"
+#name "Heroism"
+#descr "The caster imbues a few subjects with great bravery and morale in battle. Each affected creature gains increased morale and attack skill."
+#school 4 --enchantment
+#path 0 7 --Glamour
+#path 1 4 --astral
+#pathlevel 0 1
+#pathlevel 1 1
+#researchlevel 1
+#end
+
+#selectspell "Furious Warriors"
+#school -1
+#end
+
+#selectspell "Gift of the Furies"
+#name "Good Hope"
+#descr "The caster  instills powerful hope in the subjects. Each affected creature gains increased morale and attack skill."
+#school 4 --enchantment
+#path 0 7 --Glamour
+#path 1 4 --astral
+#pathlevel 1 1
+#researchlevel 4
+#fatiguecost 50
+#aoe 3001
+#end
+
+#selectspell "Air Shield"
+#name "Protection From Arrows"
+#descr "The caster gains resistance to ranged weapons."
+#path 0 4 --astral
+#school 4 --enchantment
+#end
+
+#selectspell "Arrow Ward"
+#name "Wind Wall"
+#descr "An invisible curtain of wind will protect a large number of friendly units from enemy projectiles."
+#school 2 --evocation
+#fatiguecost 99
+#end
+
+#newspell
+#copyspell 842 --Invulnerability
+#name "Mage Armour"
+#descr "An invisible but tangible field of force surrounds the caster, protecting them from normal weapons."
+#damage 17179869184
+#details "Grants Invulnerability 15"
+#school 0 --conj
+#researchlevel 0
+#path 0 4 --astral
+#pathlevel 0 1
+#end
+
+#selectspell "Mist"
+#name "Fog Cloud"
+#descr "The caster creates a dense bank of fog across the battlefield that makes it difficult to see far and prevents any cloud effects from dissipating properly. The mist will limit the precision of all spells and missiles."
+#school 0 --conj
+#end
+
+#selectspell "Darkness"
+#school 2 --evocation
+#path 0 7 --glamour
+#end
+
+#selectspell "Gust of Winds"
+#name "Gust of Wind"
+#descr "Creates a wind gust strong enough to knock soldiers prone. Large beings are rarely affected by the spell and titans and other huge beings will ignore the winds entirely."
+#end
+
+#selectspell "Shatter"
+#school 2 --evocation
+#end
+
+#selectspell "Blur"
+#school 5 -- Illusion (Thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Invisibility"
+#school 5 -- Illusion (Thaumaturgy)
+#researchlevel 3 --originally  a level 2 spell
+#path 0 2
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Mirror Image"
+#school 5 -- Illusion (Thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Cat Eyes"
+#name "Darkvision"
+#descr "This spell grants the caster partial darkvision"
+#path 0 4 --astral
+#end
+
+#selectspell "Levitate"
+#school 1 --alteration
+#path 0 4 --astral
+#end
+
+#selectspell "Levitate Soldiers"
+#school -1
+#end
+
+#selectspell "Featherweight Army"
+#school -1
+#end
+
+#selectspell "Gift of Displacement"
+#name "Displacement"
+#descr "The target's images appear beside their actual location and are very difficult to hit in melee."
+#school 5 -- Illusion (Thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Displace Body"
+#school -1
+#end
+
+#selectspell "Displaced Warriors"
+#school -1
+#end
+
+#selectspell "Warrior Illusion"
+#name "Major Image"
+#descr "The illusionist creates a Warrior Illusion who attacks the enemy. Illusions inflict false damage that is eventually made real by the presence of glamour mages."
+#school 5 -- Illusion (Thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Personal Flight"
+#school 1 --alteration
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Gift of Flight"
+#name "Fly"
+#descr "Grants a few units the ability to fly."
+#school 1 --alteration
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Fly"
+#name "Air Walk"
+#descr "Grants a few units the ability to walk on air."
+#researchlevel 4
+#path 1 9 --Holy
+#details "Functions as flight."
+#end
+
+#selectspell "Mass Flight"
+#name "Mass Fly"
+#descr "The caster grants a large number of soldiers the ability to fly."
+#school 1 --alteration
+#path 1 4 --astral
+#pathlevel 1 2
+#fatiguecost 99
+#end
+
+#selectspell "Soaring Army"
+#school -1
+#end
+
+#selectspell "Quicken Self"
+#school -1
+#end
+
+#selectspell "Quickness"
+#name "Haste"
+#descr "This spells grants haste to a large number of units. Haste increases the speed and ability to dodge of the quickened one. A quickened person can act twice every turn, but quickened spell casters still cannot cast more than one spell per combat round."
+#path 0 4 --astral
+#pathlevel 0 3
+#aoe 3001
+#fatiguecost 60
+#end
+
+#selectspell "Quickening"
+#school -1
+#end
+
+#selectspell "Weapons of Sharpness"
+#name "Keen Edge"
+#descr "A few friendly units are gifted with magically keen weapons that they can cut through armor and flesh with equal ease. This enchantment does not work on blunt or missile weapons."
+#school 1 --alteration
+#researchlevel 3
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 0 1
+#end
+
+#selectspell "Steel Slice Warriors"
+#school -1
+#end
+
+#selectspell "Slow"
+#path 1 4--astral
+#end
+
+#selectspell "Personal Stoneskin"
+#school -1
+#end
+
+#selectspell "Stoneskin"
+#researchlevel 3
+#school 4 -- Enchantment(abjuration)
+#end
+
+#selectspell "Group Stoneskin"
+#school -1
+#end
+
+#selectspell "Marble Warriors"
+#school -1
+#end
+
+#selectspell "Marble Army"
+#school -1
+#end
+
+#selectspell "Teleport"
+#descr "With this spell, the mage can transport himself to a distant province."
+#school 0 --conjuration
+#provrange 4
+#end
+
+#newspell
+#copyspell "Teleport"
+#name "Greater Teleport"
+#descr "With this spell, the mage can transport himself to almost any province in the world, only those very very far away are out of range for this ritual."
+#researchlevel 7
+#provrange 7
+#pathlevel 0 4
+#fatiguecost 300
+#end
+
+#selectspell "Teleport Item"
+#school 0 --conjuration
+#end
+
+#selectspell "Teleport Gems"
+#school 0 --conjuration
+#end
+
+#selectspell "Gateway"
+#school 0 --conjuration
+#end
+
+#selectspell "Astral Travel"
+#name "Teleportation Circle"
+#descr "The caster draws a magical circle that manifests a rift in the fabric of space, transporting himself and and all troops under his command to a distant province."
+#school 0 --conjuration
+#provrange 7
+#end
+
+#newspell
+#copyspell "Niefel Flames"
+#name "Cone of Cold"
+#descr "The caster projects an area of extreme cold outward from their hand. Anyone in the area suffers massive cold damage. The caster will not be hit by the spell."
+#researchlevel 5
+-- cold, armour piercing, can be cast underwater, does not affect caster
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 2
+#spec 140737496744512
+#range 30
+#aoe 30
+#fatiguecost 60
+#damage 4005 --same as fireball
+#end
+
+#newspell
+#copyspell 867 --Giant Warriors
+#name "Animal Growth"
+#descr "A large group of animals are magically enlarged for the duration of the battle. Enlarged animals get increased size, hit points and strength."
+#details "The spell only affects animals."
+#researchlevel 4
+#path 0 6 --nature
+#pathlevel 0 3
+-- allies only, animals only, can be cast underwater
+#spec 281474989293568
+#end
+
+#selectmonster 2222 --frog
+#descr "A small amphibian. Legend has it that some frogs are actually adventurers transformed by curmudgeonly wizards."
+#end
+
+#selectspell "Polymorph"
+#aoe 0
+#name "Baleful Polymorph"
+#descr "The caster transforms his hapless target into a frog."
+#range 5025
+#fatiguecost 30
+#damage 2222 -- Frog
+#pathlevel 0 4
+#researchlevel 6
+-- does not affect allies, inaimates, illusions, or spiritforms. MR negates. May use underwater
+#spec 4840493060
+#end
+
+#selectspell "Astral Shield"
+#name "Repulsion"
+#descr "A shield of Astral energies forms around the mage. Anyone trying to strike through the shield will have their mind blasted unconscious by the force of the shield. Magic resistance may negate the effect of the shield and allow enemies to strike the mage. The power of the Astral Shield is greater for mages who are highly skilled in Astral magic."
+#school 4 -- Enchantment(abjuration)
+#path 0 3 --earth
+#path 0 1
+#path 1 4 --astral
+#path 1 1
+#end
+
+#selectspell "Ritual of Returning"
+#name "Contingency"
+#descr "The mage will return to the home citadel at once if he is wounded. The spell lasts until the mage actually has been wounded and returned home. This ritual will result in swift death for a mage if the home citadel has been conquered by the enemy."
+#school 2 --evocation
+#pathlevel 0 3
+#researchlevel 5
+#end
+
+#newspell
+#copyspell "Returning"
+#name "Emergency Teleport"
+#descr "The caster escapes the battlefield by teleporting back to the home citadel. Teleporting in battlefield conditions is risky. If the caster is unlucky he might get lost in time and might return later, not at all or completely insane. The spell will not work on other planes or if the home citadel is controlled by the enemy."
+#school 0
+#researchlevel 4
+#pathlevel 0 3
+#end
+
+#selectspell "Returning"
+#name "Word of Recall"
+#descr "The caster speaks a word of recall, instantaneously teleporting him back to the home citadel. Teleporting in battlefield conditions is risky. If the caster is unlucky he might get lost in time and might return later, not at all or completely insane. The spell will not work on other planes or if the home citadel is controlled by the enemy."
+#school 0
+#researchlevel 5
+#path 1 9 --holy
+#pathlevel 1 2
+#end
+
+#selectspell "Vortex of Returning"
+#school -1
+#end
+
+#newspell
+#copyspell "Teleport"
+#name "Shadow Walk"
+#descr "The caster shifts into the Plane of Shadow to travel to a distant province in a fraction of the usual time."
+#researchlevel 6
+#provrange 5
+#school 5 -- Illusion (Thaumaturgy)
+#path 0 7 --glamour
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Project Self"
+#school 5 --Illusion (Thaumaturgy)
+#researchlevel 6
+#end
+
+#selectspell "Rain"
+#name "Control Weather: Rain"
+#descr "The caster controls the water and conjures a heavy rain upon the battlefield. This makes it harder to fly, fires will be put out quicker and any cloud effects will dissipate faster than usual. Fire magic is more difficult to use during heavy rain. If it is cold the rain will become snow instead. Snow does not increase the fatigue for fire spells, but it still puts out fires and dissipates clouds."
+#school 1 --alteration
+#researchlevel 6
+#path 1 1 --Air
+#pathlevel 1 1
+#fatiguecost 99
+#end
+
+#selectspell "Storm"
+#name "Control Weather: Storm"
+#descr "The caster controls the weather and conjures a heavy rain upon the battlefield. This makes it harder to fly, fires will be put out quicker and any cloud effects will dissipate faster than usual. Fire magic is more difficult to use during heavy rain. If it is cold the rain will become snow instead. Snow does not increase the fatigue for fire spells, but it still puts out fires and dissipates clouds."
+#researchlevel 6
+#pathlevel 0 3
+#path 1 2 --water
+#pathlevel 1 1
+#end
+
+#selectspell "Blizzard"
+#name "Control Weather: Blizzard"
+#descr "The caster controls the weather and conjures an unexpected blizzard. The blizzard spell can only be cast in regions of neutral or slight heat. When cast the temperature drops suddenly and a snowstorm covers the battlefield."
+#pathlevel 0 3
+#end
+
+#selectspell "Fire Shield"
+#school 2 --evocation
+#researchlevel 2
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Fire Shield"
+#name "Mass Fire Shield"
+#descr "The caster wreathes a large group of allies in flame. Anyone trying to strike the subjects in melee combat will be burned by the Fire Shield immediately after attacking. Attackers with long weapons such as spears and pikes will not suffer as severe burns as an attacker with a shortsword or a dagger."
+#researchlevel 5
+#pathlevel 0 3
+#pathlevel 1 2
+#aoe 3001
+#spec 4194304
+#end
+
+#selectspell "Fire Storm"
+#path 1 9 --Holy
+#pathlevel 1 1
+#end
+
+-- TODO: Partly ignore fire resistance??
+#selectspell "Pillar of Fire"
+#name "Flame Strike"
+#descr "This spell produces a vertical column of divine fire roaring downward. It will kill those who are hit and set fire to anyone who is standing nearby."
+#aoe 4
+#pathlevel 0 3
+#path 1 9 --Holy
+#pathlevel 1 1
+#researchlevel 5
+#fatiguecost 30
+#end
+
+#selectspell "Thunder Strike"
+#name "Call Lightning"
+#descr "The caster calls down thunderbolts to strike the battlefield. The mage can make the thunderbolts strike very far away. Even if it misses, the shock wave is powerful enough to severely stun and damage anyone nearby."
+#pathlevel 0 2
+#path 1 9 --Holy
+#pathlevel 1 1
+#nreff 501
+#notindoors 1
+#end
+
+#selectspell "Wrathful Skies"
+#name "Call Lightning Storm"
+#descr "The sky turns dark and lightning strikes all over the battlefield. This spell is most effective during a storm."
+#path 1 9 --Holy
+#pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Gift of Reason"
+#name "Awaken"
+#descr "The caster awakens the intellect of an animal, granting it commander status. The target animal must be in the same province as the caster. Mindless animals cannot be affected by the spell."
+#school 1 --alteration
+#pathlevel 0 3
+#path 1 9 --Holy
+#pathlevel 1 1
+#fatiguecost 500
+#researchlevel 4
+#spec 281474976841728
+#end
+
+#selectspell "Falling Frost"
+#name "Ice Storm"
+#aoe 15
+#damage 2007
+#end
+
+#selectspell "Faery Trod"
+#name "Transport via Plants"
+#descr "The mage steps into a plant and passes to a plant of the same kind a vast distance away, leading his army behind him. Both the source and destination provinces must be forests for this spell to work. Navigating via plants is less reliable than conventional teleportation and it might be that you won't emerge exactly where you planned."
+#school 0 --conj
+#researchlevel 6
+#path 1 9 --Holy
+#fatiguecost 15
+#end
+
+#selectspell "Earthquake"
+#path 1 9 --Holy
+#pathlevel 1 1
+#end
+
+#selectspell "Cure Disease"
+#name "Remove Disease"
+#descr "This ritual cures a unit from disease, an affliction that otherwise is certain to result in a quick and early death. The target unit must be in the same province as the caster."
+#school 0 --conj
+#pathlevel 0 2
+#path 1 9 --Holy
+#pathlevel 1 1
+#fatiguecost 100
+#end
+
+#newspell
+#copyspell 1310 --Remove Disease
+#name "Remove Curse"
+#descr "This ritual instantaneously removes curses on a creature. The target unit must be in the same province as the caster."
+#damage 2
+#school 4 -- Enchantment(abjuration)
+#path 0 4 --astral
+#pathlevel 0 2
+#path 1 -1
+#fatiguecost 100
+#end
+
+#newspell
+#copyspell 1310 --Remove Disease
+#name "Remove Blindness"
+#descr "This ritual instantaneously cures a creature of blindness. The target unit must be in the same province as the caster."
+#damage 528384
+#school 4 -- Enchantment(abjuration)
+#path 0 4 --astral
+#pathlevel 0 2
+#fatiguecost 100
+#end
+
+#newspell
+#copyspell 1310 --Remove Disease
+#name "Regenerate"
+#descr "This ritual instantaneously regenerates the subject's body, curing them of any and all physical (but not mental) afflictions and diseases. The target unit must be in the same province as the caster."
+#researchlevel 7
+#damage 3319529473
+#school 4 -- Enchantment(abjuration)
+#pathlevel 0 4
+#path 1 9 --Holy
+#athlevel 1 3
+#fatiguecost 500
+#end
+
+#newspell
+#copyspell 1310 --Remove Disease
+#name "Restoration"
+#descr "This ritual instantaneously removes weakness, mental afflictions and the shrunken condition. The target unit must be in the same province as the caster."
+#damage 141770620928 -- weaken/battle fright/feeble minded/shrunken/dementia
+#school 0 --conjuration
+#path 0 4 --astral
+#pathlevel 0 2
+#path 1 -1
+#fatiguecost 100
+#end
+
+#newspell
+#name "Unholy Death"
+#effect 2
+#damage 999
+-- Does not affect demons, undead, caster, MR negates (easy), may use underwater
+#spec 140737782480896
+#school -1
+#aoe 1
+#end
+
+#newspell
+#name "Blasphemy"
+#descr "The caster utters a word so blasphemous that nearby creatures are stunned and the weak ones may even be instantly killed. Demons and undead are not affected, and the caster is not affected by his own blasphemy."
+#effect 66
+#damage 100
+-- Does not affect demons, undead, caster, MR negates, may use underwater
+#spec 140737765707776
+#aoe 60
+#range 0
+#nextspell "Unholy Death"
+#school 2 --evocation
+#researchlevel 7
+#path 0 9 --Holy
+#pathlevel 0 4
+#path 1 8 --Blood
+#pathlevel 1 3
+#end
+
+#newspell
+#name "Holy Death"
+#effect 2
+#damage 999
+-- Only affects demons & undead, MR negates (easy), may use underwater
+#spec 25165832
+#school -1
+#aoe 1
+#end
+
+#newspell
+#name "Holy Word"
+#descr "The caster utters a word so holy that nearby demons and undead are stunned and the weak ones may even be instantly killed."
+#effect 66
+#damage 100
+-- Only affects demons & undead, caster, MR negates, may use underwater
+#spec 8392712
+#aoe 60
+#range 0
+#nextspell "Holy Death"
+#school 2 --evocation
+#researchlevel 7
+#path 0 9 --Holy
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 3
+#end
+
+
+#selectspell "Personal Barkskin"
+#school -1
+#end
+
+#selectspell "Group Barkskin"
+#school -1
+#end
+
+#selectspell "Wooden Warriors"
+#school -1
+#end
+
+#selectspell "Oaken Army"
+#school -1
+#end
+
+#selectspell "Barkskin"
+#path 1 9 --Holy
+#athlevel 1 1
+#researchlevel 1
+#end
+
+#selectspell "Enslave Mind"
+#school -1
+#end
+
+#selectspell "Charm"
+#name "Dominate Person"
+#descr "The caster attempts to dominate the mind of a living humanoid victim. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
+#school 4 --Enchantment
+#researchlevel 4
+#path 1 4 --astral
+#pathlevel 1 1
+#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+-- MR negates
+-- does not affect mindless, illusions, spiritform, demons, undead, animals, or void-sane
+-- can be cast underwater
+#spec 148618788517580804
+#range 5020
+#end
+
+#newspell
+#copyspell "Dominate Person"
+#name "Dominate Monster"
+#descr "The caster attempts to dominate the mind of a victim. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
+#researchlevel 7
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 3
+-- MR negates, mindless immune, can be cast underwater
+#spec 8523776
+#end
+
+#selectspell "Charm Animal"
+#name "Dominate Animal"
+#descr "The caster attempts to dominate the mind of an animal. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
+#school 4 --Enchantment
+#path 1 9 --Holy
+#pathlevel 1 1
+-- MR negates, mindless immune, animals only, can be cast underwater
+#spec 281474985234432
+#end
+
+#selectspell "Paralyze"
+#name "Hold Person"
+#descr "The caster overloads the target humanoid's mind and effectively paralyzes the target for a very long time."
+#school 4 --Enchantment
+#researchlevel 2
+#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#path 0 7 --Glamour
+-- MR negates
+-- does not affect mindless, illusions, spiritform, demons, undead, animals, or void-sane
+-- can be cast underwater
+#spec 148618788517580804
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Hold Monster"
+#descr "The caster overloads the mind and effectively paralyzes the target for a very long time."
+#researchlevel 4
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 1
+-- MR negates, mindless immune, can be cast underwater
+#spec 8523776
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Mass Hold Person"
+#descr "The caster overloads the minds of a group of humanoids, effectively paralyzing them for a very long time."
+#researchlevel 6
+#details "Only living, ordinary humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#pathlevel 0 4
+#path 1 4
+#pathlevel 1 2
+#aoe 3001
+-- As Hold Person + only affects enemies
+#spec 148618788517842948
+#end
+
+#newspell
+#copyspell "Hold Monster"
+#name "Mass Hold Monster"
+#descr "The caster overloads the minds of a group of creatures, effectively paralyzing them for a very long time."
+#researchlevel 8
+#pathlevel 0 5
+#pathlevel 1 3
+#aoe 3001
+-- As Hold Monster + only affects enemies
+#spec 8785920
+#end
+
+#selectspell "Calm Emotions"
+#copyspell "Serenity"
+#name "Calm Emotions"
+#descr "This spell calms agitated creatures. The targets calm down and lose their berserker rage."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
+#researchlevel 3
+#school 4 --Enchantment
+#path 0 7 --Glamour
+#aoe 3001
+#range 5025
+#end
+
+#newspell
+#copyspell "Calm Emotions"
+#name "Calm Animals"
+#descr "This spell calms agitated animals. The targets calm down and lose their berserker rage."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
+#school 4 --Enchantment
+#researchlevel 1
+#path 0 6 --Nature
+#pathlevel 0 1
+-- mr negates, animals only, can be cast underwater, does not affect mindless
+#spec 281474985234432
+#end
+
+#selectspell "Hand of Death"
+#school -1
+#end
+
+#newspell
+#copyspell "Hand of Death"
+#name "Inflict Light Wounds"
+#school 6 --Blood
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 2010
+#path 1 9 --Holy
+#pathlevel 0 1
+#pathlevel 1 1
+-- Armour negating, MR negates, does not affect allies, undead, or inanimates; may be cast underwater
+#spec 546050176
+#researchlevel 0
+#aispellmod 0
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Inflict Moderate Wounds"
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 1014
+#pathlevel 1 2
+#researchlevel 1
+#aispellmod 0
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Inflict Serious Wounds"
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 2015
+#pathlevel 0 2
+#pathlevel 1 2
+#researchlevel 2
+#aispellmod 40
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Inflict Critical Wounds"
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 3015
+#pathlevel 0 3
+#pathlevel 1 2
+#researchlevel 3
+-- Armour negating, difficult MR negates, does not affect allies, undead, or inanimates; may be cast underwater
+#spec 17592732090496
+#aispellmod 70
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Harm"
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 5030
+#pathlevel 0 3
+#pathlevel 1 3
+#researchlevel 4
+-- Armour negating, difficult MR negates, does not affect allies, undead, or inanimates; may be cast underwater
+#spec 17592732090496
+#aispellmod 70
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Mass Inflict Light Wounds"
+#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
+#casttime 100
+#precision 100
+#fatiguecost 60
+#range 5020
+#nreff 3001
+#pathlevel 0 4
+#pathlevel 1 3
+#researchlevel 4
+#end
+
+#newspell
+#copyspell "Inflict Moderate Wounds"
+#name "Mass Inflict Moderate Wounds"
+#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 4
+#pathlevel 1 3
+#researchlevel 5
+#end
+
+#newspell
+#copyspell "Inflict Serious Wounds"
+#name "Mass Inflict Serious Wounds"
+#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 5
+#pathlevel 1 3
+#researchlevel 6
+#end
+
+#newspell
+#copyspell "Inflict Critical Wounds"
+#name "Mass Inflict Critical Wounds"
+#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
+#fatiguecost 100
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 5
+#pathlevel 1 3
+#researchlevel 7
+#end
+
+#newspell
+#copyspell 639 -- Water Strike
+#name "Cure Light Wounds"
+#descr "Divine spellcasters can seal combat wounds by means of this basic channeling."
+#school 4
+#researchlevel 0
+#path 0 9
+#pathlevel 0 1
+#effect 13
+#damage 5005
+-- difficult to negate with MR
+-- + armor negating
+-- + can use underwater
+-- + doesn't affect friendly
+#spec 17592194695296
+#range 30
+#casttime 100
+#aoe 0
+#nreff 1
+#precision 100
+#fatiguecost 10
+#explspr 10007 -- Falling light green
+#strikesound 29 -- Elf shot
+#aispellmod 35
+#end
+
+#selectspell "Heal"
+#school -1
+#end
+
+#newspell
+#copyspell 1145 --Heal
+#name "Cure Light Wounds"
+#descr "The caster channels positive energy to heal a nearby living ally."
+#school 0 --Conjuration
+#researchlevel 0
+#path 0 6 --nature
+#path 1 9 --holy
+#pathlevel 0 1
+#pathlevel 1 1
+#damage 2008
+-- allies only + can use UW + no undead + no inanimate + armour negating
+#spec 549978240
+#range 10
+#casttime 75
+#aoe 0
+#nreff 1
+#precision 100
+#fatiguecost 10
+#end
+
+#newspell
+#copyspell "Cure Light Wounds"
+#name "Cure Moderate Wounds"
+#descr "The caster channels positive energy to heal a nearby living ally."
+#pathlevel 0 1
+#pathlevel 1 2
+#researchlevel 1
+#damage 3012
+#end
+
+#newspell
+#copyspell "Cure Light Wounds"
+#name "Cure Serious Wounds"
+#descr "The caster channels positive energy to heal a nearby living ally."
+#pathlevel 0 2
+#pathlevel 1 2
+#researchlevel 2
+#damage 3020
+#end
+
+#newspell
+#copyspell "Cure Light Wounds"
+#name "Cure Critical Wounds"
+#descr "The caster channels positive energy to heal a nearby living ally."
+#pathlevel 0 2
+#pathlevel 1 3
+#researchlevel 3
+#damage 4020
+#end
+
+#selectspell "Heal"
+#copyspell "Cure Light Wounds"
+#name "Heal"
+#descr "The caster channels positive energy into a nearby ally, wiping away injury and afflictions."
+#damage 100
+#pathlevel 0 3
+#pathlevel 1 3
+#researchlevel 5
+#end
+
+#newspell
+#copyspell "Cure Light Wounds"
+#name "Mass Cure Light Wounds"
+#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
+#casttime 100
+#precision 100
+#fatiguecost 60
+#range 5020
+#nreff 3001
+#pathlevel 0 2
+#pathlevel 1 3
+#researchlevel 4
+#end
+
+#newspell
+#copyspell "Cure Moderate Wounds"
+#name "Mass Cure Moderate Wounds"
+#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 3
+#pathlevel 1 3
+#researchlevel 5
+#end
+
+#newspell
+#copyspell "Cure Serious Wounds"
+#name "Mass Cure Serious Wounds"
+#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 3
+#pathlevel 1 4
+#researchlevel 6
+#aispellmod 50
+#end
+
+#newspell
+#copyspell "Cure Critical Wounds"
+#name "Mass Cure Critical Wounds"
+#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 4
+#pathlevel 1 4
+#researchlevel 7
+#aispellmod 50
+#end
+
+#newspell
+#copyspell "Heal"
+#name "Mass Heal"
+#descr "Positive energy floods into allies in the target area, wiping away injury and afflictions."
+#fatiguecost 100
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 4
+#pathlevel 1 4
+#researchlevel 8
+#end
+
+#selectspell "Sleep"
+#school 4 --enchantment
+#end
+
+
+#selectspell "Terror"
+#name "Fear"
+#descr "An invisible cone of terror causes each living creature in the area to become panicked unless it is of sufficiently strong will."
+#path 1 7 --glamour
+#pathlevel 1 1
+#damage 15
+#spec 545788032 -- Mr negates, can  use underwater, armour negating, undead immune, inanimate immune
+#range 25
+#aoe 10
+#end
+
+
+#selectspell "Weakness"
+#name "Ray of Enfeeblement"
+#descr "A coruscating ray springs from the caster's hand. The target of the ray will be permanently weakened."
+#researchlevel 1
+#school 5 --Thaumaturgy (neutral necromancy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Ray of Enfeeblement"
+#name "Enervation"
+#descr "The caster releases a black ray of crackling negative energy that suppresses the life force of any living creature it strikes."
+#researchlevel 3
+#pathlevel 0 2
+#pathlevel 1 2
+#details "The target is slowed, decayed and affected by the Curse of Stones effect."
+#effect 11 --Cause affliction
+-- slow/decay/curse of stones
+#damage 68719477024
+#end
+
+#newspell
+#copyspell "Hand of Death"
+#name "Vampiric Touch"
+#descr "The caster's touch steals the target's life force."
+-- armour negating, can use underwater, no undead, no inanimate
 #end
