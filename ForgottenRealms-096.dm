@@ -71945,10 +71945,18 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 
 #selectspell 1109 --Strength of Giants
 #name "Bull's Strength"
+#descr "Gives the target increased strength."
+#details "Grants Str +4"
+#end
+
+#selectspell "Gift of Giant Strength"
+#school -1
 #end
 
 #selectspell 1176 --Giant Strength Warriors
 #name "Mass Bull's Strength"
+#descr "Gives a group of targets increased strength."
+#details "Grants Str +4"
 #researchlevel 5
 #fatiguecost 99
 #aoe 3001
@@ -71958,6 +71966,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #selectspell 1211 --Foul Vapors
 #name "Cloudkill"
 #descr "Poisonous gas will begin to seep from the ground shortly after this spell is cast. The gas will rise over a large area, covering the entire battlefield, and will continue to seep for the duration of the battle."
+#details "Poison Clouds (level 1) appear all over the battlefield."
 #school 0
 #researchlevel 5
 #path 1 4 -- Astral
@@ -72375,7 +72384,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 
 #selectspell "Rain"
 #name "Control Weather: Rain"
-#descr "The caster controls the water and conjures a heavy rain upon the battlefield. This makes it harder to fly, fires will be put out quicker and any cloud effects will dissipate faster than usual. Fire magic is more difficult to use during heavy rain. If it is cold the rain will become snow instead. Snow does not increase the fatigue for fire spells, but it still puts out fires and dissipates clouds."
+#descr "The caster controls the weather and conjures a heavy rain upon the battlefield. This makes it harder to fly, fires will be put out quicker and any cloud effects will dissipate faster than usual. Fire magic is more difficult to use during heavy rain. If it is cold the rain will become snow instead. Snow does not increase the fatigue for fire spells, but it still puts out fires and dissipates clouds."
 #school 1 --alteration
 #researchlevel 6
 #path 1 1 --Air
@@ -73085,4 +73094,218 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #name "Vampiric Touch"
 #descr "The caster's touch steals the target's life force."
 -- armour negating, can use underwater, no undead, no inanimate
+#end
+
+#selectspell "Personal Ironskin"
+#school -1
+#end
+
+#selectspell "Ironskin"
+#school -1
+#end
+
+#selectspell "Group Ironskin"
+#school -1
+#end
+
+#selectspell "Iron Warriors"
+#school -1
+#end
+
+#selectspell "Temper Flesh"
+#name "Iron Body"
+#descr "This spell transforms the casters body into living iron, granting powerful resistances and rendering them all but impervious to ordinary weapons."
+#researchlevel 7e
+#damage 481053117568
+#details "Grants Slash, Blunt and Pierce resistance, Fire Resistance +5, Shock Resistance +5, Poison Resistance +10, and Invulnerability 25."
+#nextspell "Invulnerability"
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#selectspell "Thunder Fend"
+#school -1
+#end
+
+#selectspell "Resist Lightning"
+#school -1
+#end
+
+#selectspell "Lightning Resistance"
+#school -1
+#end
+
+#selectspell "Lightning Resistant Warriors"
+#school -1
+#end
+
+#selectspell "Ground Army"
+#school -1
+#end
+
+#selectspell "Resist Fire"
+#school -1
+#end
+
+#selectspell "Fire Resistance"
+#school -1
+#end
+
+#selectspell "Fire Resistant Warriors"
+#school -1
+#end
+
+#selectspell "Frostflesh Army"
+#school -1
+#end
+
+#selectspell "Resist Cold"
+#school -1
+#end
+
+#selectspell "Cold Resistance"
+#school -1
+#end
+
+#selectspell "Cold Resistant Warriors"
+#school -1
+#end
+
+#selectspell "Flameflesh Army"
+#school -1
+#end
+
+#selectspell "Protection From Fire"
+#school -1
+#end
+
+#selectspell "Lesser Flame Ward"
+#name "Resist Fire"
+#descr "This spell partially protects a few units from fire and flames."
+#details "Fire Resistance +5"
+#researchlevel 1
+#pathlevel 0 1
+#end
+
+#selectspell "Flame Ward"
+#name "Mass Resist Fire"
+#descr "This spell partially protects a large group of units from fire and flames."
+#details "Fire Resistance +5"
+#researchlevel 3
+#pathlevel 0 2
+#aoe 3001
+#fatiguecost 99
+#end
+
+#selectspell "Fire Fend"
+#school -1
+#end
+
+#selectspell "Protection From Cold"
+#school -1
+#end
+
+#selectspell "Lesser Winter Ward"
+#name "Resist Cold"
+#descr "This spell partially protects a few units from cold."
+#details "Cold Resistance +5"
+#researchlevel 1
+#pathlevel 0 1
+#end
+
+#selectspell "Winter Ward"
+#name "Mass Resist Cold"
+#descr "This spell partially protects a large group of units from cold."
+#details "Cold Resistance +5"
+#researchlevel 3
+#pathlevel 0 2
+#aoe 3001
+#fatiguecost 99
+#end
+
+#selectspell "Frost Fend"
+#school -1
+#end
+
+#selectspell "Protection From Lightning"
+#school -1
+#end
+
+#selectspell "Lesser Thunder Ward"
+#name "Resist Electricity"
+#descr "This spell protects a few units from damage and stun effects caused by lightning and thunder."
+#details "Shock Resistance +5"
+#researchlevel 1
+#pathlevel 0 1
+#end
+
+#selectspell "Thunder Ward"
+#name "Mass Resist Electricity"
+#descr "This spell protects a few units from damage and stun effects caused by lightning and thunder."
+#details "Shock Resistance +5"
+#researchlevel 3
+#pathlevel 0 2
+#aoe 3001
+#fatiguecost 99
+#end
+
+#newspell
+#copyspell "Resist Cold"
+#name "Protection From Cold"
+#descr "A few creatures are granted superior protection from the chosen energy type."
+#details "Cold Resistance +10. Does not stack with Resist Energy."
+#damage 144115188075855872 -- 10 cold resistance
+#researchlevel 4
+#pathlevel 0 2
+#end
+
+#newspell
+#copyspell "Mass Resist Cold"
+#name "Mass Protection From Cold"
+#descr "A group of creatures are granted superior protection from the chosen energy type."
+#details "Cold Resistance +10. Does not stack with Resist Energy."
+#damage 144115188075855872 -- 10 cold resistance
+#researchlevel 6
+#pathlevel 0 4
+#end
+
+#newspell
+#copyspell "Resist Fire"
+#name "Protection From Fire"
+#descr "A few creatures are granted superior protection from the chosen energy type."
+#details "Fire Resistance +10. Does not stack with Resist Energy."
+#damage 36028797018963968 -- 10 fire resistance
+#researchlevel 4
+#pathlevel 0 2
+#end
+
+#newspell
+#copyspell "Mass Resist Fire"
+#name "Mass Protection From Fire"
+#descr "A group of creatures are granted superior protection from the chosen energy type."
+#details "Fire Resistance +10. Does not stack with Resist Energy."
+#damage 36028797018963968 -- 10 fire resistance
+#researchlevel 6
+#pathlevel 0 4
+#end
+
+#newspell
+#copyspell "Resist Electricity"
+#name "Protection From Electricity"
+#descr "A few creatures are granted superior protection from to the chosen energy type."
+#details "Shock Resistance +10. Does not stack with Resist Energy."
+#damage 72057594037927936 -- 10 shock resistance
+#researchlevel 4
+#pathlevel 0 2
+#end
+
+#newspell
+#copyspell "Mass Resist Electricity"
+#name "Mass Protection From Electricity"
+#descr "A group of creatures are granted superior protection from the chosen energy type."
+#details "Shock Resistance +10. Does not stack with Resist Energy."
+#damage 72057594037927936 -- 10 shock resistance
+#researchlevel 6
+#pathlevel 0 4
 #end
