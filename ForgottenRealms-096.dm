@@ -71891,9 +71891,13 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #nodemon
 #end
 
+-----------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------- Summon Monster Creatures -----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 
------------------------------------------------- Reworked Spells-------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------ Reworked Spells & New Spells -----------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------
 
 #selectspell 1122 --Flying Shield
@@ -71934,6 +71938,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #descr "A large group of humanoid soldiers are magically enlarged for the duration of the battle. Enlarged soldiers get increased size, hit points and strength."
 #researchlevel 4
 #path 0 4 --astral
+#range 15
 #aoe 3001
 #fatiguecost 99
 #ainocast 1
@@ -71959,6 +71964,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #details "Grants Str +4"
 #researchlevel 5
 #fatiguecost 99
+#range 15
 #aoe 3001
 #ainocast1
 #end
@@ -72017,15 +72023,31 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #spec 140738038464512
 #end
 
+#selectspell 1124 --Proud Steed
+#school -1
+#end
+
+#selectspell 1161 --Immaculate Mounts
+#school -1
+#end
+
+#selectspell 1463 --Army of Immaculate Mounts
+#school -1
+#end
+
 #selectspell "Battle Fury"
 #name "Heroism"
-#descr "The caster imbues a few subjects with great bravery and morale in battle. Each affected creature gains increased morale and attack skill."
+#descr "The caster imbues a few allies with great bravery and morale in battle. Each affected creature gains increased attack skill, defence skill, morale and MR."
+#details "Attack skill +2, defence skill +2, morale +4, MR +2."
+#damage 281475513581568 -- Fury + proud steed effect
 #school 4 --enchantment
 #path 0 7 --Glamour
 #path 1 4 --astral
 #pathlevel 0 1
 #pathlevel 1 1
 #researchlevel 1
+-- does not affect enemies, can be used underwater
+#spec 12582912
 #end
 
 #selectspell "Furious Warriors"
@@ -72034,7 +72056,9 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 
 #selectspell "Gift of the Furies"
 #name "Good Hope"
-#descr "The caster  instills powerful hope in the subjects. Each affected creature gains increased morale and attack skill."
+#descr "The caster instills powerful hope in a group of living allies. Each affected creature gains increased attack skill, defence skill, morale and MR."
+#details "Attack skill +2, defence skill +2, morale +4, MR +2."
+#damage 281475513581568 -- Fury + proud steed effect
 #school 4 --enchantment
 #path 0 7 --Glamour
 #path 1 4 --astral
@@ -72042,6 +72066,8 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #researchlevel 4
 #fatiguecost 50
 #aoe 3001
+-- does not affect enemies, does not affect inanimate/undead, can be used underwater
+#spec 549978112
 #end
 
 #selectspell "Air Shield"
@@ -72054,6 +72080,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #selectspell "Arrow Ward"
 #name "Wind Wall"
 #descr "An invisible curtain of wind will protect a large number of friendly units from enemy projectiles."
+#details "Grants Air Shield: 80"
 #school 2 --evocation
 #fatiguecost 99
 #end
@@ -72099,9 +72126,27 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #selectspell "Invisibility"
 #school 5 -- Illusion (Thaumaturgy)
 #researchlevel 3 --originally  a level 2 spell
-#path 0 2
+#pathlevel 0 2
 #path 1 4 --astral
 #pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Displaced Warriors"
+#name "Mass Invisibility"
+#descr "The caster renders a large group of warriors invisible and almost impossible to hit in melee. The invisibility ends for each subject if they are wounded."
+#details "The targets gain the ability Unseen."
+#effect 10
+#damage 1073741824
+#school 5 -- Illusion (Thaumaturgy)
+#researchlevel 6
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 3
+#researchlevel 6
+#aoe 3001
+#range 15
+#fatiguecost 60
 #end
 
 #selectspell "Mirror Image"
@@ -72190,6 +72235,11 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #end
 
 #selectspell "Quicken Self"
+#school -1
+#end
+
+#selectspell "Haste"
+#name "Haste (disabled)"
 #school -1
 #end
 
@@ -72290,7 +72340,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #path 1 4 --astral
 #pathlevel 1 2
 #spec 140737496744512
-#range 30
+#range 20
 #aoe 30
 #fatiguecost 60
 #damage 4005 --same as fireball
@@ -73129,11 +73179,10 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 
 #selectspell "Temper Flesh"
 #name "Iron Body"
-#descr "This spell transforms the casters body into living iron, granting powerful resistances and rendering them all but impervious to ordinary weapons."
-#researchlevel 7e
-#damage 6341068756373995520
-#details "Grants Slash, Blunt and Pierce resistance, Fire Resistance +15, Shock Resistance 1+5, Poison Resistance +15, and Invulnerability 25."
-#nextspell "Invulnerability"
+#descr "This spell transforms the caster's body into living iron, granting powerful resistances and rendering them all but impervious to ordinary weapons."
+#researchlevel 7
+#damage 6341068756642430976
+#details "Grants Slash, Blunt and Pierce resistance, Fire Resistance +15, Shock Resistance +10, Poison Resistance +15, and natural protection +13 (max up to 20), or +5 if 15 or higher."
 #pathlevel 0 4
 #path 1 4 --astral
 #pathlevel 1 2
@@ -73332,5 +73381,224 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #aoe 1
 #school 5 --thaumaturgy (neutral necromancy)
 #path 0 5 --death
+#path 1 4 --astral
+#pathlevel 1 1
 #spec 276828296 -- armour negating, mr negates, can be cast underwater, only affect undead
+#end
+
+#newspell
+#copyspell "Personal Mistform"
+#name "Blink"
+#descr "The caster rapidly blinks back and forth between the Material Plane and the Ethereal Plane. Most mundane attacks are negated entirely by dodging into the Ethereal Plane."
+#details "Grants Ethereal"
+#path 0 4 --astral
+#pathlevel 0 2
+#path 1 7 --glamour
+#pathlevel 0 2
+#researchlevel 2
+#effect 10 --buff 1
+#damage 134217728 --ethereal
+#end
+
+#newspell
+#copyspell "Blink"
+#name "Ethereal Jaunt"
+#descr "The caster shifts his body into the ethereal plane, rendering him all but immune to mundane weapons."
+#details "Grants Ethereal and Invulnerability 25"
+#path 0 4 --astral
+#pathlevel 0 3
+#researchlevel 8
+#nextspell 842 --Invulnerability
+#end
+
+#newspell
+#copyspell "Fog Warriors"
+#name "Etherealness"
+#descr "The caster shifts an entire group of allies into the ethereal plane, rendering them all but immune to mundane weapons."
+#details "Grants Ethereal and Invulnerability 25"
+#path 0 4 --astral
+#pathlevel 0 5
+#researchlevel 8
+#effect 10 --buff 1
+#damage 134217728 --ethereal
+#nextspell 842 --Invulnerability
+#aoe 3001
+#end
+
+#selectspell "Body Ethereal"
+#aoe -1
+#end
+
+#selectspell "Personal Mistform"
+#school -1
+#end
+
+#selectspell "Fog Warriors"
+#school -1
+#end
+
+#selectspell "Army of Mist"
+#school -1
+#end
+
+#selectspell "Chain Lightning"
+#researchlevel 5
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#selectspell "Gifts from Heaven"
+#school -1
+#end
+
+#newspell
+#copyspell "Area Fire"
+#name "Meteor Explosion"
+##aoe 15
+#damage 15
+#end
+
+#newspell
+#copyspell 659 -- Fireball
+#name "Meteor Swarm"
+#descr "Four two-foot diameter spheres spring from the caster's outstretched hand and streak in straight lines to the targeted location. The spheres will do tremendous damage to anyone they strike and will also explode dealing damage in a wide area."
+#researchlevel 8
+#school 2 --evocation
+#path 0 0 --fire
+#pathlevel 0 5
+#path 1 4 --astral
+#pathlevel 0 4
+#effect 2
+#fatiguecost 100
+#nreff 4
+#range 100
+#prec 100
+#damage 75
+#aoe 1
+#strikesound 89
+#makecrater 1
+#flightspr 100 -- fire boulder
+#speedmult 3
+#nextspell "Meteor Explosion"
+#explspr 10101
+#spec 549755813888
+#end
+
+#newspell
+#name "Lethal Terror"
+#effect 2
+#damage 999
+#spec 17205035136
+#school -1
+#end
+
+#selectspell "Visions of Death"
+#name "Phantasmal Killer"
+#descr "The caster creates a phantasmal image of the most fearsome creature the target can imagine. Only the victim can see the illusion. The weak-willed will fail to recognise the image is not real and may even die from fear."
+#school 4 --enchantment
+#damage 7
+#path 1 4 --astral
+#pathlevel 1 2
+#nextspell "Lethal Terror"
+#end
+
+#newspell
+#copyspell "Phantasmal Killer"
+#name "Weird"
+#descr "The caster creates a phantasmal image of the most fearsome creature each target can imagine. Each victim can only see their own personal illusion. The weak-willed will fail to recognise the image is not real and may even die from fear."
+#pathlevel 0 5
+#pathlevel 1 4
+#aoe 3001
+-- armour negating, mr negates, may use underwater, does not affect allies
+#spec 17188524160
+#end
+
+#selectspell "Simulacrum"
+#name "Clone"
+#descr "The caster creates an inert duplicate of himself and stores it safely. If his original body dies, his soul immediately transfers to the clone. However, there is a chance that the caster's soul will fail to return and become trapped and lost in the outer planes, possibly until his soul withers away and dies."
+#details "If the original body dies the caster will reappear where the ritual was cast. There is a 80% chance that the caster reappears a month after his original body's death. Each month thereafter the chance is reduced by half. The soul withers away after one year."
+#school 5 -- thaum (neutral necromancy)
+#researchlevel 7
+#path 0 5--death
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 4
+#fatiguecost 1000 -- higher path requirement but cheaper
+#end
+
+#newspell
+#copyspell "Personal Mistform"
+#name "Expeditious Retreat"
+#descr "The caster's land speed is increased."
+#details "Combat speed +50%"
+#researchlevel 0
+#school 1 -- alteration (transmutation)
+#path 0 4 --astral
+#pathlevel 0 1
+#damage 4 -- swiftness
+#spec 0
+#end
+
+#newspell
+#copyspell "Expeditious Retreat"
+#name "Longstrider"
+#descr "The caster's land speed is increased."
+#details "Combat speed +50%"
+#path 0 6 --nature
+#path 1 9 --holy
+#pathlevel 1 1
+#spec 0
+#end
+
+#newspell
+#copyspell "Longstrider"
+#name "Mass Longstrider"
+#descr "The caster increases the land speed of a large group of allies."
+#details "Combat speed +50%"
+#researchlevel 4
+#pathlevel 0 3
+#fatiguecost 60
+#aoe 6002
+#spec 4194304 --affects friendlies only
+#end
+
+#selectspell "Aura of Bewilderment"
+#name "Cloak of Chaos"
+#descr "A random pattern of color surrounds a group of allies, granting them resistance to spells, and causing creatures that strike the subjects to become confused."
+#details "Grants MR+4, Invulnerability 15, and Shroud of Bewilderment.
+
+MR check to resist the bewilderment. Failure means no strike and the next action will be a random one. Units that can see/sense invisible get a +4 bonus to the MR roll."
+#path 1 9 --holy
+#pathlevel 1 3
+#school 1 -- alteration (abjuration)
+#aoe 3001
+#nextspell 1110 --resist magic
+#end
+
+#newspell
+#name "Righteous Wrath of the Faithful"
+#descr "The caster imbues a group of the faithful with a divine fury that greatly enhances their combat ability. Subjects will be driven into an irrational berserk state and attack at twice the usual speed."
+#details "Subjects will be quickened, blessed, and driven berserk. The caster will likely be driven berserk too!"
+#path 0 9 --holy
+#pathlevel 0 3
+#school 4 --enchantment
+#path 1 7 -- glamour
+#pathlevel 1 1
+#range 0
+#aoe 20
+#researchlevel 5
+#fatiguecost 40
+#effect 10
+-- gone berserk + quickness + bless
+#damage 262401
+-- does not affect enemies or mindless; only affects sacreds; can be cast underwater
+#spec 12746752
+#end
+
+#selectspell "Mind Blank"
+#school 1 --alteration
+#end
+
+#selectspell "Mirror Mind"
+#school -1
 #end
