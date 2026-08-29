@@ -72640,9 +72640,9 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #researchlevel 4
 #path 1 4 --astral
 #pathlevel 1 1
--- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane
 -- can be cast underwater
-#spec 148618788517711876
+#spec 148618788517449732
 #range 5020
 #end
 
@@ -72669,9 +72669,9 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #school 4 --Enchantment
 #path 1 9 --Holy
 #pathlevel 1 1
--- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies; animals only
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; animals only
 -- can be cast underwater
-#spec 4785075418697732
+#spec 4785075418435588
 #end
 
 #selectspell "Paralyze"
@@ -72680,9 +72680,9 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #school 4 --Enchantment
 #researchlevel 2
 #path 0 7 --Glamour
--- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
+-- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
 -- can be cast underwater
-#spec 148618788517711876
+#spec 148618788517449860
 #end
 
 #newspell
@@ -72696,9 +72696,9 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #pathlevel 0 1
 #path 1 9 --Holy
 #pathlevel 1 1
--- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies; animals only
+-- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; animals only
 -- can be cast underwater
-#spec 4785075418697732
+#spec 4785075418435716
 #end
 
 #newspell
@@ -72709,8 +72709,8 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #pathlevel 0 3
 #path 1 4 --astral
 #pathlevel 1 1
--- MR negates, mindless immune, can be cast underwater
-#spec 8523776
+-- Armour negating, MR negates, mindless immune, can be cast underwater
+#spec 8523904
 #end
 
 #selectspell "Hold Person"
@@ -72726,7 +72726,11 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #pathlevel 0 4
 #path 1 4
 #pathlevel 1 2
+#fatiguecost 60
 #aoe 3001
+-- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
+-- can be cast underwater
+#spec 148618788517712004
 #end
 
 #newspell
@@ -72737,6 +72741,9 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #pathlevel 0 5
 #pathlevel 1 3
 #aoe 3001
+#fatiguecost 60
+-- Armour negating, MR negates, mindless immune, can be cast underwater, does not affect friendly
+#spec 8786048
 #end
 
 #selectspell "Calm Emotions"
@@ -73093,7 +73100,15 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #copyspell "Hand of Death"
 #name "Vampiric Touch"
 #descr "The caster's touch steals the target's life force."
+#effect 103 --drain life
+#damage 4010
 -- armour negating, can use underwater, no undead, no inanimate
+#spec 545783936
+#school 5 -- thaumaturgy (neutral necromancy)
+#researchlevel 2
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 1 1
 #end
 
 #selectspell "Personal Ironskin"
@@ -73116,8 +73131,8 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #name "Iron Body"
 #descr "This spell transforms the casters body into living iron, granting powerful resistances and rendering them all but impervious to ordinary weapons."
 #researchlevel 7e
-#damage 481053117568
-#details "Grants Slash, Blunt and Pierce resistance, Fire Resistance +5, Shock Resistance +5, Poison Resistance +10, and Invulnerability 25."
+#damage 6341068756373995520
+#details "Grants Slash, Blunt and Pierce resistance, Fire Resistance +15, Shock Resistance 1+5, Poison Resistance +15, and Invulnerability 25."
 #nextspell "Invulnerability"
 #pathlevel 0 4
 #path 1 4 --astral
@@ -73308,4 +73323,14 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #damage 72057594037927936 -- 10 shock resistance
 #researchlevel 6
 #pathlevel 0 4
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Halt Undead"
+#descr "This spell renders as many as three undead creatures temporarily immobile."
+#aoe 1
+#school 5 --thaumaturgy (neutral necromancy)
+#path 0 5 --death
+#spec 276828296 -- armour negating, mr negates, can be cast underwater, only affect undead
 #end
