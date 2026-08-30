@@ -6091,6 +6091,10 @@ The most notorious harpies lived within the Kingdom of Nix, where they were inst
 #voidsanity 1 --Magical beast/aberration
 #end
 
+#selectmonster 234 --Minotaur
+#voidsanity 1 --monstrous humanoid
+#end
+
 #selectmonster 239 -- Stirge
 #name "Stirge"
 #spr1 "ForgottenRealms/stirge1.tga"
@@ -9070,6 +9074,7 @@ Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambit
 #prophetshape 5049
 #montag 13002
 #float
+#drainimmune
 #darkvision 100
 #darkpower 2
 #twiceborn 5050 - Alhoon - Twiceborn form
@@ -10581,6 +10586,7 @@ Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambit
 #prophetshape 5049
 #montag 13002
 #float
+#drainimmune
 #stealthy 10
 #twiceborn 5050 - Alhoon - Twiceborn form
 #lich 5050 - Alhoon - Twiceborn form
@@ -10621,6 +10627,7 @@ Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambit
 #darkpower 2
 #prophetshape 5049
 #float
+#drainimmune
 #stealthy 10
 #twiceborn 5050 - Alhoon - Twiceborn form
 #lich 5050 - Alhoon - Twiceborn form
@@ -26714,6 +26721,7 @@ Because of their abberant minds, control of these creatures requires an ability 
 #weapon 85 -- tentacle
 #weapon 143 -- disease
 #weapon 20 -- bite
+#voidsanity 1 --aberration
 #end
 
 
