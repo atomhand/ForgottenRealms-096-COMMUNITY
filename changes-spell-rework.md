@@ -1,6 +1,9 @@
 Around ~120 added or reworked spells
 Many spells disabled due to overlap, or lacking an equivalent in D&D 3.5e
 
+Summon Monster & Summon Nature's Ally
+ * About 100 monsters (many adjusted/templated, some new)
+
 Other changes
  * Initiate Ceramorphosis and Free a Mindflayer summons a random Illithid directly from the montag instead of doing silly stuff with firstshapes
      * This way the summoned Illithids are the same unit as the ones you recruit, have the same path randoms and maintenance, and there will be no unexpected strange paths when you transform them (e.g. Elder Brain or Alhoon transformation)
@@ -10,6 +13,7 @@ Other changes
  * Adjusted Elder Brain's path boosts (positive boosts are smaller, negative boosts are removed)
  * Give Elder Brain a couple of tentacle attacks and some more sensible item slots
  * Elder Brain and The Absolute have blind+spiritsight tags instead of darkvision (psychic blindsight)
+ * Wolf bite attack replaced with Bite and Trip
 
 
 Spells rework scheme
