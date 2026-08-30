@@ -72886,7 +72886,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #details "Grants Ethereal and Invulnerability 25"
 #path 0 4 --astral
 #pathlevel 0 3
-#researchlevel 8
+#researchlevel 6
 #nextspell 842 --Invulnerability
 #end
 
@@ -72905,7 +72905,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #end
 
 #selectspell "Body Ethereal"
-#aoe -1
+#school -1
 #end
 
 #selectspell "Personal Mistform"
@@ -72988,6 +72988,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #pathlevel 0 5
 #pathlevel 1 4
 #aoe 3001
+#researchlevel 8
 -- armour negating, mr negates, may use underwater, does not affect allies
 #spec 17188524160
 #end
@@ -73057,12 +73058,12 @@ MR check to resist the bewilderment. Failure means no strike and the next action
 #newspell
 #name "Righteous Wrath of the Faithful"
 #descr "The caster imbues a group of the faithful with a divine fury that greatly enhances their combat ability. Subjects will be driven into an irrational berserk state and attack at twice the usual speed."
-#details "Subjects will be quickened, blessed, and driven berserk. The caster will likely be driven berserk too!"
+#details "Subjects will be quickened, blessed, and driven berserk. The caster will likely be affected - and driven berserk - too."
 #path 0 9 --holy
 #pathlevel 0 3
 #school 4 --enchantment
-#path 1 7 -- glamour
-#pathlevel 1 1
+#path 1 0 -- fire
+#pathlevel 1 2
 #range 0
 #aoe 20
 #researchlevel 5
