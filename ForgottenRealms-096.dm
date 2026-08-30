@@ -71759,7 +71759,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 
 #selectspell "Stoneskin"
 #researchlevel 3
-#school 4 -- Enchantment(abjuration)
+#school 1 -- alteration(abjuration)
 #end
 
 #selectspell "Group Stoneskin"
@@ -71857,7 +71857,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #selectspell "Astral Shield"
 #name "Repulsion"
 #descr "A shield of Astral energies forms around the mage. Anyone trying to strike through the shield will have their mind blasted unconscious by the force of the shield. Magic resistance may negate the effect of the shield and allow enemies to strike the mage. The power of the Astral Shield is greater for mages who are highly skilled in Astral magic."
-#school 4 -- Enchantment(abjuration)
+#school 1 -- alteration(abjuration)
 #path 0 3 --earth
 #path 0 1
 #path 1 4 --astral
@@ -72036,7 +72036,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #name "Remove Curse"
 #descr "This ritual instantaneously removes curses on a creature. The target unit must be in the same province as the caster."
 #damage 2
-#school 4 -- Enchantment(abjuration)
+#school 1 -- alteration(abjuration)
 #path 0 4 --astral
 #pathlevel 0 2
 #path 1 -1
@@ -72048,7 +72048,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #name "Remove Blindness"
 #descr "This ritual instantaneously cures a creature of blindness. The target unit must be in the same province as the caster."
 #damage 528384
-#school 4 -- Enchantment(abjuration)
+#school 1 -- alteration(abjuration)
 #path 0 4 --astral
 #pathlevel 0 2
 #fatiguecost 100
@@ -72060,7 +72060,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #descr "This ritual instantaneously regenerates the subject's body, curing them of any and all physical (but not mental) afflictions and diseases. The target unit must be in the same province as the caster."
 #researchlevel 7
 #damage 3319529473
-#school 4 -- Enchantment(abjuration)
+#school 1 -- alteration(abjuration)
 #pathlevel 0 4
 #path 1 9 --Holy
 #athlevel 1 3
