@@ -8593,7 +8593,9 @@ An elder brain marked also the ultimate goal in every mind flayer's life when it
 #clearmagic
 #magicskill 4 1
 #magicskill 7 1
-#darkvision 100
+#magicskill 8 1
+#blind
+#spiritsight
 #darkpower 3
 #awe 2
 #drainimmune
@@ -8614,9 +8616,13 @@ Forming the physical and spiritual center of a mind flayer community, the elder 
 
 An elder brain marked also the ultimate goal in every mind flayer's life when it neared the end of its lifespan. Mind flayers sacrificed their brain and individual life by merging with the elder brain, strengthening its powers and intellect. The average mind flayer was unaware that their personality and consciousness were lost when joining with the elder brain, and only their knowledge and ideas survived. This was a fiercely guarded secret kept by the elder brains."
 #clearweapons
+#miscshape
+#weapon 85 -- tentacle (intrinsic)
+#weapon 85 -- tentacle (intrinsic)
 #weapon 536 -- Mind Blast in melee too
 #weapon 274 -- Enslave Mind
 #weapon 1811 -- Mindflayer Blast
+#itemslots 3932160 -- 4 misc
 #hp 120
 #size 9
 #mr 20
@@ -8630,17 +8636,17 @@ An elder brain marked also the ultimate goal in every mind flayer's life when it
 #amphibian
 #float
 #holy
-#magicboost 0 -2
-#magicboost 1 0
-#magicboost 2 2
-#magicboost 3 -2
-#magicboost 4 3
-#magicboost 5 -2
-#magicboost 6 1
-#magicboost 7 3
-#magicboost 8 2
-#magicboost 9 2
-#darkvision 100
+#clearmagic
+#magicskill 4 2 -- astral
+#magicskill 7 2 -- glam
+#magicskill 8 1 -- blood
+#magicboost 2 1 -- water
+#magicboost 4 2 -- astral
+#magicboost 7 2 -- glam
+#magicboost 8 2 -- blood
+#magicboost 9 1 -- holy
+#blind
+#spiritsight
 #darkpower 3
 #taskmaster 4
 #drainimmune
@@ -8693,59 +8699,11 @@ Alhoons may not evolve into an Elder Brain like other Illithids, due to their un
 #poisonres 25
 #darkvision 100
 #darkpower 3
---#montag 13002
 #drainimmune
 #stealthy 30
 #immortal
 #reformtime 2
 #incunrest 20
-#end
-
--- 5051 - Ulitharid -- Montag
-#newmonster 5051
-#copystats 331
-#name "Ulitharid"
-#nametype 117 -- Deep One
-#spr1 "ForgottenRealms/ulitharid.tga"
-#spr2 "ForgottenRealms/ulitharid2.tga"
-#descr "Ulitharids are created from tadpoles much like standard illithids; fewer than one in a thousand transform into ulitharids, and it is impossible to determine whether a tadpole will become a ulitharid until ceremorphosis is complete.
-
-Superior in nearly all ways to a regular mind flayer, ulitharids possess two extra tentacles, which are twice as long as the others, and an extreme arrogance, even by the standards of their own kind. Only the Elder Brain holds more sway within an illithid community."
-#clearweapons
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#weapon 628 -- tentacle
-#weapon 628 -- tentacle
-#hp 55
-#size 4
-#mr 18
-#mor 20
-#att 13
-#def 13
-#prec 16
-#ap 16
-#mapmove 20
-#expertleader
-#taskmaster 2
-#slaver 5052
-#slaverbonus 2
-#holy
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 1 -- 3S
-#magicboost 5 -2
-#magicboost 7 2 -- 4G
-#magicboost 8 1 -- 3B
-#magicboost 9 0 -- 2H
-#darkvision 100
-#darkpower 3
-#prophetshape 5049
-#montag 13002
-#float
-#drainimmune
 #end
 
 -- Illithid Thrall
@@ -8764,322 +8722,6 @@ Superior in nearly all ways to a regular mind flayer, ulitharids possess two ext
 -- #newmonster 5054
 -- #end
 
-
--- Ceramorphocyte -- summonable
-#newmonster 5055
-#copystats 331
-#name "Ceramorphocyte"
-#nametype 117 -- Deep One
-#spr1 "ForgottenRealms/tadpole.tga"
-#spr2 "ForgottenRealms/tadpole.tga"
-#descr "Upon securing a suitable host, mind flayers began the procedure by rendering the candidate docile with a mind blast. A mature tadpole, selected after surviving a period of one decade in the elder brain's brine pool, was then inserted in the host's cranium through a nostril, ear canal, or eye socket. It then burrowed into the brain and quickly devoured the gray matter, growing in the process as it replaced the brain with its own tissue and attached itself to the brain stem like a parasite. This initial process, which happened over a period of a few hours, effectively completely replaced the victim's personality with the tadpole's, while still keeping the body alive for the second stage of the transformation.
-
-It was only possible to interrupt ceremorphosis and save the host before this initial stage was completed, and even so it was only possible to do so by killing the tadpole, which was complicated by its location. The safest way was to incinerate or crush the host's head and then use spells such as resurrection, or true resurrection. Destroyed parts of the victim's personality could then be reconstructed via restoration and heal spells, as long as the damage was not complete.
-
-Mod Notes: 
-An Elder Brain must be present in the province to recruit a Ceramorph. Upon recruitment, it will transform into 1 of 4 types: a Lesser Illithid, a Mindflayer, or a Ulitharid."
-#clearweapons
-#firstshape -13002 -- Illithids
-#gcost 200
-#rcost 1
-#rpcost 10
-#holy
-#magicskill 4 2
-#magicskill 5 2
-#magicskill 7 3
-#magicskill 8 2
-#magicskill 9 2
-#magicboost 4 -2
-#magicboost 5 -2
-#magicboost 7 -2
-#magicboost 8 -2
-#magicboost 9 -2
---#custommagic 1920 100
---#custommagic 1920 50
-#darkvision 80
-#darkpower 1
-#float
-#monpresentrec 5049
-#monpresentrec 5048
-#stealthy 20
-#end
-
--- 5056 -- Lesser Illithid -- montag
-#newmonster 5056
-#copystats 331
-#spr1 "ForgottenRealms/lessermindflayer.tga"
-#spr2 "ForgottenRealms/lessermindflayer2.tga"
-#drawsize -10
-#name "Lesser Illithid"
-#descr "Utterly arrogant, even the lesser illithids were elitists who believed all creatures to be inferior to themselves - livestock fit to fulfill only three purposes: to die as their food, work as their slaves, or serve as vessels for more of their kind. Even so, the mind flayers did feel a sense of gratitude towards lesser beings. In truth, they truly appreciated the 'gifts' of those they feasted upon, and sincerely felt that they were giving their livestock a gift of their own when they consumed their brains. 
-
-In spite of their lack of physical abilities, mind flayers were feared by all beings in the Underdark because of their great mental prowess. In addition to the small array of mind-affecting spells that every illithid had at its disposal to take control of its prey, they also frequently employed a powerful mind blast to affect a multitude of foes. The mind flayer's mind blast was a 60 foot cone that stunned anyone caught within it."
-#clearweapons
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 15
-#size 3
-#mr 12
-#mor 10
-#att 9
-#def 9
-#prec 12
-#ap 12
-#mapmove 16
-#slaver 5052
-#slaverbonus -4
-#holy
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 0 -- 2S
-#magicboost 5 -2
-#magicboost 7 -1 -- 1G
-#magicboost 8 -2
-#magicboost 9 -2
-#darkvision 100
-#darkpower 2
-#prophetshape 5049
-#montag 13002
-#float
-#drainimmune
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
-#end
-
-
--- 5057 -- Mind Flayer -- montag
-#newmonster 5057
-#copystats 331
-#name "Mind Flayer"
-#nametype 117 -- Deep One
-#spr1 "ForgottenRealms/mindflayer.tga"
-#spr2 "ForgottenRealms/mindflayer2.tga"
-#descr "Mind flayers, also known as illithids, were sadistic aberrations feared by sentient creatures on many worlds across the multiverse due to their powerful psionic abilities. From their twisted lairs deep in the Underdark, these alien entities sought to expand their dominion over all other lifeforms, controlling their minds to use them as obedient thralls. They consumed their victims' very personality by extracting and devouring their brains while they were still alive.
-
-Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambition and intrinsically ruled by an overwhelming sense of self-importance. The mind flayers sought nothing less than world domination, knew their destiny was mastery over the universe, and the ultimate prize they yearned for was complete dominion over all the planes of existence, with the power to reshape reality and all within it to fit their otherworldly designs. However, mind flayers did not believe themselves to be horrifying monsters."
-#clearweapons 
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 40
-#size 4
-#mr 14
-#mor 14
-#att 11
-#def 11
-#prec 14
-#ap 12
-#mapmove 16
-#taskmaster 2
-#slaver 5052
-#holy
-#okleader
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 0 -- 2S
-#magicboost 5 -2
-#magicboost 7 1 -- 3G
-#magicboost 8 0 -- 2B
-#magicboost 9 -1 -- 1H
-#darkvision 100
-#darkpower 2
-#prophetshape 5049
-#montag 13002
-#float
-#drainimmune
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
-#end
-
-
--- Illithid
-#newmonster 5058
-#copystats 331
-#name "Mind Flayer"
-#nametype 117 -- Deep One
-#spr1 "ForgottenRealms/mindflayer.tga"
-#spr2 "ForgottenRealms/mindflayer2.tga"
-#descr "Mind flayers, also known as illithids, were sadistic aberrations feared by sentient creatures on many worlds across the multiverse due to their powerful psionic abilities. From their twisted lairs deep in the Underdark, these alien entities sought to expand their dominion over all other lifeforms, controlling their minds to use them as obedient thralls. They consumed their victims' very personality by extracting and devouring their brains while they were still alive.
-
-Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambition and intrinsically ruled by an overwhelming sense of self-importance. The mind flayers sought nothing less than world domination, knew their destiny was mastery over the universe, and the ultimate prize they yearned for was complete dominion over all the planes of existence, with the power to reshape reality and all within it to fit their otherworldly designs. However, mind flayers did not believe themselves to be horrifying monsters."
-#clearweapons 
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 40
-#size 4
-#mr 14
-#mor 14
-#att 11
-#def 11
-#prec 14
-#ap 12
-#mapmove 16
-#taskmaster 2
-#slaver 5052
-#holy
-#okleader
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 1 -- 3S
-#magicboost 5 -2
-#magicboost 7 1 -- 3G
-#magicboost 8 -1 -- 1B
-#magicboost 9 -1 -- 1H
-#darkvision 100
-#darkpower 2
-#prophetshape 5049
-#montag 13002
-#float
-#drainimmune
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
-#end
-
-
--- Lesser Illithid
-#newmonster 5059
-#copystats 331
-#spr1 "ForgottenRealms/lessermindflayer.tga"
-#spr2 "ForgottenRealms/lessermindflayer2.tga"
-#drawsize -10
-#name "Lesser Illithid"
-#descr "Utterly arrogant, even the lesser illithids were elitists who believed all creatures to be inferior to themselves - livestock fit to fulfill only three purposes: to die as their food, work as their slaves, or serve as vessels for more of their kind. Even so, the mind flayers did feel a sense of gratitude towards lesser beings. In truth, they truly appreciated the 'gifts' of those they feasted upon, and sincerely felt that they were giving their livestock a gift of their own when they consumed their brains. 
-
-In spite of their lack of physical abilities, mind flayers were feared by all beings in the Underdark because of their great mental prowess. In addition to the small array of mind-affecting spells that every illithid had at its disposal to take control of its prey, they also frequently employed a powerful mind blast to affect a multitude of foes. The mind flayer's mind blast was a 60 foot cone that stunned anyone caught within it."
-#clearweapons
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 15
-#size 3
-#mr 12
-#mor 10
-#att 9
-#def 9
-#prec 12
-#ap 12
-#mapmove 16
-#slaver 5052
-#slaverbonus -4
-#holy
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 -1 -- 1S
-#magicboost 5 -2
-#magicboost 7 0 -- 2G
-#magicboost 8 -2 -- 0B
-#magicboost 9 -2 -- 0H
-#prophetshape 5049
-#montag 13002
-#float
-#darkvision 100
-#darkpower 2
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
-#end
-
-
--- Lesser Illithid
-#newmonster 5060
-#copystats 331
-#spr1 "ForgottenRealms/lessermindflayer.tga"
-#spr2 "ForgottenRealms/lessermindflayer2.tga"
-#drawsize -10
-#name "Lesser Illithid"
-#descr "Utterly arrogant, even the lesser illithids were elitists who believed all creatures to be inferior to themselves - livestock fit to fulfill only three purposes: to die as their food, work as their slaves, or serve as vessels for more of their kind. Even so, the mind flayers did feel a sense of gratitude towards lesser beings. In truth, they truly appreciated the 'gifts' of those they feasted upon, and sincerely felt that they were giving their livestock a gift of their own when they consumed their brains. 
-
-In spite of their lack of physical abilities, mind flayers were feared by all beings in the Underdark because of their great mental prowess. In addition to the small array of mind-affecting spells that every illithid had at its disposal to take control of its prey, they also frequently employed a powerful mind blast to affect a multitude of foes. The mind flayer's mind blast was a 60 foot cone that stunned anyone caught within it."
-#clearweapons
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 15
-#size 3
-#mr 12
-#mor 10
-#att 9
-#def 9
-#prec 12
-#ap 12
-#mapmove 16
-#slaver 5052
-#slaverbonus -4
-#holy
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 -1 -- 1S
-#magicboost 5 -2
-#magicboost 7 -1 -- 1G
-#magicboost 8 -1 -- 1B
-#magicboost 9 -2 -- 0H
-#prophetshape 5049
-#montag 13002
-#float
-#darkvision 100
-#darkpower 2
-#drainimmune
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
-#end
-
-
--- Illithid
-#newmonster 5061
-#copystats 331
-#name "Mind Flayer"
-#nametype 117 -- Deep One
-#spr1 "ForgottenRealms/mindflayer.tga"
-#spr2 "ForgottenRealms/mindflayer2.tga"
-#descr "Mind flayers, also known as illithids, were sadistic aberrations feared by sentient creatures on many worlds across the multiverse due to their powerful psionic abilities. From their twisted lairs deep in the Underdark, these alien entities sought to expand their dominion over all other lifeforms, controlling their minds to use them as obedient thralls. They consumed their victims' very personality by extracting and devouring their brains while they were still alive.
-
-Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambition and intrinsically ruled by an overwhelming sense of self-importance. The mind flayers sought nothing less than world domination, knew their destiny was mastery over the universe, and the ultimate prize they yearned for was complete dominion over all the planes of existence, with the power to reshape reality and all within it to fit their otherworldly designs. However, mind flayers did not believe themselves to be horrifying monsters."
-#clearweapons 
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 40
-#size 4
-#mr 14
-#mor 14
-#att 11
-#def 11
-#prec 14
-#ap 12
-#mapmove 16
-#taskmaster 2
-#slaver 5052
-#holy
-#okleader
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 1 -- 3S
-#magicboost 5 -2
-#magicboost 7 0 -- 2G
-#magicboost 8 0 -- 2B
-#magicboost 9 -1 -- 1H
-#prophetshape 5049
-#montag 13002
-#float
-#drainimmune
-#darkvision 100
-#darkpower 2
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
-#end
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -10544,55 +10186,6 @@ The standard soldiers are still well drilled and disciplined, some of them veter
 #end
 
 
-
--- 5112 -- Illithid -- montag
-#newmonster 5112
-#copystats 331
-#name "Mind Flayer"
-#nametype 117 -- Deep One
-#spr1 "ForgottenRealms/mindflayer.tga"
-#spr2 "ForgottenRealms/mindflayer2.tga"
-#descr "Mind flayers, also known as illithids, were sadistic aberrations feared by sentient creatures on many worlds across the multiverse due to their powerful psionic abilities. From their twisted lairs deep in the Underdark, these alien entities sought to expand their dominion over all other lifeforms, controlling their minds to use them as obedient thralls. They consumed their victims' very personality by extracting and devouring their brains while they were still alive.
-
-Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambition and intrinsically ruled by an overwhelming sense of self-importance. The mind flayers sought nothing less than world domination, knew their destiny was mastery over the universe, and the ultimate prize they yearned for was complete dominion over all the planes of existence, with the power to reshape reality and all within it to fit their otherworldly designs. However, mind flayers did not believe themselves to be horrifying monsters."
-#clearweapons 
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 40
-#size 4
-#mr 14
-#mor 14
-#att 11
-#def 11
-#prec 14
-#ap 12
-#mapmove 16
-#taskmaster 2
-#slaver 5052
-#holy
-#goodleader
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 1 -- 3S
-#magicboost 5 -2
-#magicboost 7 1 -- 3G
-#magicboost 8 0 -- 2B
-#magicboost 9 -2 -- 0H
-#darkvision 100
-#darkpower 2
-#prophetshape 5049
-#montag 13002
-#float
-#drainimmune
-#stealthy 10
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
-#end
-
-
 -- 5113 -- Illithid -- RECRUITABLE
 #newmonster 5113
 #copystats 331
@@ -10631,6 +10224,8 @@ Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambit
 #stealthy 10
 #twiceborn 5050 - Alhoon - Twiceborn form
 #lich 5050 - Alhoon - Twiceborn form
+#montag 13002
+#montagweight 4
 #end
 
 -- 5114 - Alhoon - RECRUITABLE
@@ -10730,6 +10325,7 @@ Superior in nearly all ways to a regular mind flayer, ulitharids possess two ext
 #stealthy 10
 #twiceborn 5050 - Alhoon - Twiceborn form
 #lich 5050 - Alhoon - Twiceborn form
+#montag 13002
 #end
 
 
@@ -10769,6 +10365,8 @@ In spite of their lack of physical abilities, mind flayers were feared by all be
 #stealthy 10
 #twiceborn 5050 - Alhoon - Twiceborn form
 #lich 5050 - Alhoon - Twiceborn form
+#montag 13002
+#montagweight 3
 #end
 
 -- 5117 -- Halruaan Hoplite
@@ -51056,139 +50654,6 @@ Naturally cautious, Intellect Devourers preferred to work only in the dark and s
 #darkvision 60
 #end
 
--- 8010 -- Illithid Corruptor -- montag
-#newmonster 8010
-#copystats 331
-#spr1 "ForgottenRealms/illithidcorruptor.tga"
-#spr2 "ForgottenRealms/illithidcorruptor2.tga"
-#name "Illithid Corruptor"
-#descr "Illithid Corruptors specialize in infiltration and hidden corruption. They are the spies and sometimes political assassins of the mindflayer hive."
-#clearweapons
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 18
-#size 3
-#mr 12
-#mor 18
-#att 11
-#def 11
-#prec 12
-#ap 12
-#mapmove 16
-#holy
-#spy
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 0 -- 2S
-#magicboost 5 -2
-#magicboost 7 -1 -- 1G
-#magicboost 8 -2
-#magicboost 9 -2
-#darkvision 100
-#researchbonus -5
-#darkpower 2
-#prophetshape 5049
-#montag 13002
-#float
-#drainimmune
-#stealthy 30
-#corruptor 12
-#noleader
-#nomagicleader
-#end
-
--- 8011 -- Illithid Corruptor -- montag
-#newmonster 8011
-#copystats 331
-#spr1 "ForgottenRealms/illithidcorruptor.tga"
-#spr2 "ForgottenRealms/illithidcorruptor2.tga"
-#name "Illithid Corruptor"
-#descr "Illithid Corruptors specialize in infiltration and hidden corruption. They are the spies and sometimes political assassins of the mindflayer hive."
-#clearweapons
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 18
-#size 3
-#mr 12
-#mor 18
-#att 11
-#def 11
-#prec 12
-#ap 12
-#mapmove 16
-#holy
-#spy
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 0 -- 1S
-#magicboost 5 -2
-#magicboost 7 -2 -- 2G
-#magicboost 8 -1 -- 1B
-#magicboost 9 -2
-#darkvision 100
-#researchbonus -5
-#darkpower 2
-#prophetshape 5049
-#montag 13002
-#float
-#drainimmune
-#stealthy 30
-#corruptor 12
-#noleader
-#nomagicleader
-#end
-
-
--- 8012 -- Illithid Corruptor -- montag
-#newmonster 8012
-#copystats 331
-#spr1 "ForgottenRealms/illithidcorruptor.tga"
-#spr2 "ForgottenRealms/illithidcorruptor2.tga"
-#name "Illithid Corruptor"
-#descr "Illithid Corruptors specialize in infiltration and hidden corruption. They are the spies and sometimes political assassins of the mindflayer hive."
-#clearweapons
-#weapon 1811 -- Mindflayer Blast
-#weapon 33 -- Claws
-#hp 18
-#size 3
-#mr 12
-#mor 18
-#att 11
-#def 11
-#prec 12
-#ap 12
-#mapmove 16
-#holy
-#spy
-#magicboost 0 -2
-#magicboost 1 -2
-#magicboost 2 -2
-#magicboost 3 -2
-#magicboost 6 -2
-#magicboost 4 -1 -- 1S
-#magicboost 5 -2
-#magicboost 7 -1 -- 1G
-#magicboost 8 -2
-#magicboost 9 -1 -- 1H
-#researchbonus -5
-#darkvision 100
-#darkpower 2
-#prophetshape 5049
-#montag 13002
-#float
-#drainimmune
-#stealthy 30
-#corruptor 12
-#noleader
-#nomagicleader
-#end
-
 
 -- 8013 -- Illithid Corruptor
 #newmonster 8013
@@ -51224,6 +50689,8 @@ Naturally cautious, Intellect Devourers preferred to work only in the dark and s
 #corruptor 12
 #noleader
 #nomagicleader
+#montag 13002
+#montagweight 3
 #end
 
 -- 8019 -- Merfolk Princess
@@ -57668,7 +57135,7 @@ This nation is merely for watching games in the background. It is located in the
 #rarity 5
 #gems 8 2
 #gold 50 
-#com 5055 -- Illithid Montag Initiator
+--#com 5055 -- Illithid Montag Initiator
 #com 7068 -- beholder
 #end
 
@@ -67188,7 +66655,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #newspell
 #name "Free a Mindflayer"
 #descr "Only an Elder Brain or Greater Elder Brain may typically drive this process. It has happened, however, that rogue Illithids have broken free. When this happens, their narcissism leads always to the goal of subverting and eventually destroying the Elder Brain from which they broke away. Making an Illithid your Chosen will convert them into an Elder Brain."
-#brief "Some nations with deep enmity toward mindflayers will never cast this spell."
+#details "Some nations with deep enmity toward mindflayers will never cast this spell."
 #school 0
 #researchlevel 4
 #path 0 4
@@ -67197,7 +66664,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #effect 10021
 #nreff 1
 #onlyowndst 1
-#damage 5055
+#damage -13002
 #aispellmod 10
 #notfornation 219 -- Narfell				
 #notfornation 224 -- Kuo-toans
@@ -67214,6 +66681,10 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #newspell
 #name "Initiate Ceramorphosis"
 #descr "This spell summons one of the four types of Mindflayer commander. Only an Elder Brain or Greater Elder Brain may drive this process."
+#details "3/11 chance for an Illithid Corruptor
+3/11 chance for a Lesser Illithid
+4/11 chance for a Mind Flayer
+1/11 chance for a Ulitharid"
 #school 6
 #researchlevel 0
 #path 0 8
@@ -67222,7 +66693,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #effect 10021
 #nreff 1
 #onlyowndst 1
-#damage 5055
+#damage -13002
 #onlymnr 5048
 #onlymnr 5049
 #spec 8388608 -- uwok
