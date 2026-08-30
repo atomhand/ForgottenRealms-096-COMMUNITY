@@ -27315,8 +27315,8 @@ Their prayers for Tchazzar's return are soon to be answered - though Tchazzar's 
 #prec 15
 #enc 2
 #clearweapons
-#weapon 29 -- claw
-#weapon 821 -- bite
+#weapon 33 -- claws
+#weapon 20 -- bite
 #glamour
 #animal
 #demon
@@ -72332,6 +72332,22 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #mor 30
 #end
 
+#newmonster 5235
+#copystats 5353 -- dire bat
+#copyspr 5353 -- dire bat
+#name "Fiendish Dire Bat"
+#montag 14003 -- Summon Monster III (Land)
+----- Fiendish Template HD4-7 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 5
+#coldres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
 #selectmonster 6671 -- Hellhound
 #montag 14003 -- Summon Monster III (Land)
 #end
@@ -72848,6 +72864,398 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #mr 18
 #voidsanity 1 -- magic beast
 #mor 30
+#end
+
+
+------------------------------------------ Shadow Conjuration -----------------------------------------------------
+-- monster id range 5470-5484
+-- weapon id range 2020-2049
+-- montag 14040
+
+#newweapon 2020
+#copyweapon 20 -- bite
+#name "Shadow Bite"
+#mrhalf
+#end
+
+#newweapon 2021
+#copyweapon 676 -- fiery breath
+#name "Shadow Fiery Breath"
+#mrhalf
+#end
+
+#newweapon 2022
+#copywweapon 55 -- hoof
+#name "Shadow Hoof"
+#mrhalf
+#end
+
+#newweapon 2023
+#copywweapon 331 -- gore
+#name "Shadow Gore"
+#mrhalf
+#end
+
+#newweapon 2024
+#copyweapon 408 -- talons
+#name "Shadow Talons"
+#mrhalf
+#end
+
+#newweapon 2025
+#copyweapon 404 -- beak
+#name "Shadow Beak"
+#mrhalf
+#end
+
+#newweapon 2026
+#copyweapon 92 --fist
+#name "Shadow Fist"
+#mrhalf
+#end
+
+#newweapon 2027
+#copyweapon 360
+#name "Shadow Sticks and Stones"
+#mrhalf
+#end
+
+#newweapon 2028
+#copyweapon 236
+#name "Shadow Claw"
+#mrhalf
+#end
+
+#newweapon 2029
+#copyweapon 251
+#name "Shadow Venomous Fangs"
+#mrhalf
+#end
+
+#newweapon 2030
+#copyweapon 1805
+#name "Shadow Kyton's Chains"
+#mrhalf
+#end
+
+#newweapon 2031
+#copyweapon 749
+#name "Shadow Enchanted Scimitar"
+#mrhalf
+#end
+
+#newweapon 2032
+#copyweapon 589
+#name "Shadow Tail Slap"
+#mrhalf
+#end
+
+#newweapon 2033
+#copyweapon 33
+#name "Shadow Claws" -- one handed
+#mrhalf
+#end
+
+#newweapon 2034
+#copyweapon 754
+#name "Shadow Razor Wings"
+#mrhalf
+#end
+
+#newweapon 2035
+#copyweapon 319
+#name "Shadow Sharpest Bite"
+#mrhalf
+#end
+
+#newweapon 2036
+#copyweapon 261
+#name "Shadow Web"
+#mrhalf
+#end
+
+#newweapon 2037
+#copyweapon 85
+#name "Shadow Tentacle"
+#mrhalf
+#end
+
+-- technically, the extra effect should be MR negates.
+-- but I don't think it'st hat important
+#newweapon 2033
+#copyweapon 1847
+#name "Shadow Subsurface Shockwave"
+#mrhalf
+#end
+
+#newmonster 5470
+#copystats 6671 --Hellhound
+#copyspr 6671 --Hellhound
+#name "Shadow Hellhound"
+#hp 9
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2021 -- shadow fiery breath
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5471
+#copystats 5230 -- celestial buffalo
+#copyspr 5230 -- celestial buffalo
+#name "Shadow Celestial Buffalo"
+#hp 21
+#clearweapons
+#weapon 2022 -- Shadow Hoof
+#weapon 2023 -- Shadow Gore
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5472
+#copystats 5231 -- Celestial hippogriff
+#copyspr 5231 -- Celestial hippogriff
+#name "Shadow Celestial Hippogriff"
+#hp 17
+#clearweapons
+#weapon 2024 -- shadow talons
+#weapon 2025 -- shadow beak
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5473
+#copystats 5231 -- Fiendish Ape
+#copyspr 5231 -- Fiendish Ape
+#name "Shadow Fiendish Ape"
+#hp 17
+#clearweapons
+#weapon 2026 -- shadow fist
+#weapon 2027 -- shadow sticks and stones
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5474
+#copystats 5234 -- Celestial Dire Badger
+#copyspr 5234 -- Celestial Dire Badger
+#name "Shadow Celestial Dire Badger"
+#hp 12
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2028 -- shadow claw
+#weapon 2028 -- shadow claw
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5475
+#copystats 5232 -- Fiendish Crocodile
+#copyspr 5332 -- Fiendish Crocodile
+#name "Shadow Fiendish Crocodile"
+#hp 11
+#clearweapons
+#weapon 2020 -- shadow bite
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5476
+#copystats 5235 -- Fiendish Dire Bat
+#copyspr 5235 -- Fiendish Dire Bat
+#name "Shadow Fiendish Dire Bat"
+#hp 9
+#clearweapons
+#weapon 2029 -- shadow venomous fangs
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+------------------------------------------ Greater Shadow Conjuration -----------------------------------------------------
+-- monster id range 5485-5499
+-- weapons shared with shadow conj (2020-2049)
+-- montag 14041
+
+#newmonster 5485
+#copystats 7107 -- Kyton
+#copyspr 7107 -- Kyton
+#name "Shadow Kyton"
+#hp 25
+#fear 0
+#dread 5
+#clearweapons
+#weapon 2030 -- shadow kyton's chains
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14041
+#end
+
+#newmonster 5486
+#copystats 5276 -- Celestial Dire Lion
+#copyspr 5276 -- Celestial Dire Lion
+#name "Shadow Celestial Dire Lion"
+#hp 22
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2028 -- shadow claw
+#weapon 2028 -- shadow claw
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14041
+#end
+
+#newmonster 5487
+#copystats 5277 -- Janni
+#copyspr 5277 -- Janni
+#name "Shadow Janni"
+#hp 12
+#clearweapons
+#weapon 2031 -- Shadow Enchanted Scimitar
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14041
+#end
+
+#newmonster 5488
+#copystats 5275 -- Celestial Orca
+#copyspr 5275 -- Celestial Orca
+#name "Shadow Celestial Orca"
+#hp 22
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2032 -- shadow tail slap
+#weapon 2033 -- shadow subsurface shockwave
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14041
+#end
+
+------------------------------------------ Shades -----------------------------------------------------
+-- monster id range 5500-5514
+-- weapons shared with shadow conj (2020-2049)
+-- montag 14042
+
+#newmonster 5500
+#copystats 7047 -- Vrock
+#copyspr 7047 -- Vrock
+#name "Shadow Vrock"
+#hp 15
+#clearweapons
+#weapon 2033 -- shadow claws
+#weapon 2032 -- shadow bite
+#weapon 2034 -- shadow razor wings
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5501
+#copystats 7108 -- Hellcat
+#copyspr 7108 -- Hellcat
+#name "Shadow Hellcat"
+#hp 25
+#clearweapons
+#weapon 2033 -- shadow claws
+#weapon 2032 -- shadow bite
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5502
+#copystats 5305 -- Fiendish Dire Tiger
+#copyspr 5305 -- Fiendish Dire Tiger
+#name "Shadow Fiendish Dire Tiger"
+#hp 30
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2028 -- shadow claw
+#weapon 2028 -- shadow claw
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5503
+#copystats 5306 -- Fiendish Tyrannosaurus Rex
+#copyspr 5306 -- Fiendish Tyrannosaurus Rex
+#name "Shadow Fiendish Tyrannosaurus Rex"
+#hp 40
+#clearweapons
+#weapon 2035 -- shadow sharpest bite
+#weapon 2032 -- shadow tail slap
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5504
+#copystats 5308 -- Colossal Fiendish Monstrous Spider
+#copyspr 5308 -- Colossal Fiendish Monstrous Spider
+#name "Shadow Colossal Fiendish Spider"
+#hp 60
+#clearweapons
+#weapon 2029 -- shadow venomous fangs
+#weapon 2036 -- shadow web
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5505
+#copystats 5307 -- Fiendish Giant Squid
+#copyspr 5307 -- Fiendish Giant Squid
+#name "Shadow Fiendish Giant Squid"
+#hp 32
+#clearweapons
+#weapon 2037 -- Shadow tentacle
+#weapon 2037 -- Shadow tentacle
+#weapon 2037 -- Shadow tentacle
+#weapon 2037 -- Shadow tentacle
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
 #end
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -74954,4 +75362,54 @@ MR check to resist the bewilderment. Failure means no strike and the next action
 #effect 21 -- summon commander
 #damage -14039
 #school -1 -- Disabled for now, there aren't any level 9 aquatic nature's allies
+#end
+
+-------- Shadow Conjuration
+
+#newspell
+#name "Shadow Conjuration"
+#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions a creature. Shadow Conjuration mimics the effects of Summon Monster III.
+
+Shadow illusions are more fragile than the real thing, but otherwise have the same abilities. Strrong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
+#details "Shadow illusions do not deal false damage."
+#researchlevel 3
+#school 5 -- Illusion (Thaumaturgy)
+#path 0 7 -- glamour
+#pathlevel 0 2
+#path 1 4 -- astral
+#pathlevel 1 1
+#effect 1 -- summon
+#damage -14040 -- shadow conjuration montag
+#nreff 1
+#fatiguecost 60
+#spec 8388608 -- can be cast underwater
+#end
+
+#newspell
+#copyspell "Shadow Conjuration"
+#name "Greater Shadow Conjuration"
+--- Make elementals as well?
+#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions a creature. Greater Shadow Conjuration mimics the effects of Summon Monster VI.
+
+Shadow illusions are more fragile than the real thing, but otherwise have the same abilities. Strong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
+#details "Shadow illusions do not deal false damage."
+#researchlevel 6
+#pathlevel 0 4
+#pathlevel 1 3
+#damage -14041 -- greater shadow conjuration montag
+#end
+
+#newspell
+#copyspell "Shadow Conjuration"
+#name "Shades"
+--- Make elementals as well?
+#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions a creature. Shades mimics the effects of Summon Monster VIII.
+
+Shadow illusions are more fragile than the real thing, and can never cast spells, but otherwise have the same abilities. Strong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
+#details "Shadow illusions do not deal false damage."
+#researchlevel 8
+#pathlevel 0 5
+#pathlevel 1 4
+#fatiguecost 80
+#damage -14042 -- shades montag
 #end
