@@ -8597,6 +8597,7 @@ An elder brain marked also the ultimate goal in every mind flayer's life when it
 #magicskill 4 1
 #magicskill 7 1
 #magicskill 8 1
+#eyes 0
 #blind
 #spiritsight
 #darkpower 3
@@ -8648,6 +8649,7 @@ An elder brain marked also the ultimate goal in every mind flayer's life when it
 #magicboost 7 2 -- glam
 #magicboost 8 2 -- blood
 #magicboost 9 1 -- holy
+#eyes 0
 #blind
 #spiritsight
 #darkpower 3
@@ -8662,6 +8664,7 @@ An elder brain marked also the ultimate goal in every mind flayer's life when it
 -- Alhoon
 #newmonster 5050
 #copystats 331
+#humanoid -- Illithids can wear boots
 #name "Alhoon "
 #nametype 117 -- Deep One
 #spr1 "ForgottenRealms/alhoon.tga"
@@ -8670,6 +8673,7 @@ An elder brain marked also the ultimate goal in every mind flayer's life when it
 
 Alhoons may not evolve into an Elder Brain like other Illithids, due to their undead nature."
 #clearweapons
+#gcost 0
 #weapon 1811 -- Mindflayer Blast
 #weapon 33 -- Claws
 #hp 55
@@ -10192,6 +10196,7 @@ The standard soldiers are still well drilled and disciplined, some of them veter
 -- 5113 -- Illithid -- RECRUITABLE
 #newmonster 5113
 #copystats 331
+#humanoid -- Illithids can wear boots
 #name "Mind Flayer"
 #nametype 117 -- Deep One
 #spr1 "ForgottenRealms/mindflayer.tga"
@@ -10234,6 +10239,7 @@ Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambit
 -- 5114 - Alhoon - RECRUITABLE
 #newmonster 5114
 #copystats 331
+#humanoid -- Illithids can wear boots
 #name "Alhoon"
 #nametype 117 -- Deep One
 #spr1 "ForgottenRealms/alhoon.tga"
@@ -10287,6 +10293,7 @@ Alhoons may not evolve into an Elder Brain like other Illithids, due to their un
 -- 5115 - Ulitharid -- RECRUITABLE
 #newmonster 5115
 #copystats 331
+#humanoid -- Illithids can wear boots
 #name "Ulitharid "
 #nametype 117 -- Deep One
 #spr1 "ForgottenRealms/ulitharid.tga"
@@ -10335,6 +10342,7 @@ Superior in nearly all ways to a regular mind flayer, ulitharids possess two ext
 -- 5116 -- Lesser Illithid
 #newmonster 5116 
 #copystats 331
+#humanoid -- Illithids can wear boots
 #spr1 "ForgottenRealms/lessermindflayer.tga"
 #spr2 "ForgottenRealms/lessermindflayer2.tga"
 #drawsize -10
@@ -21027,6 +21035,7 @@ A handful of yuan-ti in the nation of Serpentes, however, had turned recently to
 #nametype 151
 #clearmagic
 #clearspec
+#quadruped
 #hp 40
 #size 6
 #mr 5
@@ -45590,6 +45599,7 @@ While they could sense their surroundings with perfect precision, they abhored s
 #rcost 1
 #rpcost 15
 #hp 26
+#size 4
 #prot 8
 #mr 16
 #mor 10
@@ -45629,6 +45639,7 @@ Early descriptions of morkoths were vague, likely due to their variety. Their bo
 #rcost 10
 #rpcost 20
 #hp 28
+#size 4
 #prot 14
 #mr 16
 #mor 12
@@ -45668,6 +45679,7 @@ Morkoth Mages were the lowest rank among the magocratic elite. They ruled over t
 #rcost 10
 #rpcost 20
 #hp 20
+#size 4
 #prot 14
 #mr 16
 #mor 9
@@ -45713,6 +45725,7 @@ Morkoth reproduction was a gruesome affair - in case you were curious - female m
 #rcost 10
 #rpcost 20
 #hp 28
+#size 4
 #prot 14
 #mr 16
 #mor 10
@@ -45762,6 +45775,7 @@ Morkoth wizards could not utilize the spellbooks normally handled by air-breathi
 #rcost 10
 #rpcost 20
 #hp 32
+#size 4
 #prot 14
 #mr 16
 #mor 10
@@ -45812,6 +45826,7 @@ Early descriptions of morkoths were vague, likely due to their variety. Their bo
 #rcost 10
 #rpcost 20
 #hp 32
+#size 4
 #prot 14
 #mr 16
 #mor 12
@@ -50669,6 +50684,7 @@ Naturally cautious, Intellect Devourers preferred to work only in the dark and s
 -- 8013 -- Illithid Corruptor
 #newmonster 8013
 #copystats 331
+#humanoid -- Illithids can wear boots
 #spr1 "ForgottenRealms/illithidcorruptor.tga"
 #spr2 "ForgottenRealms/illithidcorruptor2.tga"
 #name "Illithid Corruptor"
@@ -63853,11 +63869,11 @@ This nation is merely for watching games in the background. It is located in the
 #end
 
 #selectspell 1041 -- Lamias
-#school -1
+--#school -1
 #end
 
 #selectspell 1043 -- Lamia Queen
-#school -1
+--#school -1
 #end
 
 #selectspell 1044 -- Fay Prince
@@ -66665,7 +66681,8 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 ----------------------------------------------------------------------------------
 #newspell
 #name "Free a Mindflayer"
-#descr "Only an Elder Brain or Greater Elder Brain may typically drive this process. It has happened, however, that rogue Illithids have broken free. When this happens, their narcissism leads always to the goal of subverting and eventually destroying the Elder Brain from which they broke away. Making an Illithid your Chosen will convert them into an Elder Brain."
+#descr "Only an Elder Brain or Greater Elder Brain may typically drive this process. It has happened, however, that rogue Illithids have broken free. When this happens, their narcissism leads always to the goal of subverting and eventually destroying the Elder Brain from which they broke away. Making an Illithid your Chosen will convert them into an Elder Brain.
+Unlike most summons, Mindflayers cost gold maintenance."
 #details "Some nations with deep enmity toward mindflayers will never cast this spell."
 #school 0
 #researchlevel 4
@@ -66691,7 +66708,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 
 #newspell
 #name "Initiate Ceramorphosis"
-#descr "This spell summons one of the four types of Mindflayer commander. Only an Elder Brain or Greater Elder Brain may drive this process."
+#descr "This spell summons one of the four types of Mindflayer commander. Only an Elder Brain or Greater Elder Brain may drive this process. Unlike most summons, Mindflayers cost gold maintenance."
 #details "3/11 chance for an Illithid Corruptor
 3/11 chance for a Lesser Illithid
 4/11 chance for a Mind Flayer
@@ -69409,16 +69426,12 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #path 0 7
 #pathlevel 0 3
 #researchlevel 4
-#descr "By means of this ritual, a mindflayer transforms into an Alhoon - an immortal, undead, lich mindflayer. They will gain boosts to several magic paths, but lose their divinity and become heretics in the eyes of the Elder Brain. Only the most powerful illithids, the Mindflayers and Ulitharids, may cast this ritual."
+#descr "By means of this ritual, a mindflayer transforms into an Alhoon - an immortal, undead, lich mindflayer. They will gain boosts to several magic paths, but lose their divinity and become heretics in the eyes of the Elder Brain."
+#details "Only the most powerful illithids, the Mindflayers and Ulitharids, may cast this ritual."
 #fatiguecost 4000
 #damage 5050 -- Alhoon - 'Twiceborn' form
-#onlymnr 5057
-#onlymnr 5058
-#onlymnr 5061
-#onlymnr 5112
-#onlymnr 5113
-#onlymnr 5051
-#onlymnr 5115
+#onlymnr 5113 -- Mind Flayer
+#onlymnr 5115 -- Ulitharid
 #end
 
 

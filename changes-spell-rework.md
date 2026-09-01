@@ -8,18 +8,21 @@ Other changes
  * Initiate Ceramorphosis and Free a Mindflayer summons a random Illithid directly from the montag instead of doing silly stuff with firstshapes
      * This way the summoned Illithids are the same unit as the ones you recruit, have the same path randoms and maintenance, and there will be no unexpected strange paths when you transform them (e.g. Elder Brain or Alhoon transformation)
      * It also fixes several mistakes (paths, maintenance, nametype) that were affecting the summoned Illithids
- * The Savage Frontier cap site loses the ability to train Ceramorphocytes directly
- * Add base magic paths to the Elder Brain, so it's not useless if you acquire one somehow
- * Adjusted Elder Brain's path boosts (positive boosts are smaller, negative boosts are removed)
- * Give Elder Brain a couple of tentacle attacks and some more sensible item slots
- * Elder Brain and The Absolute have blind+spiritsight tags instead of darkvision (psychic blindsight)
+     * The Savage Frontier cap site loses the ability to train Ceramorphocytes directly  (they still have convenient access to summon them)
+ * Other Illithid tweaks
+     * Adjusted Elder Brain's path boosts (positive boosts are smaller, negative boosts are removed)
+     * Give Elder Brain a couple of tentacle attacks and some more sensible item slots
+     * Elder Brain and The Absolute have blind+spiritsight tags instead of darkvision (psychic blindsight), and don't have eyes
+     * Illithids have standard humanoid hit locations can wear boots (unlike Dom6, D&D illithids seem to have legs)
+     * Add base magic paths to the Elder Brain, so it's not useless if you acquire one in a way other than transforming another unit
  * Wolf bite attack replaced with Bite and Trip
-
+ * Morkoths set to size 4 (from 8)
+ * Sebekian Crocodile shouldn't have humanoid slots
 
 Spells rework scheme
  * Abjuration -> Alteration
  * Conjuration (exception creation) -> Conjuration
- * Conjuration (creation) -> Construction
+ * Conjuration (creation) -> split between Construction & Conjuration (earth/construction spells to Const, clouds to conj)
  * Divination -> Thaumaturgy
  * Enchantment -> Enchantment
  * Evil Necromancy -> Blood
