@@ -64195,10 +64195,11 @@ This nation is merely for watching games in the background. It is located in the
 #name "Grease"
 #descr "The caster conjures an area of slimey grease. Units stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
 #spec 4096 -- Mr roll negates
-#school 0 --conjuration
+#school 3 -- construction (conj - creation)
 #researchlevel 1
-#path 0 4 --astral
+#path 0 3 --earth
 #path 1 7 --glamour (bards get grease too)
+#pathlevel 0 1
 #pathlevel 1 1
 #end
 
@@ -64243,17 +64244,16 @@ This nation is merely for watching games in the background. It is located in the
 #spec 8388608
 #end
 
-#newspell
-#copyspell 975
+#selectspell "Blink"
 #name "Dimension Door"
 #descr "The caster creates an instability in space that transports them to another position on the battlefield."
-#details "Vanilla Dom 6's Blink spell, but with much improved range and casting time as found in DnD's Dim Door."
+#school 0 --conjuration
 #path 0 4
 #pathlevel 0 2
 #damage 50
 #fatiguecost 10
 #casttime 1
-#spec 8388608
+#spec 8388608 -- may use underwater
 #end
 
 #newspell
@@ -65558,23 +65558,8 @@ This nation is merely for watching games in the background. It is located in the
 #school -1
 #end
 
-#selectspell "Blink" -- Remove
-#school -1
-#end
-
 #selectspell 546 -- contact marid
 #school -1
-#end
-
-
-
-#selectspell 244 -- "Fire Flies"
-#name "Spark"
-#descr "A burning spark shoots forth from the wizard's hand. The spark is precise, but has limited armor penetration."
-#nreff 1
-#prec 2
-#fatiguecost 10
-#aispellmod -75 -- Didn't do badlvl because fire mages might run into fight
 #end
 
 #selectspell "Blindness"
@@ -65600,6 +65585,7 @@ This nation is merely for watching games in the background. It is located in the
 #end
 
 #selectspell "Confusion"
+#name "Confusion (disabled)"
 #school -1
 #end
 
@@ -73361,7 +73347,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #path 1 4 --astral
 #pathlevel 1 2
 #researchlevel 3
-#nreff 4
+#aoe 4
 #dmg 3008
 #fatiguecost 40
 #end
@@ -73421,8 +73407,8 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #pathlevel 0 1
 #pathlevel 1 1
 #researchlevel 1
--- does not affect enemies, can be used underwater
-#spec 12582912
+-- does not affect enemies or mindless, can be used underwater
+#spec 12713984
 #end
 
 #selectspell "Furious Warriors"
@@ -73441,8 +73427,8 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #researchlevel 4
 #fatiguecost 50
 #aoe 3001
--- does not affect enemies, does not affect inanimate/undead, can be used underwater
-#spec 549978112
+-- does not affect enemies, does not affect inanimate/undead/mindless, can be used underwater
+#spec 550109184
 #end
 
 #selectspell "Air Shield"
@@ -73870,6 +73856,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #selectspell "Thunder Strike"
 #name "Call Lightning"
 #descr "The caster calls down thunderbolts to strike the battlefield. The mage can make the thunderbolts strike very far away. Even if it misses, the shock wave is powerful enough to severely stun and damage anyone nearby."
+#researchlevel 3
 #pathlevel 0 2
 #path 1 9 --Holy
 #pathlevel 1 1
@@ -74183,6 +74170,32 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #range 5025
 #end
 
+#selectspell "Fascination"
+#name "Hypnotism"
+#descr "The caster's gestures and droning incantation fascinate nearby living creatures, causing them to stop and stare blankly at him."
+#school 4-- enchantment
+#path 1 4 --astral
+#pathlevel 1 1
+#researchlevel 0
+#aoe 3001
+-- can cast UW, armour negating, mr easy, undead/inanimate/mindless immune
+#spec 562692224
+#end
+
+#newspell
+#copyspell "Hypnotism"
+#name "Hypnotic Pattern"
+#descr "A twisting pattern of subtle, shifting colors weaves through the air, fascinating creatures within it. The illusion is useless against blind creatures or those with true seeing."
+#school 5-- thaumaturgy(illusion)
+#path 1 4 --astral
+#pathlevel 1 1
+#researchlevel 1
+#range 5025
+#aoe 4
+-- can cast UW, armour negating, mr negates, mindless/true seeing immune
+#spec 1125899915366528
+#end
+
 #newspell
 #copyspell "Calm Emotions"
 #name "Calm Animals"
@@ -74486,6 +74499,16 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #school 4 --enchantment
 #end
 
+#selectspell "Frighten"
+#name "Cause Fear"
+#descr "The spell fills the targeted unit with fear."
+#researchlevel 0
+#path 1 7 --glamour
+#pathlevel 1 1
+#damage 15
+#spec 545788032 -- Mr negates, can  use underwater, armour negating, undead immune, inanimate immune
+#range 5020
+#end
 
 #selectspell "Terror"
 #name "Fear"
@@ -74497,7 +74520,6 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #range 25
 #aoe 10
 #end
-
 
 #selectspell "Weakness"
 #name "Ray of Enfeeblement"
@@ -74805,6 +74827,10 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #end
 
 #selectspell "Personal Mistform"
+#school -1
+#end
+
+#selectspell "Mistform"
 #school -1
 #end
 
@@ -75425,4 +75451,443 @@ Shadow illusions are more fragile than the real thing, and can never cast spells
 #pathlevel 1 4
 #fatiguecost 80
 #damage -14042 -- shades montag
+#end
+
+#selectspell "Burning Hands"
+#path 1 4 --astral
+#researchlevel 0
+#pathlevel 1 1
+#aoe 3
+#spec 140737488355424 -- fire/armour piercing/does not affect caster
+#end
+
+#newspell
+#copyspell 123 -- stun magic
+#name "Stun Weakling"
+-- can be cast UW; armor negating, true sight negates, difficult mr negates, size negates; caster immune, mindless immune, undead/inanimate immune
+#spec 1288628173668480
+#end
+
+#newspell
+#copyspell "Hypnotic Pattern"
+#name "Color Spray"
+#descr "A vivid cone of clashing colors springs forth from the caster's hand, stunning creatures who fail to resist. Weak creatures will be affected much more severely."
+#details "The caster cannot hit themself with this spell."
+#range 15
+#aoe 5
+#flightspr 10080
+#nextspell "Stun Weakling"
+-- can be cast UW; armor negating, true sight negates, mr negates; caster immune, mindless immune
+#spec 1266637403721856
+#end
+
+#selectspell "Mass Confusion"
+#name "Confusion"
+#descr "The spell will confuse the minds of a large group of soldiers for the remainder of the battle. The confused units can easily attack friends instead of enemies."
+#details "Confused 50% of combat rounds. Confused targets may stand still and stare, or try to move in a random direction, attacking anyone standing in their way, be it friend or foe."
+#aoe 9
+#school 4 -- enchantment
+#researchlevel 3
+#end
+
+#selectspell "Acid Bolt"
+#name "Acid Arrow"
+#descr "A magical arrow of acid springs from the caster's hand and speeds to its target. The acid burns the armor of the target as well as his, her or its flesh."
+#path 0 3 -- earth
+#path 1 4 -- astral
+#school 3 -- construction - conjuration(creation)
+#researchlevel 2
+#end
+
+#selectspell "Swarm"
+#name "Summon Swarm"
+#school 0 --conjuration
+#fatiguecost 60
+#nreff 1008
+#researchlevel 1
+#end
+
+#selectspell "Web"
+#fatiguecost 60
+#school 3 -- construction - conjuration(creation)
+#aoe 16
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "True Sight"
+#name "See Invisibility"
+#descr "The caster gains the ability to discern illusions and see the unseen."
+#details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
+#school 5 -- divination (thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Gift of True Sight"
+#school -1
+#end
+
+#selectspell "Fay-eyed Warriors"
+#school -1
+#end
+
+#selectspell "Gift of Spirit Sight"
+#school -1
+#end
+
+#selectspell "Second Sight"
+#name "True Seeing"
+#descr "The caster opens his third eye and observes the spirit world. The caster gains Spirit Sight for the remainder of the battle."
+#details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
+#school 5 -- divination (thaumaturgy)
+#researchlevel 5
+#path 0 7 --glamour
+#pathlevel 0 2
+pathlevel 1 0
+#end
+
+#selectspell "Fire Flies"
+#name "Scorching Ray"
+#descr "The caster blasts his enemies with fiery rays. The number and strength of the rays improve with the caster's power."
+#researchlevel 1
+#damage 2010
+#pathlevel 0 2
+#path 1 4 -- astral
+#pathlevel 1 1
+#nreff 1000
+#prec 2
+#fatiguecost 30
+#end
+
+#selectspell "Flame Bolt"
+#school -1
+#end
+
+#selectspell "Slime"
+#school -1
+#end
+
+#selectspell "Water Strike"
+#school -1
+#end
+
+#selectspell "Geyser"
+#school -1
+#end
+
+#selectspell "Cold Bolt"
+#school -1
+#end
+
+#selectspell "Acid Spray"
+#school -1
+#end
+
+#selectspell "Star Fires"
+#school -1
+#end
+
+#selectspell "Arcane Bolt"
+#school -1
+#end
+
+#selectspell "Vine Arrow"
+#school -1
+#end
+
+#selectspell "Bewitching Lights"
+#school -1
+#end
+
+#selectspell "Steam Blast"
+#school -1
+#end
+
+#selectspell "Fire Blast"
+#school -1
+#end
+
+#selectspell "Sulphur Haze"
+#school -1
+#end
+
+#selectspell "Flare"
+#school -1
+#end
+
+#selectspell "Shock Wave"
+#school -1
+#end
+
+#selectspell "Thalassemia"
+#school -1
+#end
+
+#selectspell "Cold Blast"
+#school -1
+#end
+
+#selectspell "Rust Mist"
+#school -1
+#end
+
+#selectspell "Solar Rays"
+#school -1
+#end
+
+#selectspell "Ephemeral Bolt"
+#school -1
+#end
+
+#selectspell "Storm Wind"
+#school -1
+#end
+
+#selectspell "Freezing Mist"
+#school -1
+#end
+
+#selectspell "Magma Bolts"
+#school -1
+#end
+
+#selectspell "Healing Light"
+#school -1
+#end
+
+#selectspell "Shadow Bolt"
+#school -1
+#end
+
+#selectspell "Poison Darts"
+#school -1
+#end
+
+#selectspell "False Fire"
+#school -1
+#end
+
+#selectspell "Elf Shot"
+#school -1
+#end
+
+#selectspell "Dance of Ephemeral Swords"
+#school -1
+#end
+
+#selectspell "Cloud of Dreamless Slumber"
+#school -1
+#end
+
+#selectspell "Fire Cloud"
+#school -1
+#end
+
+#selectspell "Acid Rain"
+#school -1
+#end
+
+#selectspell "Blade Wind"
+#school -1
+#end
+
+#selectspell "Nether Bolt"
+#school -1
+#end
+
+#selectspell "Bane Fire Dart"
+#school -1
+#end
+
+#selectspell "Bolt of Unlife"
+#school -1
+#end
+
+#selectspell "Ephemeral Blast"
+#school -1
+#end
+
+#selectspell "Ghost Wolves"
+#school -1
+#end
+
+#selectspell "Falling Fires"
+#school -1
+#end
+
+#selectspell "Hidden Flame"
+#school -1
+#end
+
+#selectspell "Orb Lightning"
+#school -1
+#end
+
+#selectspell "Ice Storm"
+#school -1
+#end
+
+#selectspell "Shatter"
+#school -1
+#end
+
+#selectspell "Stellar Cascades"
+#school -1
+#end
+
+#selectspell "Astral Geyser"
+#school -1
+#end
+
+#selectspell "Shadow Blast"
+#school -1
+#end
+
+#selectspell "Poison Arrows"
+#school -1
+#end
+
+#selectspell "Poison Cloud"
+#school -1
+#end
+
+#selectspell "Illusory Army"
+#school -1
+#end
+
+#selectspell "Flame Eruption"
+#school -1
+#end
+
+#selectspell "Cleansing Water"
+#school -1
+#end
+
+#selectspell "Magma Eruption"
+#school -1
+#end
+
+#selectspell "Astral Fires"
+#school -1
+#end
+
+#selectspell "Blast of Unlife"
+#school -1
+#end
+
+#selectspell "Bane Fire"
+#school -1
+#end
+
+#selectspell "Stream of Life"
+#school -1
+#end
+
+#selectspell "Ice Strike"
+#school -1
+#end
+
+#selectspell "Acid Storm"
+#school -1
+#end
+
+#selectspell "Rain of Stones"
+#school -1
+#end
+
+#selectspell "Nether Darts"
+#school -1
+#end
+
+#selectspell "Stygian Rains"
+#school -1
+#end
+
+#selectspell "Cloud of Death"
+#school -1
+#end
+
+#selectspell "Wind of Death"
+#school -1
+#end
+
+#selectspell "Storm of Thorns"
+#school -1
+#end
+
+#selectspell "Poison Mist"
+#school -1
+#end
+
+#selectspell "Wailing Winds"
+#school -1
+#end
+
+#selectspell "Shimmering Fields"
+#school -1
+#end
+
+#selectspell "Meteor Shower"
+#school -1
+#end
+
+#selectspell "Astral Tempest"
+#school -1
+#end
+
+#selectspell "Vortex of Unlife"
+#school -1
+#end
+
+#selectspell "Aurora Borealis"
+#school -1
+#end
+
+#selectspell "Flame Storm"
+#school -1
+#end
+
+#selectspell "Lightning Field"
+#school -1
+#end
+
+#selectspell "Niefel Flames"
+#school -1
+#end
+
+#newspell
+#copyspell "Rain of Stones"
+#name "Storm of Vengeance"
+#descr "The caster creates a massive storm cloud which pelts the battlefield with acid and giant hailstones."
+#school 0 --conjuration
+#researchlevel 8
+#path 0 6 -- nature
+#pathlevel 0 5
+#path 1 9 --holy (maybe air instead?)
+#pathlevel 1 2
+#details "Continuously targets the battlefield with 5 points of mundane blunt dmg and 4 armour piercing acid damage."
+#nextspell "Acid Storm"
+#end
+
+#newspell
+#copyspell 217 --Smite Demon
+#name "Sunburst"
+#descr "The caster causes a globe of searing radiance to explode silently from the targeted point. Anyone caught in the burst suffers severe damage and will be blinded unless they resist. The burst deals greatly increased damage to undead creatures."
+#school 2 --evocation
+#effect 124 -- holy damage (x2 vs undead)
+#range 100
+#aoe 50
+#damage 2000
+#casttime 200
+#path 0 0 -- fire
+#pathlevel 0 5
+#path 1 6 -- nature
+#pathlevel 1 3
+#researchlevel 8
+#fatiguecost 200
+#nextspell "Blindness"
+-- armour piercing, can be cast underwater
+#spec 8388672
 #end
