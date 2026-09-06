@@ -73465,8 +73465,33 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #end
 
 #selectspell "Darkness"
+#name "Deeper Darkness"
+#descr "The battlefield is covered in a blanket of darkness that even renders torches useless. Most ordinary beings will stumble and have great difficulty fighting or shooting in the darkness. The darkness ends if the caster dies."
+#details "Battlefield Darkness -6. Demons, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
 #school 2 --evocation
 #path 0 7 --glamour
+#path 1 9 --holy
+#pathlevel 1 2
+#end
+
+#selectspell "Solar Eclipse"
+#name "Darkness"
+#school 2 --evocation
+#path 0 7
+#pathlevel 0 3
+#pathlevel 1 0
+#end
+
+#selectspell "Solar Brilliance"
+#name "Daylight"
+#descr "The caster conjures a light so brilliant that it destroys the retinas of all soldiers on the battlefield and burns all undead and demonic units to cinders."
+#details "All units: Chance of being blinded (easy MR negates). All undead and demonic units: 5 AP dmg (MR negates)"
+#path 0 0 -- fire
+#path 1 6 -- nature
+#pathlevel 1 2
+#school 2 --evocation
+#reqsun 0
+#spec 8388608 -- can be cast underwater
 #end
 
 #selectspell "Gust of Winds"
@@ -75501,6 +75526,7 @@ Shadow illusions are more fragile than the real thing, and can never cast spells
 
 #selectspell "Swarm"
 #name "Summon Swarm"
+#descr "The caster summons a swarm of vermin to attack his enemies."
 #school 0 --conjuration
 #fatiguecost 60
 #nreff 1008
@@ -75559,6 +75585,16 @@ pathlevel 1 0
 #nreff 1000
 #prec 2
 #fatiguecost 30
+#end
+
+#newspell
+#copyspell "Scorching Ray"
+#name "Searing Light"
+#descr "Focusing divine power like a ray of the sun, the caster projects a blast of light from their open palm. The ray of light is particularly harmful to undead."
+#effect 124 -- holy damage (x2 vs demons)
+#nreff 1
+#path 1 9 -- holy
+#spec 8388608 -- can be cast underwater
 #end
 
 #selectspell "Flame Bolt"
