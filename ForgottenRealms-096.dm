@@ -64232,8 +64232,7 @@ This nation is merely for watching games in the background. It is located in the
 
 #selectspell 905 -- Disintegrate
 #descr "This powerful ray spell will reduce nearly any target to dust."
-#details "Vanilla Dom 6's Disintegrate was a Death spell, but nearly every DnD wizard uses this one so moved to Astral."
-#school 4
+#school 1 -- alteration (transmutation)
 #researchlevel 5
 #path 0 4
 #pathlevel 0 4
@@ -64241,7 +64240,8 @@ This nation is merely for watching games in the background. It is located in the
 #precision 3
 #damage 1050
 #fatiguecost 30
-#spec 8388608
+-- AN, MR half, can be cast UW
+#spec 2305843009222082688
 #end
 
 #selectspell "Blink"
@@ -66426,9 +66426,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 --------------------------------- Altered Vanilla Spells
 
 #selectspell 924 -- Spirit Curse
-#name "Curse"
-#pathlevel 0 2
-#fatiguecost 50
+#school -1
 #end
 
 #newspell 
@@ -71830,7 +71828,7 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 
 #newmonster 5450
 #copystats 8006 --Megalodon
-#copystats 8006 --Megalodon
+#copyspr 8006 --Megalodon
 #name "Megalodon"
 #descr "This natural creature has been summoned to fight alongside a druid in battle."
 #clearspec
@@ -71850,7 +71848,7 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 
 #newmonster 5465
 #copystats 3524 --Unicorn
-#copystats 3524 --Unicorn
+#copyspr 3524 --Unicorn
 #name "Celestial Charger"
 #descr "This natural creature has been summoned to fight alongside a druid in battle."
 #hp 60
@@ -74222,6 +74220,37 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #end
 
 #newspell
+#copyspell "Hypnotic Pattern"
+#name "Rainbow Pattern"
+#descr "A glowing, rainbow-hued pattern of interweaving colors fascinates a large group of creatures caught within it."
+#range 5035
+#pathlevel 0 3
+#researchlevel 3
+#school 2 --evocation
+#aoe 16
+#end
+
+#newspell
+#copyspell "Confusion"
+#name "Scintillating Confusion"
+#school -1
+#aoe 1
+-- can cast UW, armour negating, mr negates, mindless/true seeing immune
+#spec 1125899915366528
+#end
+
+#newspell
+#copyspell "Hypnotic Pattern"
+#name "Scintillating Pattern"
+#descr "A twisting pattern of discordant, coruscating colors weaves through the air, stunning and confusing creatures within it."
+#researchlevel 7
+#pathlevel 0 4
+#pathlevel 1 3
+#range 25
+#aoe 20
+#end
+
+#newspell
 #copyspell "Calm Emotions"
 #name "Calm Animals"
 #descr "This spell calms agitated animals. The targets calm down and lose their berserker rage."
@@ -74520,8 +74549,24 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #researchlevel 8
 #end
 
+
 #selectspell "Sleep"
 #school 4 --enchantment
+#name "Deep Slumber"
+#descr "The caster makes a group of targets fall into an enchanted slumber."
+#details "Sleeping units will not take actions nor defend themselves against melee attacks. Sleeping units wake up if wounded."
+#range 5015
+#path 1 4 --astral
+#pathlevel 1 1
+#spec 545918976 -- can be caster UW, does not affect undead/inanimate/mindless, MR negates
+#end
+
+#selectspell "Sleep Ray"
+#name "Sleep"
+#descr "The caster makes the target fall into an enchanted slumber."
+#details "Sleeping units will not take actions nor defend themselves against melee attacks. Sleeping units wake up if wounded."
+#school 4 --enchantment
+#spec 545918976 -- can be caster UW, does not affect undead/inanimate/mindless, MR negates
 #end
 
 #selectspell "Frighten"
@@ -74916,6 +74961,8 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #damage 999
 #spec 17205035136
 #school -1
+-- AN, MR negates easily, may use UW, undead/inanimate/mindless immune, false damage
+#spec 17742561408
 #end
 
 #selectspell "Visions of Death"
@@ -74925,6 +74972,8 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #damage 7
 #path 1 4 --astral
 #pathlevel 1 2
+-- AN, MR negates, may use UW, undead/inanimate/mindless immune, false damage
+#spec 17725788288
 #nextspell "Lethal Terror"
 #end
 
@@ -74936,8 +74985,8 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #pathlevel 1 4
 #aoe 3001
 #researchlevel 8
--- armour negating, mr negates, may use underwater, does not affect allies
-#spec 17188524160
+-- AN, MR negates, may use UW, undead/inanimate/mindless immune, false damage, does not affect allies
+#spec 17726050432
 #end
 
 #selectspell "Simulacrum"
@@ -75645,10 +75694,6 @@ pathlevel 1 0
 #school -1
 #end
 
-#selectspell "Sulphur Haze"
-#school -1
-#end
-
 #selectspell "Flare"
 #school -1
 #end
@@ -75873,10 +75918,6 @@ pathlevel 1 0
 #school -1
 #end
 
-#selectspell "Vortex of Unlife"
-#school -1
-#end
-
 #selectspell "Aurora Borealis"
 #school -1
 #end
@@ -75926,4 +75967,586 @@ pathlevel 1 0
 #nextspell "Blindness"
 -- armour piercing, can be cast underwater
 #spec 8388672
+#end
+
+#selectspell "Earth Grip"
+#school -1
+#end
+
+#selectspell "Earth Meld"
+#school -1
+#end
+
+#selectspell "Maws of the Earth"
+#name "Black Tentacles"
+#descr "This spell conjures a field of rubbery black tentacles, each 10 feet long. These waving members seem to spring forth from the earth, floor, or whatever surface is underfoot—including water. They grasp and entwine around creatures that enter the area, holding them fast and crushing them with great strength."
+#details "Str +DRN vs 23 to get free."
+#school 3 --construction; conjuration(creation)
+#researchlevel 4
+#path 0 2 -- water
+#path 1 4 -- astral
+#pathlevel 1 2
+#end
+
+#selectspell "Temper Armors"
+#school -1
+#end
+
+#selectspell "Legions of Steel"
+#school -1
+#end
+
+#selectspell "Ignite Arrows"
+#name "Flame Arrow"
+#descr "The mage enchants the arrows of a few archers on the battlefield. The arrows burst into flame as they are fired, doing considerable damage to their targets. The spell will not affect magical weapons. The fire damage of the arrow is magic and will affect ethereal and invulnerable creatures even if the arrow itself doesn't."
+#details "Extra +8 AP fire dmg."
+#school 1 -- alteration (transmutation)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Flaming Arrows"
+#name "Mass Flame Arrow"
+#descr "The mage enchants the arrows of a large number of friendly archers. The arrows burst into flame as they are fired, doing considerable damage to their targets. The spell will not affect magical weapons. The fire damage of the arrow is magic and will affect ethereal and invulnerable creatures even if the arrow itself doesn't."
+#details "Extra +8 AP fire dmg."
+#aoe 3001
+#fatiguecost 60
+#school 1 -- alteration (transmutation)
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#selectspell "Hail of Burning Embers"
+#school -1
+#end
+
+#selectspell "Petrify"
+#name "Flesh to Stone"
+#descr "The caster transforms some targets into stone. The target might end up dead when the petrification ends."
+#details "Petrified targets have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#path 1 4 --astral
+#pathlevel 1 2
+#pathlevel 0 4
+#end
+
+#selectspell "Curse"
+#name "Bestow Curse"
+#descr "The mage curses the target with bad luck. The spell has long range and always hits the chosen target. There is no protection against being cursed and it can never be removed."
+#range 15
+#path 0 5 -- D
+#end
+
+#selectspell "Seven Year Fever"
+#name "Contagion"
+#descr "The caster curses some targets with a horrible fever that never ends. The victims will not be severely affected during combat, but their wounds will never heal and the victim will slowly die in the following years."
+#path 0 5 -- D
+#path 1  8 --blood
+#school 6 -- blood
+#end
+
+#selectspell "Opposition"
+#name "Dismissal"
+#descr "The caster attempts to force an extraplanar creature back to its proper plane."
+#nextspell 0
+#researchlevel 4
+#school 1 -- alteration(abjuration)
+#end
+
+#newspell
+#copyspell "Contagion"
+#name "Feeblemind"
+#descr "The caster attempts to destroy the target's higher mental faculties. Feeble minded victims have diminished fighting ability and are unable to use magic."
+#damage 33554432 -- feeble minded
+#spec 545918976 -- can be used UW, MR negates, no mindless/undead/inanimate
+#range 5025
+#aoe 0
+#path 0 7 -- glamour
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#school 4 -- enchantment
+#researchlevel 4
+#end
+
+#selectspell "Ghost Grip"
+#name "Waves of Fatigue"
+#descr "Waves of negative energy render all living creatures in the spell’s area fatigued."
+#researchlevel 4
+#school 5 -- thaumaturgy (neutral necromancy)
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#nreff 1
+#aoe 6
+#spec 140738034143360 -- armour negating, can be used UW, no undead/inanimate, MR negate, does not affect caster
+#end
+
+#newspell
+#copyspell "Waves of Fatigue"
+#name "Waves of Exhaustion"
+#descr "Waves of negative energy render all living creatures in the spell’s area exhausted. Even resistant enemies are not fully protected."
+#researchlevel 6
+#pathlevel 0 4
+#pathlevel 1 3
+#aoe 10
+#damage 3025
+#spec 2305983747247833216 -- armour negating, can be used UW, no undead/inanimate, MR half, does not affect caster
+#end
+
+#selectspell "Sulphur Haze"
+#name "Acid Fog"
+#descr "This spell creates several clouds of toxic mist that remain on the battlefield. Units passing through these mists will suffer from sore throats and poisoning."
+#school 0 --conjuration
+#path 0 3 --earth
+#path 1 4 --astral
+#end
+
+#selectspell "Vortex of Unlife"
+#name "Circle of Death"
+#descr "A circle of death snuffs out the life force of living creatures, killing them instantly."
+#path 1 4 --astral
+#pathlevel 1 3
+#school 5 -- thaum (neutral necromancy). ? Is this really neutral?
+#effect 2 -- damage
+#damage 999
+-- AN, mr easy, undead immune, inanimate immune, can be cast UW
+#spec 562561152
+#end
+
+#newspell
+#copyspell "Hold Monster"
+#name "Comatose"
+-- AN, MR negates, can cast UW, undead/inanimate immune
+#spec 545788032
+#school -1
+#end
+
+#newspell
+#name "Eyebite"
+#descr "The caster strikes a living creature with waves of evil power. Weak creatures will be driven into a catatonic coma, but even the strong may be weakened."
+#school 6 -- blood (necromancy[evil])
+#researchlevel 5
+#fatiguecost 20
+#path 0 7 --glamour
+#pathlevel 0 3
+#path 1 8 -- blood
+#pathlevel 1 1
+#school 6 -- blood
+#range 25
+#effect 3 -- fatigue damage
+#damage 5025
+#nextspell "Comatose"
+-- difficult MR negates, can cast UW, undead/inanimate immune
+#spec 17592731828224
+#end
+
+#newspell
+#copyspell "Circle of Death"
+#name "Undeath to Death"
+#descr "The caster snuffs out the animating force of undead creatures in the area, destroying them instantly."
+#pathlevel 1 0
+#school 5 -- thaum (neutral necromancy)
+-- AN, mr negates (easy), only affect undead/demon, demon immune, can be cast UW
+#spec 293601416
+#end
+
+#selectspell "Fire Cloud"
+#name "Incendiary Cloud"
+#descr "This spell creates a large cloud of fire and smoke that remain on the battlefield. Units passing through this cloud will be severely burned."
+#school 0 --conjuration (creation)
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#selectspell "Blindness"
+#descr "The caster calls upon the powers of unlife to render the subject blinded."
+#path 0 5 --death
+#school 5 -- thaum (neutral necromancy)
+#spec 545787904 -- can be cast UW, MR negates, undead/inanimate immune
+#end
+
+#selectspell "Transformation"
+#name "Transformed (disabled)"
+#school -1
+#end
+
+#newspell
+#copyspell "Personal Regeneration"
+#name "Transformation"
+#descr "The caster transforms themself into a virtual fighting machine. They grow tougher, but their mind-set changes so that they relish combat and they can’t cast spells."
+#details "Size +1 (+2 if starting size is less than 5), HP +60%, Str +6, Def -2"
+#fatiguecost 100
+#school 1 --alteration (transmutation)
+#path 0 6 -- nature
+#pathlevel 0 1
+#path 1 4 --astral
+#pathlevel 1 3
+#researchlevel 5
+-- gone berserk + limited enlargement + enlargement
+#damage 1101659111680
+#spec 8519680 -- can be cast UW, does not affect mindless
+#spec2 4 -- does not affect riders
+#end
+
+#newspell
+#name "Damage Negation"
+#effect 13 -- healing
+#damage 50
+-- AN, no mindless/undead/inanimate, real damage, internal damage, can be cast UW
+#spec 54043196074360960
+#school -1
+#end
+
+#newspell
+#copyspell "Disintegrate"
+#name "Power Word Kill"
+#descr "The caster utters a single word of power that instantly kills one creature of their choice, whether the creature can hear the word or not. Any creature that has sufficient hit points is unaffected by power word kill."
+#flyspr -1
+#explspr 10141
+#effect 2 -- damage
+#damage 50
+#nextspell "Damage Negation"
+#range 3025
+-- AN, no mindless/undead/inanimate, real damage, internal damage, can be cast UW
+#spec 54043196074360960
+#school 4 -- enchantment
+#researchlevel 8
+#end
+
+#newspell
+#copyspell "Dismissal"
+#name "Banishment"
+#descr "The caster attempts to force a group of extraplanar creatures back to their proper plane."
+#aoe 3001
+#researchlevel 6
+#pathlevel 0 4
+#flightspr 10069 -- particle ball
+#end
+
+#newspell
+#copyspell "Infernal Prison"
+#name "Violet Beam"
+#aoe 1
+#school -1
+#spec 25165952 -- AN, mr easy, can be cast UW
+#flightspr 10068 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Indigo Beam"
+#aoe 1
+#school -1
+#effect 609 -- add to effect value (10)
+#damage 309 -- insanity
+#spec 25297024 -- can cast UW, mr easy, mindless immune, AN
+#flightspr 10067 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#copyspell "Flesh to Stone"
+#name "Blue Beam"
+#aoe 1
+#school -1
+#spec 562036864 -- can cast UW, mr easy, inanimate immune, AN
+#nextspell "Indigo Beam"
+#flightspr 10066 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Green Beam"
+#aoe 1
+#school -1
+#effect 2
+#damage 100
+-- poison res, AN, MR easy, can be cast UW, undead/inanimate immune
+#spec 562569344
+#nextspell "Blue Beam"
+#flightspr 10065 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Yellow Beam"
+#effect 2
+#aoe 1
+#school -1
+#damage 20
+-- shock res, AN, MR easy, can be cast UW
+#spec 25168000
+#nextspell "Green Beam"
+#flightspr 10064 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Orange Beam"
+#effect 2
+#aoe 1
+#school -1
+#damage 20
+-- acid res, AP, MR easy, can be cast UW
+#spec 2199048421440
+#nextspell "Yellow Beam"
+#flightspr 10063 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Red Beam"
+#effect 2
+#aoe 1
+#school -1
+#damage 20
+-- fire res, AP, MR easy, can be cast UW
+#spec 25165920
+#nextspell "Orange Beam"
+#flightspr 10062 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#copyspell "Violet Beam"
+#name "Prismatic Spray"
+#descr "Seven shimmering, intetwined, multicoloured beams of light spray from the casters hand. Each beam will strike some of the creautres in the area with various effects."
+#details "Red Beam: 20 AP Fire damage
+Orange Beam: 20 AP acid damage
+Yellow Beam: 20 AN shock damage
+Green Beam: 100 AN poison damage
+Blue Beam: Petrification
+Indigo Beam: +10 Insanity
+Violet Beam: Plane shift to the inferno"
+#nextspell "Red Beam"
+#range 20
+#aoe 30
+#school 2 --evocation
+#researchlevel 6
+#path 0 4 --astral
+#pathlevel 0 4
+#path 1 7 --glamour
+#pathlevel 1 2
+#flightspr 10061 -- particle ball
+#explspr 10001
+#end
+
+#selectspell "Control the Dead"
+#name "Control Undead"
+#descr "The caster commands udead creatures to obey them."
+#researchlevel 6
+#range 2025
+#aoe 3001
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#newspell
+#name "Harm Living"
+#effect 2
+#damage 15
+#spec 36028797564747904 -- AN, can be cast UW, undead/inanimate immune, internal damage
+#school -1
+#end
+
+#newspell
+#copyspell "Disintegrate"
+#name "Finger of Death"
+#descr "The caster attempts to slay a living creature. Survivors will still be injured."
+#effect 2
+#damage 999
+#spec 545788032 -- AN, MR negates, can be cast UW, undead/inanimate immune
+#nextspell "Harm Living"
+#school 5 -- thuam (neutral necromancy)
+#researchlevel 6
+#path 0 5 -- death
+#pathlevel 0 4
+#pathlevel 1 0
+#end
+
+#newspell
+#copyspell "Finger of Death"
+#name "Wail of the Banshee"
+#descr "The caster emits a terrible scream that kills creatures that hear it."
+#details "Does not affect the caster or his mount."
+#flightspr -1
+#explspr 10200 -- curse
+#researchlevel 8
+#pathlevel 0 6
+#pathlevel 1 0
+#fatiguecost 60
+#range 0
+#range 2025
+#aoe 40
+#nextspell 0
+ -- AN, MR negates, can be cast UW, undead/inanimate immune, internal dmg, does not affect caster
+#spec 36169535053107328
+#end
+
+#newspell
+#copyspell "Finger of Death"
+#name "Slay Living"
+#descr "The caster attempts to slay a living creature. Survivors will still be injured."
+#range 1
+#researchlevel 4
+#pathlevel 0 2
+#path 1 9 -- holy
+#pathlevel 1 2
+#end
+
+#newspell
+#copyspell "Harm Living"
+#name "Greater Harm Living"
+#damage 25
+#end
+
+#selectspell "Destruction"
+#name "Destruction (disabled)"
+#school -1
+#end
+
+#newspell
+#copyspell "Slay Living"
+#name "Destruction"
+#descr "The caster attempts to instantly slay the subject and consume its remains utterly."
+#prec 100
+#details " "
+#range 2025
+#pathlevel 0 3
+#pathlevel 1 3
+#nextspell "Greater Harm Living"
+#researchlevel 6
+#end
+
+#newspell
+#copyspell "Hypnotism"
+#name "Irresistible Dance"
+#school 4 -- enchantment
+#researchlevel 5
+#path 0 7 --glamour
+#pathlevel 0 3
+#path 1 4 -- astral
+#pathlevel 1 1
+#descr "The subject feels an undeniable urge to dance and begins doing so, complete with foot shuffling and tapping. The spell effect makes it impossible for the subject to do anything other than caper and prance in place."
+#aoe 0
+#range 1
+#spec 545915008 -- AN, mindless/undead/inanimate immune, can be cast underwater
+#end
+
+#newspell
+#copyspell "Disintegrate"
+#name "Polar Ray"
+#school 2 -- evocation
+#researchlevel 7
+#path 0 2 --water
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 1 2
+#descr "A blue-white ray of freezing air and ice springs from the caster's hand. The ray deals cold damage to anyone it hits."
+#spec 8389184 -- AP, can be cast UW, cold dam
+#end
+
+#newspell
+#name "Shout Deafen"
+#aoe 1
+#effect 3 -- fatigue damage
+#damage 20
+#spec 2305983746712535168 -- caster immune, mundane dmg, AN, MR for half dmg, can be cast UW
+#school -1
+#end
+
+#newspell
+#name "Shout"
+#descr "The caster emits an ear-splitting yell that deafens and damages creatures in its path."
+#school 2 --evocation
+#researchlevel 3
+#path 0 7 --glamour
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 1 1
+#range 0
+#aoe 10
+#effect 2
+#damage 20
+#fatiguecost 25
+#spec 2305983746712535168 -- caster immune, mundane dmg, AN, MR for half dmg, can be cast UW
+#extspell "Shout Deafen"
+#end
+
+#newspell
+#copyspell "Shout Deafen"
+#name "Greater Shout Deafen/Stun"
+#damage 40
+#end
+
+#newspell
+#copyspell "Shout"
+#name "Greater Shout"
+#descr "The caster emits an ear-splitting yell that stuns and damages creatures in its path."
+#researchlevel 6
+#pathlevel 0 4
+#pathlevel 1 1
+#aoe 25
+#fatiguecost 25
+#nextspell "Greater Shout Deafen/Stun"
+#end
+
+#newspell
+#copyspell "Desiccation"
+#name "Horrid Wilting"
+#descr "The caster evaporates moisture from the body of each living creature in the target area, dealing potential lethal damage in a wide area."
+#school 5 -- thaum (neutral necromancy)
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 3
+#range 5040
+#aoe 4020
+#effect 2
+#damage 2012
+#fatiguecost 40
+#spec 2341871806772150400 -- AN, undead/inanimate immune, mundane damage MR half
+#end
+
+#selectspell "Flying Shards"
+#name "Magic Stone"
+#descr "The caster transmutes several pebbles so that they strike with great force when thrown or slung."
+#school 1 -- alteration (transmutation)
+#path 1 9 --holy
+#pathlevel 1 1
+#spec 549764202496 -- blunt, can be used underwater
+#end
+
+#selectspell "Blood Poisoning"
+#name "Poison"
+#descr "The caster calls upon the venomous powers of natural predators to infect the subject with a horrible poison."
+#range 1
+#pathlevel 0 1
+#path 1 5 --death
+#pathlevel 1 1
+#range 1
+#damage 25
+#school 5 -- thaum (neutral necromancy)
+#end
+
+#selectspell "Gift of the Serpent"
+#name "Neutralize Poison"
+#descr "The caster delays the onset of poisons in a small group of allies."
+#school 0 --conjuration (healing)
+#end
+
+#selectspell "Personal Poison Resistance"
+#school -1
+#end
+
+#selectspell "Protection from Poison"
+#school -1
+#end
+
+#selectspell "Poison Ward"
+#school -1
+#end
+
+#selectspell "Serpent's Blessing"
+#school -1
 #end
