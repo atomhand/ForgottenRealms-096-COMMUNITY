@@ -72882,13 +72882,13 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #end
 
 #newweapon 2022
-#copywweapon 55 -- hoof
+#copyweapon 55 -- hoof
 #name "Shadow Hoof"
 #mrhalf
 #end
 
 #newweapon 2023
-#copywweapon 331 -- gore
+#copyweapon 331 -- gore
 #name "Shadow Gore"
 #mrhalf
 #end
@@ -73373,8 +73373,8 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #name "Cloudkill"
 #descr "Poisonous gas will begin to seep from the ground shortly after this spell is cast. The gas will rise over a large area, covering the entire battlefield, and will continue to seep for the duration of the battle."
 #details "Poison Clouds (level 1) appear all over the battlefield."
-#school 0
-#researchlevel 5
+#school 3 -- const (conj--creation)
+#researchlevel 6
 #path 1 4 -- Astral
 #pathlevel 0 3
 #pathlevel 1 3
@@ -73414,8 +73414,9 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 
 #selectspell "Touch of Madness"
 -- Overwriting the Rage spell name seems to cause issues for some reason
-#name "Enrage"
+#name "Rage"
 #descr "A small group of soldiers are forced to go berserk. Berserkers never rout, get increased fighting skills, but do not care much for their own safety."
+#details " "
 #school 4 --enchantment
 #path 0 7  --Glamour
 #researchlevel 2
@@ -73500,7 +73501,8 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #selectspell "Mist"
 #name "Fog Cloud"
 #descr "The caster creates a dense bank of fog across the battlefield that makes it difficult to see far and prevents any cloud effects from dissipating properly. The mist will limit the precision of all spells and missiles."
-#school 0 --conj
+#school 3 --const (conj-creation)
+#researchlevel 4
 #end
 
 #selectspell "Darkness"
@@ -73697,7 +73699,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #end
 
 #selectspell "Slow"
-#path 1 4--astral
+#path 0 4--astral
 #end
 
 #selectspell "Personal Stoneskin"
@@ -74735,6 +74737,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #end
 
 #selectspell "Resist Lightning"
+#name "Resist Lightning (disabled)"
 #school -1
 #end
 
@@ -74751,6 +74754,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #end
 
 #selectspell "Resist Fire"
+#name "Resist Fire (disabled)"
 #school -1
 #end
 
@@ -74767,6 +74771,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #end
 
 #selectspell "Resist Cold"
+#name "Resist Cold (disabled)"
 #school -1
 #end
 
@@ -74792,6 +74797,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #details "Fire Resistance +5"
 #researchlevel 1
 #pathlevel 0 1
+#school 1 --alteration(abjuration)
 #end
 
 #selectspell "Flame Ward"
@@ -74802,6 +74808,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #pathlevel 0 2
 #aoe 3001
 #fatiguecost 99
+#school 1 --alteration(abjuration)
 #end
 
 #selectspell "Fire Fend"
@@ -74818,6 +74825,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #details "Cold Resistance +5"
 #researchlevel 1
 #pathlevel 0 1
+#school 1 --alteration(abjuration)
 #end
 
 #selectspell "Winter Ward"
@@ -74828,6 +74836,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #pathlevel 0 2
 #aoe 3001
 #fatiguecost 99
+#school 1 --alteration(abjuration)
 #end
 
 #selectspell "Frost Fend"
@@ -74844,6 +74853,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #details "Shock Resistance +5"
 #researchlevel 1
 #pathlevel 0 1
+#school 1 --alteration(abjuration)
 #end
 
 #selectspell "Thunder Ward"
@@ -74854,66 +74864,73 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #pathlevel 0 2
 #aoe 3001
 #fatiguecost 99
+#school 1 --alteration(abjuration)
 #end
 
 #newspell
 #copyspell "Resist Cold"
 #name "Protection From Cold"
 #descr "A few creatures are granted superior protection from the chosen energy type."
-#details "Cold Resistance +10. Does not stack with Resist Energy."
+#details "Cold Resistance +10. Does not stack with lower-tier resistance buffs."
 #damage 144115188075855872 -- 10 cold resistance
 #researchlevel 4
 #pathlevel 0 2
+#school 1 --alteration(abjuration)
 #end
 
 #newspell
 #copyspell "Mass Resist Cold"
 #name "Mass Protection From Cold"
 #descr "A group of creatures are granted superior protection from the chosen energy type."
-#details "Cold Resistance +10. Does not stack with Resist Energy."
+#details "Cold Resistance +10. Does not stack with lower-tier resistance buffs."
 #damage 144115188075855872 -- 10 cold resistance
 #researchlevel 6
 #pathlevel 0 4
+#school 1 --alteration(abjuration)
 #end
 
 #newspell
 #copyspell "Resist Fire"
 #name "Protection From Fire"
 #descr "A few creatures are granted superior protection from the chosen energy type."
-#details "Fire Resistance +10. Does not stack with Resist Energy."
+#details "Fire Resistance +10. Does not stack with lower-tier resistance buffs."
 #damage 36028797018963968 -- 10 fire resistance
 #researchlevel 4
 #pathlevel 0 2
+#school 1 --alteration(abjuration)
 #end
 
 #newspell
 #copyspell "Mass Resist Fire"
 #name "Mass Protection From Fire"
 #descr "A group of creatures are granted superior protection from the chosen energy type."
-#details "Fire Resistance +10. Does not stack with Resist Energy."
+#details "Fire Resistance +10. Does not stack with lower-tier resistance buffs."
 #damage 36028797018963968 -- 10 fire resistance
 #researchlevel 6
 #pathlevel 0 4
+#school 1 --alteration(abjuration)
 #end
 
 #newspell
 #copyspell "Resist Electricity"
 #name "Protection From Electricity"
 #descr "A few creatures are granted superior protection from to the chosen energy type."
-#details "Shock Resistance +10. Does not stack with Resist Energy."
+#details "Shock Resistance +10. Does not stack with lower-tier resistance buffs."
 #damage 72057594037927936 -- 10 shock resistance
 #researchlevel 4
 #pathlevel 0 2
+#school 1 --alteration(abjuration)
 #end
 
 #newspell
 #copyspell "Mass Resist Electricity"
 #name "Mass Protection From Electricity"
 #descr "A group of creatures are granted superior protection from the chosen energy type."
-#details "Shock Resistance +10. Does not stack with Resist Energy."
+#details "Shock Resistance +10. Does not stack with lower-tier resistance buffs."
 #damage 72057594037927936 -- 10 shock resistance
 #researchlevel 6
 #pathlevel 0 4
+#school 1 --alteration(abjuration)
 #end
 
 #newspell
@@ -75556,7 +75573,7 @@ MR check to resist the bewilderment. Failure means no strike and the next action
 
 #newspell
 #name "Shadow Conjuration"
-#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions a creature. Shadow Conjuration mimics the effects of Summon Monster III.
+#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions into a creature. Shadow Conjuration mimics the effects of Summon Monster III.
 
 Shadow illusions are more fragile than the real thing, but otherwise have the same abilities. Strrong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
 #details "Shadow illusions do not deal false damage."
@@ -75577,7 +75594,7 @@ Shadow illusions are more fragile than the real thing, but otherwise have the sa
 #copyspell "Shadow Conjuration"
 #name "Greater Shadow Conjuration"
 --- Make elementals as well?
-#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions a creature. Greater Shadow Conjuration mimics the effects of Summon Monster VI.
+#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions into a creature. Greater Shadow Conjuration mimics the effects of Summon Monster VI.
 
 Shadow illusions are more fragile than the real thing, but otherwise have the same abilities. Strong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
 #details "Shadow illusions do not deal false damage."
@@ -75591,9 +75608,9 @@ Shadow illusions are more fragile than the real thing, but otherwise have the sa
 #copyspell "Shadow Conjuration"
 #name "Shades"
 --- Make elementals as well?
-#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions a creature. Shades mimics the effects of Summon Monster VIII.
+#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions into a creature. Shades mimics the effects of Summon Monster VIII.
 
-Shadow illusions are more fragile than the real thing, and can never cast spells, but otherwise have the same abilities. Strong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
+Shadow illusions are more fragile than the real thing, and do not cast spells, but otherwise have the same abilities. Strong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
 #details "Shadow illusions do not deal false damage."
 #researchlevel 8
 #pathlevel 0 5
@@ -76202,7 +76219,7 @@ pathlevel 1 0
 #selectspell "Sulphur Haze"
 #name "Acid Fog"
 #descr "This spell creates several clouds of toxic mist that remain on the battlefield. Units passing through these mists will suffer from sore throats and poisoning."
-#school 0 --conjuration
+#school 3 -- const (conj-creation)
 #path 0 3 --earth
 #path 1 4 --astral
 #end
@@ -76628,6 +76645,7 @@ Violet Beam: Plane shift to the inferno"
 #name "Horrid Wilting"
 #descr "The caster evaporates moisture from the body of each living creature in the target area, dealing potential lethal damage in a wide area."
 #school 5 -- thaum (neutral necromancy)
+#researchlevel 7
 #pathlevel 0 4
 #path 1 4 --astral
 #pathlevel 1 3
@@ -76696,6 +76714,7 @@ Violet Beam: Plane shift to the inferno"
 #copyspell "Conflagration"
 #name "Catch Fire"
 #aoe 1
+#school -1
 #end
 
 #newspell
@@ -76704,7 +76723,7 @@ Violet Beam: Plane shift to the inferno"
 #descr "The caster transforms four acorns into combustible explosives. Each acorn deals fire damage in an area and sets fire to anything it hits."
 #range 40
 #school 3 -- const (conjuration - creation)
-#researchlevel 5
+#researchlevel 6
 #speedmult 1
 #pathlevel 0 3
 #path 1 9 -- holy
@@ -76773,19 +76792,6 @@ Violet Beam: Plane shift to the inferno"
 #end
 
 #newspell
-#copyspell "Personal Regeneration"
-#name "Brilliant Blade"
-#descr "The caster is filled with divine power, increasing their size and resistance to damage."
-#details "Size +1, HP +30%, Str +3, Def -1, Natural Protection +5. (Natural protection does not stack with Hard Skin bless)"
-#damage 70370891661312 -- enlargement
-#school 1 --alteration (transmutation)
-#researchlevel 5
-#path 0 9 -- holy
-#pathlevel 0 2
-#fatiguecost 40
-#end
-
-#newspell
 #copyspell "Haste"
 #name "Abyssal Frenzy"
 #descr "The caster speaks a dark epithet and transforms a few creatures into a demonic version of their true selves."
@@ -76833,4 +76839,756 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #explspr 10104 -- green explosion
 #flightspr -1
 #strikesound 78 -- lion
+#end
+
+#selectspell "Summon Hawk"
+#school -1
+#end
+
+#selectspell "Conjure Phantasmal Wolves"
+#school -1
+#end
+
+#selectspell "Nest of Salamanders"
+#school -1
+#end
+
+#selectspell "School of Sharks"
+#school -1
+#end
+
+#selectspell "Summon Lammashtas"
+#school -1
+#end
+
+#selectspell "Maggots"
+#school -1
+#end
+
+#selectspell "Nest of Firesnakes"
+#school -1
+#end
+
+#selectspell "Conjure Phantasmal Warriors"
+#school -1
+#end
+
+#selectspell "Will o' the Wisp"
+#school -1
+#end
+
+#selectspell "Corpse Candle"
+#school -1
+#end
+
+#selectspell "Howl"
+#school -1
+#end
+
+#selectspell "Conjure Phantasmal Beast"
+#school -1
+#end
+
+#selectspell "Shark Attack"
+#school -1
+#end
+
+#selectspell "Summon Sprites"
+#school -1
+#end
+
+#selectspell "Conjure Phantasmal Knight"
+#school -1
+#end
+
+#selectspell "Living Fire"
+#school -1
+#end
+
+#selectspell "Living Clouds"
+#school -1
+#end
+
+#selectspell "Living Water"
+#school -1
+#end
+
+#selectspell "Living Earth"
+#school -1
+#end
+
+#selectspell "Twist Fate"
+#school -1
+#end
+
+#selectspell "Hand of Dust"
+#school -1
+#end
+
+#selectspell "Poison Touch"
+#school -1
+#end
+
+#selectspell "Charge Body"
+#school -1
+#end
+
+#selectspell "Fists of iron"
+#school -1
+#end
+
+#selectspell "Skeletal Body"
+#school -1
+#end
+
+#selectspell "Eagle Eyes"
+#school -1
+#end
+
+#selectspell "Blurred Body"
+#school -1
+#end
+
+#selectspell "Burn"
+#school -1
+#end
+
+#selectspell "Ice Shield"
+#school -1
+#end
+
+#selectspell "Gooey Water"
+#school -1
+#end
+
+#selectspell "Armor of Achilles"
+#school -1
+#end
+
+#selectspell "Gift of Cheated Fate"
+#school -1
+#end
+
+#selectspell "Immolation"
+#school -1
+#end
+
+#selectspell "Protective Winds"
+#school -1
+#end
+
+#selectspell "Freeze"
+#school -1
+#end
+
+#selectspell "Gift of Cat Eyes"
+#school -1
+#end
+
+#selectspell "Mossbody"
+#school -1
+#end
+
+#selectspell "Torpor"
+#school -1
+#end
+
+#selectspell "Group Blur"
+#school -1
+#end
+
+#selectspell "Combustion"
+#school -1
+#end
+
+#selectspell "Lacerating Winds"
+#school -1
+#end
+
+#selectspell "Liquid Body"
+#school -1
+#end
+
+#selectspell "Encase in Ice"
+#school -1
+#end
+
+#selectspell "Curse of Stones"
+#school -1
+#end
+
+#selectspell "Stygian Skin"
+#school -1
+#end
+
+#selectspell "Elemental Fortitude"
+#school -1
+#end
+
+#selectspell "Twilight"
+#school -1
+#end
+
+#selectspell "Incinerate"
+#school -1
+#end
+
+#selectspell "Gift of Formlessness"
+#school -1
+#end
+
+#selectspell "Winter's Chill"
+#school -1
+#end
+
+#selectspell "Enfeeble"
+#school -1
+#end
+
+#selectspell "Invulnerability"
+#school -1
+#end
+
+#selectspell "Drain Life"
+#school -1
+#end
+
+#selectspell "Cat-eyed Warriors"
+#school -1
+#end
+
+#selectspell "Nightfall"
+#school -1
+#end
+
+#selectspell "Shadow Warriors"
+#school -1
+#end
+
+#selectspell "Boil"
+#school -1
+#end
+
+#selectspell "Frozen Heart"
+#school -1
+#end
+
+#selectspell "Iron Bane"
+#school -1
+#end
+
+#selectspell "Control"
+#school -1
+#end
+
+#selectspell "Rewrite Fate"
+#school -1
+#end
+
+#selectspell "Soul Vortex"
+#school -1
+#end
+
+#selectspell "Skeletal Legion"
+#school -1
+#end
+
+#selectspell "Venomous Death"
+#school -1
+#end
+
+#selectspell "Eagle-eyed Warriors"
+#school -1
+#end
+
+#selectspell "Phoenix Pyre"
+#school -1
+#end
+
+#selectspell "Arrow Fend"
+#school -1
+#end
+
+#selectspell "Wave Warriors"
+#school -1
+#end
+
+#selectspell "Doom"
+#school -1
+#end
+
+#selectspell "Will of the Fates"
+#school -1
+#end
+""
+#selectspell "Bone Grinding"
+#school -1
+#end
+
+#selectspell "Curse of the Frog Prince"
+#school -1
+#end
+
+#selectspell "Army of Shades"
+#school -1
+#end
+
+#selectspell "Conflagration"
+#school -1
+#end
+
+#selectspell "Liquify"
+#school -1
+#end
+
+#selectspell "Arcane Domination"
+#school -1
+#end
+
+#selectspell "Army of Giants"
+#school -1
+#end
+
+#selectspell "Trueshot"
+#school -1
+#end
+
+#selectspell "Windrunner"
+#school -1
+#end
+
+#selectspell "Animate Skeleton"
+#school -1
+#end
+
+#selectspell "Animate Zombies"
+#school -1
+#end
+
+#selectspell "False Fetters"
+#school -1
+#end
+
+#selectspell "Water Shield"
+#school -1
+#end
+
+#selectspell "Breath of Winter"
+#school -1
+#end
+
+#selectspell "Gift of the Hare"
+#school -1
+#end
+
+#selectspell "Envenom Arrows"
+#school -1
+#end
+
+#selectspell "Personal Regeneration"
+#school -1
+#end
+
+#selectspell "Shroud of Splendor"
+#school -1
+#end
+
+#selectspell "Farflight"
+#school -1
+#end
+
+#selectspell "Arrow of the Western Wind"
+#school -1
+#end
+
+#selectspell "Raise Skeletons"
+#school -1
+#end
+
+#selectspell "Regeneration"
+#school -1
+#end
+
+#selectspell "Shroud of Bewilderment"
+#school -1
+#end
+
+#selectspell "Horrible Visage"
+#school -1
+#end
+
+#selectspell "Trueshot Warriors"
+#school -1
+#end
+
+#selectspell "Earth Shatter Hammers"
+#school -1
+#end
+
+#selectspell "Shroud of Flying Shards"
+#school -1
+#end
+
+#selectspell "Spell Ward"
+#school -1
+#end
+
+#selectspell "Astral Healing"
+#school -1
+#end
+
+#selectspell "Raise Dead"
+#school -1
+#end
+
+#selectspell "Serpent Fang Arrows"
+#school -1
+#end
+
+#selectspell "Gift of Splendor"
+#school -1
+#end
+
+#selectspell "Farflight Arrows"
+#school -1
+#end
+
+#selectspell "Friendly Currents"
+#school -1
+#end
+
+#selectspell "Quagmire"
+#school -1
+#end
+
+#selectspell "Horde of Skeletons"
+#school -1
+#end
+
+#selectspell "Group Regeneration"
+#school -1
+#end
+
+#selectspell "Heat from Hell"
+#school -1
+#end
+
+#selectspell "Greater Farflight"
+#school -1
+#end
+
+#selectspell "Water Ward"
+#school -1
+#end
+
+#selectspell "Grip of Winter"
+#school -1
+#end
+
+#selectspell "Earthquake Warriors"
+#school -1
+#end
+
+#selectspell "Rigor Mortis"
+#school -1
+#end
+
+#selectspell "Hail of Serpent Fangs"
+#school -1
+#end
+
+#selectspell "Relief"
+#school -1
+#end
+
+#selectspell "Steal Sight"
+#school -1
+#end
+
+#selectspell "Aura of Splendor"
+#school -1
+#end
+
+#selectspell "Antimagic"
+#school -1
+#end
+
+#selectspell "Life after Death"
+#school -1
+#end
+
+#selectspell "Mass Regeneration"
+#school -1
+#end
+
+#selectspell "Nightmare Masks"
+#school -1
+#end
+
+#selectspell "Warriors of the Dawn"
+#school -1
+#end
+
+#selectspell "Unraveling"
+#school -1
+#end
+
+#selectspell "Fields of the Dead"
+#school -1
+#end
+
+#selectspell "Army Regeneration"
+#school -1
+#end
+
+#selectspell "Mists of Deception"
+#school -1
+#end
+
+#selectspell "Desiccation"
+#school -1
+#end
+
+#selectspell "Farstrike"
+#school -1
+#end
+
+#selectspell "Dust to Dust"
+#school -1
+#end
+
+#selectspell "Decay"
+#school -1
+#end
+
+#selectspell "Personal Luck"
+#school -1
+#end
+
+#selectspell "Bonds of Fire"
+#school -1
+#end
+
+#selectspell "Steal Breath"
+#school -1
+#end
+
+#selectspell "Mind Burn"
+#school -1
+#end
+
+#selectspell "Beast Fury"
+#school -1
+#end
+
+#selectspell "Sailors' Death"
+#school -1
+#end
+
+#selectspell "Iron Will"
+#school -1
+#end
+
+#selectspell "Panic"
+#school -1
+#end
+
+#selectspell "Luck"
+#school -1
+#end
+
+#selectspell "Despair"
+#school -1
+#end
+
+#selectspell "Prison of Fire"
+#school -1
+#end
+
+#selectspell "Curse of the Desert"
+#school -1
+#end
+
+#selectspell "Ferocity"
+#school -1
+#end
+
+#selectspell "Rage of the Cornered Rat"
+#school -1
+#end
+
+#selectspell "Wildness"
+#school -1
+#end
+
+#selectspell "Slumber"
+#school -1
+#end
+
+#selectspell "Serenity"
+#school -1
+#end
+
+#selectspell "Leeching Darkness"
+#school -1
+#end
+
+#selectspell "Poison"
+#school -1
+#end
+
+#selectspell "Pack Ferocity"
+#school -1
+#end
+
+#selectspell "The Ravenous Swarm"
+#school -1
+#end
+
+#selectspell "Group Luck"
+#school -1
+#end
+
+#selectspell "Wither Bones"
+#school -1
+#end
+
+#selectspell "Growing Fury"
+#school -1
+#end
+
+#selectspell "Unending Nightmare"
+#school -1
+#end
+
+#selectspell "Sandman's Blessing"
+#school -1
+#end
+
+#selectspell "Plague"
+#school -1
+#end
+
+#selectspell "Fury of the Wild"
+#school -1
+#end
+
+#selectspell "Hydrophobia"
+#school -1
+#end
+
+#selectspell "Soul Drain"
+#school -1
+#end
+
+#selectspell "Undead Mastery"
+#school -1
+#end
+
+#selectspell "Battle Fortune"
+#school -1
+#end
+
+#selectspell "Bleed"
+#school -1
+#end
+
+#selectspell "Blood Burst"
+#school -1
+#end
+
+#selectspell "Blood Heal"
+#school -1
+#end
+
+#selectspell "Summon Imps"
+#school -1
+#end
+
+#selectspell "Blood Boil"
+#school -1
+#end
+
+#selectspell "Banish Demon"
+#school -1
+#end
+
+#selectspell "Agony"
+#school -1
+#end
+
+#selectspell "Hell Power"
+#school -1
+#end
+
+#selectspell "Leeching Touch"
+#school -1
+#end
+
+#selectspell "Pain Transfer"
+#school -1
+#end
+
+#selectspell "Hellfire"
+#school -1
+#end
+
+#selectspell "Blood Lust"
+#school -1
+#end
+
+#selectspell "Hellbind Heart"
+#school -1
+#end
+
+#selectspell "Summon Illearth"
+#school -1
+#end
+
+#selectspell "Bloodletting"
+#school -1
+#end
+
+#selectspell "Soul Transaction"
+#school -1
+#end
+
+#selectspell "Harm"
+#school -1
+#end
+
+#selectspell "Blood Rain"
+#school -1
+#end
+
+#selectspell "Leech"
+#school -1
+#end
+
+#selectspell "Purify Blood"
+#school -1
+#end
+
+#selectspell "Damage Reversal"
+#school -1
+#end
+
+#selectspell "Rush of Strength"
+#school -1
+#end
+
+#selectspell "Life for a Life"
+#school -1
+#end
+
+#selectspell "Infernal Prison"
+#school -1
+#end
+
+#selectspell "Claws of Kokytos"
+#school -1
+#end
+
+#selectspell "All-consuming Pyre"
+#school -1
 #end

@@ -1,4 +1,4 @@
-Around ~120 added or reworked spells
+Around ~211 added or reworked spells
 Many spells disabled due to overlap, or lacking an equivalent in D&D 3.5e
 
 Summon Monster & Summon Nature's Ally
