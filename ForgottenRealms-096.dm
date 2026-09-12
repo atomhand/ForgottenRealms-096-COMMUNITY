@@ -63704,7 +63704,7 @@ This nation is merely for watching games in the background. It is located in the
 #school -1
 #end
 
-#selectspell 931 -- Shades
+#selectspell 931 -- Summon Shades
 #school -1
 #end
 
@@ -66258,7 +66258,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #end
 
 #selectspell "Haste"
-#ainocast 1
+--#ainocast 1
 #end
 
 #selectspell "Stoneskin"
@@ -73255,6 +73255,47 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #montag 14042
 #end
 
+------------------------------------------ Misc Summoned Critters -----------------------------------------------------
+-- id range 5530-5544
+
+#newmonster 5530
+#copyspr 3724 -- air elemental
+#name "Whirlwind"
+#descr "The cyclone is the terror of small creatures."
+#hp 40
+#size 6
+#prot 0
+#mr 20
+#mor 50
+#str 12
+#att 17
+#def 17
+#stormpower 4
+#prec 5
+#ap 30
+#enc 0
+#startage 1
+#maxage 1000
+#woundfend 99
+#invulnerable 30
+#poisonres 30
+#shockres 30
+#fireres 30
+#coldres 30
+#acidres 30
+#bluntres
+#slashres
+#pieceres
+#airshield 100
+#blind
+#unsurr 20
+#inanimate
+#trample
+#spiritsight
+#spiritform
+#weapon 547 -- buff
+#end
+
 -----------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------ Reworked Spells & New Spells -----------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------
@@ -73630,6 +73671,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #selectspell "Quickness"
 #name "Haste"
 #descr "This spells grants haste to a large number of units. Haste increases the speed and ability to dodge of the quickened one. A quickened person can act twice every turn, but quickened spell casters still cannot cast more than one spell per combat round."
+#details "Grants +2 Att, +2 Def and Combat speed is doubled"
 #path 0 4 --astral
 #pathlevel 0 3
 #aoe 3001
@@ -73728,6 +73770,8 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #aoe 30
 #fatiguecost 60
 #damage 4005 --same as fireball
+#strikesound 21 -- frost blast
+#speedmult 3
 #end
 
 #newspell
@@ -73954,7 +73998,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #name "Remove Blindness"
 #descr "This ritual instantaneously cures a creature of blindness. The target unit must be in the same province as the caster."
 #damage 528384
-#school 1 -- alteration(abjuration)
+#school 0 -- conjuration (healing)
 #path 0 4 --astral
 #pathlevel 0 2
 #fatiguecost 100
@@ -73963,14 +74007,17 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #newspell
 #copyspell 1310 --Remove Disease
 #name "Regenerate"
-#descr "This ritual instantaneously regenerates the subject's body, curing them of any and all physical (but not mental) afflictions and diseases. The target unit must be in the same province as the caster."
+#descr "This ritual instantaneously regenerates the subject's body, curing them of any and all physical (but not mental) afflictions and diseases. The target must be in the same province as the caster."
+#details "The ritual will fail if the target is undead, inanimate or a spiritform."
 #researchlevel 7
 #damage 3319529473
-#school 1 -- alteration(abjuration)
+#school 0 -- conjuration (healing)
 #pathlevel 0 4
 #path 1 9 --Holy
-#athlevel 1 3
+#pathlevel 1 3
 #fatiguecost 500
+-- does not affect undead/inanimate/spiritform, can be cast UW
+#spec 545783812
 #end
 
 #newspell
@@ -74118,6 +74165,34 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 -- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
 -- can be cast underwater
 #spec 148618788517449860
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Command"
+#descr "The caster forces an enemy to carry out a simple command. In practice this briefly incapacitates the subject."
+#path 0 9 --holy
+#pathlevel 0 2
+#pathlevel 1 0
+#fatiguecost 15
+#range 10
+#damage 25
+#spec 545919104 -- MR negates, AN, does not affect mindless/undead/inanimate. Can be cast UW
+#researchlevel 0
+#end
+
+#newspell
+#copyspell "Command"
+#name "Greater Command"
+#descr "The caster forces several enemies to carry out a simple command. In practice this briefly incapacitates the subject."
+#range 20
+#researchlevel 4
+#pathlevel 0 3
+#fatiguecost 50
+#range 15
+#nreff 2000
+#damage 50
+#spec 546181248 -- MR negates, AN, does not affect mindless/undead/inanimate, does not affect friends. Can be cast UW
 #end
 
 #newspell
@@ -75582,6 +75657,16 @@ Shadow illusions are more fragile than the real thing, and can never cast spells
 #researchlevel 1
 #end
 
+#selectspell "Creeping Doom"
+#name "Insect Plague"
+#descr "The caster summons a plague of vermin to attack his enemies."
+#school 0 --conjuration
+#researchlevel 4
+#path 1 9 --holy
+#nreff 4032
+#pathlevel 1 1
+#end
+
 #selectspell "Web"
 #fatiguecost 60
 #school 3 -- construction - conjuration(creation)
@@ -75626,6 +75711,7 @@ pathlevel 1 0
 #selectspell "Fire Flies"
 #name "Scorching Ray"
 #descr "The caster blasts his enemies with fiery rays. The number and strength of the rays improve with the caster's power."
+#speedmult 3
 #researchlevel 1
 #damage 2010
 #pathlevel 0 2
@@ -75949,6 +76035,26 @@ pathlevel 1 0
 #end
 
 #newspell
+#copyspell 217 -- smite demon
+#name "Sunbeam"
+#descr "The caster evokes a dazzling beam of light which blinds enemies and is particularly destructive to undead."
+#school 2 --evocation
+#effect 124 -- holy damage (x2 vs undead)
+#aoe 6 -- unfortunately line effect is not available
+#damage 16
+#range 40
+#path 0 0 --fire
+#pathlevel 0 4
+#path 1 6 -- nature
+#pathlevel 1 2
+#researchlevel 6
+#fatiguecost 40
+#nextspell "Blindness"
+-- armour piercing, can be cast underwater
+#spec 8388672
+#end
+
+#newspell
 #copyspell 217 --Smite Demon
 #name "Sunburst"
 #descr "The caster causes a globe of searing radiance to explode silently from the targeted point. Anyone caught in the burst suffers severe damage and will be blinded unless they resist. The burst deals greatly increased damage to undead creatures."
@@ -76174,7 +76280,7 @@ pathlevel 1 0
 #copyspell "Personal Regeneration"
 #name "Transformation"
 #descr "The caster transforms themself into a virtual fighting machine. They grow tougher, but their mind-set changes so that they relish combat and they can’t cast spells."
-#details "Size +1 (+2 if starting size is less than 5), HP +60%, Str +6, Def -2"
+#details "Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6); gone berserk"
 #fatiguecost 100
 #school 1 --alteration (transmutation)
 #path 0 6 -- nature
@@ -76329,6 +76435,7 @@ Violet Beam: Plane shift to the inferno"
 #pathlevel 1 2
 #flightspr 10061 -- particle ball
 #explspr 10001
+#speedmult 3
 #end
 
 #selectspell "Control the Dead"
@@ -76457,6 +76564,14 @@ Violet Beam: Plane shift to the inferno"
 #end
 
 #newspell
+#copyspell "Shout Deafen"
+#name "Minor Stun"
+#damage 20
+#effect 128
+#spec 140737496748160 -- AN, mr negates, caster immune, can be cast UW
+#end
+
+#newspell
 #name "Shout"
 #descr "The caster emits an ear-splitting yell that deafens and damages creatures in its path."
 #school 2 --evocation
@@ -76468,16 +76583,31 @@ Violet Beam: Plane shift to the inferno"
 #range 0
 #aoe 10
 #effect 2
-#damage 20
+#damage 10
 #fatiguecost 25
 #spec 2305983746712535168 -- caster immune, mundane dmg, AN, MR for half dmg, can be cast UW
-#extspell "Shout Deafen"
+#nextspell "Shout Deafen"
+#end
+
+#newspell
+#copyspell "Shout"
+#name "Sound Burst"
+#descr "A burst of sound damages a few creatures and stuns the weak ones"
+#damage 5
+#pathlevel 0 1
+#pathlevel 1 0
+#researchlevel 1
+#fatiguecost 10
+#range 2025
+#aoe 1
+#nextspell "Minor Stun"
 #end
 
 #newspell
 #copyspell "Shout Deafen"
-#name "Greater Shout Deafen/Stun"
+#name "Greater Shout Deafen"
 #damage 40
+#nextspell "Minor Stun"
 #end
 
 #newspell
@@ -76485,11 +76615,12 @@ Violet Beam: Plane shift to the inferno"
 #name "Greater Shout"
 #descr "The caster emits an ear-splitting yell that stuns and damages creatures in its path."
 #researchlevel 6
+#damage 15
 #pathlevel 0 4
 #pathlevel 1 1
 #aoe 25
 #fatiguecost 25
-#nextspell "Greater Shout Deafen/Stun"
+#nextspell "Greater Shout Deafen"
 #end
 
 #newspell
@@ -76549,4 +76680,157 @@ Violet Beam: Plane shift to the inferno"
 
 #selectspell "Serpent's Blessing"
 #school -1
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Giant Vermin"
+#descr "The caster transmutes a scorpion into a large and powerful minion under their command."
+#damage 524 --scorpion beast
+#school 1 --alteration
+#researchlevel 3
+#pathlevel 0 2
+#end"
+
+#newspell
+#copyspell "Conflagration"
+#name "Catch Fire"
+#aoe 1
+#end
+
+#newspell
+#copyspell "Scorching Ray"
+#name "Fire Seeds"
+#descr "The caster transforms four acorns into combustible explosives. Each acorn deals fire damage in an area and sets fire to anything it hits."
+#range 40
+#school 3 -- const (conjuration - creation)
+#researchlevel 5
+#speedmult 1
+#pathlevel 0 3
+#path 1 9 -- holy
+#pathlevel 1 1
+#nreff 4
+#aoe 3
+#explspr 10113 -- fireball
+#strikesound 89 -- explosion
+#nextspell "Catch Fire"
+#end
+
+#selectspell "Animate Tree"
+#name "Animate Plants"
+#descr "The caster imbues inanimate plants with mobility and a semblance of life. Each animated plant then immediately attacks the caster's enemies."
+#researchlevel 6
+#pathlevel 0 3
+#path 1 9 -- holy
+#pathlevel 1 1
+#nreff 1001
+#range 3025
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Whirlwind"
+#descr "The caster creates a powerful cyclone of raging wind to tear through the ranks of most enemies. Large monsters and giants may be too heavy to be tossed by the winds."
+#details "Size 6 trampler"
+#damage 5530 -- whirlwind
+#school 2 -- evo
+#researchlevel 7
+#range 0
+#path 0 1 -- air
+#pathlevel 0 4
+#path 1 9 -- holy
+#pathlevel 1 1
+#fatiguecost 100
+#end
+
+#newspell
+#copyspell "Personal Regeneration"
+#name "Righteous Might"
+#descr "The caster is filled with divine power, increasing their size and resistance to damage."
+#details "Size +1, HP +30%, Str +3, Def -1, Natural Protection +5. (Natural protection does not stack with Hard Skin bless)"
+#damage 70370891661312 -- enlargement
+#school 1 --alteration (transmutation)
+#researchlevel 4
+#path 0 9 -- holy
+#pathlevel 0 2
+#fatiguecost 40
+#end
+
+#selectspell "Bone Melter"
+#name "Implosion"
+#descr "The caster create a destructive resonance in a corporeal creature's body. The victim collapses in on itself and dies."
+#school 2 --evocation
+#researchlevel 8
+#casttime 50
+#fatiguecost 10
+#path 0 9 --holy
+#pathlevel 0 3
+#path 1 8 --blood
+#pathlevel 1 2
+#aoe 0
+#range 2025
+#prec 100
+#end
+
+#newspell
+#copyspell "Personal Regeneration"
+#name "Brilliant Blade"
+#descr "The caster is filled with divine power, increasing their size and resistance to damage."
+#details "Size +1, HP +30%, Str +3, Def -1, Natural Protection +5. (Natural protection does not stack with Hard Skin bless)"
+#damage 70370891661312 -- enlargement
+#school 1 --alteration (transmutation)
+#researchlevel 5
+#path 0 9 -- holy
+#pathlevel 0 2
+#fatiguecost 40
+#end
+
+#newspell
+#copyspell "Haste"
+#name "Abyssal Frenzy"
+#descr "The caster speaks a dark epithet and transforms a few creatures into a demonic version of their true selves."
+#details "Grants +2 Att, +2 Def and Combat speed is doubled; +4 Strength; subjects are driven berserk"
+#aoe 1
+#explspr 10103
+#strikesound 106 --banshee
+#path 0 8 -- blood
+#pathlevel 0 2
+#path 1 9 -- holy
+#pathlevel 1 3
+#researchlevel 6
+#damage 262528 -- quickness, +4 strength, gone berserk
+#spec 818544640 -- does not affect mindless, undead, inanimate, demons; enemies immune, can be cast UW
+#end
+
+#newspell
+#copyspell "Abyssal Frenzy"
+#name "Mass Abyssal Frenzy"
+#descr "The caster speaks a dark epithet and transforms a large group of creatures into demonic versions of their true selves."
+#details "Grants +2 Att, +2 Def and Combat speed is doubled; +4 Strength; subjects are driven berserk"
+#pathlevel 0 4
+#researchlevel 8
+#aoe 3001
+#end
+
+#newspell
+#name "Nature's Avatar"
+#descr "The caster infuses an animal with the spirit of nature, vastly increasing its speed and might.""
+#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait.
+Grants +2 Att, +2 Def and Combat speed is doubled;
+Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
+#school 2 -- evocation
+#researchlevel 8
+#path 0 6 --nature
+#pathlevel 0 4
+#path 1 9 --holy
+#pathlevel 1 1
+#range 15
+-- allies only, animals only, no illusion/spiritform, no undead, no demon, no void sanity, can be cast underwater
+#spec 4785074885754884
+#effect 10 -- buff type 1
+#damage 1101659373568 -- quickness + enlargement + limited enlargement
+#aoe 0
+#explspr 10104 -- green explosion
+#flightspr -1
+#strikesound 78 -- lion
 #end
