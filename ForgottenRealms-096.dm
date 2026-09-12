@@ -68587,7 +68587,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7064 -- Conjure Small Water Elemental
 #newspell
-#name "Conjure Small Water Elemental"
+#name "Summon Small Water Elemental"
 #descr "A small water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
 #brief "Water Elementals are immune to acids and cold. "
 #school 0
@@ -68604,7 +68604,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7065 -- Conjure Medium Water Elemental
 #newspell
-#name "Conjure Medium Water Elemental"
+#name "Summon Medium Water Elemental"
 #descr "A medium water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
 #brief "Water Elementals are immune to acids and cold. "
 #school 0
@@ -68621,7 +68621,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7066 -- Conjure Large Water Elemental
 #newspell
-#name "Conjure Large Water Elemental"
+#name "Summon Large Water Elemental"
 #descr "A large water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
 #brief "Water Elementals are immune to acids and cold. "
 #school 0
@@ -68637,7 +68637,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7067  -- Conjure Huge Water Elemental
 #newspell
-#name "Conjure Huge Water Elemental"
+#name "Summon Huge Water Elemental"
 #descr "A huge water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
 #brief "Water Elementals are immune to acid and cold. "
 #school 0
@@ -68685,7 +68685,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7028  -- Conjure Huge Air Elemental
 #newspell
-#name "Conjure Huge Air Elemental"
+#name "Summon Huge Air Elemental"
 #descr "A huge air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
 #brief "Air Elementals are immune to cold and shock. "
 #school 0
@@ -68700,7 +68700,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7027  -- Conjure Large Air Elemental
 #newspell
-#name "Conjure Large Air Elemental"
+#name "Summon Large Air Elemental"
 #descr "A large air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
 #brief "Air Elementals are immune to cold and shock. "
 #school 0
@@ -68715,7 +68715,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7026  -- Conjure Medium Air Elemental
 #newspell
-#name "Conjure Medium Air Elemental"
+#name "Summon Medium Air Elemental"
 #descr "A medium air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
 #brief "Air Elementals are immune to cold and shock. "
 #school 0
@@ -68731,7 +68731,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7025 -- Conjure Small Air Elemental
 #newspell
-#name "Conjure Small Air Elemental"
+#name "Summon Small Air Elemental"
 #descr "A small air elemental is conjured through a temporary gate to the elemental plane of air, binding this creature to the service of the caster for the duration of combat."
 #brief "Air Elementals are immune to cold and shock. "
 #school 0
@@ -68748,7 +68748,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7023  -- Conjure Huge Earth Elemental
 #newspell
-#name "Conjure Huge Earth Elemental"
+#name "Summon Huge Earth Elemental"
 #descr "A huge earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
 #brief "Earth Elementals are immune to poison and decay."
 #school 0
@@ -68780,7 +68780,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7022  -- Conjure Large Earth Elemental
 #newspell
-#name "Conjure Large Earth Elemental"
+#name "Summon Large Earth Elemental"
 #descr "A large earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
 #brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
 #school 0
@@ -68796,7 +68796,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7021  -- Conjure Medium Earth Elemental
 #newspell
-#name "Conjure Medium Earth Elemental"
+#name "Summon Medium Earth Elemental"
 #descr "A medium earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
 #brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
 #school 0
@@ -68813,7 +68813,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7020 -- Conjure Small Earth Elemental
 #newspell
-#name "Conjure Small Earth Elemental"
+#name "Summon Small Earth Elemental"
 #descr "A small earth elemental is conjured through a temporary gate to the elemental plane of earth, binding this creature to the service of the caster for the duration of combat."
 #brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
 #school 0
@@ -68830,7 +68830,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7057  -- Conjure Huge Fire Elemental
 #newspell
-#name "Conjure Huge Fire Elemental"
+#name "Summon Huge Fire Elemental"
 #descr "A huge fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
 #brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
 #school 0
@@ -68860,7 +68860,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7056  -- Conjure Large Fire Elemental
 #newspell
-#name "Conjure Large Fire Elemental"
+#name "Summon Large Fire Elemental"
 #descr "A large fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
 #brief "Fire Elementals are immune to poison and decay and can wrap themselves in a fiery shield.. "
 #school 0
@@ -68875,7 +68875,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7055  -- Conjure Medium Fire Elemental
 #newspell
-#name "Conjure Medium Fire Elemental"
+#name "Summon Medium Fire Elemental"
 #descr "A medium fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
 #brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
 #school 0
@@ -68891,7 +68891,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 
 -- 7054 -- Conjure Small Fire Elemental
 #newspell
-#name "Conjure Small Fire Elemental"
+#name "Summon Small Fire Elemental"
 #descr "A small fire elemental is conjured through a temporary gate to the elemental plane of fire, binding this creature to the service of the caster for the duration of combat."
 #brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
 #school 0
