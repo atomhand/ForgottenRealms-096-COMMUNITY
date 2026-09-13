@@ -4,12 +4,12 @@ from os.path import isfile, join
 sources = ["src/header.dm"]
 
 def load_dir(dir_path):
-    files = [f for f in listdir(dir_path) if isfile(join(dir_path,f))]
+    files = [f for f in sorted(listdir(dir_path)) if isfile(join(dir_path,f))]
     for filepath in files:
         global sources
         sources.append(join(dir_path,filepath))
 
-load_dir("src/namespaces")
+load_dir("src/nametypes")
 load_dir("src/items")
 load_dir("src/monsters")
 load_dir("src/spells")
