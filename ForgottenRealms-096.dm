@@ -1,3 +1,7 @@
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/header.dm
+------------------------------------------------------------------------------------------------------------------
 #modname "Forgotten Realms 0.96 (Community Patch)"
 #icon "FRExperimentalLogo.tga"
 #version 0.96
@@ -8,6 +12,9 @@
 #clearmercs
 #disableoldnations
 
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/namespaces\ungrouped-namespaces.dm
+------------------------------------------------------------------------------------------------------------------
 --//////////////////////////////////////////////////////////////////////////////////////////////////////
 --//////////////////////////////////////////////////////////////////////////////////////////////////////
 --//////////////////////////////////////////////NAMESPACES\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -4070,6 +4077,20 @@
 #addname "Zarelle"
 #addname "Zephara"
 #end
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/items\balance.dm
+------------------------------------------------------------------------------------------------------------------
+
+#selectitem 393 -- Sanguine Dowsing Rod
+#nodemon
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/items\ungrouped-items.dm
+------------------------------------------------------------------------------------------------------------------
+
 ----------------------------------------------------------------------------------------
 -------------------------- New Weapons, Armors & Items ---------------------------------
 ----------------------------------------------------------------------------------------
@@ -5951,6 +5972,12 @@
 #waterbreathing
 #airshield
 #end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/monsters\00-ungrouped-monsters.dm
+------------------------------------------------------------------------------------------------------------------
+
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
@@ -51655,1617 +51682,9 @@ Dagon repeated this tactic every 720 years until the last wild tide of 1371 DR w
 #end
 
 
-
-
-
-
-
-
---//////////////////////////////////////////////////////////////////////////////////////////////////////
---//////////////////////////////////////////////////////////////////////////////////////////////////////
---//////////////////////////////////////////////NATIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
---//////////////////////////////////////////////////////////////////////////////////////////////////////
---//////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-#selectnation 200 
-#era 2 		
-#name "Lords of Waterdeep"
-#epithet "City of Splendors, Crown of the North"
-#brief "The City of Splendors is home to a truly cosmopolitan collection of peoples from across the realms."
-#descr "Waterdeep was one of if not the most powerful and influential member-states of the Lords' Alliance, the coalition of nations and city-states that sought to maintain order along the Sword Coast and the North.
-
-Waterdeep was ruled by a sixteen-seat council whose membership was largely secret. These hidden Lords of Waterdeep maintained their identities behind magical masks, called the Lord's Helm, and while they ruled in public, none knew the true identities of most of them. The subject of who the Lords were became a common topic of noble conversation, and some considered it a game to discover the Lords' identities, a game made more confusing by the fact the Lords themselves set their own rumors afloat.
-
-Waterdeep itself was built on the site of the ancient elven settlement of Aelinthaldaar. It sprawled northward from the sea, spreading along the flanks of Mount Waterdeep, which used to be home to a mithral-mining dwarven clan. The entire length and great depth of the mountain was riddled with passages and tunnels, most of which were occupied by deadly creatures whose presence in the mountain predated the founding of the city itself.
-
-The halls of Undermountain located just beneath the city sewers were a popular target for adventurers who enjoyed the close vicinity of the city's main taverns and temples where aid could be purchased through donations.
-
-A tense alliance between the Xanathar and the Lords of Waterdeep exists beyond the common knowledge of even the majority of the lords themselves. The paranoid Elder Eye rules from the shadows within Undermountain, keeping the City of Splendors safe from the predations of the deeper reaches of the Underdark. Such agreements with evil and mad creatures does not come, however, without a cost."
-#summary "Reasonable Infantry are backed by Waterdeep's famous Griffon Riders. Heroes abound, and commanders can stealth and thug away in small elite squads once equipped. Merchants give the economy a boost. Coastal cities bring extra income."
-#flag "ForgottenRealms/flag200.tga"
-#coastnation
-#aiholdgod
-#templepic 32 -- opulent hall
-#fortera 2
-#homefort 14
-#buildfort 3
-#uwbuild 1
-#builduwfort 6
-#tradecoast 15
-#labcost 400
-#templecost 400
-#color 0.0 0.3 1.0
-#idealcold 1
-
-#addgod 8000 -- Fountain of Mystra
-#addgod 5004 -- Light of Lathander
-#addgod 5005 -- Statue of Selune
-#addgod 5007 -- Statue of Tyr
-#addgod 5008 -- Statue of Torm
-#addgod 5009 -- Statue of Ilmater
-#addgod 5023 -- Oghma 
-
-#cheapgod20 5023 -- Oghma 
-#cheapgod40 5004 -- Lathander
-#cheapgod20 8000 -- Mystra
-
-#startcom 6607			-- Knight of the Lords Alliance
-#startunittype1 6601	-- Constables
-#startunittype2 6608 	-- Griffon Rider
-#startunitnbrs1 20
-#startunitnbrs2 5
-
-#startscout 6614	-- HARPER AGENT
-
-#addrecunit 6601	-- Constables
-#addrecunit 7321 	-- Waterdeep Crossbowmen
-#addrecunit 6621	-- Vigilant Guard
-#addrecunit 6606	-- Knight of the Lords Alliance
-
-#uwrec 7518 -- Merfolk Militia
-#uwrec 7623 -- Merfolk Skirmisher
-#uwrec 7519 -- Merfolk Soldier
-#uwrec 7625 -- Merfolk Crossbowman 
-#uwcom 7520 -- Merfolk Commander
-#uwcom 8021 -- Mermaid Bard
-#uwcom 8020 -- Merfolk Prince
-#uwcom 7534 -- Mermaid Wavekeeper
-
-
-
-#addreccom 6614		-- HARPER AGENT
-#addreccom 6602		-- Senior Civilar
-#addreccom 6622 	-- Merchant Prince 
-#addreccom 6607 	-- Knight Commander of the Alliance
-#addreccom 6609 	-- Wizard Corps Civilar
-#addreccom 6813		-- Elven Bladesinger
-#addreccom 6618 	-- Priestess of Selune
-#addreccom 6703 	-- Cleric of Waukeen
-#addreccom 6605		-- Cleric of Lathander
-
-
-#defcom1 6604		-- Grey Hand Captain
-#defcom2 6609 		-- the 2nd PD Commander - Wizard Corps Civilar
-#defunit1 6601 		-- Constables
-#defunit1b 7321 	-- Waterdeep Crossbowmen
-#defunit2 6621 		-- Vigilants	
-#defmult1 15 		-- Constables
-#defmult1b 10 		-- Crossbows
-#defmult2 15		-- Vigilants
-
----------- DEFENCES
-#guardunit 6601
-#guardcom 6609
-#guardmult 15
-
-#wallcom 6609 -- Wizard Corps Civilar
-#wallunit 7321 -- Waterdeep Crossbowmen
-#wallmult 20 -- very high
-
--- UW PROVINCE DEFENCE
-#uwdefcom1 7520 -- Merfolk Commander
-#uwdefcom2 8020 -- Merfolk Prince
-#uwdefunit1 7623 -- Merfolk Skirmisher
-#uwdefmult1 16
-#uwdefunit1b 7519 -- Merfolk Soldier
-#uwdefmult1b 10
-#uwdefunit2 7625 -- Merfolk Crossbowman
-#uwdefmult2 14
-
---UW WALL DEFENCE
-#uwguardcom 7520 -- Merfolk Commander
-#uwguardunit 7519 -- Merfolk Soldier
-#uwguardmult 20
-#uwwallcom 7520 -- Merfolk Commander
-#uwwallunit 7625 -- Merfolk Crossbowman 
-#uwwallmult 16
-
-
-
-
----------- START SITES
-
-#startsite "Castle Waterdeep" 
-#startsite "The Palace of Waterdeep"
-#startsite "Blackstaff Tower"
-#startsite "Deepwater Harbor"
---#startsite "The Plinth"
-#startsite "The Yawning Portal Inn"
-
-#end 
-	
-
-
----------------------------------------------------------------------------------
--- HALFLINGS OF LUIREN NATION
----------------------------------------------------------------------------------
-
-#selectnation 201 -- can be any number from 200 up?
-#era 2 		
-#name "Luiren"
-#epithet "Benevolent Anarchy of Halflings"
-#idealcold 0
-#brief "Brief: Lacking the umph of heavy infantry, Halflings make up for it by being bold, devious, and mirthful."
-#descr "Luiren was known as the land of the halflings since its population was almost completely comprised of their race. It was a small kingdom with a population of about 840,000 inhabitants in 1372 DR ruled by the halfling theocrat Faran Ferromar. Travelers to Luiren were often surprised to find the locals adventurous and bold as opposed to the fat and quiet halflings one could find elsewhere. The capital city of Luiren was Beluir, a coastal city of 27,210 in 1372 DR in the longitudinal center of the realm. 
-
-The subraces of Halflings exist on Faerun - the Lightfoots, Stronghearts, and Ghostwise. Around −100 DR, a ghostwise halfling cleric named Desva began leading the ghostwise in the worship of Malar the Beastlord and violence ensued. Savage acts were performed against the creatures and other halflings of the forest. The stronghearts and lightfoots allied against the ghostwise and battle continued for many years until Chand of the stronghearts slew Desva in −65 DR. Most of the surviving ghostwise left Luiren for the Chondalwood, making an oath that they wouldn't speak until they had atoned for their savagery. 
-
-13 centuries later, the Ghostwise have returned, claiming the resurrected Desva leads them once again. Through guile and bloodshed, they've retaken the Luirwood. In the chaos, Feran Ferromar was given a vision from beyond the veil - that he would lead the lightfoots and stronghearts into righteous battle against these conquerors, he would face Desva in the deep forest of the Western Luirwood, and he would go on to lead the reformed nation of Luiren to become a great nation of the realms. This vision was both glorious and terrifying, for it was unclear if it was he or Desva who stood on the dais to accept the crown."
-#summary "With dark-vision, natural stealth, and an innate resistance to magic, Luiren is not without its bright-sdies, yet your troops are poorly armored and undergunned. Size 2 helps, but its not a win-button. Nature, Air, Glamour and Earth, with little Astral mixed in rounds out your magic scales and your wizards are not bad with research. Yondalla is the patron deity, but Peryroyl druids and Servants of Malar add diversity. Enjoy the cheap labs and temples - you'll need them." 
-#flag "ForgottenRealms/flag201.tga"
-#coastnation
-#templepic 3 -- irish of course
-#fortera 3
-#homefort 3
-#buildfort 2
-#builduwfort 6
-#uwbuild 1
-#tradecoast 15
-#labcost 400
-#templecost 300
-#color 0.0 0.8 0.2
-
-#addgod 5006 -- Chauntea 3
-#addgod 5010 -- Malar 3
-
-#addgod 5030 -- Tymora 2
-#addgod 5023 -- Oghma 2
-#addgod 5018 -- Mielikki 2
-#addgod 5037 -- Silvanus 2
-
-#cheapgod20 5006
-#cheapgod20 5010
-
-
-#startcom 6653			-- Farran on Turn 1
-#startunitnbrs1 20
-#startunitnbrs2 5
-#startunittype1 6641 	-- Lightfoot Spear
-#startunittype2 6643 	-- Outrider
-
-#startscout 6646    -- Spellsinger on Turn 1
-
-
-#addrecunit 6641	-- Lightfoot Spear
-#addrecunit 273 	-- hoburg crossbow 
-#addrecunit 6643 	-- Outrider
-
-#addreccom 6644		-- Scout/Rogue
-#addreccom 6645		-- Strongheart Champion
-#addreccom 6646		-- Halfling Spellsinger
-#addreccom 6654 	-- Razor-rider Champion
-#addreccom 7651 	-- Halfling 'Arcane Trickster' 
-
--- All other units are site-specific
-
-#forestcom 6648		-- Peryroyl Druid
-#forestcom 6650		-- Servant of Malar
-#forestrec 6651		-- Ghostwise Hunter
-
-#defcom1 6645		-- Strongheart Champion
-#defcom2 6646		-- Halfling Spellsinger
-#defunit1 6641		-- Lightfoot Spear
-#defunit1b 273 		-- hoburg crossbow  
-#defunit2 6643		-- Outrider
-#defmult1 20 		-- how many 1st
-#defmult1b 15 		-- how many 1st
-#defmult2 4 		-- In ratio to 2nd
-
-
----------- START SITES
-
-#startsite "Halfling Stronghold" 
-
-
----------- DEFENCES
-#guardunit 6641
-#guardcom 6643
-#guardmult 15
-#wallcom 6647 	-- Cleric of Yondalla
-#wallunit 273 	-- hoburg crossbow 
-#wallmult 15 	-- high
-#end 		
-
-
----------------------------------------------------------------------------------
--- Zhentarim
----------------------------------------------------------------------------------
-
-#selectnation 202 -- can be any number from 200 up?
-#era 2 		
-#name "Zhentarim"
-#epithet "The Black Network"
-#idealcold 0
-#brief "As an extension of the will of the dark wizard Manshoon, the Zhentarim was initially formed as a mercenary company to support his rule over the Moonsea with the aim of spreading that control over all of Faerûn."
-#descr "Also known as the Black Network, in their brief 200 years of existence the Zhentarim have had a storied history as servants of the dark gods Bane and Cyric and were involved in many plots that have shaped the continent as it stands today. They are foremost an extension of the will of the great wizard Manshoon and were initially formed as a mercenary company to support his rule over the Moonsea with the aim of spreading that control over all of Faerûn. Manshoon grew the ranks with a cadre of self-serving thieves, spies, assassins and malevolent wizards. 
-
-At its height, the legendary Manshoon and his right hand, Fzoul Chembryl, along with their tyrannical lapdog-warlord, Paraghost who ruled from nearby Darkhold, influenced events from Waterdeep in the west to Thay in the east. All three of these villains will be among your ranks at the start of the game. 
-
-Manshoon sought foremost to consolidate the Moonsea where he discovered several ancient Pools of Radiance scattered throughout the region - echoes of the lost greatness of the Elves who once ruled from Myth Drannor. With control over the Black Road, which crosses the great wasteland of Anauroch, Manshoon filled Zhenarim's coffers with the gold of merchants who had no other choice but to hire the Black Network to protect their caravans from the frozen desert's beasts, most of which were in the employ of the Zhentarim in one way or another. Darkhold was also not Manshoon's only foreign holding, with Castle Daggerdale under occupation in the Dalelands and a foothold on the distant Moonshae Isles."
-#summary "Your infantry is heavy and expensive. Your priest and priestesses of Bane, Bhaal, Myrkul and Cyric coupled with you magic path access will allow for the binding of infernal allies and the raising of massive undead armies should you choose to do so. Both Manshoon and Fzoul are true liches, with immortality that extends beyond your friendly dominion. Your Black Dragon, Hrondalbar, is mature enough to lay eggs." 
-#flag "ForgottenRealms/flag_zhent.tga"
-#coastnation
-#aiholdgod
-#templepic 4 -- Mountain Castle
-#bloodnation
-#fortera 3
-#homefort 25
-#buildfort 2
-#builduwfort 6
-#labcost 400
-#templecost 400
-#color 0.2 0.1 0.1
-
-#addgod 5003 -- Myrkul
-#addgod 5002 -- BHAAL
-#addgod 8001 -- BANE
-
-#addgod 5033 -- Cyric 2
-
-#cheapgod20 8001
-#cheapgod20 5033
-
-
-#multihero1 6785 -- Mature Black Dragon
-#multihero2 178 -- Lich
-#multihero3 7068 -- beholder
-#multihero4 180 -- Demilich
-#multihero5 395 -- Lich Queen 
-
-#startcom 6663			-- Swordhar
-#startunittype1 6661 	-- Stalwart
-#startunittype2 6662 	-- Sternhelm
-#startunitnbrs1 20
-#startunitnbrs2 5
-
-#startscout 427		-- Spy
-
-#addrecunit 6661 	-- Stalwart
-#addrecunit 6662 	-- Sternhelm
-#addrecunit 6665 	-- Zhent Lance
-#addrecunit 7501 	-- Wyvern Rider
-
-#addreccom 427		-- Spy
-#addreccom 429		-- Black Hand Assassin
-#addreccom 6663		-- Swordhar
-#addreccom 6673		-- Priest of Myrkul
-#addreccom 94		-- Stock Conjurer
-#addreccom 7498 	-- Zhentarim Reanimator
-#addreccom 6674		-- Embermage
-#addreccom 7499 	-- Wyvern Rider Captain
-
-
-#wasterec 6672		-- Wyverns from wastelands
-#wasterec 6724		-- Gnoll Hunters from wastelands
-#wastecom 6808 		-- Gnoll Chieftain
-
-
-#mountainrec 6675	-- Frost Giants from mountains	
-#mountainrec 6678	-- Hill Giant Reavers
-#mountaincom 1301	-- Frost Giant Elder
-
-#forestrec 6676		-- Orc Marauders from forests
-#forestrec 7071		-- Owlbears from forests
-#forestcom 6737 	-- Orc Warlor 
-
-#swampcom 2891		-- Trog Warchief
-#swamprec 6677		-- Troglodyte Raiders
-#swamprec 7081 		-- Otyugh
-
-#cavecom 6772		-- Hill Giant Shaman
-#caverec 6678		-- Hill Giant Reavers
-#caverec 7081 		-- Otyugh
-
-
--- All other units are site-specific
-
-#defcom1 6663		-- Swordhar
-#defcom2 6674		-- Embermage
-#defunit1 6661 		-- Stalwart
-#defunit1b 6662		-- Sternhelm
-#defunit2 6675		-- Frost Giants 
-#defmult1 30
-#defmult1b 6
-#defmult2 6
-
----------- START SITES
-
-#startsite "Zhentil Keep" 
-#startsite "The Temple of Bane"
-#startsite "The Tower of the Art"
-#startsite "The Black Altar"
-#startsite "Zhentarim Barracks"
-
-
----------- DEFENCES
-#guardunit 6661
-#guardcom 6663
-#guardmult 15
-#wallcom 6664 	-- Swordcaptain
-#wallunit 218 	-- Crossbowmen 
-#wallmult 15 	-- high
-#end 		
-
-
----------------------------------------------------------------------------------
--- Calimshan
----------------------------------------------------------------------------------
-
-#selectnation 203 -- can be any number from 200 up?
-#era 2 		
-#name "Kingdom of Calimshan"
-#epithet "Lands of Intrigue"
-#idealcold -1
-#brief "The history of the Calishites led them to have deeply rooted ties to the genies that had long since left the lands. The blood of these beings was said to still flow strongly among the Calishites, which sometimes manifested among them as exceptional skill in the arcane arts. Genasi comprised around half of the area's population, either enslaved or free. Magic users were highly held with Calimshan society and would often be sought after as teachers."
-#descr "The Kingdom of Calimshan is the oldest surviving human realm in Faerûn and today is but a remnant of it's once-vast holdings, which stretched as far north as the High Moors and as far east as the Great Rift of the Shaar, encompassing all of present-day Baldur's Gate, Amn, and Tethyr, parts of the Chultan Peninsula, the entire Lapalaayan coast, and most of the land north of Halruaa all the way to the Sea of Fallen Stars. Today's inhabitants trace their history to the arrival of the Djinn to the region in -7800 DR. These and other genie-kind brought with them human and halfling slaves from far-off Zakhara and drove the dragon and giant inhabitants from the land. While the genie masters of Calim were driven-off by internal wars and elven high magics, the human Calishites who remained clung on to their legacy to build a swelling mercantile empire of their own, steeped in magic and intrigue. 
-
-Checked by the elves of the northern forests and plagued by beholders, rakshasa, goblins, ogres, dragons, drow and dwarves for five millennia, it was only their own internal power-struggles that truly brought Calimshan to its knees. It fell back to its current borders in the decades following the defeat and disappearance of the despotic Necroqysar, the lich-emperor, Shoon VII in 450 DR. A thousand years later, Calimshan hangs on, rigidly hierarchical but largely decentralized. Amn, Baldur's Gate, and Waterdeep are perennial rivals, but Calimport, the nation's capital, is among the largest and wealthiest cities in all of Faerun. With newly-won colonial holdings, the Syl-Pasha and his generals' ambitions to reconstitute Calimshan's former glory has begun to draw fervent support among the populace."
-#summary "All the paths of magic are openly practiced in Calimshan, and you have broad access to the many faiths of Faerun. Coastal provinces bring extra income. Waukeen is the traditional patron deity, but you have access to many others. The reorganization of the military by the current Syl-Pasha gives you access to strong sacred troops from the capital." 
-#flag "ForgottenRealms/flag203.tga"
-#coastnation
-#templepic 5 -- India?
-#fortera 2 -- middle
-#homefort 14
-#buildfort 2
-#builduwfort 6
-#uwbuild 1
-#tradecoast 15
-#labcost 300
-#templecost 400
-#color 0.9 0.8 0.2
-
-#addgod 8001 -- BANE
-#addgod 5002 -- BHAAL
-#addgod 5003 -- Myrkul
-#addgod 5021 -- Shar 3
-#addgod 5016 -- Loviatar 3
-#addgod 5004 -- Light of Lathander
-#addgod 5005 -- Statue of Selune
-#addgod 5007 -- Statue of Tyr
-#addgod 5008 -- Statue of Torm
-#addgod 5009 -- Statue of Ilmater
-#addgod 5012 -- Waukeen
-
-#addgod 3473 -- Genie
-#addgod 5017 -- Mask 2
-#addgod 5026 -- Umberlee 2
-#addgod 5036 -- Asmodeus 2
-#addgod 5020 -- Gond 2
-#addgod 5030 -- Tymora 2
-
-#addgod 5038 -- Savras 1
--- #addgod 486 -- Great Warlock
--- #addgod 3059 -- Magister Supreme
-
-#cheapgod40 5012
-
-#startcom 6693			-- Syl-Pasha
-#startunittype1 6680 	-- Calishite Spearman
-#startunittype2 6682 	-- Calishite Archer
-#startunitnbrs1 20
-#startunitnbrs2 12
-
-#startscout 6690 	-- Calishite Scout
-
-#addrecunit 6680 	-- Calishite Spearman
-#addrecunit 6681 	-- Calishite Swordsman
-#addrecunit 6682 	-- Calishite Archer
-#addrecunit 7660 	-- Calishite Rider
-#addrecunit 7652 	-- Sadimmin Spearman
-#addrecunit 7653 	-- Sadimmin Swordsman
-
-#addreccom 6690 	-- Calishite Scout 
-#addreccom 7666 	-- Calishite Captain
-#addreccom 7667 	-- Calishite Cavalry Commander
-#addreccom 6695		-- Amlakkar Wizard
-#addreccom 6703		-- Cleric of Waukeen
-
-#plainrec 6680 	-- Calishite Spearman
-#mountainrec 6680 	-- Calishite Spearman
-#wasterec 6680 	-- Calishite Spearman
-#plainrec 6681 	-- Calishite Swordsman
-#mountainrec 6681 	-- Calishite Swordsman
-#wasterec 6681 	-- Calishite Swordsman
-#plainrec 6682 	-- Calishite Archer
-#mountainrec 6682 	-- Calishite Archer
-#wasterec 6682 	-- Calishite Archer
-#plainrec 7660 	-- Calishite Rider
-#mountainrec 7660 	-- Calishite Rider
-#wasterec 7660 	-- Calishite Rider
-
-#plaincom 6690 	-- Calishite Scout 
-#mountaincom 6690 	-- Calishite Scout 
-#wastecom 6690 	-- Calishite Scout 
-#plaincom 7666 	-- Calishite Captain
-#mountaincom 7666 	-- Calishite Captain
-#wastecom 7666 	-- Calishite Captain
-#plaincom 7667 	-- Calishite Cavalry Commander
-#mountaincom 7667 	-- Calishite Cavalry Commander
-#wastecom 7667 	-- Calishite Cavalry Commander
-#plaincom 7665	-- Calishite Conjurer
-#mountaincom 7665	-- Calishite Conjurer
-#wastecom 7665	-- Calishite Conjurer
-#plaincom 7664 	-- Calishite Master Conjurer
-#mountaincom 7664 	-- Calishite Master Conjurer
-#wastecom 7664 	-- Calishite Master Conjurer
-
-
--- All other units are cap-only, site-specific
-
-#defcom1 7666 		-- Calishite Captain
-#defcom2 7667 		-- Calishite Cavalry Commander
-#defunit1 6680 		-- Calishite Spearman
-#defunit1b 6682 	-- Calishite Archer
-#defunit2 7660		-- Calishite Rider
-#defmult1 20 		-- how many 1st
-#defmult1b 10 		-- In ratio to 2nd
-#defmult2 15
-
----------- START SITES
-
-#startsite "Fountain of the Qysars" 
-#startsite "Plaza of Divine Truth" 
-#startsite "Qysagghani Fortress" 
-#startsite "The Auret" 
-#startsite "Lighthouse of the Moon" 
-
----------- DEFENCES
-#guardunit 6681 	-- Calishite Swordsman
-#guardcom 7667 		-- Calishite Cavalry Commander
-#guardmult 15
-#wallcom 7666 		-- Calishite Captain
-#wallunit 6682 		-- Calishite Archer
-#wallmult 15 		-- high
-#end 	
-
-------------------------------------------------------------------------------------------------
------------------------------------------CORMYR----------------------------------------------
-------------------------------------------------------------------------------------------------
-
-#selectnation 204 
-#era 2 		
-#name "Cormyr"
-#epithet "Land of the Purple Dragon"
-#idealcold 0
-#brief "Cormyr is a land under threat. Skeptical of wizards due to recent events and generally frowning upon adventuring without an official license, you'll have to rely more on your tough armies and enlisted wizards than other nations - but you do have strong priests."
-#descr "As of 1372 DR, Cormyr was under threat from all sides and struggling to hold onto order. Nobles bickered over land rights, Sembian merchants and a Cult of the Dragon cell tried to gain a trading foothold, and there was a strong Zhentarim presence nearby. The City of Shade in the Anauroch Desert to the north and the ruins of Myth Drannor to the east both posed a threat.
-
-The country was also reeling from the effects of the Goblin War. Led by Nalavarauthatoryl, the Devil Dragon, who returned from the shadow demiplane of Grodd in which she'd been imprisoned nearly 1,000 years earlier. She had long held a blood fued with the ruling Obarskyr royal lineage of Cormyr, and King Azoun IV was forced to ride out to meet her. The cities of Arabel, Eveningstar, Tyrluk and settlements in the Stormhorns were all badly damaged in the conflict. Bandits inhabited the roads and orc and goblin armies inhabited the forests. 
-
-Though Azoun would never learn it before his death at the Devil Dragon's hands, it was his closest advisor and Master of the Council of Mages, Vangerdahast, who was responsible for the reawakening of Nalavarauthatoryl."
-#summary "You are a powerhouse, but to expand you'll first have to deal with the Goblin Wars and the Cult of the Dragon. Nearby provinces are overrun with powerful enemies, especially Eastern Cormyr, where the Devil Dragon has taken up residence. You have excellent infantry and cavalry. The War College provides outstanding mages, and clerics are common in nearby important cities. You'll also have flying cavalry and the famous Purple Dragon Knights to lean on." 
-#flag "ForgottenRealms/flag204.tga"
-#coastnation
-#aiholdgod
-#templepic 5 -- India?
-#fortera 3 -- middle
-#homefort 14
-#buildfort 2
-#builduwfort 6
-#labcost 500
-#templecost 300
-#color 0.8 0.4 0.6
-
-
-#addgod 5004 -- Light of Lathander
-#addgod 5005 -- Statue of Selune
-#addgod 5007 -- Statue of Tyr
-#addgod 5008 -- Statue of Torm
-#addgod 5009 -- Statue of Ilmater
-#addgod 5029 -- Helm
-#addgod 5015 -- Tempus
-#addgod 5006 -- Chauntea 4 
-#addgod 5012 -- WAUKEEN 3
-
-#addgod 5030 -- Tymora 2
-#addgod 5023 -- Oghma 2
-#addgod 5037 -- Silvanus 2
-
-#addgod 5039 -- Azuth 1
--- #addgod 244 -- Arch Mage
--- #addgod 251 -- Great Sage
--- #addgod 2922 -- Morgen High Queen
-
-#cheapgod40 5008 -- Torm
-#cheapgod40 5029 -- Helm
-#cheapgod40 5009 -- Ilmater
-#cheapgod40 5007 -- Tyr 
-#cheapgod20  5030 -- Tymora
-
-#startcom 6749 -- Commander: Purple Dragon Lancelord
-#startunittype1 6741 	-- Blade
-#startunittype2 6742 	-- Swordmajor
-#startunitnbrs1 10
-#startunitnbrs2 10
-
-#startscout 6747 	-- Aide De Camp
-
-#addrecunit 6759 	-- Cormyrian Longbowman
-#addrecunit 6741 	-- Blade
-#addrecunit 6742 	-- Swordmajor
-#addrecunit 6743 	-- Guidon 
-#addrecunit 6744 	-- Purple Dragon Knight
-
-#addreccom 6745 	-- Royal Scout 
-#addreccom 6746		-- Lionar
-#addreccom 6749 	-- Purple Dragon Lancelord
-#addreccom 6751 	-- Cormyrian Battlepriest
-#addreccom 6760 	-- Cormyrian Bannerlord
-#addreccom 6754		-- Field Wizard
-
-
--- All other units are cap-only or site-specific
-
-#defcom1 6746		-- Lionar
-#defcom2 6754		-- Field Wizard
-#defunit1 6741 		-- Blade
-#defunit1b 6742 	-- Swordmajor
-#defunit1c 6759		-- Cormyrian Longbowman
-#defunit2 6759 		-- Cormyrian Longbowman
-#defmult1 15 
-#defmult1b 10
-#defmult1c 10 
-#defmult2 20
-
----------- START SITES
-
-#startsite "Castle Obarskyr" 
-#startsite "College of War Wizards" 
-#startsite "Shrines of Suzail" 
-#startsite "King's Forest" 
-#startsite "Citadel of the Purple Dragon" 
-
----------- DEFENCES
-#guardunit 6741		-- Blade
-#guardcom 6746		-- Lionar
-#guardmult 20
-#wallcom 6746		-- Lionar
-#wallunit 6759 		-- Cormyrian Longbowman
-#wallmult 20 		-- 
-#end 	
-
-------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------ THE SPINE OF THE WORLD -------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------
-#selectnation 205 
-#era 2 		
-#name "The Spine of the World"
-#epithet "Kingdom of Many-Arrows"
-#idealcold 2
-#brief "Deep in the frozen mountains west of Anauroch lies a latent power needing only the slightest spark to ignite. Here, in the region known as the Spine of the World, the Kingdom of Many-Arrows is about to erupt."
-#descr "Prior to the founding of the Kingdom, the Many-Arrows tribe was known as the largest, most notorious, and most successful orc tribe in the North, boasting about 40,000 members as of the mid–14th century DR. They operated out of the Citadel of Many Arrows until they were ousted in the Year of the Shield, 1367 DR. Migrating west to Dark Arrow Keep, which they had claimed from its previous giant inhabitants, they began waging war with Mithral Hall and were expected to raise a horde and launch an invasion of the whole Silver Marches.
-
-Meanwhile, their cousins on the Moonshae Isles were deeply involved in a plot to resurrect Kazgaroth and taint the druidic Moonwells of the insufferable human kingdom of Corwell. The war that followed came to be known as the Darkstalker War, and pitted Bhaalist, Malarite, and Fomorion forces against those of Mielikki and the upstart Eladrin elves of Myrloch Vale."
-#summary "Orcs and goblins, trolls and giants, drow and dragons. Welcome to monster-ville. This nation focuses on recruitable monsters and a roster that is highly variable by terrain. You have a powerful roster but weak and expensive fort construction and magical research. You have some of the most versatile and dramatically powerful units in the game, including giants and dragons. You also have access to mobile gods, which most other nations do not have, including Orcus, Asmodeus, and the dreaded Demogorgon." 
-#flag "ForgottenRealms/flag205.tga"
-#templepic 8 -- Temple Ruins 
-#fortera 3 
-#homefort 2 -- Castle Era 2
-#buildfort 2
-#builduwfort 6
-#uwbuild 1
-#labcost 250
-#templecost 250
-#color 0.4 0.0 0.2
-#noforeignrec
-
-#addgod 5010 -- Malar
-#addgod 5013 -- GRUUMSH
-#addgod 5025 -- Talos 3
-#addgod 5021 -- Shar
-
---#addgod 5022 -- Uthgar 2
-#addgod 8049 -- Demogorgon
-#addgod 5036 -- Asmodeus 2
-#addgod 5031 -- Orcus 2
--- removed until improved #addgod 5035 -- Lolth 2
-
--- #addgod 249 -- Crone
--- #addgod 1905 -- Great Sorceress
--- #addgod 250 -- Frost Father
-
-#cheapgod40 5013 -- Gruumsh
-#cheapgod20 5010 -- Malar
-#cheapgod20 5031 -- Orcus
-
-
--- #multihero1 XXXX -- 
-#multihero1 7341 -- Succubus
-#multihero2 178 -- Lich
-#multihero3 404 -- Vampire Lord
-#multihero4 6775 -- Draconian Chief
-#multihero5 7310 -- Death Knight Dreadlord
-#multihero6 540 -- White Minotaur 
-#multihero7 1535 -- Pan
-
-
-#startcom 6803 			-- Obould Many-Arrows
-#startunittype1 6676	-- Orc Marauders
-#startunittype2 6802	-- Orc Greatbows
-#startunitnbrs1 25
-#startunitnbrs2 10
-
-#startscout 430 		-- SCOUT Black Harpy 
-
-
-#forestrec 6723		-- Goblin Dogslicers
-#forestrec 6773		-- GOBLIN WOLFRIDER
-#forestrec 6806 	-- Krenshar
-#forestrec 2219		-- Forest Troll
-#forestcom 430 		-- Black Harpy
-#forestcom 6811		-- Bugbear Captain
-#forestcom 2220 	-- Troll Shaman
-#forestcom 5101		-- Blackblood Malarite (Werewolves)
-
-#mountainrec 6676 	-- Orc Marauders
-#mountainrec 7071	-- Owlbears
-#mountainrec 6678	-- Hill Giant Reavers
-#mountainrec 6809	-- Stone Giant Mauler
-#mountaincom 6737 	-- Orcish King
-#mountaincom 6733 	-- Goblin Shaman
-#mountaincom 6772	-- Hill Giant Shaman
-#mountaincom 1301	-- Frost Giant Elder
-
-#wasterec 6724		-- Gnoll Hunters 
-#wasterec 6730		-- Giant spiders 
-#wastecom 6732		-- Gnoll Shaman
-#wastecom 6808 		-- Gnoll Chieftain
-#wastecom 6728 		-- Manticore
-
-#caverec 6723		-- Goblin Dogslicers
-#caverec 6676 		-- Orc Marauders
-#caverec 7081		-- Otyugh
-#cavecom 6737 		-- Orcish King
-#cavecom 6733 		-- Goblin Shaman
-#cavecom 6801		-- Orc Shaman of Gruumsh
-#cavecom 6816		-- Night Hag
-
-#swamprec 6677		-- Troglodyte Raiders from swamps
-#swamprec 1831		-- Hydra from swamp
-#swamprec 7359 		-- Kobold Spear
-#swamprec 7360 		-- Kobold Slinger
-#swampcom 7361 		-- Kobold Chieftain
-#swampcom 7362 		-- Kobold Sorcerer
-#swampcom 2891 		-- trog warchief
-#swampcom 2749 		-- Troglodyte Shaman
-
-#uwrec 7359 -- Kobold Spear 
-#uwrec 6677	-- Troglodyte Raiders
-#uwrec 7567 -- Merrow Behemoth
-#uwcom 7361 -- Kobold Chieftain
-#uwcom 7362 -- Kobold Sorcerer 
-#uwcom 2749 -- Troglodyte Shaman
-#uwcom 8022 -- Sea Hag
-
-#searec 7359 -- Kobold Spear 
-#searec 7567 -- Merrow Behemoth
-#seacom 7361 -- Kobold Chieftain
-#seacom 7362 -- Kobold Sorcerer 
-#seacom 2749 -- Troglodyte Shaman
-#seacom 8022 -- Sea Hag
-
-#addrecunit 239 	-- Stirge
-#addrecunit 6723 	-- Goblin Dogslicers
-#addrecunit 6807 	-- Goblin Dead-eye
-#addrecunit 6773 	-- Goblin Wolfriders
-#addrecunit 6676 	-- Orc Marauders
-#addrecunit 6802 	-- Orc Greatbows
-#addrecunit 6678	-- Hill Giant Reavers
-#addrecunit 6675	-- Frost Giant Mercenaries 
-#addrecunit 6809	-- Stone Giant Mauler
-
-#addreccom 430 		-- Black Harpy
-#addreccom 6811		-- Bugbear Captain
-#addreccom 6737 	-- Orcish King
-#addreccom 5101		-- Blackblood Malarite (Werewolves)
-#addreccom 6733 	-- Goblin Shaman
-#addreccom 6801		-- Orc Shaman of Gruumsh
-#addreccom 6775 	-- Green Hag
-
-
--- All other units are cap-only or site-specific
-
-#defcom1 6737 		-- Orcish King
-#defcom2 6733		-- Goblin Shaman
-#defunit1 6723 		-- Goblin Dogslicers
-#defunit1b 6676 	-- Orc Marauders
-#defunit2 6773 		-- Goblin Wolfriders
-#defmult1 25 	
-#defmult1b 12 
-#defmult2 20 	
-
-
--- UW PROVINCE DEFENCE
-#uwdefcom1 7361 -- Kobold Chieftain 
-#uwdefcom2 7362 -- Kobold Sorcerer 
-#uwdefunit1 7359 -- Kobold Spear
-#uwdefmult1 20
-#uwdefunit1b 7360 -- Kobold Slinger
-#uwdefmult1b 20
-#uwdefunit2 7567 -- Merrow Behemoth
-#uwdefmult2 14
-
---UW WALL DEFENCE
-#uwguardcom 7361 -- Kobold Chieftain 
-#uwguardunit 7359 -- Kobold Spear
-#uwguardmult 20
-#uwwallcom 7362 -- Kobold Sorcerer 
-#uwwallunit 7360 -- Kobold Slinger
-#uwwallmult 20
-
-
----------- START SITES
-
-#startsite "Cackling Chasm" 
-#startsite "Fell Pass" 
-#startsite "Raven Rock" 
-#startsite "Dark Arrow Keep" 
-#startsite "The Deep Forge"
-
-
----------- DEFENCES
-#guardcom 6811
-#guardunit 6676
-#guardmult 15
-#wallcom 6737 		-- Orcish Chief
-#wallunit 6802 		-- Orc Greatbows
-#wallmult 15 		-- 
-
-#end 
-
-
-
-
-------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------ THE SAVAGE FRONTIER -------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------
-
-#selectnation 206
-#era 2 		
-#name "The Savage Frontier"
-#epithet "Gateway"
-#idealcold 0
-#brief "Different surface terrains offer different recruiting options. Some monsters have very unique combinations of abilities. You'll be strong early on, but weaken over time if your research lags too far behind other, more 'civilized' nations."
-#descr "The Savage Frontier is a loose confederation of warring monstrous tribes and clans with influence across the Western Heartlands and into the Trackless Sea beyond. While your capital shakes the rugged and desolate Greypeak Mountains, you also have a solid hold over the cold depths of the open oceans where the thieves, assassins and mages of the Kraken Society hold dominion. Led by Slarkrethel, the Chosen of Umberlee, the Kraken Society is just one of your many competing power centers. You also have connected holdings in the Underdark's Gauthgrottoes."
-
-#summary "Though you have access to some of the most versatile and dramatically powerful units in the game, you have terribly weak research and very poor forts. Dragons, Krakens, Mindflayers, and much more should make expansion comfortable, but keeping those gains over time will be the challenge. Many of your best units require no forts to be constructed, so plan accordingly." 
-#flag "ForgottenRealms/flag206.tga"
-#templepic 8 -- Temple Ruins 
-#fortera 1 
-#homefort 18 -- Giant Citadel - Cloud Giants
-#buildfort 1
-#uwbuild 1
-#builduwfort 6
-#labcost 600
-#templecost 250
-#color 0.6 0.2 0.2
-#noforeignrec
-
-#addgod 5025 -- Talos 3
-#addgod 5013 -- Gruumsh
-#addgod 5035 -- Moander 2
-#addgod 5031 -- Orcus 2
-#addgod 5048 -- Great Elder Brain 2
-#addgod 8049 -- Demogorgon 2 
-
-#cheapgod40 5035 -- Moander
-
-
--- #multihero1 XXXX -- 
-#multihero1 7341 -- Succubus
-#multihero2 7068 -- beholder
-#multihero3 6805 -- Cloud Giant
-#multihero4 6775 -- hag
-#multihero5 7310 -- Death Knight Dreadlord
-#multihero6 7450 -- Fey'ri Demonarch
-
-
-#startcom 6804			-- The Beast Lord
-#startunittype1 6807	-- Goblin Archers
-#startunittype2 6809	-- Stone Giant Maulers
-#startunitnbrs1 25
-#startunitnbrs2 4
-
-#startscout 6779 	-- Young Adult Red Dragon
-
-#wasterec 6672		-- Wyverns from wastelands
-#wasterec 6724		-- Gnoll Hunters from wastelands
-#wasterec 6723 		-- Goblin Dogslicers
-
-#forestrec 6807		-- Goblin Archers
-#forestrec 6806 	-- Krenshar
-#forestrec 2219		-- Forest Troll from forests
-#forestrec 7071		-- owlbear
-
-#mountainrec 6678	-- Hill Giant Reavers from wastelands
-#mountainrec 234	-- Minotaur
-#mountainrec 6676	-- Orc Marauders
-
-#swamprec 6677		-- Troglodyte Raider
-#swamprec 1831		-- Hydra from swamp
-#swamprec 7081		-- Otyugh
-
-#caverec 7081		-- Otyugh
-
-#forestcom 2220 	-- Troll Shaman
-#forestcom 6650 	-- Priest of Malar
-#forestcom 6770 	-- Goblin King
-#forestcom 6733		-- Goblin Shaman
-
-#mountaincom 430 	-- Black Harpy
-#mountaincom 6737 	-- Orc Warlord
-#mountaincom 6801	-- Cleric Gruumsh
-#mountaincom 6772	-- Hill Giant Shaman
-#mountaincom 6728 	-- Manticore
-
-#wastecom 6808 		-- Gnoll Chieftain
-
-#cavecom 6738 		-- Firegiant Commander
-#cavecom 310 		-- Necromancer 
-#cavecom 5116 		-- Lesser Illithid
-#cavecom 5113 		-- Illithid -- RECRUITABLE
-
-#swampcom 6687		-- Hydar Beastmaster 
-#swampcom 2749 		-- Troglodyte Druhyidd
-#swampcom 2891 		-- trog warchief
-#swampcom 6831		-- Yuan-ti Abomination
-
-#coastcom 564		-- Sea Troll from coast
-
-#addrecunit 239 	-- Stirge
-#addrecunit 6807 	-- Goblin Archer
-#addrecunit 6723 	-- Goblin Dogslicers
-#addrecunit 6773 	-- Goblin Wolfriders
-#addrecunit 6678	-- Hill Giant Reavers 
-
-#addreccom 430 		-- Black Harpy
-#addreccom 6770 	-- Goblin King
-#addreccom 6811		-- Bugbear Captain
-#addreccom 6733		-- Goblin Shaman
-#addreccom 6772		-- Hill Giant Shaman
-
-#uwrec 7148 -- Locathah Slave
-#uwrec 7598 -- Morkoth 
-#uwrec 7599 -- Morkoth Warrior
-#uwrec 7566 -- Merrow Behemoth
-#uwcom 7603 -- Morkoth Captain
-#uwcom 7600 -- Morkoth Mage
-#uwcom 7601 -- Morkoth Arcount
-#uwcom 7307 -- Kraken
-#uwcom 5116 -- Lesser Illithid
-#uwcom 5113 -- Illithid -- RECRUITABLE
-#uwcom 7308 -- Kraken Lord
-
-#searec 7566 -- Merrow Behemoth
-#searec 7598 -- Morkoth 
-#searec 7599 -- Morkoth Warrior
-#seacom 7603 -- Morkoth Captain
-#seacom 7603 -- Morkoth Captain
-#seacom 7760 -- Morkoth Mage
-#seacom 7307 -- Juvie Kraken
-
-
--- All other units are site-specific
-
-
----------- DEFENCES
-#defcom1 6733		-- Goblin Shaman
-#defcom2 6772		-- Hill Giant Shaman
-#defunit1 6723 		-- Goblin Dogslicers
-#defunit1b 6807 	-- Goblin Archer
-#defunit2 6724		-- Gnoll Hunters
-#defmult1 30 	
-#defmult1b 10 
-#defmult2 10
-
-#guardcom 6811
-#guardunit 6723
-#guardmult 15
-#wallcom 6770 		-- Goblin King
-#wallunit 6807 		-- Goblin Archer
-#wallmult 20 		-- 
-
-
--- UW PROVINCE DEFENCE
-#uwdefcom1 5113 -- Illithid -- RECRUITABLE
-#uwdefcom2 8020 -- Merfolk Prince
-#uwdefunit1 7148 -- Locathah Slave
-#uwdefmult1 20
-#uwdefunit1b 7599 -- Morkoth Warrior
-#uwdefmult1b 10
-#uwdefunit2 7566 -- Merrow Behemoth
-#uwdefmult2 20
-
-
---UW WALL DEFENCE
-#uwguardcom 5113 -- Illithid -- RECRUITABLE
-#uwguardunit 7599 -- Morkoth Warrior
-#uwguardmult 20
-#uwwallcom 5113 -- Illithid -- RECRUITABLE
-#uwwallunit 7566 -- Merrow Behemoth
-#uwwallmult 16
-
----------- START SITES
-
-#startsite "Llorkh" 			-- Knights 22 
-#startsite "Temple to Annam"	-- Cloud Giants
-#startsite "Vale of Whispers"	-- Shrine to Shar
-#startsite "Mines of Dekanter" 	-- Beast Lord's Laboratory
-#startsite "Deadstone Cleft" 	-- Stone Giants
-
-#end 
-
-------------------------------------------------------------------------------------
----------------------------------------- THE JUNGLES OF CHULT ---------------------
-------------------------------------------------------------------------------------
-
-#selectnation 207
-#era 2 		
-#name "Mezro"
-#epithet "The Children of Ubtao"
-#idealcold -2
-#brief "This is one of the Heroic Nations, featuring poor native troops but excellent commanders and spellcasters."
-#descr "Chult was located at the westernmost end of the Chultan peninsula, in the southern part of the Trackless Sea, south of Calimshan coast. Chult has always been remote and isolated, forming a mountainous jungle of savage beasts, hulking dinosaurs, and disease-ridden swamps. Human tribes, goblins, and even stranger monstrous folk haunted the thick jungles. Nevertheless, Chult drew adventurers who sought its legendary riches. The primordial Ubtao was almost exclusively revered in the land, for the divine powers of Faerûn awarded Ubtao total dominion over Chult in exchange for the his vigilance over the threat of Dendar the Night Serpent who was imprisoned behind the Iron Doors of Night deep beneath the Peaks of Flame.
-
-An excellent but non-competitive single-player experience, the jungles are full of mystery and danger, including not only Dendar in The Peaks of Flame, but also the Tomb of Horrors - long considered the most unfairly dangerous dungeon in all of tabletop adventuring. The said, the lack of thrones will make reaching 10+ ascension points quite difficult. "
-
-#summary "Races: Tabaxi tribesmen, Velociraptors from the amphitheater, and whatever else is out there in the nearby jungles.
-Military: Weak. Poor troops overall.  
-Magic: Strong. Some outstanding spellcasters and solid with research.
-Priests: Strong. Every native caster is sacred and you have a rare sacred troop type as well.
-Mechanics: Your expansion is severely limited on the Faerun map as nearby independents are VERY powerful, Calimshan is jealous of your coastal holdings, and Serpentes is a looming threat to your East." 
-#flag "ForgottenRealms/flag207.tga"
-#templepic 14 -- Mayan 
-#fortera 2 -- MA
-#homefort 2 -- fortress
-#buildfort 2
-#builduwfort 6
-#labcost 300
-#templecost 300
-#color 0.0 1.0 0.6
-
-#addgod 5014 -- Ubtao
---#addgod 653 -- Serpent King
-#addgod 5028 -- Great Bara of Ubtao
-
--- #multihero1 XXXX -- 
-
-#startcom 6817 			-- Barae of Ubtao
-#startunittype1 6824 	--	Tabaxi Warrior
-#startunittype2 6825 	--	Tabaxi Archer
-#startunitnbrs1 30
-#startunitnbrs2 20
-
-#startscout 6818 	-- HERO: Ras Nsi
-
-#forestcom 6821 -- Jungle Druid
-
-#addrecunit 6824 -- Tabaxi Warrior
-#addrecunit 6825 -- Tabaxi Archer
-#addrecunit 6826 -- Ebony Guard
-
-#addreccom 6823 -- Spearbearer
-#addreccom 6822 -- Spiritlord
-
--- All other units are site-specific
-
-#defcom1 6823 		-- Spearbearer
-#defcom2 6822 		-- Spiritlord
-#defunit1 6824 		-- Tabaxi Warrior
-#defunit1b 6825 	-- Tabaxi Archer
-#defunit2 6826 		-- Ebony Guard
-#defmult1 20 	
-#defmult1b 15
-#defmult2 6 
-
----------- START SITES
-
-#startsite "Amphitheater of Mezro" 
-#startsite "Mezro College of Wizards"
-#startsite "Library of Mezro"
-#startsite "Temple of Ubtao"
-
----------- DEFENCES
-#guardcom 6823
-#guardunit 6824
-#guardmult 15
-#wallcom 6823 		-- Spearbearer
-#wallunit 6825		-- Tabaxi Archer
-#wallmult 20 		
-#end 
-
-------------------------------------------------------------------------
-------------------------------------------------------THE SHAARLANDS----
-------------------------------------------------------------------------
-
-#selectnation 208
-#era 2 		
-#name "The Shaar"
-#epithet "The Savage Plains"
-#idealcold -1
-#brief "This is one of the Savage Nations, focused on recruitable monsters and a roster that is highly dependent on nearby magic sites and terrains."
-#descr "The vast expanse known as the Shar stretches like a thin, bloody and rugged ribbon across the entire southern continent. Throughout recorded history, it remained largely without civilization. 
-
-Its heartland is inhabited by varied and warlike nomadic tribes - mainly of humans, centaurs, minotaurs, thri-kreen, and the lion-bodied wemics. They hunt the herd animals and regularly argue over water rights. Fearsome dire horses were known to roam the wilderness, inspiring fear, awe, folk tales, and even cultist veneration. Dragons, gnolls, manticores, hill giants and harpies also challenged the nomads for control. Occasionally, so-called 'civilized nations' laid claim to some parts of the Shaar or established settlements to aid in their trade of baubles - but only the ruins of these survive. 
-
-You begin on two fronts - in the western heartlands, a tribe of Wemics under the just and savage rule of Shaq'ar is under your command, and you are primed for a rapid expansion. In the east, Xavarathimius, the Everlasting Wyrm, has reawakened. The Dracolich is prepared to finally see his machinations to dominate all of the Shining South come to fruition. 
-
-In addition to capturing the tall-grass prairies and forested foothills of the Shaar, you'll need to win the support of the demon-worshipping Yuan-Ti and the noble and elusive Rakshasa. The latter are common among the larger settlements both on the western coasts of Lapaliiya and in the eastern free cities in Estagund and Durpar. Without them, you'll have little hope of keeping up, both magically as well as economically."
-#summary "Wemics, Centaurs, and Thri-kreen will be common in your armies - fast and hard-hitting but with little armor. Gnolls, minotaurs, scrags, manticores and other various beasts will round out your armies with incredible raiding and pillaging potential. Various terrains offer additional troop types, and you'll appreciate the variety, but research will always be a concern until the Yuan-ti and Rakshasa can be recruited to your cause." 
-
-#flag "ForgottenRealms/flag208.tga"
-#templepic 30 -- Forest Gate
-#fortera 2 
-#homefort 1 -- palisades are a step backward
-#buildfort 12
-#builduwfort 5
-#labcost 300
-#templecost 300
-#color 1.0 1.0 0.6
-
-#addgod 5010 -- MALAR 3
-#addgod 5025 -- Talos 3
-
-#addgod 5035 -- Moander 2
-#addgod 957 -- Nobanion 2
-#addgod 8049 -- Demogorgon
-
-
--- #multihero1 XXXX -- 
-#multihero1 6839	 	-- Wemic Firemane 
-#multihero2 7087 		-- Hornblower of Baphomet
-#multihero3 6779 		-- RED DRAGON YOUNG ADULT
-#multihero4 6789		-- GREEN DRAGON YOUNG ADULT	
-#multihero5 7085		-- Rakshasa
-#multihero6 6829 		-- Yuan-ti Malison
-#multihero7 6831		-- Yuan-ti Abomination
-
-#startcom 6841 			-- Shaq'ar
-#startunittype1 6840	-- Wemic Warrior
-#startunitnbrs1 30
-
-#startscout 6837 	-- Wemic Shaman
-
-#forestrec 227		-- Satyr Sneaks
-#forestrec 7071		-- owlbear
-#forestrec 7488 -- Centauride Nomad
-#forestrec 7487 -- Centaur Huntsman
-#forestrec 7491 -- Centaur Protector
-
-#swamprec 6727		-- Lizard folk
-
-#caverec 7081		-- Otyugh
-#caverec 6677		-- Troglodytes
-
-#mountainrec 6842 	-- Minotaur Brute
-
-#wasterec 6724		-- Gnoll Hunters from wastelands
-#wasterec 6672		-- Wyverns
-
-#coastrec 564		-- Scrag
-
-#forestcom 7490 -- Centaur Windrunner
-#forestcom 7489 -- Centauride Thorncaller
-#forestcom 2479 	-- Centaur Sage
-#forestcom 231		-- Centaur Heirophant
-
-#swampcom 6734		-- Lizardman shaman
-#swampcom 2891		-- trog warchief
-#swampcom 2749 		-- Troglodyte Shaman	
-
-#mountaincom 6843 	-- Minotaur Elder
-#mountaincom 7086	-- Bull Priest
-#mountaincom 7087   -- Hornblower of Baphomet
-
-#wastecom 6808 		-- Gnoll Chieftain
-#wastecom 6728 		-- Manticore
-
-#coastcom 7592		-- Scrag Chieftain
-#coastcom 7562 		-- Scrag Shaman
-
-#addrecunit 239 	-- Stirge
-#addrecunit 6840	-- Wemic Warrior
-#addrecunit 6838 	-- Wemic Huntress
-#addrecunit 6724	-- Gnoll Hunter 
-
-#addreccom 7093		-- Kenku Sneak
-#addreccom 6808 	-- Gnoll Chieftain
-#addreccom 6836 	-- Wemic Proudspear
-#addreccom 6837 	-- Wemic Shaman
-#addreccom 6839	 	-- Wemic Firemane
-
-
-#defcom1 6836 		-- Wemic Proudspear
-#defcom2 6837 		-- Wemic Shaman
-#defunit1 6840		-- Wemic Warrior
-#defunit1b 6838 	-- Wemic Huntress
-#defunit2 6724		-- Gnoll Hunters from wastelands
-#defmult1 15 	
-#defmult1b 15 
-#defmult2 5
----------- START SITES
-
-#startsite "The Goldmane Expanse"
-#startsite "The Ruins of Blaskaltar" 	
-#startsite "Gnoll Packlands" 	
-
----------- DEFENCES
-#guardcom 6843
-#guardunit 6842
-#guardmult 15
-#wallcom 6836 		-- Wemic Proudspear
-#wallunit 2478 		-- Satyr Crossbows
-#wallmult 20 		-- 
-#end 
-
-
---------------------------------------------------------------------------------------------
-----------------------------------HALRUAA----------------------------------------------------
---------------------------------------------------------------------------------------------
-
-
-#selectnation 209
-#era 2 		
-#name "Halruaa"
-#epithet "Land of Magic"
-#brief "Halruaa was a land of magic, renowned for its electrum mines and its Haerlu wine. The fabled, quiet and wealthy magocracy was justly depicted as full of wonder. Created by archwizards foreseeing the fall of Netheril, Halruaa combined peace and harmony with the magic powers of their ancestors, but without the taint of their ambitions."
-#descr "Halruaans congregated in numerous villages and cities scattered throughout the country's interior. Most were small settlements with no more than a few hundred inhabitants each, while the largest settlements were smaller than the cities of most other nations. The folk of the small villages usually relied on a venerated wizard to provide both protection and leadership, while likely also serving as mayor and a member of the Council of Elders, the ruling body of the country. The leader of the council was the Netyarch, or wizard-king.
-
-With natural fortifications and the leadership of a score of diviners, Halruaans lived in a near-perfect haven. They rarely felt the necessity to travel except when they needed to get new magic items or spell components, as nowhere else in Faerûn would they feel as comfortable as home. Because most of the Halruaan travelers were wizards, people across Faerûn had the wrong belief that all Halruaans were wizards.
-
-Life in the cities of Halruaa was touched by magic in many ways. Their houses had at least a few built-in magical enhancements, such as magical street lamps, while a favorite practice in cities along the coast was to produce walls of magically coaxed coral. Spells that produced sparkling lights and pleasing sounds were often woven into fine fabrics to enhance their beauty. Fanciful means of travel, such as carpets of flying or skyships, were commonplace. Everywhere in Halruaa, people took great pains to show off their abilities as well as their wealth." 
-#summary "Races: Entirely human with additions requiring expansion. 
-Military: Simple but effective infantry, fast light cav.  
-Magic: Competing with Thay for the best wizards in the game. 
-Priests: Only worshippers of Mystra and Azuth are permitted in Halruaa.
-Mechanics:  Magehounds make excellent patrollers. Jordain Viziers are outstanding bodyguards. Both are highly magic resistant. Winged monkeys wreak havoc and are good fun." 
-#flag "ForgottenRealms/flag209.tga"
-#templepic 2 -- Greek
-#fortera 3 -- Castle standard era 2
-#homefort 4 -- Citadel
-#buildfort 2
-#builduwfort 6
-#labcost 300
-#templecost 600
-#color 0.6 0.8 1.0
-
-#addgod 8000 -- Fountain of Mystra
-#addgod 5038 -- Savras 1
-#addgod 5039 -- Azuth 1
-#addgod 5041 -- Great Netyarch 1
-
-
--- #multihero1 XXXX -- 
-#multihero1 37 -- Master of the Games
-#multihero2 58 -- Knight of the Stone
-#multihero3 301 -- Astrologer
-
-
-#startcom 6873 			-- Halruaan Cavalry Commander
-#startunittype1 6845	-- Peltasts
-#startunittype2 2899 	-- Halruaan Light Cavalry
-#startunitnbrs1 20
-#startunitnbrs2 8
-
-#startscout 6854 	-- Jordain Vizier
-
-#addrecunit 6844 	-- Archers
-#addrecunit 6845 	-- Peltasts
-#addrecunit 5117 	-- Halruaan Hoplite
-#addrecunit 6846	-- Halruaan Light Cavalry
-
-#addreccom 6872 	-- Winged Monkey Scout
-#addreccom 6873 	-- Halruaan Cavalry Commander
-#addreccom 6851		-- Halruaan Apprentice
-#addreccom 6850		-- Halruaan Magehound
-#addreccom 6847 	-- Cleric of Mystra
-#addreccom 6849 	-- Elder Councillor
-
-#addforeignrec 6844 	-- Archers
-#addforeignrec 6845 	-- Peltasts
-#addforeigncom 6848 	-- Cleric of Azuth
-#addforeigncom 6851		-- Halruaan Apprentice
-
--- All other units are site-specific
-
-#defcom1 6873 		-- Halruaan Cavalry Commander
-#defcom2 6848 		-- Cleric of Azuth
-#defunit1 6845 		-- Peltasts
-#defunit1b 6844 	-- Archers
-#defunit2 6846 		-- Halruaan Light Cavalry
-#defmult1 20 	
-#defmult1b 12 
-#defmult2 20 
-
----------- DEFENCES
-#guardcom 6873		-- Halruaan Cavalry Commander
-#guardunit 5117 	-- Halruaan Hoplite
-#guardmult 15
-#wallcom 6848 		-- Cleric of Azuth
-#wallunit 6844 		-- Archers
-#wallmult 20 		-- 
-
----------- START SITES
-
-#startsite "The Illysum"
-#startsite "Kholstar's Keep" 
-#startsite "The Promenade"
-
-#end 
-
-
---------------------------------------------------------------------
-----------------------------THAY------------------------------------
---------------------------------------------------------------------
-#selectnation 210
-#era 2 		
-#name "Thay"
-#epithet "The Red Wizards"
-#brief "Thay was a mysterious and terribly powerful magocratic nation in east Faerûn, that was long-governed by the Zulkirs of the Red Wizards. It is ruled by the necromancer lich, Szass Tam, along with his Council of Zulkirs and a near-endless chain of bureaucrats and local tharchion knights. The true nature of Thay lies in the endless pursuit of arcane knowledge and power."
-#descr "For most of Thay's history, the country operated under a strict social hierarchy. The Red Wizards were considered the upper echelon of Thayan society, a magocratic noble class that was followed by Mulan bureaucrats, priests, merchants, soldiers, and mixed Mulan-Rashemi artisans and craftspeople. Semi-skilled workers and common laborers were a mere step above the nation's great many slaves of nearly every race, that had been accumulated from across the Realms.
-
-In the years following Szass Tam's seizure of power in 1385 DR, the Thayan people led hard, destitute lives. It was a land whose governing philosophy held that undeath was a preferred state of being for its people, full of boundless possibilities and immeasurable power. During most of the 15th century the living had no means to achieve prominence within Thay, as their mere existence was an affront to the beliefs of the High Regent.
-
-To briefly escape the misery of life in the city, many Thayans sought more brutal forms of entertainment. Gladiatorial matches were common in larger cities like Eltabbar and Surthay, perhaps the only events that allowed commoners to succumb to their primal nature without fear of retribution from the upper class. The more ferocious and deadly combatants were celebrated by the throngs of spectators. The brutal gladiators from Thay were considered the finest and most savage in all the Realms." 
-#summary "Your red wizards and Zulkirs are among the best wizards in the game. Backed by their Thayan Knight bodyguards, they will serve many roles, from rsearchers to artisans, to conquerors to foreign spies. A reasonably safe starting position should not be taken for granted. Aglarond, Narfell, and Mulhorand are not likely pushovers, especially as the game progresses. You have cheap labs, but expensive temples, and excellent fortifications."
-#flag "ForgottenRealms/flag210.tga"
-#templepic 2 -- Greek
-#fortera 3 -- Castle standard era 2
-#homefort 4 -- Citadel
-#buildfort 2
-#builduwfort 6
-#labcost 300
-#templecost 600
-#color 1.0 0.0 0.0
-
-#addgod 8001 -- Bane
-#addgod 5002 -- Myrkul
-#addgod 5003 -- Bhaal
-
-#addgod 5016 -- Loviatar 3
-#addgod 5021 -- Shar 3
-
-#addgod 5033 -- Cyric 2
-#addgod 5036 -- Asmodeus 2
-#addgod 8049 -- Demogorgon 2
-
-#addgod 5038 -- Savras 1
-
-#cheapgod20 8001 -- Bane
-#cheapgod20 5036 -- Asmodeus
-
--- #multihero1 XXXX -- 
-#multihero1 6864 -- Zulkir
-#multihero2 178 -- Lich
-#multihero3 404 -- Vampire Lord
-#multihero4 3245 -- Vampire Countess
-#multihero5 828 -- Arch Devil
-#multihero6 492 -- Heliophagus
-
-#startcom 6862			-- Tharchion
-#startunittype1 6857 	-- Thayan Infantry
-#startunittype2 6859 	--  Thayan Lancer 
-#startunitnbrs1 20
-#startunitnbrs2 8
-
-#startscout 6870 	-- Darkenbeast
-
-#addrecunit 6870 	-- Darkenbeast
-#addrecunit 6859 	--  Thayan Lancer 
-#addrecunit 6858	--  Thayan Bowman
-#addrecunit 6857 	-- Thayan Infantry
-
-#addreccom 6870 	-- Darkenbeast
-#addreccom 429 		-- Black Hand Assassin
-#addreccom 7395 	-- Red Wizard Academe
-#addreccom 6673	 	-- Cultist	
-#addreccom 6862		-- Tharchion
-#addreccom 6863 	-- Red Wizard
-
-#forestrec 6676 -- Orc Maurader
-#forestcom 6737 -- Orc Warlord
-
-#mountainrec 6723 -- goblin dogslicer
-#mountainrec 6807 -- goblin deadeye
-#mountaincom 7210 -- ogre
-
-#caverec 7081 -- Otyugh
-#cavecom 7165 -- Umber Hulks
-
-#wasterec 6724		-- Gnoll Hunters 
-#wastecom 6808 		-- Gnoll Chieftain
- 
--- Could add some Gryphon Riders and Black Unicorn Riders and Wyvern Riders and make them really stupid.
-
-#defcom1 6862 	-- Tharchion
-#defcom2 6863 	-- Red Wizard
-#defunit1 6857 	-- Thayan Infantry
-#defunit1b 6858	--  Thayan Bowman
-#defunit2 6859 -- Lancer
-#defmult1 20 	
-#defmult1b 10 
-#defmult2 5
----------- DEFENCES
-#guardcom 6862
-#guardunit 6857
-#guardmult 15
-#wallcom 6863 	-- Red Wizard
-#wallunit 6858	--  Thayan Bowman
-#wallmult 20 	-- 
-
----------- START SITES
-
-
-#startsite "The Citadel"
-#startsite "Thayvian Gold Mine"
-#startsite "Doomvault"
-#startsite "Volcanic Forge"
-#startsite "Palaces of the Mulan"
-
-#end 
-
---------------------------------------------------------------------
---------------------------------------------------------Unther
-
-#selectnation 211
-#era 2 		
-#name "Unther"
-#epithet "Realm of the God-King"
-#brief "Unther was one of the Old Empires in east Faerûn. The Untherans were brought to Toril from Earth by the Imaskar Empire looking for some manpower. After countless petitions, the gods of the Untheric pantheon were able to manifest into Toril by sending physical avatars. With the help of their deities, the former slaves freed themselves and settled the lands that later became Unther. Ironically, their rival in the millennia to come was another human tribe captured by the Imaskari and freed at the same time, which founded the empire of Mulhorand."
-#descr "The populace of Unther before 1358 DR was primarily composed of humans of the Mulan ethnic group, with a few humans of other ethnic groups as a minority. A few demihumans were also part of the Untheran populace, but only as slaves.
-
-Members of Unther's nobility took up positions in the nation's government, often as priests, wizards, or bureaucrats. They were either Gilgeam's priests or his most trusted non-cleric followers. All nobles of Unther were of the Mulan ethnic group and they practiced marriage between members of the same family to maintain the purity of their Mulan bloodlines. Despite Unther's long history, its nobles were rather few in number. During Gilgeam's milennia-long rule, families fell from his favor and were sold to slavery, and he elevated a few 'pure-blooded Mulans' to replace them.
-
-Finally, slaves in Unther were either members of those families who fell from Gilgeam's favor, or members of demihuman races. Their lives were worthless in the eyes of those in power. The only way to redeem oneself if born or lost into slavery was through the act of war.
-
-Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance movement that has taken up hold across the empire. You'll need to bring these various factions to heel before you can press them into service, including priestesses of Ishtar, Cultists of Tiamat, and the wizard orders in Messemprar and the Greenfields."
-#summary "Your troops are entirely made up of slaves, but very special ones - they level up over time, eventually becoming sacred. Keeping your forces alive will be a vital strategy. Your priests and wizards are fairly strong and most are sacred. What you lack in standard recruitment variety, you'll make up for with options from nearby magic sites in Shussel, Messemprar, and others." 
-#flag "ForgottenRealms/flag211.tga"
-#templepic 0 -- Pyramid
-#fortera 3 -- Castle standard era 2
-#homefort 4 -- Citadel
-#buildfort 3
-#builduwfort 6
-#labcost 500
-#templecost 300
-#color 1.0 0.6 0.2
-
-#addgod 5043 -- Unthalass -- the Great Ziggurat
-#addgod 6876 -- Gilgeam
-#cheapgod40 6876
-
-#startcom 200 			-- Prince of the Old Empire 
-#startunittype1 6877 	-- Old Empire Skirmisher
-#startunitnbrs1 40
-
-#startscout 6881 	-- Old Empire Drillmaster
-
-#addrecunit 6877 	-- Old Empire Skirmisher
-#addrecunit 6886 	-- Old Empire Slave Spear
-#addrecunit 6874 	-- Dwarven Miner
-#addrecunit 6858 	-- Mulan Bowman
-#addrecunit 1078 	-- Chariot
-
-#addreccom 431	 	-- Scout
-#addreccom 6881		-- Old Empire Drillmaster
-#addreccom 200 		-- Prince of the Old Empire 
-#addreccom 6883 	-- Prince Bureaucrat
-#addreccom 7040 	-- Gondar Wonderbringer
-#addreccom 6700 	-- Battlechaplain of Tempus
-#addreccom 6885 	-- Paladin of the God-King
-#addreccom 6884 	-- Loyal Cleric of Gilgeam
-
-
-#defcom1 6881 	-- Old Empire Drillmaster
-#defcom2 200 		-- Prince of the Old Empire 
-#defunit1 6887 -- Old Empire Light Spearmen
-#defunit1b 6878 -- Old Empire Peltast
-#defunit2 1078
-#defmult1 20 	
-#defmult1b 20
-#defmult2 4 
-
----------- DEFENCES
-#guardcom 200 		-- Prince of the Old Empire 
-#guardunit 6887
-#guardmult 15
-#wallcom 6881 	-- Old Empire Drillmaster
-#wallunit 6858 	-- Mulan Bowman
-#wallmult 25 	-- 
-
----------- START SITES
-
-#startsite "Unthalass - The City of Gems"
-#startsite "Fertile Flood Plain"
-#startsite "The Vault of Incense and Marvels"
-#startsite "Palaces of the Mulan"
-
-#end 
-
---------------------------------------------------------------------------
------------------------------MULHORAND------------------------------------
---------------------------------------------------------------------------
-
-#selectnation 212
-#era 2 		
-#name "Mulhorand"
-#epithet "The Ascendant Pharoahs"
-#brief "In response to a plague that killed much of the ancient Imaskar Empire some 3,000 years ago, the Imaskari opened portals to another world in search of slaves. They found them in bronze-age Mesopotamia, on Earth. More than 100,000 people were brought through the portals, and then the portals were closed and all connections between the two worlds were sealed. The Imaskari called their new slaves 'the Mulan.'"
-
-#descr "The Imaskari barrier inhibited contact between the Mulan and their own deities on Earth with whom they had a powerful and devout connection. Ao thus intervened and allowed mortal manifestations of these deities to bypass the barrier and enter Toril directly. These Egyptian and Sumerian deities battled the Imaskari, eventually defeating them in the year −2488 DR. Unable to return to their homes in the Outer Planes, these divine manifestations settled in and founded the nations of Mulhorand in −2135 DR and Unther in −2087 DR.Mulhorand expanded rapidly. The physical manifestations of the Mulhorandi/Kemetic gods ruled directly over their empire for the next 1000 years. At Mulhorand's peak, it stretched over much of eastern Faerun. Then came the Orcgate Wars. 
-
-Some men just want to watch the world burn, and a man named Thayd was one such man. He dove deep into lost secretes of the Imaskari sorcerers to find a way to bring Mulhorand and Unther to their knees. His plot to overthrow and rule both empires failed, but he did manage to open several gates to a world inhabited by gray orcs. Neither Mulhorand nor Unther ever found them all, but the orcs sure did. The war lasted only 7 years and saw the deaths of several gods of the Mulan at the hands of Gruumsh. An alliance between the Mulhorandi and Untheric deities eventually turned the tide but neither Mulhorand nor Unther were able to ever fully recover. 
-
-A divine manifestation of Horus-Re rules the nation in truth, but it is the clergy who orchestrate and administer the state. There are several other deities who maintain a divine presence in the lands of Mulhorand as well: Anhur, god of war, Set, god of destruction, Isis, goddess of life, and Thoth, god of knowledge. Each has their own temple and while they are technically part of the Mulhorandi nation and are willing to defend it, these deities have their own agendas and are not under your direct control."
-#summary "As a theocratic nation, your various priests and theurgists are your greatest asset. Slaves make up the majority of the population and the poorly equipped but inexpensive soldiery. You have good commanders capable of improving their morale and all promote with XP, some eventually to sacreds. You also have the divine avatars of your gods, though all are immobile except Horus-Re. You will not struggle for magical research, and you are an astral powerhouse." 
-#flag "ForgottenRealms/flag212.tga"
-#templepic 0 -- Pyramid
-#fortera 3 -- Castle standard era 2
-#homefort 4 -- Citadel
-#buildfort 2
-#builduwfort 6
-#labcost 500
-#templecost 300
-#color 0.0 0.2 0.8
-
-#noforeignrec
-
-#addgod 5042 -- city of the eternity
-#addgod 6890 -- Horus-Re
-#cheapgod40 6890
-
-#startcom 200 		-- Prince of the Old Empire 
-#startunittype1 6877 	-- Old Empire Skirmisher
-#startunitnbrs1 40
-
-#startscout 6900	 	-- Ibis
-
-#addrecunit 6877 	-- Old Empire Skirmisher
-#addrecunit 6886 	-- Old Empire Slave Spear
-#addrecunit 6858 	-- Mulan Bowman
-#addrecunit 1078 	-- Chariot
-
-#addreccom 6900	 	-- Ibis
-#addreccom 200	 	-- Prince of the Old Empire
-#addreccom 6881 	-- Old Empire Drillmaster
-#addreccom 6883 	-- Prince-Bureaucrat 
-#addreccom 6912 	-- Mulan Adept
-#addreccom 6901 	-- Cleric of Isis
-#addreccom 6895 	-- Mystic Theurge
-
-#defcom1 6881 	-- Old Empire Drillmaster
-#defcom2 200 	-- Prince of the Old Empire
-#defunit1 6887  -- Old Empire Light Spearmen
-#defunit1b 6858  -- Old Empire Peltast
-#defunit2 1078 	-- Chariot
-#defmult1 20 
-#defmult1b 15 	
-#defmult2 4 
-
----------- DEFENCES
-#guardcom 200
-#guardunit 6887
-#guardmult 15
-#wallcom 6881 	-- Old Empire Drillmaster
-#wallunit 6858 	-- Mulan Bowman
-#wallmult 25 	-- 
-
----------- START SITES
-
-#startsite "City of the Gods"
-#startsite "The Solarium"
-#startsite "Library of the Gods"
-#startsite "Tower of the Sun"
-
-#end 
-
-
---------------------------------------------------------------------------
------------------------------CHESSENTA------------------------------------
---------------------------------------------------------------------------
-
-#selectnation 213
-#era 2
-#name "Chessenta"
-#epithet "Heroic Confederacy"
-#brief "Chessenta was a confederation of city-states bound by common culture and mutual defense, but for most of its history wasn’t truly a unified nation and the Chessentan cities were often at war with one another. Chessenta was one of the so-called Old Empires of Faerûn."
-
-#descr "In 929 DR the city states of Chessenta, led by the war hero Tchazzar, drove the armies of Unther to the Riders to the Sky mountains, freeing Chessenta from Untheric rule. During Tchazzar's brief Chessentan Empire, the city of Cimbar was the capital. In 1018 DR, Tchazzar disappeared while fighting sahuagin and the people of Chessenta believed he had ascended to godhood. After Tchazzar's disappearance, the kingdom slowly broke apart into squabbling city states. To this day, these city-states do not accept a central governing body or ruler. The rulers of Cimbar, Akanax, and Mordulkin all claim to be the true Overlord of Chessenta and add this to their other titles. Such claims are meaningless, however. There are no regional divisions as city governments simply claim as much territory as they can reasonably govern and where territorial claims clash, there is frequently war. 
-
-The Chessentans themselves were a passionate people, always living to the fullest and never doing things half-way. Seen by outsiders as a drunken and riotous people, Chessentans had a well-earned reputation as fierce warriors and cunning tacticians. While they appreciated the fine arts and theatre, the culture of the Chessentans revolved around war and war heroes. Few nations in all Faerûn were as erudite in philosophy, astronomy, poetry, and history as Chessenta. Theatres and libraries were commonplace, and even in smaller cities such poetry and philosophy were practiced in public squares. Chessentans also loved sports and their athletic competitions were popular events, particularly wrestling, and almost every citizen had some skill at fighting. Chessenta’s sizable middle class controlled the country’s economy, with a government that encouraged prosperity for all, so tax revenues were high. 
-
-Tchazzar returned in 1373 DR to reestablish his kingdom. 
-"
-
-#summary "Tchazzar is not who the people believe him to be. He is, in fact, a dragon in disguise. And not just any dragon - he contains one of the three shards of Tiamat's soul which were split apart when Gilgeam, God-King of nearby rival Unther, slew the Goddess of Dragons. Tzchazzar is your greatest asset. Beyond his power, you will come to rely on your excellent soldiers - though they are few in number they are elite. You also have an excellent variety of spellcasting and melee commanders which you can put into small teams of adventurers and wreak havoc behind enemy lines. Like all Heroic Confederacies, your economy is vital to your success." 
-#flag "ForgottenRealms/flag213.tga"
-#templepic 0 -- Pyramid
-#fortera 3 -- Castle standard era 2
-#homefort 4 -- Citadel
-#buildfort 2
-#builduwfort 6
-#labcost 400
-#templecost 500
-#color 1.0 0.6 0.6
-
-#addgod 5004 -- LATHANDER 3
-#addgod 5012 -- Waukeen 3
-#addgod 5015 -- Tempus 3
-
-#addgod 5039 -- Azuth 1
-#addgod 6923 -- TCHAZZAR
-
-#cheapgod40 6923 -- Tchazzar
-
-#startcom 200 			-- Prince of the Old Empire 
-#startunittype1 199 	-- Cardaces
-#startunitnbrs1 30
-#startunittype2 1078	-- Chariots 
-#startunitnbrs2 10
-
-#startscout 431		-- Scout
-
-
-#addrecunit 199 	-- Cardaces
-#addrecunit 3184 	-- Hoplite
-#addrecunit 6858 	-- Mulan Bowman
-#addrecunit 7100	-- Corsair
-#addrecunit 1078 	-- Chariot
-
-#addreccom 431	 	-- Scout
-#addreccom 13		-- Hoplite Commander
-#addreccom 291		-- Inner Sea Captain
-#addreccom 200 		-- Prince of the Old Empire
-#addreccom 6912 	-- Mulan Adept
-#addreccom 7099 	-- Cultist of Tchazzar
-
-#defcom1 13			-- Hoplite Commander
-#defcom2 200 		-- Prince of the Old Empire
-#defunit1 199 		-- Cardaces
-#defunit1b 6858 	-- Mulan Bowman
-#defunit2 1078 		-- Chariot
-#defmult1 24 	
-#defmult1b 12 
-#defmult2 4 	
-
----------- DEFENCES
-#guardcom 13
-#guardunit 3184
-#guardmult 15
-#wallcom 1076	-- Myrmidon Champion
-#wallunit 6858 	-- Mulan Bowman
-#wallmult 25 	-- 
-
----------- START SITES
-
-#startsite "Palace of the Sceptanar"
-#startsite "The Akademeia of Cimbar"
-#startsite "Airspur"
-#startsite "Soorenar"
-
-#end 
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/monsters\aglarond-monsters.dm
+------------------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------
 -----------------------------AGLAROND------------------------------------
@@ -53327,2947 +51746,11111 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 #weapon 17 -- Axe
 #end
 
-#selectnation 214
-#era 2
-#name "Aglarond"
-#epithet "Magocracy of the Simbul"
-#brief "Aglarond was a magocratic state in the southwestern-most part of the Unapproachable East with its capital at Veltalar. Most of its land was covered by the Yuirwood. Filled with magic and mystery, it was ruled by one of the most potent spellcasters of the Realms: the Simbul."
 
-#descr "Aglarond was a magocratic state in the southwestern-most part of the Unapproachable East with its capital at Veltalar. Most of its land was covered by the Yuirwood. Filled with magic and mystery, it was ruled by one of the most potent spellcasters of the Realms: the Simbul. As of 1372 DR, Aglarond's population, numbering somewhere around 1.3 million, was made up of mainly humans and half-elves. Aglarond was the only known state in Faerûn to possess a demographically significant half-elven population. Aglarond also had a traditional rivalry with their neighbors in Thay, whom Aglarondans distrusted deeply. 
-
-There were few temples and holy sites in Aglarond, none of which were large. Some people worshiped regularly and others were content to show signs of faith in their own manner. Chauntea, Valkur, and Selune were the most widely venerated with the Seldarine pantheon enjoying a small number of prayers as well. 
-
-The native, Yuir wild-elves had their own pantheon of gods that disappeared with the downfall of their culture. They had suffered significant wars with the drow, satyrs, and mountain trolls before the arrival of humans on the peninsula around 750 DR. The human settlers, mainly retired soldiers and peniless mercenaries from Unther and Chessenta, agreed to help the wild elves and together they succeeded in defeating the drow. Many half-elven babies were born in the years to come. The few Yuir wild elves who remain live deep in the Yuirwood and are rarely seen.
-
-In 1320 DR, the half elven dynasty that had reigned since the nation's founding came to an end and the Queen named The Simbul as her heir. As one of the Seven Sisters and a Chosen of Mystra, the Simbul has reigned as an immortal Queen for more than a century."
-#summary "Some believe The Simbul is as powerful as Elminster, who happens also to be her lover. Indeed, she is your greatest asset and immortal so long as she remains in your dominion. Her apprentices, the Simbarchs, are numerous and extremely powerful in their own right. Magic is otherwise quite rare in Aglarond and most of your troops will be of high quality but expensive. You have a portal to the Forest of Leth to your north, where your allies fight for the survival of the Great Dale against abyssal and dark druidic forces."  
-#flag "ForgottenRealms/flag214.tga"
-#templepic 30 -- Forest Gate
-#fortera 2 -- Castle standard era 2
-#homefort 4 -- Citadel
-#buildfort 2
-#builduwfort 6
-#labcost 700
-#templecost 700
-#forestlabcost 400
-#foresttemplecost 300
-#color 0.6 1.0 0.8
-
-#addgod 8000 -- Fountain of Mystra
-#addgod 5006 -- Chauntea 4 
-#addgod 5005 -- SELUNE 4
-
-#addgod 5019 -- Corellon 2
-#addgod 5027 -- Valkur 2
-
-#cheapgod40 8000 -- Mystra 
-
--- #addgod 485 -- Great Enchantress
--- #addgod 2922 -- Morgen High Queen
-
-
-#startcom 7002 			-- Yuirwood Ranger
-#startunittype1 56 	-- Royal Forester
-#startunittype2 7001 -- Free Spear Militia
-#startunitnbrs1 20
-#startunitnbrs2 20
-
-#startscout 7006	-- Simbarch Apprentice
-
-#forestrec 56 		-- Royal Forester
-#forestrec 7348 	-- Wood Elf Archer
-#forestcom 7002 	-- Yuirwood Ranger
-#forestcom 6813		-- Elven Bladesinger
-#forestcom 6618 	-- Priestess of Selune
-
-#addrecunit 7001 	-- Free Spear Militia
-#addrecunit 289 	-- Pikeneer
-#addrecunit 55 		-- Longbowmen
-#addrecunit 26 		-- Light Cavalry
-
-
-
-#addreccom 7349 -- Half-elf Champion
-#addreccom 46	-- Mounted Commander
-#addreccom 6813	-- Elven Bladesinger
-#addreccom 6618 -- Priestess of Selune
-#addreccom 7004 -- Wavecaptain of Valkur
-#addreccom 7003 -- Priestess of Chauntea
-
-
-
-
----------- DEFENCES
-
-#defcom1 7349 -- Half-elf Champion
-#defcom2 7002 	-- Yuirwood Ranger
-#defunit1 7001 	-- Free Spear Militia
-#defunit1b 56 	-- Royal Forester
-#defunit2 26 		-- Light Cavalry
-#defmult1 20 	
-#defmult1b 12 
-#defmult2 8 
-	
-#guardcom 7349 -- Half-elf Champion
-#guardunit 289
-#guardmult 15
-#wallcom 7006	
-#wallunit 55 		-- Longbowmen
-#wallmult 25 	-- 
-
----------- START SITES
-
-#startsite "Palace of the Simbul"
-#startsite "The Cedar Forest"
-#startsite "Elusive Lights"
-#startsite "Waterfall"
-
-#end 
-
---------------------------------------------------------------------------
------------------IMPILTUR-------------------------------------------------
---------------------------------------------------------------------------
-#selectnation 215
-#era 2
-#name "Impiltur"
-#epithet "Realm of the Sword and Wand"
-#brief "Impiltur (pronounced: IM-pil-tur) was a wealthy and influential nation of feudal lords nestled along the coastal lands of the Easting Reach, in northeastern Faerûn. It had a long and storied history within the eastern realms and its reputation grew and declined throughout the ages. The formerly influential kingdom endured decades of isolation and, while it was not without its share of troubles, emerged as a land that remained hopeful about reclaiming its former glory."
-#descr "The society of Impiltur was formed around the tenets of the Triad—the collective faiths of Ilmater, Torm and Tyr. This religion placed the expectation of devotion, service and sacrifice upon the Impilturan people, a concept that was exemplified in the realm's culture of piety. In addition, the worship and veneration of saints and divine martyrs was considered a cornerstone of the Triadic faith.
-
-Despite its national religion, Impiltur maintained a liberal and welcoming attitude to the faithful of benevolent deities. Followers of Chauntea, Tymora, Selûne and Waukeen were quite numerous throughout the realm. The formation of shrines and temples dedicated to malevolent gods, such as Bane and Cyric, was explicitly illegal; however, private worship of their faiths were somewhat tolerated. No such refuge was given to the myriad of demonic cults that sporadically arose throughout Impiltur's countryside. The fanatical who worshiped ancient Narfell and the Demon princes were slain on sight and their vile altars were brought to justice. The taint of fiend-worship has plagued Impiltur for centuries
-
-Practitioners of the Arcane Arts were commonly found in Impiltur. The nation featured two magical academies. Apprentices went on to serve aboard merchant ships operated by the nation's trade consortiums who provided funding for the academies. The wizards themselves were required to serve for one year and were well-compensated for their efforts."
-#summary "This can be a very tough nation to succeed with, given your extremely dangerous neighbors, including the agressive demon-lords of Narfell. Good luck!"  
-#flag "ForgottenRealms/flagsimpiltur.tga"
-#templepic 9 -- Cathedral
-#fortera 2 -- Castle standard era 2
-#homefort 4 -- Citadel
-#buildfort 2
-#builduwfort 6
-#labcost 500
-#templecost 500
-#color 0.0 0.4 0.6
-
--- Gods of the Triad
-#addgod 5007 -- Tyr
-#addgod 5008 -- Torm
-#addgod 5009 -- Ilmater
-#addgod 5029 -- Helm 3
-#addgod 5015 -- Tempus 3
-#addgod 5006 -- Chauntea 4 
-#addgod 5005 -- SELUNE 4
-#addgod 5012 -- WAUKEEN 3
-
-#addgod 5030 -- Tymora 2
-#addgod 5027 -- Valkur 2
-
--- #addgod 244 -- Arch Mage
--- #addgod 2922 -- Morgen High Queen
--- #addgod 3053 -- Grand Heirophant
--- #addgod 3060 -- Master
-
-#cheapgod20 5009
-#cheapgod20 5007
-#cheapgod20 5008
-
-#startcom 7008 			-- Trueblade of Torm
-#startunittype1 26 		-- Light Cavalry
-#startunittype2 290		-- Crossbowmen
-#startunitnbrs1 20
-#startunitnbrs2 20
-
-#startscout 7007 		-- Cleric of Helm
-
-#addrecunit 285		-- Spearman
-#addrecunit 286		-- Maceman
-#addrecunit 287		-- Swordsman
-#addrecunit 289 	-- Pikeneer
-#addrecunit 290		-- Crossbowmen
-#addrecunit 6000 	-- Warsword
-
-#addreccom 431	 	-- Scout
-#addreccom 291		-- Captain
-#addreccom 23		-- Knight Commander
-#addreccom 6754 	-- Field Wizard
-#addreccom 7007		-- Cleric of Helm
-#addreccom 6623		-- Cleric of Tyr
-#addreccom 6705 	-- Cleric of Ilmater 
-
-
-#defcom1 291		-- Captain
-#defcom2 292		-- Heavy Cav Commander
-#defunit1 285		-- Spearman
-#defunit1b 290		-- Crossbowmen
-#defunit2 24 		-- Light Cavalry
-#defmult1 20 	
-#defmult1b 10 
-#defmult2 8 	
-
----------- DEFENCES
-#guardcom 292 -- Myrmidon Champion
-#guardunit 24
-#guardmult 15
-#wallcom 291		-- Captain
-#wallunit 290		-- Crossbowmen
-#wallmult 20 	-- 
-
----------- START SITES
-
-#startsite "Guild of Heroes"
-#startsite "Fertile Flood Plain"
-#startsite "Lyrabar"
-#startsite "Temple of the Triad"
-#end 
-
---------------------------------------------------------------------------
------------------SILVER MARCHES-------------------------------------------
---------------------------------------------------------------------------
-
-#selectnation 216
-#era 2
-#name "The Silver Marches"
-#epithet "Confederation of Luruar"
-#brief "Luruar, also commonly known as the Silver Marches, was a confederation of cities in the north of Faerûn, under the leadership of Alustriel Silverhand, former ruler of Silverymoon. It consisted of Silverymoon, Citadel Adbar, Deadsnows, Jalanthar, Quaervarr, Citadel Felbarr, Everlund, Mithral Hall, and Sundabar, and its goal was to protect the North against the growing horde of orcs in the mountains."
-#descr "Luruar, also commonly known as the Silver Marches, was a confederation of cities in the north of Faerûn, under the leadership of Alustriel Silverhand, ruler of Silverymoon. The years 1368 through 1370 DR were particularly turbulent for the city-states of the North. Troll attacks, orc hordes, a combined army of demons and barbarians, and a string of particularly harsh winters spurred the regional city-states into the confederation. Members included Silverymoon, Citadel Adbar, Deadsnows, Jalanthar, Quaervarr, Citadel Felbarr, Everlund, Mithral Hall, and Sundabar. 
-
-Bordered by the Anauroch desert to the east, the High Forest to the south, the Savage Frontier to the west and the Spine of the World mountain range to the north, it was surrounded by savage frontier. The Silver Marches' first line of defense often came in the form of information. Many small groups of city-sponsored scouts, bands of rangers, adventuring companies, independent cells of Harpers, and others scouted the stretches of Wilderness that often presented threats to the civilized lands. Smaller towns trained their own local patrols. Each of the cities maintained their own, large armed forces, which combined often into the collective 'Argent Legion' for large-scale operations."
-#summary "You have outstanding scouts, rangers, clerics, and spellcasters. You have excellent stealth and patrol with strong units that can raid unseen and cause havoc behind enemy lines. Nothing you have is cheap, however. Lady Alustriel is powerful, and a Chosen of Mystra, giving her dominion immortality. You'll need every ounce of defense against your inevitably agressive neighbors."  
-#flag "ForgottenRealms/flagsilvermarches.tga"
-#templepic 17 -- Crystal
-#fortera 2 -- Castle standard era 2
-#homefort 4 -- Citadel
-#builduwfort 6
-#buildfort 2
-#labcost 500
-#templecost 500
-#color 0.4 0.4 0.6
-
-#addgod 8000 -- Fountain of Mystra
-#addgod 5005 -- SELUNE
-#addgod 5029 -- Helm 3
-#addgod 5004 -- LATHANDER 4
-#addgod 5018 -- Mielikki 2
-#addgod 5023 -- Oghma 2
-#addgod 5005 -- SELUNE 4
-#addgod 5030 -- Tymora 2
-
-#addgod 5019 -- Corellon 2
-#addgod 5039 -- Azuth 1
-
--- #addgod 2206 -- Eldest Dwarf
--- #addgod 485 -- Great Enchantress
--- #addgod 251 -- Great Sage
-
--- #hero1 7094 -- Drizzt
--- Add Breunor, Wulfgar, Cattie-brie, et al
-
-
-
-
-#startcom 6813 			-- Elven Bladesinger
-#startunittype1 7013 	-- Silverwatch
-#startunitnbrs1 15
-
-#startscout 6614 		-- Harper Agent
-
-#addrecunit 7013 	-- Silverwatch
-
-#addreccom 6614 	-- Harper Agent
-#addreccom 6813 	-- Elven Bladesinger
-#addreccom 6615 	-- Ranger of the Emerald Enclave
-#addreccom 6617 	-- Seldarine Cleric
-#addreccom 6754 	-- Field Wizard
-
-
-#defcom1 6813 			-- Elven Bladesinger
-#defcom2 6617 			-- Seldarine Cleric
-#defunit1 7013 			-- Silverwatch
-#defunit1b 7009 			-- Dwarven Hammers
-#defmult1 20 	
-#defmult1b 15 
-
----------- DEFENCES
-#guardcom 6615
-#guardunit 7009
-#guardmult 15
-#wallcom 6813 		-- Elven Bladesinger
-#wallunit 7013 		-- Silverwatch
-#wallmult 20 	
-
----------- START SITES
-
-#startsite "The Conclave of Silverymoon" 
-#startsite "Rauvinwatch Keep"
-#startsite "The Moonbridge" 
-#startsite "Halls and Glades" 
-
-#end 
-
---------------------------------------------------------------------------
------------------AMN-------------------------------------------------
---------------------------------------------------------------------------
-
-#selectnation 217
-#era 2
-#name "Amn"
-#epithet "The Merchant's Domain"
-#brief "Amn , also known as the Merchant's Domain, was a tremendously wealthy nation in West Faerûn. Amn held colonies far away in Maztica and controlled important trade routes to Calimshan and Baldur's Gate as well as colonial ports in the Moonshaes and Chult. "
-#descr "Amn's population was mostly human with a large minority population of halflings. The country's natural resources and wealth, combined with its mercantile nature, led Amn to become one of the most important and influential trading centers throughout Faerûn. The crowning jewel of this powerful state was the capital city of Athkatla, often called the 'City of Coin.'
-
-Amn was ruled by the Council of Six, organized by the secretive wizard Thayze Selemchant. The anonymous Councilmemebers oversaw all trade and military movements of the nation, and upheld the law restricting the use of magic in the realm. Only those wizards who had the patronage of one of the Council of Six, could practice their art. 
-
-Divine magic, however, had no such restrictions. Waukeen was the premier deity and enjoyed many temples throughout the nation. Chauntea, Selune, Helm and Ilmater also enjoyed more limited patronage. However, amongst these deities of harmony, Cyric, Bane, Myrkul, and Bhaal also had numerous followers in Amn, particularly among the Shadow Thieves."
-#summary "You have outstanding spies and assassins, spellcasters who are unaffected by Magical Drain scales, and a competent military. Sailing is a key feature of your commanders as well. Your far flung colonial holdings will bring you into conflict with many rivals. Will your powerful economy be enough to maintain it? Both Luskan in the northwest and part of the lucrative Moonshae Isles to your due west are in your possession. Expand wisely."  
-#flag "ForgottenRealms/flagsamn.tga"
-#templepic 9 -- Cathedral
-#fortera 3 -- Castle standard era 2
-#homefort 14 -- Great Walled City
-#buildfort 12
-#builduwfort 6
-#labcost 400
-#templecost 300
-#color 0.0 0.0 0.4
-
-#addgod 8001
-#addgod 5002
-#addgod 5012 -- WAUKEEN 3
-
-#addgod 5033 -- Cyric 2
-#addgod 5017 -- Mask 2
-#addgod 5026 -- Umberlee 2
-
-#addgod 486 -- Great Warlock
-#addgod 862 -- Vampire Queen
-
-
-#cheapgod20 5002 
-#cheapgod20 5012 
-
-#startcom 7033 		-- Cowled Wizard
-#startunittype1 7290 -- Amnian Light Infantry
-#startunittype2 7293 -- Amnian Steel
-#startunitnbrs1 20
-#startunitnbrs2 10
-
-#startscout 7035 -- Shadow Thief
-
-#addrecunit 7290 -- Amnian Light Infantry
-#addrecunit 7293 -- Amnian Steel
-#addrecunit 7291 -- Amnian Archer
-#addrecunit 7292 -- Amnian Pike
-#addrecunit 7295 -- Amnian Light Cavalry 
-#addrecunit 7296 -- Amnian Mounted Archer
-#addrecunit 7297 -- Amnian Heavy Cavalry 
-
-#coastrec 7298 -- Sea Dog Swashbuckler 
-#coastrec 7299 -- Sea Dog Deadeye
-#coastcom 7301 -- Pirate Lord 
-
-#addreccom 427		-- Spy
-#addreccom 7300 	-- Amnian Mounted Commander 
-#addreccom 870 		-- Sea Captain
-#addreccom 6703 	-- Cleric of Waukeen
-#addreccom 7033 	-- Cowled Wizard
-
-
-#defcom1 7300 	-- Amnian Mounted Commander 
-#defcom2 7033 	-- Cowled Wizard
-#defunit1 7290 -- Amnian Light Infantry
-#defunit1b 7291 -- Amnian Archer
-#defmult1 20 	
-#defmult1b 20 
-#defunit2 7293 -- Amnian Steel
-#defmult2 10
-#defunit2b 7295 -- Amnian Light Cavalry 
-#defmult2b 10
-
----------- DEFENCES
-#guardcom 7300 	-- Amnian Mounted Commander 
-#guardunit 7292 -- Amnian Pike
-#guardmult 20
-#wallcom 870 -- Sea Captain
-#wallunit 7291 -- Amnian Archer
-#wallmult 20 	
-
----------- START SITES
-
-#startsite "Goldspires" 
-#startsite "Shadow Thieves Council"
-#startsite "Council of the High Houses" 
-#startsite "Wave District" 
-
-
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/monsters\summon-monster.dm
+------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------- Summon Monster Creatures -----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+#newmonster 5200
+#name "Small Summoned Monster Template"
+#hp 7
+#size 2
+#prot 2
+#mr 6
+#mor 30
+#str 7
+#att 11
+#def 11
+#prec 5
+#ap 24
+#enc 2
+#startage 20
+#maxage 50
+#miscshape
 #end
 
---------------------------------------------------------------------------
------------------BALDURS GATE-------------------------------------------------
---------------------------------------------------------------------------
+--------------------------------- Summon Nature's Ally I (Monsters) -----------------------------------------------
+-- Monster ids 5335-5349
 
-#selectnation 218
-#era 2
-#name "Baldur's Gate"
-#epithet "Gray Harbor"
-#brief "Baldur's Gate, also called simply the Gate, was the largest metropolis and city-state on the Sword Coast. It was a crowded city of commerce and opportunity, perhaps the most prosperous and influential merchant city on the western coast of Faerûn. Despite its long-standing presence as a neutral power, the leaders of Baldur's Gate were members of the Lords' Alliance of powers in the west."
-#descr "Baldur's Gate, also called simply the Gate, was the largest metropolis and city-state on the Sword Coast. It was a crowded city of commerce and opportunity, prosperity and influence.  Despite its long-standing presence as a neutral power, the leaders of Baldur's Gate were members of the Lords' Alliance along with Waterdeep and Silverymoon among others.
+#selectmonster 7140 --Giant rat
+#montag 14021 -- Summon Nature's Ally I (Land)
+#end
 
-The strong peace-keeping force known as the Watch, along with the presence of the powerful Flaming Fists mercenary company, kept the city generally peaceful and safe. This inherent sense of security allowed the Gate to keep a tolerant and welcoming attitude towards outsiders, whether they were wealthy merchants, poor refugees or even less-scrupulous individuals such as pirates, thieves, and smugglers. These varying influences gave it the reputation of a viper's pit of schemes and schemers.
+#newmonster 5335
+#copyspr 1118
+#copystats 1118
+#name "Monkey"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#montag 14021 -- SNA I (land)
+#end
 
-The Flaming Fists began operating in Baldur's Gate in the early 14th century DR. In the Year of the Banner, 1368 DR, the Bhaalspawn Sarevok Anchev orchestrated a major conspiracy to send the city to war with Amn. The plan failed and within two years all Bhaalspawn were killed due to the actions of the future Grand Duke, Abdel Adrian."
-#summary "Coastal provinces will yield a strong income. Resources are vital for your heavily armored troops. You have access to many clerics in the capital and druids from nearby Cloakwood, but a lack of research mages makes securing nearby Candlekeep a priority. The merfolk make important underwater allies."  
-#flag "ForgottenRealms/flagbaldursgate.tga"
-#templepic 9 -- Cathedral
-#fortera 2 -- Castle standard era 2
-#homefort 14 -- Great Walled City
-#buildfort 12
-#uwbuild 1
-#builduwfort 5
-#labcost 400
-#templecost 300
-#color 0.4 0.4 0.6
+#newmonster 5336
+#copyspr 1381 --Great Eagle
+#copystats 517 --Black hawk
+#name "Eagle"
+#drawsize -60
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#hp 7
+#str 6
+#clearweapons
+#weapon 404 --beak
+#weapon 408 --talons
+#weapon 753 --dive attack
+#att 12
+#def 12
+#montag 14021 -- SNA I (land)
+#end
 
-#addgod 5007 -- Tyr
-#addgod 5008 -- Torm
-#addgod 5009 -- Ilmater
-#addgod 5029 -- Helm 3
-#addgod 5004 -- LATHANDER 4
-#addgod 5016 -- Loviatar 3
-#addgod 5048 -- Great Elder Brain
+#newmonster 5337
+#copyspr 438 --Kraken
+#copystats 5200 --small summoned monster template
+#name "Octopus"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#ap 8
+#bluntres
+#hp 6
+#str 6
+#clearweapons
+#weapon 85 --Tentacle
+#weapon 85 --Tentacle
+#aquatic
+#montag 14031 -- SNA I (water)
+#end
 
-#addgod 5020 -- Gond 2
-#addgod 5030 -- Tymora 2
-#addgod 5027 -- Valkur 2
-#addgod 5026 -- Umberlee 2
-#addgod 5038 -- Savras 1
+#newmonster 5338
+#copyspr 7606 --Dolphin
+#copystats 5200 --small summoned monster template
+#name "Porpoise"
+#ap 20
+#aquatic
+#hp 8
+#clearweapons
+#weapon 300 --Head Butt
+#montag 14031 -- SNA I (water)
+#end
 
+-- Wolf changes
 
-#startcom 7134 			-- Flaming Fist Blaze
-#startunittype1 5046	-- Bald Levy
-#startunittype2 5110 	-- Bald Pike
-#startunitnbrs1 20
-#startunitnbrs2 10
+#newweapon 2012
+#copyweapon 798 --Grab
+#name "Trip"
+#end
 
-#startscout 6614 		-- Harper Agent
+#newweapon 2013
+#copyweapon 20 --Bite
+#name "Bite and Trip"
+#secondaryeffect 2012 --Trip
+#end
 
-#addrecunit 5046 -- Baldurian Levy
-#addrecunit 5110 -- Baldurian Pikeneer
-#addrecunit 24 -- Light Cav
+#selectmonster 284 -- wolf (summon)
+#clearweapons
+#weapon 2013 --bite and trip
+#montag 14021 -- SNA I (land)
+#end
 
-#addreccom 6614 -- Harper Agent
-#addreccom 870 	-- Captain
-#addreccom 44 	-- Mounted Commander
-#addreccom 6754 -- Field Wizard
-#addreccom 7040 -- Gondar Wonderbringer
-#addreccom 7008 -- Trueblade of Torm
-#addreccom 5044 -- TYMORAN CLERIC
+#selectmonster 3532 -- wolf (recruitable/mount)
+#clearweapons
+#weapon 2013 --bite and trip
+#end
 
-#uwrec 7518 -- Merfolk Militia
-#uwrec 7623 -- Merfolk Skirmisher
-#uwrec 7519 -- Merfolk Soldier
-#uwrec 7625 -- Merfolk Crossbowman 
-#uwcom 7520 -- Merfolk Commander
-#uwcom 8021 -- Mermaid Bard
-#uwcom 8020 -- Merfolk Prince
-#uwcom 7534 -- Mermaid Wavekeeper
+--------------------------------- Summon Nature's Ally II (Monsters) -----------------------------------------------
+-- Monster ids 5350-5364
 
+#selectmonster 2185 --Crocodile
+#montag 14022 -- SNA II (land)
+#end
 
-#defcom1 870 -- Captain
-#defcom2 44  -- Mounted Commander
-#defunit1 29 -- Light Inf
-#defunit1b 32 -- Plate Archer
-#defmult1 20 	
-#defmult1b 20 
+#newmonster 5350
+#copystats 5200 --small summoned monster template
+#copyspr 7307 -- juvenile kraken
+#name "Squid"
+#size 3
+#ap 8
+#bluntres
+#hp 13
+#str 10
+#clearweapons
+#weapon 85 --Tentacle
+#weapon 20 --Bite
+#aquatic
+#mr 7
+#montag 14032 -- SNA II (water)
+#end
 
----------- DEFENCES
-#guardcom 7134
-#guardunit 5110
-#guardmult 15
-#wallcom 870 -- Captain
-#wallunit 32 -- Plate Archer
-#wallmult 20 	
+#newmonster 5351
+#copystats 7584 -- mako
+#copyspr 7584 -- mako
+#name "Juvenile Mako Shark"
+#size 3
+#hp 18
+#str 13
+#def 13
+#montag 14032 -- SNA II (water)
+#end
 
--- UW PROVINCE DEFENCE
-#uwdefcom1 7520 -- Merfolk Commander
-#uwdefcom2 8020 -- Merfolk Prince
-#uwdefunit1 7623 -- Merfolk Skirmisher
-#uwdefmult1 16
-#uwdefunit1b 7519 -- Merfolk Soldier
-#uwdefmult1b 10
-#uwdefunit2 7625 -- Merfolk Crossbowman
-#uwdefmult2 14
+#newmonster 5352
+#copystats 5200 - small summoned monster template
+#copyspr 3266 -- Tanuki/raccoon form (placeholder)
+#name "Dire Badger"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#hp 24
+#size 3
+#mr 7
+#str 10
+#berserk 1
+#weapon 20 --bite
+#weapon 236 --claw
+#weapon 236 -- claw
+#forestsurvival
+#montag 14022 -- SNA II (land)
+#end
 
---UW WALL DEFENCE
-#uwguardcom 7520 -- Merfolk Commander
-#uwguardunit 7519 -- Merfolk Soldier
-#uwguardmult 20
-#uwwallcom 7520 -- Merfolk Commander
-#uwwallunit 7625 -- Merfolk Crossbowman 
-#uwwallmult 16	
+#newmonster 5353
+#copystats 5200 - small summoned monster template
+#copyspr 1357 -- beast bat
+#name "Dire Bat"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#blind
+#flying
+#forestsurvival
+#str 12
+#hp 19
+#size 4
+#prot 4
+#att 11
+#def 14
+#mr 7
+#weapon 251 -- venomous fangs
+#montag 14022 -- SNA II (land)
+#end
 
----------- START SITES
+--------------------------------- Summon Nature's Ally III (Monsters) -----------------------------------------------
+-- Monster ids 5365-5379
 
-#startsite "Twin Songs" -- temple district
-#startsite "High Hall" -- council seat
-#startsite "Gray Harbor" -- busy port
-#startsite "Seatower of Balduran" -- Home of the Flaming Fists 
+#selectmonster 7584 -- Mako Shark
+#montag 14033 -- SNA III (water)
+#end
 
+#newmonster 5365
+#copystats 1705 -- Great ape
+#copyspr 1705 -- Great ape
+#name "Ape"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#hp 25
+#att 12
+#def 10
+#montag 14023 -- SNA III (land)
+#end
+
+#newmonster 5366
+#copyspr 1224 -- dire wolf
+#copystats 1224 -- dire wolf
+#name "Dire Wolf"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#hp 33
+#clearweapons
+#weapon 2013 --bite and trip
+#weapon 236 --claw
+#montag 14023 -- SNA III (land)
+#end
+
+#newmonster 5367
+#copyspr 1381 --great eagle
+#copystats 1381 -- great eagle
+#name "Giant Eagle"
+#drawsize -40
+#hp 26
+#str 14
+#size 5
+#clearweapons
+#weapon 408 -- talons
+#weapon 404 -- beak
+#weapon 753 -- dive attack
+#montag 14023 -- SNA III (land)
+#end
+
+#newmonster 5368
+#copyspr 628 -- great lion
+#copystats 628 -- great lion
+#name "Lion"
+#hp 30
+#clearweapons
+#weapon 322 --bite
+#weapon 236 --claw
+#weapon 236 --claw
+#montag 14023 -- SNA III (land)
+#end
+
+--------------------------------- Summon Nature's Ally IV (Monsters) -----------------------------------------------
+-- Monster ids 5380-5394
+
+#selectmonster 694 -- great bear
+#montag 14024 -- SNA IV (land)
+#end
+
+#selectmonster 1920 -- monster boar
+#name "Dire Boar"
+#descr "Dire boars, also known as giant boars or elotheridae, were a type of unusually large and aggressive boar. Unlike ordinary pigs, dire boars were vicious and would attack any creature that approached."
+#montag 14024 -- SNA IV (land)
+#end
+
+#selectmonster 3524 -- Unicorn
+#montag 14024 -- SNA IV (land)
+#end
+
+#selectmonster 3547 -- Tiger
+#weapon 236 --claw
+#hp 30
+#def 13
+#montag 14024 -- SNA IV (land)
+#end
+
+#selectmonster 7643 -- Sea Cat UW
+#montag 14034 -- SNA IV (water)
+#end
+
+#newmonster 5380
+#copyspr 2186 --Sacred crocodile
+#copystats 2185 --crocodile
+#name "Dire Crocodile"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#hp 73
+#size 8
+#prot 14
+#str 21
+#att 11
+#montag 14024 -- SNA IV (land)
+#end
+
+#newmonster 5381
+#copyspr 816
+#copystats 816
+#name "Huge Shark"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#berserk 3
+#montag 14034 -- SNA IV (water)
+#end
+--------------------------------- Summon Nature's Ally V (Monsters) -----------------------------------------------
+-- Monster ids 5395-5409
+
+#selectmonster 2131 --Griffon
+#montag 14025 -- SNA V (land)
+#end
+
+#selectmonster 8003 -- Orca
+#montag 14035 -- SNA V (water)
+#end
+
+#newmonster 5395
+#copyspr 514 --Kithaironic Lion
+#copystats 628 -- Great Lion
+#name "Dire Lion"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#hp 45
+#size 5
+#prot 7
+#str 18
+#att 14
+#def 12
+#ap 22
+#clearweapons
+#weapon 322 --bite
+#weapon 236 --claw
+#weapon 236 --claw
+#montag 14025 -- SNA V (land)
+#end
+
+#newmonster 5396
+#copyspr 3354 -- Jinn Warrior
+#name "Janni"
+#descr "The jann (singular janni) are the weakest of the genies. Jann are formed out of all four elements and must therefore spend most of their time on the Material Plane."
+#hp 25
+#size 4
+#prot 1
+#mr 15
+#mor 30
+#str 14
+#att 13
+#def 12
+#prec 12
+#ap 15
+#enc 2
+#fireres 10
+#flying
+#unseen
+#startage 300
+#maxage 490
+#weapon 749 --enchanted scimitar
+#armor 49 --lightweight scale mail
+#montag 14025 -- SNA V (land)
+#end
+
+--------------------------------- Summon Nature's Ally VI (Monsters) -----------------------------------------------
+-- Monster ids 5410-5424
+
+#selectmonster 2398 -- Elephant
+#montag 14026 -- SNA VI (land)
+#end
+
+#selectmonster 7032 -- Salamander Flameguard
+#montag 14026 -- SNA VI (land)
+#end
+
+#newmonster 5410
+#copyspr 8004 -- Serosian Whale
+#copystats 8004 -- Serosian Whale
+#name "Baleen Whale"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#size 8
+#hp 110
+#str 26
+#prot 14
+#montag 14036 -- SNA VI (water)
+#end
+
+#newmonster 5411
+#copyspr 438 -- Kraken
+#copystats 438 -- Kraken
+#name "Giant Octopus"
+#size 6
+#hp 50
+#str 15
+#montag 14036 -- SNA VI (water)
+#end
+
+#newmonster 5412
+#copyspr 6828 --Chultan Raptor
+#copystats 6828 --Chultan Raptor
+#name "Megaraptor"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#hp 32
+#size 5
+#prot 9
+#str 19
+#def 10
+#montag 14026 -- SNA VI (land)
+#end
+
+--------------------------------- Summon Nature's Ally VII (Monsters) -----------------------------------------------
+-- Monster ids 5425-5449
+
+#newmonster 5425
+#copystats 3547 -- Tiger
+#copyspr 3928 -- White Tiger of the West
+#name "Dire Tiger"
+#drawsize -30
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#hp 60
+#size 5
+#att 16
+#str 20
+#def 12
+#prot 12
+#mr 12
+#montag 14026 -- SNA VI (land)
+#end
+
+#newmonster 5426
+#copystats 6819 -- Aspect of Ubtao
+#copyspr 6819 -- Aspect of Ubtao
+#name "Tyrannosaurus Rex"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#montag 14026 -- SNA VI (land)
+#end
+
+#newmonster 5427
+#copystats 7307 -- Juvenile Kraken
+#copyspr 7307 -- Juvenile Kraken
+#name "Giant Squid"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#montag 14037 -- SNA VII (water)
+#end
+
+#newmonster 5428
+#copyspr 6710 --Bound Djinn
+#copystats 6710 --Bound Djinn
+#name "Djinn"
+#descr "This mid-rank genie has been summoned to fight alongside a druid in battle."
+#hp 30
+#size 5
+#mr 15
+#str 18
+#att 14
+#def 13
+#clearmagic
+#magicskill 1 2 -- air
+#magicskill 4 1 --astral
+#magicskill 7 2 --glamour
+#montag 14026 -- SNA VI (land)
+#end
+
+--------------------------------- Summon Nature's Ally VIII (Monsters) -----------------------------------------------
+-- Monster ids 5450-5464
+
+#selectmonster 5107 --Roc
+#montag 14028 -- SNA VIII (land)
+#end
+
+#selectmonster 5108 --Salamander Noble
+#montag 14028 -- SNA VIII (land)
+#end
+
+#newmonster 5450
+#copystats 8006 --Megalodon
+#copyspr 8006 --Megalodon
+#name "Megalodon"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#clearspec
+#darkpower 3
+#darkvision 80
+#animal
+#aquatic
+#appetite 5
+#berserk 3
+#diseaseres 50
+#woundfend 75
+#montag 14038 -- SNA VIII (water)
+#end
+
+--------------------------------- Summon Nature's Ally IX (Monsters) -----------------------------------------------
+-- Monster ids 5465-5479
+
+#newmonster 5465
+#copystats 3524 --Unicorn
+#copyspr 3524 --Unicorn
+#name "Celestial Charger"
+#descr "This natural creature has been summoned to fight alongside a druid in battle."
+#hp 60
+#str 18
+#att 14
+#prot 8
+#def 15
+#mr 18
+#mor 30
+#magicskill 0 2 -- fire
+#magicskill 4 2 --astral
+#magicskill 6 2 --nature
+#magicskill 9 2 --holy
+----- Celestial Template HD12+ -----
+#darkvision 100
+#invulnerable 15
+#acidres 10
+#coldres 10
+#shockres 10
+#mr 18
+#voidsanity 1 -- magic beast
+#mor 30
+#montag 14029 -- SNA IX (land)
+#end
+
+------------------------------------------ Summon Monster I -----------------------------------------------------
+-- Monster ids 5201-5214
+
+#newmonster 5201
+#copyspr 1560
+#copystats 1560
+#name "Celestial Dog"
+#montag 14001 -- Summon Monster I (Land)
+----- Celestial Template HD1-3 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 5
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5202
+#copyspr 2218
+#copystats 2218
+#name "Celestial Giant Fire Beetle"
+#hp 5
+#str 6
+#size 2
+#clearweapons
+#weapon 20 --bite
+#att 10
+#def 12
+#montag 14001 -- Summon Monster I (Land)
+----- Celestial Template HD1-3 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 5
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5203
+#copyspr 1118
+#copystats 1118
+#name "Celestial Monkey"
+#montag 14001 -- Summon Monster I (Land)
+----- Celestial Template HD1-3 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 5
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5204
+#copyspr 7140
+#copystats 7140
+#name "Fiendish Dire Rat"
+#montag 14001 -- Summon Monster I (Land)
+----- Fiendish Template HD1-3 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 5
+#fireres 5
+#coldres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5205
+#copyspr 517
+#copystats 517
+#name "Fiendish Hawk"
+#montag 14001 -- Summon Monster I (Land)
+#clearweapons
+#weapon 408 --talons
+----- Fiendish Template HD1-3 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 5
+#fireres 5
+#coldres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5206
+#copyspr 2233
+#copystats 2233
+#name "Small Fiendish Monstrous Scorpion"
+#clearweapons
+#weapon 273 --pincer
+#weapon 273 --pincer
+#weapon 423 --scorpion tail
+#str 4
+#montag 14001 -- Summon Monster I (Land)
+----- Fiendish Template HD1-3 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 5
+#fireres 5
+#coldres 5
+#mr 9
+#voidsanity 1 -- magic beast
+--#mor 30
+#end
+
+#newmonster 5207
+#copyspr 7606 --Dolphin
+#copystats 5338 -- Porpoise
+#name "Celestial Porpoise"
+#montag 14011 -- Summon Monster I (Water)
+----- Celestial Template HD1-3 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 5
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5208
+#copyspr 438 --Kraken
+#copystats 5337 -- Octopus
+#name "Fiendish Octopus"
+#montag 14011 -- Summon Monster I (Water)
+----- Fiendish Template HD1-3 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 5
+#fireres 5
+#coldres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+------------------------------------------ Summon Monster II -----------------------------------------------------
+-- Monster ids 5215-5229
+
+#newweapon 2011
+#name "Acid Spray"
+#range -2 --strength/2
+#dmg 0
+#halfstr
+#natural
+#acid
+#armorpiercing
+#aoe 1
+#beam
+#end
+
+#newmonster 5215
+#copyspr 2218 --beetle
+#copystats 2218 --beetle
+#name "Celestial Giant Bombardier Beetle"
+#hp 15
+#str 6
+#size 3
+#clearweapons
+#weapon 20 --bite
+#weapon 2011 --acid spray
+#att 10
+#def 12
+#montag 14002 -- Summon Monster II (Land)
+----- Celestial Template HD1-3 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 5
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5215
+#copyspr 5336 --Eagle
+#copystats 5336 --Eagle
+#name "Celestial Eagle"
+#montag 14002 -- Summon Monster II (Land)
+----- Celestial Template HD1-3 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 5
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5216
+#copyspr 1560 --dog
+#copystats 1560 --dog
+#name "Celestial Riding Dog"
+#drawsize 30
+#size 3
+#prot 4
+#hp 14
+#str 10
+#montag 14002 -- Summon Monster II (Land)
+----- Celestial Template HD1-3 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 5
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5217
+#copystats 284
+#copyspr 284
+#name "Fiendish Wolf"
+#montag 14002 -- Summon Monster II (Land)
+----- Fiendish Template HD1-3 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 5
+#fireres 5
+#coldres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5218
+#copystats 2233 -- giant scorpion
+#copyspr 2233 -- giant scorpion
+#drawsize 30
+#name "Fiendish Monstrous Scorpion"
+#size 3
+#hp 10
+#str 7
+#montag 14002 -- Summon Monster II (Land)
+#clearweapons
+#weapon 273 --pincer
+#weapon 273 --pincer
+#weapon 423 --scorpion tail
+----- Fiendish Template HD1-3 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 5
+#fireres 5
+#coldres 5
+#mr 9
+#voidsanity 1 -- magic beast
+--#mor 30
+#end
+
+#newmonster 5219
+#copystats 6812 --cave spider
+#copyspr 6812 --cave spider
+#name "Fiendish Monstrous Spider"
+#montag 14002 -- Summon Monster II (Land)
+----- Fiendish Template HD1-3 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 5
+#fireres 5
+#coldres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5220
+#copystats 5350 -- squid
+#copyspr 5350 -- squid
+#name "Fiendish Squid"
+#montag 14012 -- Summon Monster II (water)
+----- Fiendish Template HD1-3 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 5
+#fireres 5
+#coldres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5221
+#copystats 5351 -- mako
+#copyspr 5351 -- mako
+#name "Fiendish Shark"
+#montag 14012 -- Summon Monster II (water)
+----- Fiendish Template HD1-3 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 5
+#fireres 5
+#coldres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#selectmonster 7104 --Lemure
+#montag 14002 -- Summon Monster II (Land)
+#end
+
+#newmonster 5222
+#copyspr 3007 --bug soul vessel
+#copystats 5200 -- small summoned monster template
+#name "Celestial Giant Bee"
+#size 3
+#prot 4
+#hp 14
+#str 8
+#ap 6
+#att 12
+#flying
+#clearweapons
+#weapon 355 --sting
+#montag 14002 -- Summon Monster II (Land)
+----- Celestial Template HD1-3 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 5
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 9
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+------------------------------------------ Summon Monster III -----------------------------------------------------
+-- Monster ids 5230-5244
+
+#newmonster 5230
+#copyspr 3009 -- buffalo
+#copystats 3009 -- buffalo
+#name "Celestial Buffalo"
+#montag 14003 -- Summon Monster III (Land)
+----- Celestial Template HD4-7 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5231
+#copyspr 6748 -- hippogriff
+#copystats 6748 -- hippogriff
+#name "Celestial Hippogriff"
+#montag 14003 -- Summon Monster III (Land)
+----- Celestial Template HD4-7 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5232
+#copystats 2185 -- crocodile
+#copyspr 2185 -- crocodile
+#name "Fiendish Crocodile"
+#montag 14003 -- Summon Monster III (Land)
+#montag 14013 -- Summon Monster III (Water)
+----- Fiendish Template HD4-7 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 5
+#coldres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5233
+#copystats 5365 -- Ape
+#copyspr 5365 -- ape
+#name "Fiendish Ape"
+#montag 14003 -- Summon Monster III (Land)
+----- Fiendish Template HD4-7 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 5
+#coldres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5234
+#copyspr 5352 -- dire badger
+#copystats 5352 -- dire badger
+#name "Celestial Dire Badger"
+#montag 14003 -- Summon Monster III (Land)
+----- Celestial Template HD4-7 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5235
+#copystats 5353 -- dire bat
+#copyspr 5353 -- dire bat
+#name "Fiendish Dire Bat"
+#montag 14003 -- Summon Monster III (Land)
+----- Fiendish Template HD4-7 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 5
+#coldres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#selectmonster 6671 -- Hellhound
+#montag 14003 -- Summon Monster III (Land)
+#end
+
+------------------------------------------ Summon Monster IV -----------------------------------------------------
+-- Monster ids 5245-5259
+
+#selectmonster 7073 --Lantern archon
+#montag 14004 -- Summon Monster IV (Land)
+#end
+
+#newmonster 5245
+#copyspr 5367 --giant eagle
+#copystats 5367 -- giant eagle
+#name "Celestial Giant Eagle"
+#montag 14004 -- Summon Monster IV (Land)
+----- Celestial Template HD4-7 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5246
+#copyspr 5368 -- lion
+#copystats 5368 -- lion
+#name "Celestial Lion"
+#montag 14004 -- Summon Monster IV (Land)
+----- Celestial Template HD4-7 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
 #end
 
 
--------------------------------------------------------------------------
----------------------------SEMBIA---------------------------------------
-----------Currently part of the Cult of the Dragon----------------------
--------------------------------------------------------------------------
+#newmonster 5247
+#copyspr 5366 -- dire wolf
+#copystats 5366 -- dire wolf
+#name "Fiendish Dire Wolf"
+#montag 14004 -- Summon Monster IV (Land)
+----- Fiendish Template HD4-7 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 5
+#coldres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
 
---------------------------------------------------------------------------
------------------NARFELL-------------------------------------------------
---------------------------------------------------------------------------
+#newmonster 5248
+#copyspr 2226 -- killer mantis
+#copystats 2226 -- killer mantis
+#name "Fiendish Giant Praying Mantis"
+#hp 23
+#str 15
+#montag 14004 -- Summon Monster IV (Land)
+----- Fiendish Template HD4-7 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 5
+#coldres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
 
-#selectnation 219
-#era 2
-#name "Narfell"
-#epithet "Demonic Upheaval"
-#brief "Narfell, often referred to as old Narfell or the Empire of Narfell, was a once-great, albeit brief-lasting human empire that arose thousands of years ago in the Cold Lands of northeast Faerûn.. Its fiend-worshiping citizens were all-but annihilated in a terrific war with their neighboring nation of Raumathar, leaving its survivors to eke out a new existence that was more in harmony with the natural world."
+#selectmonster 7345 -- Yeth hound
+#montag 14004 -- Summon Monster IV (Land)
+#end
 
-#descr "Narfell, often referred to as old Narfell or the Empire of Narfell, was a once-great, albeit brief-lasting human empire that arose thousands of years ago in the Cold Lands of northeast Faerûn. Its fiend-worshiping citizens were all-but annihilated in a terrific war with their neighboring nation of Raumathar, leaving its survivors to eke out a new existence that was more in harmony with the natural world.
+#newmonster 5249
+#copyspr 7584 -- mako shark
+#copystats 7584 -- mako shark
+#name "Fiendish Mako Shark"
+#montag 14014 -- Summon Monster IV (water)
+----- Fiendish Template HD4-7 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 5
+#coldres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
 
-Ancient, imperialist Nar culture was wholly ingrained with the practice of conjuring and bargaining fiends, as evidenced by the summoning chambers that have been found in each uncovered Nar fortress. Using mere glyphs and wards as their protection, Nar conjurers frequently opened portals to numerous layers of both the Abyss and the Nine Hells.
+------------------------------------------ Summon Monster V -----------------------------------------------------
+-- Monster ids 5260-5274
 
-A new pact is now being forged. Warlocks arrive from across the realms, drawn to the region by its dark past and intent on reestablishing the infernal contracts that brought abyssal entities across the barrier. Demoncyst portals scattered and hidden across the landscape aid them in their quest. Find them. Use them to unleash demonic hordes and conquer the world in the name of your abyssal god.
+#selectmonster 7074 --Hound Archon
+#montag 14005 -- Summon Monster V (Land)
+#end
 
-You are a blood nation. Clerics and Wizards are extremely limited and your troops are effective but not remarkable. Find the special, hidden sites known as Demoncysts through blood-magic site searching and use them to summon your demonic hordes. All in the name of Tempus, Orcus, and the infinite Abyss!"
-#summary "You are a blood nation. Clerics and Wizards are extremely limited and your troops are effective but not remarkable. Find the special, hiden sites known as Demoncysts through blood-magic site searching and use them to summon your demonic hordes. All in the name of Tempus, Orcus, and the infinite Abyss."  
-#flag "ForgottenRealms/flagnarfell.tga"
-#templepic 13 -- Eye of the Void
-#fortera 2 -- Castle standard era 2
-#homefort 3 -- Great Walled City
-#uwbuild 1
-#buildfort 2
-#builduwfort 6
-#labcost 400
-#templecost 400
-#color 0.4 0.2 0.0
+#selectmonster 7106 --Barbazu
+#montag 14005 -- Summon Monster V (Land)
+#end
 
-#bloodnation
-#sacrificedom
-#aibloodnation
+#newmonster 5260
+#copyspr 694 --Great Bear
+#copystats 694 --Great Bear
+#name "Celestial Brown Bear"
+#montag 14005 -- Summon Monster V (Land)
+----- Celestial Template HD4-7 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5261
+#copyspr 1910 -- Monster Boar
+#copystats 1910 --Monster Boar
+#name "Fiendish Dire Boar"
+#montag 14005 -- Summon Monster V(land)
+----- Fiendish Template HD4-7 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 5
+#coldres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5262
+#copyspr 5380 -- dire crocodile
+#copystats 5380 -- dire crocodile
+#name "Fiendish Dire Crocodile"
+#montag 14005 -- Summon Monster V(land)
+#montag 14015 -- Summon Monster V (water)
+----- Fiendish Template HD4-7 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 5
+#coldres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5263
+#copyspr 5381 -- huge shark
+#copystats 5381 -- huge shark
+#name "Huge Fiendish Shark"
+#montag 14015 -- Summon Monster V (water)
+----- Fiendish Template HD8-11 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 15
+#fireres 10
+#coldres 10
+#mr 15
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5264
+#copyspr 7643 -- Sea Cat UW
+#copystats 7643 -- Sea Cat UW
+#name "Celestial Sea Cat"
+#montag 14015 -- Summon Monster V (water)
+----- Celestial Template HD4-7 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5265
+#copyspr 2131 -- Griffon
+#copystats 2131 -- Griffon
+#name "Celestial Griffon"
+#montag 14015 -- Summon Monster V (water)
+----- Celestial Template HD4-7 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 5
+#coldres 5
+#shockres 5
+#mr 12
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+------------------------------------------ Summon Monster VI -----------------------------------------------------
+-- Monster ids 5275-5289
+
+#selectmonster 7107 --Kyton
+#montag 14006 -- Summon Monster VI (land)
+#end
+
+#newmonster 5275
+#copyspr 8003 -- Orca
+#copystats 8003 -- Orca
+#name "Celestial Orca"
+#montag 14016 -- Summon Monster VI (water)
+----- Celestial Template HD8-11 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 10
+#coldres 10
+#shockres 10
+#mr 15
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5276
+#copyspr 5395 --Dire Lion
+#copystats 5395 -- Dire Lion
+#name "Celestial Dire Lion"
+#montag 14006 -- Summon Monster VI (land)
+----- Celestial Template HD8-11 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 10
+#coldres 10
+#shockres 10
+#mr 15
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5277
+#copyspr 5396 -- Janni
+#copystats 5396 --Janni
+#name "Janni"
+#descr "The jann (singular janni) are the weakest of the genies. Jann are formed out of all four elements and must therefore spend most of their time on the Material Plane."
+#montag 14006 -- Summon Monster VI (land)
+#end
+
+
+------------------------------------------ Summon Monster VII -----------------------------------------------------
+-- Monster ids 5290-5304
+
+#newmonster 5290
+#copystats 2398 --Elephant
+#copyspr 2398 --Elephant
+#name "Celestial Elephant"
+#montag 14007 -- Summon Monster VII (land)
+----- Celestial Template HD8-11 -----
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 10
+#acidres 10
+#coldres 10
+#shockres 10
+#mr 15
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5291
+#copystats 5410 --Baleen Whale
+#copyspr 5410 --Baleen Whale
+#name "Celestial Baleen Whale"
+#montag 14017 -- Summon Monster VII (water)
+----- Celestial Template HD12+ -----
+descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 15
+#acidres 10
+#coldres 10
+#shockres 10
+#mr 18
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5292
+#copystats 5412 -- Megaraptor
+#copyspr 5412 --Megaraptor
+#name "Fiendish Megaraptor"
+#montag 14007 -- Summon Monster VII (land)
+----- Fiendish Template HD8-11 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 10
+#coldres 10
+#mr 15
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5293
+#copystats 524 -- Scorpion Beast
+#copyspr 524 -- Scorpion Beast
+#name "Huge Fiendish Monstrous Scorpion"
+#montag 14007 -- Summon Monster VII (land)
+----- Fiendish Template HD8-11 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 10
+#coldres 10
+#mr 15
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5294
+#copystats 5411 -- Giant Octopus
+#copyspr 5411 -- Giant Octopus
+#name "Fiendish Giant Octopus"
+#montag 14017 -- Summon Monster VII (water)
+----- Fiendish Template HD8-11 -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 10
+#fireres 10
+#coldres 10
+#mr 15
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5295
+#copystats 5428 -- Djinn
+#copyspr 5428 -- Djinn
+#name "Djinn"
+#descr "This mid-rank genie has been summoned to fight alongside a wizard in battle."
+#montag 14007 -- Summon Monster VII (land)
+#end
+
+------------------------------------------ Summon Monster VIII ----------------------------------------------------
+-- Monster ids 5305-5319
+
+#selectmonster 7047 --Vrock
+#montag 14008 -- Summon Monster VIII (land)
+#end
+
+#selectmonster 7108 --Hellcat
+#montag 14008 -- Summon Monster VIII (land)
+#end
+
+#newmonster 5305
+#copystats 5425 --Dire Tiger
+#copyspr 5425 --Dire Tiger
+#name "Fiendish Dire Tiger"
+#montag 14008 -- Summon Monster VIII (land)
+----- Fiendish Template HD12+ -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 15
+#fireres 10
+#coldres 10
+#mr 18
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5306
+#copystats 5426 --T Rex
+#copyspr 5426 --T Rex
+#name "Fiendish Tyrannosaurus Rex"
+#montag 14008 -- Summon Monster VIII (land)
+----- Fiendish Template HD12+ -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 15
+#fireres 10
+#coldres 10
+#mr 18
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5307
+#copystats 5427 --Giant Squid
+#copyspr 5427 --Giant Squid
+#name "Fiendish Giant Squid"
+#montag 14018 -- Summon Monster VIII (water)
+----- Fiendish Template HD12+ -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 15
+#fireres 10
+#coldres 10
+#mr 18
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5308
+#copyspr 888 --Hunter Spider
+#name "Colossal Fiendish Monstrous Spider"
+#hp 120
+#size 9
+#prot 17
+#str 24
+#att 14
+#def 10
+#prec 5
+#ap 22
+#mapmove 20
+#enc 2
+#startage 40
+#maxage 200
+#poisonres 25
+#weapon 65 --Venomous fangs
+#weapon 261 --web
+#eyes 8
+#forestsurvival
+#miscshape
+#montag 14008 -- Summon Monster VIII (land)
+----- Fiendish Template HD12+ -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 15
+#fireres 10
+#coldres 10
+#mr 18
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+------------------------------------------ Summon Monster IX ------------------------------------------------------
+-- Monster ids 5320-5334
+
+#selectmonster 1194 --Couatl
+#montag 14009 --Summon Monster IX (land)
+#end
+
+#selectmonster 7111 --Hamatula
+#montag 14009 --Summon Monster IX(land)
+#end
+
+#selectmonster 7045 --Hezrou
+#montag 14009 --Summon Monster IX(land)
+#end
+
+#selectmonster 6816 -- Night Hag
+#montag 14009 --Summon Monster IX(land)
+#end
+
+#newmonster 5320
+#copystats 5107 -- Roc
+#copyspr 5107 -- Roc
+#name "Celestial Roc"
+#montag 14009 -- Summon Monster IX (land)
+----- Celestial Template HD12+ -----
+descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+
+Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
+#darkvision 100
+#invulnerable 15
+#acidres 10
+#coldres 10
+#shockres 10
+#mr 18
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+#newmonster 5321
+#copystats 5450 --Megalodon
+#copyspr 5450 --Megalodon
+#name "Fiendish Megalodon"
+#montag 14019 -- Summon Monster IX (water)
+----- Fiendish Template HD12+ -----
+#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
+#darkvision 100
+#invulnerable 15
+#fireres 10
+#coldres 10
+#mr 18
+#voidsanity 1 -- magic beast
+#mor 30
+#end
+
+
+------------------------------------------ Shadow Conjuration -----------------------------------------------------
+-- monster id range 5470-5484
+-- weapon id range 2020-2049
+-- montag 14040
+
+#newweapon 2020
+#copyweapon 20 -- bite
+#name "Shadow Bite"
+#mrhalf
+#end
+
+#newweapon 2021
+#copyweapon 676 -- fiery breath
+#name "Shadow Fiery Breath"
+#mrhalf
+#end
+
+#newweapon 2022
+#copyweapon 55 -- hoof
+#name "Shadow Hoof"
+#mrhalf
+#end
+
+#newweapon 2023
+#copyweapon 331 -- gore
+#name "Shadow Gore"
+#mrhalf
+#end
+
+#newweapon 2024
+#copyweapon 408 -- talons
+#name "Shadow Talons"
+#mrhalf
+#end
+
+#newweapon 2025
+#copyweapon 404 -- beak
+#name "Shadow Beak"
+#mrhalf
+#end
+
+#newweapon 2026
+#copyweapon 92 --fist
+#name "Shadow Fist"
+#mrhalf
+#end
+
+#newweapon 2027
+#copyweapon 360
+#name "Shadow Sticks and Stones"
+#mrhalf
+#end
+
+#newweapon 2028
+#copyweapon 236
+#name "Shadow Claw"
+#mrhalf
+#end
+
+#newweapon 2029
+#copyweapon 251
+#name "Shadow Venomous Fangs"
+#mrhalf
+#end
+
+#newweapon 2030
+#copyweapon 1805
+#name "Shadow Kyton's Chains"
+#mrhalf
+#end
+
+#newweapon 2031
+#copyweapon 749
+#name "Shadow Enchanted Scimitar"
+#mrhalf
+#end
+
+#newweapon 2032
+#copyweapon 589
+#name "Shadow Tail Slap"
+#mrhalf
+#end
+
+#newweapon 2033
+#copyweapon 33
+#name "Shadow Claws" -- one handed
+#mrhalf
+#end
+
+#newweapon 2034
+#copyweapon 754
+#name "Shadow Razor Wings"
+#mrhalf
+#end
+
+#newweapon 2035
+#copyweapon 319
+#name "Shadow Sharpest Bite"
+#mrhalf
+#end
+
+#newweapon 2036
+#copyweapon 261
+#name "Shadow Web"
+#mrhalf
+#end
+
+#newweapon 2037
+#copyweapon 85
+#name "Shadow Tentacle"
+#mrhalf
+#end
+
+-- technically, the extra effect should be MR negates.
+-- but I don't think it'st hat important
+#newweapon 2033
+#copyweapon 1847
+#name "Shadow Subsurface Shockwave"
+#mrhalf
+#end
+
+#newmonster 5470
+#copystats 6671 --Hellhound
+#copyspr 6671 --Hellhound
+#name "Shadow Hellhound"
+#hp 9
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2021 -- shadow fiery breath
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5471
+#copystats 5230 -- celestial buffalo
+#copyspr 5230 -- celestial buffalo
+#name "Shadow Celestial Buffalo"
+#hp 21
+#clearweapons
+#weapon 2022 -- Shadow Hoof
+#weapon 2023 -- Shadow Gore
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5472
+#copystats 5231 -- Celestial hippogriff
+#copyspr 5231 -- Celestial hippogriff
+#name "Shadow Celestial Hippogriff"
+#hp 17
+#clearweapons
+#weapon 2024 -- shadow talons
+#weapon 2025 -- shadow beak
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5473
+#copystats 5231 -- Fiendish Ape
+#copyspr 5231 -- Fiendish Ape
+#name "Shadow Fiendish Ape"
+#hp 17
+#clearweapons
+#weapon 2026 -- shadow fist
+#weapon 2027 -- shadow sticks and stones
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5474
+#copystats 5234 -- Celestial Dire Badger
+#copyspr 5234 -- Celestial Dire Badger
+#name "Shadow Celestial Dire Badger"
+#hp 12
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2028 -- shadow claw
+#weapon 2028 -- shadow claw
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5475
+#copystats 5232 -- Fiendish Crocodile
+#copyspr 5332 -- Fiendish Crocodile
+#name "Shadow Fiendish Crocodile"
+#hp 11
+#clearweapons
+#weapon 2020 -- shadow bite
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+#newmonster 5476
+#copystats 5235 -- Fiendish Dire Bat
+#copyspr 5235 -- Fiendish Dire Bat
+#name "Shadow Fiendish Dire Bat"
+#hp 9
+#clearweapons
+#weapon 2029 -- shadow venomous fangs
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14040
+#end
+
+------------------------------------------ Greater Shadow Conjuration -----------------------------------------------------
+-- monster id range 5485-5499
+-- weapons shared with shadow conj (2020-2049)
+-- montag 14041
+
+#newmonster 5485
+#copystats 7107 -- Kyton
+#copyspr 7107 -- Kyton
+#name "Shadow Kyton"
+#hp 25
+#fear 0
+#dread 5
+#clearweapons
+#weapon 2030 -- shadow kyton's chains
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14041
+#end
+
+#newmonster 5486
+#copystats 5276 -- Celestial Dire Lion
+#copyspr 5276 -- Celestial Dire Lion
+#name "Shadow Celestial Dire Lion"
+#hp 22
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2028 -- shadow claw
+#weapon 2028 -- shadow claw
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14041
+#end
+
+#newmonster 5487
+#copystats 5277 -- Janni
+#copyspr 5277 -- Janni
+#name "Shadow Janni"
+#hp 12
+#clearweapons
+#weapon 2031 -- Shadow Enchanted Scimitar
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14041
+#end
+
+#newmonster 5488
+#copystats 5275 -- Celestial Orca
+#copyspr 5275 -- Celestial Orca
+#name "Shadow Celestial Orca"
+#hp 22
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2032 -- shadow tail slap
+#weapon 2033 -- shadow subsurface shockwave
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14041
+#end
+
+------------------------------------------ Shades -----------------------------------------------------
+-- monster id range 5500-5514
+-- weapons shared with shadow conj (2020-2049)
+-- montag 14042
+
+#newmonster 5500
+#copystats 7047 -- Vrock
+#copyspr 7047 -- Vrock
+#name "Shadow Vrock"
+#hp 15
+#clearweapons
+#weapon 2033 -- shadow claws
+#weapon 2032 -- shadow bite
+#weapon 2034 -- shadow razor wings
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5501
+#copystats 7108 -- Hellcat
+#copyspr 7108 -- Hellcat
+#name "Shadow Hellcat"
+#hp 25
+#clearweapons
+#weapon 2033 -- shadow claws
+#weapon 2032 -- shadow bite
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5502
+#copystats 5305 -- Fiendish Dire Tiger
+#copyspr 5305 -- Fiendish Dire Tiger
+#name "Shadow Fiendish Dire Tiger"
+#hp 30
+#clearweapons
+#weapon 2020 -- shadow bite
+#weapon 2028 -- shadow claw
+#weapon 2028 -- shadow claw
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5503
+#copystats 5306 -- Fiendish Tyrannosaurus Rex
+#copyspr 5306 -- Fiendish Tyrannosaurus Rex
+#name "Shadow Fiendish Tyrannosaurus Rex"
+#hp 40
+#clearweapons
+#weapon 2035 -- shadow sharpest bite
+#weapon 2032 -- shadow tail slap
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5504
+#copystats 5308 -- Colossal Fiendish Monstrous Spider
+#copyspr 5308 -- Colossal Fiendish Monstrous Spider
+#name "Shadow Colossal Fiendish Spider"
+#hp 60
+#clearweapons
+#weapon 2029 -- shadow venomous fangs
+#weapon 2036 -- shadow web
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+#newmonster 5505
+#copystats 5307 -- Fiendish Giant Squid
+#copyspr 5307 -- Fiendish Giant Squid
+#name "Shadow Fiendish Giant Squid"
+#hp 32
+#clearweapons
+#weapon 2037 -- Shadow tentacle
+#weapon 2037 -- Shadow tentacle
+#weapon 2037 -- Shadow tentacle
+#weapon 2037 -- Shadow tentacle
+-- Shadow conjuration template
+#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
+#illusion
+#amphibian
+#montag 14042
+#end
+
+------------------------------------------ Misc Summoned Critters -----------------------------------------------------
+-- id range 5530-5544
+
+#newmonster 5530
+#copyspr 3724 -- air elemental
+#name "Whirlwind"
+#descr "The cyclone is the terror of small creatures."
+#hp 40
+#size 6
+#prot 0
+#mr 20
+#mor 50
+#str 12
+#att 17
+#def 17
+#stormpower 4
+#prec 5
+#ap 30
+#enc 0
+#startage 1
+#maxage 1000
+#woundfend 99
+#invulnerable 30
+#poisonres 30
+#shockres 30
+#fireres 30
+#coldres 30
+#acidres 30
+#bluntres
+#slashres
+#pieceres
+#airshield 100
+#blind
+#unsurr 20
+#inanimate
+#trample
+#spiritsight
+#spiritform
+#weapon 547 -- buff
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/spells\00-vanilla-changes.dm
+------------------------------------------------------------------------------------------------------------------
+
+
+-- Communion and Sabbath Master and Slave only via item crafting - Mythals were uncommon
+#selectspell 1263
+#researchlevel 9
+#end
+
+#selectspell 1264
+#researchlevel 9
+#end
+
+#selectspell 1381
+#researchlevel 9
+#end
+
+#selectspell 1382
+#researchlevel 9
+#end
+
+-- Clockworks should take longer to research
+#selectspell 1085
+#researchlevel 4
+#end
+
+#selectspell 1088
+#researchlevel 5
+#end
+
+-- Living Elemental Summons are okay, but should cost more since the elementals are stronger
+#selectspell 1046
+#fatiguecost 400
+#researchlevel 8
+#aispellmod -50
+#end
+
+#selectspell 1047
+#fatiguecost 400
+#researchlevel 8
+#aispellmod -50
+#end
+
+#selectspell 1049
+#fatiguecost 400
+#researchlevel 8
+#aispellmod -50
+#end
+
+#selectspell 1051
+#fatiguecost 400
+#researchlevel 8
+#aispellmod -50
+#end
+
+--
+
+#selectspell 568 -- Nagarishi
+#school -1
+#end
+
+#selectspell 925 -- Black Servant
+#school -1
+#end
+
+#selectspell 930 -- Ogres
+#school -1
+#end
+
+#selectspell 931 -- Summon Shades
+#school -1
+#end
+
+#selectspell 934 -- Killer Mantis
+#school -1
+#end
+
+#selectspell 943 -- Amphiptere
+#school -1
+#end
+
+#selectspell 943 -- Krakens
+#school - 1
+#end
+
+#selectspell 946 -- Yetis
+#school -1
+#end
+
+#selectspell 961 -- Bog Beasts
+#school -1
+#end
+
+#selectspell 962 -- Fay Folk
+#school -1
+#end
+
+#selectspell 965 -- Fire Drake
+#school -1
+#end
+
+#selectspell 967 -- Wyverns
+#school -1
+#end
+
+#selectspell 968 -- Storm Drake
+#school -1
+#end
+
+#selectspell 972 -- Ice Drake
+#school -1
+#end
+
+#selectspell 974 -- Cave Drake
+#school -1
+#end
+
+#selectspell 976 -- Shade Beasts
+#school -1
+#end
+
+#selectspell 979 -- Spine Frog
+#school -1
+#end
+
+#selectspell 982 -- Swamp Drakes
+#school -1
+#end
+
+#selectspell 983 -- Kithaironic Lions
+#school -1
+#end
+
+#selectspell 988 -- Water Kobold
+#school -1
+#end
+
+#selectspell 989 -- Cave Kobold
+#school -1
+#end
+
+#selectspell 990 -- Fay Footfolk
+#school -1
+#end
+
+#selectspell 993 -- Summer Lions
+#school -1
+#end
+
+#selectspell 995 -- Spring Hawks
+#school -1
+#end
+
+#selectspell 998 -- Contact Draconians
+#school -1
+#end
+
+#selectspell 1001 -- Contact Sea Trolls
+#school -1
+#end
+
+#selectspell 1004 -- Contact Naiad
+#school -1
+#end
+
+#selectspell 1008 -- Naiad Warriors
+#school -1
+#end
+
+#selectspell 1006 -- Fall Bears
+#school -1
+#end
+
+#selectspell 1007 -- Trolls
+#school -1
+#end
+
+#selectspell 1013 -- Ether Warriors
+#school -1
+#end
+
+#selectspell 1016 -- Forest Trolls
+#school -1
+#end
+
+#selectspell 1017 -- Winged Monkeys
+#school -1
+#end
+
+#selectspell 1018 -- Manticores
+#school -1
+#end
+
+#selectspell 1022 -- Bluecap
+#school -1
+#end
+
+#selectspell 1023 -- Fay Knights
+#school -1
+#end
+
+#selectspell 1024 -- Awaken Sleeper
+#school -1
+#end
+
+#selectspell 1030 -- Sea King's Court
+#school -1
+#end
+
+#selectspell 1031 -- Streams from Hades
+#school -1
+#end
+
+#selectspell 1032 -- Hill Giant
+#school -1
+#end
+
+#selectspell 1033 -- Troll King Court
+#school -1
+#end
+
+#selectspell 1035 -- Ether Gate
+#school -1
+#end
+
+#selectspell 1038 -- Forest Troll Tribe
+#school -1
+#end
+
+#selectspell 1039 -- Forest Giants
+#school -1
+#end
+
+#selectspell 1041 -- Lamias
+--#school -1
+#end
+
+#selectspell 1043 -- Lamia Queen
+--#school -1
+#end
+
+#selectspell 1044 -- Fay Prince
+#school -1
+#end
+
+#selectspell 1045 -- Gnome
+#school -1
+#end
+
+#selectspell 1048 -- Asp Turtle
+#school -1
+#end
+
+#selectspell 1050 -- Catoplepas
+#school -1
+#end
+
+#selectspell 1057 -- Calydonian Boar
+#school -1
+#end
+
+#selectspell 1062 -- King of Elemental Fire
+#school -1
+#end
+
+#selectspell 1064 -- Queen of Elemental Air
+#school -1
+#end
+
+#selectspell 1065 -- Queen of Elemental Water
+#school -1
+#end
+
+#selectspell 1067 -- Earth Attack
+#school -1
+#end
+
+#selectspell 1068 -- King of Elemental Earth
+#school -1
+#end
+
+#selectspell 1069 -- Ashen Angel
+#school -1
+#end
+
+#selectspell 1071 -- King of Banefires
+#school -1
+#end
+
+#selectspell 1072 -- Eater of the Dead
+#school -1
+#end
+
+#selectspell 1073 -- Dragon Master
+#school -1
+#end
+
+#selectspell 1076 -- Ancient Presence
+#school -1
+#end
+
+#selectspell 1077 -- Abomination
+#school -1
+#end
+
+#selectspell 1080 -- Tartarian Gate
+#school -1
+#end
+
+#selectspell 1081 -- Tarrasque
+#school -1
+#end
+
+#selectspell 1087 -- Manikin
+#school -1
+#end
+
+#selectspell 1089 -- Crusher
+#school -1
+#end
+
+#selectspell 1090 -- Wooden Construct
+#school -1
+#end
+
+#selectspell 1092 -- Mandragora
+#school -1
+#end
+
+#selectspell 1093 -- Iron Gryphon
+#school -1
+#end
+
+#selectspell 1096 -- Mechanical Men
+#school -1
+#end
+
+#selectspell 1097 -- Golem
+#school -1
+#end
+
+#selectspell 1098 -- Siege Golem
+#school -1
+#end
+
+#selectspell 1099 -- Iron Dragon
+#school -1
+#end
+
+#selectspell 1100 -- Mechanical Militia
+#school -1
+#end
+
+#selectspell 1101 -- Juggernaut
+#school -1
+#end
+
+#selectspell 1102 -- Poison Golem
+#school -1
+#end
+
+#selectspell 1123 -- Revive King
+#school -1
+#end
+
+#selectspell 1138 -- Claymen
+#school -1
+#end
+
+#selectspell 1149 -- Terracotta Army
+#school -1
+#end
+
+#selectspell 1155 -- Vile Water
+#school -1
+#end
+
+#selectspell 1160 -- Behemoth
+#school -1
+#end
+
+#selectspell 1171 -- Watcher
+#school -1
+#end
+
+#selectspell 1197 -- hidden in snow
+#school -1
+#end
+
+#selectspell 1200 -- statues
+#school -1
+#end
+
+#selectspell 1201 -- hidden in sand
+#school -1
+#end
+
+#selectspell 1202 -- hidden underneath
+#school -1
+#end
+
+#selectspell 1207 -- ziz
+#school -1
+#end
+
+
+#selectspell 1229 -- mummy
+#school -1
+#end
+
+#selectspell 1230 -- leviathan
+#school -1
+#end
+
+#selectspell 1384 -- shadow imp
+#school -1
+#end
+
+#selectspell 1386 -- fiery imp
+#school -1
+#end
+
+#selectspell 1391 -- Spine Devil
+#school -1
+#end
+
+#selectspell 1392 -- Fiend
+#school -1
+#end
+
+#selectspell 1393 -- Bone Fiend
+#school -1
+#end
+
+#selectspell 1398 -- Devil 
+#school -1
+#end
+
+#selectspell 1399 -- Frost Fiend
+#school -1
+#end
+
+#selectspell 1402 -- Serpent Fiends
+#school -1
+#end
+
+#selectspell 1406 -- More Fiends
+#school -1
+#end
+
+#selectspell 1410 -- Horde From Hell
+#school -1
+#end
+
+#selectspell 1412 -- Bind Succubus
+#school -1
+#end
+
+#selectspell 1414 -- Demon Knight
+#school -1
+#end
+
+#selectspell 1415 -- Dark Vines
+#name "Awaken Tendriculous"
+#end
+
+#selectspell 1422 -- Infernal Disease Demon
+#school -1
+#end
+
+#selectspell 1423 -- Ritual of Five Gates
+#school -1
+#end
+
+#selectspell 1424 -- Ice Devil
+#school -1
+#end
+
+#selectspell 1428 -- Plague of Locusts
+#school -1
+#end
+
+#selectspell 1429 -- Arch Devil
+#school -1
+#end
+
+#selectspell 1430 -- Father Illearth
+#school -1
+#end
+
+#selectspell 1438 -- Heliophagus
+#school -1
+#end
+
+#selectspell 1448 -- Forces of Darkness
+#school -1
+#end
+
+#selectspell 1450 -- Demon Lord
+#school -1
+#end
+
+#selectspell 1451 -- Infernal Forces
+#school -1
+#end
+
+#selectspell 1452 -- Infernal Tempest
+#school -1
+#end
+
+#selectspell 1453 -- Forces of Ice
+#school -1
+#end
+
+#selectspell 1454 -- Infernal Crusade
+#school -1
+#end
+
+#selectspell 1467 -- Summon Fay Archers
+#school -1
+#end
+
+#selectspell 1468 -- Summon Unseelie Folk
+#school -1
+#end
+
+#selectspell 1469 -- Summon Unseelie Soldiers
+#school -1
+#end
+
+#selectspell 1470 -- Summon Unseelie Archers
+#school -1
+#end
+
+#selectspell 1471 -- Summon Unseelie Knights
+#school -1
+#end
+
+#selectspell 1472 -- Summon Unseelie Prince
+#school -1
+#end
+
+#selectspell 985
+#name "Nest of Firesnakes"
+#end
+
+#selectspell 876
+#name "Prison of Umberlee"
+#end
+
+#selectspell 1054 -- Call Wraith Lord
+#school -1
+#end
+
+#selectspell 1078 -- Ghost Riders
+#school -1
+#end
+
+#selectspell 1079 -- Legion of Wights
+#school -1
+#end
+
+#selectspell 1011 -- Bane Lord
+#school -1
+#end
+
+#selectspell 344 -- Call Melqart
+#school -1
+#end
+
+#selectspell 348 -- Banquet for the Dead
+#school -1
+#end
+
+#selectspell 1063 -- The Kindly Ones
+#school -1
+#end
+
+#selectspell 394 -- Lictorian Legion
+#school -1
+#end
+
+#selectspell 614 -- Eliven Marble Oracle
+#school -1
+#end
+
+#selectspell 312 -- Contact Jorogumo
+#school -1
+#end
+
+#selectspell 564 -- Contact Nagaraja
+#school -1
+#end
+
+#selectspell 541 -- Contact Houri
+#school -1
+#end
+
+#selectspell 399 -- Revive Lemur Consul
+#school -1
+#end
+
+#selectspell 455 -- Contact Iron Angel
+#school -1
+#end
+
+#selectspell 561 -- Contact Nagini
+#school -1
+#end
+
+#selectspell 361 -- Summon Ugallu
+#school -1
+#end
+
+------------------- Increased Path Costs of Water Spells and a few removals
+
+--#selectspell 1218 -- Thetis Blessing
+--#name "Valkur's Blessing"
+--#descr "Calling upon Valkur, all wells of mana related to the sphere of water will be revealed in the target province."
+--#end
+
+#selectspell 754 -- tidal wave path req increase
+#pathlevel 0 6
+#end
+
+#selectspell 1244 -- wrath of the sea path req increase
+#pathlevel 0 7
+#end
+
+#selectspell 725 -- elemental opposition of fire path req increase
+#pathlevel 0 6
+#end
+
+#selectspell 724 -- murdering winter path req increase
+#pathlevel 0 6
+#end
+
+#selectspell 880 -- sea of ice path req increase
+#pathlevel 0 7
+#end
+
+#selectspell 742 -- maelstrom winter path req increase
+#pathlevel 0 7
+#end
+
+#selectspell 1348 -- vengeful water path req increase
+#pathlevel 0 8
+#end
+
+
+
+---------------------------------Removed Horror Spells--------------------------------------
+
+#selectspell 1265 -- Horror Mark
+#school -1
+#end
+
+#selectspell 1407 -- Call Lesser Horror
+#school -1
+#end
+
+#selectspell 1416 -- Send Lesser Horror
+#school -1
+#end
+
+#selectspell 1426 -- Call Horror
+#school -1
+#end
+
+#selectspell 1431 -- Send Dream Horror
+#school -1
+#end
+
+#selectspell 1443 -- Horror Seed
+#school -1
+#end
+
+#selectspell 1455 -- Send Horror
+#school -1
+#end
+
+#selectspell 717 -- False Horror
+#school -1
+#end
+
+-- removed vanilla elemental summons
+#selectspell 939
+#school -1
+#end
+
+#selectspell 941
+#school -1
+#end
+
+#selectspell 944
+#school -1
+#end
+
+#selectspell 949
+#school -1
+#end
+
+#selectspell 992
+#school -1
+#end
+
+#selectspell 994
+#school -1
+#end
+
+#selectspell 1000
+#school -1
+#end
+
+#selectspell 1005
+#school -1
+#end
+
+#selectspell 1456 -- Astral Corruption
+#school -1
+#end
+
+#selectspell 546 -- contact marid
+#school -1
+#end
+
+#selectspell "Blindness"
+#school 5
+#aispellmod -30 
+#end
+
+#selectspell "Fire Darts"
+#school -1
+#end
+
+#selectspell "Conflagration"
+#aispellmod -50
+#end
+
+#selectspell 1282 -- "Rage"
+#school -1
+#end
+
+
+#selectspell "Steal Breath"
+#aispellmod -50
+#end
+
+#selectspell "Confusion"
+#name "Confusion (disabled)"
+#school -1
+#end
+
+#selectspell "Break the Third Soul"
+#school -1
+#end
+
+#selectspell "Gift Of Flight"
+#aispellmod -50
+#end
+
+#selectspell "Encase in Ice"
+#aispellmod -50
+#end
+
+#selectspell "Slow"
+#aispellmod -80
+#end
+
+#selectspell "Crawl"
+#school -1
+#end
+
+#selectspell "Flying Shards"
+#aispellmod -95
+#end
+
+#selectspell "Break the Second Soul"
+#school -1
+#end
+
+#selectspell "Blade Wind" -- Situationally useful, but often less useful than other stuff
+#aispellmod -20
+8388608 -- uwok
+#end
+
+
+#selectspell "Horror Mark" -- Better to kill stuff most the time
+#school -1
+#end
+
+
+#selectspell "Frighten"
+#school -1
+#end
+
+#selectspell "Decay"
+#aibadlvl 3 -- Mostly eclipsed by HoS
+#aispellmod -80 -- Still situationally useful vs SCs might need to inc
+#end
+
+#selectspell "Terror"
+#aispellmod -90
+#end
+
+#selectspell "Raise Dead"
+#aispellmod -60 -- HoS is often better.
+#end
+
+#selectspell "Break the Fourth Soul"
+#school -1
+#end
+
+
+#selectspell "Panic"
+#ainocast 1
+#end
+
+#selectspell "Breath of the Dragon"
+#school -1
+#end
+
+#selectspell "Fascination"
+#aibadlvl 3
+#aispellmod -50
+#end
+
+#selectspell "Poison Touch"
+#aispellmod -90
+#aibadlvl 2
+#end
+
+#selectspell "Tune of Fear"
+#school -1
+#end
+
+#selectspell "Tune of Growth"
+#school -1
+#end
+
+#selectspell "Tune of Dancing Death"
+#school -1
+#end
+
+#selectspell "Magic Duel"
+#school -1
+#end
+
+#selectspell "Soul Slay"
+#school -1
+#end
+
+#selectspell "Incinerate"
+#aispellmod 10
+#spec 8388608 -- uwok
+#end
+
+#selectspell "Fireball"
+#aispellmod 40
+#end
+
+#selectspell "Pillar Of Fire"
+#aispellmod 20
+#end
+
+#selectspell "Holy Pyre" -- Didnt want to inadvertently deprioritize
+#aispellmod 20
+#end
+
+#selectspell "Sulphur Haze"
+#aispellmod 20
+#spec 8388608 -- uwok
+#end
+
+#selectspell "Astral Fires"
+#aispellmod 40
+#end
+
+#selectspell "Thunder Strike"
+#aispellmod 40
+#end
+
+#selectspell "Shock Wave"
+#aispellmod 40
+#end
+
+#selectspell "Orb Lightning"
+#aispellmod 20
+#end
+
+#selectspell "Lightning Bolt"
+#aispellmod 10
+#end
+
+#selectspell "Frozen Heart"
+#aispellmod 30
+#end
+
+#selectspell "Liquify"
+#aispellmod 40
+#end
+
+#selectspell "Freezing Mist"
+#aispellmod 40
+#end
+
+#selectspell "Falling Frost"
+#aispellmod 20
+#end
+
+#selectspell "Fists Of Iron" 
+#aispellmod 50
+#end
+
+#selectspell "Farstrike"
+#aispellmod 40
+#end
+
+#selectspell "Earth Meld"
+#aispellmod 40
+#end
+
+#selectspell "Gifts from Heaven"
+#aispellmod 30
+#end
+
+#selectspell "Petrify"
+#aispellmod 70
+#end
+
+#selectspell "Sow Dragon Teeth"
+#aispellmod 200
+#end
+
+#selectspell "Shatter"
+#aispellmod 50
+#end
+
+#selectspell "Enslave Mind"
+#aispellmod 120
+#end
+
+#selectspell "Soul Slay"
+#aispellmod 100
+#end
+
+#selectspell "Paralyze"
+#aispellmod 30
+#end
+
+#selectspell "Mind Burn"
+#aispellmod 10
+#end
+
+#selectspell "Nether Darts"
+#aispellmod 40
+#end
+
+#selectspell "Opposition"
+#aispellmod 50
+#end
+
+#selectspell "Hand of Death" 
+#aispellmod 70
+#end
+
+#selectspell "Drain Life"
+#aispellmod 50
+#end
+
+#selectspell "Cloud of Death"
+#aispellmod 50
+#end
+
+#selectspell "Vortex of Unlife"
+#aispellmod 50
+#end
+
+#selectspell "Bane Fire"
+#aispellmod 100
+#end
+
+#selectspell "Disintegrate"
+#aispellmod 30
+#end
+
+#selectspell "Dust to Dust"
+#aispellmod 30
+#end
+
+#selectspell "Wither Bones"
+#aispellmod 40
+#end
+
+#selectspell "Control the Dead"
+#aispellmod 30
+#end
+
+#selectspell "Call Ancestor"
+#aispellmod 150
+#end
+
+#selectspell "Poison Cloud" 
+#aispellmod 50
+#end
+
+#selectspell "Charm Animal"
+#aispellmod 40
+#end
+
+#selectspell "Charm"
+#aispellmod 40
+#end
+
+#selectspell "Storm of Thorns"
+#aispellmod 10
+#end
+
+#selectspell "Slumber" 
+#aispellmod 150
+#end
+
+#selectspell "Sandman's Blessing" 
+#aispellmod 150
+#end
+
+#selectspell "Leeching Touch"
+#aispellmod 70
+#end
+
+#selectspell "Leech"
+#aispellmod 70
+#end
+
+#selectspell "Life for a Life"
+#aispellmod 70
+#end
+
+#selectspell "Break the First Soul"
+#aispellmod 50
+#end
+
+#selectspell "Reinvigoration"
+#aispellmod 900
+#end
+
+#selectspell "Claim Life"
+#aispellmod 100
+#end
+
+#selectspell "Heavenly Fire"
+#aispellmod 80
+#end
+
+#selectspell "Heavenly Strike"
+#aispellmod 80
+#end
+
+#selectspell "Syllable of Death"
+#aispellmod 80
+#end
+
+#selectspell "Watery Death"
+#aispellmod 60
+#end
+
+#selectspell "Word of Power"
+#aispellmod 100
+#end
+
+#selectspell "Word of Stone"
+#aispellmod 20
+#end
+
+#selectspell "Word of Thorns"
+#aispellmod 60
+#end
+
+#selectspell "Word of Bewilderment"
+#aispellmod 60
+#end
+
+#selectspell "Sermon Of Courage"
+#aispellmod -90
+#end
+
+#selectspell 283 -- "Unholy Protection"
+#aispellmod -99
+#end
+
+#selectspell 286 -- "Unholy Protection"
+#aispellmod -99
+#end
+
+#selectspell 314 -- "Unholy Protection"
+#aispellmod -99
+#end
+
+#selectspell 318 -- "Unholy Protection"
+#aispellmod -99
+#end
+
+#selectspell 328 -- "Protection of the Grave"
+#aispellmod -99
+#end
+
+#selectspell 330 -- "Protection of the Grave"
+#aispellmod -99
+#end
+
+#selectspell "Protection of the Sepulchre"
+#aispellmod -99
+#end
+
+#selectspell "Protection of the Sepulchre"
+#aispellmod -99
+#end
+
+#selectspell "Carrion Growth"
+#aispellmod -99
+#end
+
+#selectspell "Puppet Mastery"
+#aispellmod -99
+#end
+
+#selectspell "Quick Roots"
+#aispellmod -99
+#end
+
+#selectspell "Regrowth"
+#aispellmod -99
+#end
+
+#selectspell "Royal Protection"
+#aispellmod -99
+#end
+
+#selectspell "Anathema"
+#aispellmod -99
+#end
+
+#selectspell "Communion Slave"
+#ainocast 1
+#end
+
+#selectspell 1122 --Flying Shield
+#ainocast 1
+#end
+
+#selectspell "Communion Master"
+#ainocast 1
+#end
+
+#selectspell "Phoenix Pyre"
+#ainocast 1
+#end
+
+#selectspell "Personal Ironskin"
+#ainocast 1
+#end
+
+#selectspell "Personal Stoneskin"
+#ainocast 1
+#end
+
+#selectspell "Personal Barkskin"
+#ainocast 1
+#end
+
+#selectspell "Invulnerability"
+#ainocast 1
+#end
+
+#selectspell "Breath of Winter"
+#ainocast 1
+#end
+
+#selectspell "Soul Vortex"
+#ainocast 1
+#end
+
+#selectspell "Charge Body"
+#ainocast 1
+#end
+
+#selectspell "Personal Luck"
+#ainocast 1
+#end
+
+#selectspell "Eagle Eyes"
+#ainocast 1
+#end
+
+#selectspell 245 --"Air Shield"
+#ainocast 1
+#end
+
+#selectspell "Personal Regeneration"
+#ainocast 1
+#end
+
+#selectspell "Pain Transfer"
+#ainocast 1
+#end
+
+#selectspell "Elemental Fortitude"
+#ainocast 1
+#end
+
+#selectspell "Quicken self"
+#ainocast 1
+#end
+
+#selectspell "Holy Avenger"
+#ainocast 1
+#end
+
+#selectspell "Resist Magic"
+#ainocast 1
+#end
+
+#selectspell "Water Shield"
+#ainocast 1
+#end
+
+#selectspell "Summon Earthpower"
+#ainocast 1
+#end
+
+#selectspell "Summon Storm Power"
+#ainocast 1
+#casttime 110
+#end
+
+#selectspell "Fire Shield"
+#ainocast 1
+#end
+
+#selectspell "Personal Mistform"
+#ainocast 1
+#end
+
+#selectspell "Phoenix Power"
+#ainocast 1
+#end
+
+#selectspell "Summon Water Power"
+#ainocast 1
+#end
+
+#selectspell "Mirror Image"
+#ainocast 1
+#end
+
+#selectspell "Astral Shield"
+#ainocast 1
+#end
+
+#selectspell "Resist Fire"
+#ainocast 1
+#end
+
+#selectspell "Resist Lightning"
+#ainocast 1
+#end
+
+#selectspell "Protection from Poison"
+#ainocast 1
+#end
+
+#selectspell "Proud Steed"
+#ainocast 1
+#end
+
+#selectspell "Cold Resistance"
+#ainocast 1
+#end
+
+#selectspell "Resist Cold"
+#ainocast 1
+#end
+
+#selectspell "Protection from Cold"
+#ainocast 1
+#end
+
+#selectspell "Protection from Fire"
+#ainocast 1
+#end
+
+#selectspell "Personal Poison Resistance"
+#ainocast 1
+#end
+
+#selectspell "Protection from Lightning"
+#ainocast 1
+#end
+
+#selectspell "Twist Fate"
+#ainocast 1
+#end
+
+#selectspell "Personal Flight"
+#ainocast 1
+#end
+
+#selectspell "Liquid Body"
+#ainocast 1
+#end
+
+#selectspell "Temper Flesh"
+#ainocast 1
+#end
+
+#selectspell "Stygian Skin"
+#ainocast 1
+#end
+
+#selectspell "Ice Shield"
+#ainocast 1
+#end
+
+#selectspell "Trueshot"
+#ainocast 1
+#end
+
+#selectspell "Skeletal Body"
+#ainocast 1
+#end
+
+#selectspell "Power of the Spheres"
+#ainocast 1
+#end
+
+#selectspell "Hell Power"
+#ainocast 1
+#end
+
+#selectspell "Gift of the First Soul"
+#aispellmod -95
+#end
+
+#selectspell "Gift of the Second Soul"
+#ainocast 1
+#end
+
+#selectspell "Gift of the Third Soul"
+#ainocast 1
+#end
+
+#selectspell "Gift of the Fourth Soul"
+#aispellmod -95
+#end
+
+#selectspell "Levitate"
+#ainocast 1
+#end
+
+#selectspell "Shroud of Flying Shards"
+#ainocast 1
+#end
+
+#selectspell "Second Sight"
+#ainocast 1
+#end
+
+#selectspell "Horrible Visage"
+#ainocast 1
+#end
+
+#selectspell "Blurred Body"
+#ainocast 1
+#end
+
+#selectspell "Displace Body"
+#ainocast 1
+#end
+
+#selectspell "Invisibility"
+#aispellmod -50
+#end
+
+#selectspell "Dance of Ephemeral Swords"
+#ainocast 1
+#end
+
+#selectspell "Shroud of Splendor"
+#ainocast 1
+#end
+
+#selectspell "True Sight"
+#ainocast 1
+#end
+
+#selectspell "Shroud of Bewilderment"
+#ainocast 1
+#end
+
+#selectspell "Haste"
+--#ainocast 1
+#end
+
+#selectspell "Stoneskin"
+#ainocast 1
+#end
+
+#selectspell "Blur"
+#aispellmod -90
+#end
+
+#selectspell "Gift of Displacement"
+#aispellmod -90
+#end
+
+#selectspell "Rhapsody Of Life" 
+#aispellmod -90
+#end
+
+#selectspell "Body Ethereal"
+#aispellmod -97
+#aibadlvl 3
+#end
+
+#selectspell "Barkskin"
+#aispellmod -97
+#end
+
+#selectspell "Regeneration"
+#aispellmod -97
+#end
+
+#selectspell "Ironskin"
+#ainocast 1
+#end
+
+#selectspell "Gift of Cat Eyes"
+#ainocast 1
+#end
+
+#selectspell "Mistform"
+#ainocast -96
+#end
+
+#selectspell "Fire Resistance"
+#ainocast 1
+#end
+
+#selectspell "Gift of the Hare"
+#ainocast 1
+#end
+
+#selectspell "Envenom Arrows"
+#ainocast 1
+#end
+
+#selectspell "Gift of the Serpent"
+#ainocast 1
+#end
+
+#selectspell "Iron Will"
+#ainocast 1
+#end
+
+#selectspell "Mossbody"
+#aispellmod -95
+#end
+
+#selectspell "Windrunner"
+#ainocast 1
+#end
+
+#selectspell "Farflight"
+#aispellmod -99
+#end
+
+#selectspell "Luck"
+#aispellmod -96
+#aibadlvl 3
+#end
+
+#selectspell "Gift of Cheated Fate"
+#aispellmod -97
+#end
+
+#selectspell 783 --"Enlarge"
+#ainocast 1
+#end
+
+#selectspell "Quickness"
+#aispellmod -96
+#end
+
+#selectspell "Gift of Formlessness"
+#aispellmod -96
+#end
+
+#selectspell "Iron Warriors"
+#aispellmod -96
+#end
+
+#selectspell 1307 --"Touch of Madness"
+#aispellmod -97
+#end
+
+#selectspell "Gift of the Moon"
+#ainocast 1
+#end
+
+#selectspell "Ignite Arrows"
+#aispellmod -30
+#end
+
+#selectspell "Lesser Flame Ward"
+#ainocast 1
+#end
+
+#selectspell 1274 --"Battle Fury"
+#aispellmod -97
+#end
+
+#selectspell "Lesser Winter Ward"
+#ainocast 1
+#end
+
+#selectspell "Lightning Resistance"
+#ainocast 1
+#end
+
+#selectspell 1109 --"Strength of Giants"
+#aispellmod -95
+#end
+
+#selectspell "Earth Shatter Hammers"
+#aispellmod -95
+#end
+
+#selectspell "Weapons of Sharpness" 
+#aispellmod -80
+#end
+
+#selectspell "Gift of Spirit Sight"
+#ainocast 1
+#end
+
+#selectspell "Mind Blank"
+#ainocast 1
+#end
+
+#selectspell "Mirror Mind"
+#ainocast 1
+#end
+
+#selectspell "Beast Fury"
+#aispellmod -95
+#end
+
+#selectspell "Gift of True Sight"
+#ainocast 1
+#end
+
+#selectspell "Gift of Splendor"
+#ainocast 1
+#end
+
+--------------------------------- Altered Vanilla Spells
+
+#selectspell 924 -- Spirit Curse
+#school -1
+#end
+
+#newspell 
+#copyspell 437 -- Vengeful Vines
+#name "Blackwater Tentacles"
+#fatiguecost 20
+#school 0
+#researchlevel 4
+#path 0 2 
+#path 1 5
+#pathlevel 0 1
+#pathlevel 1 1
+#range 5025
+#aoe 1003
+#precision 100
+#nextspell 782 -- weakness
+#end
+
+#selectspell 251 -- Sleep Ray
+#range 5025
+#aoe 1
+#end
+
+#selectspell 1281 -- Sleep
+#range 5035
+#aoe 1003
+#end
+
+#selectspell 960 -- Summon Sea Lions
+#name "Summon a Pride of Sea Cats"
+#descr "A sea cat, also known as a sea lion, was a magical beast that combined the features of a lion and a fish. It was a ferocious predator of the seas having only animal intelligence. Highly aggressive and territorial, they could survive on both land and at sea."
+#damage 7643 -- Sea Cat UW
+#nreff 2006
+#end
+
+#newspell 
+#copyspell 960
+#name "Summon a Sea Cat"
+#descr "A sea cat, also known as a sea lion, was a magical beast that combined the features of a lion and a fish. It was a ferocious predator of the seas having only animal intelligence. Highly aggressive and territorial, they could survive on both land and at sea."
+#damage 7643 -- Sea Cat UW
+#nreff 1001
+#fatiguecost 300
+#pathlevel 0 1
+#pathlevel 1 1
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/spells\01-disabled.dm
+------------------------------------------------------------------------------------------------------------------
+
+
+#selectspell 1282 --"Rage"
+#name "Rage (disabled)"
+#school -1
+#end
+
+#selectspell 1124 --Proud Steed
+#school -1
+#end
+
+#selectspell 1161 --Immaculate Mounts
+#school -1
+#end
+
+#selectspell 1463 --Army of Immaculate Mounts
+#school -1
+#end
+
+#selectspell "Furious Warriors"
+#school -1
+#end
+
+#selectspell "Levitate Soldiers"
+#school -1
+#end
+
+#selectspell "Featherweight Army"
+#school -1
+#end
+
+#selectspell "Displace Body"
+#school -1
+#end
+
+#selectspell "Displaced Warriors"
+#school -1
+#end
+
+#selectspell "Soaring Army"
+#school -1
+#end
+
+#selectspell "Quicken Self"
+#school -1
+#end
+
+#selectspell 1162 --"Haste"
+#name "Haste (disabled)"
+#school -1
+#end
+
+#selectspell "Quickening"
+#school -1
+#end
+
+#selectspell "Steel Slice Warriors"
+#school -1
+#end
+
+#selectspell "Personal Stoneskin"
+#school -1
+#end
+
+#selectspell "Group Stoneskin"
+#school -1
+#end
+
+#selectspell "Marble Warriors"
+#school -1
+#end
+
+#selectspell "Marble Army"
+#school -1
+#end
+
+#selectspell "Gift of Giant Strength"
+#school -1
+#end
+
+#selectspell "Summon Hawk"
+#school -1
+#end
+
+#selectspell "Conjure Phantasmal Wolves"
+#school -1
+#end
+
+#selectspell "Nest of Salamanders"
+#school -1
+#end
+
+#selectspell "School of Sharks"
+#school -1
+#end
+
+#selectspell "Summon Lammashtas"
+#school -1
+#end
+
+#selectspell "Maggots"
+#school -1
+#end
+
+#selectspell "Nest of Firesnakes"
+#school -1
+#end
+
+#selectspell "Conjure Phantasmal Warriors"
+#school -1
+#end
+
+#selectspell "Will o' the Wisp"
+#school -1
+#end
+
+#selectspell "Corpse Candle"
+#school -1
+#end
+
+#selectspell "Howl"
+#school -1
+#end
+
+#selectspell "Conjure Phantasmal Beast"
+#school -1
+#end
+
+#selectspell "Shark Attack"
+#school -1
+#end
+
+#selectspell "Summon Sprites"
+#school -1
+#end
+
+#selectspell "Conjure Phantasmal Knight"
+#school -1
+#end
+
+#selectspell "Living Fire"
+#school -1
+#end
+
+#selectspell "Living Clouds"
+#school -1
+#end
+
+#selectspell "Living Water"
+#school -1
+#end
+
+#selectspell "Living Earth"
+#school -1
+#end
+
+#selectspell "Twist Fate"
+#school -1
+#end
+
+#selectspell "Hand of Dust"
+#school -1
+#end
+
+#selectspell "Poison Touch"
+#school -1
+#end
+
+#selectspell "Charge Body"
+#school -1
+#end
+
+#selectspell "Fists of iron"
+#school -1
+#end
+
+#selectspell "Skeletal Body"
+#school -1
+#end
+
+#selectspell "Eagle Eyes"
+#school -1
+#end
+
+#selectspell "Blurred Body"
+#school -1
+#end
+
+#selectspell "Burn"
+#school -1
+#end
+
+#selectspell "Ice Shield"
+#school -1
+#end
+
+#selectspell "Gooey Water"
+#school -1
+#end
+
+#selectspell "Armor of Achilles"
+#school -1
+#end
+
+#selectspell "Gift of Cheated Fate"
+#school -1
+#end
+
+#selectspell "Immolation"
+#school -1
+#end
+
+#selectspell "Protective Winds"
+#school -1
+#end
+
+#selectspell "Freeze"
+#school -1
+#end
+
+#selectspell "Gift of Cat Eyes"
+#school -1
+#end
+
+#selectspell "Mossbody"
+#school -1
+#end
+
+#selectspell "Torpor"
+#school -1
+#end
+
+#selectspell "Group Blur"
+#school -1
+#end
+
+#selectspell "Combustion"
+#school -1
+#end
+
+#selectspell "Lacerating Winds"
+#school -1
+#end
+
+#selectspell "Liquid Body"
+#school -1
+#end
+
+#selectspell "Encase in Ice"
+#school -1
+#end
+
+#selectspell "Curse of Stones"
+#school -1
+#end
+
+#selectspell "Stygian Skin"
+#school -1
+#end
+
+#selectspell "Elemental Fortitude"
+#school -1
+#end
+
+#selectspell "Twilight"
+#school -1
+#end
+
+#selectspell "Incinerate"
+#school -1
+#end
+
+#selectspell "Gift of Formlessness"
+#school -1
+#end
+
+#selectspell "Winter's Chill"
+#school -1
+#end
+
+#selectspell "Enfeeble"
+#school -1
+#end
+
+#selectspell "Invulnerability"
+#school -1
+#end
+
+#selectspell "Drain Life"
+#school -1
+#end
+
+#selectspell "Cat-eyed Warriors"
+#school -1
+#end
+
+#selectspell "Nightfall"
+#school -1
+#end
+
+#selectspell "Shadow Warriors"
+#school -1
+#end
+
+#selectspell "Boil"
+#school -1
+#end
+
+#selectspell "Frozen Heart"
+#school -1
+#end
+
+#selectspell "Iron Bane"
+#school -1
+#end
+
+#selectspell "Control"
+#school -1
+#end
+
+#selectspell "Rewrite Fate"
+#school -1
+#end
+
+#selectspell "Soul Vortex"
+#school -1
+#end
+
+#selectspell "Skeletal Legion"
+#school -1
+#end
+
+#selectspell "Venomous Death"
+#school -1
+#end
+
+#selectspell "Eagle-eyed Warriors"
+#school -1
+#end
+
+#selectspell "Phoenix Pyre"
+#school -1
+#end
+
+#selectspell "Arrow Fend"
+#school -1
+#end
+
+#selectspell "Wave Warriors"
+#school -1
+#end
+
+#selectspell "Doom"
+#school -1
+#end
+
+#selectspell "Will of the Fates"
+#school -1
+#end
+""
+#selectspell "Bone Grinding"
+#school -1
+#end
+
+#selectspell "Curse of the Frog Prince"
+#school -1
+#end
+
+#selectspell "Army of Shades"
+#school -1
+#end
+
+#selectspell "Conflagration"
+#school -1
+#end
+
+#selectspell "Liquify"
+#school -1
+#end
+
+#selectspell "Arcane Domination"
+#school -1
+#end
+
+#selectspell "Army of Giants"
+#school -1
+#end
+
+#selectspell "Trueshot"
+#school -1
+#end
+
+#selectspell "Windrunner"
+#school -1
+#end
+
+#selectspell "Animate Skeleton"
+#school -1
+#end
+
+#selectspell "False Fetters"
+#school -1
+#end
+
+#selectspell "Water Shield"
+#school -1
+#end
+
+#selectspell "Breath of Winter"
+#school -1
+#end
+
+#selectspell "Gift of the Hare"
+#school -1
+#end
+
+#selectspell "Envenom Arrows"
+#school -1
+#end
+
+#selectspell "Personal Regeneration"
+#school -1
+#end
+
+#selectspell "Shroud of Splendor"
+#school -1
+#end
+
+#selectspell "Farflight"
+#school -1
+#end
+
+#selectspell "Arrow of the Western Wind"
+#school -1
+#end
+
+#selectspell "Raise Skeletons"
+#school -1
+#end
+
+#selectspell "Regeneration"
+#school -1
+#end
+
+#selectspell "Shroud of Bewilderment"
+#school -1
+#end
+
+#selectspell "Horrible Visage"
+#school -1
+#end
+
+#selectspell "Trueshot Warriors"
+#school -1
+#end
+
+#selectspell "Earth Shatter Hammers"
+#school -1
+#end
+
+#selectspell "Shroud of Flying Shards"
+#school -1
+#end
+
+#selectspell "Spell Ward"
+#school -1
+#end
+
+#selectspell "Astral Healing"
+#school -1
+#end
+
+#selectspell "Raise Dead"
+#school -1
+#end
+
+#selectspell "Serpent Fang Arrows"
+#school -1
+#end
+
+#selectspell "Gift of Splendor"
+#school -1
+#end
+
+#selectspell "Farflight Arrows"
+#school -1
+#end
+
+#selectspell "Friendly Currents"
+#school -1
+#end
+
+#selectspell "Quagmire"
+#school -1
+#end
+
+#selectspell "Horde of Skeletons"
+#school -1
+#end
+
+#selectspell "Group Regeneration"
+#school -1
+#end
+
+#selectspell "Heat from Hell"
+#school -1
+#end
+
+#selectspell "Greater Farflight"
+#school -1
+#end
+
+#selectspell "Water Ward"
+#school -1
+#end
+
+#selectspell "Grip of Winter"
+#school -1
+#end
+
+#selectspell "Earthquake Warriors"
+#school -1
+#end
+
+#selectspell "Rigor Mortis"
+#school -1
+#end
+
+#selectspell "Hail of Serpent Fangs"
+#school -1
+#end
+
+#selectspell "Relief"
+#school -1
+#end
+
+#selectspell "Steal Sight"
+#school -1
+#end
+
+#selectspell "Aura of Splendor"
+#school -1
+#end
+
+#selectspell "Antimagic"
+#school -1
+#end
+
+#selectspell "Life after Death"
+#school -1
+#end
+
+#selectspell "Mass Regeneration"
+#school -1
+#end
+
+#selectspell "Nightmare Masks"
+#school -1
+#end
+
+#selectspell "Warriors of the Dawn"
+#school -1
+#end
+
+#selectspell "Unraveling"
+#school -1
+#end
+
+#selectspell "Fields of the Dead"
+#school -1
+#end
+
+#selectspell "Army Regeneration"
+#school -1
+#end
+
+#selectspell "Mists of Deception"
+#school -1
+#end
+
+#selectspell "Desiccation"
+#school -1
+#end
+
+#selectspell "Farstrike"
+#school -1
+#end
+
+#selectspell "Dust to Dust"
+#school -1
+#end
+
+#selectspell "Decay"
+#school -1
+#end
+
+#selectspell "Personal Luck"
+#school -1
+#end
+
+#selectspell "Bonds of Fire"
+#school -1
+#end
+
+#selectspell "Steal Breath"
+#school -1
+#end
+
+#selectspell "Mind Burn"
+#school -1
+#end
+
+#selectspell "Beast Fury"
+#school -1
+#end
+
+#selectspell "Sailors' Death"
+#school -1
+#end
+
+#selectspell "Iron Will"
+#school -1
+#end
+
+#selectspell "Panic"
+#school -1
+#end
+
+#selectspell "Luck"
+#school -1
+#end
+
+#selectspell "Despair"
+#school -1
+#end
+
+#selectspell "Prison of Fire"
+#school -1
+#end
+
+#selectspell "Curse of the Desert"
+#school -1
+#end
+
+#selectspell "Ferocity"
+#school -1
+#end
+
+#selectspell "Rage of the Cornered Rat"
+#school -1
+#end
+
+#selectspell "Wildness"
+#school -1
+#end
+
+#selectspell "Slumber"
+#school -1
+#end
+
+#selectspell "Serenity"
+#school -1
+#end
+
+#selectspell "Leeching Darkness"
+#school -1
+#end
+
+#selectspell "Pack Ferocity"
+#school -1
+#end
+
+#selectspell "The Ravenous Swarm"
+#school -1
+#end
+
+#selectspell "Group Luck"
+#school -1
+#end
+
+#selectspell "Wither Bones"
+#school -1
+#end
+
+#selectspell "Growing Fury"
+#school -1
+#end
+
+#selectspell "Unending Nightmare"
+#school -1
+#end
+
+#selectspell "Sandman's Blessing"
+#school -1
+#end
+
+#selectspell "Plague"
+#school -1
+#end
+
+#selectspell "Fury of the Wild"
+#school -1
+#end
+
+#selectspell "Hydrophobia"
+#school -1
+#end
+
+#selectspell "Soul Drain"
+#school -1
+#end
+
+#selectspell "Undead Mastery"
+#school -1
+#end
+
+#selectspell "Battle Fortune"
+#school -1
+#end
+
+#selectspell "Bleed"
+#school -1
+#end
+
+#selectspell "Blood Burst"
+#school -1
+#end
+
+#selectspell "Blood Heal"
+#school -1
+#end
+
+#selectspell "Summon Imps"
+#school -1
+#end
+
+#selectspell "Blood Boil"
+#school -1
+#end
+
+#selectspell "Banish Demon"
+#school -1
+#end
+
+#selectspell "Agony"
+#school -1
+#end
+
+#selectspell "Hell Power"
+#school -1
+#end
+
+#selectspell "Leeching Touch"
+#school -1
+#end
+
+#selectspell "Pain Transfer"
+#school -1
+#end
+
+#selectspell "Hellfire"
+#school -1
+#end
+
+#selectspell "Blood Lust"
+#school -1
+#end
+
+#selectspell "Hellbind Heart"
+#school -1
+#end
+
+#selectspell "Summon Illearth"
+#school -1
+#end
+
+#selectspell "Bloodletting"
+#school -1
+#end
+
+#selectspell "Soul Transaction"
+#school -1
+#end
+
+#selectspell "Harm"
+#school -1
+#end
+
+#selectspell "Blood Rain"
+#school -1
+#end
+
+#selectspell "Leech"
+#school -1
+#end
+
+#selectspell "Purify Blood"
+#school -1
+#end
+
+#selectspell "Damage Reversal"
+#school -1
+#end
+
+#selectspell "Rush of Strength"
+#school -1
+#end
+
+#selectspell "Life for a Life"
+#school -1
+#end
+
+#selectspell "Infernal Prison"
+#school -1
+#end
+
+#selectspell "Claws of Kokytos"
+#school -1
+#end
+
+#selectspell "All-consuming Pyre"
+#school -1
+#end
+
+#selectspell "Resist Magic"
+#school -1
+#end
+
+#selectspell "Personal Poison Resistance"
+#school -1
+#end
+
+#selectspell "Protection from Poison"
+#school -1
+#end
+
+#selectspell "Poison Ward"
+#school -1
+#end
+
+#selectspell "Serpent's Blessing"
+#school -1
+#end
+
+#selectspell "Vortex of Returning"
+#school -1
+#end
+
+
+#selectspell "Personal Barkskin"
+#school -1
+#end
+
+#selectspell "Group Barkskin"
+#school -1
+#end
+
+#selectspell "Wooden Warriors"
+#school -1
+#end
+
+#selectspell "Oaken Army"
+#school -1
+#end
+
+#selectspell "Enslave Mind"
+#school -1
+#end
+
+#selectspell "Hand of Death"
+#school -1
+#end
+
+#selectspell "Personal Ironskin"
+#school -1
+#end
+
+#selectspell "Ironskin"
+#school -1
+#end
+
+#selectspell "Group Ironskin"
+#school -1
+#end
+
+#selectspell "Iron Warriors"
+#school -1
+#end
+
+#selectspell "Thunder Fend"
+#school -1
+#end
+
+#selectspell "Resist Lightning"
+#name "Resist Lightning (disabled)"
+#school -1
+#end
+
+#selectspell "Lightning Resistance"
+#school -1
+#end
+
+#selectspell "Lightning Resistant Warriors"
+#school -1
+#end
+
+#selectspell "Ground Army"
+#school -1
+#end
+
+#selectspell "Resist Fire"
+#name "Resist Fire (disabled)"
+#school -1
+#end
+
+#selectspell "Fire Resistance"
+#school -1
+#end
+
+#selectspell "Fire Resistant Warriors"
+#school -1
+#end
+
+#selectspell "Frostflesh Army"
+#school -1
+#end
+
+#selectspell "Resist Cold"
+#name "Resist Cold (disabled)"
+#school -1
+#end
+
+#selectspell "Cold Resistance"
+#school -1
+#end
+
+#selectspell "Cold Resistant Warriors"
+#school -1
+#end
+
+#selectspell "Flameflesh Army"
+#school -1
+#end
+
+#selectspell "Protection From Fire"
+#school -1
+#end
+
+#selectspell "Fire Fend"
+#school -1
+#end
+
+#selectspell "Protection From Cold"
+#school -1
+#end
+
+#selectspell "Frost Fend"
+#school -1
+#end
+
+#selectspell "Protection From Lightning"
+#school -1
+#end
+
+#selectspell "Body Ethereal"
+#school -1
+#end
+
+#selectspell "Personal Mistform"
+#school -1
+#end
+
+#selectspell "Mistform"
+#school -1
+#end
+
+#selectspell "Fog Warriors"
+#school -1
+#end
+
+#selectspell "Army of Mist"
+#school -1
+#end
+
+#selectspell "Chain Lightning"
+#researchlevel 5
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#selectspell "Gifts from Heaven"
+#school -1
+#end
+
+#selectspell "Mirror Mind"
+#school -1
+#end
+
+#selectspell "Tangle Vines"
+#school -1
+#end
+
+#selectspell "Tangle Thicket"
+#school -1
+#end
+
+#selectspell "Gift of True Sight"
+#school -1
+#end
+
+#selectspell "Fay-eyed Warriors"
+#school -1
+#end
+
+#selectspell "Gift of Spirit Sight"
+#school -1
+#end
+
+#selectspell "Flame Bolt"
+#school -1
+#end
+
+#selectspell "Slime"
+#school -1
+#end
+
+#selectspell "Water Strike"
+#school -1
+#end
+
+#selectspell "Geyser"
+#school -1
+#end
+
+#selectspell "Cold Bolt"
+#school -1
+#end
+
+#selectspell "Acid Spray"
+#school -1
+#end
+
+#selectspell "Star Fires"
+#school -1
+#end
+
+#selectspell "Arcane Bolt"
+#school -1
+#end
+
+#selectspell "Vine Arrow"
+#school -1
+#end
+
+#selectspell "Bewitching Lights"
+#school -1
+#end
+
+#selectspell "Fire Blast"
+#school -1
+#end
+
+#selectspell "Flare"
+#school -1
+#end
+
+#selectspell "Shock Wave"
+#school -1
+#end
+
+#selectspell "Cold Blast"
+#school -1
+#end
+
+#selectspell "Rust Mist"
+#school -1
+#end
+
+#selectspell "Solar Rays"
+#school -1
+#end
+
+#selectspell "Ephemeral Bolt"
+#school -1
+#end
+
+#selectspell "Storm Wind"
+#school -1
+#end
+
+#selectspell "Freezing Mist"
+#school -1
+#end
+
+#selectspell "Magma Bolts"
+#school -1
+#end
+
+#selectspell "Healing Light"
+#school -1
+#end
+
+#selectspell "Shadow Bolt"
+#school -1
+#end
+
+#selectspell "Poison Darts"
+#school -1
+#end
+
+#selectspell "False Fire"
+#school -1
+#end
+
+#selectspell "Elf Shot"
+#school -1
+#end
+
+#selectspell "Dance of Ephemeral Swords"
+#school -1
+#end
+
+#selectspell "Cloud of Dreamless Slumber"
+#school -1
+#end
+
+#selectspell "Fire Cloud"
+#school -1
+#end
+
+#selectspell "Acid Rain"
+#school -1
+#end
+
+#selectspell "Blade Wind"
+#school -1
+#end
+
+#selectspell "Nether Bolt"
+#school -1
+#end
+
+#selectspell "Bane Fire Dart"
+#school -1
+#end
+
+#selectspell "Bolt of Unlife"
+#school -1
+#end
+
+#selectspell "Ephemeral Blast"
+#school -1
+#end
+
+#selectspell "Ghost Wolves"
+#school -1
+#end
+
+#selectspell "Falling Fires"
+#school -1
+#end
+
+#selectspell "Hidden Flame"
+#school -1
+#end
+
+#selectspell "Orb Lightning"
+#school -1
+#end
+
+#selectspell "Shatter"
+#school -1
+#end
+
+#selectspell "Stellar Cascades"
+#school -1
+#end
+
+#selectspell "Astral Geyser"
+#school -1
+#end
+
+#selectspell "Shadow Blast"
+#school -1
+#end
+
+#selectspell "Poison Arrows"
+#school -1
+#end
+
+#selectspell "Poison Cloud"
+#school -1
+#end
+
+#selectspell "Illusory Army"
+#school -1
+#end
+
+#selectspell "Flame Eruption"
+#school -1
+#end
+
+#selectspell "Cleansing Water"
+#school -1
+#end
+
+#selectspell "Magma Eruption"
+#school -1
+#end
+
+#selectspell "Astral Fires"
+#school -1
+#end
+
+#selectspell "Blast of Unlife"
+#school -1
+#end
+
+#selectspell "Bane Fire"
+#school -1
+#end
+
+#selectspell "Stream of Life"
+#school -1
+#end
+
+#selectspell "Ice Strike"
+#school -1
+#end
+
+#selectspell "Acid Storm"
+#school -1
+#end
+
+#selectspell "Rain of Stones"
+#school -1
+#end
+
+#selectspell "Nether Darts"
+#school -1
+#end
+
+#selectspell "Stygian Rains"
+#school -1
+#end
+
+#selectspell "Cloud of Death"
+#school -1
+#end
+
+#selectspell "Wind of Death"
+#school -1
+#end
+
+#selectspell "Storm of Thorns"
+#school -1
+#end
+
+#selectspell "Poison Mist"
+#school -1
+#end
+
+#selectspell "Wailing Winds"
+#school -1
+#end
+
+#selectspell "Shimmering Fields"
+#school -1
+#end
+
+#selectspell "Meteor Shower"
+#school -1
+#end
+
+#selectspell "Astral Tempest"
+#school -1
+#end
+
+#selectspell "Aurora Borealis"
+#school -1
+#end
+
+#selectspell "Flame Storm"
+#school -1
+#end
+
+#selectspell "Lightning Field"
+#school -1
+#end
+
+#selectspell "Niefel Flames"
+#school -1
+#end
+
+#selectspell "Earth Grip"
+#school -1
+#end
+
+#selectspell "Earth Meld"
+#school -1
+#end
+
+#selectspell "Temper Armors"
+#school -1
+#end
+
+#selectspell "Legions of Steel"
+#school -1
+#end
+
+#selectspell "Hail of Burning Embers"
+#school -1
+#end
+
+#selectspell 866 -- "Transformation"
+#name "Transformation (disabled)"
+#school -1
+#end
+
+#selectspell "Destruction"
+#name "Destruction (disabled)"
+#school -1
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/spells\national.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+------------------- New Spells and Events for Myth Nantar, Aleaxtis, and other 0.94 additions by Razorfire with help from SSDaquerino-------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-- 7616 -- Baelnorn Transmigration
+#newspell
+#copyspell 1245 -- lichcraft
+#name "Baelnorn Transmigration"
+#path 0 4
+#pathlevel 0 3
+#researchlevel 5
+#descr "Become a Baelnorn - an elf who chooses a path of Prime-bound duty beyond death. They chose this path to serve or safeguard their families, communities, or important places, and acted as keepers and protectors of elven clans and holdings far beyond the lifespan of a living elf."
+#details "The baelnorn is immortal so long as their place of origin remains unconquered. This transformation, though powerful, has the downside of making the unit homesick. A baelnorn will lose 20% of their health each month they are away from their home province." 
+#damage 7616 -- Baelnorn
+#restricted 236 -- Tel'Quessir
+#restricted 239 -- Myth Nantar
+#end
+
+--
+#newspell 
+#name "Annihilate Nantar's Mythal"
+#descr "Available only to Aleaxtis, this spell will remove the Mythal at Myth Nantar, ensuring the sahuagin can safely occupy the province without fear of its anti-sahuagin holy fire."
+#onlyatsite 2991 -- "The Mythal at Myth Nantar"
+#provrange 0
+#school 4 
+#researchlevel 7
+#path 0 4
+#pathlevel 0 4
+#fatiguecost 8000 -- 80 gems
+#effect 10042 --triggers event
+#damage 8002 --event id
+#restricted 240 -- Aleaxtis
+#spec 41943040 -- uwonly
+#end
+
+---------------------------------------------------------------
+#newevent 
+#id 8002
+#rarity 0 -- always once per province but..
+#req_rare 0 -- only triggered by spell
+#removesite 2991 -- The Mythal at Myth Nantar
+#msg "The last legacy of the elves of Aryselmalyr is no more. In the name of Sekolah, let the waters of Serôs churn with the blood of our fallen foes."
+#end
+
+------------------- New Underwater Summons -------------------
+
+
+-- 7583 -- Chum the Water
+#newspell
+#name "Chum the Water, Minor"
+#descr "Summons a single, random shark to the combat. "
+#school 0
+#researchlevel 1
+#path 0 8
+#path 1 2
+#pathlevel 0 1
+#pathlevel 1 1
+#fatiguecost 50
+#effect 1 -- summon monster
+#nreff 1
+#damage -13014 -- Shark Montag
+#restricted 240 -- Aleaxtis
+#flightspr 10083 1 = red/pink thick particles
+#explspr 10043 -- explosion
+#sound 21 -- frost blast
+#spec 41943040
+#end
+
+-- Chum the Water
+#newspell
+#name "Chum the Water"
+#descr "Summons three random sharks to the combat. "
+#school 0
+#researchlevel 3
+#path 0 2
+#path 1 8
+#pathlevel 0 2
+#pathlevel 1 1
+#fatiguecost 50
+#effect 1 -- summon monster
+#nreff 3
+#damage -13014 -- Shark Montag
+#restricted 240 -- Aleaxtis
+#flightspr 10083 1 = red/pink thick particles
+#explspr 10043 -- explosion
+#sound 21 -- frost blast
+#spec 41943040
+#end
+
+-- Greater Chum the Water
+#newspell
+#name "Chum the Water, Greater"
+#descr "Summons 6 random sharks to the combat. "
+#school 0
+#researchlevel 5
+#path 0 2
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 1
+#fatiguecost 100
+#effect 1 -- summon monster
+#nreff 6
+#damage -13014 -- Shark Montag
+#restricted 240 -- Aleaxtis
+#flightspr 10083 1 = red/pink thick particles
+#explspr 10043 -- explosion
+#sound 21 -- frost blast
+#spec 41943040
+#end
+
+-- Feast of Sekolah
+#newspell
+#copyspell 1014 -- Howl
+#name "Feast of Sekolah"
+#descr "Summons a constant stream of sharks to the combat from the edges of the battlefield. "
+--#school 0
+#school -1 -- Howl is hardcoded, modding it this way doesn't work
+#researchlevel 5
+#path 0 2
+#path 1 8
+#pathlevel 0 4
+#pathlevel 1 3
+#fatiguecost 300
+#damage 7583 -- Shark Montag
+#restricted 240 -- Aleaxtis
+#sound 27 -- Thunder
+#spec 41943040
+#end
+
+-- 7629 -- Coral Golem
+#newspell 
+#copyspell 1028 -- summon bishop fish
+#name "Craft Coral Golem"
+#descr "Coral Golems were created by mages to both guard undersea locations and to tirelessly gather undersea resources. This spell can only be cast underwater." 
+#school 3
+#researchlevel 4
+#path 0 2 
+#pathlevel 0 3
+#effect 10001
+#damage 7629 -- Coral Golem
+#nreff 1
+#fatiguecost 1500
+#spec 41943040
+#end
+
+
+--------------------- New Underwater Spells ------------------------
+#newspell 
+#copyspell 639 -- water strike
+#name "Pressure Orb"
+#descr "In a 2 square radius centered on a single target, this spell suddenly causes the water to take on the terrible, bone-crushing pressure of the deepest ocean trenches. "
+#school 2 -- evocation
+#researchlevel 1
+#path 0 2 -- water
+#pathlevel 0 1 -- 1W
+#fatiguecost 35
+--#effect 2 --dmg
+#nreff 1
+#aoe 2
+#damage 1006
+#range 5025
+#precision 100
+#flightspr -1
+#explspr 10042 -- water-like colorless gas explosion
+#sound 27 -- Thunder
+--#speedmult 3 
+--#spec 2305843009255636992
+--#nextspell 0 -- nothing, to remove fire damage
+#end
+
+#newspell 
+#copyspell 639 -- water strike
+#name "Pressure Sphere"
+#descr "In a 4 square radius centered on a single target, this spell suddenly causes the water to take on the terrible, bone-crushing pressure of the deepest ocean trenches. "
+#school 2 -- evocation
+#researchlevel 3
+#path 0 2 -- water
+#pathlevel 0 2 -- 2W
+#fatiguecost 35
+--#effect 2 --dmg
+#nreff 1
+#aoe 4
+#damage 1006
+#range 5025
+#precision 100
+#flightspr -1
+#explspr 10042 -- water-like colorless gas explosion
+#sound 27 -- Thunder
+--#speedmult 3 
+--#spec 2305843009255636992
+--#nextspell 0 -- nothing, to remove fire damage
+#end
+
+#newspell 
+#copyspell 639 -- water strike
+#name "Pressure Field"
+#descr "In a 8 square radius centered on a single target, this spell suddenly causes the water to take on the terrible, bone-crushing pressure of the deepest ocean trenches. "
+#school 2 -- evocation
+#researchlevel 6
+#path 0 2 -- water
+#pathlevel 0 4 -- 4W
+#fatiguecost 35
+--#effect 2 --dmg
+#nreff 1
+#aoe 8
+#damage 1008
+#range 5025
+#precision 100
+#flightspr -1
+#explspr 10042 -- water-like colorless gas explosion
+#sound 27 -- Thunder
+--#speedmult 3 
+--#spec 2305843009255636992
+--#nextspell 0 -- nothing, to remove fire damage
+#end
+
+#newspell 
+#copyspell 639 -- water strike
+#name "Cavitation"
+#descr "An advanced Water Strike effecting a larger area, the caster generates an explosive cavitation bubble that strikes all targets with devastating force. Ideal for disrupting tightly packed enemy formations."
+#school 2 -- evocation
+#researchlevel 4
+#path 0 2 -- water
+#pathlevel 0 3 -- 2W
+#fatiguecost 40
+--#effect 2 --dmg
+#nreff 1
+#aoe 1002
+#range 5025
+#precision 100
+#flightspr -1
+#end
+
+#newspell
+#name "Thalassemia"
+#descr "This reactionary, armor-negating touch spell thins the target's blood, dealing damage to a creature's circulatory system."
+#school 2 -- evocation
+#researchlevel 2
+#path 0 2 -- water
+#pathlevel 0 1 -- 1W
+#fatiguecost 20
+#casttime 50
+#damage 3012  -- Base damage is 12 + (3x pathlevel) 
+#range 1
+#nreff 1
+#aoe 1
+#precision 100
+#flightspr 10083 1 = red/pink thick particles
+#explspr 10043 -- explosion
+#sound 9 -- whip
+#spec 2413982185964716160
+#end
+
+#newspell
+#name "Thirst of Sekolah"
+#descr "This ranged, aoe spell thins the blood of any livig creature in the radius of Sekolah's Thirst, dealing internal damage to a creature's circulatory system."
+#school 2 -- evocation
+#researchlevel 5
+#path 0 8 -- blood
+#path 1 2 -- water
+#pathlevel 0 2 -- 2B
+#pathlevel 1 1 -- 1W
+#fatiguecost 40
+#casttime 100
+#damage 3008  -- Base damage is 8 + (3x pathlevel) 
+#range 5025
+#nreff 1
+#aoe 1004 -- base 4 + (1x pathlevel)
+#precision 100
+#flightspr 10083 1 = red/pink thick particles
+#explspr 10043 -- explosion
+#sound 9 -- whip
+#spec 2413982185964716160
+#end
+
+--#sound 106 -- sizzle
+
+#newspell
+#copyspell 730 -- Cloud of Death
+#name "Blackwater Taint"
+#descr "In the dark, sunless abysses of the deep ocean, shadows gather, the cold beckons, and the corpses of many things in the oceans lie slowly rotting. When this spell is cast, you call up this cold blackness, infusing the waters in the spell's area with negative energy. Those in or entering the area must make a MR save to resist its terrible power."
+#brief "This spells damages and weakens living creatures while acting to heal demons and undead in the same area."
+#school 0 -- conjuration
+#researchlevel 5
+#path 0 5 -- death
+#path 1 2 -- water
+#pathlevel 0 2 -- 2D
+#pathlevel 1 1 -- 1W
+#fatiguecost 40
+#casttime 100
+#damage -3004  -- Base healing is 4 + (3x pathlevel) 
+#range 5025 -- 25+5/level
+#aoe 2008 -- 8+2/level
+#nreff 1
+#precision 100
+#flightspr -1 -- none
+#spec 8636088456 -- 3458817291226464384 --this second value is the old version that had planned an undead heal as a second spell effect
+#nextspell 11
+#end
+
+
+#newspell 
+#copyspell 639 -- water strike
+#name "Steam Blast"
+#descr "While Fireball may not lead to underwater flames, with only slight adjustments to its somatic components, it can be used to raise the tempurate of a wide swath of water to the boiling point almost instantaneously. "
+#school 2 -- evocation
+#researchlevel 2
+#path 0 0 -- Fire
+#path 1 2 -- water
+#pathlevel 0 1 -- 1F
+#pathlevel 1 2 -- 2W
+#fatiguecost 35
+--#effect 2 --dmg
+#nreff 1
+#aoe 4
+#damage 1009
+#range 5035
+#precision 100
+#flightspr 10084 1 = ??? particles
+#explspr 10121 -- ???
+#sound 27 -- Thunder
+#end
+
+
+-- 7607 -- Sacred Dolphin
+#newspell 
+#copyspell 1028 -- summon bishop fish
+#name "Summon Pod of Sacred Dolphins"
+#descr "Dolphins worshipped Trishina, the undersea goddess . This spell can only be cast underwater." 
+#school 0
+#researchlevel 3
+#path 0 2 
+#path 1 6
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10001
+#damage 7607 -- Sacred Dolphin
+#nreff 2001
+#fatiguecost 600
+#spec 41943040 -- uw ok and uw only
+#restricted 239 -- Nantarn Alliance
+#restricted 201 -- Luiren
+#restricted 200 -- Waterdeep
+#restricted 215 -- Impiltur
+#restricted 216 -- Silverymoon
+#restricted 218 -- Baldur's Gate
+#restricted 236 -- Tel'Quessir
+#end
+
+#newspell 
+#copyspell 1028 -- summon bishop fish
+#name "Summon Allies of the Undersea"
+#descr "This spell draws a number of dolphins, whales, and hippocampi to your cause. This spell can only be cast underwater." 
+#school 0
+#researchlevel 2
+#path 0 2 
+#path 1 6
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10001
+#damage 7612 -- Blessed Creatures of the Sea
+#nreff 2001
+#fatiguecost 300
+#spec 41943040 -- uw ok and uw only
+#restricted 239 -- Nantarn Alliance
+#restricted 201 -- Luiren
+#restricted 200 -- Waterdeep
+#restricted 215 -- Impiltur
+#restricted 216 -- Silverymoon
+#restricted 218 -- Baldur's Gate
+#restricted 236 -- Tel'Quessir 
+#end
+
+-- 8005 -- Sacred Leviathan
+#newspell
+#name "Summon a Sacred Leviathan"
+#descr "Leviathans are ancient, enormous whales blessed by an undersea deity or living to such an age as to accumulate such vast wisdom as to occupy a blessèd state. These are minor water and holy mages capable of attracting undersea animal allies." 
+#school 0
+#researchlevel 5
+#path 0 2
+#path 1 6
+#pathlevel 0 4
+#pathlevel 1 1
+#fatiguecost 1800
+#effect 10021 -- summon commander
+#nreff 1
+#spec 41943040 -- uw ok and uw only
+#damage 8005 -- Sacred Leviathan
+#restricted 239 -- Nantarn Alliance
+#restricted 201 -- Luiren
+#restricted 200 -- Waterdeep
+#restricted 215 -- Impiltur
+#restricted 216 -- Silverymoon
+#restricted 218 -- Baldur's Gate
+#restricted 236 -- Tel'Quessir 
+#end
+
+-- 8006 -- Megalodon
+#newspell
+#name "Summon a Megalodon"
+#descr "Megalodons are the greatest predators of the deep. Revered by the sahuagin, they are a true menace on the battlefield." 
+#school 0
+#researchlevel 4
+#path 0 2
+#path 1 8
+#pathlevel 0 4
+#pathlevel 1 1
+#fatiguecost 1500
+#effect 10001 -- summon monster
+#nreff 1
+#spec 41943040 -- uw ok and uw only
+#damage 8006 -- Megalodon
+#restricted 240 -- Aleaxtis
+#end
+
+-- 7159 -- Kuo-Toan Leviathan
+#newspell
+#name "Exalt a Kuo-Toa Leviathan"
+#descr "The destructive monstrosities known as the kuo-toa leviathans were not born, but rather made. Talented Whips and Monitors could receive the blessing of the Sea Mother herself and grow to gargantuan proportions. Leviathans were venerated by other kuo-toa, hoping that the blessing of their goddess would rub off on them. These Leviathans thus rose to positions of great power among their kind, attracting enclaves of gogglers to them wherever they went." 
+#school 0
+#researchlevel 3
+#path 0 2
+#path 1 4
+#pathlevel 0 3
+#pathlevel 1 3
+#fatiguecost 2000
+#effect 10021 -- summon commander
+#nreff 1
+#spec 41943040 -- uw ok and uw only
+#damage 7159 -- Kuo-Toan Leviathan
+#restricted 224 -- Sloopdilmonpolop
+#end
+
+#newspell
+#copyspell 245 -- air shield
+#spec 41943040 -- uw ok and uw only
+#name "Shield of Turbidity"
+#descr "This spell roils the waters around its targets creating a kind of entropic barrier of eddies through which projectiles and other weapons are rapidly and successively redirected, rendering them far less deadly. This spell functions like a small area underwater air shield combined with watershield."
+#nextspell 1120
+#fatiguecost 40
+#aoe 1
+#path 0 2
+#pathlevel 0 2
+#school 1 -- abjuration
+#researchlevel 2
+#end
+
+#newspell
+#copyspell 829 -- air ward
+#spec 41943040 -- uw ok and uw only
+#name "Mass Shield of Turbidity"
+#descr "In a 20 square radius, this spell roils the waters around its targets creating a kind of entropic barrier of eddies through which projectiles and other weapons are rapidly and successively redirected, rendering them far less deadly. This spell functions like an underwater arrow ward combined with water ward."
+#path 0 2
+#pathlevel 0 4
+#school 1 -- abjuration
+#researchlevel 5
+#fatiguecost 100
+#aoe 20
+#nextspell 1194 -- water ward
+#end
+
+#newspell
+#name "Summon Nantari Cavaliers"
+#descr "The Nantari Cavaliers were the elite mounted forces of Myth Nantar. Blessed by the priests and bolstered by the high mages of the City of Destinies, the Nantari Cavaliers upheld The Laws of Battle across Serôs. These captains are also adept at communicating with and training Sacred Dolphins to accompany their forces." 
+#school 0
+#researchlevel 4
+#path 0 7
+#path 1 2
+#pathlevel 0 2
+#pathlevel 1 1
+#fatiguecost 1500
+#effect 10001 -- summon monster
+#nreff 1004 -- 4+1 per level of G
+#spec 41943040 -- uw ok and uw only
+#damage 7608 -- Nantari Cavalier
+#restricted 239 -- Nantarn
+#end
+
+-- 7616 -- Freedom of the Alhoon
+#newspell
+#copyspell 1245 -- lichcraft
+#name "Freedom of the Alhoon"
+#path 0 7
+#pathlevel 0 3
+#researchlevel 4
+#descr "By means of this ritual, a mindflayer transforms into an Alhoon - an immortal, undead, lich mindflayer. They will gain boosts to several magic paths, but lose their divinity and become heretics in the eyes of the Elder Brain."
+#details "Only the most powerful illithids, the Mindflayers and Ulitharids, may cast this ritual."
+#fatiguecost 4000
+#damage 5050 -- Alhoon - 'Twiceborn' form
+#onlymnr 5113 -- Mind Flayer
+#onlymnr 5115 -- Ulitharid
+#end
+
+
+#newspell
+#name "Construct a Halruaan Skyship"
+#descr "While the secrets of the construction of skyships was closely guarded for centuries by the Halruaan Council, in 1370 DR, the method was leaked to a handful of foreign powers. While most were used for mercantile and research functions, they could be fit for war and were particularly useful in sieges." 
+#school 3
+#researchlevel 7
+#path 0 1
+#path 1 4
+#pathlevel 0 2
+#pathlevel 1 4
+#fatiguecost 3500
+#effect 10021 -- summon commander
+#nreff 1
+#damage 8032 -- Halruaan Skyship
+#restricted 200 -- waterdeep
+#restricted 201 -- luiren
+#restricted 203
+#restricted 210
+#restricted 212
+#restricted 216
+#restricted 218
+#restricted 236
+#end
+
+-- 7661 -- Shoon VII
+#newspell
+#name "Forge a Pact with Shoon VII"
+#descr "In 1358 DR, an insane Calishite wizard discovered Shoon VII's trapped demilich skull and worked tirelessly to feed it souls, eventually freeing Shoon VII from his imprisonment and releasing The Necroqysar back into the world." 
+#school 4
+#researchlevel 5
+#path 0 5
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 5000
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7661 -- Shoon VII
+#restricted 202 -- Calimshan
+#end
+
+-- 7668 -- Runemaster - Lich
+#newspell
+#name "Forge a Pact with a Runemaster"
+#descr "The Twisted Rune was a nefarious organization ruled by at least seven liches, known as Runemasters. Cooperating for mutual survival, they plotted to sieze indirect power over the Lands of Intrigue, and in time, grew to one of the largest and most feared cabals of dark wizards in all of Faerûn. This spell will cement an alliance with one of the Runemasters." 
+#school 4
+#researchlevel 7
+#path 0 5
+#pathlevel 0 5
+#fatiguecost 5000
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7668 -- Runemaster - Lich
+#notfornation 241
+#end
+
+-- 7668 -- Runemaster - Lich
+#newspell
+#name "Forge a Pact with a Runemaster"
+#descr "The Twisted Rune was a nefarious organization ruled by at least seven liches, known as Runemasters. Cooperating for mutual survival, they plotted to sieze indirect power over the Lands of Intrigue, and in time, grew to one of the largest and most feared cabals of dark wizards in all of Faerûn. This spell will cement an alliance with one of the Runemasters." 
+#school 4
+#researchlevel 6
+#path 0 5
+#pathlevel 0 5
+#fatiguecost 4000
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7668 -- Runemaster - Lich
+#restricted 241
+#end
+
+-- 7695 -- Celestial Lion
+#newspell 
+#name "Summon Celestial Lion"
+#descr "Celestial Lions are powerful and noble beasts of the upper planes and make outstanding front-line forces against demons and the undead." 
+#school 0
+#researchlevel 5
+#path 0 4 
+#path 1 0 
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 1
+#damage 7695 -- Celestial Lion
+#nreff 1
+#fatiguecost 80
+#restricted 200 
+#restricted 204 
+#restricted 209
+#restricted 215 
+#restricted 216
+#restricted 218
+#restricted 221 -- Kingdom of Corwell
+#restricted 227 -- Dwarves of Deep Shanatar
+#restricted 229 -- Dwarves of Old Bhaerynden
+#restricted 236 -- Tel'Quessir
+#restricted 237 -- Dalalands
+#end
+
+#newspell 
+#name "Call Celestial Lion"
+#descr "Celestial Lions are powerful and noble beasts of the upper planes and make outstanding front-line forces against demons and the undead." 
+#school 0
+#researchlevel 5
+#path 0 4 
+#path 1 0 
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10001
+#damage 7695 -- Celestial Lion
+#nreff 1
+#fatiguecost 500
+#restricted 200 
+#restricted 204 
+#restricted 209
+#restricted 215 
+#restricted 216
+#restricted 218
+#restricted 221 -- Kingdom of Corwell
+#restricted 227 -- Dwarves of Deep Shanatar
+#restricted 229 -- Dwarves of Old Bhaerynden
+#restricted 236 -- Tel'Quessir
+#restricted 237 -- Dalalands
+#end
+
+#newspell 
+#name "Call Pride of Celestial Lions"
+#descr "Celestial Lions are powerful and noble beasts of the upper planes and make outstanding front-line forces against demons and the undead." 
+#school 0
+#researchlevel 8
+#path 0 4 
+#path 1 0 
+#pathlevel 0 4
+#pathlevel 1 1
+#effect 10001
+#damage 7695 -- Celestial Lion
+#nreff 2001
+#fatiguecost 1800
+#restricted 200 
+#restricted 204 
+#restricted 209
+#restricted 215 
+#restricted 216
+#restricted 218
+#restricted 221 -- Kingdom of Corwell
+#restricted 227 -- Dwarves of Deep Shanatar
+#restricted 229 -- Dwarves of Old Bhaerynden
+#restricted 236 -- Tel'Quessir
+#restricted 237 -- Dalalands
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/spells\newspells-legacy.dm
+------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------- New Spells----------------------------------------------------------------
+--new spells include Cure Light Wounds, Magic Missile, various summons, and no more persistent summoned monster spam---------
+-----------------------------------------------------------------------------------------------------------------------------
+
+#newspell
+#copyspell 775 --Gooey Water
+#name "Grease"
+#descr "The caster conjures an area of slimy grease. Units stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
+#spec 4096 -- Mr roll negates
+#school 3 -- construction (conj - creation)
+#researchlevel 1
+#path 0 3 --earth
+#path 1 7 --glamour (bards get grease too)
+#pathlevel 0 1
+#pathlevel 1 1
+#end
+
+#newspell
+#name "Magic Missile"
+#descr "A missile of magical energy darts forth from your fingertip and unerringly strikes its target."
+#school 2
+#researchlevel 0
+#path 0 4
+#pathlevel 0 1
+#fatiguecost 15
+#damage 1004
+#effect 2
+#nreff 1001
+#range 5030
+#precision 100
+#flightspr 10092 -- play here 10080 - 10100 (91 is okay)
+#speedmult 3
+#sound 87 -- whip
+#strikesound 24 -- 24 is electricity
+#explspr 10008  -- play here 10101 - 10119
+-- difficult to negate with MR
+-- + armor negating
+-- + can use underwater
+-- + doesn't affect friendly
+#spec 17592194695296
+#casttime 100
+#aispellmod 50
+#end 
+
+#selectspell 905 -- Disintegrate
+#descr "This powerful ray spell will reduce nearly any target to dust."
+#school 1 -- alteration (transmutation)
+#researchlevel 5
+#path 0 4
+#pathlevel 0 4
+#range 5020
+#precision 3
+#damage 1050
+#fatiguecost 30
+-- AN, MR half, can be cast UW
+#spec 2305843009222082688
+#end
+
+#selectspell "Blink"
+#name "Dimension Door"
+#descr "The caster creates an instability in space that transports them to another position on the battlefield."
+#school 0 --conjuration
+#path 0 4
+#pathlevel 0 2
+#damage 50
+#fatiguecost 10
+#casttime 1
+#spec 8388608 -- may use underwater
+#end
+
+#newspell
+#copyspell 1009 -- Cure Disease
+#name "Remove Curse"
+#descr "Clerics of all faiths are called upon to remove hexes and curses. With this ritual the Curse affecting an unfortunate target can be lifted. The target unit must be in the same province as the caster, and the healing magic will not affect Lifeless or Undead units."
+#school 5
+#researchlevel 5
+#effect 10131
+#path 0 4
+#path 1 9
+#pathlevel 0 1
+#pathlevel 1 2
+#fatiguecost 800
+#damage 2 -- Curse
+#spec 554172416 -- No effect on lifeless or undead, UW OK
+#end
+
+-------------------------------------------------------- Ritual Summons
+
+
+#newspell 
+#name "Summon Infernal Barghest"
+#descr "Barghests are fiendish creatures native to the outer plane of Gehenna. They have a wide range of magical abilities and are excellent combatants and blood hunters."
+#school 6
+#researchlevel 2
+#path 0 8
+#path 1 3
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10021
+#damage 7059
+#nreff 1
+#fatiguecost 4000
+#end
+
+#newspell 
+#name "Bind Tanar'ri Hezrou"
+#descr "Bind a Hezrou to your cause. Type II demons, Hezrous are the generals and shock troops of the abyssal hordes."
+#school 6
+#researchlevel 4
+#path 0 8 
+#path 1 1 
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10021
+#damage 7045
+#nreff 1
+#fatiguecost 3500
+#end
+
+#newspell 
+#name "Bind Tanar'ri Vrock"
+#descr "Bind a Vrock to your cause. Type II demons, Vrocks are mighty fliers capable of deep strikes behind enemy front lines."
+#school 6
+#researchlevel 6
+#path 0 8 
+#path 1 1 
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10021
+#damage 7047
+#nreff 1
+#fatiguecost 4500
+#end
 
 -- 
-#addgod 5025 -- Talos 3
-#addgod 5016 -- Loviatar 3
-#addgod 5015 -- Tempus 3
-#addgod 5031 -- Orcus 2
-#addgod 7346 -- Soneillon 2
-#addgod 8049 -- Demogorgon
+#newspell 
+#name "Bind a Demonic Succubus"
+#descr "Bind a Demonic Succubus to your cause. Succubi, while demons, were also known to serve devils during the Blood War. Their ability to seduce mortals makes them highly effective bloodslavers." 
+#school 6
+#researchlevel 5
+#path 0 8 
+#path 1 7 
+#pathlevel 0 2
+#pathlevel 1 2
+#effect 10021
+#damage 7341 -- Succubus
+#nreff 1
+#fatiguecost 4000
+#end
 
+#newspell 
+#name "Bind Tanar'ri Glabrezu"
+#descr "Bind a Glabrezu to your cause. Type III demons, Glabrezus are powerful combatants who increase turmoil and generate blood slaves each turn. They are capable of summoning Vrocks." 
+#school 6
+#researchlevel 7
+#path 0 8 
+#path 1 1 
+#pathlevel 0 4
+#pathlevel 1 1
+#effect 10021
+#damage 7049 -- glabrezu
+#nreff 1
+#fatiguecost 9000
+#end
 
-#cheapgod40 7346 -- Soneillon 2
-#cheapgod20 5031 -- Orcus 2
-
-
-#multihero1 7045 -- Hezrou
-#multihero2 7047 -- Vrock
-#multihero3 7049 -- Glabrezu
-#multihero4 7342 -- Alu-fiend
-#multihero5 7343 -- Cambion
-#multihero6 7340 -- Marilith
-#multihero7 7341 -- Succubus
-
-
-#startcom 136 		-- Nar Horselord
-#startunittype1 2990 -- Nar Warrior 
-#startunittype2 137 -- Nar Cavalry 
-#startunitnbrs1 20
-#startunitnbrs2 10
-
-#startscout 2279 -- Warrior Scout
-
-#addrecunit 2990 -- Nar Warrior 
-#addrecunit 2989 -- Nar Hunter 
-#addrecunit 2991 -- Nar Axeman 
-#addrecunit 137 -- Nar Cavalry 
-
-#addreccom 2279 -- Warrior Scout
-#addreccom 141 -- Barbarian Chief
-#addreccom 136 -- Nar Horselord
-#addreccom 6700 -- Cleric of Tempus
-#addreccom 94 -- Stock Conjurer
-#addreccom 7503 	-- Tiefling Spellfilcher 
-#addreccom 7344 	-- Tiefling Priestess
-#addreccom 7502 	-- Tiefling Warlock
-#addreccom 7043 -- Nar Demonbinder
-
-
-
-#defcom1 26 -- Nar Horselord
-#defcom2 6700 -- Cleric of Tempus
-#defunit1 29 -- Nar Hunter 
-#defunit1b 32 -- Nar Cavalry
-#defmult1 20 	
-#defmult1b 20 
-
----------- DEFENCES
-#guardcom 141
-#guardunit 2991
-#guardmult 15
-#wallcom 141 -- Barbarian Chief
-#wallunit 2989 -- Nar Hunter 
-#wallmult 20 	
-
----------- START SITES
-
-#startsite "The Long Road" -- inc growth and produces resources 
-
+#newspell 
+#name "Bind Tanar'ri Marilith"
+#descr "Bind a Marilith to your cause. Type IV demons, Mariliths are powerful mages and combatants and are cunning military leaders. They are capable of summoning Vrocks." 
+#school 6
+#researchlevel 8
+#path 0 8 
+#path 1 1 
+#pathlevel 0 4
+#pathlevel 1 1
+#effect 10021
+#damage 7340 -- Marilith
+#nreff 1
+#fatiguecost 9000
 #end
 
 
---------------------------------------------------------------------------
------------------Cult of the Dragon-------------------------------------------------
---------------------------------------------------------------------------
-
-#selectnation 220
-#era 2
-#name "Cult of the Dragon"
-#epithet "Wearers of Purple"
-#brief "Easily the most powerful faction at the start of the game. Your holdings will be spread wide, with 6 isolated provinces under your control and full access to dragons. Their research and expansion will test you if they are left under AI control - don't let them snowball."
-
-#descr "The Cult of the Dragon was also known as the Followers of the Scaly Way and the Wearers of Purple. They were a a semi-religious evil organization venerating undead dragons, or dracoliches, founded by Sammaster, a powerful wizard and former Chosen of Mystra. Their belief was that dracoliches were destined to one day rule Faerûn and beyond and that it was their purpose to help this come to pass. They were considered to be a secret society or a beast cult, albeit an overly large and powerful one, and also as a mercantile and criminal enterprise.
-
-Although it was active all over Faerûn, particularly the Heartlands, the Cult of the Dragon was strongest in the North and the Cold Lands, where dragons were most common and most feared. In the mid–14th century DR, they were believed to have their base in the lands north of Thar, as this was the origin of the devastating Flight of Dragons in 1356 DR. In fact, they had no primary base or headquarters as of 1370 DR. But later, circa 1372 DR, fresh rumors spoke of a secret fortress or headquarters somewhere near the Battle of Bones in the Western Heartlands — and they spoke true, alluding to the citadel under construction over the Well of Dragons. This was to be their new headquarters."
-
-#summary "You have plenty of wizards and many locations throughout Faerun. Despite your lack of native troops, you do, however, have DRAGONS. And you can summon more through rituals. Care for your precious eggs until they mature. Research and cast Twiceborn on your mature and ancient dragons to make them into Dracoliches when they die. If you can hang on long enough, you will BATHE the world in your balefire. In the meantime, you will have a wide range of recruitable wizards at your disposal along with very cheap labs. "  
-#flag "ForgottenRealms/flags_dragoncult.tga"
-#templepic 13 -- Eye of the Void
-#fortera 2 -- Castle standard era 2
-#homefort 4 -- Citadel
-#buildfort 2
-#builduwfort 6
-#labcost 200
-#templecost 400
-#color 0.0 0.2 0.0
-
-#addgod 8001 -- BANE 4
-#addgod 5033 -- Cyric 2
-#addgod 5003 -- Myrkul 4
-#addgod 5021 -- Shar
-#addgod 5025 -- Talos 3
-#addgod 5010 -- MALAR 3
-#addgod 7287 -- Velsharoon - Pretender
-
-#cheapgod20 5010 -- MALAR 3
-#cheapgod40 7287 -- Velsharoon - Pretender
-
-#multihero1 6800 -- Mature White Dragon
-#multihero2 6795 -- Mature Blue Dragon
-#multihero3 6790 -- Mature Green Dragon
-#multihero4 6785 -- Mature Black Dragon
-#multihero5 6780 -- Mature Red Dragon
-#multihero6 7458 -- Red Dracolich
-#multihero7 7459 -- Black Dracolich
-#multihero8 404 -- Vampire Lord
-#multihero9 6864 -- Red Wizard Zulkir
-
-#startcom 7411 -- Dragonkin Captain
-#startunittype1 7408 -- Dragonclaw Swordsman
-#startunitnbrs1 30
-
-#startscout 2279 -- Warrior Scout
-
-#addrecunit 7408 -- Dragonclaw Swordsman
-#addrecunit 7407 -- Dragonfang Longspear
-#addrecunit 7409 -- Dragonsoul
-#addrecunit 7410 -- Dragonkin Savage
-#addrecunit 790 -- Imperial Cav
-
-#addreccom 426 	-- Warrior Scout
-#addreccom 429 	-- Black Hand Assassin
-#addreccom 7411 -- Dragonkin Captain
-#addreccom 5101 -- Black Blood Skinshifter
-#addreccom 7412 -- Dragonkin Sorcerer
-#addreccom 6702 -- Stormherald of Talos
-#addreccom 6704 -- Priestess of Shar
-#addreccom 6674 -- Priestess of Bane
-#addreccom 7097 	-- Cultist of Tiamat
-#addreccom 94		-- Conjurer
-#addreccom 310		-- Necromancer
-#addreccom 7400 	-- Eldritch Knight
-#addreccom 7405 	-- Wearer of Purple (holy Circle Master)
-
-#mountainrec 6723 -- Goblin Dogslicer
-#mountainrec 6807 -- Goblin Shortbow
-#mountainrec 6773 -- Goblin Wolfriders	
-#mountaincom 6811 -- Bugbear Captain
-#mountaincom 6770 -- Goblin King
-#mountaincom 6733 -- Goblin Lab-Rats
-
-#swamprec 6677 -- Troglodyte Raider
-#swamprec 7081 -- Otyugh
-#swampcom 2891 -- trog warchief
-#swampcom 2749 -- Troglodyte Druhyidd
-
-#forestrec 7072 -- Displacer Beast
-#forestrec 6727 -- Lizard folk
-#forestrec 783  -- Serpent Dancer
-#forestcom 7406 -- Lizard Man Chieftain
-#forestcom 6734	-- Lizardman shaman
-#forestcom 5108 -- Young Barghest
-
-#wasterec 7273 -- Cockatrice
-#wasterec 7359 -- Kobold Spear
-#wasterec 7360 -- Kobold Slinger
-#wastecom 7361 -- Kobold Chieftain
-#wastecom 7362 -- Kobold Sorcerer
-#wastecom 7093 -- Kenku Sneak
-
-#caverec 7272 -- Wild Riding Lizard
-#caverec 7359 -- Kobold Spear
-#caverec 7360 -- Kobold Slinger
-#cavecom 7361 -- Kobold Chieftain
-#cavecom 7362 -- Kobold Sorcerer
-#cavecom 5108 -- Young Barghest
-#cavecom 7304 -- Drow Necromancer - Revanancer
-
-#defcom1 54 -- Castellan
-#defcom2 23 -- Knight
-#defunit1 1105 -- triarii
-#defunit1b 32 -- Archers
-#defunit2 23 -- Knight
-#defmult1 20 	
-#defmult1b 15 
-#defmult2 5
----------- DEFENCES
-#guardcom 23
-#guardunit 1105
-#guardmult 15
-#wallcom 54 -- Castellan
-#wallunit 32 -- Archers
-#wallmult 20 	
-
----------- START SITES
-
--- #startsite "The Well of Dragons" -- gems, gems, gems
-#startsite "The Chamber of Ascendance"
-#startsite "Battlefield of the Bones"
+#newspell 
+#name "Bind Tanar'ri Balor"
+#descr "Bind a Balor to your cause. Type VI demons, Balors are the most powerful abyssal entities you can summon, capable of summoning Glabrezus and commanding entire demonic armies themselves." 
+#school 6
+#researchlevel 9
+#path 0 8 
+#path 1 1 
+#pathlevel 0 5
+#pathlevel 1 2
+#effect 10021
+#damage 7050
+#nreff 1
+#fatiguecost 24000
 #end
 
 
 
---------------------------------------------------------------------------
------------------Kingdom of Corwell---------------------------------------
---------------------------------------------------------------------------
+#newspell 
+#name "Bind Flight of Demonic Quasits"
+#descr "Summon 5 Quasits - flying, ethereal, lesser demons."
+#school 6
+#researchlevel 4
+#path 0 8 
+#path 1 1 
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10001
+#damage 7044 -- quasits
+#nreff 5
+#fatiguecost 800
+#end
 
-#selectnation 221
-#era 2
-#name "Kingdom of Corwell"
-#epithet "Lords of the Moonshae Isles"
-#brief "Corwell was the first and oldest kingdom of the Ffolk within the Moonshaes Isles. It was founded by the hero Cymrych Hugh, who later became the first High King and moved his capital to Callidyrr."
+#newspell 
+#name "Bind Demonic Dretches"
+#descr "Summon a large number of Dretches - 'least' of the demons."
+#school 6
+#researchlevel 2
+#path 0 8 
+#path 1 1 
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10001
+#damage 7046 -- dretches
+#nreff 8
+#fatiguecost 300
+#end
 
-#descr "Corwell was the first and oldest human kingdom within the Moonshaes Isles located west of the Sword Coast and for a time, unified the major islands of Alaron and Gwynneth as well as the patchwork of smaller islands and archipelagos. The population was diverse, though dominated by humans who identified themselves ethnically as 'the Ffolk.' Halflings, dwarves, and elves were common in the Moonshaes, as were giants, fomorians, and their reclusive firbolg kin. Northlander reavers with ancestral ties to Luskan dominated the smaller islands and made constant raids on the more peaceful ffolk. On the island of Gwynneth sat the capital, Caer Corwell as well as Myrloch Vale, an important site for druids and fey that would later come to be the epicenter of major conflicts. 
+#newspell 
+#name "Summon a Unicorn Pair"
+#descr "Summons a pair of Unicorns to your side. These holy creatures are especially powerful against undead and demonic forces."
+#school 0
+#researchlevel 3
+#path 0 6 
+#path 1 4 
+#pathlevel 0 3
+#pathlevel 1 2
+#effect 10001
+#damage 7070
+#nreff 2
+#fatiguecost 500
+#restricted 200 -- Waterdeep
+#restricted 201 -- Luiren
+#restricted 204 -- Cormyr
+#restricted 214 -- Aglarond 
+#restricted 216 -- Silverymoon / Silver Marches 
+#restricted 221 -- Kingdom of Corwell
+#restricted 229 -- Dwarves of Old Bhaerynden
+#end
 
-In 1345, Corwell was invaded by a an alliance of giants and northlanders in a conflict known as the Darkwalker Wars. The gods Bhaal and Malar hoped to unseat Chauntea, the Earthmother, from her dominion over the isles. Corwell stood no match for the invaders until the heroic Prince Tristan of House Kendrick and his lover, Robyn, the High Druid of Myrloch Vale, led a counterattack into the heart of the enemy and killed Kazgaroth, an avatar of Malar. Tristan was named High King and briefly united the Moonshaes under his banner. 
+#newspell 
+#name "Summon Displacer Beast"
+#descr "Summons a Displacer Beast to your side during combat."
+#school 0
+#researchlevel 4
+#path 0 6 
+#pathlevel 0 3
+#effect 1
+#damage 7072 -- Displacer Beast
+#casttime 125
+#nreff 1
+#fatiguecost 50
+#spec 8388608
+#end
 
-Recent events, however, have seen the kingdom fall apart once again. At Myrloch Vale, an ancient city of elves has risen up from the waters through a portal to the Feywild. A Fey Queen, Ordalf, has claimed dominion over the whole of the Island. The Earthmother is silent and the Druids of the Vale have been turned to stone. All human inhabitants of Gwynedd have been banished - including those in the former capital city of Caer Corwell. Pushed back to the pallisades of Caer Callidyr to regroup, King Tristan is joined by his wife, Queen Robyn and their two daughters, unsure of the future."  
+-- Summon a Purple Worm
+#newspell 
+#name "Summon a Purple Worm"
+#descr "Summons a single Purple Worm - an enormous denizen of the deep. These monsters carve massive tunnels throughout the Underdark." 
+#school 0
+#researchlevel 5
+#path 0 3
+#pathlevel 0 3
+#effect 10001
+#damage 7082 -- Purple Worm 
+#nreff 1
+#fatiguecost 2500
+#end
 
-#summary "The setting and characters of the very first Forgotten Realms novels and adventure packs makes their mod debut. Your goal, to re-unite the Moonshaes, will test you. Tough indies, foreign powers, reawakening threats, and internal divisions will require skill and luck to navigate. 
-Notable Units: Sacred Elven Cav, excellent nature access via your druids, strong heroes to start the game, a legendary sword to call your own, several national spells and summons."  
-#flag "ForgottenRealms/flag_corwell.tga"
-#templepic 30 -- Forest Gate
-#fortera 2 -- Castle standard era 2
-#homefort 2 -- Fortress (needing upgrade)
-#buildfort 3
-#builduwfort 6
-#labcost 300
-#templecost 300
-#color 0.5 0.8 0.3
+#newspell 
+#name "Summon Dire Horse"
+#descr "Summons a Dire horse to your side during combat. Nature mages of the Shaar get a special version of this spell."
+#school 0
+#researchlevel 2
+#path 0 6 
+#pathlevel 0 4
+#effect 1
+#damage 7088 -- Dire horse
+#casttime 125
+#nreff 1
+#fatiguecost 50
+#spec 8388608
+#restricted 208
+#end
 
-#addgod 5006 -- Chauntea 
-#addgod 5004 -- Light of Lathander
-#addgod 5018 -- Mielikki 2
-#addgod 5037 -- Silvanus 2
+#newspell 
+#name "Summon Yeenoghu's Steed"
+#descr "Summons an Infernal Dire horse to your side during combat. Nature mages of the Shaar get a special version of this spell, which calls an infernal dire horse."
+#school 6
+#researchlevel 2
+#path 0 8 
+#pathlevel 0 2 
+#effect 1
+#damage 7089 -- Infernal Dire horse
+#casttime 125
+#nreff 1
+#fatiguecost 60
+#restricted 208
+#aispellmod -50
+#end
 
-#cheapgod40 5006 -- Chauntea 
+#newspell 
+#name "Summon Lantern Archon"
+#descr "For a single battle, these simple, enlightened soul-motes will join your ranks - they are excellent against demons and the undead." 
+#school 0
+#researchlevel 4
+#aispellmod -85 -- Ai casts this too often
+#path 0 4 
+#path 1 0 
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 1
+#damage 7073
+#nreff 1
+#fatiguecost 40
+#restricted 200 
+#restricted 204 
+#restricted 209
+#restricted 215 
+#restricted 216
+#restricted 218
+#restricted 221 -- Kingdom of Corwell
+#restricted 227 -- Dwarves of Deep Shanatar
+#restricted 229 -- Dwarves of Old Bhaerynden
+#restricted 236 -- Tel'Quessir
+#restricted 237 -- Dalelands
+#end
 
+#newspell 
+#name "Call Lantern Archons"
+#descr "Call a host of Lantern Archons to aid you in your war against evil and tyranny. These simple, enlightened soul-motes are excellent against demons and the undead." 
+#school 0
+#researchlevel 4
+#path 0 4 
+#path 1 0 
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10001
+#damage 7073
+#nreff 5
+#fatiguecost 800
+#restricted 200 
+#restricted 204 
+#restricted 209
+#restricted 215 
+#restricted 216
+#restricted 218
+#restricted 221 -- Kingdom of Corwell
+#restricted 227 -- Dwarves of Deep Shanatar
+#restricted 229 -- Dwarves of Old Bhaerynden
+#restricted 236 -- Tel'Quessir
+#restricted 237 -- Dalalands
+#end
 
-#startcom 5080 -- Princess Alicia
-#startunittype1 24 -- light cav
-#startunitnbrs1 11
+#newspell 
+#name "Call Hound Archons"
+#descr "Call a team of five Hound Archons to aid you in your war against evil and tyranny. These soldiers of righteous faith are excellent against demons and the undead." 
+#school 0
+#researchlevel 6
+#path 0 4 
+#path 1 0 
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10001
+#damage 7074
+#nreff 5
+#fatiguecost 3000
+#restricted 200 
+#restricted 204 
+#restricted 209
+#restricted 215 
+#restricted 216
+#restricted 218
+#restricted 221 -- Kingdom of Corwell
+#restricted 227 -- Dwarves of Deep Shanatar
+#restricted 229 -- Dwarves of Old Bhaerynden
+#restricted 236 -- Tel'Quessir
+#restricted 237 -- Dalalands
+#end
 
-#startscout 2279 -- Scout
+#newspell 
+#name "Call Warden Archon"
+#descr "Call a Warden Archon to aid you in your war against evil and tyranny. These guardians of the gates of the heavens are excellent against demons and the undead." 
+#school 0
+#researchlevel 7
+#path 0 4 
+#path 1 0 
+#pathlevel 0 4
+#pathlevel 1 1
+#effect 10021
+#damage 7075
+#nreff 1
+#fatiguecost 9000
+#restricted 200 
+#restricted 204 
+#restricted 209
+#restricted 215
+#restricted 216
+#restricted 218
+#restricted 221 -- Kingdom of Corwell
+#restricted 227 -- Dwarves of Deep Shanatar
+#restricted 229 -- Dwarves of Old Bhaerynden
+#restricted 236 -- Tel'Quessir
+#restricted 237 -- Dalalands
+#end
 
-#addrecunit 61 -- Folkspear
-#addrecunit 63 -- Callidyrr Tower Guards
-#addrecunit 2111 -- Man-at-arms
-#addrecunit 2455 -- Longbowman
-#addrecunit 24 -- light cav
+#newspell 
+#name "Call Sword Archon"
+#descr "Sword Archons are paragons of virtue, law, and the light. They are the celestial heavens' greatest venturing warriors and leaders whose duties bring them to the material plane." 
+#school 0
+#researchlevel 8
+#path 0 4 
+#path 1 0 
+#pathlevel 0 5
+#pathlevel 1 2
+#effect 10021
+#damage 7076
+#nreff 1
+#fatiguecost 15000
+#restricted 200 
+#restricted 204 
+#restricted 209
+#restricted 215
+#restricted 216
+#restricted 218
+#restricted 221 -- Kingdom of Corwell
+#restricted 227 -- Dwarves of Deep Shanatar
+#restricted 229 -- Dwarves of Old Bhaerynden
+#restricted 236 -- Tel'Quessir
+#restricted 237 -- Dalalands
+#end
 
-#addreccom 426 	-- Scout
-#addreccom 2113 -- Sergeant-at-arms
-#addreccom 46 -- mounted commander
-#addreccom 6938 -- Wildshape Druid
+---------------------------- DEVILS
 
-#defcom1 2113 -- Sergeant-at-arms
-#defcom2 46   -- mounted commander
-#defunit1 61 -- Folkspear
-#defunit1b 2455 -- Longbowman
-#defunit2 24 -- light cav
-#defmult1 20 	
-#defmult1b 20 
-#defmult2 10
+-- Lemures
+#newspell 
+#name "Bind Lemures"
+#descr "Lemures are mindless slaves of the baatezu. They are so useless any mage would only summon them in battle."
+#school 6
+#researchlevel 2
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 1
+#damage 7104
+#nreff 1000 --1 + 1 per extra level
+#fatiguecost 50
+#end
 
----------- DEFENCES
-#guardcom 46 
-#guardunit 63
-#guardmult 15
-#wallcom 2113 -- Sergeant-at-arms
-#wallunit 2455 -- Longbowman
-#wallmult 20 	
+-- Nupperibo
+#newspell 
+#name "Bind Nupperibos"
+#descr "Nuperibos are wretched devils forming the lowest rank of the infernal hierarchy."
+#school 6
+#researchlevel 2
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10001
+#damage 7105
+#nreff 1003 --3 + 1 per extra level
+#fatiguecost 300
+#end
 
----------- START SITES
+-- Barbazu
+#newspell 
+#name "Bind Barbazu"
+#descr "Barbazu are the shock troops of the infernal legions."
+#school 6
+#researchlevel 3
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10001
+#damage 7106
+#nreff 1001 --1 + 1 per extra level
+#fatiguecost 400
+#end
 
-#startsite "Castle Callidyrr"
-#startsite "Guild of Heroes"
-#startsite "Emerald Grove"
-#startsite "Mist Covered Highlands"
-
+-- Lance of Barbazu
+#newspell 
+#name "Bind a Lance of Barbazuu"
+#descr "Barbazu are the shock troops of the infernal legions. This spell will summon 10 Barbazuu"
+#school 6
+#researchlevel 5
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10001
+#damage 7106
+#nreff 10
+#fatiguecost 2000
 #end
 
 
---------------------------------------------------------------------------
------------------Menzoberranzan---------------------------------------
---------------------------------------------------------------------------
-
-#selectnation 222
-#era 2
-#name "Menzoberranzan"
-#epithet "Realm of the Spider Queen"
-#brief "Menzoberranzan, the City of Spiders, was a large underground drow city-state in the Upper Northdark. Menzoberranzan was possibly the most well known drow city in Faerûn. Located in the Upper Northdark, about 2 miles below the Surbrin Valley. It was quite close to Mithral Hall and was connected through tunnels to that and many other locations."
-
-#descr "Menzoberranzan was located in a huge arrowhead-shaped cavern, some two miles wide and a thousand feet high. The city was mainly carved from calcite and it was filled with blue, green, and violet faerie fire. Buildings were often covered with the city's main motif: the spider, in honor of Lolth. A powerful priestess named Menzoberra led seven drow families at Lolth's request into the Northdark in -3917 DR from the southerly drow holdings of Great Bhaerynden. Their goal was to escape from the constant warring between factions who venerated Lolth and those that worshiped Ghaunadaur, The Lord of Slimes. 
-
-The original seven drow families, having no immediate external enemy, fell to attacking and undermining one another——exactly what they had hoped to escape—to the greater glory of their evil goddess, who loved such chaos. The result was an exodus of the losing noble families from the city and the spreading of dark elves across the Northdark. 
-
-The city had many different factions, or Houses, all of which vied for power. As it was a matriarchal society, however, only females truly held power. Officially, the city was under the rule of the Ruling Council of Eight, composed of the eight matron mothers of the first (and most powerful) eight houses. For many centuries—as long as any living drow could remember—it was under the indirect rule of House Baenre, which had ruled for centuries uncontested.
-
-The worship of any other deity but Lolth was forbidden, though a few secret cults to Vhaeraun persisted.
-
-The city is split into four provices. You'll need to unify all of Menzoberranzan to stand a chance against your many enemies nearby, which include the brutish orcs of the Frozen Spine, the Duergar of Gracklstugh who have not yet learned their place, and the Dwarves of the Silver Marches, intent to reclaim the Northkingdom's former glory. Undrek'Thoz in the far-away Earthroot beneath Thay is also loyal to the Spider Queen."  
-#summary "You have powerful priestesses and capable mages, tough mounted troops and sacred commanders. Perhaps deadliest will be your crusading Handmaidens of the Spider Queen - crusaders to inspire your armies to glory in the name of the Queen of the Demonweb Pits."  
-#flag "ForgottenRealms/flag_menzoberranzan.tga"
-#templepic 30 -- Forest Gate
-#fortera 2 -- Castle standard era 2
-#homefort 2 -- Fortress (needing upgrade)
-#buildfort 3
-#builduwfort 6
-#labcost 300
-#templecost 300
-#color 0.65 0.75 0.80
-
-
-#addgod 7171 -- Lolth -- PRETENDER
-#cheapgod40 7171 -- Lolth -- PRETENDER
-
-
-#startcom 6771 -- Drow Priestess
-#startunittype1 6774 -- Drow Hunter 
-#startunitnbrs1 20
-
-#startscout 7275 -- Drow Mage Apprentice
-
-#addrecunit 7234 -- Drow Sargtlin
-#addrecunit 6774 -- Drow Hunter 
-#addrecunit 7270 -- Drow Lizardrider
-
-#addreccom 6725 -- Drow Assassin
-#addreccom 7317 -- Drow Commander
-#addreccom 7274 -- Drow Streakhmaster
-#addreccom 7169 -- Soul Spider
-#addreccom 7275 -- Drow Mage Apprentice
-#addreccom 7515 -- Adept of Lolth
-#addreccom 6771 -- Priestess of Lolth
-#addreccom 7167 -- Drow Arch Mage 
-
-#caverec 7234 -- Drow Sargtlin
-#cavecom 7317 -- Drow Commander
-
-#defcom1 7169 -- Soul Spider
-#defcom2 7274 -- Drow Streakhmaster
-#defunit1 7234 -- Drow Sargtlin
-#defmult1 20
-#defunit1b 6774 -- Drow Hunter 
-#defmult1b 10
-#defunit2 7270 -- Drow Lizardrider
-#defmult2 10
-
----------- DEFENCES
-#guardcom 7169 -- Soul Spider
-#guardunit 7234 -- Drow Sargtlin
-#guardmult 15
-#wallcom 6771 -- Drow Priestess
-#wallunit 6774 -- Drow Hunter 
-#wallmult 20 	
-
----------- START SITES
-
-#startsite "Arach-Tinilith"
-#startsite "Melee-Magthere"
-#startsite "Sorcere"
-
+--Spinagon
+#newspell 
+#name "Cloud of Spinagons"
+#descr "Spinagons are flying devils used to support aerial assaults and harass their enemy. This spell summons 20 spine devils and binds them to your cause."
+#school 6
+#researchlevel 3
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10001
+#damage 7114
+#nreff 20 
+#fatiguecost 1200
 #end
 
 
---------------------------------------------------------------------------
-------------------------Serpentes-----------------------------------------
---------------------------------------------------------------------------
+-- Pride of Hell Cats
+#newspell 
+#name "Bind a Pride of Hell Cats"
+#descr "Hell cats are deadly predators invisible in light. This spell binds 6 Hell Cats."
+#school 6
+#researchlevel 6
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10001
+#damage 7108
+#nreff 6
+#fatiguecost 2000
+#end
 
-#selectnation 223
-#era 2
-#name "Serpentes"
-#epithet "Vrael Olo of the Yuan-ti"
-#brief "The ancient Sarrukh empire of Mhairshaulk once held dominion across all of Faerun. Their breeding experiments led to many of the beings we know today - troglodytes, lizardfolk, and their vrael olo - their favored ones - the corrupt and degenerate Yuan-ti."
+-- Hell Cats
+#newspell 
+#name "Hellish Predator"
+#descr "Hell cats are deadly predators invisible in light."
+#school 6
+#researchlevel 4
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10001
+#damage 7108
+#nreff 1
+#fatiguecost 400
+#end
 
-#descr "Long before humankind dominated the continent of Faerûn, the Creator Races ruled Toril. The reptilian Creator Race - the Sarrukh - were foremost amongst them. They built vast empires that stretched across Faerun and the throughout the planes. Their reign lasted more than 30,000 years. 
-
-The Sarrukh eventually fell from power around the time of the collapse of the human empire of Netheril as their deity, Sseth, sank into somnolence. The Sarrukh, long suffering from endless war throughout the planes, sunk also into hibernation deep in their ruins. Their children, the Yuan-ti, assumed their creators' mantle, but with Sseth not answering prayers, they sought aid from other gods. Some bargained with the Mulhorandi deity Set, some with Moander, and others with the maddening denizens of the demonic Abyss.
-
-Merrshaulk was the name given to Sseth's physical manifestation, which could still be called upon, even if Sseth did not answer prayers. Summoning this aspect became the central goal of Yuan-ti worship. 
-
-Whenever possible, yuan-ti choose manipulation over open confrontation, the whisper over the fang. Followers of the Sacred Way of Sseth know their foes, think ahead, and plan forward. Counting decades as mere days, they play the long game. Yuan-ti culture centers around its temples, its breeding experiments, and its bloody sacrifices. Their lairs, hidden deep in ancient ruins within the underdark, are impenetrable."  
-
-#summary "The Yuan-ti are exceptionally powerful mages. Lizardfolk, kobolds, and troglodytes make squishy but numerous troops capable of operating both on the surface as well as underwater and within the underdark. Your location within the Serpent Deeps of the Mhair Jungles puts you in a secluded and safe position with ready access to the Shining Sea."  
-#flag "ForgottenRealms/flag_yuanti.tga"
-#templepic 16 -- south indian
-#fortera 2 -- Castle standard era 2
-#homefort 2 -- Fortress (needing upgrade)
-#idealcold -2
-#likesterr 32
-#cavenation 1
-#buildfort 2
-#uwbuild 1
-#builduwfort 6
-#fortcost 300
-#labcost 900
-#templecost 900
-#cavelabcost 500
-#cavetemplecost 300
-#swamplabcost 500
-#swamptemplecost 400
-
-#color 0.05 0.75 0.10
-
-#addgod 7178 -- Merrshaulk
-#addgod 8049 -- Demogorgon
-#cheapgod40 7178 -- Merrshaulk
+------------------ Devil Commanders
 
 
-#addgod 5035 -- Moander -- PRETENDER
-#addgod 5010 -- Malar
-#addgod 5031 -- Orcus
+-- Erinyes
+#newspell 
+#name "Summon an Erinye Seductress"
+#descr "Erinyes are beautiful yet wrathful bringers of infernal justice, widely feared among lesser devils across the Nine Hells."
+#school 6
+#researchlevel 3
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10021
+#damage 7109
+#nreff 1
+#fatiguecost 2800
+#end
 
-
-#startcom 6831 -- Yuan-ti Abomination
-#startunittype1 6727	-- Lizard folk
-#startunitnbrs1 20
-
-#startscout 6832 -- Yuan-ti Mageslayer
-
-#caverec 7360 -- Kobold Slinger
-#caverec 7359 -- Kobold Spear
-#cavecom 7362 -- Kobold Sorcerer
-#cavecom 7361 -- Kobold Chieftain
-
-#addrecunit 6727 -- Lizard folk
-#addrecunit 6677 -- Troglodyte Raider
-#addrecunit 783 -- Serpent Dancer
-#addrecunit 6830 -- Yuan-ti Temple Guardian
-
-#uwrec 7142 -- Sahuagin Hunter
-#uwrec 7150 -- Sea Serpent
-#uwcom 7143 -- Sahuagin Raidmaster
-
---#caverec 3657 -- Serpent of the Deeps
-
-#swamprec 6828 Chultan Raptor
--- #swamprec -- 6827 Chultan Frogg
-
-#addreccom 2891 -- trog warchief
-#addreccom 7406 -- Lizard Man Chieftain
-#addreccom 6734 -- Lizardman shaman
-#addreccom 6832 -- Yuan-ti Mageslayer
-#addreccom 2749 -- Troglodyte Druhyidd
-#addreccom 6829 -- Yuan-ti Malison
-#addreccom 7357 -- Dark Naga -- RECRUITABLE
-#addreccom 7358 -- Water Naga -- RECRUITABLE
-#addreccom 6832 -- Yuan-ti Mageslayer
--- #addreccom 7356 -- Spirit Naga -- RECRUITABLE
-#addreccom 6831 -- Yuan-ti Abomination
---#addreccom 7177 -- Sarrukh
-
-
-#defcom1 2891 -- trog warchief
-#defcom2 6832 -- Yuan-ti Mageslayer
-#defunit1 6677 -- Troglodyte Raider 
-#defmult1 20
-#defunit1b 783 -- Serpent Dancer
-#defmult1b 10
-#defunit2 6830 -- Yuan-ti Temple Guardian
-#defmult2 5
-
----------- DEFENCES
-
-#uwdefcom1 7143 -- Sahuagin Raidmaster
-#uwdefcom2 6734 -- Lizardman shaman
-#uwdefunit1 7142 -- Sahuagin Hunter
-#uwdefmult1 20
-#uwdefunit1b 7150 -- Sea Serpent
-#uwdefmult1b 2
-#uwdefunit2 783 -- Serpent Dancer
-#uwdefmult2 12
-
-#guardcom 2891
-#guardunit 6677
-#guardmult 15
-#wallcom 6734
-#wallunit 6727
-#wallmult 20 	
-
-#uwguardcom 7143 -- Sahuagin Raidmaster
-#uwguardunit 7142 -- Sahuagin Hunter
-#uwguardmult 20
-#uwwallunit 6727 -- Lizard folk
-#uwwallmult 20
-#uwwallcom 6734 -- Lizardman shaman
----------- START SITES
-#startsite "Sarrukh Ruin"
-#startsite "Skin Shifter's Barrow"
-#startsite "Flowering Bog"
-#startsite "The Shrouded Lands"
+7509 -- Contract Devil
+#newspell 
+#name "Summon a Contract Devil"
+#descr "Contract Devils draw gold and resources to your cause in exchange for ongoing souls. They will consume 2 blood slaves each month in exchange for 50 gold and 25 resources."
+--#school 6
+#school -1 -- disabled for now
+#researchlevel 3
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10021
+#damage 7509 -- Contract Devil
+#nreff 1
+#fatiguecost 3000
 #end
 
 
-#selectnation 224
-#era 2
-#name "Sloopdilmonpolop"
-#epithet "Free Cities of the Kuo-Toa"
-#brief "Sloopdilmonpolop, the City of Pools, was a city of the kuo-toa in the middle Old Shanatar domain of the Underdark."
+-- Kytons
+#newspell 
+#name "Bind Kyton"
+#descr "Kytons use chains both as protection and ways of inflicting pain."
+#school 6
+#researchlevel 2
+#path 0 8 --B
+#path 1 0 --F
+#pathlevel 0 2
+#pathlevel 1 1
+#effect 10021
+#damage 7107
+#nreff 1
+#fatiguecost 2000
+#end
 
-#descr "Kuo-toa societies were oppressive feudal theocracies and their priests exercised complete control over the citizens' lives. Common kuo-toa performed menial labor, such as fishing, farming, or guard duty, although without supervision by a whip or monitor they would normally flee dangerous combat situations. 
-
-The ruling archpriests of a kuo-toa community decided which gods the lower kuo-toa had to exclusively worship. Some of these deities were imagined by the priests themselves. In addition to Blibdoolpoolp and Dagon, the Kuo-toa were also known to revere krakens, aboleths, morkoths, and other eldritch horrors, with their madness having blinded them to their manipulation by said entities. Some tribes followed more conventionally divine entities, including the slimy and eldritch Moander, tyrannical Bane, or the mistress of darkness, Shar. 
-
-Circa −3000 DR, Sloopdilmonpolop was founded by Sloopdilmonpol, a great kuo-toa prophet, as a temple-city in the Underdark off the coast of Tethyr. Eventually the temple grew into a theocratic city-state, with priest-king rulers.
-
-After an increasing number of expansionist raids by the city's denizens, the dwarves of Sondarr and Xothaerin dispatched scouts who eventually discovered the City of Pools. This touched off a centuries-long war of mutual extinction, known as the Axe and Fin Wars. The city was never taken. It has since become a somewhat welcoming trade hub within the underdark, though illithids are never welcome. 
-
-Sloopdilmonpolop was recently flooded by kuo-toan, morkoth, and demon ray refugees fleeing the Abolethic Sovereignty within the Glimmersea. This has only added to its position as a power within the middledark that even the drow of nearby Guallidurth have come to respect."
-#summary "Sloopdilmonpolop is in a great location for expansion with few underwater competitors nearby. They have cheap sacred troops and solid priest-mages to bless them. Morkoths, Krakens and Demon Rays join an expanded roster and geographical landbase throughout the Underdark. Press 'n' to ensure you're managing all your holdings."
-#flag "ForgottenRealms/flag_kuotoa.tga"
-#templepic 1 -- under water
-#fortera 2 -- Castle standard era 2
-#homefort 7 -- UW Castle 
-#uwnation
-#cavenation  1
-#uwbuild 1
-#builduwfort 5
-#buildfort 1
-#fortcost -50
-#bloodnation 
-
-#color 0.27 0.40 0.47
-
-#addgod 8001 -- BANE
-#addgod 5021 -- Shar 3
-#addgod 5032 -- Blibdoolpoolp -- PRETENDER
-#addgod 8053 -- Primordial Father -- Dagon Pretender
-#addgod 8049 -- Demogorgon
-#addgod 5026 -- Umberlee 2
-
-
-
-#cheapgod40 5032 -- Blibdoolpoolp -- PRETENDER
-#cheapgod20 8053 -- Primordial Father -- Dagon Pretender
-#cheapgod20 8049 -- Demogorgon
-
-#startcom 7155 -- Kuo-Toan Monitor - COMMANDER
-#startunittype1 7156 -- Kuo-Toan Harpooner - UNIT
-#startunitnbrs1 20
-
-#startscout 7144 -- Kuo-Toa Whip
-
-#addrecunit 7179 -- Kuo-toan Gogglers
-#addrecunit 7180 -- Kuo-toan Guards
-#addrecunit 7156 -- Kuo-Toan Harpooner - UNIT
-#addrecunit 7157 -- Kuo-Toan Cutter - UNIT
-#addrecunit 7153 -- Kuo-Toan Pincer - UNIT
-#addrecunit 7158 -- Kuo-Toan Gulper
-
-#addreccom 7155 -- Kuo-Toan Monitor 
-#addreccom 7144 -- Kuo-Toa Whip
-#addreccom 7154 -- Kuo-Toan Lash
-#addreccom 7152 -- Kuo-Toa Inquisitor
-#addreccom 7145 -- Kuo-Toa Arch Priest
-
-#caverec 7179 -- Kuo-toan Gogglers
-#caverec 7180 -- Kuo-toan Guards
-#caverec 7156 -- Kuo-Toan Harpooner - UNIT
-#caverec 7153 -- Kuo-Toan Pincer - UNIT
-#caverec 7373 -- Chuul
-#cavecom 7144 -- Kuo-Toa Whip
-#cavecom 7154 -- Kuo-Toan Lash
-
-#caverec 7598 -- Morkoth
-#cavefortrec 7599 -- Morkoth Warrior
-#cavefortcom 7155 -- Kuo-Toan Monitor 
-#cavefortcom 7144 -- Kuo-Toa Whip
-#cavefortcom 7154 -- Kuo-Toan Lash
-#cavefortcom 7152 -- Kuo-Toa Inquisitor
-#cavefortcom 7600 -- Morkoth Mage
-#cavefortcom 7601 -- Morkoth Arcount
-
-#cavecom 7307 -- Juvenile Kraken
-
-#searec 7565 -- Demon Ray
-#seacom 7563 -- Demon Ray Vampire
-#seacom 7570 -- Demon Ray Zealot
-
-#uwdefcom1 7155 -- Kuo-Toan Monitor - COMMANDER
-#uwdefcom2 7152 -- Kuo-Toan Inquisitor
-#uwdefunit1 7156 -- Kuo-Toan Harpooner - UNIT
-#uwdefmult1 20
-#uwdefunit1b 7157 -- Kuo-Toan Cutter - UNIT
-#uwdefmult1b 2
-#uwdefunit2 7153 -- Kuo-Toan Pincer - UNIT
-#uwdefmult2 2
-
-#defcom1 7155 -- Kuo-Toan Monitor - COMMANDER
-#defcom2 7152 -- Kuo-Toan Inquisitor
-#defunit1 7156 -- Kuo-Toan Harpooner - UNIT
-#defmult1 20
-#defunit1b 7157 -- Kuo-Toan Cutter - UNIT
-#defmult1b 12
-#defunit2 7153 -- Kuo-Toan Pincer - UNIT
-#defmult2 12
-
----------- DEFENCES
-#guardcom 7144 -- Kuo-Toa Whip
-#guardunit 7156 -- Kuo-Toan Harpooner - UNIT
-#guardmult 20
-#wallcom 7152 -- Kuo-Toan Inquisitor
-#wallunit 7153 -- Kuo-Toan Pincer - UNIT
-#wallmult 14 	
-
-#uwguardcom 7144 -- Kuo-Toa Whip
-#uwguardunit 7156 -- Kuo-Toan Harpooner - UNIT
-#uwguardmult 20
-#uwwallunit 7153 -- Kuo-Toan Pincer - UNIT
-#uwwallmult 14
-#uwwallcom 7152 -- Kuo-Toan Inquisitor
-
----------- START SITES
-#startsite "Sacred Pool of the Sea Mother"
-
+-- Osyluth
+#newspell 
+#name "Bind Osyluth"
+#descr "The Osyluth are inquisitors and priests of Baator."
+#school 6
+#researchlevel 5
+#path 1 0 --F
+#path 0 8 --B
+#pathlevel 1 3
+#pathlevel 0 1
+#effect 10021
+#damage 7110
+#nreff 1
+#fatiguecost 6500
 #end
 
 
+-- hamatula
+#newspell 
+#name "Bind Hamatula"
+#descr "The hamatula are guardians and priests of Baator."
+#school 6
+#researchlevel 6
+#path 1 0 --F
+#path 0 8 --B
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10021
+#damage 7111
+#nreff 1
+#fatiguecost 8000
+#end
 
---------------------------------------------------------------------------
-----------------------225 -- Symphony of Madness -----------------------------------------
---------------------------------------------------------------------------
+-- Cornugon
+#newspell 
+#name "Bind Cornugon"
+#descr "The mage binds to his service a Horned Devil, the elite fighters and generals of the nine hells. Cornugons are exceptional fighters but mediocre mages."
+#school 6
+#researchlevel 7
+#path 1 0 --F
+#path 0 8 --B
+#pathlevel 0 4
+#pathlevel 1 1
+#effect 10021
+#damage 7112
+#nreff 1
+#fatiguecost 10000
+#end
 
-#selectnation 225
-#era 2
-#name "Symphony of Madness"
-#epithet "Aberrations of the Deep"
-#brief "Far below the Sea of Fallen stars lies an ocean in the Lowerdark known as the Glimmersea. Here, in these dread waters, the Aboleths plot their schemes of opening the void gates and spreading their dominion across all of Faerun."
+-- Pit Fiend
+#newspell 
+#name "Bind Pit Fiend"
+#descr "The mage binds to his service a Pit Fiend, the nobility of the nine hells. Pit fiends are powerful mages and exceptional fighters and leaders."
+#school 6
+#researchlevel 9
+#path 1 0 --F
+#path 0 8 --B
+#pathlevel 0 5
+#pathlevel 1 1
+#effect 10021
+#damage 7113
+#nreff 1
+#fatiguecost 16000
+#end
 
-#descr "Like most aberrant creatures, aboleths were originally from the Far Realms. They came to Toril when the world was still young. The ancient obelisk-shaped city of Xxiphu plummeted to the world and settled deep in the earth's crust below what was later known as the Sea of Fallen Stars. Even the Elder Brains of the mind-flayers feared the Aboleths of the Deep.
+---------------------------- GOLEMS
 
-Sometime around 1380 DR, many of the Aboleths began to awaken from their somnolence, lost in the dreams of their ancestors. Some of those who awoke were among the first aboleths to arrive on Faerun. Together, they began to plot the re-ascendence of Xxiphu and called themselves the 'Abolethic Sovereignty.' The aboleths took mental control over humanoids in subtle ways and used them as both spies and sacrificial pawns without arousing suspicions. Many surface nations, sitting just above the surface, were unwittingly ruled by the puppets of the aboleths, living their whole lives none-the-wiser. The rest of the servants of the Sovereignty were aberrant creatures: eel-men, grell, gricks, krakens, cloakers, chuul and others made up their armies, but their most fearsome allies were the beholders, who shared a common, alien origin and goal of total domination through madness. 
+#newspell 
+#name "Craft Homunculus"
+#descr "Craft a clay golem with a shard of the mind of a wizard within to act as a spy or familiar."
+#school 3
+#researchlevel 1
+#path 0 4 
+#pathlevel 0 1
+#effect 10021
+#damage 7058
+#nreff 1
+#fatiguecost 300
+#nocastmindless 1
+#ainocast 1
+#spec 8388608 -- uwok
+#end
 
-While the aboleths venerated Pisaethces, they did not worship her. Instead, their faith spread through their passive psychic emanations and their bizarre inanimate architecture."  
-
-#summary "You reign over the Glimmersea, nearly unchallenged, and have 3 other outposts scattered throughout the underdark. Aboleths can leave the water, but will harden to a stone-like inanimate state, requiring teleportation back to water to restore themselves. Your dying dominion must be spread by aboleth savants and elders."  
-#flag "ForgottenRealms/flag_aboleths.tga"
-#templepic 1 -- under water
-#fortera 3 -- Castle standard era 2
-#homefort 13 -- Great Walled City
-#cavenation 1
-#uwnation
-#uwbuild 1
-#buildfort 3
-#builduwfort 7
-#dyingdom
-#labcost 300
-
-#color 0.02 0.15 0.40
-
-#addgod 7367 -- Pisaethces
-#addgod 7374 -- The Shape of Water
-#addgod 8049 -- Demogorgon
---#addgod 8053 -- Primordial Father -- Dagon Pretender
-
-#cheapgod40 7374 -- The Shape of Water
-#cheapgod40 7367 -- Pisaethces
-
-#startcom 7366 -- The Eldest
-#startunittype1 7383 -- Anguillian
-#startunitnbrs1 30
-#startunittype2 7375 -- Skum
-#startunitnbrs2 8
-
-#startscout 7363 -- Aboleth Broodling
-
-#addrecunit 7383 -- Anguillian
-#addrecunit 7376 -- Grick
-#addrecunit 7373 -- Chuul
-#addrecunit 7307 -- Kraken
-
-#landrec 7386 -- Darkmantle
-#landrec 7381 -- Nothic Gazer
-#landrec 7376 -- Grick
-#landrec 7378 -- Grell Soldier
-#landrec 7161 -- Cloaker
-#landrec 7391 -- Gazer
-#landrec 7392 -- Spectator
-
-#addreccom 7384 -- Anguillian Chieftain
-#addreccom 102 -- Initiate of the Deep
-#addreccom 7308 -- Kraken Lord
-#addreccom 7363 -- Aboleth Broodling
-#addreccom 7364 -- Aboleth Savant
-#addreccom 7365 -- Aboleth Sovereign
-
-#landcom 7379 -- Grell Philosopher
-#landcom 7160 -- Cloaker Lord
-#landcom 7380 -- Grell Patriarch
-#landcom 7068 -- Beholder
---#landcom 7390 -- Death Tyrant
-#landcom 7389 -- Beholder Mage
-#landcom 7388 -- Hive Mother
-
-#caverec 7383 -- Anguillian
-#caverec 7376 -- Grick
-#caverec 7081 -- Otyugh
-#caverec 7378 -- Grell Soldier
-#caverec 7561 -- Deep Vodyanoi
-#caverec 7166 -- Hook Horror 
-#caverec 7391 -- Gazer
-
-#cavecom 7385 -- Darkmantle Enveloper
-#cavecom 7380 -- Grell Patriarch
-#cavecom 7068 -- Beholder
-#cavecom 7384 -- Anguillian Chieftain
-#cavecom 102 -- Initiate of the Deep
-
-
-#defcom1 7379 -- Grell Philosopher
-#defcom2 7068 -- Beholder
-#defunit1 7381 -- Nothic Gazer
-#defmult1 20
-#defunit1b 7166 -- Hook Horror 
-#defmult1b 8
-#defunit2 7391 -- Gazer
-#defmult2 8
-
-#uwdefcom1 7384 -- Anguillian Chieftain
-#uwdefcom2 102 -- Initiate of the Deep
-#uwdefunit1 7383 -- Anguillian
-#uwdefmult1 20
-#uwdefunit1b 7376 -- Grick
-#uwdefmult1b 20
-#uwdefunit2 7373 -- Chuul
-#uwdefmult2 10
-
----------- DEFENCES
-#guardcom 7379 -- Grell Philosopher
-#guardunit 7378 -- Grell Soldier
-#guardmult 20
-
-#wallcom 7068 -- Beholder
-#wallunit 7381 -- Nothic Gazer
-#wallmult 20 	
-
-#uwwallunit 7376 -- Grick
-#uwwallmult 20
-#uwwallcom 102 -- Initiate of the Deep
-
----------- START SITES
-#startsite "Remnants of Xxiphu"
-#startsite "The Sunless Sea"
-#startsite "Dream Collection"
-#startsite "The Sunken City"
-
+#newspell 
+#name "Craft Clay Golem"
+#descr "Clay golems were human-shaped constructs modeled out of clay that were usually divinely infused with a spirit from the Elemental Plane of Earth by wizards or priests. They are highly magic resistant, but not as tough as stone or iron golems." 
+#school 3
+#researchlevel 3
+#path 0 3
+#pathlevel 0 3
+#effect 10001
+#damage 7080 -- Clay Golem
+#nreff 1
+#fatiguecost 900
 #end
 
 
-
---------------------------------------------------------------------------
-------------------------Oryndoll - Mindflayer Realm-----------------------
---------------------------------------------------------------------------
-
-
-#selectnation 226
-#era 2
-#name "Oryndoll"
-#epithet "Illithid City of Loretakers"
-#brief "Oryndoll, the City of Loretakers, was a large underground mind flayer citystate in the Lowerdark of the Darklands. Oryndoll was one of the earliest illithid cities on Toril and was highly famed for its inhabitants rampant collection of exclusive knowledge. Its wealth of knowledge rivaled even Candlekeep's great library. "
-
-#descr "The mere mention of Oryndoll struck fear into most Underdark denizens of southwestern Faerûn not only due to it being an illithid city, but also because it was a holy site of the deity Ilsensine - the god brain. The city was difficult to reach from other places in the Underdark because of its depth, and the mindflayers carefully guarded these secret passages.
-
-In 1358 DR, during the Time of Troubles, Ilsensine adopted as its avatar the elder brain in Oryndoll, stimulating illithid society. The illithids created new technologies, new psionic items, and more psionic disciplines, as well as renewed their assaults on surface lore holdings. 
-
-Oryndoll's main united purpose was to acquire knowledge no matter how trivial, through stripping it from the thrall races. The end goal of this was to reduce the rest of Toril to barbarism."  
-
-#summary "You have a relatively unchallenged reign on the Glimmersea and access to the surface's Sea of Fallen Stars. The challenge will be breaking out in a meaningful way. Your options on land are limited to kuo-toan devotees, cloaker thralls, and whatever horrifying creatures you can recruit from the depths of the underdark."  
-
-#flag "ForgottenRealms/flag_oryndoll.tga"
-#templepic 16 -- south indian
-#fortera 2 -- Castle standard era 2
-#homefort 2 -- Fortress (needing upgrade)
-#cavenation  1
-#uwbuild 1
-#buildfort 2
-#builduwfort 5
-
-#color 0.02 0.15 0.40
-
-#addgod 5048 -- Elder Brain
-#cheapgod40 5048 -- Elder Brain
-
-
-#startcom 5115 -- Ulitharid -- RECRUITABLE
-#startunittype1 7209 -- Intellect Devourers
-#startunitnbrs1 10
-
-#startscout 5116 -- Lesser Illithid
-
-#addrecunit 7386 -- Darkmantle
-#addrecunit 7209 -- Intellect Devourer
-#addrecunit 7081 -- Otyugh
-#addrecunit 7161 -- Cloaker
-#addrecunit 7165 -- Umber Hulks
-
-#addreccom 7385 -- Darkmantle Enveloper
-#addreccom 8007 -- Intellect Devourer Scout
-#addreccom 5116 -- Lesser Illithid
-#addreccom 8013 -- Illithid Corruptor
-#addreccom 5113 -- Illithid -- RECRUITABLE
-#addreccom 5115 -- Ulitharid -- RECRUITABLE
-#addreccom 7160 -- Cloaker Lord
-
-#caverec 7209 -- Intellect Devourer
-#caverec 6807 -- Goblin deadeye
-#caverec 6723 -- Goblin dogslicer
-#caverec 7162 -- Quaggoth Hunter
-#caverec 7180 -- Kuo-toan Guards
-#caverec 6677 -- Troglodyte Raider
-#caverec 7210 -- Ogre
-#caverec 7166 -- Hook Horror 
-
-#cavecom 8007 -- Intellect Devourer Scout
-#cavecom 6770 -- Goblin King
-#cavecom 6733 -- Goblin Lab-Rats
-#cavecom 7163 -- Quaggoth Jald
-#cavecom 7164 -- Quaggoth Thonot Shaman
-#cavecom 7155 -- Kuo-Toan Monitor
-#cavecom 7154 -- Kuo-Toan Lash
-#cavecom 2749 -- Troglodyte Druhyidd
-
-#uwrec 7180 -- Kuo-toan Guards
-#uwrec 7081 -- Otyugh
-#uwrec 7599 -- Morkoth Warrior
-#uwrec 7566 -- Merrow Behemoth
-#uwcom 7155 -- Kuo-Toan Monitor
-#uwcom 7154 -- Kuo-Toan Lash
-#uwcom 7600 -- Morkoth Mage
-#uwcom 7601 -- Morkoth Arcount
-#uwcom 5116 -- Lesser Illithid
-#uwcom 5113 -- Illithid -- RECRUITABLE
-#uwcom 2749 -- Troglodyte Druhyidd
-
----------- DEFENCES
-#defcom1 5116 -- Lesser Illithid
-#defcom2 5113 -- Illithid -- RECRUITABLE
-#defunit1 6723 -- Goblin Dogslicers
-#defmult1 20
-#defunit1b 6807 -- Goblin Deadeye
-#defmult1b 10
-#defunit2 6676	-- Orc Marauders 
-#defmult2 20
-
-
-#guardcom 5113 -- Illithid -- RECRUITABLE
-#guardunit 6723 -- Goblin Dogslicers
-#guardmult 15
-#wallcom 5113 -- Illithid -- RECRUITABLE
-#wallunit 6807 -- Goblin Deadeye
-#wallmult 20 	
-
-
-
--- UW PROVINCE DEFENCE
-#uwdefcom1 5113 -- Illithid -- RECRUITABLE
-#uwdefcom2 7600 -- Morkoth Mage
-#uwdefunit1 7180 -- Kuo-toan Guards
-#uwdefmult1 20
-#uwdefunit1b 7081 -- Otyugh
-#uwdefmult1b 10
-#uwdefunit2 7599 -- Morkoth Warrior
-#uwdefmult2 20
-
---UW WALL DEFENCE
-#uwguardcom 5113 -- Illithid -- RECRUITABLE
-#uwguardunit 7566 -- Merrow Behemoth
-#uwguardmult 20
-#uwwallcom 5113 -- Illithid -- RECRUITABLE
-#uwwallunit 6727 -- Lizard folk
-#uwwallmult 16
-
-
----------- START SITES
-#startsite "Thrall Caverns of Oryndoll"
-#startsite "Ring Caverns of Oryndoll"
-#startsite "Undervaults of Ilsensine"
-
+#newspell 
+#name "Craft Stone Golem"
+#descr "Stone Golems are among the most common. Highly resistant to slashing and piercing weapons, as well as nearly immune to magic, they make formidable defensive allies." 
+#school 3
+#researchlevel 4
+#path 0 3 
+#pathlevel 0 3
+#effect 10001
+#damage 7079 -- Stone Golem
+#nreff 1
+#fatiguecost 1500
+#spec 8388608 -- uwok
 #end
 
-
-------------------------------------------------------------------------------------
-------------------------Shanatar - Last of the Mithral Kings -----------------------
-------------------------------------------------------------------------------------
-
-
-#selectnation 227
-#era 2
-#name "Deep Shanatar"
-#epithet "Last of the Mithral Kings"
-#brief "Deep Shanatar was once a great underground realm of the mountain dwarves. It first came into being around −10,800 DR when a great migration from Bhaerynden arrived at the massive cavern complex beneath Tethyr, Amn, and Calimshan. While plagued by internal strife and external threats, it lasted more than 10,000 years." 
-
-#descr "Sometime around −11,000 DR, Taark Shanat, a dwarven crusader, led a westbound mass exodus from the dwarven realm of Great Bhaerynden. This enormous migration eventually reached the Rift of Dhalnadar, where the dwarves encountered the cloakers and their dragon masters of Rringlor Noroth. A great conflict ensued, known as the Cloaker Wars. The dwarves eventually drove the cloakers back, while Taark Shanat and his eight sons personally killed the four great blue wyrms that had claimed the Rift as their own domain. The dragons' lair, a large, open-ended cavern overlooking Dhalnadar and all of Shanatar, was named Brightaxe Hall and became the seat of Taark Shanat's new kingdom, which he named Alatorin. The Wyrmskull Throne was fashioned from the skulls of the slain dragons and Taark Shanat's eight sons each went on to found their own, separate sub-kingdoms within Deep Shanatar. 
-
-The realm underwent at least three great golden ages, surviving many internal wars and repelling countless invasions by drow, orcs, goblins and men. But it was not to last. An alliance of Drow, Cloakers, and the dwarves' mind-flayer-twisted brethren, the Duergar, destroyed Brightaxe Hall in the Third Spider-War and while the sub-kingdoms clung on to survival for a time, the region eventually fell into ruin and the majority of dwarves not killed or enslaved, fled north to Mithril Hall and the Northkingdom or else scattered among the surface realms. The last remaining home of the proud mountain dwarves is the city-state of Iltkazar.
-
-Iltkazar has proven itself strong and resourceful as the last holdout of the once-great dwarven empire. More isolationist than their northern cousins, and more subtle than their kin to the south, Iltkazar stands as the last of the Mithril Kingdoms within the underdark."  
-
-#summary "There are very few dwarves left in the realm of Shanatar and your position at a great crossroads of the underdark means you will likely face strong challengers. Luckily, you have time to prepare. The ruins of many great keeps lie to your north. Special sites abound there if you can take them. You have excellent and heavily armed soldiers at game start, and supporting troops from afar to help your ambitious goals. Note your lack of foreign recruitment."  
-#flag "ForgottenRealms/flag_shanatar.tga"
-#templepic 4 -- mountain castle
-#fortera 4 -- Castle standard era 3
-#homefort 3 -- Citadel -- needing upgrade
-#cavenation  1
-#buildfort 4
-#noforeignrec
-
-#color 0.62 0.72 0.90
-
-#addgod 7198 -- Statue of Dumathoin
-#addgod 7199 -- Statue of Barronar
-#addgod 7200 -- Statue of MORADIN
-
-#cheapgod40 7199 -- Statue of Barronar
-
-
-#startcom 7189 -- Dwarven Thane
-#startunittype1 7009 -- DWARVEN HAMMERS
-#startunittype2 7010 -- DWARVEN Crossbowman
-#startunitnbrs1 25
-#startunitnbrs2 10
-
-#startscout 7182 -- Dwarven Cave Stalker
-
-#addrecunit 7009 -- DWARVEN HAMMERS
-#addrecunit 7010 -- DWARVEN Crossbowman
-#addrecunit 7186 -- Dwarven Shieldsman
-#addrecunit 6874 -- Dwarven Miner
-#addrecunit 7231 -- Dwarven Battlerager (Mounted on a boar)
-#addrecunit 7185 -- Dwarven Defender
-
-#addreccom 7182 -- Dwarven Cave Stalker
-#addreccom 7183 -- Dwarven Battlesmith
-#addreccom 7187 -- Dwarven Gatekeeper
-#addreccom 7030 -- Dwarven Lord
-
-#addreccom 7191 -- Justice of Dumathoin
-#addreccom 7195 -- Dwarven Ollam
-#addreccom 7192 -- Deathchanter
-#addreccom 6616	-- Cleric of Moradin
-#addreccom 7194 -- Dwarven Runesmith
-
-
-#defcom1 7187 -- Dwarven Gatekeeper
-#defcom2 7030 -- Dwarven Lord
-#defunit1 7009 -- DWARVEN HAMMERS
-#defmult1 20
-#defunit1b 7010 -- DWARVEN Crossbowman
-#defmult1b 10
-#defunit2 7185 -- Dwarven Defender
-#defmult2 12
-
----------- DEFENCES
-#guardcom 7187 -- Dwarven Gatekeeper
-#guardunit 7009 -- DWARVEN HAMMERS
-#guardmult 15
-#wallcom 6616	-- Cleric of Moradin
-#wallunit 7010 -- DWARVEN Crossbowman
-#wallmult 15 	
-
----------- START SITES
-
-#startsite "Mines of Moradin"
-#startsite "Dumathoin's Rest"
-#startsite "Barronar's Breast"
-
+#newspell 
+#name "Craft Iron Golem"
+#descr "Iron Golems are among the most powerful. Highly resistant to all weapons and magic, they make formidable defensive allies." 
+#school 3
+#researchlevel 5
+#path 0 3 
+#pathlevel 0 4
+#effect 10001
+#damage 7077 -- Iron Golem
+#nreff 1
+#fatiguecost 2000
 #end
 
-
---------------- Dwarves of The Rift
-#selectnation 229
-#era 2
-#name "Dwarves of the Rift"
-#epithet "Golden Dwarves of Old Bhaerynden"
-#brief "Bhaerynden was the first great kingdom of the dwarves of Faerûn, centered in the great cavern deep beneath the Shaar. " 
-
-#descr "Founded in -14,000 DR, Bhaerynden was a sprawling, multi-ethnic, dwarven realm that stretched across a vast territory beneath the southern continent. The dwarves of Bhaerynden prospered for milennia, but  endured many schisms and fractures which eventually drove the clans apart and formed new nations and identities. The first of these schisms occurred around −11,000 DR and led to an aggressive westward migration. The descendants of those dwarves would eventually become the shield dwarves and forged the empire of Shanatar. The Derro and Mad Beard Urdunnir also emerged as distinct ethnic groups after splitting from Old Bhaerynden. 
-
-The empire finally fell apart following the Crown Wars , a conflict between the elven nations that lasted more than 5,000 years and led to the descent of the Drow into the Underdark. Seeking a new home, the Drow came upon Bhaerynden and drove the 8 kingdoms of the dwarven empire into exile, collapsing the cavern ceiling down on the old kingdoms and forming the Great Rift above. Some dwarves were captured and enslaved by the illithids and later became the Duergar, others fled far to the frozen north or west to the Chultan peninsula. The few who remained came to be known as the Gold Dwarves, and they struggled for survival by forming ties with the human and halfling inhabitants of the Shining Plains. 
-
-But the drow are their own worst enemies in the end. While the Underdark wars against itself, the Dwarves of the Rift have begun to prosper, bolstered by their impossible determination and a near-impregnable defensive position. Many of the clan leaders feel it is time to strike back and reclaim what once was theirs."  
-
-#summary "You have excellent commanders, priests, and mages but they are resource and gold intensive. Your limited population will hamper your economy. You have no foreign recruits to help you, so manage your forts and plan accordingly. Your first order of business is likely to be unseating Halatha and Murbreistra Starnar, renegade sorceresses from Halruaa with a hidden vampiric secret. They have convinced the ruling families of Earthheart to claim independence from the cities of the Riftbottom and plan to make off with a powerful artifact in the chaos."  
-#flag "ForgottenRealms/flag_bhaerynden.tga"
-#templepic 4 -- mountain castle
-#fortera 3 
-#homefort 4 -- Citadel
-#cavenation 1
-#buildfort 3
-
-#color 0.82 0.15 0.30
-
-#addgod 7198 -- Statue of Dumathoin
-#addgod 7199 -- Statue of Barronar
-#addgod 7200 -- Statue of MORADIN
-
-#cheapgod40 7198 -- Statue of Dumathoin
-
-
-#startcom 7189 -- Dwarven Thane
-#startunittype1 7009 -- DWARVEN HAMMERS
-#startunittype2 7010 -- DWARVEN Crossbowman
-#startunitnbrs1 25
-#startunitnbrs2 10
-
-#startscout 7182 -- Dwarven Cave Stalker
-
-#addrecunit 7009 -- DWARVEN HAMMERS
-#addrecunit 7010 -- DWARVEN Crossbowman
-#addrecunit 7186 -- Dwarven Shieldsman
-#addrecunit 6874 -- Dwarven Miner
-#addrecunit 7648 -- Barronar's Valkyrie
-#addrecunit 7231 -- Dwarven Battlerager (Mounted on a boar)
-#addrecunit 7185 -- Dwarven Defender
-
-#addreccom 7182 -- Dwarven Cave Stalker
-#addreccom 7183 -- Dwarven Battlesmith
-#addreccom 7187 -- Dwarven Gatekeeper
-#addreccom 7030 -- Dwarven Lord
-
-#addreccom 7191 -- Justice of Dumathoin
-#addreccom 7195 -- Dwarven Ollam
-#addreccom 7192 -- Deathchanter
-#addreccom 6616	-- Cleric of Moradin
-#addreccom 7194 -- Dwarven Runesmith
-
-
-#defcom1 7187 -- Dwarven Gatekeeper
-#defcom2 7030 -- Dwarven Lord
-#defunit1 7009 -- DWARVEN HAMMERS
-#defmult1 20
-#defunit1b 7010 -- DWARVEN Crossbowman
-#defmult1b 10
-#defunit2 7185 -- Dwarven Defender
-#defmult2 12
-
----------- DEFENCES
-#guardcom 7187 -- Dwarven Gatekeeper
-#guardunit 7009 -- DWARVEN HAMMERS
-#guardmult 15
-#wallcom 6616	-- Cleric of Moradin
-#wallunit 7010 -- DWARVEN Crossbowman
-#wallmult 15 	
-
----------- START SITES
-
-#startsite "Mines of Moradin"
-#startsite "Dumathoin's Rest"
-#startsite "Barronar's Breast"
-
+#newspell 
+#name "Craft Tomb Tapper"
+#descr "Tomb Tappers were originally created by the Netherese to combat the Phaerimm. These giant constructs are powerful and dangerous, possessing a mind that retains the memories of its creation and the purpose for which it was given life. Unlike other constructs, their minds allow them to operate independently without the direct coordination of their masters." 
+#school 3
+#researchlevel 6
+#path 0 3 
+#path 1 4
+#pathlevel 0 3
+#pathlevel 1 1
+#effect 10021
+#damage 7212 -- Tomb Tapper
+#nreff 1
+#fatiguecost 1500
 #end
 
+---------------- Oozes and Jellies
 
---------------------------------------------------------------------------
------------------Llurth Dreier---------------------------------------
---------------------------------------------------------------------------
+------- Cheaper versions for Llurth Drieir 
 
-#selectnation 230
-#era 2
-#name "Llurth Dreier"
-#epithet "Realm of That Which Lurks"
-#brief "The massive Underdark city of Llurth Dreier lay beneath the Shaar. The lurking avatar of Ghaunadaur has recently be risen by his clergy and this manifestation demands sacrifice. The church of That Which Lurks maintains a presence in many secret places, including the Pit of Ghaunadaur beneath Waterdeep. Consolidate your borders and spread your abberant madness across all of Faerûn."
-
-#descr "Llurth Dreier, known as the Accursed City and the City of Ooze, was a drow city in the Great Bhaerynden domain of the Underdark.  It was home to nearly 60,000 drow and more than 100,000 slaves. There were also uncounted jellies, oozes, and slimes which were revered and cultivated. It was perhaps the most populous drow city in all of Faerûn.
-
-The drow Houses stayed safe inside their black towers, and offered a piffling degree of protection to those who offered them tribute. Their slaves, dwelling in abject misery, were otherwise almost completely ignored, left to fend for themselves and eke out a living. The black towers held some wealth, but all outside was utterly squalid. Unrestrained by any sense of shame or style, the nobles regularly raided the fields of rival Houses to steal food and kidnap people to serve as slaves or sacrifices to Ghaunadaur.
-
-which tended to rear its head in cities marred by unrest where other rival deities, such as Lolth, were less powerful. One example of this was Eryndlyn, which was contested by adherents of the Elder Eye and various Dark Seldarine factions. "  
-
-#summary "In addition to your capital in Bhaerynden, you have far-flung temples beneath Waterdeep, Baldur's Gate, and Thay. These all need reinforcement before they are discovered and rooted out by your rivals. Your income is awful, but you have access to vast numbers of troops which need little upkeep or feeding. Spread your fetid rule across the underdark and cover the thrones of ascension in your ooze. Slime for the slime god!"  
-#flag "ForgottenRealms/flag_llurthdreier.tga"
-#templepic 13 -- eye of the void
-#fortera 2 -- Castle standard era 2
-#homefort 3 
-#buildfort 2
-#builduwfort 6
-#labcost 600
-#templecost 600
-#color 0.65 0.75 0.80
-#aibloodnation
-#sacrificedom
-#aiwaternation
-#cavenation 2
-
-#addgod 7215 -- Ghaunadaur 
--- #addgod 7213 -- Vhaeraun
--- #addgod 7214 -- Kiaransalee
-#cheapgod40 7215 -- Ghaunadaur
-
-
-#startcom 7219 -- Ghaunadan
-#startunittype1 7234 -- Drow Sargtlin
-#startunitnbrs1 20
-#startunittype2 6774 -- Drow Hunter 
-#startunitnbrs2 8
-
-#startscout 6725 -- Drow Assassin
-
-#addrecunit 7334 -- Slithermorph
-
-#addreccom 7324 -- Cultist of Ghaunadaur
-#addreccom 7219 -- Ghaunadan
-
-
-#defcom1 7317 -- Drow Commander
-#defcom2 7274 -- Drow Streakhmaster
-#defunit1 7234 -- Drow Sargtlin
-#defmult1 28
-#defunit1b 7334 -- Slithermorph
-#defmult1b 8
-#defunit2 7270 -- Drow Lizardrider
-#defmult2 10
-
-
----------- DEFENCES
-#guardcom 7274 -- Drow Streakhmaster
-#guardunit 6774 -- Drow Hunter 
-#guardmult 15
-#wallcom 7317 -- Drow Commander
-#wallunit 7234 -- Drow Sargtlin
-#wallmult 20 	
-
----------- START SITES
-#startsite "Great Pit of Ghaunadaur"
-#startsite "Academy of Llurth Dreier"
-#startsite "The Hanging Houses"
+#newspell 
+#name "Grow Gelatinous Cubes for Ghaunadar"
+#descr "Gelatinous Cubes are slow, creeping monstrosities that envelope and consume their prey. Powerful casters will summon additional cubes with each casting."
+#school 6
+#researchlevel 0
+#path 0 8
+#path 1 2
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10001
+#damage 7217 -- Gelatinous Cube
+#nreff 1002
+#fatiguecost 400
+#restricted 230 -- Llurth Dreier
+#spec 8388608 -- uwok
 #end
 
--------------------------------------------------------------
------------------------ Gracklstugh -------------------------
--------------------------------------------------------------
-#selectnation 231
-#era 2
-#name "Gracklstugh"
-#epithet "The City of Blades"
-#brief "The City of Blades, Gracklstugh, was a duergar city on the shores of the Darklake in the Northdark. Located five miles beneath the Evermoors of the Dessarin River valley and the Uthgardt ancestor mound Flintrock, it was roughly 100 miles from Menzoberranzan across the Darklake and below." 
-#descr "Gracklstugh was a cavern city that sloped down on the eastern side to join the Darklake as a subterranean port. The city was lit by the firelight of smelters and foundries mingling among stalagmites. The air smelled acrid and was filled with industrial sounds: fire, steam, and iron ringing. The persistent smog that filled the cavern could cause a persistent and sometimes fatal cough, known as grackle-lung.
+#newspell 
+#name "Grow Ochre Jellies for Ghaunadar"
+#descr "Ochre Jellies are difficult to kill and easy to mass. Espeically for the nation of Llurth Dreier" 
+#school 6
+#researchlevel 2
+#path 0 8 
+#path 1 2 
+#pathlevel 0 1
+#pathlevel 1 2
+#effect 10001
+#damage 7220 -- Ochre Jelly
+#nreff 1006
+#fatiguecost 600
+#restricted 230 -- Llurth Dreier
+#spec 8388608 -- uwok
+#end
 
-It was founded in −3717 DR by duergar escaping the fall of Deep Shanatar and the subsequent enslavement of many gray dwarves in the mindflayer of Oryndoll. In 1372 DR, Deepking Horgar Steelshadow IV used the Silence of Lolth and the disarray of her followers as an excuse to attack the drow city of Menzoberranzan and thus cement his power over his lairds. Under his whip, Horgar led his army to success against the drow at the Pillars of Woe and gained additional allies, including the drow of Chaulssin and the infernal Scourged Legion of Kaanyr Vhok, lord of Hellgate Keep and the ruins of the Shield Dwarven realm of Ammarindar. 
+#newspell 
+#name "Feed a Bloodfire Ooze for Ghaunadar"
+#descr "Bloodfire Oozes are a boiling, sulphuric mass of blood and anguish used to guard temples and laboraties in Thay and other places where morality and decorum have been long abandoned." 
+#school 6
+#researchlevel 3
+#path 0 8 
+#pathlevel 0 3
+#effect 10001
+#damage 7322 -- Unholy Bloodfire Ooze
+#nreff 1001
+#fatiguecost 1200
+#restricted 230 -- Llurth Dreier
+#end
 
-In 1373 DR, the Silence of Lolth ended and Lolth's priestesses regained their powers. Kaanyr Vhok subsequently recalled his forces to Hellgate Keep and the remaining duergar and allied armies were easily defeated and turned back. As the Duergaar army retreated, Horgar was betrayed by his drow allies and killed, leaving the city vulnerable and the throne temporarily vacant. Regardless of their back-footed position, Gracklstugh possesses one of the strongest militaries in all the underdark and understand well their place as a prized ally and vital trade partner."  
+#newspell 
+#name "Grow Black Puddings for Ghaunadar"
+#descr "Black Puddings are mindless oozes capable of enveloping and digesting their prey." 
+#school 6
+#researchlevel 4
+#path 0 8 
+#path 1 2 
+#pathlevel 0 3
+#pathlevel 1 2
+#effect 10001
+#damage 7326 -- Unholy Black Pudding
+#nreff 1004
+#fatiguecost 1200
+#restricted 230 -- Llurth Dreier
+#spec 8388608 -- uwok
+#end
 
-#summary "You have excellent commanders, priests, and mages but they are resource and gold intensive. Your limited population will hamper your economy. You'll have no foreign recruits to help you, but you can take slaves to round out your armies and will find prized magic site recruit options if you can take the Northdark for yourself. Perhaps your greatest asset is your ability to craft magical items of great power, well above the limits of your arcane talents."  
-#flag "ForgottenRealms/flag_gracklstugh.tga"
-#templepic 4 -- mountain castle
-#fortera 3 
-#homefort 4 -- Citadel
-#cavenation  1
-#buildfort 3
+#newspell 
+#name "Grow an Unholy Oblex"
+#descr "Oblexes were mind-eating oozes designed by mind flayers with the purpose to serve as advance scouts to search for prey to feed a colony. Aboleths, mindflayers, and servants of Ghaunadaur also made frequent use of Oblexes." 
+#school 6
+#researchlevel 4
+#path 0 8 
+#pathlevel 0 2
+#effect 10021
+#damage 7323 -- Unholy Oblex
+#nreff 1
+#fatiguecost 800
+#restricted 230 -- Llurth Dreier
+#restricted 226 -- Oryndoll
+#spec 8388608 -- uwok
+#end
 
-#color 0.82 0.15 0.30
+#newspell 
+#name "Bring forth an Elder Black Pudding"
+#descr "Elder Black Puddings are nearly invincible, sacred oozes capable of leading other oozes into battle and enveloping and digesting their prey. Each of their victims is a holy sacrifice to Ghaunadaur." 
+#school 6
+#researchlevel 6
+#path 0 8 
+#path 1 2 
+#pathlevel 0 4
+#pathlevel 1 3
+#effect 10021
+#damage 7327 -- Unholy Elder Black Pudding
+#nreff 1
+#fatiguecost 6000  
+#restricted 230 -- Llurth Dreier
+#restricted 226 -- Oryndoll
+#spec 8388608 -- uwok
+#end
 
-#addgod 7241 -- Statue of Ladaguer
-#addgod 5036 -- Asmodeus 2
+#selectspell 1115
+#name "Grow Gelatinous Cubes"
+#descr "Gelatinous Cubes are slow, creeping monstrosities that envelope and consume their prey. Powerful casters will summon additional cubes with each casting."
+#school 6
+#researchlevel 1
+#path 0 8
+#path 1 2
+#pathlevel 0 1
+#pathlevel 1 1
+#effect 10001
+#damage 7217 -- Gelatinous Cube
+#nreff 1001
+#fatiguecost 400
+#notfornation 230 -- Llurth
+#spec 8388608 -- uwok
+#end
 
-#cheapgod40 7241 -- Statue of Ladaguer
+#newspell 
+#name "Grow a Mass of Ochre Jellies"
+#descr "Ochre Jellies are difficult to kill and easy to mass." 
+#school 6
+#researchlevel 2
+#path 0 8 
+#path 1 2 
+#pathlevel 0 1
+#pathlevel 1 2
+#effect 10001
+#damage 7220 -- Ochre Jelly
+#nreff 1005
+#fatiguecost 800
+#notfornation 230 -- Llurth
+#spec 8388608 -- uwok
+#end
 
-#startcom 7237 -- Duerger Thuldor - elite cleric ( X )
-#startunittype1 7228 -- Duergar Mauler - unit ( X )
-#startunittype2 7229 -- Duergar Scorpion - ranged unit ( X )
-#startunitnbrs1 24
-#startunitnbrs2 8
+#newspell 
+#name "Feed a Bloodfire Ooze"
+#descr "Bloodfire Oozes are a boiling, sulphuric mass of blood and anguish used to guard temples and laboraties in Thay and other places where morality and decorum have been long abandoned." 
+#school 6
+#researchlevel 3
+#path 0 8 
+#path 1 0
+#pathlevel 0 3
+#pathlevel 1 2
+#effect 10001
+#damage 7216 -- bloodfire ooze
+#nreff 1001
+#fatiguecost 1600
+#notfornation 230 -- Llurth
+#end
 
-#startscout 7242 -- Duergar Deepscout
+#newspell 
+#name "Grow a Mass of Black Puddings"
+#descr "Black Puddings are mindless oozes capable of enveloping and digesting their prey." 
+#school 6
+#researchlevel 4
+#path 0 8 
+#path 1 2 
+#pathlevel 0 3
+#pathlevel 1 2
+#effect 10001
+#damage 7235 -- Black Pudding
+#nreff 1001
+#fatiguecost 1800
+#notfornation 230 -- Llurth
+#spec 8388608 -- uwok
+#end
 
-#addrecunit 7228 -- Duergar Mauler - unit ( X )
---#addrecunit 6697 -- Duergar Axeman - unit ( X )
-#addrecunit 7227 -- Duergar Heavy Axe - unit ( X )
-#addrecunit 7229 -- Duergar Scorpion - ranged unit ( X )
-#addrecunit 7226 -- Duergar Battlesmith 
-#addrecunit 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#newspell 
+#name "Grow an Oblex"
+#descr "Oblexes were mind-eating oozes designed by mind flayers with the purpose to serve as advance scouts to search for prey to feed a colony. Aboleths and servants of Ghaunadaur also made frequent use of Oblexes." 
+#school 6
+#researchlevel 5
+#path 0 8 
+#path 1 2 
+#pathlevel 0 1
+#pathlevel 1 2
+#effect 10021
+#damage 7218 -- Oblex
+#nreff 1
+#fatiguecost 1200
+#notfornation 230 -- Llurth
+#notfornation 226 -- Oryndoll
+#spec 8388608 -- uwok
+#end
 
-
-#addreccom 7242 -- Duergar Deepscout - commander scout slaver ( X )
-#addreccom 7230 -- Duergar Laird - commander ( X )
-#addreccom 7239 -- Duergar Kavalrachni - unit and commander ( X )
-#addreccom 7233 -- Duergar Runesmith - mage ( X )
-#addreccom 5072 -- Duergar Blackguard - holy commander ( X )
-#addreccom 7225 -- Duergar Stonereaver - elite unit ( X )
-#addreccom 7232 -- Duergar Mindmaster - mage ( X )
-
-#addreccom 7237 -- Duerger Thuldor - elite cleric ( X )
-#addreccom 7240 -- Duergar Master Arcane Artisan ( X )
-
-
-#defcom1 7239 -- Duergar Kavalrachni - unit and commander ( X )
-#defcom2 5072 -- Duergar Blackguard - holy commander ( X )
-#defunit1 7228 -- Duergar Mauler - unit ( X )
-#defmult1 20
-#defunit1b 7229 -- Duergar Scorpion - ranged unit ( X )
-#defmult1b 5
-#defunit2 7227 -- Duergar Heavy Axe - unit ( X )
-#defmult2 10
-
----------- DEFENCES
-#guardcom 7239 -- Duergar Kavalrachni - unit and commander ( X )
-#guardunit 7228 -- Duergar Mauler - unit ( X )
-#guardmult 15
-#wallcom 5072 -- Duergar Blackguard - holy commander ( X )
-#wallunit 7229 -- Duergar Scorpion - ranged unit ( X )
-#wallmult 10	
-
----------- START SITES
-#startsite "Great Mine of the Deep" 
-#startsite "Mines of the Pale Ones"
-#startsite "Slave Market"
-#startsite "Crystal Garden"
+#newspell 
+#name "Give Rise to an Elder Black Pudding"
+#descr "Elder Black Puddings are nearly invincible oozes capable of leading other oozes into battle and enveloping and digesting their prey." 
+#school 6
+#researchlevel 6
+#path 0 8 
+#path 1 2 
+#pathlevel 0 4
+#pathlevel 1 3
+#effect 10021
+#damage 7236 -- Black Pudding
+#nreff 1
+#fatiguecost 6500 
+#notfornation 230 -- Llurth
+#notfornation 226 -- Oryndoll
+#spec 8388608 -- uwok
 #end
 
 
 
--------------------------------------------------------------
------------------------ Deep Duerra -------------------------
--------------------------------------------------------------
-#selectnation 232
-#era 2
-#name "The Underspires"
-#epithet "Duergar of the Darklands"
-#brief "'The children of Laduguer shall conquer the earth and stone from which they sprang and the voids in which they dwell. The seizing of new lands, new wealth, and new servitors is the manifest destiny of those who mine the Night Below.' - except from Duerran dogma." 
-#descr "Deep Duerra's faithful dominated the Underspires, a region of the Darklands within the Middledark and the empire she built before being risen to godhood by the gray dwarven god Ladaguer. Two great Duergar cities - Dunspeirrin, the City of Sunken Spires, and Drik Hargunenand, the Iron Stair, were the core of what was the most sprawling Duergar realm in the Underdark and which claimed to have once razed Oryndoll, the center of Mindflayer power in Faerun. 
+------------------------------------------ Create and Animate Undead
 
-The empire fell into stagnation after Duerra's ascension and was beset on all sides by its innumerable enemies, falling back finally to the darklands. Despite its defeat and the loss of its vast holdings, The Underspires still maintains its unconquered core.
+#selectspell 1112
+#name "Animate Zombies"
+#descr "Zombies are the magically animated corpses of the recently deceased. While relatively weak, their mindless hunger for brainz overrides both exhaustion and morale. More powerful casters will be able to animate more zomboids with a single casting."
+#end
 
-Around 1369 DR, the Underspires formed the Army of Steel and marched on an upstart alliance of shield and gold dwarves, who sought to reclaim their ancient kingdoms in Deep Shanatar. The War of Gold and Gloom ensued and would continue to the present day. Should the Duergar claim Old Shanatar for themselves, little could stop them from damming Moradin's River of Gold, the tangible link of the Dwarven god's influence on Faerun. Such a victory would ensure that The Underspires will once again spread their empire of the bloody axe across the whole of the underdark. 
+#selectspell 1113
+#name "Create Undead: Skeletons"
+#descr "Skeletons are the magically animated corpses of the long dead. While relatively weak, they are tireless, relentless, and difficult to damage with piercing weapons. More powerful casters will be able to animate more skellies with a single casting. Skeletons communicate skelepathically :P"
+#end
 
-This nation will play like your Duergar cousins in Gracklstugh for now, though unique astral and water mage units may be added to the roster in the future to represent Duerra's domains, gifts, and spheres of divine power."  
+#newspell 
+#name "Create Undead: Unsated Ghoul"
+#descr "Ghouls are stealthy undead capable of paralyzing their prey and spreading disease with their claws and teeth. They are difficult to damage with mundane weapons. More powerful casters will be able to animate more ghouls with a single casting."
+#school 4
+#researchlevel 2
+#path 0 5 
+#pathlevel 0 2
+#effect 10001
+#damage 7288 -- Ghoul
+#nreff 1003
+#fatiguecost 300
+#spec 8388608 -- uwok
+#end
 
-#summary "You have excellent commanders, priests, and mages but they are resource and gold intensive. Your limited population will hamper your economy. You'll have no foreign recruits to help you, but you can take slaves to round out your armies and will find prized magic site recruit options if you can take the Northdark for yourself. Perhaps your greatest asset is your ability to craft magical items of great power, well above the limits of your arcane talents."  
-#flag "ForgottenRealms/flag_deepduerra.tga"
-#templepic 4 -- mountain castle
-#fortera 3 
-#homefort 4 -- Citadel
-#cavenation  1
-#buildfort 3
+#newspell 
+#name "Create Undead: Ghast"
+#descr "Ghasts are greater ghouls, capable of leading other undead into battle. They not only paralyze and infect their enemies with their claws and bite, but those who die to a ghast's attacks are likely to rise as ghouls themselves. Ghasts spread disease wherever they roam, eat corpses to strengthen themselves, and can actively create new ghouls each turn."
+#school 4
+#researchlevel 3
+#path 0 5 
+#pathlevel 0 3
+#effect 10021
+#damage 7704 -- Ghast -- Summonable
+#nreff 1
+#fatiguecost 1000
+#spec 8388608 -- uwok
+#end
 
-#color 0.82 0.55 0.70
+#newspell 
+#name "Create Undead: Giant Skeletons"
+#school 4
+#researchlevel 3
+#path 0 5 
+#pathlevel 0 2
+#effect 10001
+#damage 7279 -- Giant Skeleton First Shape
+#nreff 1003
+#fatiguecost 300
+#spec 8388608 -- uwok
+#end
 
-#addgod 7243 -- Statue of Duerra
-#addgod 7241 -- Statue of Ladaguer
+#selectspell 1143
+#name "Create Undead: Revenant"
+#spec 8388608 -- uwok
+#end
 
-#cheapgod40 7243 -- Statue of Duerra
+#selectspell 1183
+#name "Create Undead: Skeletal Knights"
+#researchlevel 4
+#end
 
-#startcom 7232 -- Duergar Mindmaster - mage ( X )
-#startunittype1 7228 -- Duergar Mauler - unit ( X )
-#startunittype2 7229 -- Duergar Scorpion - ranged unit ( X )
-#startunitnbrs1 24
-#startunitnbrs2 8
+#selectspell 1206
+#name "Create Undead: Banefire Archers"
+#end
 
-#startscout 7242 -- Duergar Deepscout
+#newspell 
+#name "Create Undead: Wraith"
+#descr "Wraiths are ethereal undead creatures. Completely immune to mundane weapons, they drain the life of their victims and are capable of creating a subservient wraith each turn."
+#school 4
+#researchlevel 4
+#path 0 5 
+#pathlevel 0 3
+#effect 10021
+#damage 7269 -- Wraith
+#nreff 1
+#fatiguecost 1000
+#spec 8388608 -- uwok
+#end
 
-#addrecunit 7228 -- Duergar Mauler - unit ( X )
---#addrecunit 6697 -- Duergar Axeman - unit ( X )
-#addrecunit 7227 -- Duergar Heavy Axe - unit ( X )
-#addrecunit 7229 -- Duergar Scorpion - ranged unit ( X )
-#addrecunit 7226 -- Duergar Battlesmith 
-#addrecunit 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#newspell 
+#name "Create Undead: Silveraiths"
+#descr "Silveraiths are powerful, sacred wraiths only available to Maerimydra."
+#school 4
+#researchlevel 3
+#path 0 5 
+#pathlevel 0 3
+#effect 10001
+#damage 7336 -- Silveraiths
+#nreff 1000
+#fatiguecost 900
+#restricted 235 -- Maerimydra only
+#spec 8388608 -- uwok
+#end
 
 
-#addreccom 7242 -- Duergar Deepscout - commander scout slaver ( X )
-#addreccom 7230 -- Duergar Laird - commander ( X )
-#addreccom 7239 -- Duergar Kavalrachni - unit and commander ( X )
-#addreccom 7233 -- Duergar Runesmith - mage ( X )
-#addreccom 5072 -- Duergar Blackguard - holy commander ( X )
-#addreccom 7225 -- Duergar Stonereaver - elite unit ( X )
-#addreccom 7232 -- Duergar Mindmaster - mage ( X )
+#newspell 
+#name "Create Undead: Lesser Flameskull"
+#descr "Flameskulls were fiery undead guardians fashioned from the skulls of dead spellcasters. Immortal beings, they were favored familiars of powerful necromancers."
+#school 4
+#researchlevel 4
+#path 0 5 
+#pathlevel 0 3
+#effect 10021
+#damage 7244 -- Lesser Flameskull
+-- 7245 -- Greater Flameskull
+#nreff 1
+#fatiguecost 1500
+#spec 8388608 -- uwok
+#end
 
-#addreccom 7237 -- Duerger Thuldor - elite cleric ( X )
-#addreccom 7240 -- Duergar Master Arcane Artisan ( X )
+#newspell 
+#name "Create Undead: Greater Flameskull"
+#descr "Greater Flameskulls are fiery undead constructs fashioned from the skulls of dead spellcasters. Immortal beings, they were favored as guardians of the secret arcane libraries of powerful necromancers. Their twisted sentience allowed them to keep familiars and apprentices of their own."
+#school 4
+#researchlevel 6
+#path 0 5 
+#pathlevel 0 4
+#effect 10021
+#damage 7245 -- Greater Flameskull
+#nreff 1
+#fatiguecost 2500
+#spec 8388608 -- uwok
+#end
 
 
-#defcom1 7239 -- Duergar Kavalrachni - unit and commander ( X )
-#defcom2 5072 -- Duergar Blackguard - holy commander ( X )
-#defunit1 7228 -- Duergar Mauler - unit ( X )
-#defmult1 20
-#defunit1b 7229 -- Duergar Scorpion - ranged unit ( X )
-#defmult1b 5
-#defunit2 7227 -- Duergar Heavy Axe - unit ( X )
-#defmult2 10
+#newspell 
+#name "Create Undead: Mohrg"
+#descr "Mohrgs are a greater form of undead. They resemble dessicated skeletons but are in fact far more dangerous. Their bones are as hard as a full suit of platemail, their biting tongues cause a dangerous paralysis, and the enemies who fall to their attacks rise as zombies."
+#school 4
+#researchlevel 3
+#path 0 5 
+#pathlevel 0 3
+#effect 10021
+#damage 7707 -- Mohrg
+#nreff 1
+#fatiguecost 1200
+#spec 8388608 -- uwok
+#end
 
----------- DEFENCES
-#guardcom 7239 -- Duergar Kavalrachni - unit and commander ( X )
-#guardunit 7228 -- Duergar Mauler - unit ( X )
-#guardmult 15
-#wallcom 5072 -- Duergar Blackguard - holy commander ( X )
-#wallunit 7229 -- Duergar Scorpion - ranged unit ( X )
-#wallmult 10	
+#newspell 
+#name "Create Undead: Vampire Bride"
+#descr "Vampire brides are powerful, but bound to their summoned province - they will lose health each turn they spend away from their home. In addition to being powerful spell casters, they also generate thralls and bathe the battlefield in darkness."
+#school 4
+#researchlevel 5
+#path 0 5 
+#path 1 8
+#pathlevel 0 4
+#pathlevel 1 2
+#effect 10021
+#damage 7090 -- Vampire Bride
+#nreff 1
+#fatiguecost 2500 
+#spec 8388608 -- uwok
+#end
 
----------- START SITES
-#startsite "Great Mine of the Deep" 
-#startsite "Mines of the Pale Ones"
-#startsite "Slave Market"
-#startsite "Crystal Garden"
+#newspell
+#name "Create Undead: Mummy"
+#descr "Mummies are prepared corpses brough back to undeath via powerful rites and rituals. They spread disease and fear, are highly immune to magic, and curse those who send them back to the afterlife. More powerful casters will be able to summon additional mummies with each casting."
+#school 4
+#researchlevel 5
+#path 0 5 
+#pathlevel 0 3
+#effect 10001
+#damage 7289 -- Mummy
+#nreff 1002
+#fatiguecost 1300
+#end
+
+#selectspell 1444
+#name "Create Undead: Vampire Lord"
+#school 4
+#researchlevel 7
+#spec 8388608 -- uwok
+#end
+
+#newspell
+#copyspell 953
+#name "Create Undead: Deathshroud Knights"
+#descr "Deathshroud Knights are elite, sacred front line troops in armies of the undead and are often tasked as bodyguards for the most powerful of undead masters." 
+#school 4
+#researchlevel 5
+#path 0 5 
+#pathlevel 0 3
+#damage 7311 -- Death Knight Sentinels
+#effect 10001
+#fatiguecost 2600
+#nreff 5
+#end
+
+#selectspell 953 -- Revive Wights
+#school -1
+#end
+
+#selectspell 954 -- Revive Bane
+#school -1
+#end
+
+#newspell
+#copyspell 954 -- Revive Bane
+#name "Create Undead: Death Knight Dreadlord"
+#descr "Death Knight Dreadlords are former paladins or knights who abandoned their sacred oaths and turned instead to the dark powers of the Shadowfell."
+#school 4
+#researchlevel 6
+#path 0 5 
+#pathlevel 0 4
+#effect 10021
+#damage 7310 -- Death Knight Dreadlord
+#fatiguecost 3500
+#nreff 1
+#end
+
+#selectspell 945 -- "Call Krakens"
+#descr "Summons 4 or more Juvenile Krakens - huge, intelligent octopoid creatures which grow over time and experience to collosal size."
+#path 0 2
+#path 1 8
+#pathlevel 0 3
+#pathlevel 1 1
+#researchlevel 4
+#effect 10021
+#nreff 2001
+#damage 7307 
+#fatiguecost 1200
+#spec 41943040 -- only
+#end
+
+#newspell 
+#copyspell 945 -- Call Krakens
+#name "Call Venerable Kraken"
+#descr "Summons an Ancient Kraken. These collosal denizens of the deep are capable spellcasters and have been known to lead small armies of supplicants and slaves."
+#path 0 2
+#path 1 8
+#pathlevel 0 4
+#pathlevel 1 1
+#researchlevel 6
+#nreff 1
+#damage 7308
+#fatiguecost 2500
+#spec 41943040 -- uwonly
+#end
+
+
+--------------------------------------------- SPECIAL MIDDLE AND END GAME SUMMONS
+
+#newspell 
+#name "I, Strahd"
+#descr "Summons the Prince of Vampires, Strahd von Zarovich. By summoning Strahd, you are essentially merging the province in which he is called with the spectral realm of Barovia - Strahd can only spend limited time away from his summoned province. Use him wisely while you have him as other nations can summon Barovia to their lands, removing Strahd from your service."
+#school 0
+#researchlevel 6
+#path 0 5 
+#path 1 8
+#pathlevel 0 5
+#pathlevel 1 2
+#effect 10021
+#damage 7091 -- Strahd
+#nreff 1
+#fatiguecost 10000
 #end
 
 
 
-
--------------------------------------------------------------
------------------------ Auramycos----------------------------
--------------------------------------------------------------
-#selectnation 233
-#era 2
-#name "Auramycos"
-#epithet "The Inexorable Growth"
-#brief "Araumycos was a huge life form, a single organism that covered almost all the parts of the Underdark beneath the High Forest"
- 
-#descr "The dwarves of ancient Ammarindar told of how their mines located in the region beneath the High Forest were abandoned to the slow, inexorable growth of Araumycos - The Great Fungus. The elves had legends that dated back farther still, linking the birth of Araumycos to the fell sorceries of the Vyshaantar Empire, but so little was known of that era, even among the long memories of the elves, that no origin could be conclusively determined. Araumycos was thought by some to be the oldest living creature on Toril; even the gods did not speak of it, and divine divinations regarding the titanic fungus always failed. Some believed that the creature was an avatar of Psilofyr, the lord of the myconid, but this was only a theory.
-
-The entire landscape was sentient. Referring to itself as 'King Araumycos', it brought millions of myconids under its domination, and tried to do the same with any sentient creature within hundreds of miles through strange nightmare-dreams (which the drow called golhyrrl' fhaazht or 'the Dream Trap') that spoke of the comfort of the mass and the hopeless chaos of individuality.
-
-But, while the slow and nonviolent spread of Auramycos was counted in miles per milennia, a more sinister rot was emerging from the heart of The Great Fungus - the Lady of Rot and Decay, Zuggtmoy, the Demon Queen of Fungi had also awoken sometime around the mid 1300s DR. Her aims were malevolent and her ambitions were to spread her mycelial network across the whole of Faerun."  
-
-#summary "This is a bizarre nation, perhaps best left in the hands of the ai. All of your myconid units suffer from homesickness, losing a percentage of their health each turn they spend away from the province from which they were born. You have no foreign recruitment, and very limited anywhere you have built a fort - not that your bramble forts are much worth building anyway. Your influence, however, extends well beyond Auramycos."  
-#flag "ForgottenRealms/flag_myconids.tga"
-#templepic 31 -- cave fort
-#fortera 1
-#homefort 10 -- bramble fort
-#cavenation 2
-#buildfort 28
-#noforeignrec
---#defdeath 5
-
-#color 0.025 0.75 0.05
-
-#addgod 7265 -- Zuggtmoy - PRETENDER
-#addgod 7266 -- Psylofyr - PRETENDER
-
-
-#startcom 7260 -- Myconid Sovereign Firstshape
-
-#addreccom 7260 -- Myconid Sovereign Firstshape
-#addreccom 7261 -- Myconid Sovereign Firstshape
-
-#addforeignunit 7253 -- Golden Grisette Sprout 
-#addforeignunit 7252 -- Scourgecap Sprout
-#addforeignunit 7251 -- Slimy Dapperling Sprout 
-#addforeignunit 7250 -- Tawny Webcap Sprout
-#addforeignunit 7249 -- Danger Bell Sprout
-#addforeignunit 7248 -- Panthercap Sprout
-#addforeignunit 7262 -- Myconid Guardian Mushrend
-#addforeignunit 7263 -- Myconid Guardian Venomcap
-#addforeignunit 7264 -- Myconid Guardian Greeneye
-
-#addforeigncom 7256 -- Myconid Circle Leader -- (a) Blood
-#addforeigncom 7257 -- Myconid Circle Leader -- (c) Astral
-#addforeigncom 7258 -- Myconid Circle Leader -- (f) Nature
-
-
-#defcom1 -13010 -- Myconid Guardian Firstshape
-#defcom2 -13009 -- Myconid Circle Leader Firstshape -- (a, c, f,)
-#defunit1 -13007 -- Myconid Sprout Firstshape
-#defmult1 20
-#defunit1b -13007 -- Myconid Sprout Firstshape
-#defmult1b 20
-#defunit2 -13010 -- Myconid Guardian Firstshape
-#defmult2 5
-
----------- DEFENCES
-#guardcom 7254 -- Myconid Guardian Firstshape
-#guardunit 7247 -- Myconid Sprout Firstshape
-#guardmult 15
-#wallcom 7255 -- Myconid Circle Leader Firstshape -- (a, c, f,)
-#wallunit 7247 -- Myconid Sprout Firstshape
-#wallmult 10	
-
----------- START SITES
-#startsite "Cavern of Ancient Mushrooms"
-#startsite "Glowing Caverns"
-#startsite "Mushroom Forest"
-
+-- 4095 -- Tiamat
+#newspell 
+#name "Call Tiamat"
+#descr "Summons the The Queen of Dragons, the five-headed Tiamat, and binds her to your service. At least for a time.  Use him wisely while you have her as other nations can summon Tiamat to their own causes and removing her from your service."
+#school 0
+#researchlevel 9
+#path 0 4 
+#pathlevel 0 5
+#effect 10021
+#damage 7095 -- Tiamat
+#nreff 1
+#fatiguecost 24000
 #end
 
---------------------------------------------------------------------------------------------------------------
---------------------------------------------- CAIRNHEIM-------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-
-#selectnation 234
-#era 2 		
-#name "Cairnheim"
-#epithet "Realm of the Undead Giants"
-#idealcold 0
-#brief "Cairnheim was ruled by the Dodkong, or Deathking, and his council of Dodforerir, or 'Death Chiefs.' Both the king and the Dodforerir were all cairns, stone giant liches. Each of the Dodforerir were raised from the dead by the Dodkong through the unholy powers of The Crown of Obadai."
-#descr "Being of the kingdoms that made up the ancient empires of Ostoria and Nedeheim, Cairnheim controlled the Giant's Run Mountains. Over the centuries, it carved great roads and stairs through its peaks, as well as tremendous halls within the Underdark.
-
-It was one of the giant kingdoms that warred with the ancient dragon kingdoms during the Dawn Age and was also one of the few fragment kingdoms that survived past Ostoria's fall. It eventually came into a conflict with the dwarves of High Shanatar during their golden age. It fell apart around -5350 DR, disappearing into ruins but not fogotten by the giants who clung to survival in the surrounding landscape.
-
-In -160 DR, a stone giant lich by the name of Grugaran came to the Giant's Run Mountains with the crown of Obadai, the legendary crown of Faerûn's first stone giant. Bolstered by its dark powers, Grugarin declared himself Dodkong. He gathered the stone giant clans together and bent them to his purpose. He called his new kingdom Cairnheim.
-
-Over time the Dodkong's realm grew. Slowly at first, by 1372 DR it had a sizeable population. More than a dozen minor clanholds of stone giants and hill giants acknowledged the Dodkong as their ruler. Several large tribes of goblins and orcs rallied around Cairnheim when called upon, and nearby human communities offered him tribute. Around this time some communities within the Underdark began to fear that Cairnheim might be preparing themselves to expand beyond their borders, noting a growing number of undead giants roaming the mountains and carving tunnels through the upperdark."
-
-#summary "The Dodkong himself is your most powerful asset. He bears the Crown of Obadai and with it has tremendous power over the undead. Twiceborned Stone Giants become Cairns, powerful liches capable of wreaking havoc and raising tremendous armies of the living dead. But not all of your assets are bones and the fettered dead. You can call on many other giants and monstrosities both on the surface and within the underdark." 
-#flag "ForgottenRealms/flag_cairnheim.tga"
-#templepic 8 -- Temple Ruins 
-#fortera 2 
-#homefort 18 -- Giant Citadel - Cloud Giants
-#buildfort 16
-#builduwfort 6
-#color 0.2 0.2 0.2
-
-#addgod 5003 -- Myrkul
-#addgod 7287 -- Velsharoon - Pretender
-
-#cheapgod20 7287 -- Velsharoon - Pretender
-
-#multihero1 6805 -- Cloud Giant
-#multihero2 6738 -- Fire Giant
-#multihero3 5106 -- Storm Giant
-#multihero4 1301 -- Frost Giant Elder
-#multihero5 7090 -- vampire bride
-#multihero6 5114 -- Alhoon
+-- 3835 -- Dendar the Night Serpent
+#newspell 
+#name "Call the Night Serpent"
+#descr "The primordial foe of the gods, Dendar instilled dread in even the greater deities of Faerun. In exchange for a promise to keep Dendar locked beanth the Iron Doors of Night in Chult, the entire pantheon of Faerunian gods made a pact with Ubtao, another primordial, to never encroach on Ubtao's dominion in the Chultan Peninsula. Open the Iron Doors of Night at your own peril."
+#school 0
+#researchlevel 9
+#path 0 4 
+#pathlevel 0 5
+#effect 10021
+#damage 6835 -- Dendar the Night Serpent
+#nreff 1
+#fatiguecost 30000
+#end
 
 
+----------------------------------------------------------------------------------
+----------------------------- SALAMANDER SUMMONS --------------------------------- 
+----------------------------------------------------------------------------------
 
-#startcom 7277 			-- Dodforerir (free upkeep)
-#startunittype1 6807	-- Goblin Archers
-#startunittype2 6809	-- Stone Giant Maulers
-#startunitnbrs1 30
-#startunitnbrs2 12
-
-#startscout 430 	-- Black Harpy
-
-#wasterec 6724		-- Gnoll Hunters 
-#wasterec 6723 		-- Goblin Dogslicers
-#wastecom 6808 		-- Gnoll Chieftain
-#wastecom 6728 		-- Manticore
-
-#forestrec 6807		-- Goblin Archers
-#forestrec 6806 	-- Krenshar
-#forestrec 2219		-- Forest Troll from forests
-#forestrec 7071		-- owlbear
-#forestcom 2220 	-- Troll Shaman
-#forestcom 6770 	-- Goblin King
-#forestcom 6733 	-- Goblin Lab-Rats
-
-#mountainrec 6676	-- Orc Marauders
-#mountainrec 6802	-- Orc Greatbows
-#mountaincom 430 	-- Black Harpy
-#mountaincom 6737 	-- Orc Warlord
-#mountaincom 6801	-- Cleric Gruumsh
-
-#caverec 7081 -- Otyugh
-#caverec 7165 -- Umber Hulk
-#caverec 6842 -- Minotaur Brute
-#caverec 6809 -- Stone Giant Maulers
-#cavecom 6843 -- Minotaur Elder
-#cavecom 6810 -- Stone Giant Elder
-#cavecom 7086 -- Bull Priest
-#cavecom 7087 -- Hornblower of Baphomet
-
-#coastrec 7142		-- Sahuagin Hunter
-#coastrec 564		-- Sea Troll from coast
-#coastcom 7143		-- Sahuagin Raidmaster
-#coastcom 564		-- Sea Troll from coast
-
-#addrecunit 6807 	-- Goblin Archer
-#addrecunit 6723 	-- Goblin Dogslicers
-#addrecunit 6676	-- Orc Marauders
-#addrecunit 6773 	-- Goblin Wolfriders
-#addrecunit 7210	-- Ogre
-#addrecunit 6678	-- Hill Giant Reavers 
-#addrecunit 6675 	-- Frost Giant Mercenary
-#addrecunit 6809	-- Stone Giant Maulers
-
-#addreccom 430 		-- Black Harpy
-#addreccom 6737 	-- Orc Warlord
-#addreccom 310		-- Necromancer
-#addreccom 6772		-- Hill Giant Shaman
-#addreccom 6810		-- Stone Giant Elder
-#addreccom 6733		-- Goblin Lab Rat
-#addreccom 1301		-- Frost Giant Elder
-#addreccom 7286 	-- Dodforerir
+-- 4032 -- SALAMANDER FLAMEGUARD
+#newspell 
+#name "Summon Salamander Flameguards"
+#descr "Salamanders are born on the elemental plane of fire. The Flameguard are the heavy infantry of their massive armies, often summoned by powerful sorcerers. Thay is well known for engaging in this practice as a means of defense against their foes on the Sea of Fallen Stars." 
+#school 0
+#researchlevel 4
+#path 0 0 
+#pathlevel 0 2
+#effect 10001
+#damage 7032 -- SALAMANDER FLAMEGUARD
+#nreff 2001
+#fatiguecost 500
+#restricted 210 
+#restricted 205
+#restricted 206
+#restricted 208   
+#end
 
 
--- All other units are site-specific
+-- 4078 -- SALAMANDER NOBLE
+#newspell 
+#name "Summon Salamander Noble"
+#descr "Salamanders are born on the elemental plane of fire. Their Nobles lead their massive armies and often summoned by powerful sorcerers. Thay is well known for engaging in this practice as a means of defense against their foes on the Sea of Fallen Stars." 
+#school 0
+#researchlevel 5
+#path 0 0 
+#pathlevel 0 3
+#effect 10021
+#damage 7078 -- SALAMANDER NOBLE
+#nreff 1
+#fatiguecost 3500
+#restricted 210 
+#restricted 205
+#restricted 206
+#restricted 208   
+#end
 
-#defcom1 6810		-- Stone Giant Elder
-#defcom2 6810		-- Stone Giant Elder
-#defunit1 6723 		-- Goblin Dogslicers
-#defunit1b 6678		-- Hill Giant Reavers 
-#defunit2 6809		-- Stone Giant Maulers
-#defmult1 30 	
-#defmult1b 10 
-#defmult2 10
----------- START SITES
 
-#startsite "Lifeless Lake"
-#startsite "Well of Yesterdays Waters"
-#startsite "Earth Blood Seepage"
-#startsite "Iron Tomb" 	
-#startsite "The Forgotten Crypt" 	
+-- no native unit can raise a mythellar - players will have so first summon something dreadfully powerful that has the astral pathlevel, such as an atropal, or else utilize their god or empower a unique caster and bring crystal coins.
+
+#newspell 
+#name "Raise a Mythellaric Enclave"
+#descr "A mythallar was a Netherese device that allowed access to vast amounts of raw magic, used primarily to raise a floating cities from the surface and rule the world from on high." 
+#school 3
+#researchlevel 9
+#path 0 4
+#pathlevel 0 8
+#effect 10021
+#damage 7084 -- Mythellaric Enclave
+#nreff 1
+#fatiguecost 30000
+#spec 8388608 -- uwok
+#end
+
+-- Summon an Atropal
+#newspell 
+#name "Summon and Bind an Atropal"
+#descr "Atropals were stillborn godlings who spontaneously rose as undead abominations. Existing solely to spread death and destruction, atropals roamed across the planes, hunting down any prey that came their way. Atropals are exceedingly powerful in both Astral and Death magic and can be used to create Mythellars. There is a 25% chance of losing control of the summon in any given turn." 
+#school 0
+#researchlevel 9
+#path 0 5
+#pathlevel 0 7
+#effect 10021
+#damage 7061 -- Atropal 
+#nreff 1
+#fatiguecost 12000
+#spec 8388608 -- uwok
+#end
 
 
----------- DEFENCES
-#guardcom 6810		-- Stone Giant Elder
-#guardunit 6809		-- Stone Giant Maulers
-#guardmult 10
-#wallcom 6810		-- Stone Giant Elder
-#wallunit 6802		-- Orc Greatbows
-#wallmult 20 		
+-- 3709 Bound Shaitan
+#newspell 
+#name "Summon and Bind a Shaitan"
+#descr "Genies native to the Elemental Plane of Earth are known as Shaitan. To bind them requires a rare mix of magical talents - one must first summon them from their native plane with the appropriate path skill, and then entrap them using power over the genie's anti-thetical element." 
+#school 0
+#researchlevel 6
+#path 0 3
+#path 1 1
+#pathlevel 0 2
+#pathlevel 1 2
+#effect 10021
+#damage 6709 -- Bound Shaitan 
+#nreff 1
+#fatiguecost 3000
+#end
+
+-- 3710 -- Bound Djinn
+#newspell 
+#name "Summon and Bind a Djinn"
+#descr "Genies native to the Elemental Plane of Air are known as Djinn. To bind them requires a rare mix of magical talents - one must first summon them from their native plane with the appropriate path skill, and then entrap them using power over the genie's anti-thetical element." 
+#school 0
+#researchlevel 6
+#path 0 1
+#path 1 0
+#pathlevel 0 2
+#pathlevel 1 2
+#effect 10021
+#damage 6710 -- Bound Djinn
+#nreff 1
+#fatiguecost 3000
+#end
+
+-- 3711 -- Bound Marid
+#newspell 
+#name "Summon and Bind a Marid"
+#descr "Genies native to the Elemental Plane of Water are known as Marid. To bind them requires a rare mix of magical talents - one must first summon them from their native plane with the appropriate path skill, and then entrap them using power over the genie's anti-thetical element." 
+#school 0
+#researchlevel 6
+#path 0 2
+#path 1 3
+#pathlevel 0 2
+#pathlevel 1 2
+#effect 10021
+#damage 6711 -- Bound Marid
+#nreff 1
+#fatiguecost 3000
+#spec 8388608 -- uwok
+#end
+
+-- 3712 -- Bound Efreet
+#newspell 
+#name "Summon and Bind an Efreet"
+#descr "Genies native to the Elemental Plane of Fire are known as Efreet. To bind them requires a rare mix of magical talents - one must first summon them from their native plane with the appropriate path skill, and then entrap them using power over the genie's anti-thetical element." 
+#school 0
+#researchlevel 6
+#path 0 0
+#path 1 2
+#pathlevel 0 2
+#pathlevel 1 2
+#effect 10021
+#damage 6712 -- Bound Efreet
+#nreff 1
+#fatiguecost 3000
+#end
+
+----------------------------------------------------------------------------------
+----------------------------CERAMORPHYTIC SPELLS
+----------------------------------------------------------------------------------
+#newspell
+#name "Free a Mindflayer"
+#descr "Only an Elder Brain or Greater Elder Brain may typically drive this process. It has happened, however, that rogue Illithids have broken free. When this happens, their narcissism leads always to the goal of subverting and eventually destroying the Elder Brain from which they broke away. Making an Illithid your Chosen will convert them into an Elder Brain.
+Unlike most summons, Mindflayers cost gold maintenance."
+#details "Some nations with deep enmity toward mindflayers will never cast this spell."
+#school 0
+#researchlevel 4
+#path 0 4
+#pathlevel 0 3
+#fatiguecost 4000
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage -13002
+#aispellmod 10
+#notfornation 219 -- Narfell				
+#notfornation 224 -- Kuo-toans
+#notfornation 226 -- Oryndoll
+#notfornation 227 -- Dwarves of shanatar
+#notfornation 229 -- Dwarves of Old Bhaerynden	
+#notfornation 231 -- Gracklstugh		
+#notfornation 232 -- Underspires of Drik Hargunen	
+#notfornation 233 -- Auramycos	
+#notfornation 238 -- Scoured Legion 
+#spec 8388608 -- uwok
+#end
+
+#newspell
+#name "Initiate Ceramorphosis"
+#descr "This spell summons one of the four types of Mindflayer commander. Only an Elder Brain or Greater Elder Brain may drive this process. Unlike most summons, Mindflayers cost gold maintenance."
+#details "3/11 chance for an Illithid Corruptor
+3/11 chance for a Lesser Illithid
+4/11 chance for a Mind Flayer
+1/11 chance for a Ulitharid"
+#school 6
+#researchlevel 0
+#path 0 8
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage -13002
+#onlymnr 5048
+#onlymnr 5049
+#spec 8388608 -- uwok
+#end
+
+
+----------------------------------------------------------------------------------
+----------------------------DRAGON SUMMONING SPELLS
+----------------------------------------------------------------------------------
+
+#newspell -- 3776 -- RED DRAGON EGG
+#name "Red Dragon Mating Ritual"
+#descr "Red dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "The Red Dragon mating ritual can only be performed by Young Adult or Mature Red Dragons but never under water."
+#school 0
+#researchlevel 0
+#path 0 0
+#pathlevel 0 1
+#fatiguecost 300
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6776
+#onlymnr 6779
+#onlymnr 6780
+#onlymnr 6717 -- Ancient Red Dragon
+#onlymnr 6923 -- Tchazzar
+#onlymnr 6924 -- Tchazzar
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
+
+#newspell 
+#name "Summon a Red Dragon Egg"
+#descr "Red dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "Red Dragon Eggs cannot be be summoned under water."
+#school 0
+#researchlevel 2
+#path 0 0
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6776
+#restricted 205
+#restricted 206
+#restricted 208
+#restricted 213
+#restricted 220
+#restricted 234
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
+
+#newspell -- 3781 -- BLACK DRAGON EGG
+#name "Black Dragon Mating Ritual"
+#descr "Black dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "The Black Dragon mating ritual can only be performed by Young Adult or Mature Black Dragons and may be performed under water."
+#school 0
+#researchlevel 0
+#path 0 5
+#path 0 5
+#pathlevel 0 1
+#fatiguecost 300
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6781
+#onlymnr 6784
+#onlymnr 6785
+#onlymnr 6720
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
+
+#newspell 
+#name "Summon a Black Dragon Egg"
+#descr "Black dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "Black Dragon Eggs can be summoned under water."
+#school 0
+#researchlevel 2
+#path 0 5
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6781
+#restricted 205
+#restricted 206
+#restricted 208
+#restricted 213
+#restricted 220
+#restricted 223 -- Yuan-Ti
+#restricted 234
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
+
+-- Green Dragon Eggs are 3786
+#newspell 
+#name "Green Dragon Mating Ritual"
+#descr "Green dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "Green Dragon mating rituals can only be performed by Young Adult or Mature Green Dragons and may be performed under water."
+#school 0
+#researchlevel 0
+#path 0 6
+#pathlevel 0 1
+#fatiguecost 300
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6786
+#onlymnr 6789
+#onlymnr 6790
+#onlymnr 6719
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
+
+#newspell 
+#name "Summon a Green Dragon Egg"
+#descr "Green dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "Green Dragon Eggs can be summoned under water."
+#school 0
+#researchlevel 2
+#path 0 6
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6786
+#restricted 205
+#restricted 206
+#restricted 208
+#restricted 213
+#restricted 220
+#restricted 223 -- Yuan-Ti
+#restricted 234
+#aispellmod 60
+#spec 8388608 -- uwok
 #end 
 
 
---------------------------------------------------------------------------
---------------------------Maerimydra---------------------------------------
---------------------------------------------------------------------------
+-- Blue Dragon Eggs are 3786
+#newspell 
+#name "Blue Dragon Mating Ritual"
+#descr "Blue dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "Blue Dragon mating rituals can only be performed by Young Adult or Mature Blue Dragons and may not be performed under water."
+#school 0
+#researchlevel 0
+#path 0 1
+#pathlevel 0 1
+#fatiguecost 300
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6791 -- blue dragon egg
+#onlymnr 6794
+#onlymnr 6795
+#onlymnr 6718
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
 
-#selectnation 235
-#era 2
-#name "Maerimydra"
-#epithet "The Silence of Lolth"
-#brief "Maerimydra (pronounced MARE-uh-MID-ruh), the Burning City, was a large drow city located below the Dalelands in the Deep Wastes. It became a battleground between those loyal to Lolth and those drow gods who opposed the Spider Queen's continued domination of their people - namely Eilistraee, Vhaeraun, and Kiaransalee."
+#newspell 
+#name "Summon a Blue Dragon Egg"
+#descr "Blue dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "Blue Dragon Eggs cannot be summoned under water."
+#school 0
+#researchlevel 2
+#path 0 1
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6791 -- blue dragon egg
+#restricted 205
+#restricted 206
+#restricted 208
+#restricted 213
+#restricted 220
+#restricted 223 -- Yuan-Ti
+#restricted 234
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
 
-#descr "From its founding, sometime prior to -2600 DR, Maerimydra was a place of internal conflict between these forces. The city sat at the heart of a sprawling domain that expanded and collapsed numerous times due its internal rebellions. 
 
-For a time, the drow of Maerimydra extended their borders all the way to the surface Realms Above. Shadowdale in fact draws its name from its long occupation by the drow of the Deep Wastes. Shadowdale's Twisted Tower, still the seat of power in the province, was built by Maerimydra as a beachhead for further surface expansion. Centuries of warfare in the Dalelands against Myth Drannor and, later, Cormyr eventually saw Maerimydra's removal from the surface and retreat back to the Deep Wastes.  
+-- White Dragon Eggs are 3796
+#newspell 
+#name "White Dragon Mating Ritual"
+#descr "White dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "White Dragon mating rituals can only be performed by Young Adult or Mature White Dragons and may be performed under water."
+#school 0
+#researchlevel 0
+#path 0 2
+#pathlevel 0 1
+#fatiguecost 300
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6796 -- white dragon egg
+#onlymnr 6799
+#onlymnr 6800
+#onlymnr 6721 -- Ancient White Dragon
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
 
-By the 900s DR, Lolth began losing control over the drow of the region. The arrival of Vhaeraunites from Jaezred Chaulssin - a group dedicated to freeing the drow race from the depravities of Lolth, led to the rise of the secretive faith and their power grew to rival that of the matron mothers. When the Silence of Lolth began in 1372 DR, the Vhaeraunites saw their chance and staged a coup. Led by the city's archmage and backed by an alliance of goblins, ogres, fire giants and demons, the rebels sacked the city and scattered most of its inhabitants into the surrounding deep wastes. The plan to restructure the city, however, failed.  The faithful servants of the drow goddess of the undead, Kiaransalee, led by the High Priestess Irae T'sarran prevailed in a surprise attack during the chaos. Wielding Kiaransalee's own Claw of the Revenancer, Irae and her necromancers plan to spread death throughout the underdark and silence Lolth forever."  
-#summary "Maerimydra is an undead nation, dominated by Irae and her growing legions. Your priestesses are reanimators. You have access to Silveraith Mages, a powerful form of mage wraith. The Claw of the Revenancer artifact also provides the ability to create Silveraith troops, sacred, ethereal undead that raise those they slay. Tough nearby indies, but an otherwise isolated start."  
-#flag "ForgottenRealms/flag_maerimydra.tga"
-#templepic 31 -- Cave Temple
-#fortera 2 -- Castle standard era 2
-#homefort 3
-#buildfort 3
-#builduwfort 6
-#labcost 400
-#templecost 650
-#color 0.65 0.12 0.55
+#newspell 
+#name "Summon a White Dragon Egg"
+#descr "White dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "White Dragon Eggs may be summoned under water."
+#school 0
+#researchlevel 2
+#path 0 2
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 6796 -- white dragon egg
+#restricted 205
+#restricted 206
+#restricted 208
+#restricted 213
+#restricted 220
+#restricted 223 -- Yuan-Ti
+#restricted 234
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
 
-#addgod 7214 -- Kiaransalee 
-#addgod 7338 -- The Undying Temple
--- #addgod 7176 -- Eilistraee 
--- #addgod 7213 -- Vhaeraun 
 
-#cheapgod20 7214
+-- Shadow Dragon Mating Ritual
+#newspell 
+#name "Shadow Dragon Mating Ritual"
+#descr "Shadow dragons begin life in the egg stage, where they will remain for 2 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "Shadow Dragon mating rituals can only be performed by Young Adult, Mature, or Ancient Shadow Dragons and may be performed under water."
+#school 0
+#researchlevel 0
+#path 0 2
+#pathlevel 0 1
+#fatiguecost 300
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 7463 -- Shadow DRAGON EGG 
+#onlymnr 7466 -- Young Adult Shadow Dragon
+#onlymnr 7467 -- SHADOW DRAGON MATURE
+#onlymnr 7468 -- Ancient Shadow Dragon -- Ancient White Dragon
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
+-- 
+-- 
 
-#startcom 7274 -- Drow Streakhmaster
-#startunittype1 7234 -- Drow Sargtlin
-#startunitnbrs1 20
-#startunittype2 7270 -- Drow Lizardrider
-#startunitnbrs2 5
 
-#startscout 6725 -- Drow Assassin 
+#newspell 
+#name "Summon a Shadow Dragon Egg"
+#descr "Shadow dragons begin life in the egg stage, where they will remain for 2 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
+#details "Shadow Dragon Eggs may be summoned under water."
+#school 0
+#researchlevel 2
+#path 0 2
+#pathlevel 0 1
+#fatiguecost 1000
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 7463 -- Shadow DRAGON EGG 
+#restricted 205
+#restricted 206
+#restricted 208
+#restricted 213
+#restricted 220
+#restricted 223 -- Yuan-Ti
+#restricted 234
+#aispellmod 60
+#spec 8388608 -- uwok
+#end 
+	
 
-#addrecunit 7234 -- Drow Sargtlin
-#addrecunit 6774 -- Drow Hunter 
-#addrecunit 7270 -- Drow Lizardrider
+----------------------------------------------------------------------------
+-------------------------------- FEY SUMMONS -------------------------------
+----------------------------------------------------------------------------
 
-#addreccom 6725 -- Drow Assassin 
-#addreccom 7303 -- Maerimydran Commander
-#addreccom 7274 -- Drow Streakhmaster
-#addreccom 7275 -- Drow Mage Apprentice
-#addreccom 7304 -- Revenancer
+-- 5093 -- Madcap
+#newspell 
+#name "Call a Madcap"
+#descr "Madcaps are murderous little fey gnomes. Capable in the arts of blood magic, Madcaps are created when Redcaps dip their hats in infernal blood, giving them greater control over wild magics and giving them the power to explode upon death."
+#school 6
+#researchlevel 3
+#path 0 8
+#pathlevel 0 2
+#fatiguecost 3600
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 5093 -- Madcap
+#restricted 205
+#restricted 206
+#restricted 220
+#restricted 222 -- Menzoberranzan
+#restricted 230 -- Llurth Dreir
+#restricted 231 -- Gracklstugh
+#restricted 232 -- Underspires of Drik Hargunen
+#restricted 234 -- Cairnheim
+#restricted 235 -- Maerimydra
+#restricted 238 -- Scoured Legion
+#end 
 
-#defcom1 7303 -- Maerimydran Commander
-#defcom2 7274 -- Drow Streakhmaster
-#defunit1 7234 -- Drow Sargtlin
-#defmult1 20
-#defunit1b 6774 -- Drow Hunter 
-#defmult1b 10
-#defunit2 7270 -- Drow Lizardrider
-#defmult2 10
+-- 5092 -- Redcap
+#newspell 
+#name "Call a Troupe of Redcaps"
+#descr "Redcaps are murderous little fey gnomes who have to dip their hats in blood every three days or cease to exist. They make excellent little blood mages but do cause quite a stir to the local population. Their magical nature allows them to easily accept the blessings of your god."
+#school 6
+#researchlevel 3
+#path 0 8
+#path 1 6
+#pathlevel 0 2
+#pathlevel 1 1
+#fatiguecost 1000
+#effect 10001 -- troops
+#nreff 1005 -- 5 +1 per level
+#onlyowndst 1
+#damage 5092 -- Redcap
+#restricted 205
+#restricted 206
+#restricted 220
+#restricted 222 -- Menzoberranzan
+#restricted 230 -- Llurth Dreir
+#restricted 231 -- Gracklstugh
+#restricted 232 -- Underspires of Drik Hargunen
+#restricted 234 -- Cairnheim
+#restricted 235 -- Maerimydra
+#restricted 238 -- Scoured Legion
+#end 
 
----------- DEFENCES
-#guardcom 7274 -- Drow Streakhmaster
-#guardunit 7234 -- Drow Sargtlin
-#guardmult 20
-#wallcom 7303 -- Maerimydran Commander
-#wallunit 6774 -- Drow Hunter 
-#wallmult 12 	
+-------------------------------------------- Item-based Summons
 
----------- START SITES
-
-#startsite "Lake of Blood" 
-#startsite "Courtyard of Lolth" 
-#startsite "The Coliseum of Maerimydra" 
-#startsite "Castle Maerimydra" 
--- now a throne #startsite "Shattered Tower" 
-
+#newspell
+#name "Summon a Cryshal-Tirith"
+#descr "The profane artifact, Crenshinibon - the Crystal Shard - can construct a towering replica of itself to act as a defensive structure. The Cryshal-Tirith is nearly indestructible and will attempt to enslave the minds of any who attempt to draw near it."
+#school -1
+#researchlevel 0
+#path -1
+#pathlevel 0
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7207 -- crystal tower
+#spec 8388608 -- uwok
 #end
 
---------------------------------------------------------------------------
---------------------------Tel'Quessir---------------------------------------
---------------------------------------------------------------------------
-
-#selectnation 236 -- Elves of Faerûn
-#era 2
-#name "Tel'Quessir"
-#epithet "Elves of Faerûn"
-#brief "By 1360 DR, more than 90 percent of the elves of Faerûn had fled to the isle of Evermeet. Only a single Bastion remains at Evereska in the Western Heartlands. It stands united with a variety of independent and far-flung elven communities clinging on to their way of life and committed to remaining on the continent of Faerun."
-
-#descr "The Elves had reigned on Toril in relative peace for some 20,000 years until the Tel'quessir nations went to war with each other in −11,800 DR in what was the first of the five Crown Wars. The green elves suffered many defeats, withdrawing into the wilderness to eventually become the wild elves and wood elves. The Drow too came into being during the Crown Wars, their defeat leaving them cursed to wander the Underdark. 
-
-From the ashes grew Cormanthyr. It's capital, Myth Drannor, was considered the pinnacle of shared knowledge, culture, and civilization in Faerûn  - a beacon of serenity and solidarity in the fight against the chaos of the Realms. It fell, however, to a demonic invasion known as the Weeping War in 714 DR and today Myth Drannor sits as a fiend-infested ruins. The cultural respose was a great migration known as 'The Retreat.' Today, 600 years later, 90 precent of all elves on Faerun have fled to the far away island of Evermeet. Only a handful of Elven Bastions remain. Evereska in the western Savage Frontier is the undoubted capital, but smaller communities cling on in the High Forest and the Chondalwood, each with their own ambitions. 
-
-These elves who remain still hold fast to the exclusionary and isolationist traditions of their forebearers. While peace and occassional alliances with the peoples of Cormyr, the Silver Marches, Aglarond, Waterdeep, and Baldur's Gate have helped ensure their survival, The Cult of the Dragon, the Zhentarim, the beastlords of the Savage Frontier, and the resurgent Scourged Legion all threaten the elves of Faerûn with their final destruction. If these elves are truly to be the protectors and inheritors of Corellon's legacy in the Prime, Faerûn must not be abandoned. The Era of Upheaval draws near and The Retreat must come to an end."  
-
-#summary "The elves are divided and relatively weak on their own. Without foreign recruitment and with nearly all troops and commanders holy, you have limited ability to field true armies. This nation instead relies on its mages, priests, and other commanders to enter the fray. While your key units are listed as 'Cap Only' you have access to a special spell to establish a new 'Elven Bastion' and begin recruiting your high elven units from this new holdfast."  
-#flag "ForgottenRealms/flag_evereska.tga"
-#templepic 30 -- Forest Gate
-#fortera 2 -- Castle standard era 2
-#homefort 3
-#buildfort 3
-#builduwfort 6
-#labcost 200
-#templecost 300
-#hidedom 1
-#color 0.10 0.92 0.35
-
-
--- Evereska (346)
-
-#addgod 7492 -- Corellon's Shrine 4 
-#addgod 7495 -- Labelas Shrine 4 
-#addgod 7494 -- Moonbow Shrine 4 
-#addgod 8000 -- Mystra
-#addgod 5006 -- Chauntea
-#addgod 5005 -- Selune
-#addgod 5037 -- Silvanus
-#addgod 5018 -- Mielikki
-#addgod 5019 -- Corellon, First of the Seldarine
-
-#cheapgod40 7492 -- Corellon's Shrine
-#cheapgod40 7495 -- Labelas Shrine 4 
-#cheapgod40 7494 -- Moonbow Shrine 4 
-#cheapgod20 5019 -- Corellon, First of the Seldarine
-
-
-#startcom 7420 -- Vale Guard Captain
-#startunittype1 7421 -- Vale Guard
-#startunitnbrs1 20
-#startunittype2 7445 -- Long Watchman
-#startunitnbrs2 20
-
-#startscout 7414 -- Moon Elf Shadow
-
-#forestrec 7398 -- Wild Elf Hunter
-#forestrec 7481 -- Wild Elf Warrior
-
-#forestcom 7349 -- Half-Elf Champion
-#forestcom 7483 -- Wild Elf Clan Leader
-#forestcom 7482 -- Wild Elf Druid
-#forestcom 7483 -- Feywarden
-#forestcom 7480 -- Moonbow Priestess
-
-
-#addrecunit 7348 -- Wood Elf Ranger
-#addrecunit 7445 -- Long Watchman
-
-#addreccom 7349 -- Half-Elf Champion
-#addreccom 7477 -- Elven Harper
-#addreccom 7470 -- Wood Elf Oracle
-#addreccom 6813 -- Elven Bladesinger
-#addreccom 7496 -- Elven Artificer
-#addreccom 6617 -- Seldarine Cleric
-#addreccom 7480 -- Moonbow Priestess
-#addreccom 7497 -- Master Elven Artificer
-#addreccom 7476 -- Wood Elf Queen
-
-
-
-
-#defcom1 7420 -- Vale Guard Captain
-#defcom2 6813 -- Elven Bladesinger
-#defunit1 7348 -- Wood Elf Ranger
-#defmult1 20
-#defunit1b 7421 -- Vale Guard
-#defmult1b 20
-#defunit2 7422 -- Great Eagle Cavalry
-#defmult2 5
-
----------- DEFENCES
-#guardcom 7420 -- Vale Guard Captain
-#guardunit 7421 -- Vale Guard
-#guardmult 20
-#wallcom 7419 -- Arcane Archer
-#wallunit 7348 -- Wood Elf Ranger 
-#wallmult 15 	
-
----------- START SITES
-
-#startsite "Evereska Vale"  
-#startsite "Hall of the High Hunt"
-#startsite "Unicorn and Crescent"
-#startsite "Greypeak Crypts"
-
+-- 7350 -- Dark Naga -- 525
+#newspell
+#name "Summon a Dark Naga"
+#descr "Dark Nagas are dangerous sorcerers like all members of their kind. They exhibit special leadeship qualities as both mentors and field commanders, bringing both research bonuses and troop morale boosts."
+#school 0
+#researchlevel 5
+#path 0 5
+#pathlevel 0 2
+#fatiguecost 4500
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7350 -- Dark Naga
+#notfornation 200 -- Waterdeep - Archons yes 
+#notfornation 201 -- Luiren 
+#notfornation 207 -- The Swamps of Chuult
+#notfornation 209 -- Halruaa 
+#notfornation 214 -- Aglarond 
+#notfornation 215 -- Impiltur 
+#notfornation 227 -- Dwarves of Deep Shanatar
+#notfornation 229 -- Dwarves of Old Bhaerynden
+#notfornation 218 -- Baldur's Gate
+#notfornation 221 -- Kingdom of Corwell
+#notfornation 216 -- Silverymoon / Silver Marches 
+#notfornation 204 -- Cormyr - Archons yes
+#notfornation 239 -- Nantarn Alliance
+#spec 8388608 -- uwok
 #end
 
-
-
-------------------------------------------------------------------------------
---------------------------The Dalelands---------------------------------------
-------------------------------------------------------------------------------
-
-#selectnation 237 -- The Dalelands
-#era 2
-#name "The Dalelands"
-#epithet "In the Shadow of Myth Drannor"
-#brief "At the crossroads of the Western Heartlands, the Dragon Coast, the Moonsea, and the Unapproachable East, there lies the forest of Cormanthor and the ruins of a once-great elven kingdom centered on the fabled city of Myth Drannor. Fiercely contested by both gods and men, the Dales persist as a loosely organized group of independent countries forever on the brink of destruction."
-
-#descr "At the crossroads of the Western Heartlands, the Dragon Coast, the Moonsea, and the Unapproachable East lies the forest of Cormanthor and the ruins of a once-great elven kingdom centered on the fabled city of Myth Drannor. Fiercely contested by both gods and men, the Dales persist as a loosely organized group of independent countries forever on the brink of destruction. 
-
-They enjoyed an age-old alliance with the elves of Cormanthyr known as the Dales Compact, formed long before the first permanent human settlements in the region had gained any semblance of importance. At the time, the elves were at their height of power in the region, and their capital of Myth Drannor was considered the pinnacle of shared knowledge, culture, and civilization in Faerûn - a beacon of serenity and solidarity in the fight against chaos. Today, however, Myth Drannor sits as a fiend-infested ruins and 600 years after its fall, the elves have now largely withdrawn entirely from the continent in their great migration known as 'The Retreat.' With 90 precent of all the elves on Faerun having fled to far away Evermeet, the lingering Dales Compact is of little comfort.
-
-Watched over by Shadowdale's great patron and demigod-like archmage, Elminster Aumarr, and several of Mystra, the goddess of magic's, daughters, there is still hope for the future. Backed up by heroic organizations such as the Harpers and the Emerald Enclave, and with many friendships among the nations of the Lords Alliance, the Dalesfolk do not stand alone. Heroes from across Faerun flock to the Dales in the hopes of fame, riches, and legendary glory.
-
-Recent events, however, have left the Dales in shock. In just the last 30 years, greater fiends, ancient dragons, alien abberations, and even two demi-gods attempted to twist the lingering Mythal of Myth Drannor to their will, but all had failed. Yet our Harper Agents have confirmed an ancient Daemonfey Matriarch has siezed the Mythal and rewoven it to serve her ambitions." 
-
-#summary "You begin with control over Shadowdale and Deepingdale, an imporant elven enclave. Your basic forces are backed up by outstanding starting heroes, including two of Mystra's daughters and a handful of other famous heroes. Each Dale has its own unique recruitment roster, but you'll have to unify them to take advantage. Several Throne locations in the Dales exist, making this a hotbed of conflict."  
-#flag "ForgottenRealms/flag_dalelands.tga"
-#templepic 30 -- Forest Gate
-#fortera 2 -- Castle standard era 2
-#homefort 2
-#buildfort 3
-#builduwfort 6
-#labcost 300
-#templecost 300
-#color 0.10 0.62 0.72
-
-
-#addgod 8000 -- Mystra
-#addgod 5037 -- Silvanus
-#addgod 5018 -- Mielikki
-#addgod 5006 -- Chauntea
-#addgod 5005 -- Selune
---#addgod 5040 -- Elminster
-
---#cheapgod40 5040 -- Elminster 
-#cheapgod40 8000 -- Mystra 
-#cheapgod20 5006 -- Chauntea
-
-#startcom 7427 -- Dales Lancer Captain
-#startunittype1 7426 -- Dalelands Lancer
-#startunitnbrs1 11
-#startunittype2 7441 -- Dalesman Archer
-#startunitnbrs2 20
-
-#startscout 7433 -- Dalelands Scout
-
-#forestrec 7348 -- Wood Elf Ranger
-#forestcom 7349 -- Half-Elf Champion
-#forestcom 6615 -- Ranger of the Emerald Enclave
-#forestcom 6813 -- Elven Bladesinger
-#forestcom 6617 -- Seldarine Cleric
-
-#addrecunit 7429 -- Dalelands Levy
-#addrecunit 7430 -- Dalelands Pikeman
-#addrecunit 7431 -- Dalelands Swordsman
-#addrecunit 7441 -- Dalesman Archer
-#addrecunit 7426 -- Dalelands Lancer
-
-#addreccom 7433 -- Dalelands Scout
-#addreccom 7432 -- Dalelands Champion
-#addreccom 7427 -- Dales Lancer Captain
-#addreccom 6614 -- Harper Agent
-#addreccom 7436 -- Lord of the Dales
-#addreccom 7428 -- Dalelands Battle-Mage
-#addreccom 5044 -- Cleric of Tymora
-#addreccom 7003 -- Priestess of Chauntea
-#addreccom 6938 -- Wildshape Druid 
-#addreccom 6605 -- Cleric of Lathander
-
-
-#defcom1 7432 -- Dalelands Champion
-#defcom2 7427 -- Dales Lancer Captain
-#defunit1 7429 -- Dalelands Levy
-#defmult1 20
-#defunit1b 7431 -- Dalelands Swordsman
-#defmult1b 10
-#defunit2 7426 -- Dalelands Lancer
-#defmult2 20
-
----------- DEFENCES
-#guardcom 7432 -- Dalelands Champion
-#guardunit 7430 -- Dalelands Pikeman
-#guardmult 20
-#wallcom 7428 -- Dalelands Battle-Mage
-#wallunit 7441 -- Dalesman Archer
-#wallmult 20	
-
----------- START SITES
-
-#startsite "Shadowdale"
-#startsite "Harper's Hill"
-#startsite "Elminster's Tower"
-
+-- 7351 -- Spirit Naga -- CR9 740
+#newspell
+#name "Summon a Spirit Naga"
+#descr "Spirit Nagas are the most wicked of all their kind. Powerful sorcerers, they abuse their immortality by rushing into conflict for the sheer joy of causing pain and death. They are equally excellent researchers and combatants."
+#school 0
+#researchlevel 45
+#path 0 8
+#pathlevel 0 3
+#fatiguecost 7500
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7351 -- Spirit Naga
+#notfornation 200 -- Waterdeep - Archons yes 
+#notfornation 201 -- Luiren 
+#notfornation 207 -- The Swamps of Chuult
+#notfornation 209 -- Halruaa 
+#notfornation 214 -- Aglarond 
+#notfornation 215 -- Impiltur 
+#notfornation 227 -- Dwarves of Deep Shanatar
+#notfornation 229 -- Dwarves of Old Bhaerynden
+#notfornation 218 -- Baldur's Gate
+#notfornation 221 -- Kingdom of Corwell
+#notfornation 216 -- Silverymoon / Silver Marches 
+#notfornation 204 -- Cormyr - Archons yes
+#notfornation 239 -- Nantarn Alliance
+#spec 8388608 -- uwok
 #end
 
-
-------------------------------------------------------------------------------
---------------------------The Scoured Legion-------------------------------------------
-------------------------------------------------------------------------------
-
-#selectnation 238 -- Hellgate Alliance
-#era 2
-#name "The Scoured Legion"
-#epithet "Masters of Hellgate Keep"
-#brief "With a new-found pact between the demonic forces inhabiting the lands beneath Hellgate Keep and the ancient elven city of Myth Drannor, the conquest of all of Faerun is on the table."
-
-#descr "In -372 DR, the elves of Earlann built a castle atop Ascal's Horn, an exinct volcano on the northern edge of the High Forest, and warded its walls with powerful magic.  Over the next 1,000 years, Ascalhorn grew into an urban center of learning and shared knowledge to rival Myth Drannor. It became a refuge for suvivors from the fall of both Netheril and, later, Myth Drannor itself. Worshippers of Bane, however, hiding amidst the refugees, summoned devils from the Nine Hells in a bid for power.  In 856 DR, the city devolved into chaos and the devils siezed control for themselves. Desperate, some citizens turned to demons for aid. Led by the balor, Grintharke, the demons fought off the devils and then turned on their masters. Their legions spread, destroying both Earlann as well as the dwarven kingdom of Ammarindar below. 
-
-In 886, Elminster and Khelben Arunson secretly altered the wards cast during the keep's construction to become a prison, succeeding in confining Grintharke and his generals within. Forced to change tactics, the demons expanded their influence instead through forced interbreeding with orcs and captured elves and humans. Yet the Harpers had ultimately succeeded in localizing the threat for the next 500 years. Ascalhorn became known as Hellgate Keep.
-
-In 1365, Grintharke was finally killed. The cambion son of a marilith siezed his throne. Kaanyr Vhok, unfettered by the Harpers' wards, united the remains of the Scoured Legion and its abyssal descendants. In response, the Harpers utilized a dangerous and powerful artifact to annihilate the keep. Kannyr, however, was safely below in old Ammarindar. Worse, the blast inadvertantly shattered a 5,000 year old prison that had remained hidden below the foundations of ancient Ascalhorn. Daemonfey poured out. Led by Sarya Dlardrageth, they formed a pact with Kaanyr and the remnants of the Scoured Legion. Relocating herself to the ruins of Myth Drannor, Sarya joined Kaanyr in a dark alliance intent on revenge."  
-
-#summary "Ammarindar and Myth Drannor are disconnected and surrounded by powerful nations unlikely to welcome a demonic horde. Above Ammarindar, Hellgate Dell as it is now known, has been quickly siezed by treants intent on preventing its reconstruction. In the lore, Kaanyr embarked on an invasion of the Underdark in the War of the Spider Queen. At the same time, Sarya holds firmly to Myth Drannor and is poised to seize its unlocked Mythal."  
-#flag "ForgottenRealms/flag_scouredlegion.tga"
-#templepic 4 -- Mountain Temple
-#fortera 2 -- Castle standard era 2
-#homefort 3
-#buildfort 3
-#builduwfort 6
-#labcost 300
-#templecost 300
-#color 0.90 0.22 0.32
-#bloodnation
-
-#addgod 5016 -- Loviatar 4
-#addgod 7346 -- Soneillon 3
-#addgod 5036 -- Asmodeus 2
-#addgod 5031 -- Orcus 2
-#addgod 7052 -- Grazzt 2
-#cheapgod40 7052 -- Grazzt 2
-
-#startcom 7343 -- Cambion
-#startunittype1 7448 -- "Tanarukk"
-#startunitnbrs1 5
-
-#startscout 7503 -- Tiefling Spellfilcher 
-
---#wasterec 6724		-- Gnoll Hunters 
---#wastecom 6808 		-- Gnoll Chieftain
---#wastecom 6728 		-- Manticore
-
---#forestrec 6723 	-- Goblin Dogslicers
---#forestrec 6807		-- Goblin Archers
---#forestrec 6806 	-- Krenshar
---#forestrec 2219		-- Forest Troll from forests
---#forestrec 7071		-- Owlbear
---#forestcom 6770 	-- Goblin King
---#forestcom 2220 	-- Troll Shaman
---#forestcom 6733 	-- Goblin Lab-Rats
-
---#mountainrec 6676	-- Orc Marauders
---#mountainrec 6802	-- Orc Greatbows
---#mountainrec 6672 	-- Wyvern
---#mountaincom 430 	-- Black Harpy
---#mountaincom 6737 	-- Orc Warlord
---#mountaincom 6801	-- Cleric Gruumsh
-
---#caverec 7234 -- Drow Sargtlin
---#caverec 7081 -- Otyugh
---#caverec 6671 -- Hell Hound
---#caverec 7165 -- Umber Hulk
---#cavecom 7317 -- Drow Commander
---#cavecom 7275 -- Drow Mage Apprentice
---#cavecom 6738 -- Fire Giant Commander
-
-#addrecunit 6807 -- Goblin Deadeye
-#addrecunit 6723 -- Goblin Dogslicer
-#addrecunit 6676 -- Orc Marauder
-#addrecunit 6671 -- Hell Hound
-#addrecunit 6672 -- Wyvern
-#addrecunit 7512 -- Tiefling Sniper
-#addrecunit 7505 -- Maeluth Axeman
-#addrecunit 7449 -- Fey'ri Dervish
-#addrecunit 7448 -- Tanarukk
-
-#addreccom 7503 -- Tiefling Spellfilcher 
-#addreccom 7502 -- Tiefling Warlock
-#addreccom 7344 -- Tiefling Priestess
-#addreccom 7455 -- Tanarukk Captain
-#addreccom 7504 -- Durzagon Hellforger 
-#addreccom 7343 -- Cambion
-#addreccom 7342 -- Alu-fiend
-#addreccom 7506 -- Daemonfey Hexblade
-#addreccom 7451 -- Fey'ri Sorceress
-#addreccom 7450 -- Daemonfey Patriarch
-
-
-#defcom1 7455 -- "Tanarukk Captain"
-#defcom2 7342 -- Alu-fiend
-#defunit1 6676 -- Orc Marauder
-#defmult1 20
-#defunit1b 7210 -- Ogre
-#defmult1b 10
-#defunit2 7448 -- "Tanarukk"
-#defmult2 10
-
----------- DEFENCES
-#guardcom 7455 -- "Tanarukk Captain"
-#guardunit 6676 -- Orc Marauder
-#guardmult 20
-#wallcom 7502 -- Tiefling Warlock
-#wallunit 6802 -- Orc Greatbow
-#wallmult 20	
-
----------- START SITES
-
-#startsite "Ruins of Ammarindar" -- THRONELOC
-#startsite "Splendarrmornn"
-#startsite "Citadel Yaunoroth"
-#startsite "Demoncyst"
-
+-- 7352 -- Guardian Naga -- CR10 810
+#newspell
+#name "Summon a Guardian Naga"
+#descr "Guardian Nagas are immortal. Dutifully protecting sacred sits, relics, and magical knowledge, many good and lawful-aligned deities considered these beings sacred and often employed Guardian Nagas throughout the planes to safeguard dangerous knowledge. They are the highest embodiment of their kind and serve only those who uphold justice and righteousness."
+#school 0
+#researchlevel 6
+#path 0 4
+#pathlevel 0 4
+#fatiguecost 6500
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7352 -- Guardian Naga
+#restricted 200 -- Waterdeep - Archons yes 
+#restricted 201 -- Luiren 
+#restricted 207 -- The Swamps of Chuult
+#restricted 209 -- Halruaa 
+#restricted 214 -- Aglarond 
+#restricted 215 -- Impiltur 
+#restricted 227 -- Dwarves of Deep Shanatar
+#restricted 229 -- Dwarves of Old Bhaerynden
+#restricted 218 -- Baldur's Gate
+#restricted 221 -- Kingdom of Corwell
+#restricted 216 -- Silverymoon / Silver Marches 
+#restricted 204 -- Cormyr - Archons yes
+#restricted 239 -- Nantarn Alliance
+#spec 8388608 -- uwok
 #end
 
-
-------------------------------------------------------------------------------
---------------------------Nantarn Alliance -----------------------------------
-------------------------------------------------------------------------------
-
-#selectnation 239 -- Nantarn Alliance 
-#era 2
-#name "Nantarn Alliance"
-#epithet "Lords Under Sea"
-#brief "A faltering alliance of sea elves, merfolk, shalarin, and tritons in Faerûn's inner sea is on the brink of invasion from outside forces. Can it re-unite in time to survive the looming 12th Serôs War?"
-#descr "The Nantarn Alliance lies in the heart of Serôs - the name given to Faerûn's inner sea by the many peoples living beneath its waves. Through four epochs, the tritons, sea elves, locathah, shalarin, and merfolk have competed with dozens of other races including sahuagin, morkoth, ixitxachitl, merrow, koalinths, sea hags, scrags, krakens and many more terrible things from the depths below. Through genocide, slavery, madness and unimaginable bloodshed, the Nantarn Alliance has clung on to the hope of racial harmony and maintained a cosmopolitan capital at the City of Destinies, Myth Nantar. 
-
-Founded sometime around -9,000 DR by the mythical triton, Dukar, the Nantar Academy became a center of arcane scholarship. Dukar went on to establish an order of powerful peacekeeping mages, The Dukars, who brought together all the races in the hope for a just and peaceful future. A growing settlement of aquatic elves later swallowed up Nantar during the height of the elven empire of Aryselmalyr. The Dualist High Mages of Aryselmalyr joined the Dukars in creating a mythal to allow those of the surface the ability to negotiate, trade, and engage in cultural exchange with the undersea realm. The mythal also contained powerful wards, barring the entry of the demonic sahuagin, but while the mythal was destined to last, the peace was broken many times. 
-
-At least eleven major conflicts have erupted over the last two milennia, sowing death, chaos and distrust, and Myth Nantar and the Dukars eventually became political pawns. Aryselmalyr collapsed only to be replaced by a revolving door of rebellious merfolk kingdoms and at the conclusion of the 11th Serôs War, roughly 500 years ago, the Dukar Orders were destoyed and Myth Nantar became little more than a ruins. 
-
-Amidst this time of uncertainty, dark prophecies and fearful spies speak of a coming crisis unlike any Serôs has ever seen..."  
-#summary "Sea Elves, Merfolk, and Shalarin are the roster's core, with powerful Tritons in small but effective numbers. Note these are not your vanilla dominions merfolk and tritons. Several capitals, each with their own cap-only roster, takes recruitment beyond this nation's described list. Nothing is cheap, and there are many holy units. Labs and temples are cost-effective and the intact Mythal at Myth Nantar may be enough to survive the coming horror."  
-#flag "ForgottenRealms/flag_nantarn.tga"
-#templepic 1 -- Under Water
-#fortera 2 -- Castle standard era 2
-#uwbuild 1
-#uwnation
-#homefort 7
-#buildfort 1
-#builduwfort 6
-#labcost 300
-#templecost 300
-#color 0.10 0.73 0.62
-
-#addgod 8000 -- Mystra
-#addgod 8051 -- TEMPLE OF DEEP SASHELAS
-#cheapgod40 8051 -- Deep Sashelas
-
-#startcom 7627 -- Shoalguard Captain 
-#startunittype1 7611 -- Sea Elf Shoalguard
-#startunittype2 7538 -- Sea Elf Ranger
-#startunitnbrs1 25
-#startunitnbrs2 15
-
-#startscout 7554 -- Shalarin Seeker
-
-#addrecunit 7611 -- Sea Elf Shoalguard
-#addrecunit 7538 -- Sea Elf Ranger 
-#addrecunit 7540 -- Sea Elf Warden 
-
-#addreccom 7639 -- Dolphin Scout
-#addreccom 7627 -- Shoalguard Captain 
-#addreccom 7605 -- Sea Elf Paladin
-#addreccom 7539 -- Sea Elf Druid 
-#addreccom 7541 -- Sea Elf High Mage 
-#addreccom 7554 -- Shalarin Seeker
-#addreccom 8021 -- Mermaid Bard
-#addreccom 7534 -- Mermaid Wavekeeper
-
-#deeprec 7619 -- Triton Tapalero
-#deeprec 7532 -- Triton Sentinel
-#deeprec 7621 -- Triton Crossbowman
-#deepcom 7536 -- Triton Crusader -- Watershape
-#deepcom 7530 -- Triton Theurge
-
-#deepfortrec 7619 -- Triton Tapalero
-#deepfortrec 7532 -- Triton Sentinel
-#deepfortrec 7621 -- Triton Crossbowman
-#deepfortcom 7536 -- Triton Crusader -- Watershape
-#deepfortcom 7530 -- Triton Theurge
-
-
--- 7521 -- Barracuda
--- 7523 -- Hippocampus
--- 7606 -- Dolphin
--- 7607 -- Sacred Dolphin
--- 8003 -- Orca
--- 8004 -- Whale
-
--- 7639 -- Dolphin Scout
-
--- 7518 -- Merfolk Militia
--- 7623 -- Merfolk Skirmisher
--- 7625 -- Merfolk Crossbowman 
--- 7519 -- Merfolk Soldier
--- 7522 -- Merfolk Knight
--- 7624 -- Merfolk Whalesiders
-
--- 7520 -- Merfolk Commander
--- 7614 -- Merfolk Knight Commander
--- 8019 -- Merfolk Princess
--- 8020 -- Merfolk Prince
--- 8021 -- Mermaid Bard
--- 7534 -- Mermaid Wavekeeper
-
-
--- 7532 -- Triton Sentinel
--- 7621 -- Triton Crossbowman
--- 7619 -- Triton Tapalero
--- 7536 -- Triton Crusader
--- 7530 -- Triton Theurge
-
--- 7611 -- Sea Elf Shoalguard -- Watershape
--- 7538 -- Sea Elf Ranger -- 7543 -- Landshape
--- 7608 -- Nantari Cavalier
--- 7627 -- Shoalguard Captain 
--- 7609 -- Nantari Cavalier Captain
--- 7605 -- Sea Elf Paladin -- Watershape
--- 7539 -- Sea Elf Druid -- 7545 -- Landshape
--- 7540 -- Sea Elf Warden -- 7542 -- Landshape
--- 7535 -- Sea Elf Delphion
--- 7541 -- Sea Elf High Mage -- 7544 -- Landshape
-
--- 7547 -- Manta Ray
--- 7548 -- Shalarin Mantaback
--- 7549 -- Shalarin Protector
--- 7550 -- Shalarin Arcane
--- 7551 -- Shalarin Finblade
--- 7552 -- Shalarin Mantaback Captain
--- 7553 -- Shalarin Ruler
--- 7554 -- Shalarin Seeker
-
-
--- LAND PROVINCE DEFENCE
-#defcom1 7540 -- Sea Elf Warden
-#defcom2 7529 -- Triton Champion -- Landshape
-#defunit1 7611 -- Sea Elf Shoalguard
-#defmult1 20
-#defunit2 7538 -- Sea Elf Ranger
-#defmult2 10
-
--- LAND WALL DEFENCE
-#guardcom 7540 -- Sea Elf Warden
-#guardunit 7611 -- Sea Elf Shoalguard
-#guardmult 20
-#wallcom 7529 -- Triton Champion -- Landshape
-#wallunit 7538 -- Sea Elf Ranger
-#wallmult 10	
-
--- UW PROVINCE DEFENCE
-#uwdefcom1 7520 -- Merfolk Commander
-#uwdefcom2 7614 -- Merfolk Knight Commander
-#uwdefunit1 7623 -- Merfolk Skirmisher
-#uwdefmult1 20
-#uwdefunit1b 7519 -- Merfolk Soldier
-#uwdefmult1b 10
-#uwdefunit2 7522 -- Merfolk Knight
-#uwdefmult2 10
-
---UW WALL DEFENCE
-#uwguardcom 7520 -- Merfolk Commander
-#uwguardunit 7519 -- Merfolk Soldier
-#uwguardmult 20
-#uwwallcom 7520 -- Merfolk Commander
-#uwwallunit 7625 -- Merfolk Crossbowman 
-#uwwallmult 16	
-
----------- START SITES
-
-#startsite "Myth Nantar" -- THRONELOC
-#startsite "The Mythal at Myth Nantar"
-#startsite "Mount Halaath"
-#startsite "Lesser Hmur Plateau"
--- Great Dungeons of the Merynths
-
+-- 7353 -- Bone Naga -- CR4 80
+#newspell
+#name "Create Undead: Bone Naga Guardians"
+#descr "Bone Nagas are undead serpentine guardians, begrudgingly serving their creators as guardians and bodyguards. They retain enough of their memories and spellcasting from life to wield limited magic on the battlefield, but their true purpose lies in protecting that which their masters consider sacred."
+#school 4
+#researchlevel 3
+#path 0 5
+#pathlevel 0 2
+#fatiguecost 1200
+#effect 10001 -- summon commander
+#nreff 1005
+#damage 7353 -- Bone Naga
 #end
 
-------------------------------------------------------------------------------
---------------------------ALEAXTIS -- INCOMPLETE------------------------------
-------------------------------------------------------------------------------
+-- 7354 -- Water Naga -- CR7 645
+#newspell
+#name "Summon a Water Naga"
+#descr "Water Nagas were created by the ancient sarrukh empire to explore the vast undersea realms of Faerun. They wield a wide array of magic and make excellent researchers and guardians."
+#school 0
+#researchlevel 5
+#path 0 2
+#pathlevel 0 3
+#fatiguecost 4800
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7354 -- Water Naga
+#spec 8388608 -- uwok
+#end
 
-#selectnation 240 -- ALEAXTIS
-#era 2
-#name "Aleaxtis"
-#epithet "Twilight of Sekolah"
-#brief "Aleaxtis is the realm of the sahuagin, the Sea-devils, the children of the shark-god, Sekolah. They stalk the deeper reaches of the inner Sea of Fallen Stars as well as the coastal Sea of Storms, near Baldur's Gate."
-#descr "The insufferably self-righteous members of the so-called Nantarn Alliance can be tolerated no more. Their rules and mores have plagued the sahuagin for milennia, suspending them when they see fit and using them to drive out those they deem 'undesirable.' No more. Sekolah has opened his maw, and brought forth Iakhovas into the seas once again. He Who Swims With Sekolah. Even now, the immortal Iakhovas churns the deep waters, forging pacts in the dark with the Morkoths, Merrow and Koalinth. Soon the hubris of Nantarn's Sharksbane Wall will be revealed and our blood lust will be sated. 
+-- 7355 -- Banelar Naga -- CR8 800
+#newspell
+#name "Summon a Banelar Naga"
+#descr "Banelar Nagas were created to serve the dark god Bane. Immortal, magestic, and deadly, they wield an array of magic and holy powers and make excellent researchers. They are unique among their kind in that they can wield weapons, rings, and other items from their tentacled beards."
+#school 0
+#researchlevel 5
+#path 0 5
+#pathlevel 0 3
+#fatiguecost 5700
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7355 -- Banelar Naga
+#restricted 202 -- Zhentarim 
+#restricted 203 -- Calimshan
+#restricted 210 -- THAY
+#restricted 217 -- AMN
+#restricted 220 -- Cult of the Dragon
+#restricted 223 -- Serpentes
+#restricted 238 -- Scoured Legion
+#end
 
-Aleaxtis is the realm of the sahuagin, the Sea-devils, who stalk the deeper reaches of the Sea of Fallen Stars. Long-held in check by the more 'civilized' nations of the inner sea, the sahuagin are intent to permanently alter the balance of power that has existed there for more than 10,000 years. 
+-- 7372 -- Pillar of Pisaethces
+#newspell
+#name "Construct a Pillar of Pisaethces"
+#descr "These obelisks are built by the Abolethic Sovereignty in reverence to Pisaethces. Imbued with her alien symbols, they exude a psychic drone that brings madness to those nearby, drawing cultists and slaves to the deeps."
+#school 0
+#researchlevel 0
+#path 0 4
+#pathlevel 0 3
+#fatiguecost 1000
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7372 -- Pillar of Pisaethces
+#spec 8388608 -- uwok
+#restricted 225 -- Shape of Water
+#end
 
-There will be no shortage of enemies in the long term - in addition to a scattered powerbase in the Sea of Fallen Stars, Aleaxtis maintains a fin in the Sea of Storms just off the coast of Baldur's Gate. These open seas lack the organized political structures of the inner sea, and that gives Aleaxtis an opportunity to expand uncontested there, at least for a time. The Kraken Society holds many provinces but seems wary to expand. Waterdeep has alliances with Merfolk and Aquatic Elves that could bring trouble, eventually. The Kuo-toa of Sloopdilmonpolop spreads their madness through the nearby, interconnected underdark, and will bubble up at some point. And so too does the Abolethic Sovereignty stir from the Glimmersea, far beneath the Sea of Fallen Stars. For now, however, the focus must be on vengeance against the Nantarn Alliance and the dawning of the 12th Serôs War." 
-#summary "The amphibious, bloodthirsty sahuagin are the core of the nation. Cheap labs and temples allow for unique recruitment options outside of forts, however, those forts are going to be costly. A ritual fort will help. The strange morkoth make powerful allies in the darkest depths, where even the deep-sea dwelling sahuagin dare not go. Plenty of commanders take slaves, filling the ranks with chaff to chum the waters. The quasi-deity, Iakhovas, leads the way."
-#flag "ForgottenRealms/flag_aleaxtis.tga"  
-#templepic 1 -- Under Water
-#fortera 0 -- pallisades only
-#uwnation
-#homefort 7
-#buildfort 3
-#labcost 300
-#templecost 300
-#color 0.61 0.63 0.92
+-- 7375 -- Skum
+#newspell
+#copyspell 945
+#name "Create Skum"
+#descr "By releasing a grey viscous fluid from their skin, aboleths were capable of granting anyone caught in this cloud the ability to breathe underwater. However, the cloud also caused a transformation in those to weak to resist the cloud's mind-twisting power. The result was a permanent transformation into a membraneous creature called a skum, forever mentally enslaved to their aboleth creator."
+#details "Powerful aboleths are capable of releasing enormous clouds, enslaving additional skum with each casting. The spell can only be cast underwater."
+#school 0
+#researchlevel 0
+#path 0 4
+#path 1 2
+#pathlevel 0 3
+#pathlevel 1 3
+#fatiguecost 400
+#effect 10001 -- summon monster
+#nreff 2001
+#damage 7375 -- Skum
+#restricted 225 -- Shape of Water
+#end
 
-#addgod 8050 -- Temple of Sekolah
-#cheapgod40 8050
+-- 7382 -- Xxiphu Ascendent
+#newspell
+#name "Raise the Obelisk of Xxiphu"
+#descr "These obelisks are built by the Abolethic Sovereignty in reverence to Pisaethces. Imbued with her alien symbols, they exude a psychic drone that brings madness to those nearby, drawing cultists and slaves to the deeps."
+#school 0
+#researchlevel 9
+#path 0 4
+#path 1 2
+#pathlevel 0 6
+#pathlevel 1 3
+#fatiguecost 30000
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7382 -- Xxiphu Ascendent
+#restricted 225 -- Shape of Water
+#spec 41943040 -- uw ok and uw only
+#end
 
-#startcom 7588 -- Sahuagin Shark-Knight Commander
-#startunittype1 7575 -- Sahuagin Hunter - Watershape
-#startunitnbrs1 20
-#startunittype2 7587 -- Sahuagin Shark-Knight 
-#startunitnbrs2 8
+-- 7211 -- Phaerimm
+#newspell 
+#copyspell 1078
+#name "Release the Phaerimm"
+#descr "By means of this abominable ritual, you release a number of Phaerimm from their eternal prison behind the Sharnwall. This dangerous act will no doubt be seen as an affront to all the nations of Faerun. The Phaerimm will not be under the control of their summoner long and will consume all magic in the target province if they succeed in conquering it, including any Thrones present."
+#school 0
+#researchlevel 8
+#path 0 6
+#pathlevel 0 6
+#fatiguecost 10000
+#effect 10037 -- Farsummon
+#damage 7211 -- Phaerimm
+#nreff 20
+#provrange 4
+#farsumcom 7211 -- Phaerimm
+#end
 
-#startscout 7574 -- Priestess of Sekolah -- Watershape
+-- 7393 -- Mindwitness
+#newspell
+#name "Create a Mindwitness"
+#descr "By implanting a mindfalyer tadpole within the eye of a beholder, a true abomination can be created. Only an Elder Brain or Greater Elder Brain may drive this process."
+#school 6
+#researchlevel 6
+#path 0 8
+#path 1 4
+#pathlevel 0 2
+#pathlevel 1 2
+#fatiguecost 5000
+#effect 10021
+#nreff 1
+#onlyowndst 1
+#damage 7393 -- Mindwitness
+#restricted 226 -- Oryndoll
+#onlymnr 5048
+#onlymnr 5049
+#end
 
-#addrecunit 7575 -- Sahuagin Hunter - Watershape
-#addrecunit 7572 -- Sahuagin Guard -- Watershape
-#addrecunit 7577 -- Sahuagin Baron -- Watershape
-#addrecunit 7587 -- Sahuagin Shark-Knight
+-- Summon Spell -- 7173 -- drider
+#newspell
+#name "Curse of the Demonweb Pits"
+#descr "Part of the duties of Lolth's clergy was to ensure that their society was kept free of dissidents. All mages were put under general suspicion and once they reached a certain level of power, they were abducted and then subjected to a test of loyalty. Failures were turned by a Lolthite priestess into a drider with magical energy channeled directly from Lolth."
+#details "5 Driders are created by means of this spell."
+#school 6
+#researchlevel 2
+#path 0 8
+#path 1 5
+#pathlevel 0 2
+#pathlevel 1 2
+#fatiguecost 1000
+#effect 10001 -- summon monster
+#nreff 5
+#damage 7173 -- drider
+#restricted 222 -- Menzoberranzan
+#end
 
-#addreccom 7576 -- Sahuagin Raidmaster -- Watershape
-#addreccom 7588 -- Sahuagin Shark-Knight Commander
-#addreccom 7574 -- Priestess of Sekolah -- Watershape
-#addreccom 7582 -- Sahuagin Shark-Tamer -- Watershape
-#addreccom 7590 -- Wereshark
-#addreccom 7579 -- Sahuagin Prince -- Watershape
-#addreccom 7600 -- Morkoth Mage
+-- 7173 -- drider mage
+#newspell
+#name "Recruit a Drider Mage"
+#descr "Driders were once normal dark elves, transformed against their will by Lolth herself or her priestesses for disloyalty. While some were kept by the drow as tacit defenders at the fringes of their underdark realms, most became hermits, living in shame and hateful of their curse. As such, any nation with sufficient interest could recruit a drider so long as their mission was revenge against the Spider Queen."
+#school 0
+#researchlevel 3
+#path 0 5
+#path 1 4
+#pathlevel 0 1
+#pathlevel 1 1
+#fatiguecost 1500
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7173 -- drider mage
+#restricted 222 -- Menzoberranzan
+#restricted 238 -- Scoured Legion
+#restricted 202 -- Zhentarim 
+#restricted 203 -- Calimshan
+#restricted 205 -- Frozen North
+#restricted 206 -- Savage Frontier
+#restricted 208 -- Shaar
+#restricted 210 -- THAY
+#restricted 217 -- AMN
+#restricted 220 -- Cult of the Dragon
+#restricted 226 -- Oryndoll
+#restricted 230 -- Llurth Drieir
+#restricted 235 -- Maerimydra
+#end
 
+-- 7422 -- Summon Great Eagle Cavalry -- Elven National Spell
+#newspell
+#name "Recruit Eagle Riders from Evermeet"
+#descr "On the isle of Evermeet, Giant Eagles abound in the mountain highlands. The elves there maintain a large airborne cavalry force, and are willing to send a flight of eagle riders in exchange for a handful of gems."
+#details "8 sacred Eagle Riders are summoned via this spell. You will have to absorb their normal maintenance costs."
+#school 0
+#researchlevel 4
+#path 0 1
+#pathlevel 0 2
+#fatiguecost 1500
+#effect 10001 -- summon monster
+#nreff 8
+#damage 7422 -- Great Eagle Cavalry
+#restricted 236 -- Elves of Faerûn
+#end
 
-#landrec 1918 -- Salty Sea Dog
-#landrec 7298 -- Sea Dog Swashbuckler
-#landrec 7299 -- Sea Dog Deadeye
-#landcom 7301 -- Pirate Lord
-
-#coastrec 1918 -- Salty Sea Dog
-#coastrec 7298 -- Sea Dog Swashbuckler
-#coastrec 7299 -- Sea Dog Deadeye
-#coastrec 564 -- Scrag
-#coastrec 7524 -- Koalinth Soldier
-#coastrec 7525 -- Koalinth Sergeant 
-
-#coastcom 7301 -- Pirate Lord
-#coastcom 7555 -- Koalinth General
-#coastcom 7590 -- Wereshark
-#coastcom 7526 -- Koalinth Shaman
-#coastcom 7562 -- Scrag Shaman
-
-
-#driprec 7598 -- Morkoth
-#driprec 7599 -- Morkoth Warrior
-#driprec 7561 -- Vodyanoi -- Aquatic Umberhulk
-#dripcom 7603 -- Morkoth Captain
-#dripcom 7600 -- Morkoth Mage
-
-#deeprec 7598 -- Morkoth
-#deeprec 7599 -- Morkoth Warrior
-#deeprec 7566 -- Merrow Behemoth
-#deepcom 7603 -- Morkoth Captain
-
-#searec 7567 -- Merrow Behemoth
-#searec 7524 -- Koalinth Soldier
-#searec 564 -- Scrag
-#seacom 7569 -- Merrow Chieftain
-#seacom 7555 -- Koalinth General
-#seacom 7526 -- Koalinth Shaman
-#seacom 7562 -- Scrag Shaman
-
-
--- LAND PROVINCE DEFENCE
-#defcom1 7301 -- Pirate Lord
-#defcom2 7555 -- Koalinth General
-#defunit1 1918 -- Salty Sea Dog
-#defmult1 20
-#defunit1b 7299 -- Sea Dog Deadeye
-#defmult1b 10
-#defunit2 7525 -- Koalinth Sergeant 
-#defmult2 10
-
--- LAND WALL DEFENCE
-#guardcom 7555 -- Koalinth General
-#guardunit 7524 -- Koalinth Soldier
-#guardmult 20
-#wallcom 7301 -- Pirate Lord
-#wallunit 7299 -- Sea Dog Deadeye
-#wallmult 20	
-
--- UW PROVINCE DEFENCE
-#uwdefcom1 7576 -- Sahuagin Raidmaster -- Watershape
-#uwdefcom2 7588 -- Sahuagin Shark-Knight Commander
-#uwdefunit1 7575 -- Sahuagin Hunter - Watershape
-#uwdefmult1 16
-#uwdefunit1b 7572 -- Sahuagin Guard -- Watershape
-#uwdefmult1b 8
-#uwdefunit2 7587 -- Sahuagin Shark-Knight 
-#uwdefmult2 12
-
---UW WALL DEFENCE
-#uwguardcom 7576 -- Sahuagin Raidmaster -- Watershape
-#uwguardunit 7575 -- Sahuagin Hunter - Watershape
-#uwguardmult 16
-#uwwallcom 7574 -- Priestess of Sekolah -- Watershape
-#uwwallunit 7572 -- Sahuagin Guard -- Watershape
-#uwwallmult 12	
-
----------- START SITES
-
-#startsite "Canyon of Aleaxtis" -- THRONELOC
-
+-- 7508 -- Nycaloths
+#newspell
+#name "Summon a Trio of Nycaloths"
+#descr "Summons 3 flying Nycoloth devils from the Blood Rift. Unholy and brutal, they were mercenary elite air assault forces used widely by arch devils to advance their aims."
+#school 6
+#researchlevel 4
+#path 0 8
+#path 1 0
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 2400
+#effect 10001 -- summon monster
+#nreff 3
+#damage 7508 -- Nycaloths
+#restricted 238 -- Scoured Legion
+#restricted 202 -- Zhentarim 
+#restricted 203 -- Calimshan
+#restricted 210 -- THAY
+#restricted 217 -- AMN
+#restricted 220 -- Cult of the Dragon
+#restricted 223 -- Serpentes
 #end
 
 
-------------------------------------------------------------------------------
---------------------------THE TWISTED RUNE -----------------------------------
-------------------------------------------------------------------------------
-
-#selectnation 241 -- THE TWISTED RUNE
-#era 2
-#name "The Twisted Rune"
-#epithet "Alliance of the Lich"
-#brief "The Twisted Rune was a highly secretive and decentralized alliance of liches who worked together for mutual survival and with a goal of ultimately pulling the strings of power throughout all of Faerûn."
-#descr "The Twisted Rune was a highly secretive and decentralized alliance of liches who worked together for mutual survival. Their ultimate goal was to reunify the former Shoon Imperium and ultiamtely pull the strings of power throughout all of Faerûn. 
-
-It was originally a loose consortium of dark mages that formed in 864 DR, during the long and chaotic period after the fall of the Shoon Imperium. The Imperium, at its height, stretched from its capital in southern Tethyr all the way north beyond Baldur's Gate, east to the Great Rift of the Shaar, and south to encompass much of the Chultan peninsula. Its tyrannical Necroqysar, Shoon VII, ascended to lichdom in 450 DR and subsequently disappeared. Over the following centuries, the weakening regional powers eventually divided into city-states and petty kingdoms, some of which banned magic outright. It was this that led to the early foundations of the Twisted Rune.
-
-The Runemasters who ruled the alliance each had their own network of agents to do their bidding and cooperated from afar towards their ultimate, clandestine goal. They would, over their 400 year existence, come to rule many city-states from the shadows, including the Kingdom of Tethyr for several generations. By 1350 DR, they secretly exerted influence over roughly half the ruling body of Calimshan. 
-
-In recent decades, several other grand liches have joined the Rune and greatly expanded its power, including Acererak who lairs in Chult, Zhengyi who dominates Vaasa, and Munafik, who claims the dust deserts of ancient Raurin. Their primary operations, however, remain focused on the Lands of Intrigue and they have a solid foothold on the shores of the Lake of Steam." 
-#summary "This is a decentralized, classic undead nation led by many of the great liches of the Realms. They have many powerful forms of undead, but will rely greatly on the independent city-states over which they exert control. A network of Gates connects their hidden capital to each of the lairs of the distant Runelords. Use of this nexus is tricky..."
-#flag "ForgottenRealms/flag_twistedrune.tga"  
-#templepic 1 -- Under Water
-#fortera 3 -- pallisades only
-#homefort 3
-#buildfort 3
-#labcost 200
-#templecost 500
-#color 0.26 0.07 0.26
-
-#addgod 8001 -- Bane
-#addgod 7287 -- Velsharoon
-#addgod 5033 -- Cyric
-#addgod 5031 -- Orcus
-#addgod 5021 -- Shar
-#addgod 5017 -- Mask
-#addgod 5003 -- Myrkul
-
-#cheapgod20 7287 -- Velsharoon
-#cheapgod20 5021 -- Shar
-#cheapgod40 5003 -- Myrkul
-
-#startcom 310 -- Necromancer
-#startunittype1 7288 -- Unsated Ghoul
-#startunitnbrs1 20
-#startunittype2 7269 -- Wraith
-#startunitnbrs2 5
-
-#startscout 429 -- Black Hand Assassin
-
-
-#addrecunit 7700 -- Deathtouched Warrior
-#addrecunit 7703 -- Bone Dancer
-#addrecunit 7017 -- Death Knight of the Eternal Dragon
-
-#addreccom 7709 -- Shadow Spy x
-#addreccom 7702 -- Ghast x
-#addreccom 6673 -- Servant of Myrkul x
-#addreccom 310 -- Necromancer x 
-#addreccom 7708 -- Deathlock Wight -- Recruitable x
-#addreccom 7701 -- Gray One x
-#addreccom 7705 -- Heucuva x
-#addreccom 7699 -- Master Necromancer x
-
--- LAND PROVINCE DEFENCE
-#defcom1 310 -- Necromancer
-#defcom2 310 -- Necromancer
-#defunit1 2122 -- Longdead Hoplite
-#defmult1 20
-#defunit1b 3005 -- Longdead Archer
-#defmult1b 10
-#defunit2 7280 -- Giant Skeleton
-#defmult2 15
-
--- LAND WALL DEFENCE
-#guardcom 310 -- Necromancer
-#guardunit 2122 -- Longdead Hoplite
-#guardmult 20
-#wallcom 310 -- Necromancer
-#wallunit 3005 -- Longdead Archer
-#wallmult 20
-
-#startsite "The Umbral Conclave"
-#startsite "Dusk Spire"
-#startsite "Crown of Darkness"
-
-
+-- 7634 -- Wastrilith
+#newspell
+#name "Bind a Wastrilith"
+#descr "Summons a greater aquatic demon, a Wastrilith, known to serve the demonlords of the darkest depths, the greatest of which was Dagon. Wastriliths wreaked havoc on their surrounding landscape, corrupting water they came into contact with and twisting it to serve their dark ends. They are powerful masters of water magic and spread death wherever they roam."
+#school 6
+#researchlevel 5
+#path 0 8
+#path 1 2
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 5000
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7634 -- Wastrilith 
+#restricted 238 -- Scoured Legion
+#restricted 202 -- Zhentarim 
+#restricted 203 -- Calimshan
+#restricted 210 -- THAY
+#restricted 217 -- AMN
+#restricted 220 -- Cult of the Dragon
+#restricted 223 -- Serpentes
+#restricted 224 -- Sloopdilmonpolop
+#restricted 240 -- Aleaxtis
+#spec 8388608
 #end
 
-#selectnation 242
-#era 2
-#name "Ao"
-#epithet "The Observer"
-#brief "For observers, debuggers, and cheaters."
-#descr "Ao was the Overgod and embodiment of The Balance. The being appeared only once, during the Time of Troubles. Kicked off in 1358 DR by Bane, Bhaal, and Myrkul when they conspired to steal the Tablets of Fate, which governed apotheosis, Ao forced all the gods to walk the realms in their mortal avatar forms until the Tablets were returned. Several major deities died during the Time of Troubles and a handful of mortals rose to divinity. 
-
-This nation is merely for watching games in the background. It is located in the Mother of Mists, in the southern Trackless Sea west of Lantan, and has no connections or otherwise interact with the game. " 
-#summary "This nation does not interact with the FR Mod Map in any way, neither with troops nor with the spread of its dominion."
-#flag "ForgottenRealms/flag_ao.tga"  
-#templepic 1 -- Under Water
-#fortera 2 -- pallisades only
-#homefort 3
-#buildfort 3
-#aiholdgod
-#color 0.01 0.03 0.02
-
-#viewallprov
-#viewallbat
-
-#addgod 8000 -- Mystra
-#addgod 5006 -- Chauntea
-#addgod 5004 -- Light of Lathander
-#addgod 5005 -- Statue of Selune
-#addgod 5007 -- Statue of Tyr
-#addgod 5008 -- Statue of Torm
-#addgod 5009 -- Statue of Ilmater
-#addgod 5012 -- Waukeen
-#addgod 5020 -- Gond 
-#addgod 5029 -- Helm
-#addgod 5030 -- Tymora
-
-#addgod 8001 -- BANE
-#addgod 5002 -- BHAAL
-#addgod 5003 -- Myrkul
-#addgod 5021 -- Shar
-#addgod 5016 -- Loviatar
-#addgod 5010 -- Malar
-#addgod 5025 -- Talos 
-#addgod 5013 -- Gruumsh
-#addgod 5015 -- Tempus
-#addgod 8050 -- Temple of Sekolah
-
-#addgod 7492 -- Corellon's Shrine 4 
-#addgod 7495 -- Labelas Shrine 4 
-#addgod 7494 -- Moonbow Shrine 4 
-
-#addgod 8051 -- TEMPLE OF DEEP SASHELAS
-
-#addgod 7338 -- The Undying Temple
-#addgod 7198 -- Statue of Dumathoin
-#addgod 7199 -- Statue of Barronar
-#addgod 7200 -- Statue of MORADIN
-#addgod 7241 -- Statue of Ladaguer
-
-#addgod 7171 -- Lolth -- PRETENDER
-#addgod 7215 -- Ghaunadaur 
-#addgod 7176 -- Eilistraee 
-#addgod 7213 -- Vhaeraun
-#addgod 7214 -- Kiaransalee
-
-#addgod 5032 -- Blibdoolpoolp 
-#addgod 8053 -- Primordial Father 
-#addgod 8049 -- Demogorgon
-#addgod 5026 -- Umberlee
-#addgod 7367 -- Pisaethces
-#addgod 7374 -- The Shape of Water
-#addgod 5048 -- Great Elder Brain
-
-#addgod 7346 -- Soneillon 3
-#addgod 5036 -- Asmodeus 2
-#addgod 7052 -- Grazzt 2
-#addgod 5017 -- Mask 
-#addgod 5031 -- Orcus
-#addgod 5033 -- Cyric 2
-#addgod 5035 -- Moander -- PRETENDER
-
-#addgod 5037 -- Silvanus
-#addgod 5018 -- Mielikki
-#addgod 5023 -- Oghma 2
-#addgod 5027 -- Valkur
-#addgod 5019 -- Corellon, First of the Seldarine
-
-#addgod 7178 -- Merrshaulk
-
-#addgod 7265 -- Zuggtmoy - PRETENDER
-#addgod 7266 -- Psylofyr - PRETENDER
-
-#addgod 5043 -- Unthalass -- the Great Ziggurat
-#addgod 5014 -- Ubtao
-#addgod 5042 -- city of the eternity
-
-#addgod 957 -- Nobanion 
-#addgod 6876 -- Gilgeam
-#addgod 6890 -- Horus-Re
-#addgod 6923 -- TCHAZZAR
-
-#addgod 5038 -- Savras
-#addgod 5039 -- Azuth 
-#addgod 5041 -- Great Netyarch 
-#addgod 5028 -- Great Bara of Ubtao
-#addgod 486 -- Great Warlock
-#addgod 862 -- Vampire Queen
-#addgod 7287 -- Velsharoon 
-#addgod 3473 -- Genie
-
-#startcom 7076 -- Sword Archon
-#startunittype1 7074 -- Hound Archon
-#startunitnbrs1 20
-
-#startscout 7075 -- Warden Archon
-
--- LAND PROVINCE DEFENCE
-#defcom1 7075 -- Warden Archon
-#defcom2 7076 -- Sword Archon
-#defunit1 7074 -- Hound Archon
-#defmult1 20
-#defunit1b 7073 -- Lantern Archon
-#defmult1b 10
-#defunit2 7332 -- Gold Dragon
-#defmult2 10
-
--- LAND WALL DEFENCE
-#guardcom 7076 -- Sword Archon
-#guardunit 7074 -- Hound Archon
-#guardmult 20
-#wallcom 7076 -- Sword Archon
-#wallunit 7073 -- Lantern Archon
-#wallmult 20
-
-#startsite "The Records of Mankind"
-
+#newspell 
+#copyspell 337 -- Grow Fortress
+#name "Thorncalling of Silvanus"
+#descr "This grim ceremony allows thick, maze-like walls of dangerous thorns to be raised out of the forest soil. It was used to protect the forest and wild lands from despoliation. However, the labyrinthine walls could only be raised over the body of a slain servant of Silvanus."
+#brief "This ritual creates a fortress of brambles in the current province. Be warned, it will kill its caster." 
+#school 0
+#researchlevel 0
+#path 0 6
+#path 1 9
+#pathlevel 0 2
+#pathlevel 1 1 
+#fatiguecost 1000
+#reqsun 1
+#restricted 236 -- Elves of Faerûn
+#nextspell "Kill Caster"
 #end
 
+
+#newspell 
+#copyspell 1059 -- Living Castle
+#name "Dig Sahuagin Tunnel Network"
+#descr "Can only be cast in Deep Sea terrains. Sahuagin do not build fortresses, but rather dig out networks of passages beneath the sea floor and into the walls of undersea gorges. Most communities were little more than a few dens, but truly epic sahuagin cavern systems did exist. Carved from stone with both magic and hard labor, assaulting such tunnels was no small task."
+#school 0
+#researchlevel 0
+#path 0 3
+#path 1 2
+#pathlevel 0 1
+#pathlevel 1 1 
+#provrange 0
+#fatiguecost 1000
+#restricted 240 -- Aleaxtis
+#spec 41943040 -- uw ok and uw only
+#onlygeosrc 2048
+#end
+
+-- 6875 -- Dragon Turtle
+#newspell
+#name "Summon a Dragon Turtle"
+#descr "Summons a gargantuan dragon turtle from the undersea. These enormous predators are sacred to many aquatic peoples, highly intelligent, and capable in both water and earth magics."
+#school 0
+#researchlevel 6
+#path 0 2
+#path 1 3
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 2600
+#effect 10021 -- summon commander
+#nreff 1
+#damage 6875 -- Dragon Turtle
+#spec 41943040 -- uw ok and uw only
+#end
+
+
+-- Aboleth Upgrade Ritual
+-- #newspell 
+-- #copyspell 291 -- hanyya pact
+-- #name "Aboleth Upgrade Ritual"
+-- #descr "<text>"
+-- #details "<text>"
+-- #school 5 -- thaumaturgy
+-- #researchlevel 0
+-- #uwok
+-- #path 0 4 -- -- astral the required path
+-- #pathlevel 0 2 -- 2 astral skill required
+-- #nreff 1
+-- #fatiguecost 1000
+-- #restricted 225 -- Shape of Water - the abolethic sovereignty
+-- #onlymnr 7363 -- Aboleth
+-- #damage 7364 -- Upgraded Aboleth
+-- #end
+
+
+--------------------------------------
+-- Jade Spider Summoning -------------
+--------------------------------------
+#newspell
+#name "Construct a Jade Spider"
+#descr "Jade Spiders are perhaps the most powerful construct in the Forgotten Realms, the secret of their creation guarded closely by the drow of Menzoberranzan and precious few even among them knew the method."
+#school 3
+#researchlevel 6
+#path 0 4
+#path 1 7
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 4000
+#effect 10001 -- summon monster
+#nreff 1
+#damage 7513 -- Jade Spider
+#restricted 222 -- Menzoberranzan
+#end
+
+-- 
+
+--------------------------------------
+-- Carrion Crawler Summoning ---------
+--------------------------------------
+#newspell
+#name "Incubate Carrion Crawlers"
+#descr "Carrion Crawlers are 10 foot long abberations that resemble centipedes armed with tentacles capable of paralyzing their prey prior to consuming them. They have tough exoskeletons but lack intelligence beyond an overwhelming desire to consume flesh."
+#brief "This spell enchants 10 carrion crawlers to do your bidding."
+#school 0
+#researchlevel 1
+#path 0 6
+#path 1 8
+#pathlevel 0 1
+#pathlevel 1 1
+#fatiguecost 300
+#effect 10001 -- summon monster
+#nreff 10
+#damage 7514 -- Carrion Crawler
+#end
+
+-------------------------- ELEMENTAL SUMMONING -------------------------- 
+
+-- 7064 -- Conjure Small Water Elemental
+#newspell
+#name "Summon Small Water Elemental"
+#descr "A small water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
+#brief "Water Elementals are immune to acids and cold. "
+#school 0
+#researchlevel 1
+#path 0 2
+#pathlevel 0 1
+#fatiguecost 60
+#effect 1 -- summon monster
+#nreff 1
+#damage 7064 -- Small Water Elemental
+#aispellmod -10
+#spec 8388608
+#end
+
+-- 7065 -- Conjure Medium Water Elemental
+#newspell
+#name "Summon Medium Water Elemental"
+#descr "A medium water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
+#brief "Water Elementals are immune to acids and cold. "
+#school 0
+#researchlevel 3
+#path 0 2
+#pathlevel 0 2
+#fatiguecost 70
+#effect 1 -- summon monster
+#nreff 1
+#damage 7065 -- Medium Water Elemental
+#aispellmod -10
+#spec 8388608
+#end
+
+-- 7066 -- Conjure Large Water Elemental
+#newspell
+#name "Summon Large Water Elemental"
+#descr "A large water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
+#brief "Water Elementals are immune to acids and cold. "
+#school 0
+#researchlevel 5
+#path 0 2
+#pathlevel 0 3
+#fatiguecost 80
+#effect 1 -- summon monster
+#nreff 1
+#damage 7066 -- Large Water Elemental
+#spec 8388608
+#end
+
+-- 7067  -- Conjure Huge Water Elemental
+#newspell
+#name "Summon Huge Water Elemental"
+#descr "A huge water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
+#brief "Water Elementals are immune to acid and cold. "
+#school 0
+#researchlevel 7
+#path 0 2
+#pathlevel 0 4
+#fatiguecost 80
+#effect 1 -- summon monster
+#nreff 1
+#damage 7067 -- Huge Water Elemental
+#spec 8388608
+#end
+
+-- 7067 -- Bind Huge Water Elemental
+#newspell
+#name "Bind Guardian Water Elemental"
+#descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but will be otherwise unable to leave its locale."
+#brief "Water Elementals are immune to acids and cold. Huge Elementals produce one gem of their elemental nature per turn."
+#school 0
+#researchlevel 5
+#path 0 2
+#pathlevel 0 4
+#fatiguecost 1500
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7067 -- Huge Water Elemental
+#spec 8388608
+#end
+
+
+-- 7028 -- Bind Huge Air Elemental
+#newspell
+#name "Bind Guardian Air Elemental"
+#descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but will be otherwise unable to leave its locale. "
+#brief "Air Elementals are immune to cold and shock and can swallow smaller foes in their whirlwind.  Guardian Elementals produce one gem of their elemental nature per turn."
+#school 0
+#researchlevel 5
+#path 0 1
+#pathlevel 0 3
+#fatiguecost 1500
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7028 -- Huge Air Elemental
+#end
+
+-- 7028  -- Conjure Huge Air Elemental
+#newspell
+#name "Summon Huge Air Elemental"
+#descr "A huge air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
+#brief "Air Elementals are immune to cold and shock. "
+#school 0
+#researchlevel 7
+#path 0 1
+#pathlevel 0 4
+#fatiguecost 80
+#effect 1 -- summon monster
+#nreff 1
+#damage 7028 -- Huge Air Elemental
+#end
+
+-- 7027  -- Conjure Large Air Elemental
+#newspell
+#name "Summon Large Air Elemental"
+#descr "A large air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
+#brief "Air Elementals are immune to cold and shock. "
+#school 0
+#researchlevel 5
+#path 0 1
+#pathlevel 0 3
+#fatiguecost 80
+#effect 1 -- summon monster
+#nreff 1
+#damage 7027 -- Large Air Elemental
+#end
+
+-- 7026  -- Conjure Medium Air Elemental
+#newspell
+#name "Summon Medium Air Elemental"
+#descr "A medium air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
+#brief "Air Elementals are immune to cold and shock. "
+#school 0
+#researchlevel 3
+#path 0 1
+#pathlevel 0 2
+#fatiguecost 70
+#effect 1 -- summon monster
+#nreff 1
+#damage 7026 -- Medium Air Elemental
+#aispellmod -10
+#end
+
+-- 7025 -- Conjure Small Air Elemental
+#newspell
+#name "Summon Small Air Elemental"
+#descr "A small air elemental is conjured through a temporary gate to the elemental plane of air, binding this creature to the service of the caster for the duration of combat."
+#brief "Air Elementals are immune to cold and shock. "
+#school 0
+#researchlevel 1
+#path 0 1
+#pathlevel 0 1
+#fatiguecost 60
+#effect 1 -- summon monster
+#nreff 1
+#damage 7025 -- Small Air Elemental
+#aispellmod -10
+#end
+
+
+-- 7023  -- Conjure Huge Earth Elemental
+#newspell
+#name "Summon Huge Earth Elemental"
+#descr "A huge earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
+#brief "Earth Elementals are immune to poison and decay."
+#school 0
+#researchlevel 7
+#path 0 3
+#pathlevel 0 4
+#fatiguecost 80
+#effect 1 -- summon monster
+#nreff 1
+#damage 7023 -- Huge Earth Elemental
+#spec 8388608
+#end
+
+-- 7023 -- Bind Guardian Earth Elemental
+#newspell
+#name "Bind Huge Earth Elemental"
+#descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but can otherwise only be transported to a new location via teleportation."
+#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense.  Guardian Elementals produce one gem of their elemental nature per turn."
+#school 0
+#researchlevel 5
+#path 0 3
+#pathlevel 0 4
+#fatiguecost 1500
+#effect 10021 -- summon monster
+#nreff 1
+#damage 7023 -- Huge Earth Elemental
+#spec 8388608
+#end
+
+-- 7022  -- Conjure Large Earth Elemental
+#newspell
+#name "Summon Large Earth Elemental"
+#descr "A large earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
+#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
+#school 0
+#researchlevel 5
+#path 0 3
+#pathlevel 0 3
+#fatiguecost 80
+#effect 1 -- summon monster
+#nreff 1
+#damage 7022 -- Large Earth Elemental
+#spec 8388608
+#end
+
+-- 7021  -- Conjure Medium Earth Elemental
+#newspell
+#name "Summon Medium Earth Elemental"
+#descr "A medium earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
+#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
+#school 0
+#researchlevel 3
+#path 0 3
+#pathlevel 0 2
+#fatiguecost 70
+#effect 1 -- summon monster
+#nreff 1
+#damage 7021 -- Medium Earth Elemental
+#spec 8388608
+#aispellmod -10
+#end
+
+-- 7020 -- Conjure Small Earth Elemental
+#newspell
+#name "Summon Small Earth Elemental"
+#descr "A small earth elemental is conjured through a temporary gate to the elemental plane of earth, binding this creature to the service of the caster for the duration of combat."
+#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
+#school 0
+#researchlevel 1
+#path 0 3
+#pathlevel 0 1
+#fatiguecost 60
+#effect 1 -- summon monster
+#nreff 1
+#damage 7020 -- Small Earth Elemental
+#spec 8388608
+#aispellmod -10
+#end
+
+-- 7057  -- Conjure Huge Fire Elemental
+#newspell
+#name "Summon Huge Fire Elemental"
+#descr "A huge fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
+#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
+#school 0
+#researchlevel 7
+#path 0 0
+#pathlevel 0 4
+#fatiguecost 80
+#effect 1 -- summon monster
+#nreff 1
+#damage 7057 -- Huge Fire Elemental
+#end
+
+-- 7057 -- Bind Huge Fire Elemental
+#newspell
+#name "Bind Huge Fire Elemental"
+#descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but can otherwise only be transported to a new location via teleportation."
+#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield.  Huge Elementals produce one gem of their elemental nature per turn."
+#school 0
+#researchlevel 5
+#path 0 0
+#pathlevel 0 3
+#fatiguecost 1500
+#effect 10021 -- summon monster
+#nreff 1
+#damage 7057 -- Huge Fire Elemental
+#end
+
+-- 7056  -- Conjure Large Fire Elemental
+#newspell
+#name "Summon Large Fire Elemental"
+#descr "A large fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
+#brief "Fire Elementals are immune to poison and decay and can wrap themselves in a fiery shield.. "
+#school 0
+#researchlevel 5
+#path 0 0
+#pathlevel 0 3
+#fatiguecost 80
+#effect 1 -- summon monster
+#nreff 1
+#damage 7056 -- Large Fire Elemental
+#end
+
+-- 7055  -- Conjure Medium Fire Elemental
+#newspell
+#name "Summon Medium Fire Elemental"
+#descr "A medium fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
+#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
+#school 0
+#researchlevel 3
+#path 0 0
+#pathlevel 0 2
+#fatiguecost 70
+#effect 1 -- summon monster
+#nreff 1
+#damage 7055 -- Medium Fire Elemental
+#aispellmod -10
+#end
+
+-- 7054 -- Conjure Small Fire Elemental
+#newspell
+#name "Summon Small Fire Elemental"
+#descr "A small fire elemental is conjured through a temporary gate to the elemental plane of fire, binding this creature to the service of the caster for the duration of combat."
+#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
+#school 0
+#researchlevel 1
+#path 0 0
+#pathlevel 0 1
+#fatiguecost 60
+#effect 1 -- summon monster
+#nreff 1
+#damage 7054 -- Small Fire Elemental
+#aispellmod -10
+#end
+
+-- 7517 -- Walking Statue
+#newspell
+#name "Construct a Walking Statue"
+#descr "The Walking Statues of Waterdeep were legendary defenders of the City of Splendors. Holy guardians of the cities temples and vaults, these enormous constructs stood sentinel for centuries, unmoving and unwavering in their dedication to their purpose."
+#school 3
+#researchlevel 8
+#path 0 4
+#path 1 3
+#pathlevel 0 5
+#pathlevel 1 3
+#fatiguecost 5000
+#effect 10021 -- summon commander
+#nreff 1
+#damage 7517 -- Walking Statue
+#restricted 200 -- Waterdeep Only
+--#uwok
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/spells\summon-monster.dm
+------------------------------------------------------------------------------------------------------------------
+
+
+--------------- Summon Monster line ---------------------------
+
+#newspell
+#name "Summon Monster I"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#school 0 --conj
+#researchlevel 0
+#path 0 4 --astral
+#pathlevel 0 1
+#effect 1
+#damage -14001
+#casttime 125
+#nreff 1
+#fatiguecost 60
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Summon Monster II"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 1
+#pathlevel 0 2
+#damage -14002
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Summon Monster III"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 2
+#pathlevel 0 3
+#damage -14003
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Summon Monster IV"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 3
+#pathlevel 0 4
+#damage -14004
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Summon Monster V"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 4
+#pathlevel 0 4
+#fatiguecost 100
+#damage -14005
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Summon Monster VI"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 5
+#pathlevel 0 5
+#fatiguecost 100
+#damage -14006
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Summon Monster VII"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects. Some high level summoned creatures are even powerful mages in their own right."
+#researchlevel 6
+#pathlevel 0 5
+#fatiguecost 200
+#effect 21 -- summon commander
+#damage -14007
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Summon Monster VIII"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects. Some high level summoned creatures are even powerful mages in their own right."
+#researchlevel 7
+#pathlevel 0 6
+#fatiguecost 200
+#effect 21 -- summon commander
+#damage -14008
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Summon Monster IX"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects. Some high level summoned creatures are even powerful mages in their own right."
+#researchlevel 8
+#pathlevel 0 6
+#fatiguecost 300
+#effect 21 -- summon commander
+#damage -14009
+#end
+
+---------------- Summon Aquatic Monster line ------------------------------
+
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Summon Aquatic Monster I"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#damage -14011
+#spec 41943040 -- Can be cast underwater only
+#end
+
+#newspell
+#copyspell "Summon Aquatic Monster I"
+#name "Summon Aquatic Monster II"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 1
+#pathlevel 0 2
+#damage -14012
+#end
+
+#newspell
+#copyspell "Summon Aquatic Monster I"
+#name "Summon Aquatic Monster III"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 2
+#pathlevel 0 3
+#damage -14013
+#end
+
+#newspell
+#copyspell "Summon Aquatic Monster I"
+#name "Summon Aquatic Monster IV"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 3
+#pathlevel 0 4
+#damage -14014
+#end
+
+#newspell
+#copyspell "Summon Aquatic Monster I"
+#name "Summon Aquatic Monster V"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 4
+#pathlevel 0 4
+#fatiguecost 100
+#damage -14015
+#end
+
+#newspell
+#copyspell "Summon Aquatic Monster I"
+#name "Summon Aquatic Monster VI"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 5
+#pathlevel 0 5
+#fatiguecost 100
+#damage -14016
+#end
+
+#newspell
+#copyspell "Summon Aquatic Monster I"
+#name "Summon Aquatic Monster VII"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 6
+#pathlevel 0 5
+#fatiguecost 200
+#effect 21 -- summon commander
+#damage -14017
+#end
+
+#newspell
+#copyspell "Summon Aquatic Monster I"
+#name "Summon Aquatic Monster VIII"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 7
+#pathlevel 0 6
+#fatiguecost 200
+#effect 21 -- summon commander
+#damage -14018
+#end
+
+#newspell
+#copyspell "Summon Aquatic Monster I"
+#name "Summon Aquatic Monster IX"
+#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
+#researchlevel 8
+#pathlevel 0 6
+#fatiguecost 300
+#effect 21 -- summon commander
+#damage -14019
+#end
+
+---------------- Summon Nature's Ally line ------------------------------
+
+#newspell
+#name "Summon Nature's Ally I"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#school 0 --conj
+#researchlevel 0
+#path 0 6 --nature
+#pathlevel 0 1
+#path 1 9 --holy
+#pathlevel 1 1
+#effect 1
+#damage -14021
+#casttime 125
+#nreff 1
+#fatiguecost 60
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Summon Nature's Ally II"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 1
+#pathlevel 0 2
+#damage -14022
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Summon Nature's Ally III"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 2
+#pathlevel 0 3
+#damage -14023
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Summon Nature's Ally IV"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 3
+#pathlevel 0 4
+#damage -14024
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Summon Nature's Ally V"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 4
+#pathlevel 0 4
+#fatiguecost 100
+#damage -14025
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Summon Nature's Ally VI"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 5
+#pathlevel 0 5
+#fatiguecost 100
+#damage -14026
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Summon Nature's Ally VII"
+#descr "The caster summons a natural creature to serve as his ally in battle. Some high level summoned creatures are even powerful mages in their own right."
+#researchlevel 6
+#pathlevel 0 5
+#fatiguecost 200
+#effect 21 -- summon commander
+#damage -14027
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Summon Nature's Ally VIII"
+#descr "The caster summons a natural creature to serve as his ally in battle. Some high level summoned creatures are even powerful mages in their own right."
+#researchlevel 7
+#pathlevel 0 6
+#fatiguecost 200
+#effect 21 -- summon commander
+#damage -14028
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Summon Nature's Ally IX"
+#descr "The caster summons a natural creature to serve as his ally in battle. Some high level summoned creatures are even powerful mages in their own right."
+#researchlevel 8
+#pathlevel 0 6
+#fatiguecost 300
+#effect 21 -- summon commander
+#damage -14029
+#end
+
+---------------- Summon Aquatic Ally line ------------------------------
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Summon Aquatic Ally I"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#damage -14031
+#spec 41943040 -- Can be cast underwater only
+#end
+
+#newspell
+#copyspell "Summon Aquatic Ally I"
+#name "Summon Aquatic Ally II"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 1
+#pathlevel 0 2
+#damage -14032
+#end
+
+#newspell
+#copyspell "Summon Aquatic Ally I"
+#name "Summon Aquatic Ally III"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 2
+#pathlevel 0 3
+#damage -14033
+#end
+
+#newspell
+#copyspell "Summon Aquatic Ally I"
+#name "Summon Aquatic Ally IV"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 3
+#pathlevel 0 4
+#damage -14034
+#end
+
+#newspell
+#copyspell "Summon Aquatic Ally I"
+#name "Summon Aquatic Ally V"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 4
+#pathlevel 0 4
+#fatiguecost 100
+#damage -14035
+#end
+
+#newspell
+#copyspell "Summon Aquatic Ally I"
+#name "Summon Aquatic Ally VI"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 5
+#pathlevel 0 5
+#fatiguecost 100
+#damage -14036
+#end
+
+#newspell
+#copyspell "Summon Aquatic Ally I"
+#name "Summon Aquatic Ally VII"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 6
+#pathlevel 0 5
+#fatiguecost 200
+#effect 21 -- summon commander
+#damage -14037
+#end
+
+#newspell
+#copyspell "Summon Aquatic Ally I"
+#name "Summon Aquatic Ally VIII"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 7
+#pathlevel 0 6
+#fatiguecost 200
+#effect 21 -- summon commander
+#damage -14038
+#end
+
+#newspell
+#copyspell "Summon Aquatic Ally I"
+#name "Summon Aquatic Ally IX"
+#descr "The caster summons a natural creature to serve as his ally in battle."
+#researchlevel 8
+#pathlevel 0 6
+#fatiguecost 300
+#effect 21 -- summon commander
+#damage -14039
+#school -1 -- Disabled for now, there aren't any level 9 aquatic nature's allies
+#end
+
+-------- Shadow Conjuration
+
+#newspell
+#name "Shadow Conjuration"
+#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions into a creature. Shadow Conjuration mimics the effects of Summon Monster III.
+
+Shadow illusions are more fragile than the real thing, but otherwise have the same abilities. Strrong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
+#details "Shadow illusions do not deal false damage."
+#researchlevel 3
+#school 5 -- Illusion (Thaumaturgy)
+#path 0 7 -- glamour
+#pathlevel 0 2
+#path 1 4 -- astral
+#pathlevel 1 1
+#effect 1 -- summon
+#damage -14040 -- shadow conjuration montag
+#nreff 1
+#fatiguecost 60
+#spec 8388608 -- can be cast underwater
+#end
+
+#newspell
+#copyspell "Shadow Conjuration"
+#name "Greater Shadow Conjuration"
+--- Make elementals as well?
+#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions into a creature. Greater Shadow Conjuration mimics the effects of Summon Monster VI.
+
+Shadow illusions are more fragile than the real thing, but otherwise have the same abilities. Strong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
+#details "Shadow illusions do not deal false damage."
+#researchlevel 6
+#pathlevel 0 4
+#pathlevel 1 3
+#damage -14041 -- greater shadow conjuration montag
+#end
+
+#newspell
+#copyspell "Shadow Conjuration"
+#name "Shades"
+--- Make elementals as well?
+#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions into a creature. Shades mimics the effects of Summon Monster VIII.
+
+Shadow illusions are more fragile than the real thing, and do not cast spells, but otherwise have the same abilities. Strong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
+#details "Shadow illusions do not deal false damage."
+#researchlevel 8
+#pathlevel 0 5
+#pathlevel 1 4
+#fatiguecost 80
+#damage -14042 -- shades montag
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/spells\ungrouped-spells.dm
+------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------ Reworked Spells & New Spells -----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+#selectspell "Shrink"
+#name "Reduce Person"
+#descr "This spell causes instant diminution of a humanoid creature"
+#details "Size -1, HP -30%, Str -3, Def +1, Map move -2.
+Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#aispellmod -95
+#researchlevel 1
+#path 0 4 --astral
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies; animals only
+-- can be cast underwater
+#spec 4785075418697732
+#end
+
+#newspell
+#copyspell "Reduce Person"
+#name "Mass Reduce Person"
+#researchlevel 4
+#pathlevel 0 3
+#fatiguecost 99
+#aoe 3001
+#end
+
+#selectspell 1122 --Flying Shield
+#name "Shield"
+#descr "The mage creates an invisible, tower shield-sized mobile disk of force that hovers in front of him. The shield will randomly block about half of the attacks against his person."
+#path 0 4 --astral
+#path 1 -1
+#fatiguecost 15
+#researchlevel 1
+#end
+
+#selectspell 1152 --Cloud Trapeze
+#name "Wind Walk"
+#descr "The caster alters the substance of their body to a cloudlike vapor and moves through the air at great speed, travelling to a province far away. Although much faster than normal flying, the caster does not really teleport and can have the path blocked by impassable mountains ranges or the Sea of Ice global enchantment."
+#school 1 -- Alteration
+#researchlevel 5
+#pathlevel 0 3
+#path 1 9 --holy
+#pathlevel 1 1
+#end
+
+#selectspell 783 --Enlarge
+#name "Enlarge Person"
+#descr "A few humanoid soldiers are magically enlarged for the duration of the battle. Enlarged soldiers get increased size, hit points and strength."
+#researchlevel 1
+#path 0 4 --astral
+#pathlevel 0 1
+-- friendlies only; does not affect illusions, inanimate, spiritform, demons, undead, animals, or void-sane
+-- can be cast underwater
+#spec 148618788521639940
+#details "Size +1, HP +30%, Str +3, Def -1.
+
+Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#end
+
+#selectspell 867 --Giant Warriors
+#name "Mass Enlarge Person"
+#descr "A large group of humanoid soldiers are magically enlarged for the duration of the battle. Enlarged soldiers get increased size, hit points and strength."
+#researchlevel 4
+#path 0 4 --astral
+#range 15
+#aoe 3001
+#fatiguecost 99
+#ainocast 1
+-- friendlies only; does not affect illusions, inanimate, spiritform, demons, undead, animals, or void-sane
+-- can be cast underwater
+#spec 148618788521639940
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#end
+
+#selectspell 1109 --Strength of Giants
+#name "Bull's Strength"
+#descr "Gives the target increased strength."
+#details "Grants Str +4"
+#end
+
+#selectspell 1176 --Giant Strength Warriors
+#name "Mass Bull's Strength"
+#descr "Gives a group of targets increased strength."
+#details "Grants Str +4"
+#researchlevel 5
+#fatiguecost 99
+#range 15
+#aoe 3001
+#ainocast1
+#end
+
+#selectspell 1211 --Foul Vapors
+#name "Cloudkill"
+#descr "Poisonous gas will begin to seep from the ground shortly after this spell is cast. The gas will rise over a large area, covering the entire battlefield, and will continue to seep for the duration of the battle."
+#details "Poison Clouds (level 1) appear all over the battlefield."
+#school 3 -- const (conj--creation)
+#researchlevel 6
+#path 1 4 -- Astral
+#pathlevel 0 3
+#pathlevel 1 3
+#end
+
+-- unfortunately beam spells are not possible to implement
+#selectspell "Lightning Bolt"
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#researchlevel 3
+#aoe 4
+#dmg 3008
+#fatiguecost 40
+#end
+
+#selectspell "Fireball"
+#copyspell "Fire Blast"
+#name "Fireball"
+#descr "The caster launches a glowing pea-sized bead from their pointing finger. When it reaches the target the bead detonates with a low roar and blossoms into a fireball."
+#school 2 --evocation
+#aoe 15
+#fatiguecost 50
+#researchlevel 3
+#path 0 0
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#range 5025
+#damage 4005
+#strikesound 89
+#end
+
+#selectspell "Touch of Madness"
+-- Overwriting the Rage spell name seems to cause issues for some reason
+#name "Rage"
+#descr "A small group of soldiers are forced to go berserk. Berserkers never rout, get increased fighting skills, but do not care much for their own safety."
+#details " "
+#school 4 --enchantment
+#path 0 7  --Glamour
+#path 1 4 --astral
+#pathlevel 1 1
+#researchlevel 2
+#aoe 3001
+-- Does not affect mindless, inanimate, enemy, undead, or the caster; can be cast underwater
+#spec 140738038464512
+#end
+
+#selectspell "Battle Fury"
+#name "Heroism"
+#descr "The caster imbues a few allies with great bravery and morale in battle. Each affected creature gains increased attack skill, defence skill, morale and MR."
+#details "Attack skill +2, defence skill +2, morale +4, MR +2."
+#damage 281475513581568 -- Fury + proud steed effect
+#school 4 --enchantment
+#path 0 7 --Glamour
+#path 1 4 --astral
+#pathlevel 0 1
+#pathlevel 1 1
+#researchlevel 1
+-- does not affect enemies or mindless, can be used underwater
+#spec 12713984
+#end
+
+#selectspell "Gift of the Furies"
+#name "Good Hope"
+#descr "The caster instills powerful hope in a group of living allies. Each affected creature gains increased attack skill, defence skill, morale and MR."
+#details "Attack skill +2, defence skill +2, morale +4, MR +2."
+#damage 281475513581568 -- Fury + proud steed effect
+#school 4 --enchantment
+#path 0 7 --Glamour
+#path 1 4 --astral
+#pathlevel 1 1
+#researchlevel 4
+#fatiguecost 50
+#aoe 3001
+-- does not affect enemies, does not affect inanimate/undead/mindless, can be used underwater
+#spec 550109184
+#end
+
+#selectspell "Air Shield"
+#name "Protection From Arrows"
+#descr "The caster gains resistance to ranged weapons."
+#path 0 4 --astral
+#school 4 --enchantment
+#end
+
+#selectspell "Arrow Ward"
+#name "Wind Wall"
+#descr "An invisible curtain of wind will protect a large number of friendly units from enemy projectiles."
+#details "Grants Air Shield: 80"
+#school 2 --evocation
+#fatiguecost 99
+#end
+
+#newspell
+#copyspell 842 --Invulnerability
+#name "Mage Armour"
+#descr "An invisible but tangible field of force surrounds the caster, protecting them from normal weapons."
+#damage 17179869184
+#details "Grants Invulnerability 15"
+#school 0 --conj
+#researchlevel 0
+#path 0 4 --astral
+#pathlevel 0 1
+#end
+
+#selectspell "Mist"
+#name "Fog Cloud"
+#descr "The caster creates a dense bank of fog across the battlefield that makes it difficult to see far and prevents any cloud effects from dissipating properly. The mist will limit the precision of all spells and missiles."
+#school 3 --const (conj-creation)
+#researchlevel 4
+#end
+
+#selectspell "Darkness"
+#name "Deeper Darkness"
+#descr "The battlefield is covered in a blanket of darkness that even renders torches useless. Most ordinary beings will stumble and have great difficulty fighting or shooting in the darkness. The darkness ends if the caster dies."
+#details "Battlefield Darkness -6. Demons, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
+#school 2 --evocation
+#path 0 7 --glamour
+#path 1 9 --holy
+#pathlevel 1 2
+#end
+
+#selectspell "Solar Eclipse"
+#name "Darkness"
+#school 2 --evocation
+#path 0 7
+#pathlevel 0 3
+#pathlevel 1 0
+#end
+
+#selectspell "Solar Brilliance"
+#name "Daylight"
+#descr "The caster conjures a light so brilliant that it destroys the retinas of all soldiers on the battlefield and burns all undead and demonic units to cinders."
+#details "All units: Chance of being blinded (easy MR negates). All undead and demonic units: 5 AP dmg (MR negates)"
+#path 0 0 -- fire
+#path 1 6 -- nature
+#pathlevel 1 2
+#school 2 --evocation
+#reqsun 0
+#spec 8388608 -- can be cast underwater
+#end
+
+#selectspell "Gust of Winds"
+#name "Gust of Wind"
+#descr "Creates a wind gust strong enough to knock soldiers prone. Large beings are rarely affected by the spell and titans and other huge beings will ignore the winds entirely."
+#end
+
+#selectspell "Shatter"
+#school 2 --evocation
+#end
+
+#selectspell "Blur"
+#school 5 -- Illusion (Thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Invisibility"
+#school 5 -- Illusion (Thaumaturgy)
+#researchlevel 3 --originally  a level 2 spell
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Displaced Warriors"
+#name "Mass Invisibility"
+#descr "The caster renders a large group of warriors invisible and almost impossible to hit in melee. The invisibility ends for each subject if they are wounded."
+#details "The targets gain the ability Unseen."
+#effect 10
+#damage 1073741824
+#school 5 -- Illusion (Thaumaturgy)
+#researchlevel 6
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 3
+#researchlevel 6
+#aoe 3001
+#range 15
+#fatiguecost 60
+#end
+
+#selectspell "Mirror Image"
+#school 5 -- Illusion (Thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Cat Eyes"
+#name "Darkvision"
+#descr "This spell grants the caster partial darkvision"
+#path 0 4 --astral
+#end
+
+#selectspell "Levitate"
+#school 1 --alteration
+#path 0 4 --astral
+#end
+
+#selectspell "Gift of Displacement"
+#name "Displacement"
+#descr "The target's images appear beside their actual location and are very difficult to hit in melee."
+#school 5 -- Illusion (Thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Warrior Illusion"
+#name "Major Image"
+#descr "The illusionist creates a Warrior Illusion who attacks the enemy. Illusions inflict false damage that is eventually made real by the presence of glamour mages."
+#school 5 -- Illusion (Thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Personal Flight"
+#school 1 --alteration
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Gift of Flight"
+#name "Fly"
+#descr "Grants a few units the ability to fly."
+#school 1 --alteration
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Fly"
+#name "Air Walk"
+#descr "Grants a few units the ability to walk on air."
+#researchlevel 4
+#path 1 9 --Holy
+#details "Functions as flight."
+#end
+
+#selectspell "Mass Flight"
+#name "Mass Fly"
+#descr "The caster grants a large number of soldiers the ability to fly."
+#school 1 --alteration
+#path 1 4 --astral
+#pathlevel 1 2
+#fatiguecost 99
+#end
+
+#selectspell "Quickness"
+#name "Haste"
+#descr "This spells grants haste to a large number of units. Haste increases the speed and ability to dodge of the quickened one. A quickened person can act twice every turn, but quickened spell casters still cannot cast more than one spell per combat round."
+#details "Grants +2 Att, +2 Def and Combat speed is doubled"
+#path 0 4 --astral
+#pathlevel 0 3
+#aoe 3001
+#fatiguecost 60
+#end
+
+#selectspell "Weapons of Sharpness"
+#name "Keen Edge"
+#descr "A few friendly units are gifted with magically keen weapons that they can cut through armor and flesh with equal ease. This enchantment does not work on blunt or missile weapons."
+#school 1 --alteration
+#researchlevel 3
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 0 1
+#end
+#selectspell "Slow"
+#path 0 4--astral
+#end
+
+#selectspell "Stoneskin"
+#researchlevel 3
+#school 1 -- alteration(abjuration)
+#end
+
+#selectspell "Teleport"
+#descr "With this spell, the mage can transport himself to a distant province."
+#school 0 --conjuration
+#provrange 4
+#end
+
+#newspell
+#copyspell "Teleport"
+#name "Greater Teleport"
+#descr "With this spell, the mage can transport himself to almost any province in the world, only those very very far away are out of range for this ritual."
+#researchlevel 7
+#provrange 7
+#pathlevel 0 4
+#fatiguecost 300
+#end
+
+#selectspell "Teleport Item"
+#school 0 --conjuration
+#end
+
+#selectspell "Teleport Gems"
+#school 0 --conjuration
+#end
+
+#selectspell "Gateway"
+#school 0 --conjuration
+#end
+
+#selectspell "Astral Travel"
+#name "Teleportation Circle"
+#descr "The caster draws a magical circle that manifests a rift in the fabric of space, transporting himself and and all troops under his command to a distant province."
+#school 0 --conjuration
+#provrange 7
+#end
+
+#newspell
+#copyspell "Niefel Flames"
+#name "Cone of Cold"
+#descr "The caster projects an area of extreme cold outward from their hand. Anyone in the area suffers massive cold damage. The caster will not be hit by the spell."
+#school 2 --evocation
+#researchlevel 5
+-- cold, armour piercing, can be cast underwater, does not affect caster
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 2
+#spec 140737496744512
+#range 20
+#aoe 30
+#fatiguecost 60
+#damage 4005 --same as fireball
+#strikesound 21 -- frost blast
+#speedmult 3
+#end
+
+#newspell
+#copyspell 867 --Giant Warriors
+#name "Animal Growth"
+#descr "A large group of animals are magically enlarged for the duration of the battle. Enlarged animals get increased size, hit points and strength."
+#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
+#researchlevel 4
+#path 0 6 --nature
+#pathlevel 0 3
+-- allies only, animals only, no illusion/spiritform, no undead, no demon, no void sanity, can be cast underwater
+#spec 4785074885754884
+#end
+
+#selectmonster 2222 --frog
+#descr "A small amphibian. Legend has it that some frogs are actually adventurers transformed by curmudgeonly wizards."
+#end
+
+#selectspell "Polymorph"
+#aoe 0
+#name "Baleful Polymorph"
+#descr "The caster transforms his hapless target into a frog."
+#range 5025
+#fatiguecost 30
+#damage 2222 -- Frog
+#pathlevel 0 4
+#researchlevel 6
+-- does not affect allies, inaimates, illusions, or spiritforms. MR negates. May use underwater
+#spec 4840493060
+#end
+
+#selectspell "Astral Shield"
+#name "Repulsion"
+#descr "A shield of Astral energies forms around the mage. Anyone trying to strike through the shield will have their mind blasted unconscious by the force of the shield. Magic resistance may negate the effect of the shield and allow enemies to strike the mage. The power of the Astral Shield is greater for mages who are highly skilled in Astral magic."
+#school 1 -- alteration(abjuration)
+#path 0 3 --earth
+#path 0 1
+#path 1 4 --astral
+#path 1 1
+#end
+
+#selectspell "Ritual of Returning"
+#name "Contingency"
+#descr "The mage will return to the home citadel at once if he is wounded. The spell lasts until the mage actually has been wounded and returned home. This ritual will result in swift death for a mage if the home citadel has been conquered by the enemy."
+#school 2 --evocation
+#pathlevel 0 3
+#researchlevel 5
+#end
+
+#newspell
+#copyspell "Returning"
+#name "Emergency Teleport"
+#descr "The caster escapes the battlefield by teleporting back to the home citadel. Teleporting in battlefield conditions is risky. If the caster is unlucky he might get lost in time and might return later, not at all or completely insane. The spell will not work on other planes or if the home citadel is controlled by the enemy."
+#school 0
+#researchlevel 4
+#pathlevel 0 3
+#end
+
+#selectspell "Returning"
+#name "Word of Recall"
+#descr "The caster speaks a word of recall, instantaneously teleporting him back to the home citadel. Teleporting in battlefield conditions is risky. If the caster is unlucky he might get lost in time and might return later, not at all or completely insane. The spell will not work on other planes or if the home citadel is controlled by the enemy."
+#school 0
+#researchlevel 5
+#path 1 9 --holy
+#pathlevel 1 2
+#end
+
+#newspell
+#copyspell "Teleport"
+#name "Shadow Walk"
+#descr "The caster shifts into the Plane of Shadow to travel to a distant province in a fraction of the usual time."
+#researchlevel 6
+#provrange 5
+#school 5 -- Illusion (Thaumaturgy)
+#path 0 7 --glamour
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Project Self"
+#school 5 --Illusion (Thaumaturgy)
+#researchlevel 6
+#end
+
+#selectspell "Rain"
+#name "Control Weather: Rain"
+#descr "The caster controls the weather and conjures a heavy rain upon the battlefield. This makes it harder to fly, fires will be put out quicker and any cloud effects will dissipate faster than usual. Fire magic is more difficult to use during heavy rain. If it is cold the rain will become snow instead. Snow does not increase the fatigue for fire spells, but it still puts out fires and dissipates clouds."
+#school 1 --alteration
+#researchlevel 6
+#path 1 1 --Air
+#pathlevel 1 1
+#fatiguecost 99
+#end
+
+#selectspell "Storm"
+#name "Control Weather: Storm"
+#descr "The caster controls the weather and conjures a heavy rain upon the battlefield. This makes it harder to fly, fires will be put out quicker and any cloud effects will dissipate faster than usual. Fire magic is more difficult to use during heavy rain. If it is cold the rain will become snow instead. Snow does not increase the fatigue for fire spells, but it still puts out fires and dissipates clouds."
+#researchlevel 6
+#pathlevel 0 3
+#path 1 2 --water
+#pathlevel 1 1
+#end
+
+#selectspell "Blizzard"
+#name "Control Weather: Blizzard"
+#descr "The caster controls the weather and conjures an unexpected blizzard. The blizzard spell can only be cast in regions of neutral or slight heat. When cast the temperature drops suddenly and a snowstorm covers the battlefield."
+#pathlevel 0 3
+#end
+
+#selectspell "Fire Shield"
+#school 2 --evocation
+#researchlevel 2
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Fire Shield"
+#name "Mass Fire Shield"
+#descr "The caster wreathes a large group of allies in flame. Anyone trying to strike the subjects in melee combat will be burned by the Fire Shield immediately after attacking. Attackers with long weapons such as spears and pikes will not suffer as severe burns as an attacker with a shortsword or a dagger."
+#researchlevel 5
+#pathlevel 0 3
+#pathlevel 1 2
+#aoe 3001
+#spec 4194304
+#end
+
+#selectspell "Fire Storm"
+#path 1 9 --Holy
+#pathlevel 1 1
+#end
+
+-- TODO: Partly ignore fire resistance??
+#selectspell "Pillar of Fire"
+#name "Flame Strike"
+#descr "This spell produces a vertical column of divine fire roaring downward. It will kill those who are hit and set fire to anyone who is standing nearby."
+#aoe 4
+#pathlevel 0 3
+#path 1 9 --Holy
+#pathlevel 1 1
+#researchlevel 5
+#fatiguecost 30
+#end
+
+#selectspell "Thunder Strike"
+#name "Call Lightning"
+#descr "The caster calls down thunderbolts to strike the battlefield. The mage can make the thunderbolts strike very far away. Even if it misses, the shock wave is powerful enough to severely stun and damage anyone nearby."
+#researchlevel 3
+#pathlevel 0 2
+#path 1 9 --Holy
+#pathlevel 1 1
+#nreff 501
+#notindoors 1
+#end
+
+#selectspell "Wrathful Skies"
+#name "Call Lightning Storm"
+#descr "The sky turns dark and lightning strikes all over the battlefield. This spell is most effective during a storm."
+#path 1 9 --Holy
+#pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Gift of Reason"
+#name "Awaken"
+#descr "The caster awakens the intellect of an animal, granting it commander status. The target animal must be in the same province as the caster. Mindless animals cannot be affected by the spell."
+#school 1 --alteration
+#pathlevel 0 3
+#path 1 9 --Holy
+#pathlevel 1 1
+#fatiguecost 500
+#researchlevel 4
+#spec 281474976841728
+#end
+
+#selectspell "Falling Frost"
+#name "Ice Storm"
+#aoe 15
+#damage 2007
+#end
+
+#selectspell "Faery Trod"
+#name "Transport via Plants"
+#descr "The mage steps into a plant and passes to a plant of the same kind a vast distance away, leading his army behind him. Both the source and destination provinces must be forests for this spell to work. Navigating via plants is less reliable than conventional teleportation and it might be that you won't emerge exactly where you planned."
+#school 0 --conj
+#researchlevel 6
+#path 1 9 --Holy
+#fatiguecost 15
+#end
+
+#selectspell "Earthquake"
+#path 1 9 --Holy
+#pathlevel 1 1
+#end
+
+#selectspell "Cure Disease"
+#name "Remove Disease"
+#descr "This ritual cures a unit from disease, an affliction that otherwise is certain to result in a quick and early death. The target unit must be in the same province as the caster."
+#school 0 --conj
+#pathlevel 0 2
+#path 1 9 --Holy
+#pathlevel 1 1
+#fatiguecost 100
+#end
+
+#newspell
+#copyspell 1310 --Remove Disease
+#name "Remove Curse"
+#descr "This ritual instantaneously removes curses on a creature. The target unit must be in the same province as the caster."
+#damage 2
+#school 1 -- alteration(abjuration)
+#path 0 4 --astral
+#pathlevel 0 2
+#path 1 -1
+#fatiguecost 100
+#end
+
+#newspell
+#copyspell 1310 --Remove Disease
+#name "Remove Blindness"
+#descr "This ritual instantaneously cures a creature of blindness. The target unit must be in the same province as the caster."
+#damage 528384
+#school 0 -- conjuration (healing)
+#path 0 4 --astral
+#pathlevel 0 2
+#fatiguecost 100
+#end
+
+#newspell
+#copyspell 1310 --Remove Disease
+#name "Regenerate"
+#descr "This ritual instantaneously regenerates the subject's body, curing them of any and all physical (but not mental) afflictions and diseases. The target must be in the same province as the caster."
+#details "The ritual will fail if the target is undead, inanimate or a spiritform."
+#researchlevel 7
+#damage 3319529473
+#school 0 -- conjuration (healing)
+#pathlevel 0 4
+#path 1 9 --Holy
+#pathlevel 1 3
+#fatiguecost 500
+-- does not affect undead/inanimate/spiritform, can be cast UW
+#spec 545783812
+#end
+
+#newspell
+#copyspell 1310 --Remove Disease
+#name "Restoration"
+#descr "This ritual instantaneously removes weakness, mental afflictions and the shrunken condition. The target unit must be in the same province as the caster."
+#damage 141770620928 -- weaken/battle fright/feeble minded/shrunken/dementia
+#school 0 --conjuration
+#path 0 4 --astral
+#pathlevel 0 2
+#path 1 -1
+#fatiguecost 100
+#end
+
+#newspell
+#name "Unholy Death"
+#effect 2
+#damage 999
+-- Does not affect demons, undead, caster, MR negates (easy), may use underwater
+#spec 140737782480896
+#school -1
+#aoe 1
+#end
+
+#newspell
+#name "Blasphemy"
+#descr "The caster utters a word so blasphemous that nearby creatures are stunned and the weak ones may even be instantly killed. Demons and undead are not affected, and the caster is not affected by his own blasphemy."
+#effect 66
+#damage 100
+-- Does not affect demons, undead, caster, MR negates, may use underwater
+#spec 140737765707776
+#aoe 60
+#range 0
+#nextspell "Unholy Death"
+#school 2 --evocation
+#researchlevel 7
+#path 0 9 --Holy
+#pathlevel 0 4
+#path 1 8 --Blood
+#pathlevel 1 3
+#end
+
+#newspell
+#name "Holy Death"
+#effect 2
+#damage 999
+-- Only affects demons & undead, MR negates (easy), may use underwater
+#spec 25165832
+#school -1
+#aoe 1
+#end
+
+#newspell
+#name "Holy Word"
+#descr "The caster utters a word so holy that nearby demons and undead are stunned and the weak ones may even be instantly killed."
+#effect 66
+#damage 100
+-- Only affects demons & undead, caster, MR negates, may use underwater
+#spec 8392712
+#aoe 60
+#range 0
+#nextspell "Holy Death"
+#school 2 --evocation
+#researchlevel 7
+#path 0 9 --Holy
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 3
+#end
+
+#selectspell "Barkskin"
+#path 1 9 --Holy
+#pathlevel 1 1
+#researchlevel 1
+#end
+
+#selectspell "Charm"
+#name "Dominate Person"
+#descr "The caster attempts to dominate the mind of a living humanoid victim. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
+#school 4 --Enchantment
+#researchlevel 4
+#path 1 4 --astral
+#pathlevel 1 1
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane
+-- can be cast underwater
+#spec 148618788517449732
+#range 5020
+#end
+
+#newspell
+#copyspell "Dominate Person"
+#name "Dominate Monster"
+#descr "The caster attempts to dominate the mind of a victim. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
+#researchlevel 7
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 3
+-- MR negates, mindless immune, can be cast underwater
+#spec 8523776
+#end
+
+#selectspell "Dominate Person"
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#end
+
+#selectspell "Charm Animal"
+#name "Dominate Animal"
+#descr "The caster attempts to dominate the mind of an animal. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
+#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
+#school 4 --Enchantment
+#path 1 9 --Holy
+#pathlevel 1 1
+-- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; animals only
+-- can be cast underwater
+#spec 4785075418435588
+#end
+
+#selectspell "Paralyze"
+#name "Hold Person"
+#descr "The caster overloads the target humanoid's mind and effectively paralyzes the target for a very long time."
+#school 4 --Enchantment
+#researchlevel 2
+#path 0 7 --Glamour
+-- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
+-- can be cast underwater
+#spec 148618788517449860
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Command"
+#descr "The caster forces an enemy to carry out a simple command. In practice this briefly incapacitates the subject."
+#path 0 9 --holy
+#pathlevel 0 2
+#pathlevel 1 0
+#fatiguecost 15
+#range 10
+#damage 25
+#spec 545919104 -- MR negates, AN, does not affect mindless/undead/inanimate. Can be cast UW
+#researchlevel 0
+#end
+
+#newspell
+#copyspell "Command"
+#name "Greater Command"
+#descr "The caster forces several enemies to carry out a simple command. In practice this briefly incapacitates the subject."
+#range 20
+#researchlevel 4
+#pathlevel 0 3
+#fatiguecost 50
+#range 15
+#nreff 2000
+#damage 50
+#spec 546181248 -- MR negates, AN, does not affect mindless/undead/inanimate, does not affect friends. Can be cast UW
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Hold Animal"
+#descr "The caster overloads the target animal's primal instincts and effectively paralyzes the target for a very long time."
+#school 4 --Enchantment
+#researchlevel 1
+#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
+#path 0 6 --Nature
+#pathlevel 0 1
+#path 1 9 --Holy
+#pathlevel 1 1
+-- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; animals only
+-- can be cast underwater
+#spec 4785075418435716
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Hold Monster"
+#descr "The caster overloads the mind and effectively paralyzes the target for a very long time."
+#researchlevel 4
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 1
+-- Armour negating, MR negates, mindless immune, can be cast underwater
+#spec 8523904
+#end
+
+#selectspell "Hold Person"
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Mass Hold Person"
+#descr "The caster overloads the minds of a group of humanoids, effectively paralyzing them for a very long time."
+#researchlevel 6
+#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
+#pathlevel 0 4
+#path 1 4
+#pathlevel 1 2
+#fatiguecost 60
+#aoe 3001
+-- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
+-- can be cast underwater
+#spec 148618788517712004
+#end
+
+#newspell
+#copyspell "Hold Monster"
+#name "Mass Hold Monster"
+#descr "The caster overloads the minds of a group of creatures, effectively paralyzing them for a very long time."
+#researchlevel 8
+#pathlevel 0 5
+#pathlevel 1 3
+#aoe 3001
+#fatiguecost 60
+-- Armour negating, MR negates, mindless immune, can be cast underwater, does not affect friendly
+#spec 8786048
+#end
+
+#selectspell "Calm Emotions"
+#copyspell "Serenity"
+#name "Calm Emotions"
+#descr "This spell calms agitated creatures. The targets calm down and lose their berserker rage."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
+#researchlevel 3
+#school 4 --Enchantment
+#path 0 7 --Glamour
+#aoe 3001
+#range 5025
+#end
+
+#selectspell "Fascination"
+#name "Hypnotism"
+#descr "The caster's gestures and droning incantation fascinate nearby living creatures, causing them to stop and stare blankly at him."
+#school 4-- enchantment
+#path 1 4 --astral
+#pathlevel 1 1
+#researchlevel 0
+#aoe 3001
+-- can cast UW, armour negating, mr easy, undead/inanimate/mindless immune
+#spec 562692224
+#end
+
+#newspell
+#copyspell "Hypnotism"
+#name "Hypnotic Pattern"
+#descr "A twisting pattern of subtle, shifting colors weaves through the air, fascinating creatures within it. The illusion is useless against blind creatures or those with true seeing."
+#school 5-- thaumaturgy(illusion)
+#path 1 4 --astral
+#pathlevel 1 1
+#researchlevel 1
+#range 5025
+#aoe 4
+-- can cast UW, armour negating, mr negates, mindless/true seeing immune
+#spec 1125899915366528
+#end
+
+#newspell
+#copyspell "Hypnotic Pattern"
+#name "Rainbow Pattern"
+#descr "A glowing, rainbow-hued pattern of interweaving colors fascinates a large group of creatures caught within it."
+#range 5035
+#pathlevel 0 3
+#researchlevel 3
+#school 2 --evocation
+#aoe 16
+#end
+
+#newspell
+#copyspell "Confusion"
+#name "Scintillating Confusion"
+#school -1
+#aoe 1
+-- can cast UW, armour negating, mr negates, mindless/true seeing immune
+#spec 1125899915366528
+#end
+
+#newspell
+#copyspell "Hypnotic Pattern"
+#name "Scintillating Pattern"
+#descr "A twisting pattern of discordant, coruscating colors weaves through the air, stunning and confusing creatures within it."
+#researchlevel 7
+#pathlevel 0 4
+#pathlevel 1 3
+#range 25
+#aoe 20
+#end
+
+#newspell
+#copyspell "Calm Emotions"
+#name "Calm Animals"
+#descr "This spell calms agitated animals. The targets calm down and lose their berserker rage."
+#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates).
+Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
+#school 4 --Enchantment
+#researchlevel 1
+#path 0 6 --Nature
+#pathlevel 0 1
+-- MR negates, mindless immune, void sane immune, illusion/spiritform immune demons/undead immune, animals only, can be cast underwater
+#spec 4785074881564676
+#end
+
+#newspell
+#copyspell "Hand of Death"
+#name "Inflict Light Wounds"
+#school 6 --Blood
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 2010
+#path 1 9 --Holy
+#pathlevel 0 1
+#pathlevel 1 1
+-- Armour negating, MR negates, does not affect allies, undead, or inanimates; may be cast underwater
+#spec 546050176
+#researchlevel 0
+#aispellmod 0
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Inflict Moderate Wounds"
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 1014
+#pathlevel 1 2
+#researchlevel 1
+#aispellmod 0
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Inflict Serious Wounds"
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 2015
+#pathlevel 0 2
+#pathlevel 1 2
+#researchlevel 2
+#aispellmod 40
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Inflict Critical Wounds"
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 3015
+#pathlevel 0 3
+#pathlevel 1 2
+#researchlevel 3
+-- Armour negating, difficult MR negates, does not affect allies, undead, or inanimates; may be cast underwater
+#spec 17592732090496
+#aispellmod 70
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Harm"
+#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
+#damage 5030
+#pathlevel 0 3
+#pathlevel 1 3
+#researchlevel 4
+-- Armour negating, difficult MR negates, does not affect allies, undead, or inanimates; may be cast underwater
+#spec 17592732090496
+#aispellmod 70
+#end
+
+#newspell
+#copyspell "Inflict Light Wounds"
+#name "Mass Inflict Light Wounds"
+#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
+#casttime 100
+#precision 100
+#fatiguecost 60
+#range 5020
+#nreff 3001
+#pathlevel 0 4
+#pathlevel 1 3
+#researchlevel 4
+#end
+
+#newspell
+#copyspell "Inflict Moderate Wounds"
+#name "Mass Inflict Moderate Wounds"
+#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 4
+#pathlevel 1 3
+#researchlevel 5
+#end
+
+#newspell
+#copyspell "Inflict Serious Wounds"
+#name "Mass Inflict Serious Wounds"
+#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 5
+#pathlevel 1 3
+#researchlevel 6
+#end
+
+#newspell
+#copyspell "Inflict Critical Wounds"
+#name "Mass Inflict Critical Wounds"
+#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
+#fatiguecost 100
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 5
+#pathlevel 1 3
+#researchlevel 7
+#end
+
+#newspell
+#copyspell 639 -- Water Strike
+#name "Cure Light Wounds"
+#descr "Divine spellcasters can seal combat wounds by means of this basic channeling."
+#school 4
+#researchlevel 0
+#path 0 9
+#pathlevel 0 1
+#effect 13
+#damage 5005
+-- difficult to negate with MR
+-- + armor negating
+-- + can use underwater
+-- + doesn't affect friendly
+#spec 17592194695296
+#range 30
+#casttime 100
+#aoe 0
+#nreff 1
+#precision 100
+#fatiguecost 10
+#explspr 10007 -- Falling light green
+#strikesound 29 -- Elf shot
+#aispellmod 35
+#end
+
+#newspell
+#copyspell 1145 --Heal
+#name "Cure Light Wounds"
+#descr "The caster channels positive energy to heal a nearby living ally."
+#school 0 --Conjuration
+#researchlevel 0
+#path 0 6 --nature
+#path 1 9 --holy
+#pathlevel 0 1
+#pathlevel 1 1
+#damage 2008
+-- allies only + can use UW + no undead + no inanimate + armour negating
+#spec 549978240
+#range 10
+#casttime 75
+#aoe 0
+#nreff 1
+#precision 100
+#fatiguecost 10
+#end
+
+#newspell
+#copyspell "Cure Light Wounds"
+#name "Cure Moderate Wounds"
+#descr "The caster channels positive energy to heal a nearby living ally."
+#pathlevel 0 1
+#pathlevel 1 2
+#researchlevel 1
+#damage 3012
+#end
+
+#newspell
+#copyspell "Cure Light Wounds"
+#name "Cure Serious Wounds"
+#descr "The caster channels positive energy to heal a nearby living ally."
+#pathlevel 0 2
+#pathlevel 1 2
+#researchlevel 2
+#damage 3020
+#end
+
+#newspell
+#copyspell "Cure Light Wounds"
+#name "Cure Critical Wounds"
+#descr "The caster channels positive energy to heal a nearby living ally."
+#pathlevel 0 2
+#pathlevel 1 3
+#researchlevel 3
+#damage 4020
+#end
+
+#selectspell 1145 --"Heal"
+#copyspell "Cure Light Wounds"
+#name "Heal"
+#descr "The caster channels positive energy into a nearby ally, wiping away injury and afflictions."
+#damage 100
+#pathlevel 0 3
+#pathlevel 1 3
+#researchlevel 5
+#end
+
+#newspell
+#copyspell "Cure Light Wounds"
+#name "Mass Cure Light Wounds"
+#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
+#casttime 100
+#precision 100
+#fatiguecost 60
+#range 5020
+#nreff 3001
+#pathlevel 0 2
+#pathlevel 1 3
+#researchlevel 4
+#end
+
+#newspell
+#copyspell "Cure Moderate Wounds"
+#name "Mass Cure Moderate Wounds"
+#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 3
+#pathlevel 1 3
+#researchlevel 5
+#end
+
+#newspell
+#copyspell "Cure Serious Wounds"
+#name "Mass Cure Serious Wounds"
+#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 3
+#pathlevel 1 4
+#researchlevel 6
+#aispellmod 50
+#end
+
+#newspell
+#copyspell "Cure Critical Wounds"
+#name "Mass Cure Critical Wounds"
+#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
+#fatiguecost 60
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 4
+#pathlevel 1 4
+#researchlevel 7
+#aispellmod 50
+#end
+
+#newspell
+#copyspell "Heal"
+#name "Mass Heal"
+#descr "Positive energy floods into allies in the target area, wiping away injury and afflictions."
+#fatiguecost 100
+#casttime 100
+#precision 100
+#range 5020
+#nreff 3001
+#pathlevel 0 4
+#pathlevel 1 4
+#researchlevel 8
+#end
+
+
+#selectspell "Sleep"
+#school 4 --enchantment
+#name "Deep Slumber"
+#descr "The caster makes a group of targets fall into an enchanted slumber."
+#details "Sleeping units will not take actions nor defend themselves against melee attacks. Sleeping units wake up if wounded."
+#range 5015
+#path 1 4 --astral
+#pathlevel 1 1
+#spec 545918976 -- can be caster UW, does not affect undead/inanimate/mindless, MR negates
+#end
+
+#selectspell "Sleep Ray"
+#name "Sleep"
+#descr "The caster makes the target fall into an enchanted slumber."
+#details "Sleeping units will not take actions nor defend themselves against melee attacks. Sleeping units wake up if wounded."
+#school 4 --enchantment
+#spec 545918976 -- can be caster UW, does not affect undead/inanimate/mindless, MR negates
+#end
+
+#selectspell "Frighten"
+#name "Cause Fear"
+#descr "The spell fills the targeted unit with fear."
+#researchlevel 0
+#path 1 7 --glamour
+#pathlevel 1 1
+#damage 15
+#spec 545788032 -- Mr negates, can  use underwater, armour negating, undead immune, inanimate immune
+#range 5020
+#end
+
+#selectspell "Terror"
+#name "Fear"
+#descr "An invisible cone of terror causes each living creature in the area to become panicked unless it is of sufficiently strong will."
+#path 1 7 --glamour
+#pathlevel 1 1
+#damage 15
+#spec 545788032 -- Mr negates, can  use underwater, armour negating, undead immune, inanimate immune
+#range 25
+#aoe 10
+#end
+
+#selectspell "Weakness"
+#name "Ray of Enfeeblement"
+#descr "A coruscating ray springs from the caster's hand. The target of the ray will be permanently weakened."
+#researchlevel 1
+#school 5 --Thaumaturgy (neutral necromancy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#newspell
+#copyspell "Ray of Enfeeblement"
+#name "Enervation"
+#descr "The caster releases a black ray of crackling negative energy that suppresses the life force of any living creature it strikes."
+#researchlevel 3
+#pathlevel 0 2
+#pathlevel 1 2
+#details "The target is slowed, decayed and affected by the Curse of Stones effect."
+#effect 11 --Cause affliction
+-- slow/decay/curse of stones
+#damage 68719477024
+#end
+
+#newspell
+#copyspell "Hand of Death"
+#name "Vampiric Touch"
+#descr "The caster's touch steals the target's life force."
+#effect 103 --drain life
+#damage 4010
+-- armour negating, can use underwater, no undead, no inanimate
+#spec 545783936
+#school 5 -- thaumaturgy (neutral necromancy)
+#researchlevel 2
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Temper Flesh"
+#name "Iron Body"
+#descr "This spell transforms the caster's body into living iron, granting powerful resistances and rendering them all but impervious to ordinary weapons."
+#researchlevel 7
+#damage 6341068756642430976
+#details "Grants Slash, Blunt and Pierce resistance, Fire Resistance +15, Shock Resistance +10, Poison Resistance +15, and natural protection +13 (max up to 20), or +5 if 15 or higher."
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#selectspell "Lesser Flame Ward"
+#name "Resist Fire"
+#descr "This spell partially protects a few units from fire and flames."
+#details "Fire Resistance +5"
+#researchlevel 1
+#pathlevel 0 1
+#school 1 --alteration(abjuration)
+#end
+
+#selectspell "Flame Ward"
+#name "Mass Resist Fire"
+#descr "This spell partially protects a large group of units from fire and flames."
+#details "Fire Resistance +5"
+#researchlevel 3
+#pathlevel 0 2
+#aoe 3001
+#fatiguecost 99
+#school 1 --alteration(abjuration)
+#end
+
+#selectspell "Lesser Winter Ward"
+#name "Resist Cold"
+#descr "This spell partially protects a few units from cold."
+#details "Cold Resistance +5"
+#researchlevel 1
+#pathlevel 0 1
+#school 1 --alteration(abjuration)
+#end
+
+#selectspell "Winter Ward"
+#name "Mass Resist Cold"
+#descr "This spell partially protects a large group of units from cold."
+#details "Cold Resistance +5"
+#researchlevel 3
+#pathlevel 0 2
+#aoe 3001
+#fatiguecost 99
+#school 1 --alteration(abjuration)
+#end
+
+#selectspell "Lesser Thunder Ward"
+#name "Resist Electricity"
+#descr "This spell protects a few units from damage and stun effects caused by lightning and thunder."
+#details "Shock Resistance +5"
+#researchlevel 1
+#pathlevel 0 1
+#school 1 --alteration(abjuration)
+#end
+
+#selectspell "Thunder Ward"
+#name "Mass Resist Electricity"
+#descr "This spell protects a few units from damage and stun effects caused by lightning and thunder."
+#details "Shock Resistance +5"
+#researchlevel 3
+#pathlevel 0 2
+#aoe 3001
+#fatiguecost 99
+#school 1 --alteration(abjuration)
+#end
+
+#newspell
+#copyspell "Resist Cold"
+#name "Protection From Cold"
+#descr "A few creatures are granted superior protection from the chosen energy type."
+#details "Cold Resistance +10. Does not stack with lower-tier resistance buffs."
+#damage 144115188075855872 -- 10 cold resistance
+#researchlevel 4
+#pathlevel 0 2
+#school 1 --alteration(abjuration)
+#end
+
+#newspell
+#copyspell "Mass Resist Cold"
+#name "Mass Protection From Cold"
+#descr "A group of creatures are granted superior protection from the chosen energy type."
+#details "Cold Resistance +10. Does not stack with lower-tier resistance buffs."
+#damage 144115188075855872 -- 10 cold resistance
+#researchlevel 6
+#pathlevel 0 4
+#school 1 --alteration(abjuration)
+#end
+
+#newspell
+#copyspell "Resist Fire"
+#name "Protection From Fire"
+#descr "A few creatures are granted superior protection from the chosen energy type."
+#details "Fire Resistance +10. Does not stack with lower-tier resistance buffs."
+#damage 36028797018963968 -- 10 fire resistance
+#researchlevel 4
+#pathlevel 0 2
+#school 1 --alteration(abjuration)
+#end
+
+#newspell
+#copyspell "Mass Resist Fire"
+#name "Mass Protection From Fire"
+#descr "A group of creatures are granted superior protection from the chosen energy type."
+#details "Fire Resistance +10. Does not stack with lower-tier resistance buffs."
+#damage 36028797018963968 -- 10 fire resistance
+#researchlevel 6
+#pathlevel 0 4
+#school 1 --alteration(abjuration)
+#end
+
+#newspell
+#copyspell "Resist Electricity"
+#name "Protection From Electricity"
+#descr "A few creatures are granted superior protection from to the chosen energy type."
+#details "Shock Resistance +10. Does not stack with lower-tier resistance buffs."
+#damage 72057594037927936 -- 10 shock resistance
+#researchlevel 4
+#pathlevel 0 2
+#school 1 --alteration(abjuration)
+#end
+
+#newspell
+#copyspell "Mass Resist Electricity"
+#name "Mass Protection From Electricity"
+#descr "A group of creatures are granted superior protection from the chosen energy type."
+#details "Shock Resistance +10. Does not stack with lower-tier resistance buffs."
+#damage 72057594037927936 -- 10 shock resistance
+#researchlevel 6
+#pathlevel 0 4
+#school 1 --alteration(abjuration)
+#end
+
+#newspell
+#copyspell "Hold Person"
+#name "Halt Undead"
+#descr "This spell renders as many as three undead creatures temporarily immobile."
+#aoe 1
+#school 5 --thaumaturgy (neutral necromancy)
+#path 0 5 --death
+#path 1 4 --astral
+#pathlevel 1 1
+#spec 276828296 -- armour negating, mr negates, can be cast underwater, only affect undead
+#end
+
+#newspell
+#copyspell "Personal Mistform"
+#name "Blink"
+#descr "The caster rapidly blinks back and forth between the Material Plane and the Ethereal Plane. Most mundane attacks are negated entirely by dodging into the Ethereal Plane."
+#details "Grants Ethereal"
+#school 1 --alteration
+#path 0 4 --astral
+#pathlevel 0 2
+#path 1 7 --glamour
+#pathlevel 0 2
+#researchlevel 2
+#effect 10 --buff 1
+#damage 134217728 --ethereal
+#end
+
+#newspell
+#copyspell "Blink"
+#name "Ethereal Jaunt"
+#descr "The caster shifts his body into the ethereal plane, rendering him all but immune to mundane weapons."
+#details "Grants Ethereal and Invulnerability 25"
+#path 0 4 --astral
+#pathlevel 0 3
+#researchlevel 6
+#nextspell 842 --Invulnerability
+#end
+
+#newspell
+#copyspell "Fog Warriors"
+#name "Etherealness"
+#descr "The caster shifts an entire group of allies into the ethereal plane, rendering them all but immune to mundane weapons."
+#details "Grants Ethereal and Invulnerability 25"
+#school 1 --alteration
+#path 0 4 --astral
+#pathlevel 0 5
+#researchlevel 8
+#effect 10 --buff 1
+#damage 134217728 --ethereal
+#nextspell 842 --Invulnerability
+#aoe 3001
+#end
+
+#newspell
+#copyspell "Area Fire"
+#name "Meteor Explosion"
+##aoe 15
+#damage 15
+#end
+
+#newspell
+#copyspell 659 -- Fireball
+#name "Meteor Swarm"
+#descr "Four two-foot diameter spheres spring from the caster's outstretched hand and streak in straight lines to the targeted location. The spheres will do tremendous damage to anyone they strike and will also explode dealing damage in a wide area."
+#researchlevel 8
+#school 2 --evocation
+#path 0 0 --fire
+#pathlevel 0 5
+#path 1 4 --astral
+#pathlevel 0 4
+#effect 2
+#fatiguecost 100
+#nreff 4
+#range 100
+#prec 100
+#damage 75
+#aoe 1
+#strikesound 89
+#makecrater 1
+#flightspr 100 -- fire boulder
+#speedmult 3
+#nextspell "Meteor Explosion"
+#explspr 10101
+#spec 549755813888
+#end
+
+#newspell
+#name "Lethal Terror"
+#effect 2
+#damage 999
+#spec 17205035136
+#school -1
+-- AN, MR negates easily, may use UW, undead/inanimate/mindless immune, false damage, does not affect allies
+#spec 17742823552
+#end
+
+#selectspell "Visions of Death"
+#name "Phantasmal Killer"
+#descr "The caster creates a phantasmal image of the most fearsome creature the target can imagine. Only the victim can see the illusion. The weak-willed will fail to recognise the image is not real and may even die from fear."
+#school 4 --enchantment
+#damage 7
+#path 1 4 --astral
+#pathlevel 1 2
+-- AN, MR negates, may use UW, undead/inanimate/mindless immune, false damage
+#spec 17725788288
+#nextspell "Lethal Terror"
+#end
+
+#newspell
+#copyspell "Phantasmal Killer"
+#name "Weird"
+#descr "The caster creates a phantasmal image of the most fearsome creature each target can imagine. Each victim can only see their own personal illusion. The weak-willed will fail to recognise the image is not real and may even die from fear."
+#pathlevel 0 5
+#pathlevel 1 4
+#aoe 3001
+#researchlevel 8
+-- AN, MR negates, may use UW, undead/inanimate/mindless immune, false damage, does not affect allies
+#spec 17726050432
+#end
+
+#selectspell "Simulacrum"
+#name "Clone"
+#descr "The caster creates an inert duplicate of himself and stores it safely. If his original body dies, his soul immediately transfers to the clone. However, there is a chance that the caster's soul will fail to return and become trapped and lost in the outer planes, possibly until his soul withers away and dies."
+#details "If the original body dies the caster will reappear where the ritual was cast. There is a 80% chance that the caster reappears a month after his original body's death. Each month thereafter the chance is reduced by half. The soul withers away after one year."
+#school 5 -- thaum (neutral necromancy)
+#researchlevel 7
+#path 0 5--death
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 4
+#fatiguecost 1000 -- higher path requirement but cheaper
+#end
+
+#newspell
+#copyspell "Personal Mistform"
+#name "Expeditious Retreat"
+#descr "The caster's land speed is increased."
+#details "Combat speed +50%"
+#researchlevel 0
+#school 1 -- alteration (transmutation)
+#path 0 4 --astral
+#pathlevel 0 1
+#damage 4 -- swiftness
+#spec 0
+#end
+
+#newspell
+#copyspell "Expeditious Retreat"
+#name "Longstrider"
+#descr "The caster's land speed is increased."
+#details "Combat speed +50%"
+#path 0 6 --nature
+#path 1 9 --holy
+#pathlevel 1 1
+#spec 0
+#end
+
+#newspell
+#copyspell "Longstrider"
+#name "Mass Longstrider"
+#descr "The caster increases the land speed of a large group of allies."
+#details "Combat speed +50%"
+#researchlevel 4
+#pathlevel 0 3
+#fatiguecost 60
+#aoe 6002
+#spec 4194304 --affects friendlies only
+#end
+
+#selectspell "Aura of Bewilderment"
+#name "Cloak of Chaos"
+#descr "A random pattern of color surrounds a group of allies, granting them resistance to spells, and causing creatures that strike the subjects to become confused."
+#details "Grants MR+4, Invulnerability 15, and Shroud of Bewilderment.
+
+MR check to resist the bewilderment. Failure means no strike and the next action will be a random one. Units that can see/sense invisible get a +4 bonus to the MR roll."
+#path 1 9 --holy
+#pathlevel 1 3
+#school 1 -- alteration (abjuration)
+#aoe 3001
+#nextspell 1110 --resist magic
+#end
+
+#newspell
+#name "Righteous Wrath of the Faithful"
+#descr "The caster imbues a group of the faithful with a divine fury that greatly enhances their combat ability. Subjects will be driven into an irrational berserk state and attack at twice the usual speed."
+#details "Subjects will be quickened, blessed, and driven berserk. The caster will likely be affected - and driven berserk - too."
+#path 0 9 --holy
+#pathlevel 0 3
+#school 4 --enchantment
+#path 1 0 -- fire
+#pathlevel 1 2
+#range 0
+#aoe 20
+#researchlevel 5
+#fatiguecost 40
+#effect 10
+-- gone berserk + quickness + bless
+#damage 262401
+-- does not affect enemies or mindless; only affects sacreds; can be cast underwater
+#spec 12746752
+#ainocast 1
+#end
+
+#selectspell "Mind Blank"
+#school 1 --alteration
+#end
+
+#selectspell "Wild Growth"
+#name "Entangle"
+#descr "Vines and roots sprout from the ground, grabbing all enemies within reach. The stronger a victim is, the faster the vines will be destroyed and the more fertile the province is, the stronger the vines will be."
+#details "Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
+#school 1 --alteration
+#researchlevel 1
+#range 5025
+#fatiguecost 60
+#pathlevel 0 2
+#path 1 9 --holy
+#pathlevel 1 1
+#end
+
+#selectspell "Burning Hands"
+#path 1 4 --astral
+#researchlevel 0
+#pathlevel 1 1
+#aoe 3
+#spec 140737488355424 -- fire/armour piercing/does not affect caster
+#end
+
+#newspell
+#copyspell 123 -- stun magic
+#name "Stun Weakling"
+-- can be cast UW; armor negating, true sight negates, difficult mr negates, size negates; caster immune, mindless immune, undead/inanimate immune
+#spec 1288628173668480
+#end
+
+#newspell
+#copyspell "Hypnotic Pattern"
+#name "Color Spray"
+#descr "A vivid cone of clashing colors springs forth from the caster's hand, stunning creatures who fail to resist. Weak creatures will be affected much more severely."
+#details "The caster cannot hit themself with this spell."
+#range 15
+#aoe 5
+#flightspr 10080
+#nextspell "Stun Weakling"
+-- can be cast UW; armor negating, true sight negates, mr negates; caster immune, mindless immune
+#spec 1266637403721856
+#end
+
+#selectspell "Mass Confusion"
+#name "Confusion"
+#descr "The spell will confuse the minds of a large group of soldiers for the remainder of the battle. The confused units can easily attack friends instead of enemies."
+#details "Confused 50% of combat rounds. Confused targets may stand still and stare, or try to move in a random direction, attacking anyone standing in their way, be it friend or foe."
+#aoe 9
+#school 4 -- enchantment
+#researchlevel 3
+#end
+
+#selectspell "Acid Bolt"
+#name "Acid Arrow"
+#descr "A magical arrow of acid springs from the caster's hand and speeds to its target. The acid burns the armor of the target as well as his, her or its flesh."
+#path 0 3 -- earth
+#path 1 4 -- astral
+#school 3 -- construction - conjuration(creation)
+#researchlevel 2
+#end
+
+#selectspell "Swarm"
+#name "Summon Swarm"
+#descr "The caster summons a swarm of vermin to attack his enemies."
+#school 0 --conjuration
+#fatiguecost 60
+#nreff 1008
+#researchlevel 1
+#end
+
+#selectspell "Creeping Doom"
+#name "Insect Plague"
+#descr "The caster summons a plague of vermin to attack his enemies."
+#school 0 --conjuration
+#researchlevel 4
+#path 1 9 --holy
+#nreff 4032
+#pathlevel 1 1
+#end
+
+#selectspell "Web"
+#fatiguecost 60
+#school 3 -- construction - conjuration(creation)
+#aoe 16
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "True Sight"
+#name "See Invisibility"
+#descr "The caster gains the ability to discern illusions and see the unseen."
+#details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
+#school 5 -- divination (thaumaturgy)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Second Sight"
+#name "True Seeing"
+#descr "The caster opens his third eye and observes the spirit world. The caster gains Spirit Sight for the remainder of the battle."
+#details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
+#school 5 -- divination (thaumaturgy)
+#researchlevel 5
+#path 0 7 --glamour
+#pathlevel 0 2
+pathlevel 1 0
+#end
+
+#selectspell "Fire Flies"
+#name "Scorching Ray"
+#descr "The caster blasts his enemies with fiery rays. The number and strength of the rays improve with the caster's power."
+#speedmult 3
+#researchlevel 1
+#damage 2010
+#pathlevel 0 2
+#path 1 4 -- astral
+#pathlevel 1 1
+#nreff 1000
+#prec 2
+#fatiguecost 30
+#end
+
+#newspell
+#copyspell "Scorching Ray"
+#name "Searing Light"
+#descr "Focusing divine power like a ray of the sun, the caster projects a blast of light from their open palm. The ray of light is particularly harmful to undead."
+#effect 124 -- holy damage (x2 vs demons)
+#nreff 1
+#path 1 9 -- holy
+#spec 8388608 -- can be cast underwater
+#end
+
+#newspell
+#copyspell "Rain of Stones"
+#name "Storm of Vengeance"
+#descr "The caster creates a massive storm cloud which pelts the battlefield with acid and giant hailstones."
+#school 0 --conjuration
+#researchlevel 8
+#path 0 6 -- nature
+#pathlevel 0 5
+#path 1 9 --holy (maybe air instead?)
+#pathlevel 1 2
+#details "Continuously targets the battlefield with 5 points of mundane blunt dmg and 4 armour piercing acid damage."
+#nextspell "Acid Storm"
+#end
+
+#newspell
+#copyspell 217 -- smite demon
+#name "Sunbeam"
+#descr "The caster evokes a dazzling beam of light which blinds enemies and is particularly destructive to undead."
+#school 2 --evocation
+#effect 124 -- holy damage (x2 vs undead)
+#aoe 6 -- unfortunately line effect is not available
+#damage 16
+#range 40
+#path 0 0 --fire
+#pathlevel 0 4
+#path 1 6 -- nature
+#pathlevel 1 2
+#researchlevel 6
+#fatiguecost 40
+#nextspell "Blindness"
+-- armour piercing, can be cast underwater
+#spec 8388672
+#end
+
+#newspell
+#copyspell 217 --Smite Demon
+#name "Sunburst"
+#descr "The caster causes a globe of searing radiance to explode silently from the targeted point. Anyone caught in the burst suffers severe damage and will be blinded unless they resist. The burst deals greatly increased damage to undead creatures."
+#school 2 --evocation
+#effect 124 -- holy damage (x2 vs undead)
+#range 100
+#aoe 50
+#damage 2000
+#casttime 200
+#path 0 0 -- fire
+#pathlevel 0 5
+#path 1 6 -- nature
+#pathlevel 1 3
+#researchlevel 8
+#fatiguecost 200
+#nextspell "Blindness"
+-- armour piercing, can be cast underwater
+#spec 8388672
+#end
+
+#selectspell "Maws of the Earth"
+#name "Black Tentacles"
+#descr "This spell conjures a field of rubbery black tentacles, each 10 feet long. These waving members seem to spring forth from the earth, floor, or whatever surface is underfoot—including water. They grasp and entwine around creatures that enter the area, holding them fast and crushing them with great strength."
+#details "Str +DRN vs 23 to get free."
+#school 3 --construction; conjuration(creation)
+#researchlevel 4
+#path 0 2 -- water
+#path 1 4 -- astral
+#pathlevel 1 2
+#end
+
+#selectspell "Ignite Arrows"
+#name "Flame Arrow"
+#descr "The mage enchants the arrows of a few archers on the battlefield. The arrows burst into flame as they are fired, doing considerable damage to their targets. The spell will not affect magical weapons. The fire damage of the arrow is magic and will affect ethereal and invulnerable creatures even if the arrow itself doesn't."
+#details "Extra +8 AP fire dmg."
+#school 1 -- alteration (transmutation)
+#path 1 4 --astral
+#pathlevel 1 1
+#end
+
+#selectspell "Flaming Arrows"
+#name "Mass Flame Arrow"
+#descr "The mage enchants the arrows of a large number of friendly archers. The arrows burst into flame as they are fired, doing considerable damage to their targets. The spell will not affect magical weapons. The fire damage of the arrow is magic and will affect ethereal and invulnerable creatures even if the arrow itself doesn't."
+#details "Extra +8 AP fire dmg."
+#aoe 3001
+#fatiguecost 60
+#school 1 -- alteration (transmutation)
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#selectspell "Petrify"
+#name "Flesh to Stone"
+#descr "The caster transforms some targets into stone. The target might end up dead when the petrification ends."
+#details "Petrified targets have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#path 1 4 --astral
+#pathlevel 1 2
+#pathlevel 0 4
+#end
+
+#selectspell "Curse"
+#name "Bestow Curse"
+#descr "The mage curses the target with bad luck. The spell has long range and always hits the chosen target. There is no protection against being cursed and it can never be removed."
+#range 15
+#path 0 5 -- D
+#end
+
+#selectspell "Seven Year Fever"
+#name "Contagion"
+#descr "The caster curses some targets with a horrible fever that never ends. The victims will not be severely affected during combat, but their wounds will never heal and the victim will slowly die in the following years."
+#path 0 5 -- D
+#path 1  8 --blood
+#school 6 -- blood
+#end
+
+#selectspell "Opposition"
+#name "Dismissal"
+#descr "The caster attempts to force an extraplanar creature back to its proper plane."
+#nextspell 0
+#researchlevel 4
+#school 1 -- alteration(abjuration)
+#end
+
+#newspell
+#copyspell "Contagion"
+#name "Feeblemind"
+#descr "The caster attempts to destroy the target's higher mental faculties. Feeble minded victims have diminished fighting ability and are unable to use magic."
+#damage 33554432 -- feeble minded
+#spec 545918976 -- can be used UW, MR negates, no mindless/undead/inanimate
+#range 5025
+#aoe 0
+#path 0 7 -- glamour
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#school 4 -- enchantment
+#researchlevel 4
+#end
+
+#selectspell "Ghost Grip"
+#name "Waves of Fatigue"
+#descr "Waves of negative energy render all living creatures in the spell’s area fatigued."
+#researchlevel 4
+#school 5 -- thaumaturgy (neutral necromancy)
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#nreff 1
+#aoe 6
+#spec 140738034143360 -- armour negating, can be used UW, no undead/inanimate, MR negate, does not affect caster
+#end
+
+#newspell
+#copyspell "Waves of Fatigue"
+#name "Waves of Exhaustion"
+#descr "Waves of negative energy render all living creatures in the spell’s area exhausted. Even resistant enemies are not fully protected."
+#researchlevel 6
+#pathlevel 0 4
+#pathlevel 1 3
+#aoe 10
+#damage 3025
+#spec 2305983747247833216 -- armour negating, can be used UW, no undead/inanimate, MR half, does not affect caster
+#end
+
+#selectspell "Sulphur Haze"
+#name "Acid Fog"
+#descr "This spell creates several clouds of toxic mist that remain on the battlefield. Units passing through these mists will suffer from sore throats and poisoning."
+#school 3 -- const (conj-creation)
+#path 0 3 --earth
+#path 1 4 --astral
+#end
+
+#selectspell "Vortex of Unlife"
+#name "Circle of Death"
+#descr "A circle of death snuffs out the life force of living creatures, killing them instantly."
+#path 1 4 --astral
+#pathlevel 1 3
+#school 5 -- thaum (neutral necromancy). ? Is this really neutral?
+#effect 2 -- damage
+#damage 999
+-- AN, mr easy, undead immune, inanimate immune, can be cast UW
+#spec 562561152
+#end
+
+#newspell
+#copyspell "Hold Monster"
+#name "Comatose"
+-- AN, MR negates, can cast UW, undead/inanimate immune
+#spec 545788032
+#school -1
+#end
+
+#newspell
+#name "Eyebite"
+#descr "The caster strikes a living creature with waves of evil power. Weak creatures will be driven into a catatonic coma, but even the strong may be weakened."
+#school 6 -- blood (necromancy[evil])
+#researchlevel 5
+#fatiguecost 20
+#path 0 7 --glamour
+#pathlevel 0 3
+#path 1 8 -- blood
+#pathlevel 1 1
+#school 6 -- blood
+#range 25
+#effect 3 -- fatigue damage
+#damage 5025
+#nextspell "Comatose"
+-- difficult MR negates, can cast UW, undead/inanimate immune
+#spec 17592731828224
+#end
+
+#newspell
+#copyspell "Circle of Death"
+#name "Undeath to Death"
+#descr "The caster snuffs out the animating force of undead creatures in the area, destroying them instantly."
+#pathlevel 1 0
+#school 5 -- thaum (neutral necromancy)
+-- AN, mr negates (easy), only affect undead/demon, demon immune, can be cast UW
+#spec 293601416
+#end
+
+#selectspell "Fire Cloud"
+#name "Incendiary Cloud"
+#descr "This spell creates a large cloud of fire and smoke that remain on the battlefield. Units passing through this cloud will be severely burned."
+#school 0 --conjuration (creation)
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#selectspell "Blindness"
+#descr "The caster calls upon the powers of unlife to render the subject blinded."
+#path 0 5 --death
+#school 5 -- thaum (neutral necromancy)
+#spec 545787904 -- can be cast UW, MR negates, undead/inanimate immune
+#end
+
+#newspell
+#copyspell "Personal Regeneration"
+#name "Transformation"
+#descr "The caster transforms themself into a virtual fighting machine. They grow tougher, but their mind-set changes so that they relish combat and they can’t cast spells."
+#details "Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6); gone berserk"
+#fatiguecost 100
+#school 1 --alteration (transmutation)
+#path 0 6 -- nature
+#pathlevel 0 1
+#path 1 4 --astral
+#pathlevel 1 3
+#researchlevel 5
+-- gone berserk + limited enlargement + enlargement
+#damage 1101659111680
+#spec 8519680 -- can be cast UW, does not affect mindless
+#spec2 4 -- does not affect riders
+#end
+
+#newspell
+#name "Damage Negation"
+#effect 13 -- healing
+#damage 50
+-- AN, no mindless/undead/inanimate, real damage, internal damage, can be cast UW
+#spec 54043196074360960
+#school -1
+#end
+
+#newspell
+#copyspell "Disintegrate"
+#name "Power Word Kill"
+#descr "The caster utters a single word of power that instantly kills one creature of their choice, whether the creature can hear the word or not. Any creature that has sufficient hit points is unaffected by power word kill."
+#flyspr -1
+#explspr 10141
+#effect 2 -- damage
+#damage 50
+#nextspell "Damage Negation"
+#range 3025
+-- AN, no mindless/undead/inanimate, real damage, internal damage, can be cast UW
+#spec 54043196074360960
+#school 4 -- enchantment
+#researchlevel 8
+#end
+
+#newspell
+#copyspell "Dismissal"
+#name "Banishment"
+#descr "The caster attempts to force a group of extraplanar creatures back to their proper plane."
+#aoe 3001
+#researchlevel 6
+#pathlevel 0 4
+#flightspr 10069 -- particle ball
+#end
+
+#newspell
+#copyspell "Infernal Prison"
+#name "Violet Beam"
+#aoe 1
+#school -1
+#spec 25165952 -- AN, mr easy, can be cast UW
+#flightspr 10068 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Indigo Beam"
+#aoe 1
+#school -1
+#effect 609 -- add to effect value (10)
+#damage 309 -- insanity
+#spec 25297024 -- can cast UW, mr easy, mindless immune, AN
+#flightspr 10067 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#copyspell "Flesh to Stone"
+#name "Blue Beam"
+#aoe 1
+#school -1
+#spec 562036864 -- can cast UW, mr easy, inanimate immune, AN
+#nextspell "Indigo Beam"
+#flightspr 10066 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Green Beam"
+#aoe 1
+#school -1
+#effect 2
+#damage 100
+-- poison res, AN, MR easy, can be cast UW, undead/inanimate immune
+#spec 562569344
+#nextspell "Blue Beam"
+#flightspr 10065 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Yellow Beam"
+#effect 2
+#aoe 1
+#school -1
+#damage 20
+-- shock res, AN, MR easy, can be cast UW
+#spec 25168000
+#nextspell "Green Beam"
+#flightspr 10064 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Orange Beam"
+#effect 2
+#aoe 1
+#school -1
+#damage 20
+-- acid res, AP, MR easy, can be cast UW
+#spec 2199048421440
+#nextspell "Yellow Beam"
+#flightspr 10063 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#name "Red Beam"
+#effect 2
+#aoe 1
+#school -1
+#damage 20
+-- fire res, AP, MR easy, can be cast UW
+#spec 25165920
+#nextspell "Orange Beam"
+#flightspr 10062 -- particle ball
+#explspr 10001
+#end
+
+#newspell
+#copyspell "Violet Beam"
+#name "Prismatic Spray"
+#descr "Seven shimmering, intetwined, multicoloured beams of light spray from the casters hand. Each beam will strike some of the creautres in the area with various effects."
+#details "Red Beam: 20 AP Fire damage
+Orange Beam: 20 AP acid damage
+Yellow Beam: 20 AN shock damage
+Green Beam: 100 AN poison damage
+Blue Beam: Petrification
+Indigo Beam: +10 Insanity
+Violet Beam: Plane shift to the inferno"
+#nextspell "Red Beam"
+#range 20
+#aoe 30
+#school 2 --evocation
+#researchlevel 6
+#path 0 4 --astral
+#pathlevel 0 4
+#path 1 7 --glamour
+#pathlevel 1 2
+#flightspr 10061 -- particle ball
+#explspr 10001
+#speedmult 3
+#end
+
+#selectspell "Control the Dead"
+#name "Control Undead"
+#descr "The caster commands udead creatures to obey them."
+#researchlevel 6
+#range 2025
+#aoe 3001
+#pathlevel 0 3
+#path 1 4 --astral
+#pathlevel 1 2
+#end
+
+#newspell
+#name "Harm Living"
+#effect 2
+#damage 15
+#spec 36028797564747904 -- AN, can be cast UW, undead/inanimate immune, internal damage
+#school -1
+#end
+
+#newspell
+#copyspell "Disintegrate"
+#name "Finger of Death"
+#descr "The caster attempts to slay a living creature. Survivors will still be injured."
+#effect 2
+#damage 999
+#spec 545788032 -- AN, MR negates, can be cast UW, undead/inanimate immune
+#nextspell "Harm Living"
+#school 5 -- thuam (neutral necromancy)
+#researchlevel 6
+#path 0 5 -- death
+#pathlevel 0 4
+#pathlevel 1 0
+#end
+
+#newspell
+#copyspell "Finger of Death"
+#name "Wail of the Banshee"
+#descr "The caster emits a terrible scream that kills creatures that hear it."
+#details "Does not affect the caster or his mount."
+#flightspr -1
+#explspr 10200 -- curse
+#researchlevel 8
+#pathlevel 0 6
+#pathlevel 1 0
+#fatiguecost 60
+#range 0
+#range 2025
+#aoe 40
+#nextspell 0
+ -- AN, MR negates, can be cast UW, undead/inanimate immune, internal dmg, does not affect caster
+#spec 36169535053107328
+#end
+
+#newspell
+#copyspell "Finger of Death"
+#name "Slay Living"
+#descr "The caster attempts to slay a living creature. Survivors will still be injured."
+#range 1
+#researchlevel 4
+#pathlevel 0 2
+#path 1 9 -- holy
+#pathlevel 1 2
+#end
+
+#newspell
+#copyspell "Harm Living"
+#name "Greater Harm Living"
+#damage 25
+#end
+
+#newspell
+#copyspell "Slay Living"
+#name "Destruction"
+#descr "The caster attempts to instantly slay the subject and consume its remains utterly."
+#prec 100
+#details " "
+#range 2025
+#pathlevel 0 3
+#pathlevel 1 3
+#nextspell "Greater Harm Living"
+#researchlevel 6
+#end
+
+#newspell
+#copyspell "Hypnotism"
+#name "Irresistible Dance"
+#school 4 -- enchantment
+#researchlevel 5
+#path 0 7 --glamour
+#pathlevel 0 3
+#path 1 4 -- astral
+#pathlevel 1 1
+#descr "The subject feels an undeniable urge to dance and begins doing so, complete with foot shuffling and tapping. The spell effect makes it impossible for the subject to do anything other than caper and prance in place."
+#aoe 0
+#range 1
+#spec 545915008 -- AN, mindless/undead/inanimate immune, can be cast underwater
+#end
+
+#newspell
+#copyspell "Disintegrate"
+#name "Polar Ray"
+#school 2 -- evocation
+#researchlevel 7
+#path 0 2 --water
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 1 2
+#descr "A blue-white ray of freezing air and ice springs from the caster's hand. The ray deals cold damage to anyone it hits."
+#spec 8389184 -- AP, can be cast UW, cold dam
+#end
+
+#newspell
+#name "Shout Deafen"
+#aoe 1
+#effect 3 -- fatigue damage
+#damage 20
+#spec 2305983746712535168 -- caster immune, mundane dmg, AN, MR for half dmg, can be cast UW
+#school -1
+#end
+
+#newspell
+#copyspell "Shout Deafen"
+#name "Minor Stun"
+#damage 20
+#effect 128
+#spec 140737496748160 -- AN, mr negates, caster immune, can be cast UW
+#end
+
+#newspell
+#name "Shout"
+#descr "The caster emits an ear-splitting yell that deafens and damages creatures in its path."
+#school 2 --evocation
+#researchlevel 3
+#path 0 7 --glamour
+#pathlevel 0 2
+#path 1 4 --astral
+#pathlevel 1 1
+#range 0
+#aoe 10
+#effect 2
+#damage 10
+#fatiguecost 25
+#spec 2305983746712535168 -- caster immune, mundane dmg, AN, MR for half dmg, can be cast UW
+#nextspell "Shout Deafen"
+#end
+
+#newspell
+#copyspell "Shout"
+#name "Sound Burst"
+#descr "A burst of sound damages a few creatures and stuns the weak ones"
+#damage 5
+#pathlevel 0 1
+#pathlevel 1 0
+#researchlevel 1
+#fatiguecost 10
+#range 2025
+#aoe 1
+#nextspell "Minor Stun"
+#end
+
+#newspell
+#copyspell "Shout Deafen"
+#name "Greater Shout Deafen"
+#damage 40
+#nextspell "Minor Stun"
+#end
+
+#newspell
+#copyspell "Shout"
+#name "Greater Shout"
+#descr "The caster emits an ear-splitting yell that stuns and damages creatures in its path."
+#researchlevel 6
+#damage 15
+#pathlevel 0 4
+#pathlevel 1 1
+#aoe 25
+#fatiguecost 25
+#nextspell "Greater Shout Deafen"
+#end
+
+#newspell
+#copyspell "Desiccation"
+#name "Horrid Wilting"
+#descr "The caster evaporates moisture from the body of each living creature in the target area, dealing potential lethal damage in a wide area."
+#school 5 -- thaum (neutral necromancy)
+#researchlevel 7
+#pathlevel 0 4
+#path 1 4 --astral
+#pathlevel 1 3
+#range 5040
+#aoe 4020
+#effect 2
+#damage 2012
+#fatiguecost 40
+#spec 2341871806772150400 -- AN, undead/inanimate immune, mundane damage MR half
+#end
+
+#selectspell "Flying Shards"
+#name "Magic Stone"
+#descr "The caster transmutes several pebbles so that they strike with great force when thrown or slung."
+#school 1 -- alteration (transmutation)
+#path 1 9 --holy
+#pathlevel 1 1
+#spec 549764202496 -- blunt, can be used underwater
+#end
+
+#selectspell "Blood Poisoning"
+#name "Poison"
+#descr "The caster calls upon the venomous powers of natural predators to infect the subject with a horrible poison."
+#range 1
+#pathlevel 0 1
+#path 1 5 --death
+#pathlevel 1 1
+#range 1
+#damage 25
+#school 5 -- thaum (neutral necromancy)
+#end
+
+#selectspell "Gift of the Serpent"
+#name "Neutralize Poison"
+#descr "The caster mitigates the onset of poisons in a small group of allies."
+#details "Poison Resistance + 10"
+#school 0 --conjuration (healing)
+#end
+
+#newspell
+#copyspell "Summon Nature's Ally I"
+#name "Giant Vermin"
+#descr "The caster transmutes a scorpion into a large and powerful minion under their command."
+#damage 524 --scorpion beast
+#school 1 --alteration
+#researchlevel 3
+#pathlevel 0 2
+#end"
+
+#newspell
+#copyspell "Conflagration"
+#name "Catch Fire"
+#aoe 1
+#school -1
+#end
+
+#newspell
+#copyspell "Scorching Ray"
+#name "Fire Seeds"
+#descr "The caster transforms four acorns into combustible explosives. Each acorn deals fire damage in an area and sets fire to anything it hits."
+#range 40
+#school 3 -- const (conjuration - creation)
+#researchlevel 6
+#speedmult 1
+#pathlevel 0 3
+#path 1 9 -- holy
+#pathlevel 1 1
+#nreff 4
+#aoe 3
+#explspr 10113 -- fireball
+#strikesound 89 -- explosion
+#nextspell "Catch Fire"
+#end
+
+#selectspell "Animate Tree"
+#name "Animate Plants"
+#descr "The caster imbues inanimate plants with mobility and a semblance of life. Each animated plant then immediately attacks the caster's enemies."
+#researchlevel 6
+#pathlevel 0 3
+#path 1 9 -- holy
+#pathlevel 1 1
+#nreff 1001
+#range 3025
+#end
+
+#newspell
+#copyspell "Summon Monster I"
+#name "Whirlwind"
+#descr "The caster creates a powerful cyclone of raging wind to tear through the ranks of most enemies. Large monsters and giants may be too heavy to be tossed by the winds."
+#details "Size 6 trampler"
+#damage 5530 -- whirlwind
+#school 2 -- evo
+#researchlevel 7
+#range 0
+#path 0 1 -- air
+#pathlevel 0 4
+#path 1 9 -- holy
+#pathlevel 1 1
+#fatiguecost 100
+#end
+
+#newspell
+#copyspell "Personal Regeneration"
+#name "Righteous Might"
+#descr "The caster is filled with divine power, increasing their size and resistance to damage."
+#details "Size +1, HP +30%, Str +3, Def -1, Natural Protection +5. (Natural protection does not stack with Hard Skin bless)"
+#damage 70370891661312 -- enlargement
+#school 1 --alteration (transmutation)
+#researchlevel 4
+#path 0 9 -- holy
+#pathlevel 0 2
+#fatiguecost 40
+#end
+
+#selectspell "Bone Melter"
+#name "Implosion"
+#descr "The caster create a destructive resonance in a corporeal creature's body. The victim collapses in on itself and dies."
+#school 2 --evocation
+#researchlevel 8
+#casttime 50
+#fatiguecost 10
+#path 0 9 --holy
+#pathlevel 0 3
+#path 1 8 --blood
+#pathlevel 1 2
+#aoe 0
+#range 2025
+#prec 100
+#end
+
+#newspell
+#copyspell "Haste"
+#name "Abyssal Frenzy"
+#descr "The caster speaks a dark epithet and transforms a few creatures into a demonic version of their true selves."
+#details "Grants +2 Att, +2 Def and Combat speed is doubled; +4 Strength; subjects are driven berserk"
+#aoe 1
+#explspr 10103
+#strikesound 106 --banshee
+#path 0 8 -- blood
+#pathlevel 0 2
+#path 1 9 -- holy
+#pathlevel 1 3
+#researchlevel 6
+#damage 262528 -- quickness, +4 strength, gone berserk
+#spec 818544640 -- does not affect mindless, undead, inanimate, demons; enemies immune, can be cast UW
+#end
+
+#newspell
+#copyspell "Abyssal Frenzy"
+#name "Mass Abyssal Frenzy"
+#descr "The caster speaks a dark epithet and transforms a large group of creatures into demonic versions of their true selves."
+#details "Grants +2 Att, +2 Def and Combat speed is doubled; +4 Strength; subjects are driven berserk"
+#pathlevel 0 4
+#researchlevel 8
+#aoe 3001
+#end
+
+#newspell
+#name "Nature's Avatar"
+#descr "The caster infuses an animal with the spirit of nature, vastly increasing its speed and might.""
+#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait.
+Grants +2 Att, +2 Def and Combat speed is doubled;
+Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
+#school 2 -- evocation
+#researchlevel 8
+#path 0 6 --nature
+#pathlevel 0 4
+#path 1 9 --holy
+#pathlevel 1 1
+#range 15
+-- allies only, animals only, no illusion/spiritform, no undead, no demon, no void sanity, can be cast underwater
+#spec 4785074885754884
+#effect 10 -- buff type 1
+#damage 1101659373568 -- quickness + enlargement + limited enlargement
+#aoe 0
+#explspr 10104 -- green explosion
+#flightspr -1
+#strikesound 78 -- lion
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/sites\ungrouped-sites.dm
+------------------------------------------------------------------------------------------------------------------
 
 --//////////////////////////////////////////////////////////////////////////////////////////////////////
 --//////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -63633,3848 +70216,4772 @@ This nation is merely for watching games in the background. It is located in the
 #end
 
 
---//////////////////////////////////////////////////////////////////////////////////////////////////////
---//////////////////////////////////////////////////////////////////////////////////////////////////////
---//////////////////////////////////////////////SPELLS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
---//////////////////////////////////////////////////////////////////////////////////////////////////////
---//////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\aglarond.dm
+------------------------------------------------------------------------------------------------------------------
 
--- Communion and Sabbath Master and Slave only via item crafting - Mythals were uncommon
-#selectspell 1263
-#researchlevel 9
-#end
+#selectnation 214
+#era 2
+#name "Aglarond"
+#epithet "Magocracy of the Simbul"
+#brief "Aglarond was a magocratic state in the southwestern-most part of the Unapproachable East with its capital at Veltalar. Most of its land was covered by the Yuirwood. Filled with magic and mystery, it was ruled by one of the most potent spellcasters of the Realms: the Simbul."
 
-#selectspell 1264
-#researchlevel 9
-#end
+#descr "Aglarond was a magocratic state in the southwestern-most part of the Unapproachable East with its capital at Veltalar. Most of its land was covered by the Yuirwood. Filled with magic and mystery, it was ruled by one of the most potent spellcasters of the Realms: the Simbul. As of 1372 DR, Aglarond's population, numbering somewhere around 1.3 million, was made up of mainly humans and half-elves. Aglarond was the only known state in Faerûn to possess a demographically significant half-elven population. Aglarond also had a traditional rivalry with their neighbors in Thay, whom Aglarondans distrusted deeply. 
 
-#selectspell 1381
-#researchlevel 9
-#end
+There were few temples and holy sites in Aglarond, none of which were large. Some people worshiped regularly and others were content to show signs of faith in their own manner. Chauntea, Valkur, and Selune were the most widely venerated with the Seldarine pantheon enjoying a small number of prayers as well. 
 
-#selectspell 1382
-#researchlevel 9
-#end
+The native, Yuir wild-elves had their own pantheon of gods that disappeared with the downfall of their culture. They had suffered significant wars with the drow, satyrs, and mountain trolls before the arrival of humans on the peninsula around 750 DR. The human settlers, mainly retired soldiers and peniless mercenaries from Unther and Chessenta, agreed to help the wild elves and together they succeeded in defeating the drow. Many half-elven babies were born in the years to come. The few Yuir wild elves who remain live deep in the Yuirwood and are rarely seen.
 
--- Clockworks should take longer to research
-#selectspell 1085
-#researchlevel 4
-#end
+In 1320 DR, the half elven dynasty that had reigned since the nation's founding came to an end and the Queen named The Simbul as her heir. As one of the Seven Sisters and a Chosen of Mystra, the Simbul has reigned as an immortal Queen for more than a century."
+#summary "Some believe The Simbul is as powerful as Elminster, who happens also to be her lover. Indeed, she is your greatest asset and immortal so long as she remains in your dominion. Her apprentices, the Simbarchs, are numerous and extremely powerful in their own right. Magic is otherwise quite rare in Aglarond and most of your troops will be of high quality but expensive. You have a portal to the Forest of Leth to your north, where your allies fight for the survival of the Great Dale against abyssal and dark druidic forces."  
+#flag "ForgottenRealms/flag214.tga"
+#templepic 30 -- Forest Gate
+#fortera 2 -- Castle standard era 2
+#homefort 4 -- Citadel
+#buildfort 2
+#builduwfort 6
+#labcost 700
+#templecost 700
+#forestlabcost 400
+#foresttemplecost 300
+#color 0.6 1.0 0.8
 
-#selectspell 1088
-#researchlevel 5
-#end
+#addgod 8000 -- Fountain of Mystra
+#addgod 5006 -- Chauntea 4 
+#addgod 5005 -- SELUNE 4
 
--- Living Elemental Summons are okay, but should cost more since the elementals are stronger
-#selectspell 1046
-#fatiguecost 400
-#researchlevel 8
-#aispellmod -50
-#end
+#addgod 5019 -- Corellon 2
+#addgod 5027 -- Valkur 2
 
-#selectspell 1047
-#fatiguecost 400
-#researchlevel 8
-#aispellmod -50
-#end
+#cheapgod40 8000 -- Mystra 
 
-#selectspell 1049
-#fatiguecost 400
-#researchlevel 8
-#aispellmod -50
-#end
+-- #addgod 485 -- Great Enchantress
+-- #addgod 2922 -- Morgen High Queen
 
-#selectspell 1051
-#fatiguecost 400
-#researchlevel 8
-#aispellmod -50
-#end
 
---
+#startcom 7002 			-- Yuirwood Ranger
+#startunittype1 56 	-- Royal Forester
+#startunittype2 7001 -- Free Spear Militia
+#startunitnbrs1 20
+#startunitnbrs2 20
 
-#selectspell 568 -- Nagarishi
-#school -1
-#end
+#startscout 7006	-- Simbarch Apprentice
 
-#selectspell 925 -- Black Servant
-#school -1
-#end
+#forestrec 56 		-- Royal Forester
+#forestrec 7348 	-- Wood Elf Archer
+#forestcom 7002 	-- Yuirwood Ranger
+#forestcom 6813		-- Elven Bladesinger
+#forestcom 6618 	-- Priestess of Selune
 
-#selectspell 930 -- Ogres
-#school -1
-#end
+#addrecunit 7001 	-- Free Spear Militia
+#addrecunit 289 	-- Pikeneer
+#addrecunit 55 		-- Longbowmen
+#addrecunit 26 		-- Light Cavalry
 
-#selectspell 931 -- Summon Shades
-#school -1
-#end
 
-#selectspell 934 -- Killer Mantis
-#school -1
-#end
 
-#selectspell 943 -- Amphiptere
-#school -1
-#end
+#addreccom 7349 -- Half-elf Champion
+#addreccom 46	-- Mounted Commander
+#addreccom 6813	-- Elven Bladesinger
+#addreccom 6618 -- Priestess of Selune
+#addreccom 7004 -- Wavecaptain of Valkur
+#addreccom 7003 -- Priestess of Chauntea
 
-#selectspell 943 -- Krakens
-#school - 1
-#end
 
-#selectspell 946 -- Yetis
-#school -1
-#end
 
-#selectspell 961 -- Bog Beasts
-#school -1
-#end
 
-#selectspell 962 -- Fay Folk
-#school -1
-#end
+---------- DEFENCES
 
-#selectspell 965 -- Fire Drake
-#school -1
-#end
-
-#selectspell 967 -- Wyverns
-#school -1
-#end
-
-#selectspell 968 -- Storm Drake
-#school -1
-#end
-
-#selectspell 972 -- Ice Drake
-#school -1
-#end
-
-#selectspell 974 -- Cave Drake
-#school -1
-#end
-
-#selectspell 976 -- Shade Beasts
-#school -1
-#end
-
-#selectspell 979 -- Spine Frog
-#school -1
-#end
-
-#selectspell 982 -- Swamp Drakes
-#school -1
-#end
-
-#selectspell 983 -- Kithaironic Lions
-#school -1
-#end
-
-#selectspell 988 -- Water Kobold
-#school -1
-#end
-
-#selectspell 989 -- Cave Kobold
-#school -1
-#end
-
-#selectspell 990 -- Fay Footfolk
-#school -1
-#end
-
-#selectspell 993 -- Summer Lions
-#school -1
-#end
-
-#selectspell 995 -- Spring Hawks
-#school -1
-#end
-
-#selectspell 998 -- Contact Draconians
-#school -1
-#end
-
-#selectspell 1001 -- Contact Sea Trolls
-#school -1
-#end
-
-#selectspell 1004 -- Contact Naiad
-#school -1
-#end
-
-#selectspell 1008 -- Naiad Warriors
-#school -1
-#end
-
-#selectspell 1006 -- Fall Bears
-#school -1
-#end
-
-#selectspell 1007 -- Trolls
-#school -1
-#end
-
-#selectspell 1013 -- Ether Warriors
-#school -1
-#end
-
-#selectspell 1016 -- Forest Trolls
-#school -1
-#end
-
-#selectspell 1017 -- Winged Monkeys
-#school -1
-#end
-
-#selectspell 1018 -- Manticores
-#school -1
-#end
-
-#selectspell 1022 -- Bluecap
-#school -1
-#end
-
-#selectspell 1023 -- Fay Knights
-#school -1
-#end
-
-#selectspell 1024 -- Awaken Sleeper
-#school -1
-#end
-
-#selectspell 1030 -- Sea King's Court
-#school -1
-#end
-
-#selectspell 1031 -- Streams from Hades
-#school -1
-#end
-
-#selectspell 1032 -- Hill Giant
-#school -1
-#end
-
-#selectspell 1033 -- Troll King Court
-#school -1
-#end
-
-#selectspell 1035 -- Ether Gate
-#school -1
-#end
-
-#selectspell 1038 -- Forest Troll Tribe
-#school -1
-#end
-
-#selectspell 1039 -- Forest Giants
-#school -1
-#end
-
-#selectspell 1041 -- Lamias
---#school -1
-#end
-
-#selectspell 1043 -- Lamia Queen
---#school -1
-#end
-
-#selectspell 1044 -- Fay Prince
-#school -1
-#end
-
-#selectspell 1045 -- Gnome
-#school -1
-#end
-
-#selectspell 1048 -- Asp Turtle
-#school -1
-#end
-
-#selectspell 1050 -- Catoplepas
-#school -1
-#end
-
-#selectspell 1057 -- Calydonian Boar
-#school -1
-#end
-
-#selectspell 1062 -- King of Elemental Fire
-#school -1
-#end
-
-#selectspell 1064 -- Queen of Elemental Air
-#school -1
-#end
-
-#selectspell 1065 -- Queen of Elemental Water
-#school -1
-#end
-
-#selectspell 1067 -- Earth Attack
-#school -1
-#end
-
-#selectspell 1068 -- King of Elemental Earth
-#school -1
-#end
-
-#selectspell 1069 -- Ashen Angel
-#school -1
-#end
-
-#selectspell 1071 -- King of Banefires
-#school -1
-#end
-
-#selectspell 1072 -- Eater of the Dead
-#school -1
-#end
-
-#selectspell 1073 -- Dragon Master
-#school -1
-#end
-
-#selectspell 1076 -- Ancient Presence
-#school -1
-#end
-
-#selectspell 1077 -- Abomination
-#school -1
-#end
-
-#selectspell 1080 -- Tartarian Gate
-#school -1
-#end
-
-#selectspell 1081 -- Tarrasque
-#school -1
-#end
-
-#selectspell 1087 -- Manikin
-#school -1
-#end
-
-#selectspell 1089 -- Crusher
-#school -1
-#end
-
-#selectspell 1090 -- Wooden Construct
-#school -1
-#end
-
-#selectspell 1092 -- Mandragora
-#school -1
-#end
-
-#selectspell 1093 -- Iron Gryphon
-#school -1
-#end
-
-#selectspell 1096 -- Mechanical Men
-#school -1
-#end
-
-#selectspell 1097 -- Golem
-#school -1
-#end
-
-#selectspell 1098 -- Siege Golem
-#school -1
-#end
-
-#selectspell 1099 -- Iron Dragon
-#school -1
-#end
-
-#selectspell 1100 -- Mechanical Militia
-#school -1
-#end
-
-#selectspell 1101 -- Juggernaut
-#school -1
-#end
-
-#selectspell 1102 -- Poison Golem
-#school -1
-#end
-
-#selectspell 1123 -- Revive King
-#school -1
-#end
-
-#selectspell 1138 -- Claymen
-#school -1
-#end
-
-#selectspell 1149 -- Terracotta Army
-#school -1
-#end
-
-#selectspell 1155 -- Vile Water
-#school -1
-#end
-
-#selectspell 1160 -- Behemoth
-#school -1
-#end
-
-#selectspell 1171 -- Watcher
-#school -1
-#end
-
-#selectspell 1197 -- hidden in snow
-#school -1
-#end
-
-#selectspell 1200 -- statues
-#school -1
-#end
-
-#selectspell 1201 -- hidden in sand
-#school -1
-#end
-
-#selectspell 1202 -- hidden underneath
-#school -1
-#end
-
-#selectspell 1207 -- ziz
-#school -1
-#end
-
-
-#selectspell 1229 -- mummy
-#school -1
-#end
-
-#selectspell 1230 -- leviathan
-#school -1
-#end
-
-#selectspell 1384 -- shadow imp
-#school -1
-#end
-
-#selectspell 1386 -- fiery imp
-#school -1
-#end
-
-#selectspell 1391 -- Spine Devil
-#school -1
-#end
-
-#selectspell 1392 -- Fiend
-#school -1
-#end
-
-#selectspell 1393 -- Bone Fiend
-#school -1
-#end
-
-#selectspell 1398 -- Devil 
-#school -1
-#end
-
-#selectspell 1399 -- Frost Fiend
-#school -1
-#end
-
-#selectspell 1402 -- Serpent Fiends
-#school -1
-#end
-
-#selectspell 1406 -- More Fiends
-#school -1
-#end
-
-#selectspell 1410 -- Horde From Hell
-#school -1
-#end
-
-#selectspell 1412 -- Bind Succubus
-#school -1
-#end
-
-#selectspell 1414 -- Demon Knight
-#school -1
-#end
-
-#selectspell 1415 -- Dark Vines
-#name "Awaken Tendriculous"
-#end
-
-#selectspell 1422 -- Infernal Disease Demon
-#school -1
-#end
-
-#selectspell 1423 -- Ritual of Five Gates
-#school -1
-#end
-
-#selectspell 1424 -- Ice Devil
-#school -1
-#end
-
-#selectspell 1428 -- Plague of Locusts
-#school -1
-#end
-
-#selectspell 1429 -- Arch Devil
-#school -1
-#end
-
-#selectspell 1430 -- Father Illearth
-#school -1
-#end
-
-#selectspell 1438 -- Heliophagus
-#school -1
-#end
-
-#selectspell 1448 -- Forces of Darkness
-#school -1
-#end
-
-#selectspell 1450 -- Demon Lord
-#school -1
-#end
-
-#selectspell 1451 -- Infernal Forces
-#school -1
-#end
-
-#selectspell 1452 -- Infernal Tempest
-#school -1
-#end
-
-#selectspell 1453 -- Forces of Ice
-#school -1
-#end
-
-#selectspell 1454 -- Infernal Crusade
-#school -1
-#end
-
-#selectspell 1467 -- Summon Fay Archers
-#school -1
-#end
-
-#selectspell 1468 -- Summon Unseelie Folk
-#school -1
-#end
-
-#selectspell 1469 -- Summon Unseelie Soldiers
-#school -1
-#end
-
-#selectspell 1470 -- Summon Unseelie Archers
-#school -1
-#end
-
-#selectspell 1471 -- Summon Unseelie Knights
-#school -1
-#end
-
-#selectspell 1472 -- Summon Unseelie Prince
-#school -1
-#end
-
-#selectspell 985
-#name "Nest of Firesnakes"
-#end
-
-#selectspell 876
-#name "Prison of Umberlee"
-#end
-
------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------- New Spells----------------------------------------------------------------
---new spells include Cure Light Wounds, Magic Missile, various summons, and no more persistent summoned monster spam---------
------------------------------------------------------------------------------------------------------------------------------
-
-#newspell
-#copyspell 775 --Gooey Water
-#name "Grease"
-#descr "The caster conjures an area of slimy grease. Units stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
-#spec 4096 -- Mr roll negates
-#school 3 -- construction (conj - creation)
-#researchlevel 1
-#path 0 3 --earth
-#path 1 7 --glamour (bards get grease too)
-#pathlevel 0 1
-#pathlevel 1 1
-#end
-
-#newspell
-#name "Magic Missile"
-#descr "A missile of magical energy darts forth from your fingertip and unerringly strikes its target."
-#school 2
-#researchlevel 0
-#path 0 4
-#pathlevel 0 1
-#fatiguecost 15
-#damage 1004
-#effect 2
-#nreff 1001
-#range 5030
-#precision 100
-#flightspr 10092 -- play here 10080 - 10100 (91 is okay)
-#speedmult 3
-#sound 87 -- whip
-#strikesound 24 -- 24 is electricity
-#explspr 10008  -- play here 10101 - 10119
--- difficult to negate with MR
--- + armor negating
--- + can use underwater
--- + doesn't affect friendly
-#spec 17592194695296
-#casttime 100
-#aispellmod 50
-#end 
-
-#selectspell 905 -- Disintegrate
-#descr "This powerful ray spell will reduce nearly any target to dust."
-#school 1 -- alteration (transmutation)
-#researchlevel 5
-#path 0 4
-#pathlevel 0 4
-#range 5020
-#precision 3
-#damage 1050
-#fatiguecost 30
--- AN, MR half, can be cast UW
-#spec 2305843009222082688
-#end
-
-#selectspell "Blink"
-#name "Dimension Door"
-#descr "The caster creates an instability in space that transports them to another position on the battlefield."
-#school 0 --conjuration
-#path 0 4
-#pathlevel 0 2
-#damage 50
-#fatiguecost 10
-#casttime 1
-#spec 8388608 -- may use underwater
-#end
-
-#newspell
-#copyspell 1009 -- Cure Disease
-#name "Remove Curse"
-#descr "Clerics of all faiths are called upon to remove hexes and curses. With this ritual the Curse affecting an unfortunate target can be lifted. The target unit must be in the same province as the caster, and the healing magic will not affect Lifeless or Undead units."
-#school 5
-#researchlevel 5
-#effect 10131
-#path 0 4
-#path 1 9
-#pathlevel 0 1
-#pathlevel 1 2
-#fatiguecost 800
-#damage 2 -- Curse
-#spec 554172416 -- No effect on lifeless or undead, UW OK
-#end
-
--------------------------------------------------------- Ritual Summons
-
-
-#newspell 
-#name "Summon Infernal Barghest"
-#descr "Barghests are fiendish creatures native to the outer plane of Gehenna. They have a wide range of magical abilities and are excellent combatants and blood hunters."
-#school 6
-#researchlevel 2
-#path 0 8
-#path 1 3
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10021
-#damage 7059
-#nreff 1
-#fatiguecost 4000
-#end
-
-#newspell 
-#name "Bind Tanar'ri Hezrou"
-#descr "Bind a Hezrou to your cause. Type II demons, Hezrous are the generals and shock troops of the abyssal hordes."
-#school 6
-#researchlevel 4
-#path 0 8 
-#path 1 1 
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10021
-#damage 7045
-#nreff 1
-#fatiguecost 3500
-#end
-
-#newspell 
-#name "Bind Tanar'ri Vrock"
-#descr "Bind a Vrock to your cause. Type II demons, Vrocks are mighty fliers capable of deep strikes behind enemy front lines."
-#school 6
-#researchlevel 6
-#path 0 8 
-#path 1 1 
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 10021
-#damage 7047
-#nreff 1
-#fatiguecost 4500
-#end
-
--- 
-#newspell 
-#name "Bind a Demonic Succubus"
-#descr "Bind a Demonic Succubus to your cause. Succubi, while demons, were also known to serve devils during the Blood War. Their ability to seduce mortals makes them highly effective bloodslavers." 
-#school 6
-#researchlevel 5
-#path 0 8 
-#path 1 7 
-#pathlevel 0 2
-#pathlevel 1 2
-#effect 10021
-#damage 7341 -- Succubus
-#nreff 1
-#fatiguecost 4000
-#end
-
-#newspell 
-#name "Bind Tanar'ri Glabrezu"
-#descr "Bind a Glabrezu to your cause. Type III demons, Glabrezus are powerful combatants who increase turmoil and generate blood slaves each turn. They are capable of summoning Vrocks." 
-#school 6
-#researchlevel 7
-#path 0 8 
-#path 1 1 
-#pathlevel 0 4
-#pathlevel 1 1
-#effect 10021
-#damage 7049 -- glabrezu
-#nreff 1
-#fatiguecost 9000
-#end
-
-#newspell 
-#name "Bind Tanar'ri Marilith"
-#descr "Bind a Marilith to your cause. Type IV demons, Mariliths are powerful mages and combatants and are cunning military leaders. They are capable of summoning Vrocks." 
-#school 6
-#researchlevel 8
-#path 0 8 
-#path 1 1 
-#pathlevel 0 4
-#pathlevel 1 1
-#effect 10021
-#damage 7340 -- Marilith
-#nreff 1
-#fatiguecost 9000
-#end
-
-
-#newspell 
-#name "Bind Tanar'ri Balor"
-#descr "Bind a Balor to your cause. Type VI demons, Balors are the most powerful abyssal entities you can summon, capable of summoning Glabrezus and commanding entire demonic armies themselves." 
-#school 6
-#researchlevel 9
-#path 0 8 
-#path 1 1 
-#pathlevel 0 5
-#pathlevel 1 2
-#effect 10021
-#damage 7050
-#nreff 1
-#fatiguecost 24000
-#end
-
-
-
-#newspell 
-#name "Bind Flight of Demonic Quasits"
-#descr "Summon 5 Quasits - flying, ethereal, lesser demons."
-#school 6
-#researchlevel 4
-#path 0 8 
-#path 1 1 
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10001
-#damage 7044 -- quasits
-#nreff 5
-#fatiguecost 800
-#end
-
-#newspell 
-#name "Bind Demonic Dretches"
-#descr "Summon a large number of Dretches - 'least' of the demons."
-#school 6
-#researchlevel 2
-#path 0 8 
-#path 1 1 
-#pathlevel 0 1
-#pathlevel 1 1
-#effect 10001
-#damage 7046 -- dretches
-#nreff 8
-#fatiguecost 300
-#end
-
-#newspell 
-#name "Summon a Unicorn Pair"
-#descr "Summons a pair of Unicorns to your side. These holy creatures are especially powerful against undead and demonic forces."
-#school 0
-#researchlevel 3
-#path 0 6 
-#path 1 4 
-#pathlevel 0 3
-#pathlevel 1 2
-#effect 10001
-#damage 7070
-#nreff 2
-#fatiguecost 500
-#restricted 200 -- Waterdeep
-#restricted 201 -- Luiren
-#restricted 204 -- Cormyr
-#restricted 214 -- Aglarond 
-#restricted 216 -- Silverymoon / Silver Marches 
-#restricted 221 -- Kingdom of Corwell
-#restricted 229 -- Dwarves of Old Bhaerynden
-#end
-
-#newspell 
-#name "Summon Displacer Beast"
-#descr "Summons a Displacer Beast to your side during combat."
-#school 0
-#researchlevel 4
-#path 0 6 
-#pathlevel 0 3
-#effect 1
-#damage 7072 -- Displacer Beast
-#casttime 125
-#nreff 1
-#fatiguecost 50
-#spec 8388608
-#end
-
--- Summon a Purple Worm
-#newspell 
-#name "Summon a Purple Worm"
-#descr "Summons a single Purple Worm - an enormous denizen of the deep. These monsters carve massive tunnels throughout the Underdark." 
-#school 0
-#researchlevel 5
-#path 0 3
-#pathlevel 0 3
-#effect 10001
-#damage 7082 -- Purple Worm 
-#nreff 1
-#fatiguecost 2500
-#end
-
-#newspell 
-#name "Summon Dire Horse"
-#descr "Summons a Dire horse to your side during combat. Nature mages of the Shaar get a special version of this spell."
-#school 0
-#researchlevel 2
-#path 0 6 
-#pathlevel 0 4
-#effect 1
-#damage 7088 -- Dire horse
-#casttime 125
-#nreff 1
-#fatiguecost 50
-#spec 8388608
-#restricted 208
-#end
-
-#newspell 
-#name "Summon Yeenoghu's Steed"
-#descr "Summons an Infernal Dire horse to your side during combat. Nature mages of the Shaar get a special version of this spell, which calls an infernal dire horse."
-#school 6
-#researchlevel 2
-#path 0 8 
-#pathlevel 0 2 
-#effect 1
-#damage 7089 -- Infernal Dire horse
-#casttime 125
-#nreff 1
-#fatiguecost 60
-#restricted 208
-#aispellmod -50
-#end
-
-#newspell 
-#name "Summon Lantern Archon"
-#descr "For a single battle, these simple, enlightened soul-motes will join your ranks - they are excellent against demons and the undead." 
-#school 0
-#researchlevel 4
-#aispellmod -85 -- Ai casts this too often
-#path 0 4 
-#path 1 0 
-#pathlevel 0 1
-#pathlevel 1 1
-#effect 1
-#damage 7073
-#nreff 1
-#fatiguecost 40
-#restricted 200 
-#restricted 204 
-#restricted 209
-#restricted 215 
-#restricted 216
-#restricted 218
-#restricted 221 -- Kingdom of Corwell
-#restricted 227 -- Dwarves of Deep Shanatar
-#restricted 229 -- Dwarves of Old Bhaerynden
-#restricted 236 -- Tel'Quessir
-#restricted 237 -- Dalelands
-#end
-
-#newspell 
-#name "Call Lantern Archons"
-#descr "Call a host of Lantern Archons to aid you in your war against evil and tyranny. These simple, enlightened soul-motes are excellent against demons and the undead." 
-#school 0
-#researchlevel 4
-#path 0 4 
-#path 1 0 
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10001
-#damage 7073
-#nreff 5
-#fatiguecost 800
-#restricted 200 
-#restricted 204 
-#restricted 209
-#restricted 215 
-#restricted 216
-#restricted 218
-#restricted 221 -- Kingdom of Corwell
-#restricted 227 -- Dwarves of Deep Shanatar
-#restricted 229 -- Dwarves of Old Bhaerynden
-#restricted 236 -- Tel'Quessir
-#restricted 237 -- Dalalands
-#end
-
-#newspell 
-#name "Call Hound Archons"
-#descr "Call a team of five Hound Archons to aid you in your war against evil and tyranny. These soldiers of righteous faith are excellent against demons and the undead." 
-#school 0
-#researchlevel 6
-#path 0 4 
-#path 1 0 
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 10001
-#damage 7074
-#nreff 5
-#fatiguecost 3000
-#restricted 200 
-#restricted 204 
-#restricted 209
-#restricted 215 
-#restricted 216
-#restricted 218
-#restricted 221 -- Kingdom of Corwell
-#restricted 227 -- Dwarves of Deep Shanatar
-#restricted 229 -- Dwarves of Old Bhaerynden
-#restricted 236 -- Tel'Quessir
-#restricted 237 -- Dalalands
-#end
-
-#newspell 
-#name "Call Warden Archon"
-#descr "Call a Warden Archon to aid you in your war against evil and tyranny. These guardians of the gates of the heavens are excellent against demons and the undead." 
-#school 0
-#researchlevel 7
-#path 0 4 
-#path 1 0 
-#pathlevel 0 4
-#pathlevel 1 1
-#effect 10021
-#damage 7075
-#nreff 1
-#fatiguecost 9000
-#restricted 200 
-#restricted 204 
-#restricted 209
-#restricted 215
-#restricted 216
-#restricted 218
-#restricted 221 -- Kingdom of Corwell
-#restricted 227 -- Dwarves of Deep Shanatar
-#restricted 229 -- Dwarves of Old Bhaerynden
-#restricted 236 -- Tel'Quessir
-#restricted 237 -- Dalalands
-#end
-
-#newspell 
-#name "Call Sword Archon"
-#descr "Sword Archons are paragons of virtue, law, and the light. They are the celestial heavens' greatest venturing warriors and leaders whose duties bring them to the material plane." 
-#school 0
-#researchlevel 8
-#path 0 4 
-#path 1 0 
-#pathlevel 0 5
-#pathlevel 1 2
-#effect 10021
-#damage 7076
-#nreff 1
-#fatiguecost 15000
-#restricted 200 
-#restricted 204 
-#restricted 209
-#restricted 215
-#restricted 216
-#restricted 218
-#restricted 221 -- Kingdom of Corwell
-#restricted 227 -- Dwarves of Deep Shanatar
-#restricted 229 -- Dwarves of Old Bhaerynden
-#restricted 236 -- Tel'Quessir
-#restricted 237 -- Dalalands
-#end
-
----------------------------- DEVILS
-
--- Lemures
-#newspell 
-#name "Bind Lemures"
-#descr "Lemures are mindless slaves of the baatezu. They are so useless any mage would only summon them in battle."
-#school 6
-#researchlevel 2
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 1
-#pathlevel 1 1
-#effect 1
-#damage 7104
-#nreff 1000 --1 + 1 per extra level
-#fatiguecost 50
-#end
-
--- Nupperibo
-#newspell 
-#name "Bind Nupperibos"
-#descr "Nuperibos are wretched devils forming the lowest rank of the infernal hierarchy."
-#school 6
-#researchlevel 2
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 1
-#pathlevel 1 1
-#effect 10001
-#damage 7105
-#nreff 1003 --3 + 1 per extra level
-#fatiguecost 300
-#end
-
--- Barbazu
-#newspell 
-#name "Bind Barbazu"
-#descr "Barbazu are the shock troops of the infernal legions."
-#school 6
-#researchlevel 3
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10001
-#damage 7106
-#nreff 1001 --1 + 1 per extra level
-#fatiguecost 400
-#end
-
--- Lance of Barbazu
-#newspell 
-#name "Bind a Lance of Barbazuu"
-#descr "Barbazu are the shock troops of the infernal legions. This spell will summon 10 Barbazuu"
-#school 6
-#researchlevel 5
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 10001
-#damage 7106
-#nreff 10
-#fatiguecost 2000
-#end
-
-
---Spinagon
-#newspell 
-#name "Cloud of Spinagons"
-#descr "Spinagons are flying devils used to support aerial assaults and harass their enemy. This spell summons 20 spine devils and binds them to your cause."
-#school 6
-#researchlevel 3
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10001
-#damage 7114
-#nreff 20 
-#fatiguecost 1200
-#end
-
-
--- Pride of Hell Cats
-#newspell 
-#name "Bind a Pride of Hell Cats"
-#descr "Hell cats are deadly predators invisible in light. This spell binds 6 Hell Cats."
-#school 6
-#researchlevel 6
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 10001
-#damage 7108
-#nreff 6
-#fatiguecost 2000
-#end
-
--- Hell Cats
-#newspell 
-#name "Hellish Predator"
-#descr "Hell cats are deadly predators invisible in light."
-#school 6
-#researchlevel 4
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10001
-#damage 7108
-#nreff 1
-#fatiguecost 400
-#end
-
------------------- Devil Commanders
-
-
--- Erinyes
-#newspell 
-#name "Summon an Erinye Seductress"
-#descr "Erinyes are beautiful yet wrathful bringers of infernal justice, widely feared among lesser devils across the Nine Hells."
-#school 6
-#researchlevel 3
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10021
-#damage 7109
-#nreff 1
-#fatiguecost 2800
-#end
-
-7509 -- Contract Devil
-#newspell 
-#name "Summon a Contract Devil"
-#descr "Contract Devils draw gold and resources to your cause in exchange for ongoing souls. They will consume 2 blood slaves each month in exchange for 50 gold and 25 resources."
---#school 6
-#school -1 -- disabled for now
-#researchlevel 3
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 10021
-#damage 7509 -- Contract Devil
-#nreff 1
-#fatiguecost 3000
-#end
-
-
--- Kytons
-#newspell 
-#name "Bind Kyton"
-#descr "Kytons use chains both as protection and ways of inflicting pain."
-#school 6
-#researchlevel 2
-#path 0 8 --B
-#path 1 0 --F
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10021
-#damage 7107
-#nreff 1
-#fatiguecost 2000
-#end
-
--- Osyluth
-#newspell 
-#name "Bind Osyluth"
-#descr "The Osyluth are inquisitors and priests of Baator."
-#school 6
-#researchlevel 5
-#path 1 0 --F
-#path 0 8 --B
-#pathlevel 1 3
-#pathlevel 0 1
-#effect 10021
-#damage 7110
-#nreff 1
-#fatiguecost 6500
-#end
-
-
--- hamatula
-#newspell 
-#name "Bind Hamatula"
-#descr "The hamatula are guardians and priests of Baator."
-#school 6
-#researchlevel 6
-#path 1 0 --F
-#path 0 8 --B
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 10021
-#damage 7111
-#nreff 1
-#fatiguecost 8000
-#end
-
--- Cornugon
-#newspell 
-#name "Bind Cornugon"
-#descr "The mage binds to his service a Horned Devil, the elite fighters and generals of the nine hells. Cornugons are exceptional fighters but mediocre mages."
-#school 6
-#researchlevel 7
-#path 1 0 --F
-#path 0 8 --B
-#pathlevel 0 4
-#pathlevel 1 1
-#effect 10021
-#damage 7112
-#nreff 1
-#fatiguecost 10000
-#end
-
--- Pit Fiend
-#newspell 
-#name "Bind Pit Fiend"
-#descr "The mage binds to his service a Pit Fiend, the nobility of the nine hells. Pit fiends are powerful mages and exceptional fighters and leaders."
-#school 6
-#researchlevel 9
-#path 1 0 --F
-#path 0 8 --B
-#pathlevel 0 5
-#pathlevel 1 1
-#effect 10021
-#damage 7113
-#nreff 1
-#fatiguecost 16000
-#end
-
----------------------------- GOLEMS
-
-#newspell 
-#name "Craft Homunculus"
-#descr "Craft a clay golem with a shard of the mind of a wizard within to act as a spy or familiar."
-#school 3
-#researchlevel 1
-#path 0 4 
-#pathlevel 0 1
-#effect 10021
-#damage 7058
-#nreff 1
-#fatiguecost 300
-#nocastmindless 1
-#ainocast 1
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Craft Clay Golem"
-#descr "Clay golems were human-shaped constructs modeled out of clay that were usually divinely infused with a spirit from the Elemental Plane of Earth by wizards or priests. They are highly magic resistant, but not as tough as stone or iron golems." 
-#school 3
-#researchlevel 3
-#path 0 3
-#pathlevel 0 3
-#effect 10001
-#damage 7080 -- Clay Golem
-#nreff 1
-#fatiguecost 900
-#end
-
-
-#newspell 
-#name "Craft Stone Golem"
-#descr "Stone Golems are among the most common. Highly resistant to slashing and piercing weapons, as well as nearly immune to magic, they make formidable defensive allies." 
-#school 3
-#researchlevel 4
-#path 0 3 
-#pathlevel 0 3
-#effect 10001
-#damage 7079 -- Stone Golem
-#nreff 1
-#fatiguecost 1500
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Craft Iron Golem"
-#descr "Iron Golems are among the most powerful. Highly resistant to all weapons and magic, they make formidable defensive allies." 
-#school 3
-#researchlevel 5
-#path 0 3 
-#pathlevel 0 4
-#effect 10001
-#damage 7077 -- Iron Golem
-#nreff 1
-#fatiguecost 2000
-#end
-
-#newspell 
-#name "Craft Tomb Tapper"
-#descr "Tomb Tappers were originally created by the Netherese to combat the Phaerimm. These giant constructs are powerful and dangerous, possessing a mind that retains the memories of its creation and the purpose for which it was given life. Unlike other constructs, their minds allow them to operate independently without the direct coordination of their masters." 
-#school 3
-#researchlevel 6
-#path 0 3 
-#path 1 4
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 10021
-#damage 7212 -- Tomb Tapper
-#nreff 1
-#fatiguecost 1500
-#end
-
----------------- Oozes and Jellies
-
-------- Cheaper versions for Llurth Drieir 
-
-#newspell 
-#name "Grow Gelatinous Cubes for Ghaunadar"
-#descr "Gelatinous Cubes are slow, creeping monstrosities that envelope and consume their prey. Powerful casters will summon additional cubes with each casting."
-#school 6
-#researchlevel 0
-#path 0 8
-#path 1 2
-#pathlevel 0 1
-#pathlevel 1 1
-#effect 10001
-#damage 7217 -- Gelatinous Cube
-#nreff 1002
-#fatiguecost 400
-#restricted 230 -- Llurth Dreier
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Grow Ochre Jellies for Ghaunadar"
-#descr "Ochre Jellies are difficult to kill and easy to mass. Espeically for the nation of Llurth Dreier" 
-#school 6
-#researchlevel 2
-#path 0 8 
-#path 1 2 
-#pathlevel 0 1
-#pathlevel 1 2
-#effect 10001
-#damage 7220 -- Ochre Jelly
-#nreff 1006
-#fatiguecost 600
-#restricted 230 -- Llurth Dreier
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Feed a Bloodfire Ooze for Ghaunadar"
-#descr "Bloodfire Oozes are a boiling, sulphuric mass of blood and anguish used to guard temples and laboraties in Thay and other places where morality and decorum have been long abandoned." 
-#school 6
-#researchlevel 3
-#path 0 8 
-#pathlevel 0 3
-#effect 10001
-#damage 7322 -- Unholy Bloodfire Ooze
-#nreff 1001
-#fatiguecost 1200
-#restricted 230 -- Llurth Dreier
-#end
-
-#newspell 
-#name "Grow Black Puddings for Ghaunadar"
-#descr "Black Puddings are mindless oozes capable of enveloping and digesting their prey." 
-#school 6
-#researchlevel 4
-#path 0 8 
-#path 1 2 
-#pathlevel 0 3
-#pathlevel 1 2
-#effect 10001
-#damage 7326 -- Unholy Black Pudding
-#nreff 1004
-#fatiguecost 1200
-#restricted 230 -- Llurth Dreier
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Grow an Unholy Oblex"
-#descr "Oblexes were mind-eating oozes designed by mind flayers with the purpose to serve as advance scouts to search for prey to feed a colony. Aboleths, mindflayers, and servants of Ghaunadaur also made frequent use of Oblexes." 
-#school 6
-#researchlevel 4
-#path 0 8 
-#pathlevel 0 2
-#effect 10021
-#damage 7323 -- Unholy Oblex
-#nreff 1
-#fatiguecost 800
-#restricted 230 -- Llurth Dreier
-#restricted 226 -- Oryndoll
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Bring forth an Elder Black Pudding"
-#descr "Elder Black Puddings are nearly invincible, sacred oozes capable of leading other oozes into battle and enveloping and digesting their prey. Each of their victims is a holy sacrifice to Ghaunadaur." 
-#school 6
-#researchlevel 6
-#path 0 8 
-#path 1 2 
-#pathlevel 0 4
-#pathlevel 1 3
-#effect 10021
-#damage 7327 -- Unholy Elder Black Pudding
-#nreff 1
-#fatiguecost 6000  
-#restricted 230 -- Llurth Dreier
-#restricted 226 -- Oryndoll
-#spec 8388608 -- uwok
-#end
-
-#selectspell 1115
-#name "Grow Gelatinous Cubes"
-#descr "Gelatinous Cubes are slow, creeping monstrosities that envelope and consume their prey. Powerful casters will summon additional cubes with each casting."
-#school 6
-#researchlevel 1
-#path 0 8
-#path 1 2
-#pathlevel 0 1
-#pathlevel 1 1
-#effect 10001
-#damage 7217 -- Gelatinous Cube
-#nreff 1001
-#fatiguecost 400
-#notfornation 230 -- Llurth
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Grow a Mass of Ochre Jellies"
-#descr "Ochre Jellies are difficult to kill and easy to mass." 
-#school 6
-#researchlevel 2
-#path 0 8 
-#path 1 2 
-#pathlevel 0 1
-#pathlevel 1 2
-#effect 10001
-#damage 7220 -- Ochre Jelly
-#nreff 1005
-#fatiguecost 800
-#notfornation 230 -- Llurth
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Feed a Bloodfire Ooze"
-#descr "Bloodfire Oozes are a boiling, sulphuric mass of blood and anguish used to guard temples and laboraties in Thay and other places where morality and decorum have been long abandoned." 
-#school 6
-#researchlevel 3
-#path 0 8 
-#path 1 0
-#pathlevel 0 3
-#pathlevel 1 2
-#effect 10001
-#damage 7216 -- bloodfire ooze
-#nreff 1001
-#fatiguecost 1600
-#notfornation 230 -- Llurth
-#end
-
-#newspell 
-#name "Grow a Mass of Black Puddings"
-#descr "Black Puddings are mindless oozes capable of enveloping and digesting their prey." 
-#school 6
-#researchlevel 4
-#path 0 8 
-#path 1 2 
-#pathlevel 0 3
-#pathlevel 1 2
-#effect 10001
-#damage 7235 -- Black Pudding
-#nreff 1001
-#fatiguecost 1800
-#notfornation 230 -- Llurth
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Grow an Oblex"
-#descr "Oblexes were mind-eating oozes designed by mind flayers with the purpose to serve as advance scouts to search for prey to feed a colony. Aboleths and servants of Ghaunadaur also made frequent use of Oblexes." 
-#school 6
-#researchlevel 5
-#path 0 8 
-#path 1 2 
-#pathlevel 0 1
-#pathlevel 1 2
-#effect 10021
-#damage 7218 -- Oblex
-#nreff 1
-#fatiguecost 1200
-#notfornation 230 -- Llurth
-#notfornation 226 -- Oryndoll
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Give Rise to an Elder Black Pudding"
-#descr "Elder Black Puddings are nearly invincible oozes capable of leading other oozes into battle and enveloping and digesting their prey." 
-#school 6
-#researchlevel 6
-#path 0 8 
-#path 1 2 
-#pathlevel 0 4
-#pathlevel 1 3
-#effect 10021
-#damage 7236 -- Black Pudding
-#nreff 1
-#fatiguecost 6500 
-#notfornation 230 -- Llurth
-#notfornation 226 -- Oryndoll
-#spec 8388608 -- uwok
-#end
-
-
-
------------------------------------------- Create and Animate Undead
-
-#selectspell 1112
-#name "Animate Zombies"
-#descr "Zombies are the magically animated corpses of the recently deceased. While relatively weak, their mindless hunger for brainz overrides both exhaustion and morale. More powerful casters will be able to animate more zomboids with a single casting."
-#end
-
-#selectspell 1113
-#name "Create Undead: Skeletons"
-#descr "Skeletons are the magically animated corpses of the long dead. While relatively weak, they are tireless, relentless, and difficult to damage with piercing weapons. More powerful casters will be able to animate more skellies with a single casting. Skeletons communicate skelepathically :P"
-#end
-
-#newspell 
-#name "Create Undead: Unsated Ghoul"
-#descr "Ghouls are stealthy undead capable of paralyzing their prey and spreading disease with their claws and teeth. They are difficult to damage with mundane weapons. More powerful casters will be able to animate more ghouls with a single casting."
-#school 4
-#researchlevel 2
-#path 0 5 
-#pathlevel 0 2
-#effect 10001
-#damage 7288 -- Ghoul
-#nreff 1003
-#fatiguecost 300
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Create Undead: Ghast"
-#descr "Ghasts are greater ghouls, capable of leading other undead into battle. They not only paralyze and infect their enemies with their claws and bite, but those who die to a ghast's attacks are likely to rise as ghouls themselves. Ghasts spread disease wherever they roam, eat corpses to strengthen themselves, and can actively create new ghouls each turn."
-#school 4
-#researchlevel 3
-#path 0 5 
-#pathlevel 0 3
-#effect 10021
-#damage 7704 -- Ghast -- Summonable
-#nreff 1
-#fatiguecost 1000
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Create Undead: Giant Skeletons"
-#school 4
-#researchlevel 3
-#path 0 5 
-#pathlevel 0 2
-#effect 10001
-#damage 7279 -- Giant Skeleton First Shape
-#nreff 1003
-#fatiguecost 300
-#spec 8388608 -- uwok
-#end
-
-#selectspell 1143
-#name "Create Undead: Revenant"
-#spec 8388608 -- uwok
-#end
-
-#selectspell 1183
-#name "Create Undead: Skeletal Knights"
-#researchlevel 4
-#end
-
-#selectspell 1206
-#name "Create Undead: Banefire Archers"
-#end
-
-#newspell 
-#name "Create Undead: Wraith"
-#descr "Wraiths are ethereal undead creatures. Completely immune to mundane weapons, they drain the life of their victims and are capable of creating a subservient wraith each turn."
-#school 4
-#researchlevel 4
-#path 0 5 
-#pathlevel 0 3
-#effect 10021
-#damage 7269 -- Wraith
-#nreff 1
-#fatiguecost 1000
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Create Undead: Silveraiths"
-#descr "Silveraiths are powerful, sacred wraiths only available to Maerimydra."
-#school 4
-#researchlevel 3
-#path 0 5 
-#pathlevel 0 3
-#effect 10001
-#damage 7336 -- Silveraiths
-#nreff 1000
-#fatiguecost 900
-#restricted 235 -- Maerimydra only
-#spec 8388608 -- uwok
-#end
-
-
-#newspell 
-#name "Create Undead: Lesser Flameskull"
-#descr "Flameskulls were fiery undead guardians fashioned from the skulls of dead spellcasters. Immortal beings, they were favored familiars of powerful necromancers."
-#school 4
-#researchlevel 4
-#path 0 5 
-#pathlevel 0 3
-#effect 10021
-#damage 7244 -- Lesser Flameskull
--- 7245 -- Greater Flameskull
-#nreff 1
-#fatiguecost 1500
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Create Undead: Greater Flameskull"
-#descr "Greater Flameskulls are fiery undead constructs fashioned from the skulls of dead spellcasters. Immortal beings, they were favored as guardians of the secret arcane libraries of powerful necromancers. Their twisted sentience allowed them to keep familiars and apprentices of their own."
-#school 4
-#researchlevel 6
-#path 0 5 
-#pathlevel 0 4
-#effect 10021
-#damage 7245 -- Greater Flameskull
-#nreff 1
-#fatiguecost 2500
-#spec 8388608 -- uwok
-#end
-
-
-#newspell 
-#name "Create Undead: Mohrg"
-#descr "Mohrgs are a greater form of undead. They resemble dessicated skeletons but are in fact far more dangerous. Their bones are as hard as a full suit of platemail, their biting tongues cause a dangerous paralysis, and the enemies who fall to their attacks rise as zombies."
-#school 4
-#researchlevel 3
-#path 0 5 
-#pathlevel 0 3
-#effect 10021
-#damage 7707 -- Mohrg
-#nreff 1
-#fatiguecost 1200
-#spec 8388608 -- uwok
-#end
-
-#newspell 
-#name "Create Undead: Vampire Bride"
-#descr "Vampire brides are powerful, but bound to their summoned province - they will lose health each turn they spend away from their home. In addition to being powerful spell casters, they also generate thralls and bathe the battlefield in darkness."
-#school 4
-#researchlevel 5
-#path 0 5 
-#path 1 8
-#pathlevel 0 4
-#pathlevel 1 2
-#effect 10021
-#damage 7090 -- Vampire Bride
-#nreff 1
-#fatiguecost 2500 
-#spec 8388608 -- uwok
-#end
-
-#newspell
-#name "Create Undead: Mummy"
-#descr "Mummies are prepared corpses brough back to undeath via powerful rites and rituals. They spread disease and fear, are highly immune to magic, and curse those who send them back to the afterlife. More powerful casters will be able to summon additional mummies with each casting."
-#school 4
-#researchlevel 5
-#path 0 5 
-#pathlevel 0 3
-#effect 10001
-#damage 7289 -- Mummy
-#nreff 1002
-#fatiguecost 1300
-#end
-
-#selectspell 1444
-#name "Create Undead: Vampire Lord"
-#school 4
-#researchlevel 7
-#spec 8388608 -- uwok
-#end
-
-#newspell
-#copyspell 953
-#name "Create Undead: Deathshroud Knights"
-#descr "Deathshroud Knights are elite, sacred front line troops in armies of the undead and are often tasked as bodyguards for the most powerful of undead masters." 
-#school 4
-#researchlevel 5
-#path 0 5 
-#pathlevel 0 3
-#damage 7311 -- Death Knight Sentinels
-#effect 10001
-#fatiguecost 2600
-#nreff 5
-#end
-
-#selectspell 953 -- Revive Wights
-#school -1
-#end
-
-#selectspell 954 -- Revive Bane
-#school -1
-#end
-
-#newspell
-#copyspell 954 -- Revive Bane
-#name "Create Undead: Death Knight Dreadlord"
-#descr "Death Knight Dreadlords are former paladins or knights who abandoned their sacred oaths and turned instead to the dark powers of the Shadowfell."
-#school 4
-#researchlevel 6
-#path 0 5 
-#pathlevel 0 4
-#effect 10021
-#damage 7310 -- Death Knight Dreadlord
-#fatiguecost 3500
-#nreff 1
-#end
-
-#selectspell 945 -- "Call Krakens"
-#descr "Summons 4 or more Juvenile Krakens - huge, intelligent octopoid creatures which grow over time and experience to collosal size."
-#path 0 2
-#path 1 8
-#pathlevel 0 3
-#pathlevel 1 1
-#researchlevel 4
-#effect 10021
-#nreff 2001
-#damage 7307 
-#fatiguecost 1200
-#spec 41943040 -- only
-#end
-
-#newspell 
-#copyspell 945 -- Call Krakens
-#name "Call Venerable Kraken"
-#descr "Summons an Ancient Kraken. These collosal denizens of the deep are capable spellcasters and have been known to lead small armies of supplicants and slaves."
-#path 0 2
-#path 1 8
-#pathlevel 0 4
-#pathlevel 1 1
-#researchlevel 6
-#nreff 1
-#damage 7308
-#fatiguecost 2500
-#spec 41943040 -- uwonly
-#end
-
-#selectspell 1054
-#school -1
-#end
-
-#selectspell 1078
-#school -1
-#end
-
-#selectspell 1079 -- Legion of Wights
-#school -1
-#end
-
-#selectspell 1011 -- Bane Lord
-#school -1
-#end
-
-#selectspell 344 -- Call Melqart
-#school -1
-#end
-
-#selectspell 348 -- Banquet for the Dead
-#school -1
-#end
-
-#selectspell 1063 -- The Kindly Ones
-#school -1
-#end
-
-#selectspell 394 -- Lictorian Legion
-#school -1
-#end
-
-#selectspell 614 -- Eliven Marble Oracle
-#school -1
-#end
-
-#selectspell 312 -- Contact Jorogumo
-#school -1
-#end
-
-#selectspell 564 -- Contact Nagaraja
-#school -1
-#end
-
-#selectspell 541 -- Contact Houri
-#school -1
-#end
-
-#selectspell 399 -- Revive Lemur Consul
-#school -1
-#end
-
-#selectspell 455 -- Contact Iron Angel
-#school -1
-#end
-
-#selectspell 561 -- Contact Nagini
-#school -1
-#end
-
-#selectspell 361 -- Summon Ugallu
-#school -1
-#end
-
-------------------- Increased Path Costs of Water Spells and a few removals
-
---#selectspell 1218 -- Thetis Blessing
---#name "Valkur's Blessing"
---#descr "Calling upon Valkur, all wells of mana related to the sphere of water will be revealed in the target province."
---#end
-
-#selectspell 754 -- tidal wave path req increase
-#pathlevel 0 6
-#end
-
-#selectspell 1244 -- wrath of the sea path req increase
-#pathlevel 0 7
-#end
-
-#selectspell 725 -- elemental opposition of fire path req increase
-#pathlevel 0 6
-#end
-
-#selectspell 724 -- murdering winter path req increase
-#pathlevel 0 6
-#end
-
-#selectspell 880 -- sea of ice path req increase
-#pathlevel 0 7
-#end
-
-#selectspell 742 -- maelstrom winter path req increase
-#pathlevel 0 7
-#end
-
-#selectspell 1348 -- vengeful water path req increase
-#pathlevel 0 8
-#end
-
-
-
----------------------------------Removed Horror Spells--------------------------------------
-
-#selectspell 1265 -- Horror Mark
-#school -1
-#end
-
-#selectspell 1407 -- Call Lesser Horror
-#school -1
-#end
-
-#selectspell 1416 -- Send Lesser Horror
-#school -1
-#end
-
-#selectspell 1426 -- Call Horror
-#school -1
-#end
-
-#selectspell 1431 -- Send Dream Horror
-#school -1
-#end
-
-#selectspell 1443 -- Horror Seed
-#school -1
-#end
-
-#selectspell 1455 -- Send Horror
-#school -1
-#end
-
-#selectspell 717 -- False Horror
-#school -1
-#end
-
--- removed vanilla elemental summons
-#selectspell 939
-#school -1
-#end
-
-#selectspell 941
-#school -1
-#end
-
-#selectspell 944
-#school -1
-#end
-
-#selectspell 949
-#school -1
-#end
-
-#selectspell 992
-#school -1
-#end
-
-#selectspell 994
-#school -1
-#end
-
-#selectspell 1000
-#school -1
-#end
-
-#selectspell 1005
-#school -1
-#end
-
-#selectspell 1456 -- Astral Corruption
-#school -1
-#end
-
-#selectspell 546 -- contact marid
-#school -1
-#end
-
-#selectspell "Blindness"
-#school 5
-#aispellmod -30 
-#end
-
-#selectspell "Fire Darts"
-#school -1
-#end
-
-#selectspell "Conflagration"
-#aispellmod -50
-#end
-
-#selectspell 1282 -- "Rage"
-#school -1
-#end
-
-
-#selectspell "Steal Breath"
-#aispellmod -50
-#end
-
-#selectspell "Confusion"
-#name "Confusion (disabled)"
-#school -1
-#end
-
-#selectspell "Break the Third Soul"
-#school -1
-#end
-
-#selectspell "Gift Of Flight"
-#aispellmod -50
-#end
-
-#selectspell "Encase in Ice"
-#aispellmod -50
-#end
-
-#selectspell "Slow"
-#aispellmod -80
-#end
-
-#selectspell "Crawl"
-#school -1
-#end
-
-#selectspell "Flying Shards"
-#aispellmod -95
-#end
-
-#selectspell "Break the Second Soul"
-#school -1
-#end
-
-#selectspell "Blade Wind" -- Situationally useful, but often less useful than other stuff
-#aispellmod -20
-8388608 -- uwok
-#end
-
-
-#selectspell "Horror Mark" -- Better to kill stuff most the time
-#school -1
-#end
-
-
-#selectspell "Frighten"
-#school -1
-#end
-
-#selectspell "Decay"
-#aibadlvl 3 -- Mostly eclipsed by HoS
-#aispellmod -80 -- Still situationally useful vs SCs might need to inc
-#end
-
-#selectspell "Terror"
-#aispellmod -90
-#end
-
-#selectspell "Raise Dead"
-#aispellmod -60 -- HoS is often better.
-#end
-
-#selectspell "Break the Fourth Soul"
-#school -1
-#end
-
-
-#selectspell "Panic"
-#ainocast 1
-#end
-
-#selectspell "Breath of the Dragon"
-#school -1
-#end
-
-#selectspell "Fascination"
-#aibadlvl 3
-#aispellmod -50
-#end
-
-#selectspell "Poison Touch"
-#aispellmod -90
-#aibadlvl 2
-#end
-
-#selectspell "Tune of Fear"
-#school -1
-#end
-
-#selectspell "Tune of Growth"
-#school -1
-#end
-
-#selectspell "Tune of Dancing Death"
-#school -1
-#end
-
-#selectspell "Magic Duel"
-#school -1
-#end
-
-#selectspell "Soul Slay"
-#school -1
-#end
-
-#selectspell "Shrink"
-#name "Reduce Person"
-#descr "This spell causes instant diminution of a humanoid creature"
-#details "Size -1, HP -30%, Str -3, Def +1, Map move -2.
-Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
-#aispellmod -95
-#researchlevel 1
-#path 0 4 --astral
--- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies; animals only
--- can be cast underwater
-#spec 4785075418697732
-#end
-
-#newspell
-#copyspell "Reduce Person"
-#name "Mass Reduce Person"
-#researchlevel 4
-#pathlevel 0 3
-#fatiguecost 99
-#aoe 3001
-#end
-
-#selectspell "Incinerate"
-#aispellmod 10
-#spec 8388608 -- uwok
-#end
-
-#selectspell "Fireball"
-#aispellmod 40
-#end
-
-#selectspell "Pillar Of Fire"
-#aispellmod 20
-#end
-
-#selectspell "Holy Pyre" -- Didnt want to inadvertently deprioritize
-#aispellmod 20
-#end
-
-#selectspell "Sulphur Haze"
-#aispellmod 20
-#spec 8388608 -- uwok
-#end
-
-#selectspell "Astral Fires"
-#aispellmod 40
-#end
-
-#selectspell "Thunder Strike"
-#aispellmod 40
-#end
-
-#selectspell "Shock Wave"
-#aispellmod 40
-#end
-
-#selectspell "Orb Lightning"
-#aispellmod 20
-#end
-
-#selectspell "Lightning Bolt"
-#aispellmod 10
-#end
-
-#selectspell "Frozen Heart"
-#aispellmod 30
-#end
-
-#selectspell "Liquify"
-#aispellmod 40
-#end
-
-#selectspell "Freezing Mist"
-#aispellmod 40
-#end
-
-#selectspell "Falling Frost"
-#aispellmod 20
-#end
-
-#selectspell "Fists Of Iron" 
-#aispellmod 50
-#end
-
-#selectspell "Farstrike"
-#aispellmod 40
-#end
-
-#selectspell "Earth Meld"
-#aispellmod 40
-#end
-
-#selectspell "Gifts from Heaven"
-#aispellmod 30
-#end
-
-#selectspell "Petrify"
-#aispellmod 70
-#end
-
-#selectspell "Sow Dragon Teeth"
-#aispellmod 200
-#end
-
-#selectspell "Shatter"
-#aispellmod 50
-#end
-
-#selectspell "Enslave Mind"
-#aispellmod 120
-#end
-
-#selectspell "Soul Slay"
-#aispellmod 100
-#end
-
-#selectspell "Paralyze"
-#aispellmod 30
-#end
-
-#selectspell "Mind Burn"
-#aispellmod 10
-#end
-
-#selectspell "Nether Darts"
-#aispellmod 40
-#end
-
-#selectspell "Opposition"
-#aispellmod 50
-#end
-
-#selectspell "Hand of Death" 
-#aispellmod 70
-#end
-
-#selectspell "Drain Life"
-#aispellmod 50
-#end
-
-#selectspell "Cloud of Death"
-#aispellmod 50
-#end
-
-#selectspell "Vortex of Unlife"
-#aispellmod 50
-#end
-
-#selectspell "Bane Fire"
-#aispellmod 100
-#end
-
-#selectspell "Disintegrate"
-#aispellmod 30
-#end
-
-#selectspell "Dust to Dust"
-#aispellmod 30
-#end
-
-#selectspell "Wither Bones"
-#aispellmod 40
-#end
-
-#selectspell "Control the Dead"
-#aispellmod 30
-#end
-
-#selectspell "Call Ancestor"
-#aispellmod 150
-#end
-
-#selectspell "Poison Cloud" 
-#aispellmod 50
-#end
-
-#selectspell "Charm Animal"
-#aispellmod 40
-#end
-
-#selectspell "Charm"
-#aispellmod 40
-#end
-
-#selectspell "Storm of Thorns"
-#aispellmod 10
-#end
-
-#selectspell "Slumber" 
-#aispellmod 150
-#end
-
-#selectspell "Sandman's Blessing" 
-#aispellmod 150
-#end
-
-#selectspell "Leeching Touch"
-#aispellmod 70
-#end
-
-#selectspell "Leech"
-#aispellmod 70
-#end
-
-#selectspell "Life for a Life"
-#aispellmod 70
-#end
-
-#selectspell "Break the First Soul"
-#aispellmod 50
-#end
-
-#selectspell "Reinvigoration"
-#aispellmod 900
-#end
-
-#selectspell "Claim Life"
-#aispellmod 100
-#end
-
-#selectspell "Heavenly Fire"
-#aispellmod 80
-#end
-
-#selectspell "Heavenly Strike"
-#aispellmod 80
-#end
-
-#selectspell "Syllable of Death"
-#aispellmod 80
-#end
-
-#selectspell "Watery Death"
-#aispellmod 60
-#end
-
-#selectspell "Word of Power"
-#aispellmod 100
-#end
-
-#selectspell "Word of Stone"
-#aispellmod 20
-#end
-
-#selectspell "Word of Thorns"
-#aispellmod 60
-#end
-
-#selectspell "Word of Bewilderment"
-#aispellmod 60
-#end
-
-#selectspell "Sermon Of Courage"
-#aispellmod -90
-#end
-
-#selectspell 283 -- "Unholy Protection"
-#aispellmod -99
-#end
-
-#selectspell 286 -- "Unholy Protection"
-#aispellmod -99
-#end
-
-#selectspell 314 -- "Unholy Protection"
-#aispellmod -99
-#end
-
-#selectspell 318 -- "Unholy Protection"
-#aispellmod -99
-#end
-
-#selectspell 328 -- "Protection of the Grave"
-#aispellmod -99
-#end
-
-#selectspell 330 -- "Protection of the Grave"
-#aispellmod -99
-#end
-
-#selectspell "Protection of the Sepulchre"
-#aispellmod -99
-#end
-
-#selectspell "Protection of the Sepulchre"
-#aispellmod -99
-#end
-
-#selectspell "Carrion Growth"
-#aispellmod -99
-#end
-
-#selectspell "Puppet Mastery"
-#aispellmod -99
-#end
-
-#selectspell "Quick Roots"
-#aispellmod -99
-#end
-
-#selectspell "Regrowth"
-#aispellmod -99
-#end
-
-#selectspell "Royal Protection"
-#aispellmod -99
-#end
-
-#selectspell "Anathema"
-#aispellmod -99
-#end
-
-#selectspell "Communion Slave"
-#ainocast 1
-#end
-
-#selectspell 1122 --Flying Shield
-#ainocast 1
-#end
-
-#selectspell "Communion Master"
-#ainocast 1
-#end
-
-#selectspell "Phoenix Pyre"
-#ainocast 1
-#end
-
-#selectspell "Personal Ironskin"
-#ainocast 1
-#end
-
-#selectspell "Personal Stoneskin"
-#ainocast 1
-#end
-
-#selectspell "Personal Barkskin"
-#ainocast 1
-#end
-
-#selectspell "Invulnerability"
-#ainocast 1
-#end
-
-#selectspell "Breath of Winter"
-#ainocast 1
-#end
-
-#selectspell "Soul Vortex"
-#ainocast 1
-#end
-
-#selectspell "Charge Body"
-#ainocast 1
-#end
-
-#selectspell "Personal Luck"
-#ainocast 1
-#end
-
-#selectspell "Eagle Eyes"
-#ainocast 1
-#end
-
-#selectspell 245 --"Air Shield"
-#ainocast 1
-#end
-
-#selectspell "Personal Regeneration"
-#ainocast 1
-#end
-
-#selectspell "Pain Transfer"
-#ainocast 1
-#end
-
-#selectspell "Elemental Fortitude"
-#ainocast 1
-#end
-
-#selectspell "Quicken self"
-#ainocast 1
-#end
-
-#selectspell "Holy Avenger"
-#ainocast 1
-#end
-
-#selectspell "Resist Magic"
-#ainocast 1
-#end
-
-#selectspell "Water Shield"
-#ainocast 1
-#end
-
-#selectspell "Summon Earthpower"
-#ainocast 1
-#end
-
-#selectspell "Summon Storm Power"
-#ainocast 1
-#casttime 110
-#end
-
-#selectspell "Fire Shield"
-#ainocast 1
-#end
-
-#selectspell "Personal Mistform"
-#ainocast 1
-#end
-
-#selectspell "Phoenix Power"
-#ainocast 1
-#end
-
-#selectspell "Summon Water Power"
-#ainocast 1
-#end
-
-#selectspell "Mirror Image"
-#ainocast 1
-#end
-
-#selectspell "Astral Shield"
-#ainocast 1
-#end
-
-#selectspell "Resist Fire"
-#ainocast 1
-#end
-
-#selectspell "Resist Lightning"
-#ainocast 1
-#end
-
-#selectspell "Protection from Poison"
-#ainocast 1
-#end
-
-#selectspell "Proud Steed"
-#ainocast 1
-#end
-
-#selectspell "Cold Resistance"
-#ainocast 1
-#end
-
-#selectspell "Resist Cold"
-#ainocast 1
-#end
-
-#selectspell "Protection from Cold"
-#ainocast 1
-#end
-
-#selectspell "Protection from Fire"
-#ainocast 1
-#end
-
-#selectspell "Personal Poison Resistance"
-#ainocast 1
-#end
-
-#selectspell "Protection from Lightning"
-#ainocast 1
-#end
-
-#selectspell "Twist Fate"
-#ainocast 1
-#end
-
-#selectspell "Personal Flight"
-#ainocast 1
-#end
-
-#selectspell "Liquid Body"
-#ainocast 1
-#end
-
-#selectspell "Temper Flesh"
-#ainocast 1
-#end
-
-#selectspell "Stygian Skin"
-#ainocast 1
-#end
-
-#selectspell "Ice Shield"
-#ainocast 1
-#end
-
-#selectspell "Trueshot"
-#ainocast 1
-#end
-
-#selectspell "Skeletal Body"
-#ainocast 1
-#end
-
-#selectspell "Power of the Spheres"
-#ainocast 1
-#end
-
-#selectspell "Hell Power"
-#ainocast 1
-#end
-
-#selectspell "Gift of the First Soul"
-#aispellmod -95
-#end
-
-#selectspell "Gift of the Second Soul"
-#ainocast 1
-#end
-
-#selectspell "Gift of the Third Soul"
-#ainocast 1
-#end
-
-#selectspell "Gift of the Fourth Soul"
-#aispellmod -95
-#end
-
-#selectspell "Levitate"
-#ainocast 1
-#end
-
-#selectspell "Shroud of Flying Shards"
-#ainocast 1
-#end
-
-#selectspell "Second Sight"
-#ainocast 1
-#end
-
-#selectspell "Horrible Visage"
-#ainocast 1
-#end
-
-#selectspell "Blurred Body"
-#ainocast 1
-#end
-
-#selectspell "Displace Body"
-#ainocast 1
-#end
-
-#selectspell "Invisibility"
-#aispellmod -50
-#end
-
-#selectspell "Dance of Ephemeral Swords"
-#ainocast 1
-#end
-
-#selectspell "Shroud of Splendor"
-#ainocast 1
-#end
-
-#selectspell "True Sight"
-#ainocast 1
-#end
-
-#selectspell "Shroud of Bewilderment"
-#ainocast 1
-#end
-
-#selectspell "Haste"
---#ainocast 1
-#end
-
-#selectspell "Stoneskin"
-#ainocast 1
-#end
-
-#selectspell "Blur"
-#aispellmod -90
-#end
-
-#selectspell "Gift of Displacement"
-#aispellmod -90
-#end
-
-#selectspell "Rhapsody Of Life" 
-#aispellmod -90
-#end
-
-#selectspell "Body Ethereal"
-#aispellmod -97
-#aibadlvl 3
-#end
-
-#selectspell "Barkskin"
-#aispellmod -97
-#end
-
-#selectspell "Regeneration"
-#aispellmod -97
-#end
-
-#selectspell "Ironskin"
-#ainocast 1
-#end
-
-#selectspell "Gift of Cat Eyes"
-#ainocast 1
-#end
-
-#selectspell "Mistform"
-#ainocast -96
-#end
-
-#selectspell "Fire Resistance"
-#ainocast 1
-#end
-
-#selectspell "Gift of the Hare"
-#ainocast 1
-#end
-
-#selectspell "Envenom Arrows"
-#ainocast 1
-#end
-
-#selectspell "Gift of the Serpent"
-#ainocast 1
-#end
-
-#selectspell "Iron Will"
-#ainocast 1
-#end
-
-#selectspell "Mossbody"
-#aispellmod -95
-#end
-
-#selectspell "Windrunner"
-#ainocast 1
-#end
-
-#selectspell "Farflight"
-#aispellmod -99
-#end
-
-#selectspell "Luck"
-#aispellmod -96
-#aibadlvl 3
-#end
-
-#selectspell "Gift of Cheated Fate"
-#aispellmod -97
-#end
-
-#selectspell 783 --"Enlarge"
-#ainocast 1
-#end
-
-#selectspell "Quickness"
-#aispellmod -96
-#end
-
-#selectspell "Gift of Formlessness"
-#aispellmod -96
-#end
-
-#selectspell "Iron Warriors"
-#aispellmod -96
-#end
-
-#selectspell 1307 --"Touch of Madness"
-#aispellmod -97
-#end
-
-#selectspell "Gift of the Moon"
-#ainocast 1
-#end
-
-#selectspell "Ignite Arrows"
-#aispellmod -30
-#end
-
-#selectspell "Lesser Flame Ward"
-#ainocast 1
-#end
-
-#selectspell 1274 --"Battle Fury"
-#aispellmod -97
-#end
-
-#selectspell "Lesser Winter Ward"
-#ainocast 1
-#end
-
-#selectspell "Lightning Resistance"
-#ainocast 1
-#end
-
-#selectspell 1109 --"Strength of Giants"
-#aispellmod -95
-#end
-
-#selectspell "Earth Shatter Hammers"
-#aispellmod -95
-#end
-
-#selectspell "Weapons of Sharpness" 
-#aispellmod -80
-#end
-
-#selectspell "Gift of Spirit Sight"
-#ainocast 1
-#end
-
-#selectspell "Mind Blank"
-#ainocast 1
-#end
-
-#selectspell "Mirror Mind"
-#ainocast 1
-#end
-
-#selectspell "Beast Fury"
-#aispellmod -95
-#end
-
-#selectspell "Gift of True Sight"
-#ainocast 1
-#end
-
-#selectspell "Gift of Splendor"
-#ainocast 1
-#end
-
---------------------------------- Altered Vanilla Spells
-
-#selectspell 924 -- Spirit Curse
-#school -1
-#end
-
-#newspell 
-#copyspell 437 -- Vengeful Vines
-#name "Blackwater Tentacles"
-#fatiguecost 20
-#school 0
-#researchlevel 4
-#path 0 2 
-#path 1 5
-#pathlevel 0 1
-#pathlevel 1 1
-#range 5025
-#aoe 1003
-#precision 100
-#nextspell 782 -- weakness
-#end
-
-#selectspell 251 -- Sleep Ray
-#range 5025
-#aoe 1
-#end
-
-#selectspell 1281 -- Sleep
-#range 5035
-#aoe 1003
-#end
-
-#selectspell 960 -- Summon Sea Lions
-#name "Summon a Pride of Sea Cats"
-#descr "A sea cat, also known as a sea lion, was a magical beast that combined the features of a lion and a fish. It was a ferocious predator of the seas having only animal intelligence. Highly aggressive and territorial, they could survive on both land and at sea."
-#damage 7643 -- Sea Cat UW
-#nreff 2006
-#end
-
-#newspell 
-#copyspell 960
-#name "Summon a Sea Cat"
-#descr "A sea cat, also known as a sea lion, was a magical beast that combined the features of a lion and a fish. It was a ferocious predator of the seas having only animal intelligence. Highly aggressive and territorial, they could survive on both land and at sea."
-#damage 7643 -- Sea Cat UW
-#nreff 1001
-#fatiguecost 300
-#pathlevel 0 1
-#pathlevel 1 1
-#end
-
---------------------------------------------- SPECIAL MIDDLE AND END GAME SUMMONS
-
-#newspell 
-#name "I, Strahd"
-#descr "Summons the Prince of Vampires, Strahd von Zarovich. By summoning Strahd, you are essentially merging the province in which he is called with the spectral realm of Barovia - Strahd can only spend limited time away from his summoned province. Use him wisely while you have him as other nations can summon Barovia to their lands, removing Strahd from your service."
-#school 0
-#researchlevel 6
-#path 0 5 
-#path 1 8
-#pathlevel 0 5
-#pathlevel 1 2
-#effect 10021
-#damage 7091 -- Strahd
-#nreff 1
-#fatiguecost 10000
-#end
-
-
-
--- 4095 -- Tiamat
-#newspell 
-#name "Call Tiamat"
-#descr "Summons the The Queen of Dragons, the five-headed Tiamat, and binds her to your service. At least for a time.  Use him wisely while you have her as other nations can summon Tiamat to their own causes and removing her from your service."
-#school 0
-#researchlevel 9
-#path 0 4 
-#pathlevel 0 5
-#effect 10021
-#damage 7095 -- Tiamat
-#nreff 1
-#fatiguecost 24000
-#end
-
--- 3835 -- Dendar the Night Serpent
-#newspell 
-#name "Call the Night Serpent"
-#descr "The primordial foe of the gods, Dendar instilled dread in even the greater deities of Faerun. In exchange for a promise to keep Dendar locked beanth the Iron Doors of Night in Chult, the entire pantheon of Faerunian gods made a pact with Ubtao, another primordial, to never encroach on Ubtao's dominion in the Chultan Peninsula. Open the Iron Doors of Night at your own peril."
-#school 0
-#researchlevel 9
-#path 0 4 
-#pathlevel 0 5
-#effect 10021
-#damage 6835 -- Dendar the Night Serpent
-#nreff 1
-#fatiguecost 30000
-#end
-
-
-----------------------------------------------------------------------------------
------------------------------ SALAMANDER SUMMONS --------------------------------- 
-----------------------------------------------------------------------------------
-
--- 4032 -- SALAMANDER FLAMEGUARD
-#newspell 
-#name "Summon Salamander Flameguards"
-#descr "Salamanders are born on the elemental plane of fire. The Flameguard are the heavy infantry of their massive armies, often summoned by powerful sorcerers. Thay is well known for engaging in this practice as a means of defense against their foes on the Sea of Fallen Stars." 
-#school 0
-#researchlevel 4
-#path 0 0 
-#pathlevel 0 2
-#effect 10001
-#damage 7032 -- SALAMANDER FLAMEGUARD
-#nreff 2001
-#fatiguecost 500
-#restricted 210 
-#restricted 205
-#restricted 206
-#restricted 208   
-#end
-
-
--- 4078 -- SALAMANDER NOBLE
-#newspell 
-#name "Summon Salamander Noble"
-#descr "Salamanders are born on the elemental plane of fire. Their Nobles lead their massive armies and often summoned by powerful sorcerers. Thay is well known for engaging in this practice as a means of defense against their foes on the Sea of Fallen Stars." 
-#school 0
-#researchlevel 5
-#path 0 0 
-#pathlevel 0 3
-#effect 10021
-#damage 7078 -- SALAMANDER NOBLE
-#nreff 1
-#fatiguecost 3500
-#restricted 210 
-#restricted 205
-#restricted 206
-#restricted 208   
-#end
-
-
--- no native unit can raise a mythellar - players will have so first summon something dreadfully powerful that has the astral pathlevel, such as an atropal, or else utilize their god or empower a unique caster and bring crystal coins.
-
-#newspell 
-#name "Raise a Mythellaric Enclave"
-#descr "A mythallar was a Netherese device that allowed access to vast amounts of raw magic, used primarily to raise a floating cities from the surface and rule the world from on high." 
-#school 3
-#researchlevel 9
-#path 0 4
-#pathlevel 0 8
-#effect 10021
-#damage 7084 -- Mythellaric Enclave
-#nreff 1
-#fatiguecost 30000
-#spec 8388608 -- uwok
-#end
-
--- Summon an Atropal
-#newspell 
-#name "Summon and Bind an Atropal"
-#descr "Atropals were stillborn godlings who spontaneously rose as undead abominations. Existing solely to spread death and destruction, atropals roamed across the planes, hunting down any prey that came their way. Atropals are exceedingly powerful in both Astral and Death magic and can be used to create Mythellars. There is a 25% chance of losing control of the summon in any given turn." 
-#school 0
-#researchlevel 9
-#path 0 5
-#pathlevel 0 7
-#effect 10021
-#damage 7061 -- Atropal 
-#nreff 1
-#fatiguecost 12000
-#spec 8388608 -- uwok
-#end
-
-
--- 3709 Bound Shaitan
-#newspell 
-#name "Summon and Bind a Shaitan"
-#descr "Genies native to the Elemental Plane of Earth are known as Shaitan. To bind them requires a rare mix of magical talents - one must first summon them from their native plane with the appropriate path skill, and then entrap them using power over the genie's anti-thetical element." 
-#school 0
-#researchlevel 6
-#path 0 3
-#path 1 1
-#pathlevel 0 2
-#pathlevel 1 2
-#effect 10021
-#damage 6709 -- Bound Shaitan 
-#nreff 1
-#fatiguecost 3000
-#end
-
--- 3710 -- Bound Djinn
-#newspell 
-#name "Summon and Bind a Djinn"
-#descr "Genies native to the Elemental Plane of Air are known as Djinn. To bind them requires a rare mix of magical talents - one must first summon them from their native plane with the appropriate path skill, and then entrap them using power over the genie's anti-thetical element." 
-#school 0
-#researchlevel 6
-#path 0 1
-#path 1 0
-#pathlevel 0 2
-#pathlevel 1 2
-#effect 10021
-#damage 6710 -- Bound Djinn
-#nreff 1
-#fatiguecost 3000
-#end
-
--- 3711 -- Bound Marid
-#newspell 
-#name "Summon and Bind a Marid"
-#descr "Genies native to the Elemental Plane of Water are known as Marid. To bind them requires a rare mix of magical talents - one must first summon them from their native plane with the appropriate path skill, and then entrap them using power over the genie's anti-thetical element." 
-#school 0
-#researchlevel 6
-#path 0 2
-#path 1 3
-#pathlevel 0 2
-#pathlevel 1 2
-#effect 10021
-#damage 6711 -- Bound Marid
-#nreff 1
-#fatiguecost 3000
-#spec 8388608 -- uwok
-#end
-
--- 3712 -- Bound Efreet
-#newspell 
-#name "Summon and Bind an Efreet"
-#descr "Genies native to the Elemental Plane of Fire are known as Efreet. To bind them requires a rare mix of magical talents - one must first summon them from their native plane with the appropriate path skill, and then entrap them using power over the genie's anti-thetical element." 
-#school 0
-#researchlevel 6
-#path 0 0
-#path 1 2
-#pathlevel 0 2
-#pathlevel 1 2
-#effect 10021
-#damage 6712 -- Bound Efreet
-#nreff 1
-#fatiguecost 3000
-#end
-
-----------------------------------------------------------------------------------
-----------------------------CERAMORPHYTIC SPELLS
-----------------------------------------------------------------------------------
-#newspell
-#name "Free a Mindflayer"
-#descr "Only an Elder Brain or Greater Elder Brain may typically drive this process. It has happened, however, that rogue Illithids have broken free. When this happens, their narcissism leads always to the goal of subverting and eventually destroying the Elder Brain from which they broke away. Making an Illithid your Chosen will convert them into an Elder Brain.
-Unlike most summons, Mindflayers cost gold maintenance."
-#details "Some nations with deep enmity toward mindflayers will never cast this spell."
-#school 0
-#researchlevel 4
-#path 0 4
-#pathlevel 0 3
-#fatiguecost 4000
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage -13002
-#aispellmod 10
-#notfornation 219 -- Narfell				
-#notfornation 224 -- Kuo-toans
-#notfornation 226 -- Oryndoll
-#notfornation 227 -- Dwarves of shanatar
-#notfornation 229 -- Dwarves of Old Bhaerynden	
-#notfornation 231 -- Gracklstugh		
-#notfornation 232 -- Underspires of Drik Hargunen	
-#notfornation 233 -- Auramycos	
-#notfornation 238 -- Scoured Legion 
-#spec 8388608 -- uwok
-#end
-
-#newspell
-#name "Initiate Ceramorphosis"
-#descr "This spell summons one of the four types of Mindflayer commander. Only an Elder Brain or Greater Elder Brain may drive this process. Unlike most summons, Mindflayers cost gold maintenance."
-#details "3/11 chance for an Illithid Corruptor
-3/11 chance for a Lesser Illithid
-4/11 chance for a Mind Flayer
-1/11 chance for a Ulitharid"
-#school 6
-#researchlevel 0
-#path 0 8
-#pathlevel 0 1
-#fatiguecost 1000
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage -13002
-#onlymnr 5048
-#onlymnr 5049
-#spec 8388608 -- uwok
-#end
-
-
-----------------------------------------------------------------------------------
-----------------------------DRAGON SUMMONING SPELLS
-----------------------------------------------------------------------------------
-
-#newspell -- 3776 -- RED DRAGON EGG
-#name "Red Dragon Mating Ritual"
-#descr "Red dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "The Red Dragon mating ritual can only be performed by Young Adult or Mature Red Dragons but never under water."
-#school 0
-#researchlevel 0
-#path 0 0
-#pathlevel 0 1
-#fatiguecost 300
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6776
-#onlymnr 6779
-#onlymnr 6780
-#onlymnr 6717 -- Ancient Red Dragon
-#onlymnr 6923 -- Tchazzar
-#onlymnr 6924 -- Tchazzar
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
-#newspell 
-#name "Summon a Red Dragon Egg"
-#descr "Red dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "Red Dragon Eggs cannot be be summoned under water."
-#school 0
-#researchlevel 2
-#path 0 0
-#pathlevel 0 1
-#fatiguecost 1000
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6776
-#restricted 205
-#restricted 206
-#restricted 208
-#restricted 213
-#restricted 220
-#restricted 234
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
-#newspell -- 3781 -- BLACK DRAGON EGG
-#name "Black Dragon Mating Ritual"
-#descr "Black dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "The Black Dragon mating ritual can only be performed by Young Adult or Mature Black Dragons and may be performed under water."
-#school 0
-#researchlevel 0
-#path 0 5
-#path 0 5
-#pathlevel 0 1
-#fatiguecost 300
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6781
-#onlymnr 6784
-#onlymnr 6785
-#onlymnr 6720
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
-#newspell 
-#name "Summon a Black Dragon Egg"
-#descr "Black dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "Black Dragon Eggs can be summoned under water."
-#school 0
-#researchlevel 2
-#path 0 5
-#pathlevel 0 1
-#fatiguecost 1000
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6781
-#restricted 205
-#restricted 206
-#restricted 208
-#restricted 213
-#restricted 220
-#restricted 223 -- Yuan-Ti
-#restricted 234
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
--- Green Dragon Eggs are 3786
-#newspell 
-#name "Green Dragon Mating Ritual"
-#descr "Green dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "Green Dragon mating rituals can only be performed by Young Adult or Mature Green Dragons and may be performed under water."
-#school 0
-#researchlevel 0
-#path 0 6
-#pathlevel 0 1
-#fatiguecost 300
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6786
-#onlymnr 6789
-#onlymnr 6790
-#onlymnr 6719
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
-#newspell 
-#name "Summon a Green Dragon Egg"
-#descr "Green dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "Green Dragon Eggs can be summoned under water."
-#school 0
-#researchlevel 2
-#path 0 6
-#pathlevel 0 1
-#fatiguecost 1000
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6786
-#restricted 205
-#restricted 206
-#restricted 208
-#restricted 213
-#restricted 220
-#restricted 223 -- Yuan-Ti
-#restricted 234
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
-
--- Blue Dragon Eggs are 3786
-#newspell 
-#name "Blue Dragon Mating Ritual"
-#descr "Blue dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "Blue Dragon mating rituals can only be performed by Young Adult or Mature Blue Dragons and may not be performed under water."
-#school 0
-#researchlevel 0
-#path 0 1
-#pathlevel 0 1
-#fatiguecost 300
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6791 -- blue dragon egg
-#onlymnr 6794
-#onlymnr 6795
-#onlymnr 6718
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
-#newspell 
-#name "Summon a Blue Dragon Egg"
-#descr "Blue dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "Blue Dragon Eggs cannot be summoned under water."
-#school 0
-#researchlevel 2
-#path 0 1
-#pathlevel 0 1
-#fatiguecost 1000
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6791 -- blue dragon egg
-#restricted 205
-#restricted 206
-#restricted 208
-#restricted 213
-#restricted 220
-#restricted 223 -- Yuan-Ti
-#restricted 234
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
-
--- White Dragon Eggs are 3796
-#newspell 
-#name "White Dragon Mating Ritual"
-#descr "White dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "White Dragon mating rituals can only be performed by Young Adult or Mature White Dragons and may be performed under water."
-#school 0
-#researchlevel 0
-#path 0 2
-#pathlevel 0 1
-#fatiguecost 300
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6796 -- white dragon egg
-#onlymnr 6799
-#onlymnr 6800
-#onlymnr 6721 -- Ancient White Dragon
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
-#newspell 
-#name "Summon a White Dragon Egg"
-#descr "White dragons begin life in the egg stage, where they will remain for 6 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "White Dragon Eggs may be summoned under water."
-#school 0
-#researchlevel 2
-#path 0 2
-#pathlevel 0 1
-#fatiguecost 1000
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 6796 -- white dragon egg
-#restricted 205
-#restricted 206
-#restricted 208
-#restricted 213
-#restricted 220
-#restricted 223 -- Yuan-Ti
-#restricted 234
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
-
-
--- Shadow Dragon Mating Ritual
-#newspell 
-#name "Shadow Dragon Mating Ritual"
-#descr "Shadow dragons begin life in the egg stage, where they will remain for 2 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "Shadow Dragon mating rituals can only be performed by Young Adult, Mature, or Ancient Shadow Dragons and may be performed under water."
-#school 0
-#researchlevel 0
-#path 0 2
-#pathlevel 0 1
-#fatiguecost 300
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 7463 -- Shadow DRAGON EGG 
-#onlymnr 7466 -- Young Adult Shadow Dragon
-#onlymnr 7467 -- SHADOW DRAGON MATURE
-#onlymnr 7468 -- Ancient Shadow Dragon -- Ancient White Dragon
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
--- 
--- 
-
-
-#newspell 
-#name "Summon a Shadow Dragon Egg"
-#descr "Shadow dragons begin life in the egg stage, where they will remain for 2 turns. As they increase in XP (all units gain 1 XP per turn even when idle), they will grow from Hatchling, Juvenile, Young Adult, and eventually Mature into one of the greatest threats on Faerun."
-#details "Shadow Dragon Eggs may be summoned under water."
-#school 0
-#researchlevel 2
-#path 0 2
-#pathlevel 0 1
-#fatiguecost 1000
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 7463 -- Shadow DRAGON EGG 
-#restricted 205
-#restricted 206
-#restricted 208
-#restricted 213
-#restricted 220
-#restricted 223 -- Yuan-Ti
-#restricted 234
-#aispellmod 60
-#spec 8388608 -- uwok
-#end 
+#defcom1 7349 -- Half-elf Champion
+#defcom2 7002 	-- Yuirwood Ranger
+#defunit1 7001 	-- Free Spear Militia
+#defunit1b 56 	-- Royal Forester
+#defunit2 26 		-- Light Cavalry
+#defmult1 20 	
+#defmult1b 12 
+#defmult2 8 
 	
+#guardcom 7349 -- Half-elf Champion
+#guardunit 289
+#guardmult 15
+#wallcom 7006	
+#wallunit 55 		-- Longbowmen
+#wallmult 25 	-- 
 
-----------------------------------------------------------------------------
--------------------------------- FEY SUMMONS -------------------------------
-----------------------------------------------------------------------------
+---------- START SITES
 
--- 5093 -- Madcap
-#newspell 
-#name "Call a Madcap"
-#descr "Madcaps are murderous little fey gnomes. Capable in the arts of blood magic, Madcaps are created when Redcaps dip their hats in infernal blood, giving them greater control over wild magics and giving them the power to explode upon death."
-#school 6
-#researchlevel 3
-#path 0 8
-#pathlevel 0 2
-#fatiguecost 3600
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 5093 -- Madcap
-#restricted 205
-#restricted 206
-#restricted 220
-#restricted 222 -- Menzoberranzan
-#restricted 230 -- Llurth Dreir
-#restricted 231 -- Gracklstugh
-#restricted 232 -- Underspires of Drik Hargunen
-#restricted 234 -- Cairnheim
-#restricted 235 -- Maerimydra
-#restricted 238 -- Scoured Legion
+#startsite "Palace of the Simbul"
+#startsite "The Cedar Forest"
+#startsite "Elusive Lights"
+#startsite "Waterfall"
+
 #end 
 
--- 5092 -- Redcap
-#newspell 
-#name "Call a Troupe of Redcaps"
-#descr "Redcaps are murderous little fey gnomes who have to dip their hats in blood every three days or cease to exist. They make excellent little blood mages but do cause quite a stir to the local population. Their magical nature allows them to easily accept the blessings of your god."
-#school 6
-#researchlevel 3
-#path 0 8
-#path 1 6
-#pathlevel 0 2
-#pathlevel 1 1
-#fatiguecost 1000
-#effect 10001 -- troops
-#nreff 1005 -- 5 +1 per level
-#onlyowndst 1
-#damage 5092 -- Redcap
-#restricted 205
-#restricted 206
-#restricted 220
-#restricted 222 -- Menzoberranzan
-#restricted 230 -- Llurth Dreir
-#restricted 231 -- Gracklstugh
-#restricted 232 -- Underspires of Drik Hargunen
-#restricted 234 -- Cairnheim
-#restricted 235 -- Maerimydra
-#restricted 238 -- Scoured Legion
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\aleaxtis.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+--------------------------ALEAXTIS -- INCOMPLETE------------------------------
+------------------------------------------------------------------------------
+
+#selectnation 240 -- ALEAXTIS
+#era 2
+#name "Aleaxtis"
+#epithet "Twilight of Sekolah"
+#brief "Aleaxtis is the realm of the sahuagin, the Sea-devils, the children of the shark-god, Sekolah. They stalk the deeper reaches of the inner Sea of Fallen Stars as well as the coastal Sea of Storms, near Baldur's Gate."
+#descr "The insufferably self-righteous members of the so-called Nantarn Alliance can be tolerated no more. Their rules and mores have plagued the sahuagin for milennia, suspending them when they see fit and using them to drive out those they deem 'undesirable.' No more. Sekolah has opened his maw, and brought forth Iakhovas into the seas once again. He Who Swims With Sekolah. Even now, the immortal Iakhovas churns the deep waters, forging pacts in the dark with the Morkoths, Merrow and Koalinth. Soon the hubris of Nantarn's Sharksbane Wall will be revealed and our blood lust will be sated. 
+
+Aleaxtis is the realm of the sahuagin, the Sea-devils, who stalk the deeper reaches of the Sea of Fallen Stars. Long-held in check by the more 'civilized' nations of the inner sea, the sahuagin are intent to permanently alter the balance of power that has existed there for more than 10,000 years. 
+
+There will be no shortage of enemies in the long term - in addition to a scattered powerbase in the Sea of Fallen Stars, Aleaxtis maintains a fin in the Sea of Storms just off the coast of Baldur's Gate. These open seas lack the organized political structures of the inner sea, and that gives Aleaxtis an opportunity to expand uncontested there, at least for a time. The Kraken Society holds many provinces but seems wary to expand. Waterdeep has alliances with Merfolk and Aquatic Elves that could bring trouble, eventually. The Kuo-toa of Sloopdilmonpolop spreads their madness through the nearby, interconnected underdark, and will bubble up at some point. And so too does the Abolethic Sovereignty stir from the Glimmersea, far beneath the Sea of Fallen Stars. For now, however, the focus must be on vengeance against the Nantarn Alliance and the dawning of the 12th Serôs War." 
+#summary "The amphibious, bloodthirsty sahuagin are the core of the nation. Cheap labs and temples allow for unique recruitment options outside of forts, however, those forts are going to be costly. A ritual fort will help. The strange morkoth make powerful allies in the darkest depths, where even the deep-sea dwelling sahuagin dare not go. Plenty of commanders take slaves, filling the ranks with chaff to chum the waters. The quasi-deity, Iakhovas, leads the way."
+#flag "ForgottenRealms/flag_aleaxtis.tga"  
+#templepic 1 -- Under Water
+#fortera 0 -- pallisades only
+#uwnation
+#homefort 7
+#buildfort 3
+#labcost 300
+#templecost 300
+#color 0.61 0.63 0.92
+
+#addgod 8050 -- Temple of Sekolah
+#cheapgod40 8050
+
+#startcom 7588 -- Sahuagin Shark-Knight Commander
+#startunittype1 7575 -- Sahuagin Hunter - Watershape
+#startunitnbrs1 20
+#startunittype2 7587 -- Sahuagin Shark-Knight 
+#startunitnbrs2 8
+
+#startscout 7574 -- Priestess of Sekolah -- Watershape
+
+#addrecunit 7575 -- Sahuagin Hunter - Watershape
+#addrecunit 7572 -- Sahuagin Guard -- Watershape
+#addrecunit 7577 -- Sahuagin Baron -- Watershape
+#addrecunit 7587 -- Sahuagin Shark-Knight
+
+#addreccom 7576 -- Sahuagin Raidmaster -- Watershape
+#addreccom 7588 -- Sahuagin Shark-Knight Commander
+#addreccom 7574 -- Priestess of Sekolah -- Watershape
+#addreccom 7582 -- Sahuagin Shark-Tamer -- Watershape
+#addreccom 7590 -- Wereshark
+#addreccom 7579 -- Sahuagin Prince -- Watershape
+#addreccom 7600 -- Morkoth Mage
+
+
+#landrec 1918 -- Salty Sea Dog
+#landrec 7298 -- Sea Dog Swashbuckler
+#landrec 7299 -- Sea Dog Deadeye
+#landcom 7301 -- Pirate Lord
+
+#coastrec 1918 -- Salty Sea Dog
+#coastrec 7298 -- Sea Dog Swashbuckler
+#coastrec 7299 -- Sea Dog Deadeye
+#coastrec 564 -- Scrag
+#coastrec 7524 -- Koalinth Soldier
+#coastrec 7525 -- Koalinth Sergeant 
+
+#coastcom 7301 -- Pirate Lord
+#coastcom 7555 -- Koalinth General
+#coastcom 7590 -- Wereshark
+#coastcom 7526 -- Koalinth Shaman
+#coastcom 7562 -- Scrag Shaman
+
+
+#driprec 7598 -- Morkoth
+#driprec 7599 -- Morkoth Warrior
+#driprec 7561 -- Vodyanoi -- Aquatic Umberhulk
+#dripcom 7603 -- Morkoth Captain
+#dripcom 7600 -- Morkoth Mage
+
+#deeprec 7598 -- Morkoth
+#deeprec 7599 -- Morkoth Warrior
+#deeprec 7566 -- Merrow Behemoth
+#deepcom 7603 -- Morkoth Captain
+
+#searec 7567 -- Merrow Behemoth
+#searec 7524 -- Koalinth Soldier
+#searec 564 -- Scrag
+#seacom 7569 -- Merrow Chieftain
+#seacom 7555 -- Koalinth General
+#seacom 7526 -- Koalinth Shaman
+#seacom 7562 -- Scrag Shaman
+
+
+-- LAND PROVINCE DEFENCE
+#defcom1 7301 -- Pirate Lord
+#defcom2 7555 -- Koalinth General
+#defunit1 1918 -- Salty Sea Dog
+#defmult1 20
+#defunit1b 7299 -- Sea Dog Deadeye
+#defmult1b 10
+#defunit2 7525 -- Koalinth Sergeant 
+#defmult2 10
+
+-- LAND WALL DEFENCE
+#guardcom 7555 -- Koalinth General
+#guardunit 7524 -- Koalinth Soldier
+#guardmult 20
+#wallcom 7301 -- Pirate Lord
+#wallunit 7299 -- Sea Dog Deadeye
+#wallmult 20	
+
+-- UW PROVINCE DEFENCE
+#uwdefcom1 7576 -- Sahuagin Raidmaster -- Watershape
+#uwdefcom2 7588 -- Sahuagin Shark-Knight Commander
+#uwdefunit1 7575 -- Sahuagin Hunter - Watershape
+#uwdefmult1 16
+#uwdefunit1b 7572 -- Sahuagin Guard -- Watershape
+#uwdefmult1b 8
+#uwdefunit2 7587 -- Sahuagin Shark-Knight 
+#uwdefmult2 12
+
+--UW WALL DEFENCE
+#uwguardcom 7576 -- Sahuagin Raidmaster -- Watershape
+#uwguardunit 7575 -- Sahuagin Hunter - Watershape
+#uwguardmult 16
+#uwwallcom 7574 -- Priestess of Sekolah -- Watershape
+#uwwallunit 7572 -- Sahuagin Guard -- Watershape
+#uwwallmult 12	
+
+---------- START SITES
+
+#startsite "Canyon of Aleaxtis" -- THRONELOC
+
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\amn.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+-----------------AMN-------------------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 217
+#era 2
+#name "Amn"
+#epithet "The Merchant's Domain"
+#brief "Amn , also known as the Merchant's Domain, was a tremendously wealthy nation in West Faerûn. Amn held colonies far away in Maztica and controlled important trade routes to Calimshan and Baldur's Gate as well as colonial ports in the Moonshaes and Chult. "
+#descr "Amn's population was mostly human with a large minority population of halflings. The country's natural resources and wealth, combined with its mercantile nature, led Amn to become one of the most important and influential trading centers throughout Faerûn. The crowning jewel of this powerful state was the capital city of Athkatla, often called the 'City of Coin.'
+
+Amn was ruled by the Council of Six, organized by the secretive wizard Thayze Selemchant. The anonymous Councilmemebers oversaw all trade and military movements of the nation, and upheld the law restricting the use of magic in the realm. Only those wizards who had the patronage of one of the Council of Six, could practice their art. 
+
+Divine magic, however, had no such restrictions. Waukeen was the premier deity and enjoyed many temples throughout the nation. Chauntea, Selune, Helm and Ilmater also enjoyed more limited patronage. However, amongst these deities of harmony, Cyric, Bane, Myrkul, and Bhaal also had numerous followers in Amn, particularly among the Shadow Thieves."
+#summary "You have outstanding spies and assassins, spellcasters who are unaffected by Magical Drain scales, and a competent military. Sailing is a key feature of your commanders as well. Your far flung colonial holdings will bring you into conflict with many rivals. Will your powerful economy be enough to maintain it? Both Luskan in the northwest and part of the lucrative Moonshae Isles to your due west are in your possession. Expand wisely."  
+#flag "ForgottenRealms/flagsamn.tga"
+#templepic 9 -- Cathedral
+#fortera 3 -- Castle standard era 2
+#homefort 14 -- Great Walled City
+#buildfort 12
+#builduwfort 6
+#labcost 400
+#templecost 300
+#color 0.0 0.0 0.4
+
+#addgod 8001
+#addgod 5002
+#addgod 5012 -- WAUKEEN 3
+
+#addgod 5033 -- Cyric 2
+#addgod 5017 -- Mask 2
+#addgod 5026 -- Umberlee 2
+
+#addgod 486 -- Great Warlock
+#addgod 862 -- Vampire Queen
+
+
+#cheapgod20 5002 
+#cheapgod20 5012 
+
+#startcom 7033 		-- Cowled Wizard
+#startunittype1 7290 -- Amnian Light Infantry
+#startunittype2 7293 -- Amnian Steel
+#startunitnbrs1 20
+#startunitnbrs2 10
+
+#startscout 7035 -- Shadow Thief
+
+#addrecunit 7290 -- Amnian Light Infantry
+#addrecunit 7293 -- Amnian Steel
+#addrecunit 7291 -- Amnian Archer
+#addrecunit 7292 -- Amnian Pike
+#addrecunit 7295 -- Amnian Light Cavalry 
+#addrecunit 7296 -- Amnian Mounted Archer
+#addrecunit 7297 -- Amnian Heavy Cavalry 
+
+#coastrec 7298 -- Sea Dog Swashbuckler 
+#coastrec 7299 -- Sea Dog Deadeye
+#coastcom 7301 -- Pirate Lord 
+
+#addreccom 427		-- Spy
+#addreccom 7300 	-- Amnian Mounted Commander 
+#addreccom 870 		-- Sea Captain
+#addreccom 6703 	-- Cleric of Waukeen
+#addreccom 7033 	-- Cowled Wizard
+
+
+#defcom1 7300 	-- Amnian Mounted Commander 
+#defcom2 7033 	-- Cowled Wizard
+#defunit1 7290 -- Amnian Light Infantry
+#defunit1b 7291 -- Amnian Archer
+#defmult1 20 	
+#defmult1b 20 
+#defunit2 7293 -- Amnian Steel
+#defmult2 10
+#defunit2b 7295 -- Amnian Light Cavalry 
+#defmult2b 10
+
+---------- DEFENCES
+#guardcom 7300 	-- Amnian Mounted Commander 
+#guardunit 7292 -- Amnian Pike
+#guardmult 20
+#wallcom 870 -- Sea Captain
+#wallunit 7291 -- Amnian Archer
+#wallmult 20 	
+
+---------- START SITES
+
+#startsite "Goldspires" 
+#startsite "Shadow Thieves Council"
+#startsite "Council of the High Houses" 
+#startsite "Wave District" 
+
+
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\ao.dm
+------------------------------------------------------------------------------------------------------------------
+
+#selectnation 242
+#era 2
+#name "Ao"
+#epithet "The Observer"
+#brief "For observers, debuggers, and cheaters."
+#descr "Ao was the Overgod and embodiment of The Balance. The being appeared only once, during the Time of Troubles. Kicked off in 1358 DR by Bane, Bhaal, and Myrkul when they conspired to steal the Tablets of Fate, which governed apotheosis, Ao forced all the gods to walk the realms in their mortal avatar forms until the Tablets were returned. Several major deities died during the Time of Troubles and a handful of mortals rose to divinity. 
+
+This nation is merely for watching games in the background. It is located in the Mother of Mists, in the southern Trackless Sea west of Lantan, and has no connections or otherwise interact with the game. " 
+#summary "This nation does not interact with the FR Mod Map in any way, neither with troops nor with the spread of its dominion."
+#flag "ForgottenRealms/flag_ao.tga"  
+#templepic 1 -- Under Water
+#fortera 2 -- pallisades only
+#homefort 3
+#buildfort 3
+#aiholdgod
+#color 0.01 0.03 0.02
+
+#viewallprov
+#viewallbat
+
+#addgod 8000 -- Mystra
+#addgod 5006 -- Chauntea
+#addgod 5004 -- Light of Lathander
+#addgod 5005 -- Statue of Selune
+#addgod 5007 -- Statue of Tyr
+#addgod 5008 -- Statue of Torm
+#addgod 5009 -- Statue of Ilmater
+#addgod 5012 -- Waukeen
+#addgod 5020 -- Gond 
+#addgod 5029 -- Helm
+#addgod 5030 -- Tymora
+
+#addgod 8001 -- BANE
+#addgod 5002 -- BHAAL
+#addgod 5003 -- Myrkul
+#addgod 5021 -- Shar
+#addgod 5016 -- Loviatar
+#addgod 5010 -- Malar
+#addgod 5025 -- Talos 
+#addgod 5013 -- Gruumsh
+#addgod 5015 -- Tempus
+#addgod 8050 -- Temple of Sekolah
+
+#addgod 7492 -- Corellon's Shrine 4 
+#addgod 7495 -- Labelas Shrine 4 
+#addgod 7494 -- Moonbow Shrine 4 
+
+#addgod 8051 -- TEMPLE OF DEEP SASHELAS
+
+#addgod 7338 -- The Undying Temple
+#addgod 7198 -- Statue of Dumathoin
+#addgod 7199 -- Statue of Barronar
+#addgod 7200 -- Statue of MORADIN
+#addgod 7241 -- Statue of Ladaguer
+
+#addgod 7171 -- Lolth -- PRETENDER
+#addgod 7215 -- Ghaunadaur 
+#addgod 7176 -- Eilistraee 
+#addgod 7213 -- Vhaeraun
+#addgod 7214 -- Kiaransalee
+
+#addgod 5032 -- Blibdoolpoolp 
+#addgod 8053 -- Primordial Father 
+#addgod 8049 -- Demogorgon
+#addgod 5026 -- Umberlee
+#addgod 7367 -- Pisaethces
+#addgod 7374 -- The Shape of Water
+#addgod 5048 -- Great Elder Brain
+
+#addgod 7346 -- Soneillon 3
+#addgod 5036 -- Asmodeus 2
+#addgod 7052 -- Grazzt 2
+#addgod 5017 -- Mask 
+#addgod 5031 -- Orcus
+#addgod 5033 -- Cyric 2
+#addgod 5035 -- Moander -- PRETENDER
+
+#addgod 5037 -- Silvanus
+#addgod 5018 -- Mielikki
+#addgod 5023 -- Oghma 2
+#addgod 5027 -- Valkur
+#addgod 5019 -- Corellon, First of the Seldarine
+
+#addgod 7178 -- Merrshaulk
+
+#addgod 7265 -- Zuggtmoy - PRETENDER
+#addgod 7266 -- Psylofyr - PRETENDER
+
+#addgod 5043 -- Unthalass -- the Great Ziggurat
+#addgod 5014 -- Ubtao
+#addgod 5042 -- city of the eternity
+
+#addgod 957 -- Nobanion 
+#addgod 6876 -- Gilgeam
+#addgod 6890 -- Horus-Re
+#addgod 6923 -- TCHAZZAR
+
+#addgod 5038 -- Savras
+#addgod 5039 -- Azuth 
+#addgod 5041 -- Great Netyarch 
+#addgod 5028 -- Great Bara of Ubtao
+#addgod 486 -- Great Warlock
+#addgod 862 -- Vampire Queen
+#addgod 7287 -- Velsharoon 
+#addgod 3473 -- Genie
+
+#startcom 7076 -- Sword Archon
+#startunittype1 7074 -- Hound Archon
+#startunitnbrs1 20
+
+#startscout 7075 -- Warden Archon
+
+-- LAND PROVINCE DEFENCE
+#defcom1 7075 -- Warden Archon
+#defcom2 7076 -- Sword Archon
+#defunit1 7074 -- Hound Archon
+#defmult1 20
+#defunit1b 7073 -- Lantern Archon
+#defmult1b 10
+#defunit2 7332 -- Gold Dragon
+#defmult2 10
+
+-- LAND WALL DEFENCE
+#guardcom 7076 -- Sword Archon
+#guardunit 7074 -- Hound Archon
+#guardmult 20
+#wallcom 7076 -- Sword Archon
+#wallunit 7073 -- Lantern Archon
+#wallmult 20
+
+#startsite "The Records of Mankind"
+
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\auramycos.dm
+------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------
+----------------------- Auramycos----------------------------
+-------------------------------------------------------------
+#selectnation 233
+#era 2
+#name "Auramycos"
+#epithet "The Inexorable Growth"
+#brief "Araumycos was a huge life form, a single organism that covered almost all the parts of the Underdark beneath the High Forest"
+ 
+#descr "The dwarves of ancient Ammarindar told of how their mines located in the region beneath the High Forest were abandoned to the slow, inexorable growth of Araumycos - The Great Fungus. The elves had legends that dated back farther still, linking the birth of Araumycos to the fell sorceries of the Vyshaantar Empire, but so little was known of that era, even among the long memories of the elves, that no origin could be conclusively determined. Araumycos was thought by some to be the oldest living creature on Toril; even the gods did not speak of it, and divine divinations regarding the titanic fungus always failed. Some believed that the creature was an avatar of Psilofyr, the lord of the myconid, but this was only a theory.
+
+The entire landscape was sentient. Referring to itself as 'King Araumycos', it brought millions of myconids under its domination, and tried to do the same with any sentient creature within hundreds of miles through strange nightmare-dreams (which the drow called golhyrrl' fhaazht or 'the Dream Trap') that spoke of the comfort of the mass and the hopeless chaos of individuality.
+
+But, while the slow and nonviolent spread of Auramycos was counted in miles per milennia, a more sinister rot was emerging from the heart of The Great Fungus - the Lady of Rot and Decay, Zuggtmoy, the Demon Queen of Fungi had also awoken sometime around the mid 1300s DR. Her aims were malevolent and her ambitions were to spread her mycelial network across the whole of Faerun."  
+
+#summary "This is a bizarre nation, perhaps best left in the hands of the ai. All of your myconid units suffer from homesickness, losing a percentage of their health each turn they spend away from the province from which they were born. You have no foreign recruitment, and very limited anywhere you have built a fort - not that your bramble forts are much worth building anyway. Your influence, however, extends well beyond Auramycos."  
+#flag "ForgottenRealms/flag_myconids.tga"
+#templepic 31 -- cave fort
+#fortera 1
+#homefort 10 -- bramble fort
+#cavenation 2
+#buildfort 28
+#noforeignrec
+--#defdeath 5
+
+#color 0.025 0.75 0.05
+
+#addgod 7265 -- Zuggtmoy - PRETENDER
+#addgod 7266 -- Psylofyr - PRETENDER
+
+
+#startcom 7260 -- Myconid Sovereign Firstshape
+
+#addreccom 7260 -- Myconid Sovereign Firstshape
+#addreccom 7261 -- Myconid Sovereign Firstshape
+
+#addforeignunit 7253 -- Golden Grisette Sprout 
+#addforeignunit 7252 -- Scourgecap Sprout
+#addforeignunit 7251 -- Slimy Dapperling Sprout 
+#addforeignunit 7250 -- Tawny Webcap Sprout
+#addforeignunit 7249 -- Danger Bell Sprout
+#addforeignunit 7248 -- Panthercap Sprout
+#addforeignunit 7262 -- Myconid Guardian Mushrend
+#addforeignunit 7263 -- Myconid Guardian Venomcap
+#addforeignunit 7264 -- Myconid Guardian Greeneye
+
+#addforeigncom 7256 -- Myconid Circle Leader -- (a) Blood
+#addforeigncom 7257 -- Myconid Circle Leader -- (c) Astral
+#addforeigncom 7258 -- Myconid Circle Leader -- (f) Nature
+
+
+#defcom1 -13010 -- Myconid Guardian Firstshape
+#defcom2 -13009 -- Myconid Circle Leader Firstshape -- (a, c, f,)
+#defunit1 -13007 -- Myconid Sprout Firstshape
+#defmult1 20
+#defunit1b -13007 -- Myconid Sprout Firstshape
+#defmult1b 20
+#defunit2 -13010 -- Myconid Guardian Firstshape
+#defmult2 5
+
+---------- DEFENCES
+#guardcom 7254 -- Myconid Guardian Firstshape
+#guardunit 7247 -- Myconid Sprout Firstshape
+#guardmult 15
+#wallcom 7255 -- Myconid Circle Leader Firstshape -- (a, c, f,)
+#wallunit 7247 -- Myconid Sprout Firstshape
+#wallmult 10	
+
+---------- START SITES
+#startsite "Cavern of Ancient Mushrooms"
+#startsite "Glowing Caverns"
+#startsite "Mushroom Forest"
+
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\baldurs-gate.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+-----------------BALDURS GATE-------------------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 218
+#era 2
+#name "Baldur's Gate"
+#epithet "Gray Harbor"
+#brief "Baldur's Gate, also called simply the Gate, was the largest metropolis and city-state on the Sword Coast. It was a crowded city of commerce and opportunity, perhaps the most prosperous and influential merchant city on the western coast of Faerûn. Despite its long-standing presence as a neutral power, the leaders of Baldur's Gate were members of the Lords' Alliance of powers in the west."
+#descr "Baldur's Gate, also called simply the Gate, was the largest metropolis and city-state on the Sword Coast. It was a crowded city of commerce and opportunity, prosperity and influence.  Despite its long-standing presence as a neutral power, the leaders of Baldur's Gate were members of the Lords' Alliance along with Waterdeep and Silverymoon among others.
+
+The strong peace-keeping force known as the Watch, along with the presence of the powerful Flaming Fists mercenary company, kept the city generally peaceful and safe. This inherent sense of security allowed the Gate to keep a tolerant and welcoming attitude towards outsiders, whether they were wealthy merchants, poor refugees or even less-scrupulous individuals such as pirates, thieves, and smugglers. These varying influences gave it the reputation of a viper's pit of schemes and schemers.
+
+The Flaming Fists began operating in Baldur's Gate in the early 14th century DR. In the Year of the Banner, 1368 DR, the Bhaalspawn Sarevok Anchev orchestrated a major conspiracy to send the city to war with Amn. The plan failed and within two years all Bhaalspawn were killed due to the actions of the future Grand Duke, Abdel Adrian."
+#summary "Coastal provinces will yield a strong income. Resources are vital for your heavily armored troops. You have access to many clerics in the capital and druids from nearby Cloakwood, but a lack of research mages makes securing nearby Candlekeep a priority. The merfolk make important underwater allies."  
+#flag "ForgottenRealms/flagbaldursgate.tga"
+#templepic 9 -- Cathedral
+#fortera 2 -- Castle standard era 2
+#homefort 14 -- Great Walled City
+#buildfort 12
+#uwbuild 1
+#builduwfort 5
+#labcost 400
+#templecost 300
+#color 0.4 0.4 0.6
+
+#addgod 5007 -- Tyr
+#addgod 5008 -- Torm
+#addgod 5009 -- Ilmater
+#addgod 5029 -- Helm 3
+#addgod 5004 -- LATHANDER 4
+#addgod 5016 -- Loviatar 3
+#addgod 5048 -- Great Elder Brain
+
+#addgod 5020 -- Gond 2
+#addgod 5030 -- Tymora 2
+#addgod 5027 -- Valkur 2
+#addgod 5026 -- Umberlee 2
+#addgod 5038 -- Savras 1
+
+
+#startcom 7134 			-- Flaming Fist Blaze
+#startunittype1 5046	-- Bald Levy
+#startunittype2 5110 	-- Bald Pike
+#startunitnbrs1 20
+#startunitnbrs2 10
+
+#startscout 6614 		-- Harper Agent
+
+#addrecunit 5046 -- Baldurian Levy
+#addrecunit 5110 -- Baldurian Pikeneer
+#addrecunit 24 -- Light Cav
+
+#addreccom 6614 -- Harper Agent
+#addreccom 870 	-- Captain
+#addreccom 44 	-- Mounted Commander
+#addreccom 6754 -- Field Wizard
+#addreccom 7040 -- Gondar Wonderbringer
+#addreccom 7008 -- Trueblade of Torm
+#addreccom 5044 -- TYMORAN CLERIC
+
+#uwrec 7518 -- Merfolk Militia
+#uwrec 7623 -- Merfolk Skirmisher
+#uwrec 7519 -- Merfolk Soldier
+#uwrec 7625 -- Merfolk Crossbowman 
+#uwcom 7520 -- Merfolk Commander
+#uwcom 8021 -- Mermaid Bard
+#uwcom 8020 -- Merfolk Prince
+#uwcom 7534 -- Mermaid Wavekeeper
+
+
+#defcom1 870 -- Captain
+#defcom2 44  -- Mounted Commander
+#defunit1 29 -- Light Inf
+#defunit1b 32 -- Plate Archer
+#defmult1 20 	
+#defmult1b 20 
+
+---------- DEFENCES
+#guardcom 7134
+#guardunit 5110
+#guardmult 15
+#wallcom 870 -- Captain
+#wallunit 32 -- Plate Archer
+#wallmult 20 	
+
+-- UW PROVINCE DEFENCE
+#uwdefcom1 7520 -- Merfolk Commander
+#uwdefcom2 8020 -- Merfolk Prince
+#uwdefunit1 7623 -- Merfolk Skirmisher
+#uwdefmult1 16
+#uwdefunit1b 7519 -- Merfolk Soldier
+#uwdefmult1b 10
+#uwdefunit2 7625 -- Merfolk Crossbowman
+#uwdefmult2 14
+
+--UW WALL DEFENCE
+#uwguardcom 7520 -- Merfolk Commander
+#uwguardunit 7519 -- Merfolk Soldier
+#uwguardmult 20
+#uwwallcom 7520 -- Merfolk Commander
+#uwwallunit 7625 -- Merfolk Crossbowman 
+#uwwallmult 16	
+
+---------- START SITES
+
+#startsite "Twin Songs" -- temple district
+#startsite "High Hall" -- council seat
+#startsite "Gray Harbor" -- busy port
+#startsite "Seatower of Balduran" -- Home of the Flaming Fists 
+
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\cairnheim.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------- CAIRNHEIM-------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+#selectnation 234
+#era 2 		
+#name "Cairnheim"
+#epithet "Realm of the Undead Giants"
+#idealcold 0
+#brief "Cairnheim was ruled by the Dodkong, or Deathking, and his council of Dodforerir, or 'Death Chiefs.' Both the king and the Dodforerir were all cairns, stone giant liches. Each of the Dodforerir were raised from the dead by the Dodkong through the unholy powers of The Crown of Obadai."
+#descr "Being of the kingdoms that made up the ancient empires of Ostoria and Nedeheim, Cairnheim controlled the Giant's Run Mountains. Over the centuries, it carved great roads and stairs through its peaks, as well as tremendous halls within the Underdark.
+
+It was one of the giant kingdoms that warred with the ancient dragon kingdoms during the Dawn Age and was also one of the few fragment kingdoms that survived past Ostoria's fall. It eventually came into a conflict with the dwarves of High Shanatar during their golden age. It fell apart around -5350 DR, disappearing into ruins but not fogotten by the giants who clung to survival in the surrounding landscape.
+
+In -160 DR, a stone giant lich by the name of Grugaran came to the Giant's Run Mountains with the crown of Obadai, the legendary crown of Faerûn's first stone giant. Bolstered by its dark powers, Grugarin declared himself Dodkong. He gathered the stone giant clans together and bent them to his purpose. He called his new kingdom Cairnheim.
+
+Over time the Dodkong's realm grew. Slowly at first, by 1372 DR it had a sizeable population. More than a dozen minor clanholds of stone giants and hill giants acknowledged the Dodkong as their ruler. Several large tribes of goblins and orcs rallied around Cairnheim when called upon, and nearby human communities offered him tribute. Around this time some communities within the Underdark began to fear that Cairnheim might be preparing themselves to expand beyond their borders, noting a growing number of undead giants roaming the mountains and carving tunnels through the upperdark."
+
+#summary "The Dodkong himself is your most powerful asset. He bears the Crown of Obadai and with it has tremendous power over the undead. Twiceborned Stone Giants become Cairns, powerful liches capable of wreaking havoc and raising tremendous armies of the living dead. But not all of your assets are bones and the fettered dead. You can call on many other giants and monstrosities both on the surface and within the underdark." 
+#flag "ForgottenRealms/flag_cairnheim.tga"
+#templepic 8 -- Temple Ruins 
+#fortera 2 
+#homefort 18 -- Giant Citadel - Cloud Giants
+#buildfort 16
+#builduwfort 6
+#color 0.2 0.2 0.2
+
+#addgod 5003 -- Myrkul
+#addgod 7287 -- Velsharoon - Pretender
+
+#cheapgod20 7287 -- Velsharoon - Pretender
+
+#multihero1 6805 -- Cloud Giant
+#multihero2 6738 -- Fire Giant
+#multihero3 5106 -- Storm Giant
+#multihero4 1301 -- Frost Giant Elder
+#multihero5 7090 -- vampire bride
+#multihero6 5114 -- Alhoon
+
+
+
+#startcom 7277 			-- Dodforerir (free upkeep)
+#startunittype1 6807	-- Goblin Archers
+#startunittype2 6809	-- Stone Giant Maulers
+#startunitnbrs1 30
+#startunitnbrs2 12
+
+#startscout 430 	-- Black Harpy
+
+#wasterec 6724		-- Gnoll Hunters 
+#wasterec 6723 		-- Goblin Dogslicers
+#wastecom 6808 		-- Gnoll Chieftain
+#wastecom 6728 		-- Manticore
+
+#forestrec 6807		-- Goblin Archers
+#forestrec 6806 	-- Krenshar
+#forestrec 2219		-- Forest Troll from forests
+#forestrec 7071		-- owlbear
+#forestcom 2220 	-- Troll Shaman
+#forestcom 6770 	-- Goblin King
+#forestcom 6733 	-- Goblin Lab-Rats
+
+#mountainrec 6676	-- Orc Marauders
+#mountainrec 6802	-- Orc Greatbows
+#mountaincom 430 	-- Black Harpy
+#mountaincom 6737 	-- Orc Warlord
+#mountaincom 6801	-- Cleric Gruumsh
+
+#caverec 7081 -- Otyugh
+#caverec 7165 -- Umber Hulk
+#caverec 6842 -- Minotaur Brute
+#caverec 6809 -- Stone Giant Maulers
+#cavecom 6843 -- Minotaur Elder
+#cavecom 6810 -- Stone Giant Elder
+#cavecom 7086 -- Bull Priest
+#cavecom 7087 -- Hornblower of Baphomet
+
+#coastrec 7142		-- Sahuagin Hunter
+#coastrec 564		-- Sea Troll from coast
+#coastcom 7143		-- Sahuagin Raidmaster
+#coastcom 564		-- Sea Troll from coast
+
+#addrecunit 6807 	-- Goblin Archer
+#addrecunit 6723 	-- Goblin Dogslicers
+#addrecunit 6676	-- Orc Marauders
+#addrecunit 6773 	-- Goblin Wolfriders
+#addrecunit 7210	-- Ogre
+#addrecunit 6678	-- Hill Giant Reavers 
+#addrecunit 6675 	-- Frost Giant Mercenary
+#addrecunit 6809	-- Stone Giant Maulers
+
+#addreccom 430 		-- Black Harpy
+#addreccom 6737 	-- Orc Warlord
+#addreccom 310		-- Necromancer
+#addreccom 6772		-- Hill Giant Shaman
+#addreccom 6810		-- Stone Giant Elder
+#addreccom 6733		-- Goblin Lab Rat
+#addreccom 1301		-- Frost Giant Elder
+#addreccom 7286 	-- Dodforerir
+
+
+-- All other units are site-specific
+
+#defcom1 6810		-- Stone Giant Elder
+#defcom2 6810		-- Stone Giant Elder
+#defunit1 6723 		-- Goblin Dogslicers
+#defunit1b 6678		-- Hill Giant Reavers 
+#defunit2 6809		-- Stone Giant Maulers
+#defmult1 30 	
+#defmult1b 10 
+#defmult2 10
+---------- START SITES
+
+#startsite "Lifeless Lake"
+#startsite "Well of Yesterdays Waters"
+#startsite "Earth Blood Seepage"
+#startsite "Iron Tomb" 	
+#startsite "The Forgotten Crypt" 	
+
+
+---------- DEFENCES
+#guardcom 6810		-- Stone Giant Elder
+#guardunit 6809		-- Stone Giant Maulers
+#guardmult 10
+#wallcom 6810		-- Stone Giant Elder
+#wallunit 6802		-- Orc Greatbows
+#wallmult 20 		
 #end 
 
--------------------------------------------- Item-based Summons
 
-#newspell
-#name "Summon a Cryshal-Tirith"
-#descr "The profane artifact, Crenshinibon - the Crystal Shard - can construct a towering replica of itself to act as a defensive structure. The Cryshal-Tirith is nearly indestructible and will attempt to enslave the minds of any who attempt to draw near it."
-#school -1
-#researchlevel 0
-#path -1
-#pathlevel 0
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7207 -- crystal tower
-#spec 8388608 -- uwok
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\calimshan.dm
+------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+-- Calimshan
+---------------------------------------------------------------------------------
+
+#selectnation 203 -- can be any number from 200 up?
+#era 2 		
+#name "Kingdom of Calimshan"
+#epithet "Lands of Intrigue"
+#idealcold -1
+#brief "The history of the Calishites led them to have deeply rooted ties to the genies that had long since left the lands. The blood of these beings was said to still flow strongly among the Calishites, which sometimes manifested among them as exceptional skill in the arcane arts. Genasi comprised around half of the area's population, either enslaved or free. Magic users were highly held with Calimshan society and would often be sought after as teachers."
+#descr "The Kingdom of Calimshan is the oldest surviving human realm in Faerûn and today is but a remnant of it's once-vast holdings, which stretched as far north as the High Moors and as far east as the Great Rift of the Shaar, encompassing all of present-day Baldur's Gate, Amn, and Tethyr, parts of the Chultan Peninsula, the entire Lapalaayan coast, and most of the land north of Halruaa all the way to the Sea of Fallen Stars. Today's inhabitants trace their history to the arrival of the Djinn to the region in -7800 DR. These and other genie-kind brought with them human and halfling slaves from far-off Zakhara and drove the dragon and giant inhabitants from the land. While the genie masters of Calim were driven-off by internal wars and elven high magics, the human Calishites who remained clung on to their legacy to build a swelling mercantile empire of their own, steeped in magic and intrigue. 
+
+Checked by the elves of the northern forests and plagued by beholders, rakshasa, goblins, ogres, dragons, drow and dwarves for five millennia, it was only their own internal power-struggles that truly brought Calimshan to its knees. It fell back to its current borders in the decades following the defeat and disappearance of the despotic Necroqysar, the lich-emperor, Shoon VII in 450 DR. A thousand years later, Calimshan hangs on, rigidly hierarchical but largely decentralized. Amn, Baldur's Gate, and Waterdeep are perennial rivals, but Calimport, the nation's capital, is among the largest and wealthiest cities in all of Faerun. With newly-won colonial holdings, the Syl-Pasha and his generals' ambitions to reconstitute Calimshan's former glory has begun to draw fervent support among the populace."
+#summary "All the paths of magic are openly practiced in Calimshan, and you have broad access to the many faiths of Faerun. Coastal provinces bring extra income. Waukeen is the traditional patron deity, but you have access to many others. The reorganization of the military by the current Syl-Pasha gives you access to strong sacred troops from the capital." 
+#flag "ForgottenRealms/flag203.tga"
+#coastnation
+#templepic 5 -- India?
+#fortera 2 -- middle
+#homefort 14
+#buildfort 2
+#builduwfort 6
+#uwbuild 1
+#tradecoast 15
+#labcost 300
+#templecost 400
+#color 0.9 0.8 0.2
+
+#addgod 8001 -- BANE
+#addgod 5002 -- BHAAL
+#addgod 5003 -- Myrkul
+#addgod 5021 -- Shar 3
+#addgod 5016 -- Loviatar 3
+#addgod 5004 -- Light of Lathander
+#addgod 5005 -- Statue of Selune
+#addgod 5007 -- Statue of Tyr
+#addgod 5008 -- Statue of Torm
+#addgod 5009 -- Statue of Ilmater
+#addgod 5012 -- Waukeen
+
+#addgod 3473 -- Genie
+#addgod 5017 -- Mask 2
+#addgod 5026 -- Umberlee 2
+#addgod 5036 -- Asmodeus 2
+#addgod 5020 -- Gond 2
+#addgod 5030 -- Tymora 2
+
+#addgod 5038 -- Savras 1
+-- #addgod 486 -- Great Warlock
+-- #addgod 3059 -- Magister Supreme
+
+#cheapgod40 5012
+
+#startcom 6693			-- Syl-Pasha
+#startunittype1 6680 	-- Calishite Spearman
+#startunittype2 6682 	-- Calishite Archer
+#startunitnbrs1 20
+#startunitnbrs2 12
+
+#startscout 6690 	-- Calishite Scout
+
+#addrecunit 6680 	-- Calishite Spearman
+#addrecunit 6681 	-- Calishite Swordsman
+#addrecunit 6682 	-- Calishite Archer
+#addrecunit 7660 	-- Calishite Rider
+#addrecunit 7652 	-- Sadimmin Spearman
+#addrecunit 7653 	-- Sadimmin Swordsman
+
+#addreccom 6690 	-- Calishite Scout 
+#addreccom 7666 	-- Calishite Captain
+#addreccom 7667 	-- Calishite Cavalry Commander
+#addreccom 6695		-- Amlakkar Wizard
+#addreccom 6703		-- Cleric of Waukeen
+
+#plainrec 6680 	-- Calishite Spearman
+#mountainrec 6680 	-- Calishite Spearman
+#wasterec 6680 	-- Calishite Spearman
+#plainrec 6681 	-- Calishite Swordsman
+#mountainrec 6681 	-- Calishite Swordsman
+#wasterec 6681 	-- Calishite Swordsman
+#plainrec 6682 	-- Calishite Archer
+#mountainrec 6682 	-- Calishite Archer
+#wasterec 6682 	-- Calishite Archer
+#plainrec 7660 	-- Calishite Rider
+#mountainrec 7660 	-- Calishite Rider
+#wasterec 7660 	-- Calishite Rider
+
+#plaincom 6690 	-- Calishite Scout 
+#mountaincom 6690 	-- Calishite Scout 
+#wastecom 6690 	-- Calishite Scout 
+#plaincom 7666 	-- Calishite Captain
+#mountaincom 7666 	-- Calishite Captain
+#wastecom 7666 	-- Calishite Captain
+#plaincom 7667 	-- Calishite Cavalry Commander
+#mountaincom 7667 	-- Calishite Cavalry Commander
+#wastecom 7667 	-- Calishite Cavalry Commander
+#plaincom 7665	-- Calishite Conjurer
+#mountaincom 7665	-- Calishite Conjurer
+#wastecom 7665	-- Calishite Conjurer
+#plaincom 7664 	-- Calishite Master Conjurer
+#mountaincom 7664 	-- Calishite Master Conjurer
+#wastecom 7664 	-- Calishite Master Conjurer
+
+
+-- All other units are cap-only, site-specific
+
+#defcom1 7666 		-- Calishite Captain
+#defcom2 7667 		-- Calishite Cavalry Commander
+#defunit1 6680 		-- Calishite Spearman
+#defunit1b 6682 	-- Calishite Archer
+#defunit2 7660		-- Calishite Rider
+#defmult1 20 		-- how many 1st
+#defmult1b 10 		-- In ratio to 2nd
+#defmult2 15
+
+---------- START SITES
+
+#startsite "Fountain of the Qysars" 
+#startsite "Plaza of Divine Truth" 
+#startsite "Qysagghani Fortress" 
+#startsite "The Auret" 
+#startsite "Lighthouse of the Moon" 
+
+---------- DEFENCES
+#guardunit 6681 	-- Calishite Swordsman
+#guardcom 7667 		-- Calishite Cavalry Commander
+#guardmult 15
+#wallcom 7666 		-- Calishite Captain
+#wallunit 6682 		-- Calishite Archer
+#wallmult 15 		-- high
+#end 	
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\chessenta.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+-----------------------------CHESSENTA------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 213
+#era 2
+#name "Chessenta"
+#epithet "Heroic Confederacy"
+#brief "Chessenta was a confederation of city-states bound by common culture and mutual defense, but for most of its history wasn’t truly a unified nation and the Chessentan cities were often at war with one another. Chessenta was one of the so-called Old Empires of Faerûn."
+
+#descr "In 929 DR the city states of Chessenta, led by the war hero Tchazzar, drove the armies of Unther to the Riders to the Sky mountains, freeing Chessenta from Untheric rule. During Tchazzar's brief Chessentan Empire, the city of Cimbar was the capital. In 1018 DR, Tchazzar disappeared while fighting sahuagin and the people of Chessenta believed he had ascended to godhood. After Tchazzar's disappearance, the kingdom slowly broke apart into squabbling city states. To this day, these city-states do not accept a central governing body or ruler. The rulers of Cimbar, Akanax, and Mordulkin all claim to be the true Overlord of Chessenta and add this to their other titles. Such claims are meaningless, however. There are no regional divisions as city governments simply claim as much territory as they can reasonably govern and where territorial claims clash, there is frequently war. 
+
+The Chessentans themselves were a passionate people, always living to the fullest and never doing things half-way. Seen by outsiders as a drunken and riotous people, Chessentans had a well-earned reputation as fierce warriors and cunning tacticians. While they appreciated the fine arts and theatre, the culture of the Chessentans revolved around war and war heroes. Few nations in all Faerûn were as erudite in philosophy, astronomy, poetry, and history as Chessenta. Theatres and libraries were commonplace, and even in smaller cities such poetry and philosophy were practiced in public squares. Chessentans also loved sports and their athletic competitions were popular events, particularly wrestling, and almost every citizen had some skill at fighting. Chessenta’s sizable middle class controlled the country’s economy, with a government that encouraged prosperity for all, so tax revenues were high. 
+
+Tchazzar returned in 1373 DR to reestablish his kingdom. 
+"
+
+#summary "Tchazzar is not who the people believe him to be. He is, in fact, a dragon in disguise. And not just any dragon - he contains one of the three shards of Tiamat's soul which were split apart when Gilgeam, God-King of nearby rival Unther, slew the Goddess of Dragons. Tzchazzar is your greatest asset. Beyond his power, you will come to rely on your excellent soldiers - though they are few in number they are elite. You also have an excellent variety of spellcasting and melee commanders which you can put into small teams of adventurers and wreak havoc behind enemy lines. Like all Heroic Confederacies, your economy is vital to your success." 
+#flag "ForgottenRealms/flag213.tga"
+#templepic 0 -- Pyramid
+#fortera 3 -- Castle standard era 2
+#homefort 4 -- Citadel
+#buildfort 2
+#builduwfort 6
+#labcost 400
+#templecost 500
+#color 1.0 0.6 0.6
+
+#addgod 5004 -- LATHANDER 3
+#addgod 5012 -- Waukeen 3
+#addgod 5015 -- Tempus 3
+
+#addgod 5039 -- Azuth 1
+#addgod 6923 -- TCHAZZAR
+
+#cheapgod40 6923 -- Tchazzar
+
+#startcom 200 			-- Prince of the Old Empire 
+#startunittype1 199 	-- Cardaces
+#startunitnbrs1 30
+#startunittype2 1078	-- Chariots 
+#startunitnbrs2 10
+
+#startscout 431		-- Scout
+
+
+#addrecunit 199 	-- Cardaces
+#addrecunit 3184 	-- Hoplite
+#addrecunit 6858 	-- Mulan Bowman
+#addrecunit 7100	-- Corsair
+#addrecunit 1078 	-- Chariot
+
+#addreccom 431	 	-- Scout
+#addreccom 13		-- Hoplite Commander
+#addreccom 291		-- Inner Sea Captain
+#addreccom 200 		-- Prince of the Old Empire
+#addreccom 6912 	-- Mulan Adept
+#addreccom 7099 	-- Cultist of Tchazzar
+
+#defcom1 13			-- Hoplite Commander
+#defcom2 200 		-- Prince of the Old Empire
+#defunit1 199 		-- Cardaces
+#defunit1b 6858 	-- Mulan Bowman
+#defunit2 1078 		-- Chariot
+#defmult1 24 	
+#defmult1b 12 
+#defmult2 4 	
+
+---------- DEFENCES
+#guardcom 13
+#guardunit 3184
+#guardmult 15
+#wallcom 1076	-- Myrmidon Champion
+#wallunit 6858 	-- Mulan Bowman
+#wallmult 25 	-- 
+
+---------- START SITES
+
+#startsite "Palace of the Sceptanar"
+#startsite "The Akademeia of Cimbar"
+#startsite "Airspur"
+#startsite "Soorenar"
+
+#end 
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\cormyr.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+-----------------------------------------CORMYR----------------------------------------------
+------------------------------------------------------------------------------------------------
+
+#selectnation 204 
+#era 2 		
+#name "Cormyr"
+#epithet "Land of the Purple Dragon"
+#idealcold 0
+#brief "Cormyr is a land under threat. Skeptical of wizards due to recent events and generally frowning upon adventuring without an official license, you'll have to rely more on your tough armies and enlisted wizards than other nations - but you do have strong priests."
+#descr "As of 1372 DR, Cormyr was under threat from all sides and struggling to hold onto order. Nobles bickered over land rights, Sembian merchants and a Cult of the Dragon cell tried to gain a trading foothold, and there was a strong Zhentarim presence nearby. The City of Shade in the Anauroch Desert to the north and the ruins of Myth Drannor to the east both posed a threat.
+
+The country was also reeling from the effects of the Goblin War. Led by Nalavarauthatoryl, the Devil Dragon, who returned from the shadow demiplane of Grodd in which she'd been imprisoned nearly 1,000 years earlier. She had long held a blood fued with the ruling Obarskyr royal lineage of Cormyr, and King Azoun IV was forced to ride out to meet her. The cities of Arabel, Eveningstar, Tyrluk and settlements in the Stormhorns were all badly damaged in the conflict. Bandits inhabited the roads and orc and goblin armies inhabited the forests. 
+
+Though Azoun would never learn it before his death at the Devil Dragon's hands, it was his closest advisor and Master of the Council of Mages, Vangerdahast, who was responsible for the reawakening of Nalavarauthatoryl."
+#summary "You are a powerhouse, but to expand you'll first have to deal with the Goblin Wars and the Cult of the Dragon. Nearby provinces are overrun with powerful enemies, especially Eastern Cormyr, where the Devil Dragon has taken up residence. You have excellent infantry and cavalry. The War College provides outstanding mages, and clerics are common in nearby important cities. You'll also have flying cavalry and the famous Purple Dragon Knights to lean on." 
+#flag "ForgottenRealms/flag204.tga"
+#coastnation
+#aiholdgod
+#templepic 5 -- India?
+#fortera 3 -- middle
+#homefort 14
+#buildfort 2
+#builduwfort 6
+#labcost 500
+#templecost 300
+#color 0.8 0.4 0.6
+
+
+#addgod 5004 -- Light of Lathander
+#addgod 5005 -- Statue of Selune
+#addgod 5007 -- Statue of Tyr
+#addgod 5008 -- Statue of Torm
+#addgod 5009 -- Statue of Ilmater
+#addgod 5029 -- Helm
+#addgod 5015 -- Tempus
+#addgod 5006 -- Chauntea 4 
+#addgod 5012 -- WAUKEEN 3
+
+#addgod 5030 -- Tymora 2
+#addgod 5023 -- Oghma 2
+#addgod 5037 -- Silvanus 2
+
+#addgod 5039 -- Azuth 1
+-- #addgod 244 -- Arch Mage
+-- #addgod 251 -- Great Sage
+-- #addgod 2922 -- Morgen High Queen
+
+#cheapgod40 5008 -- Torm
+#cheapgod40 5029 -- Helm
+#cheapgod40 5009 -- Ilmater
+#cheapgod40 5007 -- Tyr 
+#cheapgod20  5030 -- Tymora
+
+#startcom 6749 -- Commander: Purple Dragon Lancelord
+#startunittype1 6741 	-- Blade
+#startunittype2 6742 	-- Swordmajor
+#startunitnbrs1 10
+#startunitnbrs2 10
+
+#startscout 6747 	-- Aide De Camp
+
+#addrecunit 6759 	-- Cormyrian Longbowman
+#addrecunit 6741 	-- Blade
+#addrecunit 6742 	-- Swordmajor
+#addrecunit 6743 	-- Guidon 
+#addrecunit 6744 	-- Purple Dragon Knight
+
+#addreccom 6745 	-- Royal Scout 
+#addreccom 6746		-- Lionar
+#addreccom 6749 	-- Purple Dragon Lancelord
+#addreccom 6751 	-- Cormyrian Battlepriest
+#addreccom 6760 	-- Cormyrian Bannerlord
+#addreccom 6754		-- Field Wizard
+
+
+-- All other units are cap-only or site-specific
+
+#defcom1 6746		-- Lionar
+#defcom2 6754		-- Field Wizard
+#defunit1 6741 		-- Blade
+#defunit1b 6742 	-- Swordmajor
+#defunit1c 6759		-- Cormyrian Longbowman
+#defunit2 6759 		-- Cormyrian Longbowman
+#defmult1 15 
+#defmult1b 10
+#defmult1c 10 
+#defmult2 20
+
+---------- START SITES
+
+#startsite "Castle Obarskyr" 
+#startsite "College of War Wizards" 
+#startsite "Shrines of Suzail" 
+#startsite "King's Forest" 
+#startsite "Citadel of the Purple Dragon" 
+
+---------- DEFENCES
+#guardunit 6741		-- Blade
+#guardcom 6746		-- Lionar
+#guardmult 20
+#wallcom 6746		-- Lionar
+#wallunit 6759 		-- Cormyrian Longbowman
+#wallmult 20 		-- 
+#end 	
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\corwell.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+-----------------Kingdom of Corwell---------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 221
+#era 2
+#name "Kingdom of Corwell"
+#epithet "Lords of the Moonshae Isles"
+#brief "Corwell was the first and oldest kingdom of the Ffolk within the Moonshaes Isles. It was founded by the hero Cymrych Hugh, who later became the first High King and moved his capital to Callidyrr."
+
+#descr "Corwell was the first and oldest human kingdom within the Moonshaes Isles located west of the Sword Coast and for a time, unified the major islands of Alaron and Gwynneth as well as the patchwork of smaller islands and archipelagos. The population was diverse, though dominated by humans who identified themselves ethnically as 'the Ffolk.' Halflings, dwarves, and elves were common in the Moonshaes, as were giants, fomorians, and their reclusive firbolg kin. Northlander reavers with ancestral ties to Luskan dominated the smaller islands and made constant raids on the more peaceful ffolk. On the island of Gwynneth sat the capital, Caer Corwell as well as Myrloch Vale, an important site for druids and fey that would later come to be the epicenter of major conflicts. 
+
+In 1345, Corwell was invaded by a an alliance of giants and northlanders in a conflict known as the Darkwalker Wars. The gods Bhaal and Malar hoped to unseat Chauntea, the Earthmother, from her dominion over the isles. Corwell stood no match for the invaders until the heroic Prince Tristan of House Kendrick and his lover, Robyn, the High Druid of Myrloch Vale, led a counterattack into the heart of the enemy and killed Kazgaroth, an avatar of Malar. Tristan was named High King and briefly united the Moonshaes under his banner. 
+
+Recent events, however, have seen the kingdom fall apart once again. At Myrloch Vale, an ancient city of elves has risen up from the waters through a portal to the Feywild. A Fey Queen, Ordalf, has claimed dominion over the whole of the Island. The Earthmother is silent and the Druids of the Vale have been turned to stone. All human inhabitants of Gwynedd have been banished - including those in the former capital city of Caer Corwell. Pushed back to the pallisades of Caer Callidyr to regroup, King Tristan is joined by his wife, Queen Robyn and their two daughters, unsure of the future."  
+
+#summary "The setting and characters of the very first Forgotten Realms novels and adventure packs makes their mod debut. Your goal, to re-unite the Moonshaes, will test you. Tough indies, foreign powers, reawakening threats, and internal divisions will require skill and luck to navigate. 
+Notable Units: Sacred Elven Cav, excellent nature access via your druids, strong heroes to start the game, a legendary sword to call your own, several national spells and summons."  
+#flag "ForgottenRealms/flag_corwell.tga"
+#templepic 30 -- Forest Gate
+#fortera 2 -- Castle standard era 2
+#homefort 2 -- Fortress (needing upgrade)
+#buildfort 3
+#builduwfort 6
+#labcost 300
+#templecost 300
+#color 0.5 0.8 0.3
+
+#addgod 5006 -- Chauntea 
+#addgod 5004 -- Light of Lathander
+#addgod 5018 -- Mielikki 2
+#addgod 5037 -- Silvanus 2
+
+#cheapgod40 5006 -- Chauntea 
+
+
+#startcom 5080 -- Princess Alicia
+#startunittype1 24 -- light cav
+#startunitnbrs1 11
+
+#startscout 2279 -- Scout
+
+#addrecunit 61 -- Folkspear
+#addrecunit 63 -- Callidyrr Tower Guards
+#addrecunit 2111 -- Man-at-arms
+#addrecunit 2455 -- Longbowman
+#addrecunit 24 -- light cav
+
+#addreccom 426 	-- Scout
+#addreccom 2113 -- Sergeant-at-arms
+#addreccom 46 -- mounted commander
+#addreccom 6938 -- Wildshape Druid
+
+#defcom1 2113 -- Sergeant-at-arms
+#defcom2 46   -- mounted commander
+#defunit1 61 -- Folkspear
+#defunit1b 2455 -- Longbowman
+#defunit2 24 -- light cav
+#defmult1 20 	
+#defmult1b 20 
+#defmult2 10
+
+---------- DEFENCES
+#guardcom 46 
+#guardunit 63
+#guardmult 15
+#wallcom 2113 -- Sergeant-at-arms
+#wallunit 2455 -- Longbowman
+#wallmult 20 	
+
+---------- START SITES
+
+#startsite "Castle Callidyrr"
+#startsite "Guild of Heroes"
+#startsite "Emerald Grove"
+#startsite "Mist Covered Highlands"
+
 #end
 
--- 7350 -- Dark Naga -- 525
-#newspell
-#name "Summon a Dark Naga"
-#descr "Dark Nagas are dangerous sorcerers like all members of their kind. They exhibit special leadeship qualities as both mentors and field commanders, bringing both research bonuses and troop morale boosts."
-#school 0
-#researchlevel 5
-#path 0 5
-#pathlevel 0 2
-#fatiguecost 4500
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7350 -- Dark Naga
-#notfornation 200 -- Waterdeep - Archons yes 
-#notfornation 201 -- Luiren 
-#notfornation 207 -- The Swamps of Chuult
-#notfornation 209 -- Halruaa 
-#notfornation 214 -- Aglarond 
-#notfornation 215 -- Impiltur 
-#notfornation 227 -- Dwarves of Deep Shanatar
-#notfornation 229 -- Dwarves of Old Bhaerynden
-#notfornation 218 -- Baldur's Gate
-#notfornation 221 -- Kingdom of Corwell
-#notfornation 216 -- Silverymoon / Silver Marches 
-#notfornation 204 -- Cormyr - Archons yes
-#notfornation 239 -- Nantarn Alliance
-#spec 8388608 -- uwok
-#end
 
--- 7351 -- Spirit Naga -- CR9 740
-#newspell
-#name "Summon a Spirit Naga"
-#descr "Spirit Nagas are the most wicked of all their kind. Powerful sorcerers, they abuse their immortality by rushing into conflict for the sheer joy of causing pain and death. They are equally excellent researchers and combatants."
-#school 0
-#researchlevel 45
-#path 0 8
-#pathlevel 0 3
-#fatiguecost 7500
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7351 -- Spirit Naga
-#notfornation 200 -- Waterdeep - Archons yes 
-#notfornation 201 -- Luiren 
-#notfornation 207 -- The Swamps of Chuult
-#notfornation 209 -- Halruaa 
-#notfornation 214 -- Aglarond 
-#notfornation 215 -- Impiltur 
-#notfornation 227 -- Dwarves of Deep Shanatar
-#notfornation 229 -- Dwarves of Old Bhaerynden
-#notfornation 218 -- Baldur's Gate
-#notfornation 221 -- Kingdom of Corwell
-#notfornation 216 -- Silverymoon / Silver Marches 
-#notfornation 204 -- Cormyr - Archons yes
-#notfornation 239 -- Nantarn Alliance
-#spec 8388608 -- uwok
-#end
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\cult-of-the-dragon.dm
+------------------------------------------------------------------------------------------------------------------
 
--- 7352 -- Guardian Naga -- CR10 810
-#newspell
-#name "Summon a Guardian Naga"
-#descr "Guardian Nagas are immortal. Dutifully protecting sacred sits, relics, and magical knowledge, many good and lawful-aligned deities considered these beings sacred and often employed Guardian Nagas throughout the planes to safeguard dangerous knowledge. They are the highest embodiment of their kind and serve only those who uphold justice and righteousness."
-#school 0
-#researchlevel 6
-#path 0 4
-#pathlevel 0 4
-#fatiguecost 6500
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7352 -- Guardian Naga
-#restricted 200 -- Waterdeep - Archons yes 
-#restricted 201 -- Luiren 
-#restricted 207 -- The Swamps of Chuult
-#restricted 209 -- Halruaa 
-#restricted 214 -- Aglarond 
-#restricted 215 -- Impiltur 
-#restricted 227 -- Dwarves of Deep Shanatar
-#restricted 229 -- Dwarves of Old Bhaerynden
-#restricted 218 -- Baldur's Gate
-#restricted 221 -- Kingdom of Corwell
-#restricted 216 -- Silverymoon / Silver Marches 
-#restricted 204 -- Cormyr - Archons yes
-#restricted 239 -- Nantarn Alliance
-#spec 8388608 -- uwok
-#end
+--------------------------------------------------------------------------
+-----------------Cult of the Dragon-------------------------------------------------
+--------------------------------------------------------------------------
 
--- 7353 -- Bone Naga -- CR4 80
-#newspell
-#name "Create Undead: Bone Naga Guardians"
-#descr "Bone Nagas are undead serpentine guardians, begrudgingly serving their creators as guardians and bodyguards. They retain enough of their memories and spellcasting from life to wield limited magic on the battlefield, but their true purpose lies in protecting that which their masters consider sacred."
-#school 4
-#researchlevel 3
-#path 0 5
-#pathlevel 0 2
-#fatiguecost 1200
-#effect 10001 -- summon commander
-#nreff 1005
-#damage 7353 -- Bone Naga
-#end
+#selectnation 220
+#era 2
+#name "Cult of the Dragon"
+#epithet "Wearers of Purple"
+#brief "Easily the most powerful faction at the start of the game. Your holdings will be spread wide, with 6 isolated provinces under your control and full access to dragons. Their research and expansion will test you if they are left under AI control - don't let them snowball."
 
--- 7354 -- Water Naga -- CR7 645
-#newspell
-#name "Summon a Water Naga"
-#descr "Water Nagas were created by the ancient sarrukh empire to explore the vast undersea realms of Faerun. They wield a wide array of magic and make excellent researchers and guardians."
-#school 0
-#researchlevel 5
-#path 0 2
-#pathlevel 0 3
-#fatiguecost 4800
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7354 -- Water Naga
-#spec 8388608 -- uwok
-#end
+#descr "The Cult of the Dragon was also known as the Followers of the Scaly Way and the Wearers of Purple. They were a a semi-religious evil organization venerating undead dragons, or dracoliches, founded by Sammaster, a powerful wizard and former Chosen of Mystra. Their belief was that dracoliches were destined to one day rule Faerûn and beyond and that it was their purpose to help this come to pass. They were considered to be a secret society or a beast cult, albeit an overly large and powerful one, and also as a mercantile and criminal enterprise.
 
--- 7355 -- Banelar Naga -- CR8 800
-#newspell
-#name "Summon a Banelar Naga"
-#descr "Banelar Nagas were created to serve the dark god Bane. Immortal, magestic, and deadly, they wield an array of magic and holy powers and make excellent researchers. They are unique among their kind in that they can wield weapons, rings, and other items from their tentacled beards."
-#school 0
-#researchlevel 5
-#path 0 5
-#pathlevel 0 3
-#fatiguecost 5700
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7355 -- Banelar Naga
-#restricted 202 -- Zhentarim 
-#restricted 203 -- Calimshan
-#restricted 210 -- THAY
-#restricted 217 -- AMN
-#restricted 220 -- Cult of the Dragon
-#restricted 223 -- Serpentes
-#restricted 238 -- Scoured Legion
-#end
+Although it was active all over Faerûn, particularly the Heartlands, the Cult of the Dragon was strongest in the North and the Cold Lands, where dragons were most common and most feared. In the mid–14th century DR, they were believed to have their base in the lands north of Thar, as this was the origin of the devastating Flight of Dragons in 1356 DR. In fact, they had no primary base or headquarters as of 1370 DR. But later, circa 1372 DR, fresh rumors spoke of a secret fortress or headquarters somewhere near the Battle of Bones in the Western Heartlands — and they spoke true, alluding to the citadel under construction over the Well of Dragons. This was to be their new headquarters."
 
--- 7372 -- Pillar of Pisaethces
-#newspell
-#name "Construct a Pillar of Pisaethces"
-#descr "These obelisks are built by the Abolethic Sovereignty in reverence to Pisaethces. Imbued with her alien symbols, they exude a psychic drone that brings madness to those nearby, drawing cultists and slaves to the deeps."
-#school 0
-#researchlevel 0
-#path 0 4
-#pathlevel 0 3
-#fatiguecost 1000
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7372 -- Pillar of Pisaethces
-#spec 8388608 -- uwok
-#restricted 225 -- Shape of Water
-#end
+#summary "You have plenty of wizards and many locations throughout Faerun. Despite your lack of native troops, you do, however, have DRAGONS. And you can summon more through rituals. Care for your precious eggs until they mature. Research and cast Twiceborn on your mature and ancient dragons to make them into Dracoliches when they die. If you can hang on long enough, you will BATHE the world in your balefire. In the meantime, you will have a wide range of recruitable wizards at your disposal along with very cheap labs. "  
+#flag "ForgottenRealms/flags_dragoncult.tga"
+#templepic 13 -- Eye of the Void
+#fortera 2 -- Castle standard era 2
+#homefort 4 -- Citadel
+#buildfort 2
+#builduwfort 6
+#labcost 200
+#templecost 400
+#color 0.0 0.2 0.0
 
--- 7375 -- Skum
-#newspell
-#copyspell 945
-#name "Create Skum"
-#descr "By releasing a grey viscous fluid from their skin, aboleths were capable of granting anyone caught in this cloud the ability to breathe underwater. However, the cloud also caused a transformation in those to weak to resist the cloud's mind-twisting power. The result was a permanent transformation into a membraneous creature called a skum, forever mentally enslaved to their aboleth creator."
-#details "Powerful aboleths are capable of releasing enormous clouds, enslaving additional skum with each casting. The spell can only be cast underwater."
-#school 0
-#researchlevel 0
-#path 0 4
-#path 1 2
-#pathlevel 0 3
-#pathlevel 1 3
-#fatiguecost 400
-#effect 10001 -- summon monster
-#nreff 2001
-#damage 7375 -- Skum
-#restricted 225 -- Shape of Water
-#end
+#addgod 8001 -- BANE 4
+#addgod 5033 -- Cyric 2
+#addgod 5003 -- Myrkul 4
+#addgod 5021 -- Shar
+#addgod 5025 -- Talos 3
+#addgod 5010 -- MALAR 3
+#addgod 7287 -- Velsharoon - Pretender
 
--- 7382 -- Xxiphu Ascendent
-#newspell
-#name "Raise the Obelisk of Xxiphu"
-#descr "These obelisks are built by the Abolethic Sovereignty in reverence to Pisaethces. Imbued with her alien symbols, they exude a psychic drone that brings madness to those nearby, drawing cultists and slaves to the deeps."
-#school 0
-#researchlevel 9
-#path 0 4
-#path 1 2
-#pathlevel 0 6
-#pathlevel 1 3
-#fatiguecost 30000
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7382 -- Xxiphu Ascendent
-#restricted 225 -- Shape of Water
-#spec 41943040 -- uw ok and uw only
-#end
+#cheapgod20 5010 -- MALAR 3
+#cheapgod40 7287 -- Velsharoon - Pretender
 
--- 7211 -- Phaerimm
-#newspell 
-#copyspell 1078
-#name "Release the Phaerimm"
-#descr "By means of this abominable ritual, you release a number of Phaerimm from their eternal prison behind the Sharnwall. This dangerous act will no doubt be seen as an affront to all the nations of Faerun. The Phaerimm will not be under the control of their summoner long and will consume all magic in the target province if they succeed in conquering it, including any Thrones present."
-#school 0
-#researchlevel 8
-#path 0 6
-#pathlevel 0 6
-#fatiguecost 10000
-#effect 10037 -- Farsummon
-#damage 7211 -- Phaerimm
-#nreff 20
-#provrange 4
-#farsumcom 7211 -- Phaerimm
-#end
+#multihero1 6800 -- Mature White Dragon
+#multihero2 6795 -- Mature Blue Dragon
+#multihero3 6790 -- Mature Green Dragon
+#multihero4 6785 -- Mature Black Dragon
+#multihero5 6780 -- Mature Red Dragon
+#multihero6 7458 -- Red Dracolich
+#multihero7 7459 -- Black Dracolich
+#multihero8 404 -- Vampire Lord
+#multihero9 6864 -- Red Wizard Zulkir
 
--- 7393 -- Mindwitness
-#newspell
-#name "Create a Mindwitness"
-#descr "By implanting a mindfalyer tadpole within the eye of a beholder, a true abomination can be created. Only an Elder Brain or Greater Elder Brain may drive this process."
-#school 6
-#researchlevel 6
-#path 0 8
-#path 1 4
-#pathlevel 0 2
-#pathlevel 1 2
-#fatiguecost 5000
-#effect 10021
-#nreff 1
-#onlyowndst 1
-#damage 7393 -- Mindwitness
-#restricted 226 -- Oryndoll
-#onlymnr 5048
-#onlymnr 5049
-#end
+#startcom 7411 -- Dragonkin Captain
+#startunittype1 7408 -- Dragonclaw Swordsman
+#startunitnbrs1 30
 
--- Summon Spell -- 7173 -- drider
-#newspell
-#name "Curse of the Demonweb Pits"
-#descr "Part of the duties of Lolth's clergy was to ensure that their society was kept free of dissidents. All mages were put under general suspicion and once they reached a certain level of power, they were abducted and then subjected to a test of loyalty. Failures were turned by a Lolthite priestess into a drider with magical energy channeled directly from Lolth."
-#details "5 Driders are created by means of this spell."
-#school 6
-#researchlevel 2
-#path 0 8
-#path 1 5
-#pathlevel 0 2
-#pathlevel 1 2
-#fatiguecost 1000
-#effect 10001 -- summon monster
-#nreff 5
-#damage 7173 -- drider
-#restricted 222 -- Menzoberranzan
-#end
+#startscout 2279 -- Warrior Scout
 
--- 7173 -- drider mage
-#newspell
-#name "Recruit a Drider Mage"
-#descr "Driders were once normal dark elves, transformed against their will by Lolth herself or her priestesses for disloyalty. While some were kept by the drow as tacit defenders at the fringes of their underdark realms, most became hermits, living in shame and hateful of their curse. As such, any nation with sufficient interest could recruit a drider so long as their mission was revenge against the Spider Queen."
-#school 0
-#researchlevel 3
-#path 0 5
-#path 1 4
-#pathlevel 0 1
-#pathlevel 1 1
-#fatiguecost 1500
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7173 -- drider mage
-#restricted 222 -- Menzoberranzan
-#restricted 238 -- Scoured Legion
-#restricted 202 -- Zhentarim 
-#restricted 203 -- Calimshan
-#restricted 205 -- Frozen North
-#restricted 206 -- Savage Frontier
-#restricted 208 -- Shaar
-#restricted 210 -- THAY
-#restricted 217 -- AMN
-#restricted 220 -- Cult of the Dragon
-#restricted 226 -- Oryndoll
-#restricted 230 -- Llurth Drieir
-#restricted 235 -- Maerimydra
-#end
+#addrecunit 7408 -- Dragonclaw Swordsman
+#addrecunit 7407 -- Dragonfang Longspear
+#addrecunit 7409 -- Dragonsoul
+#addrecunit 7410 -- Dragonkin Savage
+#addrecunit 790 -- Imperial Cav
 
--- 7422 -- Summon Great Eagle Cavalry -- Elven National Spell
-#newspell
-#name "Recruit Eagle Riders from Evermeet"
-#descr "On the isle of Evermeet, Giant Eagles abound in the mountain highlands. The elves there maintain a large airborne cavalry force, and are willing to send a flight of eagle riders in exchange for a handful of gems."
-#details "8 sacred Eagle Riders are summoned via this spell. You will have to absorb their normal maintenance costs."
-#school 0
-#researchlevel 4
-#path 0 1
-#pathlevel 0 2
-#fatiguecost 1500
-#effect 10001 -- summon monster
-#nreff 8
-#damage 7422 -- Great Eagle Cavalry
-#restricted 236 -- Elves of Faerûn
-#end
+#addreccom 426 	-- Warrior Scout
+#addreccom 429 	-- Black Hand Assassin
+#addreccom 7411 -- Dragonkin Captain
+#addreccom 5101 -- Black Blood Skinshifter
+#addreccom 7412 -- Dragonkin Sorcerer
+#addreccom 6702 -- Stormherald of Talos
+#addreccom 6704 -- Priestess of Shar
+#addreccom 6674 -- Priestess of Bane
+#addreccom 7097 	-- Cultist of Tiamat
+#addreccom 94		-- Conjurer
+#addreccom 310		-- Necromancer
+#addreccom 7400 	-- Eldritch Knight
+#addreccom 7405 	-- Wearer of Purple (holy Circle Master)
 
--- 7508 -- Nycaloths
-#newspell
-#name "Summon a Trio of Nycaloths"
-#descr "Summons 3 flying Nycoloth devils from the Blood Rift. Unholy and brutal, they were mercenary elite air assault forces used widely by arch devils to advance their aims."
-#school 6
-#researchlevel 4
-#path 0 8
-#path 1 0
-#pathlevel 0 3
-#pathlevel 1 2
-#fatiguecost 2400
-#effect 10001 -- summon monster
-#nreff 3
-#damage 7508 -- Nycaloths
-#restricted 238 -- Scoured Legion
-#restricted 202 -- Zhentarim 
-#restricted 203 -- Calimshan
-#restricted 210 -- THAY
-#restricted 217 -- AMN
-#restricted 220 -- Cult of the Dragon
-#restricted 223 -- Serpentes
+#mountainrec 6723 -- Goblin Dogslicer
+#mountainrec 6807 -- Goblin Shortbow
+#mountainrec 6773 -- Goblin Wolfriders	
+#mountaincom 6811 -- Bugbear Captain
+#mountaincom 6770 -- Goblin King
+#mountaincom 6733 -- Goblin Lab-Rats
+
+#swamprec 6677 -- Troglodyte Raider
+#swamprec 7081 -- Otyugh
+#swampcom 2891 -- trog warchief
+#swampcom 2749 -- Troglodyte Druhyidd
+
+#forestrec 7072 -- Displacer Beast
+#forestrec 6727 -- Lizard folk
+#forestrec 783  -- Serpent Dancer
+#forestcom 7406 -- Lizard Man Chieftain
+#forestcom 6734	-- Lizardman shaman
+#forestcom 5108 -- Young Barghest
+
+#wasterec 7273 -- Cockatrice
+#wasterec 7359 -- Kobold Spear
+#wasterec 7360 -- Kobold Slinger
+#wastecom 7361 -- Kobold Chieftain
+#wastecom 7362 -- Kobold Sorcerer
+#wastecom 7093 -- Kenku Sneak
+
+#caverec 7272 -- Wild Riding Lizard
+#caverec 7359 -- Kobold Spear
+#caverec 7360 -- Kobold Slinger
+#cavecom 7361 -- Kobold Chieftain
+#cavecom 7362 -- Kobold Sorcerer
+#cavecom 5108 -- Young Barghest
+#cavecom 7304 -- Drow Necromancer - Revanancer
+
+#defcom1 54 -- Castellan
+#defcom2 23 -- Knight
+#defunit1 1105 -- triarii
+#defunit1b 32 -- Archers
+#defunit2 23 -- Knight
+#defmult1 20 	
+#defmult1b 15 
+#defmult2 5
+---------- DEFENCES
+#guardcom 23
+#guardunit 1105
+#guardmult 15
+#wallcom 54 -- Castellan
+#wallunit 32 -- Archers
+#wallmult 20 	
+
+---------- START SITES
+
+-- #startsite "The Well of Dragons" -- gems, gems, gems
+#startsite "The Chamber of Ascendance"
+#startsite "Battlefield of the Bones"
 #end
 
 
--- 7634 -- Wastrilith
-#newspell
-#name "Bind a Wastrilith"
-#descr "Summons a greater aquatic demon, a Wastrilith, known to serve the demonlords of the darkest depths, the greatest of which was Dagon. Wastriliths wreaked havoc on their surrounding landscape, corrupting water they came into contact with and twisting it to serve their dark ends. They are powerful masters of water magic and spread death wherever they roam."
-#school 6
-#researchlevel 5
-#path 0 8
-#path 1 2
-#pathlevel 0 3
-#pathlevel 1 2
-#fatiguecost 5000
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7634 -- Wastrilith 
-#restricted 238 -- Scoured Legion
-#restricted 202 -- Zhentarim 
-#restricted 203 -- Calimshan
-#restricted 210 -- THAY
-#restricted 217 -- AMN
-#restricted 220 -- Cult of the Dragon
-#restricted 223 -- Serpentes
-#restricted 224 -- Sloopdilmonpolop
-#restricted 240 -- Aleaxtis
-#spec 8388608
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\dalelands.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+--------------------------The Dalelands---------------------------------------
+------------------------------------------------------------------------------
+
+#selectnation 237 -- The Dalelands
+#era 2
+#name "The Dalelands"
+#epithet "In the Shadow of Myth Drannor"
+#brief "At the crossroads of the Western Heartlands, the Dragon Coast, the Moonsea, and the Unapproachable East, there lies the forest of Cormanthor and the ruins of a once-great elven kingdom centered on the fabled city of Myth Drannor. Fiercely contested by both gods and men, the Dales persist as a loosely organized group of independent countries forever on the brink of destruction."
+
+#descr "At the crossroads of the Western Heartlands, the Dragon Coast, the Moonsea, and the Unapproachable East lies the forest of Cormanthor and the ruins of a once-great elven kingdom centered on the fabled city of Myth Drannor. Fiercely contested by both gods and men, the Dales persist as a loosely organized group of independent countries forever on the brink of destruction. 
+
+They enjoyed an age-old alliance with the elves of Cormanthyr known as the Dales Compact, formed long before the first permanent human settlements in the region had gained any semblance of importance. At the time, the elves were at their height of power in the region, and their capital of Myth Drannor was considered the pinnacle of shared knowledge, culture, and civilization in Faerûn - a beacon of serenity and solidarity in the fight against chaos. Today, however, Myth Drannor sits as a fiend-infested ruins and 600 years after its fall, the elves have now largely withdrawn entirely from the continent in their great migration known as 'The Retreat.' With 90 precent of all the elves on Faerun having fled to far away Evermeet, the lingering Dales Compact is of little comfort.
+
+Watched over by Shadowdale's great patron and demigod-like archmage, Elminster Aumarr, and several of Mystra, the goddess of magic's, daughters, there is still hope for the future. Backed up by heroic organizations such as the Harpers and the Emerald Enclave, and with many friendships among the nations of the Lords Alliance, the Dalesfolk do not stand alone. Heroes from across Faerun flock to the Dales in the hopes of fame, riches, and legendary glory.
+
+Recent events, however, have left the Dales in shock. In just the last 30 years, greater fiends, ancient dragons, alien abberations, and even two demi-gods attempted to twist the lingering Mythal of Myth Drannor to their will, but all had failed. Yet our Harper Agents have confirmed an ancient Daemonfey Matriarch has siezed the Mythal and rewoven it to serve her ambitions." 
+
+#summary "You begin with control over Shadowdale and Deepingdale, an imporant elven enclave. Your basic forces are backed up by outstanding starting heroes, including two of Mystra's daughters and a handful of other famous heroes. Each Dale has its own unique recruitment roster, but you'll have to unify them to take advantage. Several Throne locations in the Dales exist, making this a hotbed of conflict."  
+#flag "ForgottenRealms/flag_dalelands.tga"
+#templepic 30 -- Forest Gate
+#fortera 2 -- Castle standard era 2
+#homefort 2
+#buildfort 3
+#builduwfort 6
+#labcost 300
+#templecost 300
+#color 0.10 0.62 0.72
+
+
+#addgod 8000 -- Mystra
+#addgod 5037 -- Silvanus
+#addgod 5018 -- Mielikki
+#addgod 5006 -- Chauntea
+#addgod 5005 -- Selune
+--#addgod 5040 -- Elminster
+
+--#cheapgod40 5040 -- Elminster 
+#cheapgod40 8000 -- Mystra 
+#cheapgod20 5006 -- Chauntea
+
+#startcom 7427 -- Dales Lancer Captain
+#startunittype1 7426 -- Dalelands Lancer
+#startunitnbrs1 11
+#startunittype2 7441 -- Dalesman Archer
+#startunitnbrs2 20
+
+#startscout 7433 -- Dalelands Scout
+
+#forestrec 7348 -- Wood Elf Ranger
+#forestcom 7349 -- Half-Elf Champion
+#forestcom 6615 -- Ranger of the Emerald Enclave
+#forestcom 6813 -- Elven Bladesinger
+#forestcom 6617 -- Seldarine Cleric
+
+#addrecunit 7429 -- Dalelands Levy
+#addrecunit 7430 -- Dalelands Pikeman
+#addrecunit 7431 -- Dalelands Swordsman
+#addrecunit 7441 -- Dalesman Archer
+#addrecunit 7426 -- Dalelands Lancer
+
+#addreccom 7433 -- Dalelands Scout
+#addreccom 7432 -- Dalelands Champion
+#addreccom 7427 -- Dales Lancer Captain
+#addreccom 6614 -- Harper Agent
+#addreccom 7436 -- Lord of the Dales
+#addreccom 7428 -- Dalelands Battle-Mage
+#addreccom 5044 -- Cleric of Tymora
+#addreccom 7003 -- Priestess of Chauntea
+#addreccom 6938 -- Wildshape Druid 
+#addreccom 6605 -- Cleric of Lathander
+
+
+#defcom1 7432 -- Dalelands Champion
+#defcom2 7427 -- Dales Lancer Captain
+#defunit1 7429 -- Dalelands Levy
+#defmult1 20
+#defunit1b 7431 -- Dalelands Swordsman
+#defmult1b 10
+#defunit2 7426 -- Dalelands Lancer
+#defmult2 20
+
+---------- DEFENCES
+#guardcom 7432 -- Dalelands Champion
+#guardunit 7430 -- Dalelands Pikeman
+#guardmult 20
+#wallcom 7428 -- Dalelands Battle-Mage
+#wallunit 7441 -- Dalesman Archer
+#wallmult 20	
+
+---------- START SITES
+
+#startsite "Shadowdale"
+#startsite "Harper's Hill"
+#startsite "Elminster's Tower"
+
 #end
 
-#newspell 
-#copyspell 337 -- Grow Fortress
-#name "Thorncalling of Silvanus"
-#descr "This grim ceremony allows thick, maze-like walls of dangerous thorns to be raised out of the forest soil. It was used to protect the forest and wild lands from despoliation. However, the labyrinthine walls could only be raised over the body of a slain servant of Silvanus."
-#brief "This ritual creates a fortress of brambles in the current province. Be warned, it will kill its caster." 
-#school 0
-#researchlevel 0
-#path 0 6
-#path 1 9
-#pathlevel 0 2
-#pathlevel 1 1 
-#fatiguecost 1000
-#reqsun 1
-#restricted 236 -- Elves of Faerûn
-#nextspell "Kill Caster"
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\deep-shanatar.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------
+------------------------Shanatar - Last of the Mithral Kings -----------------------
+------------------------------------------------------------------------------------
+
+
+#selectnation 227
+#era 2
+#name "Deep Shanatar"
+#epithet "Last of the Mithral Kings"
+#brief "Deep Shanatar was once a great underground realm of the mountain dwarves. It first came into being around −10,800 DR when a great migration from Bhaerynden arrived at the massive cavern complex beneath Tethyr, Amn, and Calimshan. While plagued by internal strife and external threats, it lasted more than 10,000 years." 
+
+#descr "Sometime around −11,000 DR, Taark Shanat, a dwarven crusader, led a westbound mass exodus from the dwarven realm of Great Bhaerynden. This enormous migration eventually reached the Rift of Dhalnadar, where the dwarves encountered the cloakers and their dragon masters of Rringlor Noroth. A great conflict ensued, known as the Cloaker Wars. The dwarves eventually drove the cloakers back, while Taark Shanat and his eight sons personally killed the four great blue wyrms that had claimed the Rift as their own domain. The dragons' lair, a large, open-ended cavern overlooking Dhalnadar and all of Shanatar, was named Brightaxe Hall and became the seat of Taark Shanat's new kingdom, which he named Alatorin. The Wyrmskull Throne was fashioned from the skulls of the slain dragons and Taark Shanat's eight sons each went on to found their own, separate sub-kingdoms within Deep Shanatar. 
+
+The realm underwent at least three great golden ages, surviving many internal wars and repelling countless invasions by drow, orcs, goblins and men. But it was not to last. An alliance of Drow, Cloakers, and the dwarves' mind-flayer-twisted brethren, the Duergar, destroyed Brightaxe Hall in the Third Spider-War and while the sub-kingdoms clung on to survival for a time, the region eventually fell into ruin and the majority of dwarves not killed or enslaved, fled north to Mithril Hall and the Northkingdom or else scattered among the surface realms. The last remaining home of the proud mountain dwarves is the city-state of Iltkazar.
+
+Iltkazar has proven itself strong and resourceful as the last holdout of the once-great dwarven empire. More isolationist than their northern cousins, and more subtle than their kin to the south, Iltkazar stands as the last of the Mithril Kingdoms within the underdark."  
+
+#summary "There are very few dwarves left in the realm of Shanatar and your position at a great crossroads of the underdark means you will likely face strong challengers. Luckily, you have time to prepare. The ruins of many great keeps lie to your north. Special sites abound there if you can take them. You have excellent and heavily armed soldiers at game start, and supporting troops from afar to help your ambitious goals. Note your lack of foreign recruitment."  
+#flag "ForgottenRealms/flag_shanatar.tga"
+#templepic 4 -- mountain castle
+#fortera 4 -- Castle standard era 3
+#homefort 3 -- Citadel -- needing upgrade
+#cavenation  1
+#buildfort 4
+#noforeignrec
+
+#color 0.62 0.72 0.90
+
+#addgod 7198 -- Statue of Dumathoin
+#addgod 7199 -- Statue of Barronar
+#addgod 7200 -- Statue of MORADIN
+
+#cheapgod40 7199 -- Statue of Barronar
+
+
+#startcom 7189 -- Dwarven Thane
+#startunittype1 7009 -- DWARVEN HAMMERS
+#startunittype2 7010 -- DWARVEN Crossbowman
+#startunitnbrs1 25
+#startunitnbrs2 10
+
+#startscout 7182 -- Dwarven Cave Stalker
+
+#addrecunit 7009 -- DWARVEN HAMMERS
+#addrecunit 7010 -- DWARVEN Crossbowman
+#addrecunit 7186 -- Dwarven Shieldsman
+#addrecunit 6874 -- Dwarven Miner
+#addrecunit 7231 -- Dwarven Battlerager (Mounted on a boar)
+#addrecunit 7185 -- Dwarven Defender
+
+#addreccom 7182 -- Dwarven Cave Stalker
+#addreccom 7183 -- Dwarven Battlesmith
+#addreccom 7187 -- Dwarven Gatekeeper
+#addreccom 7030 -- Dwarven Lord
+
+#addreccom 7191 -- Justice of Dumathoin
+#addreccom 7195 -- Dwarven Ollam
+#addreccom 7192 -- Deathchanter
+#addreccom 6616	-- Cleric of Moradin
+#addreccom 7194 -- Dwarven Runesmith
+
+
+#defcom1 7187 -- Dwarven Gatekeeper
+#defcom2 7030 -- Dwarven Lord
+#defunit1 7009 -- DWARVEN HAMMERS
+#defmult1 20
+#defunit1b 7010 -- DWARVEN Crossbowman
+#defmult1b 10
+#defunit2 7185 -- Dwarven Defender
+#defmult2 12
+
+---------- DEFENCES
+#guardcom 7187 -- Dwarven Gatekeeper
+#guardunit 7009 -- DWARVEN HAMMERS
+#guardmult 15
+#wallcom 6616	-- Cleric of Moradin
+#wallunit 7010 -- DWARVEN Crossbowman
+#wallmult 15 	
+
+---------- START SITES
+
+#startsite "Mines of Moradin"
+#startsite "Dumathoin's Rest"
+#startsite "Barronar's Breast"
+
 #end
 
 
-#newspell 
-#copyspell 1059 -- Living Castle
-#name "Dig Sahuagin Tunnel Network"
-#descr "Can only be cast in Deep Sea terrains. Sahuagin do not build fortresses, but rather dig out networks of passages beneath the sea floor and into the walls of undersea gorges. Most communities were little more than a few dens, but truly epic sahuagin cavern systems did exist. Carved from stone with both magic and hard labor, assaulting such tunnels was no small task."
-#school 0
-#researchlevel 0
-#path 0 3
-#path 1 2
-#pathlevel 0 1
-#pathlevel 1 1 
-#provrange 0
-#fatiguecost 1000
-#restricted 240 -- Aleaxtis
-#spec 41943040 -- uw ok and uw only
-#onlygeosrc 2048
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\dwarfes-of-the-rift.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------- Dwarves of The Rift
+#selectnation 229
+#era 2
+#name "Dwarves of the Rift"
+#epithet "Golden Dwarves of Old Bhaerynden"
+#brief "Bhaerynden was the first great kingdom of the dwarves of Faerûn, centered in the great cavern deep beneath the Shaar. " 
+
+#descr "Founded in -14,000 DR, Bhaerynden was a sprawling, multi-ethnic, dwarven realm that stretched across a vast territory beneath the southern continent. The dwarves of Bhaerynden prospered for milennia, but  endured many schisms and fractures which eventually drove the clans apart and formed new nations and identities. The first of these schisms occurred around −11,000 DR and led to an aggressive westward migration. The descendants of those dwarves would eventually become the shield dwarves and forged the empire of Shanatar. The Derro and Mad Beard Urdunnir also emerged as distinct ethnic groups after splitting from Old Bhaerynden. 
+
+The empire finally fell apart following the Crown Wars , a conflict between the elven nations that lasted more than 5,000 years and led to the descent of the Drow into the Underdark. Seeking a new home, the Drow came upon Bhaerynden and drove the 8 kingdoms of the dwarven empire into exile, collapsing the cavern ceiling down on the old kingdoms and forming the Great Rift above. Some dwarves were captured and enslaved by the illithids and later became the Duergar, others fled far to the frozen north or west to the Chultan peninsula. The few who remained came to be known as the Gold Dwarves, and they struggled for survival by forming ties with the human and halfling inhabitants of the Shining Plains. 
+
+But the drow are their own worst enemies in the end. While the Underdark wars against itself, the Dwarves of the Rift have begun to prosper, bolstered by their impossible determination and a near-impregnable defensive position. Many of the clan leaders feel it is time to strike back and reclaim what once was theirs."  
+
+#summary "You have excellent commanders, priests, and mages but they are resource and gold intensive. Your limited population will hamper your economy. You have no foreign recruits to help you, so manage your forts and plan accordingly. Your first order of business is likely to be unseating Halatha and Murbreistra Starnar, renegade sorceresses from Halruaa with a hidden vampiric secret. They have convinced the ruling families of Earthheart to claim independence from the cities of the Riftbottom and plan to make off with a powerful artifact in the chaos."  
+#flag "ForgottenRealms/flag_bhaerynden.tga"
+#templepic 4 -- mountain castle
+#fortera 3 
+#homefort 4 -- Citadel
+#cavenation 1
+#buildfort 3
+
+#color 0.82 0.15 0.30
+
+#addgod 7198 -- Statue of Dumathoin
+#addgod 7199 -- Statue of Barronar
+#addgod 7200 -- Statue of MORADIN
+
+#cheapgod40 7198 -- Statue of Dumathoin
+
+
+#startcom 7189 -- Dwarven Thane
+#startunittype1 7009 -- DWARVEN HAMMERS
+#startunittype2 7010 -- DWARVEN Crossbowman
+#startunitnbrs1 25
+#startunitnbrs2 10
+
+#startscout 7182 -- Dwarven Cave Stalker
+
+#addrecunit 7009 -- DWARVEN HAMMERS
+#addrecunit 7010 -- DWARVEN Crossbowman
+#addrecunit 7186 -- Dwarven Shieldsman
+#addrecunit 6874 -- Dwarven Miner
+#addrecunit 7648 -- Barronar's Valkyrie
+#addrecunit 7231 -- Dwarven Battlerager (Mounted on a boar)
+#addrecunit 7185 -- Dwarven Defender
+
+#addreccom 7182 -- Dwarven Cave Stalker
+#addreccom 7183 -- Dwarven Battlesmith
+#addreccom 7187 -- Dwarven Gatekeeper
+#addreccom 7030 -- Dwarven Lord
+
+#addreccom 7191 -- Justice of Dumathoin
+#addreccom 7195 -- Dwarven Ollam
+#addreccom 7192 -- Deathchanter
+#addreccom 6616	-- Cleric of Moradin
+#addreccom 7194 -- Dwarven Runesmith
+
+
+#defcom1 7187 -- Dwarven Gatekeeper
+#defcom2 7030 -- Dwarven Lord
+#defunit1 7009 -- DWARVEN HAMMERS
+#defmult1 20
+#defunit1b 7010 -- DWARVEN Crossbowman
+#defmult1b 10
+#defunit2 7185 -- Dwarven Defender
+#defmult2 12
+
+---------- DEFENCES
+#guardcom 7187 -- Dwarven Gatekeeper
+#guardunit 7009 -- DWARVEN HAMMERS
+#guardmult 15
+#wallcom 6616	-- Cleric of Moradin
+#wallunit 7010 -- DWARVEN Crossbowman
+#wallmult 15 	
+
+---------- START SITES
+
+#startsite "Mines of Moradin"
+#startsite "Dumathoin's Rest"
+#startsite "Barronar's Breast"
+
 #end
 
--- 6875 -- Dragon Turtle
-#newspell
-#name "Summon a Dragon Turtle"
-#descr "Summons a gargantuan dragon turtle from the undersea. These enormous predators are sacred to many aquatic peoples, highly intelligent, and capable in both water and earth magics."
-#school 0
-#researchlevel 6
-#path 0 2
-#path 1 3
-#pathlevel 0 3
-#pathlevel 1 2
-#fatiguecost 2600
-#effect 10021 -- summon commander
-#nreff 1
-#damage 6875 -- Dragon Turtle
-#spec 41943040 -- uw ok and uw only
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\gracklstugh.dm
+------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------
+----------------------- Gracklstugh -------------------------
+-------------------------------------------------------------
+#selectnation 231
+#era 2
+#name "Gracklstugh"
+#epithet "The City of Blades"
+#brief "The City of Blades, Gracklstugh, was a duergar city on the shores of the Darklake in the Northdark. Located five miles beneath the Evermoors of the Dessarin River valley and the Uthgardt ancestor mound Flintrock, it was roughly 100 miles from Menzoberranzan across the Darklake and below." 
+#descr "Gracklstugh was a cavern city that sloped down on the eastern side to join the Darklake as a subterranean port. The city was lit by the firelight of smelters and foundries mingling among stalagmites. The air smelled acrid and was filled with industrial sounds: fire, steam, and iron ringing. The persistent smog that filled the cavern could cause a persistent and sometimes fatal cough, known as grackle-lung.
+
+It was founded in −3717 DR by duergar escaping the fall of Deep Shanatar and the subsequent enslavement of many gray dwarves in the mindflayer of Oryndoll. In 1372 DR, Deepking Horgar Steelshadow IV used the Silence of Lolth and the disarray of her followers as an excuse to attack the drow city of Menzoberranzan and thus cement his power over his lairds. Under his whip, Horgar led his army to success against the drow at the Pillars of Woe and gained additional allies, including the drow of Chaulssin and the infernal Scourged Legion of Kaanyr Vhok, lord of Hellgate Keep and the ruins of the Shield Dwarven realm of Ammarindar. 
+
+In 1373 DR, the Silence of Lolth ended and Lolth's priestesses regained their powers. Kaanyr Vhok subsequently recalled his forces to Hellgate Keep and the remaining duergar and allied armies were easily defeated and turned back. As the Duergaar army retreated, Horgar was betrayed by his drow allies and killed, leaving the city vulnerable and the throne temporarily vacant. Regardless of their back-footed position, Gracklstugh possesses one of the strongest militaries in all the underdark and understand well their place as a prized ally and vital trade partner."  
+
+#summary "You have excellent commanders, priests, and mages but they are resource and gold intensive. Your limited population will hamper your economy. You'll have no foreign recruits to help you, but you can take slaves to round out your armies and will find prized magic site recruit options if you can take the Northdark for yourself. Perhaps your greatest asset is your ability to craft magical items of great power, well above the limits of your arcane talents."  
+#flag "ForgottenRealms/flag_gracklstugh.tga"
+#templepic 4 -- mountain castle
+#fortera 3 
+#homefort 4 -- Citadel
+#cavenation  1
+#buildfort 3
+
+#color 0.82 0.15 0.30
+
+#addgod 7241 -- Statue of Ladaguer
+#addgod 5036 -- Asmodeus 2
+
+#cheapgod40 7241 -- Statue of Ladaguer
+
+#startcom 7237 -- Duerger Thuldor - elite cleric ( X )
+#startunittype1 7228 -- Duergar Mauler - unit ( X )
+#startunittype2 7229 -- Duergar Scorpion - ranged unit ( X )
+#startunitnbrs1 24
+#startunitnbrs2 8
+
+#startscout 7242 -- Duergar Deepscout
+
+#addrecunit 7228 -- Duergar Mauler - unit ( X )
+--#addrecunit 6697 -- Duergar Axeman - unit ( X )
+#addrecunit 7227 -- Duergar Heavy Axe - unit ( X )
+#addrecunit 7229 -- Duergar Scorpion - ranged unit ( X )
+#addrecunit 7226 -- Duergar Battlesmith 
+#addrecunit 7239 -- Duergar Kavalrachni - unit and commander ( X )
+
+
+#addreccom 7242 -- Duergar Deepscout - commander scout slaver ( X )
+#addreccom 7230 -- Duergar Laird - commander ( X )
+#addreccom 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#addreccom 7233 -- Duergar Runesmith - mage ( X )
+#addreccom 5072 -- Duergar Blackguard - holy commander ( X )
+#addreccom 7225 -- Duergar Stonereaver - elite unit ( X )
+#addreccom 7232 -- Duergar Mindmaster - mage ( X )
+
+#addreccom 7237 -- Duerger Thuldor - elite cleric ( X )
+#addreccom 7240 -- Duergar Master Arcane Artisan ( X )
+
+
+#defcom1 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#defcom2 5072 -- Duergar Blackguard - holy commander ( X )
+#defunit1 7228 -- Duergar Mauler - unit ( X )
+#defmult1 20
+#defunit1b 7229 -- Duergar Scorpion - ranged unit ( X )
+#defmult1b 5
+#defunit2 7227 -- Duergar Heavy Axe - unit ( X )
+#defmult2 10
+
+---------- DEFENCES
+#guardcom 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#guardunit 7228 -- Duergar Mauler - unit ( X )
+#guardmult 15
+#wallcom 5072 -- Duergar Blackguard - holy commander ( X )
+#wallunit 7229 -- Duergar Scorpion - ranged unit ( X )
+#wallmult 10	
+
+---------- START SITES
+#startsite "Great Mine of the Deep" 
+#startsite "Mines of the Pale Ones"
+#startsite "Slave Market"
+#startsite "Crystal Garden"
 #end
 
 
--- Aboleth Upgrade Ritual
--- #newspell 
--- #copyspell 291 -- hanyya pact
--- #name "Aboleth Upgrade Ritual"
--- #descr "<text>"
--- #details "<text>"
--- #school 5 -- thaumaturgy
--- #researchlevel 0
--- #uwok
--- #path 0 4 -- -- astral the required path
--- #pathlevel 0 2 -- 2 astral skill required
--- #nreff 1
--- #fatiguecost 1000
--- #restricted 225 -- Shape of Water - the abolethic sovereignty
--- #onlymnr 7363 -- Aboleth
--- #damage 7364 -- Upgraded Aboleth
--- #end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\halruaa.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+----------------------------------HALRUAA----------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+
+#selectnation 209
+#era 2 		
+#name "Halruaa"
+#epithet "Land of Magic"
+#brief "Halruaa was a land of magic, renowned for its electrum mines and its Haerlu wine. The fabled, quiet and wealthy magocracy was justly depicted as full of wonder. Created by archwizards foreseeing the fall of Netheril, Halruaa combined peace and harmony with the magic powers of their ancestors, but without the taint of their ambitions."
+#descr "Halruaans congregated in numerous villages and cities scattered throughout the country's interior. Most were small settlements with no more than a few hundred inhabitants each, while the largest settlements were smaller than the cities of most other nations. The folk of the small villages usually relied on a venerated wizard to provide both protection and leadership, while likely also serving as mayor and a member of the Council of Elders, the ruling body of the country. The leader of the council was the Netyarch, or wizard-king.
+
+With natural fortifications and the leadership of a score of diviners, Halruaans lived in a near-perfect haven. They rarely felt the necessity to travel except when they needed to get new magic items or spell components, as nowhere else in Faerûn would they feel as comfortable as home. Because most of the Halruaan travelers were wizards, people across Faerûn had the wrong belief that all Halruaans were wizards.
+
+Life in the cities of Halruaa was touched by magic in many ways. Their houses had at least a few built-in magical enhancements, such as magical street lamps, while a favorite practice in cities along the coast was to produce walls of magically coaxed coral. Spells that produced sparkling lights and pleasing sounds were often woven into fine fabrics to enhance their beauty. Fanciful means of travel, such as carpets of flying or skyships, were commonplace. Everywhere in Halruaa, people took great pains to show off their abilities as well as their wealth." 
+#summary "Races: Entirely human with additions requiring expansion. 
+Military: Simple but effective infantry, fast light cav.  
+Magic: Competing with Thay for the best wizards in the game. 
+Priests: Only worshippers of Mystra and Azuth are permitted in Halruaa.
+Mechanics:  Magehounds make excellent patrollers. Jordain Viziers are outstanding bodyguards. Both are highly magic resistant. Winged monkeys wreak havoc and are good fun." 
+#flag "ForgottenRealms/flag209.tga"
+#templepic 2 -- Greek
+#fortera 3 -- Castle standard era 2
+#homefort 4 -- Citadel
+#buildfort 2
+#builduwfort 6
+#labcost 300
+#templecost 600
+#color 0.6 0.8 1.0
+
+#addgod 8000 -- Fountain of Mystra
+#addgod 5038 -- Savras 1
+#addgod 5039 -- Azuth 1
+#addgod 5041 -- Great Netyarch 1
+
+
+-- #multihero1 XXXX -- 
+#multihero1 37 -- Master of the Games
+#multihero2 58 -- Knight of the Stone
+#multihero3 301 -- Astrologer
+
+
+#startcom 6873 			-- Halruaan Cavalry Commander
+#startunittype1 6845	-- Peltasts
+#startunittype2 2899 	-- Halruaan Light Cavalry
+#startunitnbrs1 20
+#startunitnbrs2 8
+
+#startscout 6854 	-- Jordain Vizier
+
+#addrecunit 6844 	-- Archers
+#addrecunit 6845 	-- Peltasts
+#addrecunit 5117 	-- Halruaan Hoplite
+#addrecunit 6846	-- Halruaan Light Cavalry
+
+#addreccom 6872 	-- Winged Monkey Scout
+#addreccom 6873 	-- Halruaan Cavalry Commander
+#addreccom 6851		-- Halruaan Apprentice
+#addreccom 6850		-- Halruaan Magehound
+#addreccom 6847 	-- Cleric of Mystra
+#addreccom 6849 	-- Elder Councillor
+
+#addforeignrec 6844 	-- Archers
+#addforeignrec 6845 	-- Peltasts
+#addforeigncom 6848 	-- Cleric of Azuth
+#addforeigncom 6851		-- Halruaan Apprentice
+
+-- All other units are site-specific
+
+#defcom1 6873 		-- Halruaan Cavalry Commander
+#defcom2 6848 		-- Cleric of Azuth
+#defunit1 6845 		-- Peltasts
+#defunit1b 6844 	-- Archers
+#defunit2 6846 		-- Halruaan Light Cavalry
+#defmult1 20 	
+#defmult1b 12 
+#defmult2 20 
+
+---------- DEFENCES
+#guardcom 6873		-- Halruaan Cavalry Commander
+#guardunit 5117 	-- Halruaan Hoplite
+#guardmult 15
+#wallcom 6848 		-- Cleric of Azuth
+#wallunit 6844 		-- Archers
+#wallmult 20 		-- 
+
+---------- START SITES
+
+#startsite "The Illysum"
+#startsite "Kholstar's Keep" 
+#startsite "The Promenade"
+
+#end 
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\impiltur.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+-----------------IMPILTUR-------------------------------------------------
+--------------------------------------------------------------------------
+#selectnation 215
+#era 2
+#name "Impiltur"
+#epithet "Realm of the Sword and Wand"
+#brief "Impiltur (pronounced: IM-pil-tur) was a wealthy and influential nation of feudal lords nestled along the coastal lands of the Easting Reach, in northeastern Faerûn. It had a long and storied history within the eastern realms and its reputation grew and declined throughout the ages. The formerly influential kingdom endured decades of isolation and, while it was not without its share of troubles, emerged as a land that remained hopeful about reclaiming its former glory."
+#descr "The society of Impiltur was formed around the tenets of the Triad—the collective faiths of Ilmater, Torm and Tyr. This religion placed the expectation of devotion, service and sacrifice upon the Impilturan people, a concept that was exemplified in the realm's culture of piety. In addition, the worship and veneration of saints and divine martyrs was considered a cornerstone of the Triadic faith.
+
+Despite its national religion, Impiltur maintained a liberal and welcoming attitude to the faithful of benevolent deities. Followers of Chauntea, Tymora, Selûne and Waukeen were quite numerous throughout the realm. The formation of shrines and temples dedicated to malevolent gods, such as Bane and Cyric, was explicitly illegal; however, private worship of their faiths were somewhat tolerated. No such refuge was given to the myriad of demonic cults that sporadically arose throughout Impiltur's countryside. The fanatical who worshiped ancient Narfell and the Demon princes were slain on sight and their vile altars were brought to justice. The taint of fiend-worship has plagued Impiltur for centuries
+
+Practitioners of the Arcane Arts were commonly found in Impiltur. The nation featured two magical academies. Apprentices went on to serve aboard merchant ships operated by the nation's trade consortiums who provided funding for the academies. The wizards themselves were required to serve for one year and were well-compensated for their efforts."
+#summary "This can be a very tough nation to succeed with, given your extremely dangerous neighbors, including the agressive demon-lords of Narfell. Good luck!"  
+#flag "ForgottenRealms/flagsimpiltur.tga"
+#templepic 9 -- Cathedral
+#fortera 2 -- Castle standard era 2
+#homefort 4 -- Citadel
+#buildfort 2
+#builduwfort 6
+#labcost 500
+#templecost 500
+#color 0.0 0.4 0.6
+
+-- Gods of the Triad
+#addgod 5007 -- Tyr
+#addgod 5008 -- Torm
+#addgod 5009 -- Ilmater
+#addgod 5029 -- Helm 3
+#addgod 5015 -- Tempus 3
+#addgod 5006 -- Chauntea 4 
+#addgod 5005 -- SELUNE 4
+#addgod 5012 -- WAUKEEN 3
+
+#addgod 5030 -- Tymora 2
+#addgod 5027 -- Valkur 2
+
+-- #addgod 244 -- Arch Mage
+-- #addgod 2922 -- Morgen High Queen
+-- #addgod 3053 -- Grand Heirophant
+-- #addgod 3060 -- Master
+
+#cheapgod20 5009
+#cheapgod20 5007
+#cheapgod20 5008
+
+#startcom 7008 			-- Trueblade of Torm
+#startunittype1 26 		-- Light Cavalry
+#startunittype2 290		-- Crossbowmen
+#startunitnbrs1 20
+#startunitnbrs2 20
+
+#startscout 7007 		-- Cleric of Helm
+
+#addrecunit 285		-- Spearman
+#addrecunit 286		-- Maceman
+#addrecunit 287		-- Swordsman
+#addrecunit 289 	-- Pikeneer
+#addrecunit 290		-- Crossbowmen
+#addrecunit 6000 	-- Warsword
+
+#addreccom 431	 	-- Scout
+#addreccom 291		-- Captain
+#addreccom 23		-- Knight Commander
+#addreccom 6754 	-- Field Wizard
+#addreccom 7007		-- Cleric of Helm
+#addreccom 6623		-- Cleric of Tyr
+#addreccom 6705 	-- Cleric of Ilmater 
+
+
+#defcom1 291		-- Captain
+#defcom2 292		-- Heavy Cav Commander
+#defunit1 285		-- Spearman
+#defunit1b 290		-- Crossbowmen
+#defunit2 24 		-- Light Cavalry
+#defmult1 20 	
+#defmult1b 10 
+#defmult2 8 	
+
+---------- DEFENCES
+#guardcom 292 -- Myrmidon Champion
+#guardunit 24
+#guardmult 15
+#wallcom 291		-- Captain
+#wallunit 290		-- Crossbowmen
+#wallmult 20 	-- 
+
+---------- START SITES
+
+#startsite "Guild of Heroes"
+#startsite "Fertile Flood Plain"
+#startsite "Lyrabar"
+#startsite "Temple of the Triad"
+#end 
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\llurth-dreir.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+-----------------Llurth Dreier---------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 230
+#era 2
+#name "Llurth Dreier"
+#epithet "Realm of That Which Lurks"
+#brief "The massive Underdark city of Llurth Dreier lay beneath the Shaar. The lurking avatar of Ghaunadaur has recently be risen by his clergy and this manifestation demands sacrifice. The church of That Which Lurks maintains a presence in many secret places, including the Pit of Ghaunadaur beneath Waterdeep. Consolidate your borders and spread your abberant madness across all of Faerûn."
+
+#descr "Llurth Dreier, known as the Accursed City and the City of Ooze, was a drow city in the Great Bhaerynden domain of the Underdark.  It was home to nearly 60,000 drow and more than 100,000 slaves. There were also uncounted jellies, oozes, and slimes which were revered and cultivated. It was perhaps the most populous drow city in all of Faerûn.
+
+The drow Houses stayed safe inside their black towers, and offered a piffling degree of protection to those who offered them tribute. Their slaves, dwelling in abject misery, were otherwise almost completely ignored, left to fend for themselves and eke out a living. The black towers held some wealth, but all outside was utterly squalid. Unrestrained by any sense of shame or style, the nobles regularly raided the fields of rival Houses to steal food and kidnap people to serve as slaves or sacrifices to Ghaunadaur.
+
+which tended to rear its head in cities marred by unrest where other rival deities, such as Lolth, were less powerful. One example of this was Eryndlyn, which was contested by adherents of the Elder Eye and various Dark Seldarine factions. "  
+
+#summary "In addition to your capital in Bhaerynden, you have far-flung temples beneath Waterdeep, Baldur's Gate, and Thay. These all need reinforcement before they are discovered and rooted out by your rivals. Your income is awful, but you have access to vast numbers of troops which need little upkeep or feeding. Spread your fetid rule across the underdark and cover the thrones of ascension in your ooze. Slime for the slime god!"  
+#flag "ForgottenRealms/flag_llurthdreier.tga"
+#templepic 13 -- eye of the void
+#fortera 2 -- Castle standard era 2
+#homefort 3 
+#buildfort 2
+#builduwfort 6
+#labcost 600
+#templecost 600
+#color 0.65 0.75 0.80
+#aibloodnation
+#sacrificedom
+#aiwaternation
+#cavenation 2
+
+#addgod 7215 -- Ghaunadaur 
+-- #addgod 7213 -- Vhaeraun
+-- #addgod 7214 -- Kiaransalee
+#cheapgod40 7215 -- Ghaunadaur
+
+
+#startcom 7219 -- Ghaunadan
+#startunittype1 7234 -- Drow Sargtlin
+#startunitnbrs1 20
+#startunittype2 6774 -- Drow Hunter 
+#startunitnbrs2 8
+
+#startscout 6725 -- Drow Assassin
+
+#addrecunit 7334 -- Slithermorph
+
+#addreccom 7324 -- Cultist of Ghaunadaur
+#addreccom 7219 -- Ghaunadan
+
+
+#defcom1 7317 -- Drow Commander
+#defcom2 7274 -- Drow Streakhmaster
+#defunit1 7234 -- Drow Sargtlin
+#defmult1 28
+#defunit1b 7334 -- Slithermorph
+#defmult1b 8
+#defunit2 7270 -- Drow Lizardrider
+#defmult2 10
+
+
+---------- DEFENCES
+#guardcom 7274 -- Drow Streakhmaster
+#guardunit 6774 -- Drow Hunter 
+#guardmult 15
+#wallcom 7317 -- Drow Commander
+#wallunit 7234 -- Drow Sargtlin
+#wallmult 20 	
+
+---------- START SITES
+#startsite "Great Pit of Ghaunadaur"
+#startsite "Academy of Llurth Dreier"
+#startsite "The Hanging Houses"
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\luiren.dm
+------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+-- HALFLINGS OF LUIREN NATION
+---------------------------------------------------------------------------------
+
+#selectnation 201 -- can be any number from 200 up?
+#era 2 		
+#name "Luiren"
+#epithet "Benevolent Anarchy of Halflings"
+#idealcold 0
+#brief "Brief: Lacking the umph of heavy infantry, Halflings make up for it by being bold, devious, and mirthful."
+#descr "Luiren was known as the land of the halflings since its population was almost completely comprised of their race. It was a small kingdom with a population of about 840,000 inhabitants in 1372 DR ruled by the halfling theocrat Faran Ferromar. Travelers to Luiren were often surprised to find the locals adventurous and bold as opposed to the fat and quiet halflings one could find elsewhere. The capital city of Luiren was Beluir, a coastal city of 27,210 in 1372 DR in the longitudinal center of the realm. 
+
+The subraces of Halflings exist on Faerun - the Lightfoots, Stronghearts, and Ghostwise. Around −100 DR, a ghostwise halfling cleric named Desva began leading the ghostwise in the worship of Malar the Beastlord and violence ensued. Savage acts were performed against the creatures and other halflings of the forest. The stronghearts and lightfoots allied against the ghostwise and battle continued for many years until Chand of the stronghearts slew Desva in −65 DR. Most of the surviving ghostwise left Luiren for the Chondalwood, making an oath that they wouldn't speak until they had atoned for their savagery. 
+
+13 centuries later, the Ghostwise have returned, claiming the resurrected Desva leads them once again. Through guile and bloodshed, they've retaken the Luirwood. In the chaos, Feran Ferromar was given a vision from beyond the veil - that he would lead the lightfoots and stronghearts into righteous battle against these conquerors, he would face Desva in the deep forest of the Western Luirwood, and he would go on to lead the reformed nation of Luiren to become a great nation of the realms. This vision was both glorious and terrifying, for it was unclear if it was he or Desva who stood on the dais to accept the crown."
+#summary "With dark-vision, natural stealth, and an innate resistance to magic, Luiren is not without its bright-sdies, yet your troops are poorly armored and undergunned. Size 2 helps, but its not a win-button. Nature, Air, Glamour and Earth, with little Astral mixed in rounds out your magic scales and your wizards are not bad with research. Yondalla is the patron deity, but Peryroyl druids and Servants of Malar add diversity. Enjoy the cheap labs and temples - you'll need them." 
+#flag "ForgottenRealms/flag201.tga"
+#coastnation
+#templepic 3 -- irish of course
+#fortera 3
+#homefort 3
+#buildfort 2
+#builduwfort 6
+#uwbuild 1
+#tradecoast 15
+#labcost 400
+#templecost 300
+#color 0.0 0.8 0.2
+
+#addgod 5006 -- Chauntea 3
+#addgod 5010 -- Malar 3
+
+#addgod 5030 -- Tymora 2
+#addgod 5023 -- Oghma 2
+#addgod 5018 -- Mielikki 2
+#addgod 5037 -- Silvanus 2
+
+#cheapgod20 5006
+#cheapgod20 5010
+
+
+#startcom 6653			-- Farran on Turn 1
+#startunitnbrs1 20
+#startunitnbrs2 5
+#startunittype1 6641 	-- Lightfoot Spear
+#startunittype2 6643 	-- Outrider
+
+#startscout 6646    -- Spellsinger on Turn 1
+
+
+#addrecunit 6641	-- Lightfoot Spear
+#addrecunit 273 	-- hoburg crossbow 
+#addrecunit 6643 	-- Outrider
+
+#addreccom 6644		-- Scout/Rogue
+#addreccom 6645		-- Strongheart Champion
+#addreccom 6646		-- Halfling Spellsinger
+#addreccom 6654 	-- Razor-rider Champion
+#addreccom 7651 	-- Halfling 'Arcane Trickster' 
+
+-- All other units are site-specific
+
+#forestcom 6648		-- Peryroyl Druid
+#forestcom 6650		-- Servant of Malar
+#forestrec 6651		-- Ghostwise Hunter
+
+#defcom1 6645		-- Strongheart Champion
+#defcom2 6646		-- Halfling Spellsinger
+#defunit1 6641		-- Lightfoot Spear
+#defunit1b 273 		-- hoburg crossbow  
+#defunit2 6643		-- Outrider
+#defmult1 20 		-- how many 1st
+#defmult1b 15 		-- how many 1st
+#defmult2 4 		-- In ratio to 2nd
+
+
+---------- START SITES
+
+#startsite "Halfling Stronghold" 
+
+
+---------- DEFENCES
+#guardunit 6641
+#guardcom 6643
+#guardmult 15
+#wallcom 6647 	-- Cleric of Yondalla
+#wallunit 273 	-- hoburg crossbow 
+#wallmult 15 	-- high
+#end 		
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\maerimydra.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+--------------------------Maerimydra---------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 235
+#era 2
+#name "Maerimydra"
+#epithet "The Silence of Lolth"
+#brief "Maerimydra (pronounced MARE-uh-MID-ruh), the Burning City, was a large drow city located below the Dalelands in the Deep Wastes. It became a battleground between those loyal to Lolth and those drow gods who opposed the Spider Queen's continued domination of their people - namely Eilistraee, Vhaeraun, and Kiaransalee."
+
+#descr "From its founding, sometime prior to -2600 DR, Maerimydra was a place of internal conflict between these forces. The city sat at the heart of a sprawling domain that expanded and collapsed numerous times due its internal rebellions. 
+
+For a time, the drow of Maerimydra extended their borders all the way to the surface Realms Above. Shadowdale in fact draws its name from its long occupation by the drow of the Deep Wastes. Shadowdale's Twisted Tower, still the seat of power in the province, was built by Maerimydra as a beachhead for further surface expansion. Centuries of warfare in the Dalelands against Myth Drannor and, later, Cormyr eventually saw Maerimydra's removal from the surface and retreat back to the Deep Wastes.  
+
+By the 900s DR, Lolth began losing control over the drow of the region. The arrival of Vhaeraunites from Jaezred Chaulssin - a group dedicated to freeing the drow race from the depravities of Lolth, led to the rise of the secretive faith and their power grew to rival that of the matron mothers. When the Silence of Lolth began in 1372 DR, the Vhaeraunites saw their chance and staged a coup. Led by the city's archmage and backed by an alliance of goblins, ogres, fire giants and demons, the rebels sacked the city and scattered most of its inhabitants into the surrounding deep wastes. The plan to restructure the city, however, failed.  The faithful servants of the drow goddess of the undead, Kiaransalee, led by the High Priestess Irae T'sarran prevailed in a surprise attack during the chaos. Wielding Kiaransalee's own Claw of the Revenancer, Irae and her necromancers plan to spread death throughout the underdark and silence Lolth forever."  
+#summary "Maerimydra is an undead nation, dominated by Irae and her growing legions. Your priestesses are reanimators. You have access to Silveraith Mages, a powerful form of mage wraith. The Claw of the Revenancer artifact also provides the ability to create Silveraith troops, sacred, ethereal undead that raise those they slay. Tough nearby indies, but an otherwise isolated start."  
+#flag "ForgottenRealms/flag_maerimydra.tga"
+#templepic 31 -- Cave Temple
+#fortera 2 -- Castle standard era 2
+#homefort 3
+#buildfort 3
+#builduwfort 6
+#labcost 400
+#templecost 650
+#color 0.65 0.12 0.55
+
+#addgod 7214 -- Kiaransalee 
+#addgod 7338 -- The Undying Temple
+-- #addgod 7176 -- Eilistraee 
+-- #addgod 7213 -- Vhaeraun 
+
+#cheapgod20 7214
+
+#startcom 7274 -- Drow Streakhmaster
+#startunittype1 7234 -- Drow Sargtlin
+#startunitnbrs1 20
+#startunittype2 7270 -- Drow Lizardrider
+#startunitnbrs2 5
+
+#startscout 6725 -- Drow Assassin 
+
+#addrecunit 7234 -- Drow Sargtlin
+#addrecunit 6774 -- Drow Hunter 
+#addrecunit 7270 -- Drow Lizardrider
+
+#addreccom 6725 -- Drow Assassin 
+#addreccom 7303 -- Maerimydran Commander
+#addreccom 7274 -- Drow Streakhmaster
+#addreccom 7275 -- Drow Mage Apprentice
+#addreccom 7304 -- Revenancer
+
+#defcom1 7303 -- Maerimydran Commander
+#defcom2 7274 -- Drow Streakhmaster
+#defunit1 7234 -- Drow Sargtlin
+#defmult1 20
+#defunit1b 6774 -- Drow Hunter 
+#defmult1b 10
+#defunit2 7270 -- Drow Lizardrider
+#defmult2 10
+
+---------- DEFENCES
+#guardcom 7274 -- Drow Streakhmaster
+#guardunit 7234 -- Drow Sargtlin
+#guardmult 20
+#wallcom 7303 -- Maerimydran Commander
+#wallunit 6774 -- Drow Hunter 
+#wallmult 12 	
+
+---------- START SITES
+
+#startsite "Lake of Blood" 
+#startsite "Courtyard of Lolth" 
+#startsite "The Coliseum of Maerimydra" 
+#startsite "Castle Maerimydra" 
+-- now a throne #startsite "Shattered Tower" 
+
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\menzoberranzan.dm
+------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+-----------------Menzoberranzan---------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 222
+#era 2
+#name "Menzoberranzan"
+#epithet "Realm of the Spider Queen"
+#brief "Menzoberranzan, the City of Spiders, was a large underground drow city-state in the Upper Northdark. Menzoberranzan was possibly the most well known drow city in Faerûn. Located in the Upper Northdark, about 2 miles below the Surbrin Valley. It was quite close to Mithral Hall and was connected through tunnels to that and many other locations."
+
+#descr "Menzoberranzan was located in a huge arrowhead-shaped cavern, some two miles wide and a thousand feet high. The city was mainly carved from calcite and it was filled with blue, green, and violet faerie fire. Buildings were often covered with the city's main motif: the spider, in honor of Lolth. A powerful priestess named Menzoberra led seven drow families at Lolth's request into the Northdark in -3917 DR from the southerly drow holdings of Great Bhaerynden. Their goal was to escape from the constant warring between factions who venerated Lolth and those that worshiped Ghaunadaur, The Lord of Slimes. 
+
+The original seven drow families, having no immediate external enemy, fell to attacking and undermining one another——exactly what they had hoped to escape—to the greater glory of their evil goddess, who loved such chaos. The result was an exodus of the losing noble families from the city and the spreading of dark elves across the Northdark. 
+
+The city had many different factions, or Houses, all of which vied for power. As it was a matriarchal society, however, only females truly held power. Officially, the city was under the rule of the Ruling Council of Eight, composed of the eight matron mothers of the first (and most powerful) eight houses. For many centuries—as long as any living drow could remember—it was under the indirect rule of House Baenre, which had ruled for centuries uncontested.
+
+The worship of any other deity but Lolth was forbidden, though a few secret cults to Vhaeraun persisted.
+
+The city is split into four provices. You'll need to unify all of Menzoberranzan to stand a chance against your many enemies nearby, which include the brutish orcs of the Frozen Spine, the Duergar of Gracklstugh who have not yet learned their place, and the Dwarves of the Silver Marches, intent to reclaim the Northkingdom's former glory. Undrek'Thoz in the far-away Earthroot beneath Thay is also loyal to the Spider Queen."  
+#summary "You have powerful priestesses and capable mages, tough mounted troops and sacred commanders. Perhaps deadliest will be your crusading Handmaidens of the Spider Queen - crusaders to inspire your armies to glory in the name of the Queen of the Demonweb Pits."  
+#flag "ForgottenRealms/flag_menzoberranzan.tga"
+#templepic 30 -- Forest Gate
+#fortera 2 -- Castle standard era 2
+#homefort 2 -- Fortress (needing upgrade)
+#buildfort 3
+#builduwfort 6
+#labcost 300
+#templecost 300
+#color 0.65 0.75 0.80
+
+
+#addgod 7171 -- Lolth -- PRETENDER
+#cheapgod40 7171 -- Lolth -- PRETENDER
+
+
+#startcom 6771 -- Drow Priestess
+#startunittype1 6774 -- Drow Hunter 
+#startunitnbrs1 20
+
+#startscout 7275 -- Drow Mage Apprentice
+
+#addrecunit 7234 -- Drow Sargtlin
+#addrecunit 6774 -- Drow Hunter 
+#addrecunit 7270 -- Drow Lizardrider
+
+#addreccom 6725 -- Drow Assassin
+#addreccom 7317 -- Drow Commander
+#addreccom 7274 -- Drow Streakhmaster
+#addreccom 7169 -- Soul Spider
+#addreccom 7275 -- Drow Mage Apprentice
+#addreccom 7515 -- Adept of Lolth
+#addreccom 6771 -- Priestess of Lolth
+#addreccom 7167 -- Drow Arch Mage 
+
+#caverec 7234 -- Drow Sargtlin
+#cavecom 7317 -- Drow Commander
+
+#defcom1 7169 -- Soul Spider
+#defcom2 7274 -- Drow Streakhmaster
+#defunit1 7234 -- Drow Sargtlin
+#defmult1 20
+#defunit1b 6774 -- Drow Hunter 
+#defmult1b 10
+#defunit2 7270 -- Drow Lizardrider
+#defmult2 10
+
+---------- DEFENCES
+#guardcom 7169 -- Soul Spider
+#guardunit 7234 -- Drow Sargtlin
+#guardmult 15
+#wallcom 6771 -- Drow Priestess
+#wallunit 6774 -- Drow Hunter 
+#wallmult 20 	
+
+---------- START SITES
+
+#startsite "Arach-Tinilith"
+#startsite "Melee-Magthere"
+#startsite "Sorcere"
+
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\mezro.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------
+---------------------------------------- THE JUNGLES OF CHULT ---------------------
+------------------------------------------------------------------------------------
+
+#selectnation 207
+#era 2 		
+#name "Mezro"
+#epithet "The Children of Ubtao"
+#idealcold -2
+#brief "This is one of the Heroic Nations, featuring poor native troops but excellent commanders and spellcasters."
+#descr "Chult was located at the westernmost end of the Chultan peninsula, in the southern part of the Trackless Sea, south of Calimshan coast. Chult has always been remote and isolated, forming a mountainous jungle of savage beasts, hulking dinosaurs, and disease-ridden swamps. Human tribes, goblins, and even stranger monstrous folk haunted the thick jungles. Nevertheless, Chult drew adventurers who sought its legendary riches. The primordial Ubtao was almost exclusively revered in the land, for the divine powers of Faerûn awarded Ubtao total dominion over Chult in exchange for the his vigilance over the threat of Dendar the Night Serpent who was imprisoned behind the Iron Doors of Night deep beneath the Peaks of Flame.
+
+An excellent but non-competitive single-player experience, the jungles are full of mystery and danger, including not only Dendar in The Peaks of Flame, but also the Tomb of Horrors - long considered the most unfairly dangerous dungeon in all of tabletop adventuring. The said, the lack of thrones will make reaching 10+ ascension points quite difficult. "
+
+#summary "Races: Tabaxi tribesmen, Velociraptors from the amphitheater, and whatever else is out there in the nearby jungles.
+Military: Weak. Poor troops overall.  
+Magic: Strong. Some outstanding spellcasters and solid with research.
+Priests: Strong. Every native caster is sacred and you have a rare sacred troop type as well.
+Mechanics: Your expansion is severely limited on the Faerun map as nearby independents are VERY powerful, Calimshan is jealous of your coastal holdings, and Serpentes is a looming threat to your East." 
+#flag "ForgottenRealms/flag207.tga"
+#templepic 14 -- Mayan 
+#fortera 2 -- MA
+#homefort 2 -- fortress
+#buildfort 2
+#builduwfort 6
+#labcost 300
+#templecost 300
+#color 0.0 1.0 0.6
+
+#addgod 5014 -- Ubtao
+--#addgod 653 -- Serpent King
+#addgod 5028 -- Great Bara of Ubtao
+
+-- #multihero1 XXXX -- 
+
+#startcom 6817 			-- Barae of Ubtao
+#startunittype1 6824 	--	Tabaxi Warrior
+#startunittype2 6825 	--	Tabaxi Archer
+#startunitnbrs1 30
+#startunitnbrs2 20
+
+#startscout 6818 	-- HERO: Ras Nsi
+
+#forestcom 6821 -- Jungle Druid
+
+#addrecunit 6824 -- Tabaxi Warrior
+#addrecunit 6825 -- Tabaxi Archer
+#addrecunit 6826 -- Ebony Guard
+
+#addreccom 6823 -- Spearbearer
+#addreccom 6822 -- Spiritlord
+
+-- All other units are site-specific
+
+#defcom1 6823 		-- Spearbearer
+#defcom2 6822 		-- Spiritlord
+#defunit1 6824 		-- Tabaxi Warrior
+#defunit1b 6825 	-- Tabaxi Archer
+#defunit2 6826 		-- Ebony Guard
+#defmult1 20 	
+#defmult1b 15
+#defmult2 6 
+
+---------- START SITES
+
+#startsite "Amphitheater of Mezro" 
+#startsite "Mezro College of Wizards"
+#startsite "Library of Mezro"
+#startsite "Temple of Ubtao"
+
+---------- DEFENCES
+#guardcom 6823
+#guardunit 6824
+#guardmult 15
+#wallcom 6823 		-- Spearbearer
+#wallunit 6825		-- Tabaxi Archer
+#wallmult 20 		
+#end 
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\mulhorand.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+-----------------------------MULHORAND------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 212
+#era 2 		
+#name "Mulhorand"
+#epithet "The Ascendant Pharoahs"
+#brief "In response to a plague that killed much of the ancient Imaskar Empire some 3,000 years ago, the Imaskari opened portals to another world in search of slaves. They found them in bronze-age Mesopotamia, on Earth. More than 100,000 people were brought through the portals, and then the portals were closed and all connections between the two worlds were sealed. The Imaskari called their new slaves 'the Mulan.'"
+
+#descr "The Imaskari barrier inhibited contact between the Mulan and their own deities on Earth with whom they had a powerful and devout connection. Ao thus intervened and allowed mortal manifestations of these deities to bypass the barrier and enter Toril directly. These Egyptian and Sumerian deities battled the Imaskari, eventually defeating them in the year −2488 DR. Unable to return to their homes in the Outer Planes, these divine manifestations settled in and founded the nations of Mulhorand in −2135 DR and Unther in −2087 DR.Mulhorand expanded rapidly. The physical manifestations of the Mulhorandi/Kemetic gods ruled directly over their empire for the next 1000 years. At Mulhorand's peak, it stretched over much of eastern Faerun. Then came the Orcgate Wars. 
+
+Some men just want to watch the world burn, and a man named Thayd was one such man. He dove deep into lost secretes of the Imaskari sorcerers to find a way to bring Mulhorand and Unther to their knees. His plot to overthrow and rule both empires failed, but he did manage to open several gates to a world inhabited by gray orcs. Neither Mulhorand nor Unther ever found them all, but the orcs sure did. The war lasted only 7 years and saw the deaths of several gods of the Mulan at the hands of Gruumsh. An alliance between the Mulhorandi and Untheric deities eventually turned the tide but neither Mulhorand nor Unther were able to ever fully recover. 
+
+A divine manifestation of Horus-Re rules the nation in truth, but it is the clergy who orchestrate and administer the state. There are several other deities who maintain a divine presence in the lands of Mulhorand as well: Anhur, god of war, Set, god of destruction, Isis, goddess of life, and Thoth, god of knowledge. Each has their own temple and while they are technically part of the Mulhorandi nation and are willing to defend it, these deities have their own agendas and are not under your direct control."
+#summary "As a theocratic nation, your various priests and theurgists are your greatest asset. Slaves make up the majority of the population and the poorly equipped but inexpensive soldiery. You have good commanders capable of improving their morale and all promote with XP, some eventually to sacreds. You also have the divine avatars of your gods, though all are immobile except Horus-Re. You will not struggle for magical research, and you are an astral powerhouse." 
+#flag "ForgottenRealms/flag212.tga"
+#templepic 0 -- Pyramid
+#fortera 3 -- Castle standard era 2
+#homefort 4 -- Citadel
+#buildfort 2
+#builduwfort 6
+#labcost 500
+#templecost 300
+#color 0.0 0.2 0.8
+
+#noforeignrec
+
+#addgod 5042 -- city of the eternity
+#addgod 6890 -- Horus-Re
+#cheapgod40 6890
+
+#startcom 200 		-- Prince of the Old Empire 
+#startunittype1 6877 	-- Old Empire Skirmisher
+#startunitnbrs1 40
+
+#startscout 6900	 	-- Ibis
+
+#addrecunit 6877 	-- Old Empire Skirmisher
+#addrecunit 6886 	-- Old Empire Slave Spear
+#addrecunit 6858 	-- Mulan Bowman
+#addrecunit 1078 	-- Chariot
+
+#addreccom 6900	 	-- Ibis
+#addreccom 200	 	-- Prince of the Old Empire
+#addreccom 6881 	-- Old Empire Drillmaster
+#addreccom 6883 	-- Prince-Bureaucrat 
+#addreccom 6912 	-- Mulan Adept
+#addreccom 6901 	-- Cleric of Isis
+#addreccom 6895 	-- Mystic Theurge
+
+#defcom1 6881 	-- Old Empire Drillmaster
+#defcom2 200 	-- Prince of the Old Empire
+#defunit1 6887  -- Old Empire Light Spearmen
+#defunit1b 6858  -- Old Empire Peltast
+#defunit2 1078 	-- Chariot
+#defmult1 20 
+#defmult1b 15 	
+#defmult2 4 
+
+---------- DEFENCES
+#guardcom 200
+#guardunit 6887
+#guardmult 15
+#wallcom 6881 	-- Old Empire Drillmaster
+#wallunit 6858 	-- Mulan Bowman
+#wallmult 25 	-- 
+
+---------- START SITES
+
+#startsite "City of the Gods"
+#startsite "The Solarium"
+#startsite "Library of the Gods"
+#startsite "Tower of the Sun"
+
+#end 
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\nantarn.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+--------------------------Nantarn Alliance -----------------------------------
+------------------------------------------------------------------------------
+
+#selectnation 239 -- Nantarn Alliance 
+#era 2
+#name "Nantarn Alliance"
+#epithet "Lords Under Sea"
+#brief "A faltering alliance of sea elves, merfolk, shalarin, and tritons in Faerûn's inner sea is on the brink of invasion from outside forces. Can it re-unite in time to survive the looming 12th Serôs War?"
+#descr "The Nantarn Alliance lies in the heart of Serôs - the name given to Faerûn's inner sea by the many peoples living beneath its waves. Through four epochs, the tritons, sea elves, locathah, shalarin, and merfolk have competed with dozens of other races including sahuagin, morkoth, ixitxachitl, merrow, koalinths, sea hags, scrags, krakens and many more terrible things from the depths below. Through genocide, slavery, madness and unimaginable bloodshed, the Nantarn Alliance has clung on to the hope of racial harmony and maintained a cosmopolitan capital at the City of Destinies, Myth Nantar. 
+
+Founded sometime around -9,000 DR by the mythical triton, Dukar, the Nantar Academy became a center of arcane scholarship. Dukar went on to establish an order of powerful peacekeeping mages, The Dukars, who brought together all the races in the hope for a just and peaceful future. A growing settlement of aquatic elves later swallowed up Nantar during the height of the elven empire of Aryselmalyr. The Dualist High Mages of Aryselmalyr joined the Dukars in creating a mythal to allow those of the surface the ability to negotiate, trade, and engage in cultural exchange with the undersea realm. The mythal also contained powerful wards, barring the entry of the demonic sahuagin, but while the mythal was destined to last, the peace was broken many times. 
+
+At least eleven major conflicts have erupted over the last two milennia, sowing death, chaos and distrust, and Myth Nantar and the Dukars eventually became political pawns. Aryselmalyr collapsed only to be replaced by a revolving door of rebellious merfolk kingdoms and at the conclusion of the 11th Serôs War, roughly 500 years ago, the Dukar Orders were destoyed and Myth Nantar became little more than a ruins. 
+
+Amidst this time of uncertainty, dark prophecies and fearful spies speak of a coming crisis unlike any Serôs has ever seen..."  
+#summary "Sea Elves, Merfolk, and Shalarin are the roster's core, with powerful Tritons in small but effective numbers. Note these are not your vanilla dominions merfolk and tritons. Several capitals, each with their own cap-only roster, takes recruitment beyond this nation's described list. Nothing is cheap, and there are many holy units. Labs and temples are cost-effective and the intact Mythal at Myth Nantar may be enough to survive the coming horror."  
+#flag "ForgottenRealms/flag_nantarn.tga"
+#templepic 1 -- Under Water
+#fortera 2 -- Castle standard era 2
+#uwbuild 1
+#uwnation
+#homefort 7
+#buildfort 1
+#builduwfort 6
+#labcost 300
+#templecost 300
+#color 0.10 0.73 0.62
+
+#addgod 8000 -- Mystra
+#addgod 8051 -- TEMPLE OF DEEP SASHELAS
+#cheapgod40 8051 -- Deep Sashelas
+
+#startcom 7627 -- Shoalguard Captain 
+#startunittype1 7611 -- Sea Elf Shoalguard
+#startunittype2 7538 -- Sea Elf Ranger
+#startunitnbrs1 25
+#startunitnbrs2 15
+
+#startscout 7554 -- Shalarin Seeker
+
+#addrecunit 7611 -- Sea Elf Shoalguard
+#addrecunit 7538 -- Sea Elf Ranger 
+#addrecunit 7540 -- Sea Elf Warden 
+
+#addreccom 7639 -- Dolphin Scout
+#addreccom 7627 -- Shoalguard Captain 
+#addreccom 7605 -- Sea Elf Paladin
+#addreccom 7539 -- Sea Elf Druid 
+#addreccom 7541 -- Sea Elf High Mage 
+#addreccom 7554 -- Shalarin Seeker
+#addreccom 8021 -- Mermaid Bard
+#addreccom 7534 -- Mermaid Wavekeeper
+
+#deeprec 7619 -- Triton Tapalero
+#deeprec 7532 -- Triton Sentinel
+#deeprec 7621 -- Triton Crossbowman
+#deepcom 7536 -- Triton Crusader -- Watershape
+#deepcom 7530 -- Triton Theurge
+
+#deepfortrec 7619 -- Triton Tapalero
+#deepfortrec 7532 -- Triton Sentinel
+#deepfortrec 7621 -- Triton Crossbowman
+#deepfortcom 7536 -- Triton Crusader -- Watershape
+#deepfortcom 7530 -- Triton Theurge
+
+
+-- 7521 -- Barracuda
+-- 7523 -- Hippocampus
+-- 7606 -- Dolphin
+-- 7607 -- Sacred Dolphin
+-- 8003 -- Orca
+-- 8004 -- Whale
+
+-- 7639 -- Dolphin Scout
+
+-- 7518 -- Merfolk Militia
+-- 7623 -- Merfolk Skirmisher
+-- 7625 -- Merfolk Crossbowman 
+-- 7519 -- Merfolk Soldier
+-- 7522 -- Merfolk Knight
+-- 7624 -- Merfolk Whalesiders
+
+-- 7520 -- Merfolk Commander
+-- 7614 -- Merfolk Knight Commander
+-- 8019 -- Merfolk Princess
+-- 8020 -- Merfolk Prince
+-- 8021 -- Mermaid Bard
+-- 7534 -- Mermaid Wavekeeper
+
+
+-- 7532 -- Triton Sentinel
+-- 7621 -- Triton Crossbowman
+-- 7619 -- Triton Tapalero
+-- 7536 -- Triton Crusader
+-- 7530 -- Triton Theurge
+
+-- 7611 -- Sea Elf Shoalguard -- Watershape
+-- 7538 -- Sea Elf Ranger -- 7543 -- Landshape
+-- 7608 -- Nantari Cavalier
+-- 7627 -- Shoalguard Captain 
+-- 7609 -- Nantari Cavalier Captain
+-- 7605 -- Sea Elf Paladin -- Watershape
+-- 7539 -- Sea Elf Druid -- 7545 -- Landshape
+-- 7540 -- Sea Elf Warden -- 7542 -- Landshape
+-- 7535 -- Sea Elf Delphion
+-- 7541 -- Sea Elf High Mage -- 7544 -- Landshape
+
+-- 7547 -- Manta Ray
+-- 7548 -- Shalarin Mantaback
+-- 7549 -- Shalarin Protector
+-- 7550 -- Shalarin Arcane
+-- 7551 -- Shalarin Finblade
+-- 7552 -- Shalarin Mantaback Captain
+-- 7553 -- Shalarin Ruler
+-- 7554 -- Shalarin Seeker
+
+
+-- LAND PROVINCE DEFENCE
+#defcom1 7540 -- Sea Elf Warden
+#defcom2 7529 -- Triton Champion -- Landshape
+#defunit1 7611 -- Sea Elf Shoalguard
+#defmult1 20
+#defunit2 7538 -- Sea Elf Ranger
+#defmult2 10
+
+-- LAND WALL DEFENCE
+#guardcom 7540 -- Sea Elf Warden
+#guardunit 7611 -- Sea Elf Shoalguard
+#guardmult 20
+#wallcom 7529 -- Triton Champion -- Landshape
+#wallunit 7538 -- Sea Elf Ranger
+#wallmult 10	
+
+-- UW PROVINCE DEFENCE
+#uwdefcom1 7520 -- Merfolk Commander
+#uwdefcom2 7614 -- Merfolk Knight Commander
+#uwdefunit1 7623 -- Merfolk Skirmisher
+#uwdefmult1 20
+#uwdefunit1b 7519 -- Merfolk Soldier
+#uwdefmult1b 10
+#uwdefunit2 7522 -- Merfolk Knight
+#uwdefmult2 10
+
+--UW WALL DEFENCE
+#uwguardcom 7520 -- Merfolk Commander
+#uwguardunit 7519 -- Merfolk Soldier
+#uwguardmult 20
+#uwwallcom 7520 -- Merfolk Commander
+#uwwallunit 7625 -- Merfolk Crossbowman 
+#uwwallmult 16	
+
+---------- START SITES
+
+#startsite "Myth Nantar" -- THRONELOC
+#startsite "The Mythal at Myth Nantar"
+#startsite "Mount Halaath"
+#startsite "Lesser Hmur Plateau"
+-- Great Dungeons of the Merynths
+
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\narfell.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+-----------------NARFELL-------------------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 219
+#era 2
+#name "Narfell"
+#epithet "Demonic Upheaval"
+#brief "Narfell, often referred to as old Narfell or the Empire of Narfell, was a once-great, albeit brief-lasting human empire that arose thousands of years ago in the Cold Lands of northeast Faerûn.. Its fiend-worshiping citizens were all-but annihilated in a terrific war with their neighboring nation of Raumathar, leaving its survivors to eke out a new existence that was more in harmony with the natural world."
+
+#descr "Narfell, often referred to as old Narfell or the Empire of Narfell, was a once-great, albeit brief-lasting human empire that arose thousands of years ago in the Cold Lands of northeast Faerûn. Its fiend-worshiping citizens were all-but annihilated in a terrific war with their neighboring nation of Raumathar, leaving its survivors to eke out a new existence that was more in harmony with the natural world.
+
+Ancient, imperialist Nar culture was wholly ingrained with the practice of conjuring and bargaining fiends, as evidenced by the summoning chambers that have been found in each uncovered Nar fortress. Using mere glyphs and wards as their protection, Nar conjurers frequently opened portals to numerous layers of both the Abyss and the Nine Hells.
+
+A new pact is now being forged. Warlocks arrive from across the realms, drawn to the region by its dark past and intent on reestablishing the infernal contracts that brought abyssal entities across the barrier. Demoncyst portals scattered and hidden across the landscape aid them in their quest. Find them. Use them to unleash demonic hordes and conquer the world in the name of your abyssal god.
+
+You are a blood nation. Clerics and Wizards are extremely limited and your troops are effective but not remarkable. Find the special, hidden sites known as Demoncysts through blood-magic site searching and use them to summon your demonic hordes. All in the name of Tempus, Orcus, and the infinite Abyss!"
+#summary "You are a blood nation. Clerics and Wizards are extremely limited and your troops are effective but not remarkable. Find the special, hiden sites known as Demoncysts through blood-magic site searching and use them to summon your demonic hordes. All in the name of Tempus, Orcus, and the infinite Abyss."  
+#flag "ForgottenRealms/flagnarfell.tga"
+#templepic 13 -- Eye of the Void
+#fortera 2 -- Castle standard era 2
+#homefort 3 -- Great Walled City
+#uwbuild 1
+#buildfort 2
+#builduwfort 6
+#labcost 400
+#templecost 400
+#color 0.4 0.2 0.0
+
+#bloodnation
+#sacrificedom
+#aibloodnation
+
+-- 
+#addgod 5025 -- Talos 3
+#addgod 5016 -- Loviatar 3
+#addgod 5015 -- Tempus 3
+#addgod 5031 -- Orcus 2
+#addgod 7346 -- Soneillon 2
+#addgod 8049 -- Demogorgon
+
+
+#cheapgod40 7346 -- Soneillon 2
+#cheapgod20 5031 -- Orcus 2
+
+
+#multihero1 7045 -- Hezrou
+#multihero2 7047 -- Vrock
+#multihero3 7049 -- Glabrezu
+#multihero4 7342 -- Alu-fiend
+#multihero5 7343 -- Cambion
+#multihero6 7340 -- Marilith
+#multihero7 7341 -- Succubus
+
+
+#startcom 136 		-- Nar Horselord
+#startunittype1 2990 -- Nar Warrior 
+#startunittype2 137 -- Nar Cavalry 
+#startunitnbrs1 20
+#startunitnbrs2 10
+
+#startscout 2279 -- Warrior Scout
+
+#addrecunit 2990 -- Nar Warrior 
+#addrecunit 2989 -- Nar Hunter 
+#addrecunit 2991 -- Nar Axeman 
+#addrecunit 137 -- Nar Cavalry 
+
+#addreccom 2279 -- Warrior Scout
+#addreccom 141 -- Barbarian Chief
+#addreccom 136 -- Nar Horselord
+#addreccom 6700 -- Cleric of Tempus
+#addreccom 94 -- Stock Conjurer
+#addreccom 7503 	-- Tiefling Spellfilcher 
+#addreccom 7344 	-- Tiefling Priestess
+#addreccom 7502 	-- Tiefling Warlock
+#addreccom 7043 -- Nar Demonbinder
+
+
+
+#defcom1 26 -- Nar Horselord
+#defcom2 6700 -- Cleric of Tempus
+#defunit1 29 -- Nar Hunter 
+#defunit1b 32 -- Nar Cavalry
+#defmult1 20 	
+#defmult1b 20 
+
+---------- DEFENCES
+#guardcom 141
+#guardunit 2991
+#guardmult 15
+#wallcom 141 -- Barbarian Chief
+#wallunit 2989 -- Nar Hunter 
+#wallmult 20 	
+
+---------- START SITES
+
+#startsite "The Long Road" -- inc growth and produces resources 
+
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\oryndoll.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+------------------------Oryndoll - Mindflayer Realm-----------------------
+--------------------------------------------------------------------------
+
+
+#selectnation 226
+#era 2
+#name "Oryndoll"
+#epithet "Illithid City of Loretakers"
+#brief "Oryndoll, the City of Loretakers, was a large underground mind flayer citystate in the Lowerdark of the Darklands. Oryndoll was one of the earliest illithid cities on Toril and was highly famed for its inhabitants rampant collection of exclusive knowledge. Its wealth of knowledge rivaled even Candlekeep's great library. "
+
+#descr "The mere mention of Oryndoll struck fear into most Underdark denizens of southwestern Faerûn not only due to it being an illithid city, but also because it was a holy site of the deity Ilsensine - the god brain. The city was difficult to reach from other places in the Underdark because of its depth, and the mindflayers carefully guarded these secret passages.
+
+In 1358 DR, during the Time of Troubles, Ilsensine adopted as its avatar the elder brain in Oryndoll, stimulating illithid society. The illithids created new technologies, new psionic items, and more psionic disciplines, as well as renewed their assaults on surface lore holdings. 
+
+Oryndoll's main united purpose was to acquire knowledge no matter how trivial, through stripping it from the thrall races. The end goal of this was to reduce the rest of Toril to barbarism."  
+
+#summary "You have a relatively unchallenged reign on the Glimmersea and access to the surface's Sea of Fallen Stars. The challenge will be breaking out in a meaningful way. Your options on land are limited to kuo-toan devotees, cloaker thralls, and whatever horrifying creatures you can recruit from the depths of the underdark."  
+
+#flag "ForgottenRealms/flag_oryndoll.tga"
+#templepic 16 -- south indian
+#fortera 2 -- Castle standard era 2
+#homefort 2 -- Fortress (needing upgrade)
+#cavenation  1
+#uwbuild 1
+#buildfort 2
+#builduwfort 5
+
+#color 0.02 0.15 0.40
+
+#addgod 5048 -- Elder Brain
+#cheapgod40 5048 -- Elder Brain
+
+
+#startcom 5115 -- Ulitharid -- RECRUITABLE
+#startunittype1 7209 -- Intellect Devourers
+#startunitnbrs1 10
+
+#startscout 5116 -- Lesser Illithid
+
+#addrecunit 7386 -- Darkmantle
+#addrecunit 7209 -- Intellect Devourer
+#addrecunit 7081 -- Otyugh
+#addrecunit 7161 -- Cloaker
+#addrecunit 7165 -- Umber Hulks
+
+#addreccom 7385 -- Darkmantle Enveloper
+#addreccom 8007 -- Intellect Devourer Scout
+#addreccom 5116 -- Lesser Illithid
+#addreccom 8013 -- Illithid Corruptor
+#addreccom 5113 -- Illithid -- RECRUITABLE
+#addreccom 5115 -- Ulitharid -- RECRUITABLE
+#addreccom 7160 -- Cloaker Lord
+
+#caverec 7209 -- Intellect Devourer
+#caverec 6807 -- Goblin deadeye
+#caverec 6723 -- Goblin dogslicer
+#caverec 7162 -- Quaggoth Hunter
+#caverec 7180 -- Kuo-toan Guards
+#caverec 6677 -- Troglodyte Raider
+#caverec 7210 -- Ogre
+#caverec 7166 -- Hook Horror 
+
+#cavecom 8007 -- Intellect Devourer Scout
+#cavecom 6770 -- Goblin King
+#cavecom 6733 -- Goblin Lab-Rats
+#cavecom 7163 -- Quaggoth Jald
+#cavecom 7164 -- Quaggoth Thonot Shaman
+#cavecom 7155 -- Kuo-Toan Monitor
+#cavecom 7154 -- Kuo-Toan Lash
+#cavecom 2749 -- Troglodyte Druhyidd
+
+#uwrec 7180 -- Kuo-toan Guards
+#uwrec 7081 -- Otyugh
+#uwrec 7599 -- Morkoth Warrior
+#uwrec 7566 -- Merrow Behemoth
+#uwcom 7155 -- Kuo-Toan Monitor
+#uwcom 7154 -- Kuo-Toan Lash
+#uwcom 7600 -- Morkoth Mage
+#uwcom 7601 -- Morkoth Arcount
+#uwcom 5116 -- Lesser Illithid
+#uwcom 5113 -- Illithid -- RECRUITABLE
+#uwcom 2749 -- Troglodyte Druhyidd
+
+---------- DEFENCES
+#defcom1 5116 -- Lesser Illithid
+#defcom2 5113 -- Illithid -- RECRUITABLE
+#defunit1 6723 -- Goblin Dogslicers
+#defmult1 20
+#defunit1b 6807 -- Goblin Deadeye
+#defmult1b 10
+#defunit2 6676	-- Orc Marauders 
+#defmult2 20
+
+
+#guardcom 5113 -- Illithid -- RECRUITABLE
+#guardunit 6723 -- Goblin Dogslicers
+#guardmult 15
+#wallcom 5113 -- Illithid -- RECRUITABLE
+#wallunit 6807 -- Goblin Deadeye
+#wallmult 20 	
+
+
+
+-- UW PROVINCE DEFENCE
+#uwdefcom1 5113 -- Illithid -- RECRUITABLE
+#uwdefcom2 7600 -- Morkoth Mage
+#uwdefunit1 7180 -- Kuo-toan Guards
+#uwdefmult1 20
+#uwdefunit1b 7081 -- Otyugh
+#uwdefmult1b 10
+#uwdefunit2 7599 -- Morkoth Warrior
+#uwdefmult2 20
+
+--UW WALL DEFENCE
+#uwguardcom 5113 -- Illithid -- RECRUITABLE
+#uwguardunit 7566 -- Merrow Behemoth
+#uwguardmult 20
+#uwwallcom 5113 -- Illithid -- RECRUITABLE
+#uwwallunit 6727 -- Lizard folk
+#uwwallmult 16
+
+
+---------- START SITES
+#startsite "Thrall Caverns of Oryndoll"
+#startsite "Ring Caverns of Oryndoll"
+#startsite "Undervaults of Ilsensine"
+
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\savage-frontier.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------- THE SAVAGE FRONTIER -------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
+
+#selectnation 206
+#era 2 		
+#name "The Savage Frontier"
+#epithet "Gateway"
+#idealcold 0
+#brief "Different surface terrains offer different recruiting options. Some monsters have very unique combinations of abilities. You'll be strong early on, but weaken over time if your research lags too far behind other, more 'civilized' nations."
+#descr "The Savage Frontier is a loose confederation of warring monstrous tribes and clans with influence across the Western Heartlands and into the Trackless Sea beyond. While your capital shakes the rugged and desolate Greypeak Mountains, you also have a solid hold over the cold depths of the open oceans where the thieves, assassins and mages of the Kraken Society hold dominion. Led by Slarkrethel, the Chosen of Umberlee, the Kraken Society is just one of your many competing power centers. You also have connected holdings in the Underdark's Gauthgrottoes."
+
+#summary "Though you have access to some of the most versatile and dramatically powerful units in the game, you have terribly weak research and very poor forts. Dragons, Krakens, Mindflayers, and much more should make expansion comfortable, but keeping those gains over time will be the challenge. Many of your best units require no forts to be constructed, so plan accordingly." 
+#flag "ForgottenRealms/flag206.tga"
+#templepic 8 -- Temple Ruins 
+#fortera 1 
+#homefort 18 -- Giant Citadel - Cloud Giants
+#buildfort 1
+#uwbuild 1
+#builduwfort 6
+#labcost 600
+#templecost 250
+#color 0.6 0.2 0.2
+#noforeignrec
+
+#addgod 5025 -- Talos 3
+#addgod 5013 -- Gruumsh
+#addgod 5035 -- Moander 2
+#addgod 5031 -- Orcus 2
+#addgod 5048 -- Great Elder Brain 2
+#addgod 8049 -- Demogorgon 2 
+
+#cheapgod40 5035 -- Moander
+
+
+-- #multihero1 XXXX -- 
+#multihero1 7341 -- Succubus
+#multihero2 7068 -- beholder
+#multihero3 6805 -- Cloud Giant
+#multihero4 6775 -- hag
+#multihero5 7310 -- Death Knight Dreadlord
+#multihero6 7450 -- Fey'ri Demonarch
+
+
+#startcom 6804			-- The Beast Lord
+#startunittype1 6807	-- Goblin Archers
+#startunittype2 6809	-- Stone Giant Maulers
+#startunitnbrs1 25
+#startunitnbrs2 4
+
+#startscout 6779 	-- Young Adult Red Dragon
+
+#wasterec 6672		-- Wyverns from wastelands
+#wasterec 6724		-- Gnoll Hunters from wastelands
+#wasterec 6723 		-- Goblin Dogslicers
+
+#forestrec 6807		-- Goblin Archers
+#forestrec 6806 	-- Krenshar
+#forestrec 2219		-- Forest Troll from forests
+#forestrec 7071		-- owlbear
+
+#mountainrec 6678	-- Hill Giant Reavers from wastelands
+#mountainrec 234	-- Minotaur
+#mountainrec 6676	-- Orc Marauders
+
+#swamprec 6677		-- Troglodyte Raider
+#swamprec 1831		-- Hydra from swamp
+#swamprec 7081		-- Otyugh
+
+#caverec 7081		-- Otyugh
+
+#forestcom 2220 	-- Troll Shaman
+#forestcom 6650 	-- Priest of Malar
+#forestcom 6770 	-- Goblin King
+#forestcom 6733		-- Goblin Shaman
+
+#mountaincom 430 	-- Black Harpy
+#mountaincom 6737 	-- Orc Warlord
+#mountaincom 6801	-- Cleric Gruumsh
+#mountaincom 6772	-- Hill Giant Shaman
+#mountaincom 6728 	-- Manticore
+
+#wastecom 6808 		-- Gnoll Chieftain
+
+#cavecom 6738 		-- Firegiant Commander
+#cavecom 310 		-- Necromancer 
+#cavecom 5116 		-- Lesser Illithid
+#cavecom 5113 		-- Illithid -- RECRUITABLE
+
+#swampcom 6687		-- Hydar Beastmaster 
+#swampcom 2749 		-- Troglodyte Druhyidd
+#swampcom 2891 		-- trog warchief
+#swampcom 6831		-- Yuan-ti Abomination
+
+#coastcom 564		-- Sea Troll from coast
+
+#addrecunit 239 	-- Stirge
+#addrecunit 6807 	-- Goblin Archer
+#addrecunit 6723 	-- Goblin Dogslicers
+#addrecunit 6773 	-- Goblin Wolfriders
+#addrecunit 6678	-- Hill Giant Reavers 
+
+#addreccom 430 		-- Black Harpy
+#addreccom 6770 	-- Goblin King
+#addreccom 6811		-- Bugbear Captain
+#addreccom 6733		-- Goblin Shaman
+#addreccom 6772		-- Hill Giant Shaman
+
+#uwrec 7148 -- Locathah Slave
+#uwrec 7598 -- Morkoth 
+#uwrec 7599 -- Morkoth Warrior
+#uwrec 7566 -- Merrow Behemoth
+#uwcom 7603 -- Morkoth Captain
+#uwcom 7600 -- Morkoth Mage
+#uwcom 7601 -- Morkoth Arcount
+#uwcom 7307 -- Kraken
+#uwcom 5116 -- Lesser Illithid
+#uwcom 5113 -- Illithid -- RECRUITABLE
+#uwcom 7308 -- Kraken Lord
+
+#searec 7566 -- Merrow Behemoth
+#searec 7598 -- Morkoth 
+#searec 7599 -- Morkoth Warrior
+#seacom 7603 -- Morkoth Captain
+#seacom 7603 -- Morkoth Captain
+#seacom 7760 -- Morkoth Mage
+#seacom 7307 -- Juvie Kraken
+
+
+-- All other units are site-specific
+
+
+---------- DEFENCES
+#defcom1 6733		-- Goblin Shaman
+#defcom2 6772		-- Hill Giant Shaman
+#defunit1 6723 		-- Goblin Dogslicers
+#defunit1b 6807 	-- Goblin Archer
+#defunit2 6724		-- Gnoll Hunters
+#defmult1 30 	
+#defmult1b 10 
+#defmult2 10
+
+#guardcom 6811
+#guardunit 6723
+#guardmult 15
+#wallcom 6770 		-- Goblin King
+#wallunit 6807 		-- Goblin Archer
+#wallmult 20 		-- 
+
+
+-- UW PROVINCE DEFENCE
+#uwdefcom1 5113 -- Illithid -- RECRUITABLE
+#uwdefcom2 8020 -- Merfolk Prince
+#uwdefunit1 7148 -- Locathah Slave
+#uwdefmult1 20
+#uwdefunit1b 7599 -- Morkoth Warrior
+#uwdefmult1b 10
+#uwdefunit2 7566 -- Merrow Behemoth
+#uwdefmult2 20
+
+
+--UW WALL DEFENCE
+#uwguardcom 5113 -- Illithid -- RECRUITABLE
+#uwguardunit 7599 -- Morkoth Warrior
+#uwguardmult 20
+#uwwallcom 5113 -- Illithid -- RECRUITABLE
+#uwwallunit 7566 -- Merrow Behemoth
+#uwwallmult 16
+
+---------- START SITES
+
+#startsite "Llorkh" 			-- Knights 22 
+#startsite "Temple to Annam"	-- Cloud Giants
+#startsite "Vale of Whispers"	-- Shrine to Shar
+#startsite "Mines of Dekanter" 	-- Beast Lord's Laboratory
+#startsite "Deadstone Cleft" 	-- Stone Giants
+
+#end 
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\scoured-legion.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+--------------------------The Scoured Legion-------------------------------------------
+------------------------------------------------------------------------------
+
+#selectnation 238 -- Hellgate Alliance
+#era 2
+#name "The Scoured Legion"
+#epithet "Masters of Hellgate Keep"
+#brief "With a new-found pact between the demonic forces inhabiting the lands beneath Hellgate Keep and the ancient elven city of Myth Drannor, the conquest of all of Faerun is on the table."
+
+#descr "In -372 DR, the elves of Earlann built a castle atop Ascal's Horn, an exinct volcano on the northern edge of the High Forest, and warded its walls with powerful magic.  Over the next 1,000 years, Ascalhorn grew into an urban center of learning and shared knowledge to rival Myth Drannor. It became a refuge for suvivors from the fall of both Netheril and, later, Myth Drannor itself. Worshippers of Bane, however, hiding amidst the refugees, summoned devils from the Nine Hells in a bid for power.  In 856 DR, the city devolved into chaos and the devils siezed control for themselves. Desperate, some citizens turned to demons for aid. Led by the balor, Grintharke, the demons fought off the devils and then turned on their masters. Their legions spread, destroying both Earlann as well as the dwarven kingdom of Ammarindar below. 
+
+In 886, Elminster and Khelben Arunson secretly altered the wards cast during the keep's construction to become a prison, succeeding in confining Grintharke and his generals within. Forced to change tactics, the demons expanded their influence instead through forced interbreeding with orcs and captured elves and humans. Yet the Harpers had ultimately succeeded in localizing the threat for the next 500 years. Ascalhorn became known as Hellgate Keep.
+
+In 1365, Grintharke was finally killed. The cambion son of a marilith siezed his throne. Kaanyr Vhok, unfettered by the Harpers' wards, united the remains of the Scoured Legion and its abyssal descendants. In response, the Harpers utilized a dangerous and powerful artifact to annihilate the keep. Kannyr, however, was safely below in old Ammarindar. Worse, the blast inadvertantly shattered a 5,000 year old prison that had remained hidden below the foundations of ancient Ascalhorn. Daemonfey poured out. Led by Sarya Dlardrageth, they formed a pact with Kaanyr and the remnants of the Scoured Legion. Relocating herself to the ruins of Myth Drannor, Sarya joined Kaanyr in a dark alliance intent on revenge."  
+
+#summary "Ammarindar and Myth Drannor are disconnected and surrounded by powerful nations unlikely to welcome a demonic horde. Above Ammarindar, Hellgate Dell as it is now known, has been quickly siezed by treants intent on preventing its reconstruction. In the lore, Kaanyr embarked on an invasion of the Underdark in the War of the Spider Queen. At the same time, Sarya holds firmly to Myth Drannor and is poised to seize its unlocked Mythal."  
+#flag "ForgottenRealms/flag_scouredlegion.tga"
+#templepic 4 -- Mountain Temple
+#fortera 2 -- Castle standard era 2
+#homefort 3
+#buildfort 3
+#builduwfort 6
+#labcost 300
+#templecost 300
+#color 0.90 0.22 0.32
+#bloodnation
+
+#addgod 5016 -- Loviatar 4
+#addgod 7346 -- Soneillon 3
+#addgod 5036 -- Asmodeus 2
+#addgod 5031 -- Orcus 2
+#addgod 7052 -- Grazzt 2
+#cheapgod40 7052 -- Grazzt 2
+
+#startcom 7343 -- Cambion
+#startunittype1 7448 -- "Tanarukk"
+#startunitnbrs1 5
+
+#startscout 7503 -- Tiefling Spellfilcher 
+
+--#wasterec 6724		-- Gnoll Hunters 
+--#wastecom 6808 		-- Gnoll Chieftain
+--#wastecom 6728 		-- Manticore
+
+--#forestrec 6723 	-- Goblin Dogslicers
+--#forestrec 6807		-- Goblin Archers
+--#forestrec 6806 	-- Krenshar
+--#forestrec 2219		-- Forest Troll from forests
+--#forestrec 7071		-- Owlbear
+--#forestcom 6770 	-- Goblin King
+--#forestcom 2220 	-- Troll Shaman
+--#forestcom 6733 	-- Goblin Lab-Rats
+
+--#mountainrec 6676	-- Orc Marauders
+--#mountainrec 6802	-- Orc Greatbows
+--#mountainrec 6672 	-- Wyvern
+--#mountaincom 430 	-- Black Harpy
+--#mountaincom 6737 	-- Orc Warlord
+--#mountaincom 6801	-- Cleric Gruumsh
+
+--#caverec 7234 -- Drow Sargtlin
+--#caverec 7081 -- Otyugh
+--#caverec 6671 -- Hell Hound
+--#caverec 7165 -- Umber Hulk
+--#cavecom 7317 -- Drow Commander
+--#cavecom 7275 -- Drow Mage Apprentice
+--#cavecom 6738 -- Fire Giant Commander
+
+#addrecunit 6807 -- Goblin Deadeye
+#addrecunit 6723 -- Goblin Dogslicer
+#addrecunit 6676 -- Orc Marauder
+#addrecunit 6671 -- Hell Hound
+#addrecunit 6672 -- Wyvern
+#addrecunit 7512 -- Tiefling Sniper
+#addrecunit 7505 -- Maeluth Axeman
+#addrecunit 7449 -- Fey'ri Dervish
+#addrecunit 7448 -- Tanarukk
+
+#addreccom 7503 -- Tiefling Spellfilcher 
+#addreccom 7502 -- Tiefling Warlock
+#addreccom 7344 -- Tiefling Priestess
+#addreccom 7455 -- Tanarukk Captain
+#addreccom 7504 -- Durzagon Hellforger 
+#addreccom 7343 -- Cambion
+#addreccom 7342 -- Alu-fiend
+#addreccom 7506 -- Daemonfey Hexblade
+#addreccom 7451 -- Fey'ri Sorceress
+#addreccom 7450 -- Daemonfey Patriarch
+
+
+#defcom1 7455 -- "Tanarukk Captain"
+#defcom2 7342 -- Alu-fiend
+#defunit1 6676 -- Orc Marauder
+#defmult1 20
+#defunit1b 7210 -- Ogre
+#defmult1b 10
+#defunit2 7448 -- "Tanarukk"
+#defmult2 10
+
+---------- DEFENCES
+#guardcom 7455 -- "Tanarukk Captain"
+#guardunit 6676 -- Orc Marauder
+#guardmult 20
+#wallcom 7502 -- Tiefling Warlock
+#wallunit 6802 -- Orc Greatbow
+#wallmult 20	
+
+---------- START SITES
+
+#startsite "Ruins of Ammarindar" -- THRONELOC
+#startsite "Splendarrmornn"
+#startsite "Citadel Yaunoroth"
+#startsite "Demoncyst"
+
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\serpentes.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+------------------------Serpentes-----------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 223
+#era 2
+#name "Serpentes"
+#epithet "Vrael Olo of the Yuan-ti"
+#brief "The ancient Sarrukh empire of Mhairshaulk once held dominion across all of Faerun. Their breeding experiments led to many of the beings we know today - troglodytes, lizardfolk, and their vrael olo - their favored ones - the corrupt and degenerate Yuan-ti."
+
+#descr "Long before humankind dominated the continent of Faerûn, the Creator Races ruled Toril. The reptilian Creator Race - the Sarrukh - were foremost amongst them. They built vast empires that stretched across Faerun and the throughout the planes. Their reign lasted more than 30,000 years. 
+
+The Sarrukh eventually fell from power around the time of the collapse of the human empire of Netheril as their deity, Sseth, sank into somnolence. The Sarrukh, long suffering from endless war throughout the planes, sunk also into hibernation deep in their ruins. Their children, the Yuan-ti, assumed their creators' mantle, but with Sseth not answering prayers, they sought aid from other gods. Some bargained with the Mulhorandi deity Set, some with Moander, and others with the maddening denizens of the demonic Abyss.
+
+Merrshaulk was the name given to Sseth's physical manifestation, which could still be called upon, even if Sseth did not answer prayers. Summoning this aspect became the central goal of Yuan-ti worship. 
+
+Whenever possible, yuan-ti choose manipulation over open confrontation, the whisper over the fang. Followers of the Sacred Way of Sseth know their foes, think ahead, and plan forward. Counting decades as mere days, they play the long game. Yuan-ti culture centers around its temples, its breeding experiments, and its bloody sacrifices. Their lairs, hidden deep in ancient ruins within the underdark, are impenetrable."  
+
+#summary "The Yuan-ti are exceptionally powerful mages. Lizardfolk, kobolds, and troglodytes make squishy but numerous troops capable of operating both on the surface as well as underwater and within the underdark. Your location within the Serpent Deeps of the Mhair Jungles puts you in a secluded and safe position with ready access to the Shining Sea."  
+#flag "ForgottenRealms/flag_yuanti.tga"
+#templepic 16 -- south indian
+#fortera 2 -- Castle standard era 2
+#homefort 2 -- Fortress (needing upgrade)
+#idealcold -2
+#likesterr 32
+#cavenation 1
+#buildfort 2
+#uwbuild 1
+#builduwfort 6
+#fortcost 300
+#labcost 900
+#templecost 900
+#cavelabcost 500
+#cavetemplecost 300
+#swamplabcost 500
+#swamptemplecost 400
+
+#color 0.05 0.75 0.10
+
+#addgod 7178 -- Merrshaulk
+#addgod 8049 -- Demogorgon
+#cheapgod40 7178 -- Merrshaulk
+
+
+#addgod 5035 -- Moander -- PRETENDER
+#addgod 5010 -- Malar
+#addgod 5031 -- Orcus
+
+
+#startcom 6831 -- Yuan-ti Abomination
+#startunittype1 6727	-- Lizard folk
+#startunitnbrs1 20
+
+#startscout 6832 -- Yuan-ti Mageslayer
+
+#caverec 7360 -- Kobold Slinger
+#caverec 7359 -- Kobold Spear
+#cavecom 7362 -- Kobold Sorcerer
+#cavecom 7361 -- Kobold Chieftain
+
+#addrecunit 6727 -- Lizard folk
+#addrecunit 6677 -- Troglodyte Raider
+#addrecunit 783 -- Serpent Dancer
+#addrecunit 6830 -- Yuan-ti Temple Guardian
+
+#uwrec 7142 -- Sahuagin Hunter
+#uwrec 7150 -- Sea Serpent
+#uwcom 7143 -- Sahuagin Raidmaster
+
+--#caverec 3657 -- Serpent of the Deeps
+
+#swamprec 6828 Chultan Raptor
+-- #swamprec -- 6827 Chultan Frogg
+
+#addreccom 2891 -- trog warchief
+#addreccom 7406 -- Lizard Man Chieftain
+#addreccom 6734 -- Lizardman shaman
+#addreccom 6832 -- Yuan-ti Mageslayer
+#addreccom 2749 -- Troglodyte Druhyidd
+#addreccom 6829 -- Yuan-ti Malison
+#addreccom 7357 -- Dark Naga -- RECRUITABLE
+#addreccom 7358 -- Water Naga -- RECRUITABLE
+#addreccom 6832 -- Yuan-ti Mageslayer
+-- #addreccom 7356 -- Spirit Naga -- RECRUITABLE
+#addreccom 6831 -- Yuan-ti Abomination
+--#addreccom 7177 -- Sarrukh
+
+
+#defcom1 2891 -- trog warchief
+#defcom2 6832 -- Yuan-ti Mageslayer
+#defunit1 6677 -- Troglodyte Raider 
+#defmult1 20
+#defunit1b 783 -- Serpent Dancer
+#defmult1b 10
+#defunit2 6830 -- Yuan-ti Temple Guardian
+#defmult2 5
+
+---------- DEFENCES
+
+#uwdefcom1 7143 -- Sahuagin Raidmaster
+#uwdefcom2 6734 -- Lizardman shaman
+#uwdefunit1 7142 -- Sahuagin Hunter
+#uwdefmult1 20
+#uwdefunit1b 7150 -- Sea Serpent
+#uwdefmult1b 2
+#uwdefunit2 783 -- Serpent Dancer
+#uwdefmult2 12
+
+#guardcom 2891
+#guardunit 6677
+#guardmult 15
+#wallcom 6734
+#wallunit 6727
+#wallmult 20 	
+
+#uwguardcom 7143 -- Sahuagin Raidmaster
+#uwguardunit 7142 -- Sahuagin Hunter
+#uwguardmult 20
+#uwwallunit 6727 -- Lizard folk
+#uwwallmult 20
+#uwwallcom 6734 -- Lizardman shaman
+---------- START SITES
+#startsite "Sarrukh Ruin"
+#startsite "Skin Shifter's Barrow"
+#startsite "Flowering Bog"
+#startsite "The Shrouded Lands"
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\shaar.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+------------------------------------------------------THE SHAARLANDS----
+------------------------------------------------------------------------
+
+#selectnation 208
+#era 2 		
+#name "The Shaar"
+#epithet "The Savage Plains"
+#idealcold -1
+#brief "This is one of the Savage Nations, focused on recruitable monsters and a roster that is highly dependent on nearby magic sites and terrains."
+#descr "The vast expanse known as the Shar stretches like a thin, bloody and rugged ribbon across the entire southern continent. Throughout recorded history, it remained largely without civilization. 
+
+Its heartland is inhabited by varied and warlike nomadic tribes - mainly of humans, centaurs, minotaurs, thri-kreen, and the lion-bodied wemics. They hunt the herd animals and regularly argue over water rights. Fearsome dire horses were known to roam the wilderness, inspiring fear, awe, folk tales, and even cultist veneration. Dragons, gnolls, manticores, hill giants and harpies also challenged the nomads for control. Occasionally, so-called 'civilized nations' laid claim to some parts of the Shaar or established settlements to aid in their trade of baubles - but only the ruins of these survive. 
+
+You begin on two fronts - in the western heartlands, a tribe of Wemics under the just and savage rule of Shaq'ar is under your command, and you are primed for a rapid expansion. In the east, Xavarathimius, the Everlasting Wyrm, has reawakened. The Dracolich is prepared to finally see his machinations to dominate all of the Shining South come to fruition. 
+
+In addition to capturing the tall-grass prairies and forested foothills of the Shaar, you'll need to win the support of the demon-worshipping Yuan-Ti and the noble and elusive Rakshasa. The latter are common among the larger settlements both on the western coasts of Lapaliiya and in the eastern free cities in Estagund and Durpar. Without them, you'll have little hope of keeping up, both magically as well as economically."
+#summary "Wemics, Centaurs, and Thri-kreen will be common in your armies - fast and hard-hitting but with little armor. Gnolls, minotaurs, scrags, manticores and other various beasts will round out your armies with incredible raiding and pillaging potential. Various terrains offer additional troop types, and you'll appreciate the variety, but research will always be a concern until the Yuan-ti and Rakshasa can be recruited to your cause." 
+
+#flag "ForgottenRealms/flag208.tga"
+#templepic 30 -- Forest Gate
+#fortera 2 
+#homefort 1 -- palisades are a step backward
+#buildfort 12
+#builduwfort 5
+#labcost 300
+#templecost 300
+#color 1.0 1.0 0.6
+
+#addgod 5010 -- MALAR 3
+#addgod 5025 -- Talos 3
+
+#addgod 5035 -- Moander 2
+#addgod 957 -- Nobanion 2
+#addgod 8049 -- Demogorgon
+
+
+-- #multihero1 XXXX -- 
+#multihero1 6839	 	-- Wemic Firemane 
+#multihero2 7087 		-- Hornblower of Baphomet
+#multihero3 6779 		-- RED DRAGON YOUNG ADULT
+#multihero4 6789		-- GREEN DRAGON YOUNG ADULT	
+#multihero5 7085		-- Rakshasa
+#multihero6 6829 		-- Yuan-ti Malison
+#multihero7 6831		-- Yuan-ti Abomination
+
+#startcom 6841 			-- Shaq'ar
+#startunittype1 6840	-- Wemic Warrior
+#startunitnbrs1 30
+
+#startscout 6837 	-- Wemic Shaman
+
+#forestrec 227		-- Satyr Sneaks
+#forestrec 7071		-- owlbear
+#forestrec 7488 -- Centauride Nomad
+#forestrec 7487 -- Centaur Huntsman
+#forestrec 7491 -- Centaur Protector
+
+#swamprec 6727		-- Lizard folk
+
+#caverec 7081		-- Otyugh
+#caverec 6677		-- Troglodytes
+
+#mountainrec 6842 	-- Minotaur Brute
+
+#wasterec 6724		-- Gnoll Hunters from wastelands
+#wasterec 6672		-- Wyverns
+
+#coastrec 564		-- Scrag
+
+#forestcom 7490 -- Centaur Windrunner
+#forestcom 7489 -- Centauride Thorncaller
+#forestcom 2479 	-- Centaur Sage
+#forestcom 231		-- Centaur Heirophant
+
+#swampcom 6734		-- Lizardman shaman
+#swampcom 2891		-- trog warchief
+#swampcom 2749 		-- Troglodyte Shaman	
+
+#mountaincom 6843 	-- Minotaur Elder
+#mountaincom 7086	-- Bull Priest
+#mountaincom 7087   -- Hornblower of Baphomet
+
+#wastecom 6808 		-- Gnoll Chieftain
+#wastecom 6728 		-- Manticore
+
+#coastcom 7592		-- Scrag Chieftain
+#coastcom 7562 		-- Scrag Shaman
+
+#addrecunit 239 	-- Stirge
+#addrecunit 6840	-- Wemic Warrior
+#addrecunit 6838 	-- Wemic Huntress
+#addrecunit 6724	-- Gnoll Hunter 
+
+#addreccom 7093		-- Kenku Sneak
+#addreccom 6808 	-- Gnoll Chieftain
+#addreccom 6836 	-- Wemic Proudspear
+#addreccom 6837 	-- Wemic Shaman
+#addreccom 6839	 	-- Wemic Firemane
+
+
+#defcom1 6836 		-- Wemic Proudspear
+#defcom2 6837 		-- Wemic Shaman
+#defunit1 6840		-- Wemic Warrior
+#defunit1b 6838 	-- Wemic Huntress
+#defunit2 6724		-- Gnoll Hunters from wastelands
+#defmult1 15 	
+#defmult1b 15 
+#defmult2 5
+---------- START SITES
+
+#startsite "The Goldmane Expanse"
+#startsite "The Ruins of Blaskaltar" 	
+#startsite "Gnoll Packlands" 	
+
+---------- DEFENCES
+#guardcom 6843
+#guardunit 6842
+#guardmult 15
+#wallcom 6836 		-- Wemic Proudspear
+#wallunit 2478 		-- Satyr Crossbows
+#wallmult 20 		-- 
+#end 
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\silver-marches.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+-----------------SILVER MARCHES-------------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 216
+#era 2
+#name "The Silver Marches"
+#epithet "Confederation of Luruar"
+#brief "Luruar, also commonly known as the Silver Marches, was a confederation of cities in the north of Faerûn, under the leadership of Alustriel Silverhand, former ruler of Silverymoon. It consisted of Silverymoon, Citadel Adbar, Deadsnows, Jalanthar, Quaervarr, Citadel Felbarr, Everlund, Mithral Hall, and Sundabar, and its goal was to protect the North against the growing horde of orcs in the mountains."
+#descr "Luruar, also commonly known as the Silver Marches, was a confederation of cities in the north of Faerûn, under the leadership of Alustriel Silverhand, ruler of Silverymoon. The years 1368 through 1370 DR were particularly turbulent for the city-states of the North. Troll attacks, orc hordes, a combined army of demons and barbarians, and a string of particularly harsh winters spurred the regional city-states into the confederation. Members included Silverymoon, Citadel Adbar, Deadsnows, Jalanthar, Quaervarr, Citadel Felbarr, Everlund, Mithral Hall, and Sundabar. 
+
+Bordered by the Anauroch desert to the east, the High Forest to the south, the Savage Frontier to the west and the Spine of the World mountain range to the north, it was surrounded by savage frontier. The Silver Marches' first line of defense often came in the form of information. Many small groups of city-sponsored scouts, bands of rangers, adventuring companies, independent cells of Harpers, and others scouted the stretches of Wilderness that often presented threats to the civilized lands. Smaller towns trained their own local patrols. Each of the cities maintained their own, large armed forces, which combined often into the collective 'Argent Legion' for large-scale operations."
+#summary "You have outstanding scouts, rangers, clerics, and spellcasters. You have excellent stealth and patrol with strong units that can raid unseen and cause havoc behind enemy lines. Nothing you have is cheap, however. Lady Alustriel is powerful, and a Chosen of Mystra, giving her dominion immortality. You'll need every ounce of defense against your inevitably agressive neighbors."  
+#flag "ForgottenRealms/flagsilvermarches.tga"
+#templepic 17 -- Crystal
+#fortera 2 -- Castle standard era 2
+#homefort 4 -- Citadel
+#builduwfort 6
+#buildfort 2
+#labcost 500
+#templecost 500
+#color 0.4 0.4 0.6
+
+#addgod 8000 -- Fountain of Mystra
+#addgod 5005 -- SELUNE
+#addgod 5029 -- Helm 3
+#addgod 5004 -- LATHANDER 4
+#addgod 5018 -- Mielikki 2
+#addgod 5023 -- Oghma 2
+#addgod 5005 -- SELUNE 4
+#addgod 5030 -- Tymora 2
+
+#addgod 5019 -- Corellon 2
+#addgod 5039 -- Azuth 1
+
+-- #addgod 2206 -- Eldest Dwarf
+-- #addgod 485 -- Great Enchantress
+-- #addgod 251 -- Great Sage
+
+-- #hero1 7094 -- Drizzt
+-- Add Breunor, Wulfgar, Cattie-brie, et al
 
 
 
 
+#startcom 6813 			-- Elven Bladesinger
+#startunittype1 7013 	-- Silverwatch
+#startunitnbrs1 15
+
+#startscout 6614 		-- Harper Agent
+
+#addrecunit 7013 	-- Silverwatch
+
+#addreccom 6614 	-- Harper Agent
+#addreccom 6813 	-- Elven Bladesinger
+#addreccom 6615 	-- Ranger of the Emerald Enclave
+#addreccom 6617 	-- Seldarine Cleric
+#addreccom 6754 	-- Field Wizard
+
+
+#defcom1 6813 			-- Elven Bladesinger
+#defcom2 6617 			-- Seldarine Cleric
+#defunit1 7013 			-- Silverwatch
+#defunit1b 7009 			-- Dwarven Hammers
+#defmult1 20 	
+#defmult1b 15 
+
+---------- DEFENCES
+#guardcom 6615
+#guardunit 7009
+#guardmult 15
+#wallcom 6813 		-- Elven Bladesinger
+#wallunit 7013 		-- Silverwatch
+#wallmult 20 	
+
+---------- START SITES
+
+#startsite "The Conclave of Silverymoon" 
+#startsite "Rauvinwatch Keep"
+#startsite "The Moonbridge" 
+#startsite "Halls and Glades" 
+
+#end 
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\sloopdilmonpolop.dm
+------------------------------------------------------------------------------------------------------------------
+
+#selectnation 224
+#era 2
+#name "Sloopdilmonpolop"
+#epithet "Free Cities of the Kuo-Toa"
+#brief "Sloopdilmonpolop, the City of Pools, was a city of the kuo-toa in the middle Old Shanatar domain of the Underdark."
+
+#descr "Kuo-toa societies were oppressive feudal theocracies and their priests exercised complete control over the citizens' lives. Common kuo-toa performed menial labor, such as fishing, farming, or guard duty, although without supervision by a whip or monitor they would normally flee dangerous combat situations. 
+
+The ruling archpriests of a kuo-toa community decided which gods the lower kuo-toa had to exclusively worship. Some of these deities were imagined by the priests themselves. In addition to Blibdoolpoolp and Dagon, the Kuo-toa were also known to revere krakens, aboleths, morkoths, and other eldritch horrors, with their madness having blinded them to their manipulation by said entities. Some tribes followed more conventionally divine entities, including the slimy and eldritch Moander, tyrannical Bane, or the mistress of darkness, Shar. 
+
+Circa −3000 DR, Sloopdilmonpolop was founded by Sloopdilmonpol, a great kuo-toa prophet, as a temple-city in the Underdark off the coast of Tethyr. Eventually the temple grew into a theocratic city-state, with priest-king rulers.
+
+After an increasing number of expansionist raids by the city's denizens, the dwarves of Sondarr and Xothaerin dispatched scouts who eventually discovered the City of Pools. This touched off a centuries-long war of mutual extinction, known as the Axe and Fin Wars. The city was never taken. It has since become a somewhat welcoming trade hub within the underdark, though illithids are never welcome. 
+
+Sloopdilmonpolop was recently flooded by kuo-toan, morkoth, and demon ray refugees fleeing the Abolethic Sovereignty within the Glimmersea. This has only added to its position as a power within the middledark that even the drow of nearby Guallidurth have come to respect."
+#summary "Sloopdilmonpolop is in a great location for expansion with few underwater competitors nearby. They have cheap sacred troops and solid priest-mages to bless them. Morkoths, Krakens and Demon Rays join an expanded roster and geographical landbase throughout the Underdark. Press 'n' to ensure you're managing all your holdings."
+#flag "ForgottenRealms/flag_kuotoa.tga"
+#templepic 1 -- under water
+#fortera 2 -- Castle standard era 2
+#homefort 7 -- UW Castle 
+#uwnation
+#cavenation  1
+#uwbuild 1
+#builduwfort 5
+#buildfort 1
+#fortcost -50
+#bloodnation 
+
+#color 0.27 0.40 0.47
+
+#addgod 8001 -- BANE
+#addgod 5021 -- Shar 3
+#addgod 5032 -- Blibdoolpoolp -- PRETENDER
+#addgod 8053 -- Primordial Father -- Dagon Pretender
+#addgod 8049 -- Demogorgon
+#addgod 5026 -- Umberlee 2
+
+
+
+#cheapgod40 5032 -- Blibdoolpoolp -- PRETENDER
+#cheapgod20 8053 -- Primordial Father -- Dagon Pretender
+#cheapgod20 8049 -- Demogorgon
+
+#startcom 7155 -- Kuo-Toan Monitor - COMMANDER
+#startunittype1 7156 -- Kuo-Toan Harpooner - UNIT
+#startunitnbrs1 20
+
+#startscout 7144 -- Kuo-Toa Whip
+
+#addrecunit 7179 -- Kuo-toan Gogglers
+#addrecunit 7180 -- Kuo-toan Guards
+#addrecunit 7156 -- Kuo-Toan Harpooner - UNIT
+#addrecunit 7157 -- Kuo-Toan Cutter - UNIT
+#addrecunit 7153 -- Kuo-Toan Pincer - UNIT
+#addrecunit 7158 -- Kuo-Toan Gulper
+
+#addreccom 7155 -- Kuo-Toan Monitor 
+#addreccom 7144 -- Kuo-Toa Whip
+#addreccom 7154 -- Kuo-Toan Lash
+#addreccom 7152 -- Kuo-Toa Inquisitor
+#addreccom 7145 -- Kuo-Toa Arch Priest
+
+#caverec 7179 -- Kuo-toan Gogglers
+#caverec 7180 -- Kuo-toan Guards
+#caverec 7156 -- Kuo-Toan Harpooner - UNIT
+#caverec 7153 -- Kuo-Toan Pincer - UNIT
+#caverec 7373 -- Chuul
+#cavecom 7144 -- Kuo-Toa Whip
+#cavecom 7154 -- Kuo-Toan Lash
+
+#caverec 7598 -- Morkoth
+#cavefortrec 7599 -- Morkoth Warrior
+#cavefortcom 7155 -- Kuo-Toan Monitor 
+#cavefortcom 7144 -- Kuo-Toa Whip
+#cavefortcom 7154 -- Kuo-Toan Lash
+#cavefortcom 7152 -- Kuo-Toa Inquisitor
+#cavefortcom 7600 -- Morkoth Mage
+#cavefortcom 7601 -- Morkoth Arcount
+
+#cavecom 7307 -- Juvenile Kraken
+
+#searec 7565 -- Demon Ray
+#seacom 7563 -- Demon Ray Vampire
+#seacom 7570 -- Demon Ray Zealot
+
+#uwdefcom1 7155 -- Kuo-Toan Monitor - COMMANDER
+#uwdefcom2 7152 -- Kuo-Toan Inquisitor
+#uwdefunit1 7156 -- Kuo-Toan Harpooner - UNIT
+#uwdefmult1 20
+#uwdefunit1b 7157 -- Kuo-Toan Cutter - UNIT
+#uwdefmult1b 2
+#uwdefunit2 7153 -- Kuo-Toan Pincer - UNIT
+#uwdefmult2 2
+
+#defcom1 7155 -- Kuo-Toan Monitor - COMMANDER
+#defcom2 7152 -- Kuo-Toan Inquisitor
+#defunit1 7156 -- Kuo-Toan Harpooner - UNIT
+#defmult1 20
+#defunit1b 7157 -- Kuo-Toan Cutter - UNIT
+#defmult1b 12
+#defunit2 7153 -- Kuo-Toan Pincer - UNIT
+#defmult2 12
+
+---------- DEFENCES
+#guardcom 7144 -- Kuo-Toa Whip
+#guardunit 7156 -- Kuo-Toan Harpooner - UNIT
+#guardmult 20
+#wallcom 7152 -- Kuo-Toan Inquisitor
+#wallunit 7153 -- Kuo-Toan Pincer - UNIT
+#wallmult 14 	
+
+#uwguardcom 7144 -- Kuo-Toa Whip
+#uwguardunit 7156 -- Kuo-Toan Harpooner - UNIT
+#uwguardmult 20
+#uwwallunit 7153 -- Kuo-Toan Pincer - UNIT
+#uwwallmult 14
+#uwwallcom 7152 -- Kuo-Toan Inquisitor
+
+---------- START SITES
+#startsite "Sacred Pool of the Sea Mother"
+
+#end
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\spine-of-the-world.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------- THE SPINE OF THE WORLD -------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
+#selectnation 205 
+#era 2 		
+#name "The Spine of the World"
+#epithet "Kingdom of Many-Arrows"
+#idealcold 2
+#brief "Deep in the frozen mountains west of Anauroch lies a latent power needing only the slightest spark to ignite. Here, in the region known as the Spine of the World, the Kingdom of Many-Arrows is about to erupt."
+#descr "Prior to the founding of the Kingdom, the Many-Arrows tribe was known as the largest, most notorious, and most successful orc tribe in the North, boasting about 40,000 members as of the mid–14th century DR. They operated out of the Citadel of Many Arrows until they were ousted in the Year of the Shield, 1367 DR. Migrating west to Dark Arrow Keep, which they had claimed from its previous giant inhabitants, they began waging war with Mithral Hall and were expected to raise a horde and launch an invasion of the whole Silver Marches.
+
+Meanwhile, their cousins on the Moonshae Isles were deeply involved in a plot to resurrect Kazgaroth and taint the druidic Moonwells of the insufferable human kingdom of Corwell. The war that followed came to be known as the Darkstalker War, and pitted Bhaalist, Malarite, and Fomorion forces against those of Mielikki and the upstart Eladrin elves of Myrloch Vale."
+#summary "Orcs and goblins, trolls and giants, drow and dragons. Welcome to monster-ville. This nation focuses on recruitable monsters and a roster that is highly variable by terrain. You have a powerful roster but weak and expensive fort construction and magical research. You have some of the most versatile and dramatically powerful units in the game, including giants and dragons. You also have access to mobile gods, which most other nations do not have, including Orcus, Asmodeus, and the dreaded Demogorgon." 
+#flag "ForgottenRealms/flag205.tga"
+#templepic 8 -- Temple Ruins 
+#fortera 3 
+#homefort 2 -- Castle Era 2
+#buildfort 2
+#builduwfort 6
+#uwbuild 1
+#labcost 250
+#templecost 250
+#color 0.4 0.0 0.2
+#noforeignrec
+
+#addgod 5010 -- Malar
+#addgod 5013 -- GRUUMSH
+#addgod 5025 -- Talos 3
+#addgod 5021 -- Shar
+
+--#addgod 5022 -- Uthgar 2
+#addgod 8049 -- Demogorgon
+#addgod 5036 -- Asmodeus 2
+#addgod 5031 -- Orcus 2
+-- removed until improved #addgod 5035 -- Lolth 2
+
+-- #addgod 249 -- Crone
+-- #addgod 1905 -- Great Sorceress
+-- #addgod 250 -- Frost Father
+
+#cheapgod40 5013 -- Gruumsh
+#cheapgod20 5010 -- Malar
+#cheapgod20 5031 -- Orcus
+
+
+-- #multihero1 XXXX -- 
+#multihero1 7341 -- Succubus
+#multihero2 178 -- Lich
+#multihero3 404 -- Vampire Lord
+#multihero4 6775 -- Draconian Chief
+#multihero5 7310 -- Death Knight Dreadlord
+#multihero6 540 -- White Minotaur 
+#multihero7 1535 -- Pan
+
+
+#startcom 6803 			-- Obould Many-Arrows
+#startunittype1 6676	-- Orc Marauders
+#startunittype2 6802	-- Orc Greatbows
+#startunitnbrs1 25
+#startunitnbrs2 10
+
+#startscout 430 		-- SCOUT Black Harpy 
+
+
+#forestrec 6723		-- Goblin Dogslicers
+#forestrec 6773		-- GOBLIN WOLFRIDER
+#forestrec 6806 	-- Krenshar
+#forestrec 2219		-- Forest Troll
+#forestcom 430 		-- Black Harpy
+#forestcom 6811		-- Bugbear Captain
+#forestcom 2220 	-- Troll Shaman
+#forestcom 5101		-- Blackblood Malarite (Werewolves)
+
+#mountainrec 6676 	-- Orc Marauders
+#mountainrec 7071	-- Owlbears
+#mountainrec 6678	-- Hill Giant Reavers
+#mountainrec 6809	-- Stone Giant Mauler
+#mountaincom 6737 	-- Orcish King
+#mountaincom 6733 	-- Goblin Shaman
+#mountaincom 6772	-- Hill Giant Shaman
+#mountaincom 1301	-- Frost Giant Elder
+
+#wasterec 6724		-- Gnoll Hunters 
+#wasterec 6730		-- Giant spiders 
+#wastecom 6732		-- Gnoll Shaman
+#wastecom 6808 		-- Gnoll Chieftain
+#wastecom 6728 		-- Manticore
+
+#caverec 6723		-- Goblin Dogslicers
+#caverec 6676 		-- Orc Marauders
+#caverec 7081		-- Otyugh
+#cavecom 6737 		-- Orcish King
+#cavecom 6733 		-- Goblin Shaman
+#cavecom 6801		-- Orc Shaman of Gruumsh
+#cavecom 6816		-- Night Hag
+
+#swamprec 6677		-- Troglodyte Raiders from swamps
+#swamprec 1831		-- Hydra from swamp
+#swamprec 7359 		-- Kobold Spear
+#swamprec 7360 		-- Kobold Slinger
+#swampcom 7361 		-- Kobold Chieftain
+#swampcom 7362 		-- Kobold Sorcerer
+#swampcom 2891 		-- trog warchief
+#swampcom 2749 		-- Troglodyte Shaman
+
+#uwrec 7359 -- Kobold Spear 
+#uwrec 6677	-- Troglodyte Raiders
+#uwrec 7567 -- Merrow Behemoth
+#uwcom 7361 -- Kobold Chieftain
+#uwcom 7362 -- Kobold Sorcerer 
+#uwcom 2749 -- Troglodyte Shaman
+#uwcom 8022 -- Sea Hag
+
+#searec 7359 -- Kobold Spear 
+#searec 7567 -- Merrow Behemoth
+#seacom 7361 -- Kobold Chieftain
+#seacom 7362 -- Kobold Sorcerer 
+#seacom 2749 -- Troglodyte Shaman
+#seacom 8022 -- Sea Hag
+
+#addrecunit 239 	-- Stirge
+#addrecunit 6723 	-- Goblin Dogslicers
+#addrecunit 6807 	-- Goblin Dead-eye
+#addrecunit 6773 	-- Goblin Wolfriders
+#addrecunit 6676 	-- Orc Marauders
+#addrecunit 6802 	-- Orc Greatbows
+#addrecunit 6678	-- Hill Giant Reavers
+#addrecunit 6675	-- Frost Giant Mercenaries 
+#addrecunit 6809	-- Stone Giant Mauler
+
+#addreccom 430 		-- Black Harpy
+#addreccom 6811		-- Bugbear Captain
+#addreccom 6737 	-- Orcish King
+#addreccom 5101		-- Blackblood Malarite (Werewolves)
+#addreccom 6733 	-- Goblin Shaman
+#addreccom 6801		-- Orc Shaman of Gruumsh
+#addreccom 6775 	-- Green Hag
+
+
+-- All other units are cap-only or site-specific
+
+#defcom1 6737 		-- Orcish King
+#defcom2 6733		-- Goblin Shaman
+#defunit1 6723 		-- Goblin Dogslicers
+#defunit1b 6676 	-- Orc Marauders
+#defunit2 6773 		-- Goblin Wolfriders
+#defmult1 25 	
+#defmult1b 12 
+#defmult2 20 	
+
+
+-- UW PROVINCE DEFENCE
+#uwdefcom1 7361 -- Kobold Chieftain 
+#uwdefcom2 7362 -- Kobold Sorcerer 
+#uwdefunit1 7359 -- Kobold Spear
+#uwdefmult1 20
+#uwdefunit1b 7360 -- Kobold Slinger
+#uwdefmult1b 20
+#uwdefunit2 7567 -- Merrow Behemoth
+#uwdefmult2 14
+
+--UW WALL DEFENCE
+#uwguardcom 7361 -- Kobold Chieftain 
+#uwguardunit 7359 -- Kobold Spear
+#uwguardmult 20
+#uwwallcom 7362 -- Kobold Sorcerer 
+#uwwallunit 7360 -- Kobold Slinger
+#uwwallmult 20
+
+
+---------- START SITES
+
+#startsite "Cackling Chasm" 
+#startsite "Fell Pass" 
+#startsite "Raven Rock" 
+#startsite "Dark Arrow Keep" 
+#startsite "The Deep Forge"
+
+
+---------- DEFENCES
+#guardcom 6811
+#guardunit 6676
+#guardmult 15
+#wallcom 6737 		-- Orcish Chief
+#wallunit 6802 		-- Orc Greatbows
+#wallmult 15 		-- 
+
+#end 
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\symphony-of-madness.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+----------------------225 -- Symphony of Madness -----------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 225
+#era 2
+#name "Symphony of Madness"
+#epithet "Aberrations of the Deep"
+#brief "Far below the Sea of Fallen stars lies an ocean in the Lowerdark known as the Glimmersea. Here, in these dread waters, the Aboleths plot their schemes of opening the void gates and spreading their dominion across all of Faerun."
+
+#descr "Like most aberrant creatures, aboleths were originally from the Far Realms. They came to Toril when the world was still young. The ancient obelisk-shaped city of Xxiphu plummeted to the world and settled deep in the earth's crust below what was later known as the Sea of Fallen Stars. Even the Elder Brains of the mind-flayers feared the Aboleths of the Deep.
+
+Sometime around 1380 DR, many of the Aboleths began to awaken from their somnolence, lost in the dreams of their ancestors. Some of those who awoke were among the first aboleths to arrive on Faerun. Together, they began to plot the re-ascendence of Xxiphu and called themselves the 'Abolethic Sovereignty.' The aboleths took mental control over humanoids in subtle ways and used them as both spies and sacrificial pawns without arousing suspicions. Many surface nations, sitting just above the surface, were unwittingly ruled by the puppets of the aboleths, living their whole lives none-the-wiser. The rest of the servants of the Sovereignty were aberrant creatures: eel-men, grell, gricks, krakens, cloakers, chuul and others made up their armies, but their most fearsome allies were the beholders, who shared a common, alien origin and goal of total domination through madness. 
+
+While the aboleths venerated Pisaethces, they did not worship her. Instead, their faith spread through their passive psychic emanations and their bizarre inanimate architecture."  
+
+#summary "You reign over the Glimmersea, nearly unchallenged, and have 3 other outposts scattered throughout the underdark. Aboleths can leave the water, but will harden to a stone-like inanimate state, requiring teleportation back to water to restore themselves. Your dying dominion must be spread by aboleth savants and elders."  
+#flag "ForgottenRealms/flag_aboleths.tga"
+#templepic 1 -- under water
+#fortera 3 -- Castle standard era 2
+#homefort 13 -- Great Walled City
+#cavenation 1
+#uwnation
+#uwbuild 1
+#buildfort 3
+#builduwfort 7
+#dyingdom
+#labcost 300
+
+#color 0.02 0.15 0.40
+
+#addgod 7367 -- Pisaethces
+#addgod 7374 -- The Shape of Water
+#addgod 8049 -- Demogorgon
+--#addgod 8053 -- Primordial Father -- Dagon Pretender
+
+#cheapgod40 7374 -- The Shape of Water
+#cheapgod40 7367 -- Pisaethces
+
+#startcom 7366 -- The Eldest
+#startunittype1 7383 -- Anguillian
+#startunitnbrs1 30
+#startunittype2 7375 -- Skum
+#startunitnbrs2 8
+
+#startscout 7363 -- Aboleth Broodling
+
+#addrecunit 7383 -- Anguillian
+#addrecunit 7376 -- Grick
+#addrecunit 7373 -- Chuul
+#addrecunit 7307 -- Kraken
+
+#landrec 7386 -- Darkmantle
+#landrec 7381 -- Nothic Gazer
+#landrec 7376 -- Grick
+#landrec 7378 -- Grell Soldier
+#landrec 7161 -- Cloaker
+#landrec 7391 -- Gazer
+#landrec 7392 -- Spectator
+
+#addreccom 7384 -- Anguillian Chieftain
+#addreccom 102 -- Initiate of the Deep
+#addreccom 7308 -- Kraken Lord
+#addreccom 7363 -- Aboleth Broodling
+#addreccom 7364 -- Aboleth Savant
+#addreccom 7365 -- Aboleth Sovereign
+
+#landcom 7379 -- Grell Philosopher
+#landcom 7160 -- Cloaker Lord
+#landcom 7380 -- Grell Patriarch
+#landcom 7068 -- Beholder
+--#landcom 7390 -- Death Tyrant
+#landcom 7389 -- Beholder Mage
+#landcom 7388 -- Hive Mother
+
+#caverec 7383 -- Anguillian
+#caverec 7376 -- Grick
+#caverec 7081 -- Otyugh
+#caverec 7378 -- Grell Soldier
+#caverec 7561 -- Deep Vodyanoi
+#caverec 7166 -- Hook Horror 
+#caverec 7391 -- Gazer
+
+#cavecom 7385 -- Darkmantle Enveloper
+#cavecom 7380 -- Grell Patriarch
+#cavecom 7068 -- Beholder
+#cavecom 7384 -- Anguillian Chieftain
+#cavecom 102 -- Initiate of the Deep
+
+
+#defcom1 7379 -- Grell Philosopher
+#defcom2 7068 -- Beholder
+#defunit1 7381 -- Nothic Gazer
+#defmult1 20
+#defunit1b 7166 -- Hook Horror 
+#defmult1b 8
+#defunit2 7391 -- Gazer
+#defmult2 8
+
+#uwdefcom1 7384 -- Anguillian Chieftain
+#uwdefcom2 102 -- Initiate of the Deep
+#uwdefunit1 7383 -- Anguillian
+#uwdefmult1 20
+#uwdefunit1b 7376 -- Grick
+#uwdefmult1b 20
+#uwdefunit2 7373 -- Chuul
+#uwdefmult2 10
+
+---------- DEFENCES
+#guardcom 7379 -- Grell Philosopher
+#guardunit 7378 -- Grell Soldier
+#guardmult 20
+
+#wallcom 7068 -- Beholder
+#wallunit 7381 -- Nothic Gazer
+#wallmult 20 	
+
+#uwwallunit 7376 -- Grick
+#uwwallmult 20
+#uwwallcom 102 -- Initiate of the Deep
+
+---------- START SITES
+#startsite "Remnants of Xxiphu"
+#startsite "The Sunless Sea"
+#startsite "Dream Collection"
+#startsite "The Sunken City"
+
+#end
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\tel-quessir.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+--------------------------Tel'Quessir---------------------------------------
+--------------------------------------------------------------------------
+
+#selectnation 236 -- Elves of Faerûn
+#era 2
+#name "Tel'Quessir"
+#epithet "Elves of Faerûn"
+#brief "By 1360 DR, more than 90 percent of the elves of Faerûn had fled to the isle of Evermeet. Only a single Bastion remains at Evereska in the Western Heartlands. It stands united with a variety of independent and far-flung elven communities clinging on to their way of life and committed to remaining on the continent of Faerun."
+
+#descr "The Elves had reigned on Toril in relative peace for some 20,000 years until the Tel'quessir nations went to war with each other in −11,800 DR in what was the first of the five Crown Wars. The green elves suffered many defeats, withdrawing into the wilderness to eventually become the wild elves and wood elves. The Drow too came into being during the Crown Wars, their defeat leaving them cursed to wander the Underdark. 
+
+From the ashes grew Cormanthyr. It's capital, Myth Drannor, was considered the pinnacle of shared knowledge, culture, and civilization in Faerûn  - a beacon of serenity and solidarity in the fight against the chaos of the Realms. It fell, however, to a demonic invasion known as the Weeping War in 714 DR and today Myth Drannor sits as a fiend-infested ruins. The cultural respose was a great migration known as 'The Retreat.' Today, 600 years later, 90 precent of all elves on Faerun have fled to the far away island of Evermeet. Only a handful of Elven Bastions remain. Evereska in the western Savage Frontier is the undoubted capital, but smaller communities cling on in the High Forest and the Chondalwood, each with their own ambitions. 
+
+These elves who remain still hold fast to the exclusionary and isolationist traditions of their forebearers. While peace and occassional alliances with the peoples of Cormyr, the Silver Marches, Aglarond, Waterdeep, and Baldur's Gate have helped ensure their survival, The Cult of the Dragon, the Zhentarim, the beastlords of the Savage Frontier, and the resurgent Scourged Legion all threaten the elves of Faerûn with their final destruction. If these elves are truly to be the protectors and inheritors of Corellon's legacy in the Prime, Faerûn must not be abandoned. The Era of Upheaval draws near and The Retreat must come to an end."  
+
+#summary "The elves are divided and relatively weak on their own. Without foreign recruitment and with nearly all troops and commanders holy, you have limited ability to field true armies. This nation instead relies on its mages, priests, and other commanders to enter the fray. While your key units are listed as 'Cap Only' you have access to a special spell to establish a new 'Elven Bastion' and begin recruiting your high elven units from this new holdfast."  
+#flag "ForgottenRealms/flag_evereska.tga"
+#templepic 30 -- Forest Gate
+#fortera 2 -- Castle standard era 2
+#homefort 3
+#buildfort 3
+#builduwfort 6
+#labcost 200
+#templecost 300
+#hidedom 1
+#color 0.10 0.92 0.35
+
+
+-- Evereska (346)
+
+#addgod 7492 -- Corellon's Shrine 4 
+#addgod 7495 -- Labelas Shrine 4 
+#addgod 7494 -- Moonbow Shrine 4 
+#addgod 8000 -- Mystra
+#addgod 5006 -- Chauntea
+#addgod 5005 -- Selune
+#addgod 5037 -- Silvanus
+#addgod 5018 -- Mielikki
+#addgod 5019 -- Corellon, First of the Seldarine
+
+#cheapgod40 7492 -- Corellon's Shrine
+#cheapgod40 7495 -- Labelas Shrine 4 
+#cheapgod40 7494 -- Moonbow Shrine 4 
+#cheapgod20 5019 -- Corellon, First of the Seldarine
+
+
+#startcom 7420 -- Vale Guard Captain
+#startunittype1 7421 -- Vale Guard
+#startunitnbrs1 20
+#startunittype2 7445 -- Long Watchman
+#startunitnbrs2 20
+
+#startscout 7414 -- Moon Elf Shadow
+
+#forestrec 7398 -- Wild Elf Hunter
+#forestrec 7481 -- Wild Elf Warrior
+
+#forestcom 7349 -- Half-Elf Champion
+#forestcom 7483 -- Wild Elf Clan Leader
+#forestcom 7482 -- Wild Elf Druid
+#forestcom 7483 -- Feywarden
+#forestcom 7480 -- Moonbow Priestess
+
+
+#addrecunit 7348 -- Wood Elf Ranger
+#addrecunit 7445 -- Long Watchman
+
+#addreccom 7349 -- Half-Elf Champion
+#addreccom 7477 -- Elven Harper
+#addreccom 7470 -- Wood Elf Oracle
+#addreccom 6813 -- Elven Bladesinger
+#addreccom 7496 -- Elven Artificer
+#addreccom 6617 -- Seldarine Cleric
+#addreccom 7480 -- Moonbow Priestess
+#addreccom 7497 -- Master Elven Artificer
+#addreccom 7476 -- Wood Elf Queen
+
+
+
+
+#defcom1 7420 -- Vale Guard Captain
+#defcom2 6813 -- Elven Bladesinger
+#defunit1 7348 -- Wood Elf Ranger
+#defmult1 20
+#defunit1b 7421 -- Vale Guard
+#defmult1b 20
+#defunit2 7422 -- Great Eagle Cavalry
+#defmult2 5
+
+---------- DEFENCES
+#guardcom 7420 -- Vale Guard Captain
+#guardunit 7421 -- Vale Guard
+#guardmult 20
+#wallcom 7419 -- Arcane Archer
+#wallunit 7348 -- Wood Elf Ranger 
+#wallmult 15 	
+
+---------- START SITES
+
+#startsite "Evereska Vale"  
+#startsite "Hall of the High Hunt"
+#startsite "Unicorn and Crescent"
+#startsite "Greypeak Crypts"
+
+#end
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\thay.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------
+----------------------------THAY------------------------------------
+--------------------------------------------------------------------
+#selectnation 210
+#era 2 		
+#name "Thay"
+#epithet "The Red Wizards"
+#brief "Thay was a mysterious and terribly powerful magocratic nation in east Faerûn, that was long-governed by the Zulkirs of the Red Wizards. It is ruled by the necromancer lich, Szass Tam, along with his Council of Zulkirs and a near-endless chain of bureaucrats and local tharchion knights. The true nature of Thay lies in the endless pursuit of arcane knowledge and power."
+#descr "For most of Thay's history, the country operated under a strict social hierarchy. The Red Wizards were considered the upper echelon of Thayan society, a magocratic noble class that was followed by Mulan bureaucrats, priests, merchants, soldiers, and mixed Mulan-Rashemi artisans and craftspeople. Semi-skilled workers and common laborers were a mere step above the nation's great many slaves of nearly every race, that had been accumulated from across the Realms.
+
+In the years following Szass Tam's seizure of power in 1385 DR, the Thayan people led hard, destitute lives. It was a land whose governing philosophy held that undeath was a preferred state of being for its people, full of boundless possibilities and immeasurable power. During most of the 15th century the living had no means to achieve prominence within Thay, as their mere existence was an affront to the beliefs of the High Regent.
+
+To briefly escape the misery of life in the city, many Thayans sought more brutal forms of entertainment. Gladiatorial matches were common in larger cities like Eltabbar and Surthay, perhaps the only events that allowed commoners to succumb to their primal nature without fear of retribution from the upper class. The more ferocious and deadly combatants were celebrated by the throngs of spectators. The brutal gladiators from Thay were considered the finest and most savage in all the Realms." 
+#summary "Your red wizards and Zulkirs are among the best wizards in the game. Backed by their Thayan Knight bodyguards, they will serve many roles, from rsearchers to artisans, to conquerors to foreign spies. A reasonably safe starting position should not be taken for granted. Aglarond, Narfell, and Mulhorand are not likely pushovers, especially as the game progresses. You have cheap labs, but expensive temples, and excellent fortifications."
+#flag "ForgottenRealms/flag210.tga"
+#templepic 2 -- Greek
+#fortera 3 -- Castle standard era 2
+#homefort 4 -- Citadel
+#buildfort 2
+#builduwfort 6
+#labcost 300
+#templecost 600
+#color 1.0 0.0 0.0
+
+#addgod 8001 -- Bane
+#addgod 5002 -- Myrkul
+#addgod 5003 -- Bhaal
+
+#addgod 5016 -- Loviatar 3
+#addgod 5021 -- Shar 3
+
+#addgod 5033 -- Cyric 2
+#addgod 5036 -- Asmodeus 2
+#addgod 8049 -- Demogorgon 2
+
+#addgod 5038 -- Savras 1
+
+#cheapgod20 8001 -- Bane
+#cheapgod20 5036 -- Asmodeus
+
+-- #multihero1 XXXX -- 
+#multihero1 6864 -- Zulkir
+#multihero2 178 -- Lich
+#multihero3 404 -- Vampire Lord
+#multihero4 3245 -- Vampire Countess
+#multihero5 828 -- Arch Devil
+#multihero6 492 -- Heliophagus
+
+#startcom 6862			-- Tharchion
+#startunittype1 6857 	-- Thayan Infantry
+#startunittype2 6859 	--  Thayan Lancer 
+#startunitnbrs1 20
+#startunitnbrs2 8
+
+#startscout 6870 	-- Darkenbeast
+
+#addrecunit 6870 	-- Darkenbeast
+#addrecunit 6859 	--  Thayan Lancer 
+#addrecunit 6858	--  Thayan Bowman
+#addrecunit 6857 	-- Thayan Infantry
+
+#addreccom 6870 	-- Darkenbeast
+#addreccom 429 		-- Black Hand Assassin
+#addreccom 7395 	-- Red Wizard Academe
+#addreccom 6673	 	-- Cultist	
+#addreccom 6862		-- Tharchion
+#addreccom 6863 	-- Red Wizard
+
+#forestrec 6676 -- Orc Maurader
+#forestcom 6737 -- Orc Warlord
+
+#mountainrec 6723 -- goblin dogslicer
+#mountainrec 6807 -- goblin deadeye
+#mountaincom 7210 -- ogre
+
+#caverec 7081 -- Otyugh
+#cavecom 7165 -- Umber Hulks
+
+#wasterec 6724		-- Gnoll Hunters 
+#wastecom 6808 		-- Gnoll Chieftain
+ 
+-- Could add some Gryphon Riders and Black Unicorn Riders and Wyvern Riders and make them really stupid.
+
+#defcom1 6862 	-- Tharchion
+#defcom2 6863 	-- Red Wizard
+#defunit1 6857 	-- Thayan Infantry
+#defunit1b 6858	--  Thayan Bowman
+#defunit2 6859 -- Lancer
+#defmult1 20 	
+#defmult1b 10 
+#defmult2 5
+---------- DEFENCES
+#guardcom 6862
+#guardunit 6857
+#guardmult 15
+#wallcom 6863 	-- Red Wizard
+#wallunit 6858	--  Thayan Bowman
+#wallmult 20 	-- 
+
+---------- START SITES
+
+
+#startsite "The Citadel"
+#startsite "Thayvian Gold Mine"
+#startsite "Doomvault"
+#startsite "Volcanic Forge"
+#startsite "Palaces of the Mulan"
+
+#end 
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\twisted-rune.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+--------------------------THE TWISTED RUNE -----------------------------------
+------------------------------------------------------------------------------
+
+#selectnation 241 -- THE TWISTED RUNE
+#era 2
+#name "The Twisted Rune"
+#epithet "Alliance of the Lich"
+#brief "The Twisted Rune was a highly secretive and decentralized alliance of liches who worked together for mutual survival and with a goal of ultimately pulling the strings of power throughout all of Faerûn."
+#descr "The Twisted Rune was a highly secretive and decentralized alliance of liches who worked together for mutual survival. Their ultimate goal was to reunify the former Shoon Imperium and ultiamtely pull the strings of power throughout all of Faerûn. 
+
+It was originally a loose consortium of dark mages that formed in 864 DR, during the long and chaotic period after the fall of the Shoon Imperium. The Imperium, at its height, stretched from its capital in southern Tethyr all the way north beyond Baldur's Gate, east to the Great Rift of the Shaar, and south to encompass much of the Chultan peninsula. Its tyrannical Necroqysar, Shoon VII, ascended to lichdom in 450 DR and subsequently disappeared. Over the following centuries, the weakening regional powers eventually divided into city-states and petty kingdoms, some of which banned magic outright. It was this that led to the early foundations of the Twisted Rune.
+
+The Runemasters who ruled the alliance each had their own network of agents to do their bidding and cooperated from afar towards their ultimate, clandestine goal. They would, over their 400 year existence, come to rule many city-states from the shadows, including the Kingdom of Tethyr for several generations. By 1350 DR, they secretly exerted influence over roughly half the ruling body of Calimshan. 
+
+In recent decades, several other grand liches have joined the Rune and greatly expanded its power, including Acererak who lairs in Chult, Zhengyi who dominates Vaasa, and Munafik, who claims the dust deserts of ancient Raurin. Their primary operations, however, remain focused on the Lands of Intrigue and they have a solid foothold on the shores of the Lake of Steam." 
+#summary "This is a decentralized, classic undead nation led by many of the great liches of the Realms. They have many powerful forms of undead, but will rely greatly on the independent city-states over which they exert control. A network of Gates connects their hidden capital to each of the lairs of the distant Runelords. Use of this nexus is tricky..."
+#flag "ForgottenRealms/flag_twistedrune.tga"  
+#templepic 1 -- Under Water
+#fortera 3 -- pallisades only
+#homefort 3
+#buildfort 3
+#labcost 200
+#templecost 500
+#color 0.26 0.07 0.26
+
+#addgod 8001 -- Bane
+#addgod 7287 -- Velsharoon
+#addgod 5033 -- Cyric
+#addgod 5031 -- Orcus
+#addgod 5021 -- Shar
+#addgod 5017 -- Mask
+#addgod 5003 -- Myrkul
+
+#cheapgod20 7287 -- Velsharoon
+#cheapgod20 5021 -- Shar
+#cheapgod40 5003 -- Myrkul
+
+#startcom 310 -- Necromancer
+#startunittype1 7288 -- Unsated Ghoul
+#startunitnbrs1 20
+#startunittype2 7269 -- Wraith
+#startunitnbrs2 5
+
+#startscout 429 -- Black Hand Assassin
+
+
+#addrecunit 7700 -- Deathtouched Warrior
+#addrecunit 7703 -- Bone Dancer
+#addrecunit 7017 -- Death Knight of the Eternal Dragon
+
+#addreccom 7709 -- Shadow Spy x
+#addreccom 7702 -- Ghast x
+#addreccom 6673 -- Servant of Myrkul x
+#addreccom 310 -- Necromancer x 
+#addreccom 7708 -- Deathlock Wight -- Recruitable x
+#addreccom 7701 -- Gray One x
+#addreccom 7705 -- Heucuva x
+#addreccom 7699 -- Master Necromancer x
+
+-- LAND PROVINCE DEFENCE
+#defcom1 310 -- Necromancer
+#defcom2 310 -- Necromancer
+#defunit1 2122 -- Longdead Hoplite
+#defmult1 20
+#defunit1b 3005 -- Longdead Archer
+#defmult1b 10
+#defunit2 7280 -- Giant Skeleton
+#defmult2 15
+
+-- LAND WALL DEFENCE
+#guardcom 310 -- Necromancer
+#guardunit 2122 -- Longdead Hoplite
+#guardmult 20
+#wallcom 310 -- Necromancer
+#wallunit 3005 -- Longdead Archer
+#wallmult 20
+
+#startsite "The Umbral Conclave"
+#startsite "Dusk Spire"
+#startsite "Crown of Darkness"
+
+
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\underspires.dm
+------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------
+----------------------- Deep Duerra -------------------------
+-------------------------------------------------------------
+#selectnation 232
+#era 2
+#name "The Underspires"
+#epithet "Duergar of the Darklands"
+#brief "'The children of Laduguer shall conquer the earth and stone from which they sprang and the voids in which they dwell. The seizing of new lands, new wealth, and new servitors is the manifest destiny of those who mine the Night Below.' - except from Duerran dogma." 
+#descr "Deep Duerra's faithful dominated the Underspires, a region of the Darklands within the Middledark and the empire she built before being risen to godhood by the gray dwarven god Ladaguer. Two great Duergar cities - Dunspeirrin, the City of Sunken Spires, and Drik Hargunenand, the Iron Stair, were the core of what was the most sprawling Duergar realm in the Underdark and which claimed to have once razed Oryndoll, the center of Mindflayer power in Faerun. 
+
+The empire fell into stagnation after Duerra's ascension and was beset on all sides by its innumerable enemies, falling back finally to the darklands. Despite its defeat and the loss of its vast holdings, The Underspires still maintains its unconquered core.
+
+Around 1369 DR, the Underspires formed the Army of Steel and marched on an upstart alliance of shield and gold dwarves, who sought to reclaim their ancient kingdoms in Deep Shanatar. The War of Gold and Gloom ensued and would continue to the present day. Should the Duergar claim Old Shanatar for themselves, little could stop them from damming Moradin's River of Gold, the tangible link of the Dwarven god's influence on Faerun. Such a victory would ensure that The Underspires will once again spread their empire of the bloody axe across the whole of the underdark. 
+
+This nation will play like your Duergar cousins in Gracklstugh for now, though unique astral and water mage units may be added to the roster in the future to represent Duerra's domains, gifts, and spheres of divine power."  
+
+#summary "You have excellent commanders, priests, and mages but they are resource and gold intensive. Your limited population will hamper your economy. You'll have no foreign recruits to help you, but you can take slaves to round out your armies and will find prized magic site recruit options if you can take the Northdark for yourself. Perhaps your greatest asset is your ability to craft magical items of great power, well above the limits of your arcane talents."  
+#flag "ForgottenRealms/flag_deepduerra.tga"
+#templepic 4 -- mountain castle
+#fortera 3 
+#homefort 4 -- Citadel
+#cavenation  1
+#buildfort 3
+
+#color 0.82 0.55 0.70
+
+#addgod 7243 -- Statue of Duerra
+#addgod 7241 -- Statue of Ladaguer
+
+#cheapgod40 7243 -- Statue of Duerra
+
+#startcom 7232 -- Duergar Mindmaster - mage ( X )
+#startunittype1 7228 -- Duergar Mauler - unit ( X )
+#startunittype2 7229 -- Duergar Scorpion - ranged unit ( X )
+#startunitnbrs1 24
+#startunitnbrs2 8
+
+#startscout 7242 -- Duergar Deepscout
+
+#addrecunit 7228 -- Duergar Mauler - unit ( X )
+--#addrecunit 6697 -- Duergar Axeman - unit ( X )
+#addrecunit 7227 -- Duergar Heavy Axe - unit ( X )
+#addrecunit 7229 -- Duergar Scorpion - ranged unit ( X )
+#addrecunit 7226 -- Duergar Battlesmith 
+#addrecunit 7239 -- Duergar Kavalrachni - unit and commander ( X )
+
+
+#addreccom 7242 -- Duergar Deepscout - commander scout slaver ( X )
+#addreccom 7230 -- Duergar Laird - commander ( X )
+#addreccom 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#addreccom 7233 -- Duergar Runesmith - mage ( X )
+#addreccom 5072 -- Duergar Blackguard - holy commander ( X )
+#addreccom 7225 -- Duergar Stonereaver - elite unit ( X )
+#addreccom 7232 -- Duergar Mindmaster - mage ( X )
+
+#addreccom 7237 -- Duerger Thuldor - elite cleric ( X )
+#addreccom 7240 -- Duergar Master Arcane Artisan ( X )
+
+
+#defcom1 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#defcom2 5072 -- Duergar Blackguard - holy commander ( X )
+#defunit1 7228 -- Duergar Mauler - unit ( X )
+#defmult1 20
+#defunit1b 7229 -- Duergar Scorpion - ranged unit ( X )
+#defmult1b 5
+#defunit2 7227 -- Duergar Heavy Axe - unit ( X )
+#defmult2 10
+
+---------- DEFENCES
+#guardcom 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#guardunit 7228 -- Duergar Mauler - unit ( X )
+#guardmult 15
+#wallcom 5072 -- Duergar Blackguard - holy commander ( X )
+#wallunit 7229 -- Duergar Scorpion - ranged unit ( X )
+#wallmult 10	
+
+---------- START SITES
+#startsite "Great Mine of the Deep" 
+#startsite "Mines of the Pale Ones"
+#startsite "Slave Market"
+#startsite "Crystal Garden"
+#end
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\ungrouped-nations.dm
+------------------------------------------------------------------------------------------------------------------
+
+
+--//////////////////////////////////////////////////////////////////////////////////////////////////////
+--//////////////////////////////////////////////////////////////////////////////////////////////////////
+--//////////////////////////////////////////////NATIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+--//////////////////////////////////////////////////////////////////////////////////////////////////////
+--//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------
+---------------------------SEMBIA---------------------------------------
+----------Currently part of the Cult of the Dragon----------------------
+-------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\unther.dm
+------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------
+--------------------------------------------------------Unther
+
+#selectnation 211
+#era 2 		
+#name "Unther"
+#epithet "Realm of the God-King"
+#brief "Unther was one of the Old Empires in east Faerûn. The Untherans were brought to Toril from Earth by the Imaskar Empire looking for some manpower. After countless petitions, the gods of the Untheric pantheon were able to manifest into Toril by sending physical avatars. With the help of their deities, the former slaves freed themselves and settled the lands that later became Unther. Ironically, their rival in the millennia to come was another human tribe captured by the Imaskari and freed at the same time, which founded the empire of Mulhorand."
+#descr "The populace of Unther before 1358 DR was primarily composed of humans of the Mulan ethnic group, with a few humans of other ethnic groups as a minority. A few demihumans were also part of the Untheran populace, but only as slaves.
+
+Members of Unther's nobility took up positions in the nation's government, often as priests, wizards, or bureaucrats. They were either Gilgeam's priests or his most trusted non-cleric followers. All nobles of Unther were of the Mulan ethnic group and they practiced marriage between members of the same family to maintain the purity of their Mulan bloodlines. Despite Unther's long history, its nobles were rather few in number. During Gilgeam's milennia-long rule, families fell from his favor and were sold to slavery, and he elevated a few 'pure-blooded Mulans' to replace them.
+
+Finally, slaves in Unther were either members of those families who fell from Gilgeam's favor, or members of demihuman races. Their lives were worthless in the eyes of those in power. The only way to redeem oneself if born or lost into slavery was through the act of war.
+
+Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance movement that has taken up hold across the empire. You'll need to bring these various factions to heel before you can press them into service, including priestesses of Ishtar, Cultists of Tiamat, and the wizard orders in Messemprar and the Greenfields."
+#summary "Your troops are entirely made up of slaves, but very special ones - they level up over time, eventually becoming sacred. Keeping your forces alive will be a vital strategy. Your priests and wizards are fairly strong and most are sacred. What you lack in standard recruitment variety, you'll make up for with options from nearby magic sites in Shussel, Messemprar, and others." 
+#flag "ForgottenRealms/flag211.tga"
+#templepic 0 -- Pyramid
+#fortera 3 -- Castle standard era 2
+#homefort 4 -- Citadel
+#buildfort 3
+#builduwfort 6
+#labcost 500
+#templecost 300
+#color 1.0 0.6 0.2
+
+#addgod 5043 -- Unthalass -- the Great Ziggurat
+#addgod 6876 -- Gilgeam
+#cheapgod40 6876
+
+#startcom 200 			-- Prince of the Old Empire 
+#startunittype1 6877 	-- Old Empire Skirmisher
+#startunitnbrs1 40
+
+#startscout 6881 	-- Old Empire Drillmaster
+
+#addrecunit 6877 	-- Old Empire Skirmisher
+#addrecunit 6886 	-- Old Empire Slave Spear
+#addrecunit 6874 	-- Dwarven Miner
+#addrecunit 6858 	-- Mulan Bowman
+#addrecunit 1078 	-- Chariot
+
+#addreccom 431	 	-- Scout
+#addreccom 6881		-- Old Empire Drillmaster
+#addreccom 200 		-- Prince of the Old Empire 
+#addreccom 6883 	-- Prince Bureaucrat
+#addreccom 7040 	-- Gondar Wonderbringer
+#addreccom 6700 	-- Battlechaplain of Tempus
+#addreccom 6885 	-- Paladin of the God-King
+#addreccom 6884 	-- Loyal Cleric of Gilgeam
+
+
+#defcom1 6881 	-- Old Empire Drillmaster
+#defcom2 200 		-- Prince of the Old Empire 
+#defunit1 6887 -- Old Empire Light Spearmen
+#defunit1b 6878 -- Old Empire Peltast
+#defunit2 1078
+#defmult1 20 	
+#defmult1b 20
+#defmult2 4 
+
+---------- DEFENCES
+#guardcom 200 		-- Prince of the Old Empire 
+#guardunit 6887
+#guardmult 15
+#wallcom 6881 	-- Old Empire Drillmaster
+#wallunit 6858 	-- Mulan Bowman
+#wallmult 25 	-- 
+
+---------- START SITES
+
+#startsite "Unthalass - The City of Gems"
+#startsite "Fertile Flood Plain"
+#startsite "The Vault of Incense and Marvels"
+#startsite "Palaces of the Mulan"
+
+#end 
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\waterdeep.dm
+------------------------------------------------------------------------------------------------------------------
+
+#selectnation 200 
+#era 2 		
+#name "Lords of Waterdeep"
+#epithet "City of Splendors, Crown of the North"
+#brief "The City of Splendors is home to a truly cosmopolitan collection of peoples from across the realms."
+#descr "Waterdeep was one of if not the most powerful and influential member-states of the Lords' Alliance, the coalition of nations and city-states that sought to maintain order along the Sword Coast and the North.
+
+Waterdeep was ruled by a sixteen-seat council whose membership was largely secret. These hidden Lords of Waterdeep maintained their identities behind magical masks, called the Lord's Helm, and while they ruled in public, none knew the true identities of most of them. The subject of who the Lords were became a common topic of noble conversation, and some considered it a game to discover the Lords' identities, a game made more confusing by the fact the Lords themselves set their own rumors afloat.
+
+Waterdeep itself was built on the site of the ancient elven settlement of Aelinthaldaar. It sprawled northward from the sea, spreading along the flanks of Mount Waterdeep, which used to be home to a mithral-mining dwarven clan. The entire length and great depth of the mountain was riddled with passages and tunnels, most of which were occupied by deadly creatures whose presence in the mountain predated the founding of the city itself.
+
+The halls of Undermountain located just beneath the city sewers were a popular target for adventurers who enjoyed the close vicinity of the city's main taverns and temples where aid could be purchased through donations.
+
+A tense alliance between the Xanathar and the Lords of Waterdeep exists beyond the common knowledge of even the majority of the lords themselves. The paranoid Elder Eye rules from the shadows within Undermountain, keeping the City of Splendors safe from the predations of the deeper reaches of the Underdark. Such agreements with evil and mad creatures does not come, however, without a cost."
+#summary "Reasonable Infantry are backed by Waterdeep's famous Griffon Riders. Heroes abound, and commanders can stealth and thug away in small elite squads once equipped. Merchants give the economy a boost. Coastal cities bring extra income."
+#flag "ForgottenRealms/flag200.tga"
+#coastnation
+#aiholdgod
+#templepic 32 -- opulent hall
+#fortera 2
+#homefort 14
+#buildfort 3
+#uwbuild 1
+#builduwfort 6
+#tradecoast 15
+#labcost 400
+#templecost 400
+#color 0.0 0.3 1.0
+#idealcold 1
+
+#addgod 8000 -- Fountain of Mystra
+#addgod 5004 -- Light of Lathander
+#addgod 5005 -- Statue of Selune
+#addgod 5007 -- Statue of Tyr
+#addgod 5008 -- Statue of Torm
+#addgod 5009 -- Statue of Ilmater
+#addgod 5023 -- Oghma 
+
+#cheapgod20 5023 -- Oghma 
+#cheapgod40 5004 -- Lathander
+#cheapgod20 8000 -- Mystra
+
+#startcom 6607			-- Knight of the Lords Alliance
+#startunittype1 6601	-- Constables
+#startunittype2 6608 	-- Griffon Rider
+#startunitnbrs1 20
+#startunitnbrs2 5
+
+#startscout 6614	-- HARPER AGENT
+
+#addrecunit 6601	-- Constables
+#addrecunit 7321 	-- Waterdeep Crossbowmen
+#addrecunit 6621	-- Vigilant Guard
+#addrecunit 6606	-- Knight of the Lords Alliance
+
+#uwrec 7518 -- Merfolk Militia
+#uwrec 7623 -- Merfolk Skirmisher
+#uwrec 7519 -- Merfolk Soldier
+#uwrec 7625 -- Merfolk Crossbowman 
+#uwcom 7520 -- Merfolk Commander
+#uwcom 8021 -- Mermaid Bard
+#uwcom 8020 -- Merfolk Prince
+#uwcom 7534 -- Mermaid Wavekeeper
+
+
+
+#addreccom 6614		-- HARPER AGENT
+#addreccom 6602		-- Senior Civilar
+#addreccom 6622 	-- Merchant Prince 
+#addreccom 6607 	-- Knight Commander of the Alliance
+#addreccom 6609 	-- Wizard Corps Civilar
+#addreccom 6813		-- Elven Bladesinger
+#addreccom 6618 	-- Priestess of Selune
+#addreccom 6703 	-- Cleric of Waukeen
+#addreccom 6605		-- Cleric of Lathander
+
+
+#defcom1 6604		-- Grey Hand Captain
+#defcom2 6609 		-- the 2nd PD Commander - Wizard Corps Civilar
+#defunit1 6601 		-- Constables
+#defunit1b 7321 	-- Waterdeep Crossbowmen
+#defunit2 6621 		-- Vigilants	
+#defmult1 15 		-- Constables
+#defmult1b 10 		-- Crossbows
+#defmult2 15		-- Vigilants
+
+---------- DEFENCES
+#guardunit 6601
+#guardcom 6609
+#guardmult 15
+
+#wallcom 6609 -- Wizard Corps Civilar
+#wallunit 7321 -- Waterdeep Crossbowmen
+#wallmult 20 -- very high
+
+-- UW PROVINCE DEFENCE
+#uwdefcom1 7520 -- Merfolk Commander
+#uwdefcom2 8020 -- Merfolk Prince
+#uwdefunit1 7623 -- Merfolk Skirmisher
+#uwdefmult1 16
+#uwdefunit1b 7519 -- Merfolk Soldier
+#uwdefmult1b 10
+#uwdefunit2 7625 -- Merfolk Crossbowman
+#uwdefmult2 14
+
+--UW WALL DEFENCE
+#uwguardcom 7520 -- Merfolk Commander
+#uwguardunit 7519 -- Merfolk Soldier
+#uwguardmult 20
+#uwwallcom 7520 -- Merfolk Commander
+#uwwallunit 7625 -- Merfolk Crossbowman 
+#uwwallmult 16
+
+
+
+
+---------- START SITES
+
+#startsite "Castle Waterdeep" 
+#startsite "The Palace of Waterdeep"
+#startsite "Blackstaff Tower"
+#startsite "Deepwater Harbor"
+--#startsite "The Plinth"
+#startsite "The Yawning Portal Inn"
+
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\zhentarim.dm
+------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+-- Zhentarim
+---------------------------------------------------------------------------------
+
+#selectnation 202 -- can be any number from 200 up?
+#era 2 		
+#name "Zhentarim"
+#epithet "The Black Network"
+#idealcold 0
+#brief "As an extension of the will of the dark wizard Manshoon, the Zhentarim was initially formed as a mercenary company to support his rule over the Moonsea with the aim of spreading that control over all of Faerûn."
+#descr "Also known as the Black Network, in their brief 200 years of existence the Zhentarim have had a storied history as servants of the dark gods Bane and Cyric and were involved in many plots that have shaped the continent as it stands today. They are foremost an extension of the will of the great wizard Manshoon and were initially formed as a mercenary company to support his rule over the Moonsea with the aim of spreading that control over all of Faerûn. Manshoon grew the ranks with a cadre of self-serving thieves, spies, assassins and malevolent wizards. 
+
+At its height, the legendary Manshoon and his right hand, Fzoul Chembryl, along with their tyrannical lapdog-warlord, Paraghost who ruled from nearby Darkhold, influenced events from Waterdeep in the west to Thay in the east. All three of these villains will be among your ranks at the start of the game. 
+
+Manshoon sought foremost to consolidate the Moonsea where he discovered several ancient Pools of Radiance scattered throughout the region - echoes of the lost greatness of the Elves who once ruled from Myth Drannor. With control over the Black Road, which crosses the great wasteland of Anauroch, Manshoon filled Zhenarim's coffers with the gold of merchants who had no other choice but to hire the Black Network to protect their caravans from the frozen desert's beasts, most of which were in the employ of the Zhentarim in one way or another. Darkhold was also not Manshoon's only foreign holding, with Castle Daggerdale under occupation in the Dalelands and a foothold on the distant Moonshae Isles."
+#summary "Your infantry is heavy and expensive. Your priest and priestesses of Bane, Bhaal, Myrkul and Cyric coupled with you magic path access will allow for the binding of infernal allies and the raising of massive undead armies should you choose to do so. Both Manshoon and Fzoul are true liches, with immortality that extends beyond your friendly dominion. Your Black Dragon, Hrondalbar, is mature enough to lay eggs." 
+#flag "ForgottenRealms/flag_zhent.tga"
+#coastnation
+#aiholdgod
+#templepic 4 -- Mountain Castle
+#bloodnation
+#fortera 3
+#homefort 25
+#buildfort 2
+#builduwfort 6
+#labcost 400
+#templecost 400
+#color 0.2 0.1 0.1
+
+#addgod 5003 -- Myrkul
+#addgod 5002 -- BHAAL
+#addgod 8001 -- BANE
+
+#addgod 5033 -- Cyric 2
+
+#cheapgod20 8001
+#cheapgod20 5033
+
+
+#multihero1 6785 -- Mature Black Dragon
+#multihero2 178 -- Lich
+#multihero3 7068 -- beholder
+#multihero4 180 -- Demilich
+#multihero5 395 -- Lich Queen 
+
+#startcom 6663			-- Swordhar
+#startunittype1 6661 	-- Stalwart
+#startunittype2 6662 	-- Sternhelm
+#startunitnbrs1 20
+#startunitnbrs2 5
+
+#startscout 427		-- Spy
+
+#addrecunit 6661 	-- Stalwart
+#addrecunit 6662 	-- Sternhelm
+#addrecunit 6665 	-- Zhent Lance
+#addrecunit 7501 	-- Wyvern Rider
+
+#addreccom 427		-- Spy
+#addreccom 429		-- Black Hand Assassin
+#addreccom 6663		-- Swordhar
+#addreccom 6673		-- Priest of Myrkul
+#addreccom 94		-- Stock Conjurer
+#addreccom 7498 	-- Zhentarim Reanimator
+#addreccom 6674		-- Embermage
+#addreccom 7499 	-- Wyvern Rider Captain
+
+
+#wasterec 6672		-- Wyverns from wastelands
+#wasterec 6724		-- Gnoll Hunters from wastelands
+#wastecom 6808 		-- Gnoll Chieftain
+
+
+#mountainrec 6675	-- Frost Giants from mountains	
+#mountainrec 6678	-- Hill Giant Reavers
+#mountaincom 1301	-- Frost Giant Elder
+
+#forestrec 6676		-- Orc Marauders from forests
+#forestrec 7071		-- Owlbears from forests
+#forestcom 6737 	-- Orc Warlor 
+
+#swampcom 2891		-- Trog Warchief
+#swamprec 6677		-- Troglodyte Raiders
+#swamprec 7081 		-- Otyugh
+
+#cavecom 6772		-- Hill Giant Shaman
+#caverec 6678		-- Hill Giant Reavers
+#caverec 7081 		-- Otyugh
+
+
+-- All other units are site-specific
+
+#defcom1 6663		-- Swordhar
+#defcom2 6674		-- Embermage
+#defunit1 6661 		-- Stalwart
+#defunit1b 6662		-- Sternhelm
+#defunit2 6675		-- Frost Giants 
+#defmult1 30
+#defmult1b 6
+#defmult2 6
+
+---------- START SITES
+
+#startsite "Zhentil Keep" 
+#startsite "The Temple of Bane"
+#startsite "The Tower of the Art"
+#startsite "The Black Altar"
+#startsite "Zhentarim Barracks"
+
+
+---------- DEFENCES
+#guardunit 6661
+#guardcom 6663
+#guardmult 15
+#wallcom 6664 	-- Swordcaptain
+#wallunit 218 	-- Crossbowmen 
+#wallmult 15 	-- high
+#end 		
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/poptypes\poptypes.dm
+------------------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -68319,6 +75826,10 @@ Unlike most summons, Mindflayers cost gold maintenance."
 -- poptype 190 -- Kobolds
 
 
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\ungrouped-events.dm
+------------------------------------------------------------------------------------------------------------------
+
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -68543,1030 +76054,6 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #code 0
 #end
 
---------------------------------------
--- Jade Spider Summoning -------------
---------------------------------------
-#newspell
-#name "Construct a Jade Spider"
-#descr "Jade Spiders are perhaps the most powerful construct in the Forgotten Realms, the secret of their creation guarded closely by the drow of Menzoberranzan and precious few even among them knew the method."
-#school 3
-#researchlevel 6
-#path 0 4
-#path 1 7
-#pathlevel 0 3
-#pathlevel 1 2
-#fatiguecost 4000
-#effect 10001 -- summon monster
-#nreff 1
-#damage 7513 -- Jade Spider
-#restricted 222 -- Menzoberranzan
-#end
-
--- 
-
---------------------------------------
--- Carrion Crawler Summoning ---------
---------------------------------------
-#newspell
-#name "Incubate Carrion Crawlers"
-#descr "Carrion Crawlers are 10 foot long abberations that resemble centipedes armed with tentacles capable of paralyzing their prey prior to consuming them. They have tough exoskeletons but lack intelligence beyond an overwhelming desire to consume flesh."
-#brief "This spell enchants 10 carrion crawlers to do your bidding."
-#school 0
-#researchlevel 1
-#path 0 6
-#path 1 8
-#pathlevel 0 1
-#pathlevel 1 1
-#fatiguecost 300
-#effect 10001 -- summon monster
-#nreff 10
-#damage 7514 -- Carrion Crawler
-#end
-
--------------------------- ELEMENTAL SUMMONING -------------------------- 
-
--- 7064 -- Conjure Small Water Elemental
-#newspell
-#name "Summon Small Water Elemental"
-#descr "A small water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acids and cold. "
-#school 0
-#researchlevel 1
-#path 0 2
-#pathlevel 0 1
-#fatiguecost 60
-#effect 1 -- summon monster
-#nreff 1
-#damage 7064 -- Small Water Elemental
-#aispellmod -10
-#spec 8388608
-#end
-
--- 7065 -- Conjure Medium Water Elemental
-#newspell
-#name "Summon Medium Water Elemental"
-#descr "A medium water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acids and cold. "
-#school 0
-#researchlevel 3
-#path 0 2
-#pathlevel 0 2
-#fatiguecost 70
-#effect 1 -- summon monster
-#nreff 1
-#damage 7065 -- Medium Water Elemental
-#aispellmod -10
-#spec 8388608
-#end
-
--- 7066 -- Conjure Large Water Elemental
-#newspell
-#name "Summon Large Water Elemental"
-#descr "A large water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acids and cold. "
-#school 0
-#researchlevel 5
-#path 0 2
-#pathlevel 0 3
-#fatiguecost 80
-#effect 1 -- summon monster
-#nreff 1
-#damage 7066 -- Large Water Elemental
-#spec 8388608
-#end
-
--- 7067  -- Conjure Huge Water Elemental
-#newspell
-#name "Summon Huge Water Elemental"
-#descr "A huge water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acid and cold. "
-#school 0
-#researchlevel 7
-#path 0 2
-#pathlevel 0 4
-#fatiguecost 80
-#effect 1 -- summon monster
-#nreff 1
-#damage 7067 -- Huge Water Elemental
-#spec 8388608
-#end
-
--- 7067 -- Bind Huge Water Elemental
-#newspell
-#name "Bind Guardian Water Elemental"
-#descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but will be otherwise unable to leave its locale."
-#brief "Water Elementals are immune to acids and cold. Huge Elementals produce one gem of their elemental nature per turn."
-#school 0
-#researchlevel 5
-#path 0 2
-#pathlevel 0 4
-#fatiguecost 1500
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7067 -- Huge Water Elemental
-#spec 8388608
-#end
-
-
--- 7028 -- Bind Huge Air Elemental
-#newspell
-#name "Bind Guardian Air Elemental"
-#descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but will be otherwise unable to leave its locale. "
-#brief "Air Elementals are immune to cold and shock and can swallow smaller foes in their whirlwind.  Guardian Elementals produce one gem of their elemental nature per turn."
-#school 0
-#researchlevel 5
-#path 0 1
-#pathlevel 0 3
-#fatiguecost 1500
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7028 -- Huge Air Elemental
-#end
-
--- 7028  -- Conjure Huge Air Elemental
-#newspell
-#name "Summon Huge Air Elemental"
-#descr "A huge air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
-#school 0
-#researchlevel 7
-#path 0 1
-#pathlevel 0 4
-#fatiguecost 80
-#effect 1 -- summon monster
-#nreff 1
-#damage 7028 -- Huge Air Elemental
-#end
-
--- 7027  -- Conjure Large Air Elemental
-#newspell
-#name "Summon Large Air Elemental"
-#descr "A large air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
-#school 0
-#researchlevel 5
-#path 0 1
-#pathlevel 0 3
-#fatiguecost 80
-#effect 1 -- summon monster
-#nreff 1
-#damage 7027 -- Large Air Elemental
-#end
-
--- 7026  -- Conjure Medium Air Elemental
-#newspell
-#name "Summon Medium Air Elemental"
-#descr "A medium air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
-#school 0
-#researchlevel 3
-#path 0 1
-#pathlevel 0 2
-#fatiguecost 70
-#effect 1 -- summon monster
-#nreff 1
-#damage 7026 -- Medium Air Elemental
-#aispellmod -10
-#end
-
--- 7025 -- Conjure Small Air Elemental
-#newspell
-#name "Summon Small Air Elemental"
-#descr "A small air elemental is conjured through a temporary gate to the elemental plane of air, binding this creature to the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
-#school 0
-#researchlevel 1
-#path 0 1
-#pathlevel 0 1
-#fatiguecost 60
-#effect 1 -- summon monster
-#nreff 1
-#damage 7025 -- Small Air Elemental
-#aispellmod -10
-#end
-
-
--- 7023  -- Conjure Huge Earth Elemental
-#newspell
-#name "Summon Huge Earth Elemental"
-#descr "A huge earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay."
-#school 0
-#researchlevel 7
-#path 0 3
-#pathlevel 0 4
-#fatiguecost 80
-#effect 1 -- summon monster
-#nreff 1
-#damage 7023 -- Huge Earth Elemental
-#spec 8388608
-#end
-
--- 7023 -- Bind Guardian Earth Elemental
-#newspell
-#name "Bind Huge Earth Elemental"
-#descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but can otherwise only be transported to a new location via teleportation."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense.  Guardian Elementals produce one gem of their elemental nature per turn."
-#school 0
-#researchlevel 5
-#path 0 3
-#pathlevel 0 4
-#fatiguecost 1500
-#effect 10021 -- summon monster
-#nreff 1
-#damage 7023 -- Huge Earth Elemental
-#spec 8388608
-#end
-
--- 7022  -- Conjure Large Earth Elemental
-#newspell
-#name "Summon Large Earth Elemental"
-#descr "A large earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
-#school 0
-#researchlevel 5
-#path 0 3
-#pathlevel 0 3
-#fatiguecost 80
-#effect 1 -- summon monster
-#nreff 1
-#damage 7022 -- Large Earth Elemental
-#spec 8388608
-#end
-
--- 7021  -- Conjure Medium Earth Elemental
-#newspell
-#name "Summon Medium Earth Elemental"
-#descr "A medium earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
-#school 0
-#researchlevel 3
-#path 0 3
-#pathlevel 0 2
-#fatiguecost 70
-#effect 1 -- summon monster
-#nreff 1
-#damage 7021 -- Medium Earth Elemental
-#spec 8388608
-#aispellmod -10
-#end
-
--- 7020 -- Conjure Small Earth Elemental
-#newspell
-#name "Summon Small Earth Elemental"
-#descr "A small earth elemental is conjured through a temporary gate to the elemental plane of earth, binding this creature to the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
-#school 0
-#researchlevel 1
-#path 0 3
-#pathlevel 0 1
-#fatiguecost 60
-#effect 1 -- summon monster
-#nreff 1
-#damage 7020 -- Small Earth Elemental
-#spec 8388608
-#aispellmod -10
-#end
-
--- 7057  -- Conjure Huge Fire Elemental
-#newspell
-#name "Summon Huge Fire Elemental"
-#descr "A huge fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
-#school 0
-#researchlevel 7
-#path 0 0
-#pathlevel 0 4
-#fatiguecost 80
-#effect 1 -- summon monster
-#nreff 1
-#damage 7057 -- Huge Fire Elemental
-#end
-
--- 7057 -- Bind Huge Fire Elemental
-#newspell
-#name "Bind Huge Fire Elemental"
-#descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but can otherwise only be transported to a new location via teleportation."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield.  Huge Elementals produce one gem of their elemental nature per turn."
-#school 0
-#researchlevel 5
-#path 0 0
-#pathlevel 0 3
-#fatiguecost 1500
-#effect 10021 -- summon monster
-#nreff 1
-#damage 7057 -- Huge Fire Elemental
-#end
-
--- 7056  -- Conjure Large Fire Elemental
-#newspell
-#name "Summon Large Fire Elemental"
-#descr "A large fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to poison and decay and can wrap themselves in a fiery shield.. "
-#school 0
-#researchlevel 5
-#path 0 0
-#pathlevel 0 3
-#fatiguecost 80
-#effect 1 -- summon monster
-#nreff 1
-#damage 7056 -- Large Fire Elemental
-#end
-
--- 7055  -- Conjure Medium Fire Elemental
-#newspell
-#name "Summon Medium Fire Elemental"
-#descr "A medium fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
-#school 0
-#researchlevel 3
-#path 0 0
-#pathlevel 0 2
-#fatiguecost 70
-#effect 1 -- summon monster
-#nreff 1
-#damage 7055 -- Medium Fire Elemental
-#aispellmod -10
-#end
-
--- 7054 -- Conjure Small Fire Elemental
-#newspell
-#name "Summon Small Fire Elemental"
-#descr "A small fire elemental is conjured through a temporary gate to the elemental plane of fire, binding this creature to the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
-#school 0
-#researchlevel 1
-#path 0 0
-#pathlevel 0 1
-#fatiguecost 60
-#effect 1 -- summon monster
-#nreff 1
-#damage 7054 -- Small Fire Elemental
-#aispellmod -10
-#end
-
--- 7517 -- Walking Statue
-#newspell
-#name "Construct a Walking Statue"
-#descr "The Walking Statues of Waterdeep were legendary defenders of the City of Splendors. Holy guardians of the cities temples and vaults, these enormous constructs stood sentinel for centuries, unmoving and unwavering in their dedication to their purpose."
-#school 3
-#researchlevel 8
-#path 0 4
-#path 1 3
-#pathlevel 0 5
-#pathlevel 1 3
-#fatiguecost 5000
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7517 -- Walking Statue
-#restricted 200 -- Waterdeep Only
---#uwok
-#end
-
-
---------------------------------------------------------------------------------------------------------------------------------------------
-------------------- New Spells and Events for Myth Nantar, Aleaxtis, and other 0.94 additions by Razorfire with help from SSDaquerino-------
---------------------------------------------------------------------------------------------------------------------------------------------
-
-
--- 7616 -- Baelnorn Transmigration
-#newspell
-#copyspell 1245 -- lichcraft
-#name "Baelnorn Transmigration"
-#path 0 4
-#pathlevel 0 3
-#researchlevel 5
-#descr "Become a Baelnorn - an elf who chooses a path of Prime-bound duty beyond death. They chose this path to serve or safeguard their families, communities, or important places, and acted as keepers and protectors of elven clans and holdings far beyond the lifespan of a living elf."
-#details "The baelnorn is immortal so long as their place of origin remains unconquered. This transformation, though powerful, has the downside of making the unit homesick. A baelnorn will lose 20% of their health each month they are away from their home province." 
-#damage 7616 -- Baelnorn
-#restricted 236 -- Tel'Quessir
-#restricted 239 -- Myth Nantar
-#end
-
---
-#newspell 
-#name "Annihilate Nantar's Mythal"
-#descr "Available only to Aleaxtis, this spell will remove the Mythal at Myth Nantar, ensuring the sahuagin can safely occupy the province without fear of its anti-sahuagin holy fire."
-#onlyatsite 2991 -- "The Mythal at Myth Nantar"
-#provrange 0
-#school 4 
-#researchlevel 7
-#path 0 4
-#pathlevel 0 4
-#fatiguecost 8000 -- 80 gems
-#effect 10042 --triggers event
-#damage 8002 --event id
-#restricted 240 -- Aleaxtis
-#spec 41943040 -- uwonly
-#end
-
----------------------------------------------------------------
-#newevent 
-#id 8002
-#rarity 0 -- always once per province but..
-#req_rare 0 -- only triggered by spell
-#removesite 2991 -- The Mythal at Myth Nantar
-#msg "The last legacy of the elves of Aryselmalyr is no more. In the name of Sekolah, let the waters of Serôs churn with the blood of our fallen foes."
-#end
-
-------------------- New Underwater Summons -------------------
-
-
--- 7583 -- Chum the Water
-#newspell
-#name "Chum the Water, Minor"
-#descr "Summons a single, random shark to the combat. "
-#school 0
-#researchlevel 1
-#path 0 8
-#path 1 2
-#pathlevel 0 1
-#pathlevel 1 1
-#fatiguecost 50
-#effect 1 -- summon monster
-#nreff 1
-#damage -13014 -- Shark Montag
-#restricted 240 -- Aleaxtis
-#flightspr 10083 1 = red/pink thick particles
-#explspr 10043 -- explosion
-#sound 21 -- frost blast
-#spec 41943040
-#end
-
--- Chum the Water
-#newspell
-#name "Chum the Water"
-#descr "Summons three random sharks to the combat. "
-#school 0
-#researchlevel 3
-#path 0 2
-#path 1 8
-#pathlevel 0 2
-#pathlevel 1 1
-#fatiguecost 50
-#effect 1 -- summon monster
-#nreff 3
-#damage -13014 -- Shark Montag
-#restricted 240 -- Aleaxtis
-#flightspr 10083 1 = red/pink thick particles
-#explspr 10043 -- explosion
-#sound 21 -- frost blast
-#spec 41943040
-#end
-
--- Greater Chum the Water
-#newspell
-#name "Chum the Water, Greater"
-#descr "Summons 6 random sharks to the combat. "
-#school 0
-#researchlevel 5
-#path 0 2
-#path 1 8
-#pathlevel 0 3
-#pathlevel 1 1
-#fatiguecost 100
-#effect 1 -- summon monster
-#nreff 6
-#damage -13014 -- Shark Montag
-#restricted 240 -- Aleaxtis
-#flightspr 10083 1 = red/pink thick particles
-#explspr 10043 -- explosion
-#sound 21 -- frost blast
-#spec 41943040
-#end
-
--- Feast of Sekolah
-#newspell
-#copyspell 1014 -- Howl
-#name "Feast of Sekolah"
-#descr "Summons a constant stream of sharks to the combat from the edges of the battlefield. "
---#school 0
-#school -1 -- Howl is hardcoded, modding it this way doesn't work
-#researchlevel 5
-#path 0 2
-#path 1 8
-#pathlevel 0 4
-#pathlevel 1 3
-#fatiguecost 300
-#damage 7583 -- Shark Montag
-#restricted 240 -- Aleaxtis
-#sound 27 -- Thunder
-#spec 41943040
-#end
-
--- 7629 -- Coral Golem
-#newspell 
-#copyspell 1028 -- summon bishop fish
-#name "Craft Coral Golem"
-#descr "Coral Golems were created by mages to both guard undersea locations and to tirelessly gather undersea resources. This spell can only be cast underwater." 
-#school 3
-#researchlevel 4
-#path 0 2 
-#pathlevel 0 3
-#effect 10001
-#damage 7629 -- Coral Golem
-#nreff 1
-#fatiguecost 1500
-#spec 41943040
-#end
-
-
---------------------- New Underwater Spells ------------------------
-#newspell 
-#copyspell 639 -- water strike
-#name "Pressure Orb"
-#descr "In a 2 square radius centered on a single target, this spell suddenly causes the water to take on the terrible, bone-crushing pressure of the deepest ocean trenches. "
-#school 2 -- evocation
-#researchlevel 1
-#path 0 2 -- water
-#pathlevel 0 1 -- 1W
-#fatiguecost 35
---#effect 2 --dmg
-#nreff 1
-#aoe 2
-#damage 1006
-#range 5025
-#precision 100
-#flightspr -1
-#explspr 10042 -- water-like colorless gas explosion
-#sound 27 -- Thunder
---#speedmult 3 
---#spec 2305843009255636992
---#nextspell 0 -- nothing, to remove fire damage
-#end
-
-#newspell 
-#copyspell 639 -- water strike
-#name "Pressure Sphere"
-#descr "In a 4 square radius centered on a single target, this spell suddenly causes the water to take on the terrible, bone-crushing pressure of the deepest ocean trenches. "
-#school 2 -- evocation
-#researchlevel 3
-#path 0 2 -- water
-#pathlevel 0 2 -- 2W
-#fatiguecost 35
---#effect 2 --dmg
-#nreff 1
-#aoe 4
-#damage 1006
-#range 5025
-#precision 100
-#flightspr -1
-#explspr 10042 -- water-like colorless gas explosion
-#sound 27 -- Thunder
---#speedmult 3 
---#spec 2305843009255636992
---#nextspell 0 -- nothing, to remove fire damage
-#end
-
-#newspell 
-#copyspell 639 -- water strike
-#name "Pressure Field"
-#descr "In a 8 square radius centered on a single target, this spell suddenly causes the water to take on the terrible, bone-crushing pressure of the deepest ocean trenches. "
-#school 2 -- evocation
-#researchlevel 6
-#path 0 2 -- water
-#pathlevel 0 4 -- 4W
-#fatiguecost 35
---#effect 2 --dmg
-#nreff 1
-#aoe 8
-#damage 1008
-#range 5025
-#precision 100
-#flightspr -1
-#explspr 10042 -- water-like colorless gas explosion
-#sound 27 -- Thunder
---#speedmult 3 
---#spec 2305843009255636992
---#nextspell 0 -- nothing, to remove fire damage
-#end
-
-#newspell 
-#copyspell 639 -- water strike
-#name "Cavitation"
-#descr "An advanced Water Strike effecting a larger area, the caster generates an explosive cavitation bubble that strikes all targets with devastating force. Ideal for disrupting tightly packed enemy formations."
-#school 2 -- evocation
-#researchlevel 4
-#path 0 2 -- water
-#pathlevel 0 3 -- 2W
-#fatiguecost 40
---#effect 2 --dmg
-#nreff 1
-#aoe 1002
-#range 5025
-#precision 100
-#flightspr -1
-#end
-
-#newspell
-#name "Thalassemia"
-#descr "This reactionary, armor-negating touch spell thins the target's blood, dealing damage to a creature's circulatory system."
-#school 2 -- evocation
-#researchlevel 2
-#path 0 2 -- water
-#pathlevel 0 1 -- 1W
-#fatiguecost 20
-#casttime 50
-#damage 3012  -- Base damage is 12 + (3x pathlevel) 
-#range 1
-#nreff 1
-#aoe 1
-#precision 100
-#flightspr 10083 1 = red/pink thick particles
-#explspr 10043 -- explosion
-#sound 9 -- whip
-#spec 2413982185964716160
-#end
-
-#newspell
-#name "Thirst of Sekolah"
-#descr "This ranged, aoe spell thins the blood of any livig creature in the radius of Sekolah's Thirst, dealing internal damage to a creature's circulatory system."
-#school 2 -- evocation
-#researchlevel 5
-#path 0 8 -- blood
-#path 1 2 -- water
-#pathlevel 0 2 -- 2B
-#pathlevel 1 1 -- 1W
-#fatiguecost 40
-#casttime 100
-#damage 3008  -- Base damage is 8 + (3x pathlevel) 
-#range 5025
-#nreff 1
-#aoe 1004 -- base 4 + (1x pathlevel)
-#precision 100
-#flightspr 10083 1 = red/pink thick particles
-#explspr 10043 -- explosion
-#sound 9 -- whip
-#spec 2413982185964716160
-#end
-
---#sound 106 -- sizzle
-
-#newspell
-#copyspell 730 -- Cloud of Death
-#name "Blackwater Taint"
-#descr "In the dark, sunless abysses of the deep ocean, shadows gather, the cold beckons, and the corpses of many things in the oceans lie slowly rotting. When this spell is cast, you call up this cold blackness, infusing the waters in the spell's area with negative energy. Those in or entering the area must make a MR save to resist its terrible power."
-#brief "This spells damages and weakens living creatures while acting to heal demons and undead in the same area."
-#school 0 -- conjuration
-#researchlevel 5
-#path 0 5 -- death
-#path 1 2 -- water
-#pathlevel 0 2 -- 2D
-#pathlevel 1 1 -- 1W
-#fatiguecost 40
-#casttime 100
-#damage -3004  -- Base healing is 4 + (3x pathlevel) 
-#range 5025 -- 25+5/level
-#aoe 2008 -- 8+2/level
-#nreff 1
-#precision 100
-#flightspr -1 -- none
-#spec 8636088456 -- 3458817291226464384 --this second value is the old version that had planned an undead heal as a second spell effect
-#nextspell 11
-#end
-
-
-#newspell 
-#copyspell 639 -- water strike
-#name "Steam Blast"
-#descr "While Fireball may not lead to underwater flames, with only slight adjustments to its somatic components, it can be used to raise the tempurate of a wide swath of water to the boiling point almost instantaneously. "
-#school 2 -- evocation
-#researchlevel 2
-#path 0 0 -- Fire
-#path 1 2 -- water
-#pathlevel 0 1 -- 1F
-#pathlevel 1 2 -- 2W
-#fatiguecost 35
---#effect 2 --dmg
-#nreff 1
-#aoe 4
-#damage 1009
-#range 5035
-#precision 100
-#flightspr 10084 1 = ??? particles
-#explspr 10121 -- ???
-#sound 27 -- Thunder
-#end
-
-
--- 7607 -- Sacred Dolphin
-#newspell 
-#copyspell 1028 -- summon bishop fish
-#name "Summon Pod of Sacred Dolphins"
-#descr "Dolphins worshipped Trishina, the undersea goddess . This spell can only be cast underwater." 
-#school 0
-#researchlevel 3
-#path 0 2 
-#path 1 6
-#pathlevel 0 2
-#pathlevel 1 1
-#effect 10001
-#damage 7607 -- Sacred Dolphin
-#nreff 2001
-#fatiguecost 600
-#spec 41943040 -- uw ok and uw only
-#restricted 239 -- Nantarn Alliance
-#restricted 201 -- Luiren
-#restricted 200 -- Waterdeep
-#restricted 215 -- Impiltur
-#restricted 216 -- Silverymoon
-#restricted 218 -- Baldur's Gate
-#restricted 236 -- Tel'Quessir
-#end
-
-#newspell 
-#copyspell 1028 -- summon bishop fish
-#name "Summon Allies of the Undersea"
-#descr "This spell draws a number of dolphins, whales, and hippocampi to your cause. This spell can only be cast underwater." 
-#school 0
-#researchlevel 2
-#path 0 2 
-#path 1 6
-#pathlevel 0 1
-#pathlevel 1 1
-#effect 10001
-#damage 7612 -- Blessed Creatures of the Sea
-#nreff 2001
-#fatiguecost 300
-#spec 41943040 -- uw ok and uw only
-#restricted 239 -- Nantarn Alliance
-#restricted 201 -- Luiren
-#restricted 200 -- Waterdeep
-#restricted 215 -- Impiltur
-#restricted 216 -- Silverymoon
-#restricted 218 -- Baldur's Gate
-#restricted 236 -- Tel'Quessir 
-#end
-
--- 8005 -- Sacred Leviathan
-#newspell
-#name "Summon a Sacred Leviathan"
-#descr "Leviathans are ancient, enormous whales blessed by an undersea deity or living to such an age as to accumulate such vast wisdom as to occupy a blessèd state. These are minor water and holy mages capable of attracting undersea animal allies." 
-#school 0
-#researchlevel 5
-#path 0 2
-#path 1 6
-#pathlevel 0 4
-#pathlevel 1 1
-#fatiguecost 1800
-#effect 10021 -- summon commander
-#nreff 1
-#spec 41943040 -- uw ok and uw only
-#damage 8005 -- Sacred Leviathan
-#restricted 239 -- Nantarn Alliance
-#restricted 201 -- Luiren
-#restricted 200 -- Waterdeep
-#restricted 215 -- Impiltur
-#restricted 216 -- Silverymoon
-#restricted 218 -- Baldur's Gate
-#restricted 236 -- Tel'Quessir 
-#end
-
--- 8006 -- Megalodon
-#newspell
-#name "Summon a Megalodon"
-#descr "Megalodons are the greatest predators of the deep. Revered by the sahuagin, they are a true menace on the battlefield." 
-#school 0
-#researchlevel 4
-#path 0 2
-#path 1 8
-#pathlevel 0 4
-#pathlevel 1 1
-#fatiguecost 1500
-#effect 10001 -- summon monster
-#nreff 1
-#spec 41943040 -- uw ok and uw only
-#damage 8006 -- Megalodon
-#restricted 240 -- Aleaxtis
-#end
-
--- 7159 -- Kuo-Toan Leviathan
-#newspell
-#name "Exalt a Kuo-Toa Leviathan"
-#descr "The destructive monstrosities known as the kuo-toa leviathans were not born, but rather made. Talented Whips and Monitors could receive the blessing of the Sea Mother herself and grow to gargantuan proportions. Leviathans were venerated by other kuo-toa, hoping that the blessing of their goddess would rub off on them. These Leviathans thus rose to positions of great power among their kind, attracting enclaves of gogglers to them wherever they went." 
-#school 0
-#researchlevel 3
-#path 0 2
-#path 1 4
-#pathlevel 0 3
-#pathlevel 1 3
-#fatiguecost 2000
-#effect 10021 -- summon commander
-#nreff 1
-#spec 41943040 -- uw ok and uw only
-#damage 7159 -- Kuo-Toan Leviathan
-#restricted 224 -- Sloopdilmonpolop
-#end
-
-#newspell
-#copyspell 245 -- air shield
-#spec 41943040 -- uw ok and uw only
-#name "Shield of Turbidity"
-#descr "This spell roils the waters around its targets creating a kind of entropic barrier of eddies through which projectiles and other weapons are rapidly and successively redirected, rendering them far less deadly. This spell functions like a small area underwater air shield combined with watershield."
-#nextspell 1120
-#fatiguecost 40
-#aoe 1
-#path 0 2
-#pathlevel 0 2
-#school 1 -- abjuration
-#researchlevel 2
-#end
-
-#newspell
-#copyspell 829 -- air ward
-#spec 41943040 -- uw ok and uw only
-#name "Mass Shield of Turbidity"
-#descr "In a 20 square radius, this spell roils the waters around its targets creating a kind of entropic barrier of eddies through which projectiles and other weapons are rapidly and successively redirected, rendering them far less deadly. This spell functions like an underwater arrow ward combined with water ward."
-#path 0 2
-#pathlevel 0 4
-#school 1 -- abjuration
-#researchlevel 5
-#fatiguecost 100
-#aoe 20
-#nextspell 1194 -- water ward
-#end
-
-#newspell
-#name "Summon Nantari Cavaliers"
-#descr "The Nantari Cavaliers were the elite mounted forces of Myth Nantar. Blessed by the priests and bolstered by the high mages of the City of Destinies, the Nantari Cavaliers upheld The Laws of Battle across Serôs. These captains are also adept at communicating with and training Sacred Dolphins to accompany their forces." 
-#school 0
-#researchlevel 4
-#path 0 7
-#path 1 2
-#pathlevel 0 2
-#pathlevel 1 1
-#fatiguecost 1500
-#effect 10001 -- summon monster
-#nreff 1004 -- 4+1 per level of G
-#spec 41943040 -- uw ok and uw only
-#damage 7608 -- Nantari Cavalier
-#restricted 239 -- Nantarn
-#end
-
--- 7616 -- Freedom of the Alhoon
-#newspell
-#copyspell 1245 -- lichcraft
-#name "Freedom of the Alhoon"
-#path 0 7
-#pathlevel 0 3
-#researchlevel 4
-#descr "By means of this ritual, a mindflayer transforms into an Alhoon - an immortal, undead, lich mindflayer. They will gain boosts to several magic paths, but lose their divinity and become heretics in the eyes of the Elder Brain."
-#details "Only the most powerful illithids, the Mindflayers and Ulitharids, may cast this ritual."
-#fatiguecost 4000
-#damage 5050 -- Alhoon - 'Twiceborn' form
-#onlymnr 5113 -- Mind Flayer
-#onlymnr 5115 -- Ulitharid
-#end
-
-
-#newspell
-#name "Construct a Halruaan Skyship"
-#descr "While the secrets of the construction of skyships was closely guarded for centuries by the Halruaan Council, in 1370 DR, the method was leaked to a handful of foreign powers. While most were used for mercantile and research functions, they could be fit for war and were particularly useful in sieges." 
-#school 3
-#researchlevel 7
-#path 0 1
-#path 1 4
-#pathlevel 0 2
-#pathlevel 1 4
-#fatiguecost 3500
-#effect 10021 -- summon commander
-#nreff 1
-#damage 8032 -- Halruaan Skyship
-#restricted 200 -- waterdeep
-#restricted 201 -- luiren
-#restricted 203
-#restricted 210
-#restricted 212
-#restricted 216
-#restricted 218
-#restricted 236
-#end
-
--- 7661 -- Shoon VII
-#newspell
-#name "Forge a Pact with Shoon VII"
-#descr "In 1358 DR, an insane Calishite wizard discovered Shoon VII's trapped demilich skull and worked tirelessly to feed it souls, eventually freeing Shoon VII from his imprisonment and releasing The Necroqysar back into the world." 
-#school 4
-#researchlevel 5
-#path 0 5
-#path 1 8
-#pathlevel 0 3
-#pathlevel 1 2
-#fatiguecost 5000
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7661 -- Shoon VII
-#restricted 202 -- Calimshan
-#end
-
--- 7668 -- Runemaster - Lich
-#newspell
-#name "Forge a Pact with a Runemaster"
-#descr "The Twisted Rune was a nefarious organization ruled by at least seven liches, known as Runemasters. Cooperating for mutual survival, they plotted to sieze indirect power over the Lands of Intrigue, and in time, grew to one of the largest and most feared cabals of dark wizards in all of Faerûn. This spell will cement an alliance with one of the Runemasters." 
-#school 4
-#researchlevel 7
-#path 0 5
-#pathlevel 0 5
-#fatiguecost 5000
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7668 -- Runemaster - Lich
-#notfornation 241
-#end
-
--- 7668 -- Runemaster - Lich
-#newspell
-#name "Forge a Pact with a Runemaster"
-#descr "The Twisted Rune was a nefarious organization ruled by at least seven liches, known as Runemasters. Cooperating for mutual survival, they plotted to sieze indirect power over the Lands of Intrigue, and in time, grew to one of the largest and most feared cabals of dark wizards in all of Faerûn. This spell will cement an alliance with one of the Runemasters." 
-#school 4
-#researchlevel 6
-#path 0 5
-#pathlevel 0 5
-#fatiguecost 4000
-#effect 10021 -- summon commander
-#nreff 1
-#damage 7668 -- Runemaster - Lich
-#restricted 241
-#end
-
--- 7695 -- Celestial Lion
-#newspell 
-#name "Summon Celestial Lion"
-#descr "Celestial Lions are powerful and noble beasts of the upper planes and make outstanding front-line forces against demons and the undead." 
-#school 0
-#researchlevel 5
-#path 0 4 
-#path 1 0 
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 1
-#damage 7695 -- Celestial Lion
-#nreff 1
-#fatiguecost 80
-#restricted 200 
-#restricted 204 
-#restricted 209
-#restricted 215 
-#restricted 216
-#restricted 218
-#restricted 221 -- Kingdom of Corwell
-#restricted 227 -- Dwarves of Deep Shanatar
-#restricted 229 -- Dwarves of Old Bhaerynden
-#restricted 236 -- Tel'Quessir
-#restricted 237 -- Dalalands
-#end
-
-#newspell 
-#name "Call Celestial Lion"
-#descr "Celestial Lions are powerful and noble beasts of the upper planes and make outstanding front-line forces against demons and the undead." 
-#school 0
-#researchlevel 5
-#path 0 4 
-#path 1 0 
-#pathlevel 0 3
-#pathlevel 1 1
-#effect 10001
-#damage 7695 -- Celestial Lion
-#nreff 1
-#fatiguecost 500
-#restricted 200 
-#restricted 204 
-#restricted 209
-#restricted 215 
-#restricted 216
-#restricted 218
-#restricted 221 -- Kingdom of Corwell
-#restricted 227 -- Dwarves of Deep Shanatar
-#restricted 229 -- Dwarves of Old Bhaerynden
-#restricted 236 -- Tel'Quessir
-#restricted 237 -- Dalalands
-#end
-
-#newspell 
-#name "Call Pride of Celestial Lions"
-#descr "Celestial Lions are powerful and noble beasts of the upper planes and make outstanding front-line forces against demons and the undead." 
-#school 0
-#researchlevel 8
-#path 0 4 
-#path 1 0 
-#pathlevel 0 4
-#pathlevel 1 1
-#effect 10001
-#damage 7695 -- Celestial Lion
-#nreff 2001
-#fatiguecost 1800
-#restricted 200 
-#restricted 204 
-#restricted 209
-#restricted 215 
-#restricted 216
-#restricted 218
-#restricted 221 -- Kingdom of Corwell
-#restricted 227 -- Dwarves of Deep Shanatar
-#restricted 229 -- Dwarves of Old Bhaerynden
-#restricted 236 -- Tel'Quessir
-#restricted 237 -- Dalalands
-#end
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ------------------------- Bhaalspawn Events by hawkraider --------------------------------------------------------------------------
@@ -69591,7 +76078,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 ------------------------- Aboleth Stasis Events by hawkraider and Razorfire --------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------
 
-REMOVED
+--REMOVED
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -71370,6229 +77857,3 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #nolog
 #end
 
---------------------------------------------------------------------------------------------------------------------------------------------
-------------------- Items changes ----------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------
-
-#selectitem 393 -- Sanguine Dowsing Rod
-#nodemon
-#end
-
------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------- Summon Monster Creatures -----------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------
-
-#newmonster 5200
-#name "Small Summoned Monster Template"
-#hp 7
-#size 2
-#prot 2
-#mr 6
-#mor 30
-#str 7
-#att 11
-#def 11
-#prec 5
-#ap 24
-#enc 2
-#startage 20
-#maxage 50
-#miscshape
-#end
-
---------------------------------- Summon Nature's Ally I (Monsters) -----------------------------------------------
--- Monster ids 5335-5349
-
-#selectmonster 7140 --Giant rat
-#montag 14021 -- Summon Nature's Ally I (Land)
-#end
-
-#newmonster 5335
-#copyspr 1118
-#copystats 1118
-#name "Monkey"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#montag 14021 -- SNA I (land)
-#end
-
-#newmonster 5336
-#copyspr 1381 --Great Eagle
-#copystats 517 --Black hawk
-#name "Eagle"
-#drawsize -60
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#hp 7
-#str 6
-#clearweapons
-#weapon 404 --beak
-#weapon 408 --talons
-#weapon 753 --dive attack
-#att 12
-#def 12
-#montag 14021 -- SNA I (land)
-#end
-
-#newmonster 5337
-#copyspr 438 --Kraken
-#copystats 5200 --small summoned monster template
-#name "Octopus"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#ap 8
-#bluntres
-#hp 6
-#str 6
-#clearweapons
-#weapon 85 --Tentacle
-#weapon 85 --Tentacle
-#aquatic
-#montag 14031 -- SNA I (water)
-#end
-
-#newmonster 5338
-#copyspr 7606 --Dolphin
-#copystats 5200 --small summoned monster template
-#name "Porpoise"
-#ap 20
-#aquatic
-#hp 8
-#clearweapons
-#weapon 300 --Head Butt
-#montag 14031 -- SNA I (water)
-#end
-
--- Wolf changes
-
-#newweapon 2012
-#copyweapon 798 --Grab
-#name "Trip"
-#end
-
-#newweapon 2013
-#copyweapon 20 --Bite
-#name "Bite and Trip"
-#secondaryeffect 2012 --Trip
-#end
-
-#selectmonster 284 -- wolf (summon)
-#clearweapons
-#weapon 2013 --bite and trip
-#montag 14021 -- SNA I (land)
-#end
-
-#selectmonster 3532 -- wolf (recruitable/mount)
-#clearweapons
-#weapon 2013 --bite and trip
-#end
-
---------------------------------- Summon Nature's Ally II (Monsters) -----------------------------------------------
--- Monster ids 5350-5364
-
-#selectmonster 2185 --Crocodile
-#montag 14022 -- SNA II (land)
-#end
-
-#newmonster 5350
-#copystats 5200 --small summoned monster template
-#copyspr 7307 -- juvenile kraken
-#name "Squid"
-#size 3
-#ap 8
-#bluntres
-#hp 13
-#str 10
-#clearweapons
-#weapon 85 --Tentacle
-#weapon 20 --Bite
-#aquatic
-#mr 7
-#montag 14032 -- SNA II (water)
-#end
-
-#newmonster 5351
-#copystats 7584 -- mako
-#copyspr 7584 -- mako
-#name "Juvenile Mako Shark"
-#size 3
-#hp 18
-#str 13
-#def 13
-#montag 14032 -- SNA II (water)
-#end
-
-#newmonster 5352
-#copystats 5200 - small summoned monster template
-#copyspr 3266 -- Tanuki/raccoon form (placeholder)
-#name "Dire Badger"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#hp 24
-#size 3
-#mr 7
-#str 10
-#berserk 1
-#weapon 20 --bite
-#weapon 236 --claw
-#weapon 236 -- claw
-#forestsurvival
-#montag 14022 -- SNA II (land)
-#end
-
-#newmonster 5353
-#copystats 5200 - small summoned monster template
-#copyspr 1357 -- beast bat
-#name "Dire Bat"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#blind
-#flying
-#forestsurvival
-#str 12
-#hp 19
-#size 4
-#prot 4
-#att 11
-#def 14
-#mr 7
-#weapon 251 -- venomous fangs
-#montag 14022 -- SNA II (land)
-#end
-
---------------------------------- Summon Nature's Ally III (Monsters) -----------------------------------------------
--- Monster ids 5365-5379
-
-#selectmonster 7584 -- Mako Shark
-#montag 14033 -- SNA III (water)
-#end
-
-#newmonster 5365
-#copystats 1705 -- Great ape
-#copyspr 1705 -- Great ape
-#name "Ape"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#hp 25
-#att 12
-#def 10
-#montag 14023 -- SNA III (land)
-#end
-
-#newmonster 5366
-#copyspr 1224 -- dire wolf
-#copystats 1224 -- dire wolf
-#name "Dire Wolf"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#hp 33
-#clearweapons
-#weapon 2013 --bite and trip
-#weapon 236 --claw
-#montag 14023 -- SNA III (land)
-#end
-
-#newmonster 5367
-#copyspr 1381 --great eagle
-#copystats 1381 -- great eagle
-#name "Giant Eagle"
-#drawsize -40
-#hp 26
-#str 14
-#size 5
-#clearweapons
-#weapon 408 -- talons
-#weapon 404 -- beak
-#weapon 753 -- dive attack
-#montag 14023 -- SNA III (land)
-#end
-
-#newmonster 5368
-#copyspr 628 -- great lion
-#copystats 628 -- great lion
-#name "Lion"
-#hp 30
-#clearweapons
-#weapon 322 --bite
-#weapon 236 --claw
-#weapon 236 --claw
-#montag 14023 -- SNA III (land)
-#end
-
---------------------------------- Summon Nature's Ally IV (Monsters) -----------------------------------------------
--- Monster ids 5380-5394
-
-#selectmonster 694 -- great bear
-#montag 14024 -- SNA IV (land)
-#end
-
-#selectmonster 1920 -- monster boar
-#name "Dire Boar"
-#descr "Dire boars, also known as giant boars or elotheridae, were a type of unusually large and aggressive boar. Unlike ordinary pigs, dire boars were vicious and would attack any creature that approached."
-#montag 14024 -- SNA IV (land)
-#end
-
-#selectmonster 3524 -- Unicorn
-#montag 14024 -- SNA IV (land)
-#end
-
-#selectmonster 3547 -- Tiger
-#weapon 236 --claw
-#hp 30
-#def 13
-#montag 14024 -- SNA IV (land)
-#end
-
-#selectmonster 7643 -- Sea Cat UW
-#montag 14034 -- SNA IV (water)
-#end
-
-#newmonster 5380
-#copyspr 2186 --Sacred crocodile
-#copystats 2185 --crocodile
-#name "Dire Crocodile"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#hp 73
-#size 8
-#prot 14
-#str 21
-#att 11
-#montag 14024 -- SNA IV (land)
-#end
-
-#newmonster 5381
-#copyspr 816
-#copystats 816
-#name "Huge Shark"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#berserk 3
-#montag 14034 -- SNA IV (water)
-#end
---------------------------------- Summon Nature's Ally V (Monsters) -----------------------------------------------
--- Monster ids 5395-5409
-
-#selectmonster 2131 --Griffon
-#montag 14025 -- SNA V (land)
-#end
-
-#selectmonster 8003 -- Orca
-#montag 14035 -- SNA V (water)
-#end
-
-#newmonster 5395
-#copyspr 514 --Kithaironic Lion
-#copystats 628 -- Great Lion
-#name "Dire Lion"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#hp 45
-#size 5
-#prot 7
-#str 18
-#att 14
-#def 12
-#ap 22
-#clearweapons
-#weapon 322 --bite
-#weapon 236 --claw
-#weapon 236 --claw
-#montag 14025 -- SNA V (land)
-#end
-
-#newmonster 5396
-#copyspr 3354 -- Jinn Warrior
-#name "Janni"
-#descr "The jann (singular janni) are the weakest of the genies. Jann are formed out of all four elements and must therefore spend most of their time on the Material Plane."
-#hp 25
-#size 4
-#prot 1
-#mr 15
-#mor 30
-#str 14
-#att 13
-#def 12
-#prec 12
-#ap 15
-#enc 2
-#fireres 10
-#flying
-#unseen
-#startage 300
-#maxage 490
-#weapon 749 --enchanted scimitar
-#armor 49 --lightweight scale mail
-#montag 14025 -- SNA V (land)
-#end
-
---------------------------------- Summon Nature's Ally VI (Monsters) -----------------------------------------------
--- Monster ids 5410-5424
-
-#selectmonster 2398 -- Elephant
-#montag 14026 -- SNA VI (land)
-#end
-
-#selectmonster 7032 -- Salamander Flameguard
-#montag 14026 -- SNA VI (land)
-#end
-
-#newmonster 5410
-#copyspr 8004 -- Serosian Whale
-#copystats 8004 -- Serosian Whale
-#name "Baleen Whale"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#size 8
-#hp 110
-#str 26
-#prot 14
-#montag 14036 -- SNA VI (water)
-#end
-
-#newmonster 5411
-#copyspr 438 -- Kraken
-#copystats 438 -- Kraken
-#name "Giant Octopus"
-#size 6
-#hp 50
-#str 15
-#montag 14036 -- SNA VI (water)
-#end
-
-#newmonster 5412
-#copyspr 6828 --Chultan Raptor
-#copystats 6828 --Chultan Raptor
-#name "Megaraptor"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#hp 32
-#size 5
-#prot 9
-#str 19
-#def 10
-#montag 14026 -- SNA VI (land)
-#end
-
---------------------------------- Summon Nature's Ally VII (Monsters) -----------------------------------------------
--- Monster ids 5425-5449
-
-#newmonster 5425
-#copystats 3547 -- Tiger
-#copyspr 3928 -- White Tiger of the West
-#name "Dire Tiger"
-#drawsize -30
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#hp 60
-#size 5
-#att 16
-#str 20
-#def 12
-#prot 12
-#mr 12
-#montag 14026 -- SNA VI (land)
-#end
-
-#newmonster 5426
-#copystats 6819 -- Aspect of Ubtao
-#copyspr 6819 -- Aspect of Ubtao
-#name "Tyrannosaurus Rex"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#montag 14026 -- SNA VI (land)
-#end
-
-#newmonster 5427
-#copystats 7307 -- Juvenile Kraken
-#copyspr 7307 -- Juvenile Kraken
-#name "Giant Squid"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#montag 14037 -- SNA VII (water)
-#end
-
-#newmonster 5428
-#copyspr 6710 --Bound Djinn
-#copystats 6710 --Bound Djinn
-#name "Djinn"
-#descr "This mid-rank genie has been summoned to fight alongside a druid in battle."
-#hp 30
-#size 5
-#mr 15
-#str 18
-#att 14
-#def 13
-#clearmagic
-#magicskill 1 2 -- air
-#magicskill 4 1 --astral
-#magicskill 7 2 --glamour
-#montag 14026 -- SNA VI (land)
-#end
-
---------------------------------- Summon Nature's Ally VIII (Monsters) -----------------------------------------------
--- Monster ids 5450-5464
-
-#selectmonster 5107 --Roc
-#montag 14028 -- SNA VIII (land)
-#end
-
-#selectmonster 5108 --Salamander Noble
-#montag 14028 -- SNA VIII (land)
-#end
-
-#newmonster 5450
-#copystats 8006 --Megalodon
-#copyspr 8006 --Megalodon
-#name "Megalodon"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#clearspec
-#darkpower 3
-#darkvision 80
-#animal
-#aquatic
-#appetite 5
-#berserk 3
-#diseaseres 50
-#woundfend 75
-#montag 14038 -- SNA VIII (water)
-#end
-
---------------------------------- Summon Nature's Ally IX (Monsters) -----------------------------------------------
--- Monster ids 5465-5479
-
-#newmonster 5465
-#copystats 3524 --Unicorn
-#copyspr 3524 --Unicorn
-#name "Celestial Charger"
-#descr "This natural creature has been summoned to fight alongside a druid in battle."
-#hp 60
-#str 18
-#att 14
-#prot 8
-#def 15
-#mr 18
-#mor 30
-#magicskill 0 2 -- fire
-#magicskill 4 2 --astral
-#magicskill 6 2 --nature
-#magicskill 9 2 --holy
------ Celestial Template HD12+ -----
-#darkvision 100
-#invulnerable 15
-#acidres 10
-#coldres 10
-#shockres 10
-#mr 18
-#voidsanity 1 -- magic beast
-#mor 30
-#montag 14029 -- SNA IX (land)
-#end
-
------------------------------------------- Summon Monster I -----------------------------------------------------
--- Monster ids 5201-5214
-
-#newmonster 5201
-#copyspr 1560
-#copystats 1560
-#name "Celestial Dog"
-#montag 14001 -- Summon Monster I (Land)
------ Celestial Template HD1-3 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 5
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5202
-#copyspr 2218
-#copystats 2218
-#name "Celestial Giant Fire Beetle"
-#hp 5
-#str 6
-#size 2
-#clearweapons
-#weapon 20 --bite
-#att 10
-#def 12
-#montag 14001 -- Summon Monster I (Land)
------ Celestial Template HD1-3 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 5
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5203
-#copyspr 1118
-#copystats 1118
-#name "Celestial Monkey"
-#montag 14001 -- Summon Monster I (Land)
------ Celestial Template HD1-3 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 5
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5204
-#copyspr 7140
-#copystats 7140
-#name "Fiendish Dire Rat"
-#montag 14001 -- Summon Monster I (Land)
------ Fiendish Template HD1-3 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 5
-#fireres 5
-#coldres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5205
-#copyspr 517
-#copystats 517
-#name "Fiendish Hawk"
-#montag 14001 -- Summon Monster I (Land)
-#clearweapons
-#weapon 408 --talons
------ Fiendish Template HD1-3 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 5
-#fireres 5
-#coldres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5206
-#copyspr 2233
-#copystats 2233
-#name "Small Fiendish Monstrous Scorpion"
-#clearweapons
-#weapon 273 --pincer
-#weapon 273 --pincer
-#weapon 423 --scorpion tail
-#str 4
-#montag 14001 -- Summon Monster I (Land)
------ Fiendish Template HD1-3 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 5
-#fireres 5
-#coldres 5
-#mr 9
-#voidsanity 1 -- magic beast
---#mor 30
-#end
-
-#newmonster 5207
-#copyspr 7606 --Dolphin
-#copystats 5338 -- Porpoise
-#name "Celestial Porpoise"
-#montag 14011 -- Summon Monster I (Water)
------ Celestial Template HD1-3 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 5
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5208
-#copyspr 438 --Kraken
-#copystats 5337 -- Octopus
-#name "Fiendish Octopus"
-#montag 14011 -- Summon Monster I (Water)
------ Fiendish Template HD1-3 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 5
-#fireres 5
-#coldres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
------------------------------------------- Summon Monster II -----------------------------------------------------
--- Monster ids 5215-5229
-
-#newweapon 2011
-#name "Acid Spray"
-#range -2 --strength/2
-#dmg 0
-#halfstr
-#natural
-#acid
-#armorpiercing
-#aoe 1
-#beam
-#end
-
-#newmonster 5215
-#copyspr 2218 --beetle
-#copystats 2218 --beetle
-#name "Celestial Giant Bombardier Beetle"
-#hp 15
-#str 6
-#size 3
-#clearweapons
-#weapon 20 --bite
-#weapon 2011 --acid spray
-#att 10
-#def 12
-#montag 14002 -- Summon Monster II (Land)
------ Celestial Template HD1-3 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 5
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5215
-#copyspr 5336 --Eagle
-#copystats 5336 --Eagle
-#name "Celestial Eagle"
-#montag 14002 -- Summon Monster II (Land)
------ Celestial Template HD1-3 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 5
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5216
-#copyspr 1560 --dog
-#copystats 1560 --dog
-#name "Celestial Riding Dog"
-#drawsize 30
-#size 3
-#prot 4
-#hp 14
-#str 10
-#montag 14002 -- Summon Monster II (Land)
------ Celestial Template HD1-3 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 5
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5217
-#copystats 284
-#copyspr 284
-#name "Fiendish Wolf"
-#montag 14002 -- Summon Monster II (Land)
------ Fiendish Template HD1-3 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 5
-#fireres 5
-#coldres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5218
-#copystats 2233 -- giant scorpion
-#copyspr 2233 -- giant scorpion
-#drawsize 30
-#name "Fiendish Monstrous Scorpion"
-#size 3
-#hp 10
-#str 7
-#montag 14002 -- Summon Monster II (Land)
-#clearweapons
-#weapon 273 --pincer
-#weapon 273 --pincer
-#weapon 423 --scorpion tail
------ Fiendish Template HD1-3 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 5
-#fireres 5
-#coldres 5
-#mr 9
-#voidsanity 1 -- magic beast
---#mor 30
-#end
-
-#newmonster 5219
-#copystats 6812 --cave spider
-#copyspr 6812 --cave spider
-#name "Fiendish Monstrous Spider"
-#montag 14002 -- Summon Monster II (Land)
------ Fiendish Template HD1-3 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 5
-#fireres 5
-#coldres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5220
-#copystats 5350 -- squid
-#copyspr 5350 -- squid
-#name "Fiendish Squid"
-#montag 14012 -- Summon Monster II (water)
------ Fiendish Template HD1-3 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 5
-#fireres 5
-#coldres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5221
-#copystats 5351 -- mako
-#copyspr 5351 -- mako
-#name "Fiendish Shark"
-#montag 14012 -- Summon Monster II (water)
------ Fiendish Template HD1-3 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 5
-#fireres 5
-#coldres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#selectmonster 7104 --Lemure
-#montag 14002 -- Summon Monster II (Land)
-#end
-
-#newmonster 5222
-#copyspr 3007 --bug soul vessel
-#copystats 5200 -- small summoned monster template
-#name "Celestial Giant Bee"
-#size 3
-#prot 4
-#hp 14
-#str 8
-#ap 6
-#att 12
-#flying
-#clearweapons
-#weapon 355 --sting
-#montag 14002 -- Summon Monster II (Land)
------ Celestial Template HD1-3 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 5
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 9
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
------------------------------------------- Summon Monster III -----------------------------------------------------
--- Monster ids 5230-5244
-
-#newmonster 5230
-#copyspr 3009 -- buffalo
-#copystats 3009 -- buffalo
-#name "Celestial Buffalo"
-#montag 14003 -- Summon Monster III (Land)
------ Celestial Template HD4-7 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5231
-#copyspr 6748 -- hippogriff
-#copystats 6748 -- hippogriff
-#name "Celestial Hippogriff"
-#montag 14003 -- Summon Monster III (Land)
------ Celestial Template HD4-7 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5232
-#copystats 2185 -- crocodile
-#copyspr 2185 -- crocodile
-#name "Fiendish Crocodile"
-#montag 14003 -- Summon Monster III (Land)
-#montag 14013 -- Summon Monster III (Water)
------ Fiendish Template HD4-7 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 5
-#coldres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5233
-#copystats 5365 -- Ape
-#copyspr 5365 -- ape
-#name "Fiendish Ape"
-#montag 14003 -- Summon Monster III (Land)
------ Fiendish Template HD4-7 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 5
-#coldres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5234
-#copyspr 5352 -- dire badger
-#copystats 5352 -- dire badger
-#name "Celestial Dire Badger"
-#montag 14003 -- Summon Monster III (Land)
------ Celestial Template HD4-7 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5235
-#copystats 5353 -- dire bat
-#copyspr 5353 -- dire bat
-#name "Fiendish Dire Bat"
-#montag 14003 -- Summon Monster III (Land)
------ Fiendish Template HD4-7 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 5
-#coldres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#selectmonster 6671 -- Hellhound
-#montag 14003 -- Summon Monster III (Land)
-#end
-
------------------------------------------- Summon Monster IV -----------------------------------------------------
--- Monster ids 5245-5259
-
-#selectmonster 7073 --Lantern archon
-#montag 14004 -- Summon Monster IV (Land)
-#end
-
-#newmonster 5245
-#copyspr 5367 --giant eagle
-#copystats 5367 -- giant eagle
-#name "Celestial Giant Eagle"
-#montag 14004 -- Summon Monster IV (Land)
------ Celestial Template HD4-7 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5246
-#copyspr 5368 -- lion
-#copystats 5368 -- lion
-#name "Celestial Lion"
-#montag 14004 -- Summon Monster IV (Land)
------ Celestial Template HD4-7 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-
-#newmonster 5247
-#copyspr 5366 -- dire wolf
-#copystats 5366 -- dire wolf
-#name "Fiendish Dire Wolf"
-#montag 14004 -- Summon Monster IV (Land)
------ Fiendish Template HD4-7 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 5
-#coldres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5248
-#copyspr 2226 -- killer mantis
-#copystats 2226 -- killer mantis
-#name "Fiendish Giant Praying Mantis"
-#hp 23
-#str 15
-#montag 14004 -- Summon Monster IV (Land)
------ Fiendish Template HD4-7 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 5
-#coldres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#selectmonster 7345 -- Yeth hound
-#montag 14004 -- Summon Monster IV (Land)
-#end
-
-#newmonster 5249
-#copyspr 7584 -- mako shark
-#copystats 7584 -- mako shark
-#name "Fiendish Mako Shark"
-#montag 14014 -- Summon Monster IV (water)
------ Fiendish Template HD4-7 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 5
-#coldres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
------------------------------------------- Summon Monster V -----------------------------------------------------
--- Monster ids 5260-5274
-
-#selectmonster 7074 --Hound Archon
-#montag 14005 -- Summon Monster V (Land)
-#end
-
-#selectmonster 7106 --Barbazu
-#montag 14005 -- Summon Monster V (Land)
-#end
-
-#newmonster 5260
-#copyspr 694 --Great Bear
-#copystats 694 --Great Bear
-#name "Celestial Brown Bear"
-#montag 14005 -- Summon Monster V (Land)
------ Celestial Template HD4-7 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5261
-#copyspr 1910 -- Monster Boar
-#copystats 1910 --Monster Boar
-#name "Fiendish Dire Boar"
-#montag 14005 -- Summon Monster V(land)
------ Fiendish Template HD4-7 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 5
-#coldres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5262
-#copyspr 5380 -- dire crocodile
-#copystats 5380 -- dire crocodile
-#name "Fiendish Dire Crocodile"
-#montag 14005 -- Summon Monster V(land)
-#montag 14015 -- Summon Monster V (water)
------ Fiendish Template HD4-7 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 5
-#coldres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5263
-#copyspr 5381 -- huge shark
-#copystats 5381 -- huge shark
-#name "Huge Fiendish Shark"
-#montag 14015 -- Summon Monster V (water)
------ Fiendish Template HD8-11 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 15
-#fireres 10
-#coldres 10
-#mr 15
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5264
-#copyspr 7643 -- Sea Cat UW
-#copystats 7643 -- Sea Cat UW
-#name "Celestial Sea Cat"
-#montag 14015 -- Summon Monster V (water)
------ Celestial Template HD4-7 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5265
-#copyspr 2131 -- Griffon
-#copystats 2131 -- Griffon
-#name "Celestial Griffon"
-#montag 14015 -- Summon Monster V (water)
------ Celestial Template HD4-7 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 5
-#coldres 5
-#shockres 5
-#mr 12
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
------------------------------------------- Summon Monster VI -----------------------------------------------------
--- Monster ids 5275-5289
-
-#selectmonster 7107 --Kyton
-#montag 14006 -- Summon Monster VI (land)
-#end
-
-#newmonster 5275
-#copyspr 8003 -- Orca
-#copystats 8003 -- Orca
-#name "Celestial Orca"
-#montag 14016 -- Summon Monster VI (water)
------ Celestial Template HD8-11 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 10
-#coldres 10
-#shockres 10
-#mr 15
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5276
-#copyspr 5395 --Dire Lion
-#copystats 5395 -- Dire Lion
-#name "Celestial Dire Lion"
-#montag 14006 -- Summon Monster VI (land)
------ Celestial Template HD8-11 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 10
-#coldres 10
-#shockres 10
-#mr 15
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5277
-#copyspr 5396 -- Janni
-#copystats 5396 --Janni
-#name "Janni"
-#descr "The jann (singular janni) are the weakest of the genies. Jann are formed out of all four elements and must therefore spend most of their time on the Material Plane."
-#montag 14006 -- Summon Monster VI (land)
-#end
-
-
------------------------------------------- Summon Monster VII -----------------------------------------------------
--- Monster ids 5290-5304
-
-#newmonster 5290
-#copystats 2398 --Elephant
-#copyspr 2398 --Elephant
-#name "Celestial Elephant"
-#montag 14007 -- Summon Monster VII (land)
------ Celestial Template HD8-11 -----
-#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 10
-#acidres 10
-#coldres 10
-#shockres 10
-#mr 15
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5291
-#copystats 5410 --Baleen Whale
-#copyspr 5410 --Baleen Whale
-#name "Celestial Baleen Whale"
-#montag 14017 -- Summon Monster VII (water)
------ Celestial Template HD12+ -----
-descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 15
-#acidres 10
-#coldres 10
-#shockres 10
-#mr 18
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5292
-#copystats 5412 -- Megaraptor
-#copyspr 5412 --Megaraptor
-#name "Fiendish Megaraptor"
-#montag 14007 -- Summon Monster VII (land)
------ Fiendish Template HD8-11 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 10
-#coldres 10
-#mr 15
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5293
-#copystats 524 -- Scorpion Beast
-#copyspr 524 -- Scorpion Beast
-#name "Huge Fiendish Monstrous Scorpion"
-#montag 14007 -- Summon Monster VII (land)
------ Fiendish Template HD8-11 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 10
-#coldres 10
-#mr 15
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5294
-#copystats 5411 -- Giant Octopus
-#copyspr 5411 -- Giant Octopus
-#name "Fiendish Giant Octopus"
-#montag 14017 -- Summon Monster VII (water)
------ Fiendish Template HD8-11 -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 10
-#fireres 10
-#coldres 10
-#mr 15
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5295
-#copystats 5428 -- Djinn
-#copyspr 5428 -- Djinn
-#name "Djinn"
-#descr "This mid-rank genie has been summoned to fight alongside a wizard in battle."
-#montag 14007 -- Summon Monster VII (land)
-#end
-
------------------------------------------- Summon Monster VIII ----------------------------------------------------
--- Monster ids 5305-5319
-
-#selectmonster 7047 --Vrock
-#montag 14008 -- Summon Monster VIII (land)
-#end
-
-#selectmonster 7108 --Hellcat
-#montag 14008 -- Summon Monster VIII (land)
-#end
-
-#newmonster 5305
-#copystats 5425 --Dire Tiger
-#copyspr 5425 --Dire Tiger
-#name "Fiendish Dire Tiger"
-#montag 14008 -- Summon Monster VIII (land)
------ Fiendish Template HD12+ -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 15
-#fireres 10
-#coldres 10
-#mr 18
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5306
-#copystats 5426 --T Rex
-#copyspr 5426 --T Rex
-#name "Fiendish Tyrannosaurus Rex"
-#montag 14008 -- Summon Monster VIII (land)
------ Fiendish Template HD12+ -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 15
-#fireres 10
-#coldres 10
-#mr 18
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5307
-#copystats 5427 --Giant Squid
-#copyspr 5427 --Giant Squid
-#name "Fiendish Giant Squid"
-#montag 14018 -- Summon Monster VIII (water)
------ Fiendish Template HD12+ -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 15
-#fireres 10
-#coldres 10
-#mr 18
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5308
-#copyspr 888 --Hunter Spider
-#name "Colossal Fiendish Monstrous Spider"
-#hp 120
-#size 9
-#prot 17
-#str 24
-#att 14
-#def 10
-#prec 5
-#ap 22
-#mapmove 20
-#enc 2
-#startage 40
-#maxage 200
-#poisonres 25
-#weapon 65 --Venomous fangs
-#weapon 261 --web
-#eyes 8
-#forestsurvival
-#miscshape
-#montag 14008 -- Summon Monster VIII (land)
------ Fiendish Template HD12+ -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 15
-#fireres 10
-#coldres 10
-#mr 18
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
------------------------------------------- Summon Monster IX ------------------------------------------------------
--- Monster ids 5320-5334
-
-#selectmonster 1194 --Couatl
-#montag 14009 --Summon Monster IX (land)
-#end
-
-#selectmonster 7111 --Hamatula
-#montag 14009 --Summon Monster IX(land)
-#end
-
-#selectmonster 7045 --Hezrou
-#montag 14009 --Summon Monster IX(land)
-#end
-
-#selectmonster 6816 -- Night Hag
-#montag 14009 --Summon Monster IX(land)
-#end
-
-#newmonster 5320
-#copystats 5107 -- Roc
-#copyspr 5107 -- Roc
-#name "Celestial Roc"
-#montag 14009 -- Summon Monster IX (land)
------ Celestial Template HD12+ -----
-descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
-
-Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
-#darkvision 100
-#invulnerable 15
-#acidres 10
-#coldres 10
-#shockres 10
-#mr 18
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-#newmonster 5321
-#copystats 5450 --Megalodon
-#copyspr 5450 --Megalodon
-#name "Fiendish Megalodon"
-#montag 14019 -- Summon Monster IX (water)
------ Fiendish Template HD12+ -----
-#descr "Fiendish creatures dwell on the lower planes, the realms of evil, although they resemble beings found on the Material Plane. They are more fearsome in appearance than their earthly counterparts. "
-#darkvision 100
-#invulnerable 15
-#fireres 10
-#coldres 10
-#mr 18
-#voidsanity 1 -- magic beast
-#mor 30
-#end
-
-
------------------------------------------- Shadow Conjuration -----------------------------------------------------
--- monster id range 5470-5484
--- weapon id range 2020-2049
--- montag 14040
-
-#newweapon 2020
-#copyweapon 20 -- bite
-#name "Shadow Bite"
-#mrhalf
-#end
-
-#newweapon 2021
-#copyweapon 676 -- fiery breath
-#name "Shadow Fiery Breath"
-#mrhalf
-#end
-
-#newweapon 2022
-#copyweapon 55 -- hoof
-#name "Shadow Hoof"
-#mrhalf
-#end
-
-#newweapon 2023
-#copyweapon 331 -- gore
-#name "Shadow Gore"
-#mrhalf
-#end
-
-#newweapon 2024
-#copyweapon 408 -- talons
-#name "Shadow Talons"
-#mrhalf
-#end
-
-#newweapon 2025
-#copyweapon 404 -- beak
-#name "Shadow Beak"
-#mrhalf
-#end
-
-#newweapon 2026
-#copyweapon 92 --fist
-#name "Shadow Fist"
-#mrhalf
-#end
-
-#newweapon 2027
-#copyweapon 360
-#name "Shadow Sticks and Stones"
-#mrhalf
-#end
-
-#newweapon 2028
-#copyweapon 236
-#name "Shadow Claw"
-#mrhalf
-#end
-
-#newweapon 2029
-#copyweapon 251
-#name "Shadow Venomous Fangs"
-#mrhalf
-#end
-
-#newweapon 2030
-#copyweapon 1805
-#name "Shadow Kyton's Chains"
-#mrhalf
-#end
-
-#newweapon 2031
-#copyweapon 749
-#name "Shadow Enchanted Scimitar"
-#mrhalf
-#end
-
-#newweapon 2032
-#copyweapon 589
-#name "Shadow Tail Slap"
-#mrhalf
-#end
-
-#newweapon 2033
-#copyweapon 33
-#name "Shadow Claws" -- one handed
-#mrhalf
-#end
-
-#newweapon 2034
-#copyweapon 754
-#name "Shadow Razor Wings"
-#mrhalf
-#end
-
-#newweapon 2035
-#copyweapon 319
-#name "Shadow Sharpest Bite"
-#mrhalf
-#end
-
-#newweapon 2036
-#copyweapon 261
-#name "Shadow Web"
-#mrhalf
-#end
-
-#newweapon 2037
-#copyweapon 85
-#name "Shadow Tentacle"
-#mrhalf
-#end
-
--- technically, the extra effect should be MR negates.
--- but I don't think it'st hat important
-#newweapon 2033
-#copyweapon 1847
-#name "Shadow Subsurface Shockwave"
-#mrhalf
-#end
-
-#newmonster 5470
-#copystats 6671 --Hellhound
-#copyspr 6671 --Hellhound
-#name "Shadow Hellhound"
-#hp 9
-#clearweapons
-#weapon 2020 -- shadow bite
-#weapon 2021 -- shadow fiery breath
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14040
-#end
-
-#newmonster 5471
-#copystats 5230 -- celestial buffalo
-#copyspr 5230 -- celestial buffalo
-#name "Shadow Celestial Buffalo"
-#hp 21
-#clearweapons
-#weapon 2022 -- Shadow Hoof
-#weapon 2023 -- Shadow Gore
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14040
-#end
-
-#newmonster 5472
-#copystats 5231 -- Celestial hippogriff
-#copyspr 5231 -- Celestial hippogriff
-#name "Shadow Celestial Hippogriff"
-#hp 17
-#clearweapons
-#weapon 2024 -- shadow talons
-#weapon 2025 -- shadow beak
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14040
-#end
-
-#newmonster 5473
-#copystats 5231 -- Fiendish Ape
-#copyspr 5231 -- Fiendish Ape
-#name "Shadow Fiendish Ape"
-#hp 17
-#clearweapons
-#weapon 2026 -- shadow fist
-#weapon 2027 -- shadow sticks and stones
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14040
-#end
-
-#newmonster 5474
-#copystats 5234 -- Celestial Dire Badger
-#copyspr 5234 -- Celestial Dire Badger
-#name "Shadow Celestial Dire Badger"
-#hp 12
-#clearweapons
-#weapon 2020 -- shadow bite
-#weapon 2028 -- shadow claw
-#weapon 2028 -- shadow claw
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14040
-#end
-
-#newmonster 5475
-#copystats 5232 -- Fiendish Crocodile
-#copyspr 5332 -- Fiendish Crocodile
-#name "Shadow Fiendish Crocodile"
-#hp 11
-#clearweapons
-#weapon 2020 -- shadow bite
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14040
-#end
-
-#newmonster 5476
-#copystats 5235 -- Fiendish Dire Bat
-#copyspr 5235 -- Fiendish Dire Bat
-#name "Shadow Fiendish Dire Bat"
-#hp 9
-#clearweapons
-#weapon 2029 -- shadow venomous fangs
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14040
-#end
-
------------------------------------------- Greater Shadow Conjuration -----------------------------------------------------
--- monster id range 5485-5499
--- weapons shared with shadow conj (2020-2049)
--- montag 14041
-
-#newmonster 5485
-#copystats 7107 -- Kyton
-#copyspr 7107 -- Kyton
-#name "Shadow Kyton"
-#hp 25
-#fear 0
-#dread 5
-#clearweapons
-#weapon 2030 -- shadow kyton's chains
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14041
-#end
-
-#newmonster 5486
-#copystats 5276 -- Celestial Dire Lion
-#copyspr 5276 -- Celestial Dire Lion
-#name "Shadow Celestial Dire Lion"
-#hp 22
-#clearweapons
-#weapon 2020 -- shadow bite
-#weapon 2028 -- shadow claw
-#weapon 2028 -- shadow claw
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14041
-#end
-
-#newmonster 5487
-#copystats 5277 -- Janni
-#copyspr 5277 -- Janni
-#name "Shadow Janni"
-#hp 12
-#clearweapons
-#weapon 2031 -- Shadow Enchanted Scimitar
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14041
-#end
-
-#newmonster 5488
-#copystats 5275 -- Celestial Orca
-#copyspr 5275 -- Celestial Orca
-#name "Shadow Celestial Orca"
-#hp 22
-#clearweapons
-#weapon 2020 -- shadow bite
-#weapon 2032 -- shadow tail slap
-#weapon 2033 -- shadow subsurface shockwave
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14041
-#end
-
------------------------------------------- Shades -----------------------------------------------------
--- monster id range 5500-5514
--- weapons shared with shadow conj (2020-2049)
--- montag 14042
-
-#newmonster 5500
-#copystats 7047 -- Vrock
-#copyspr 7047 -- Vrock
-#name "Shadow Vrock"
-#hp 15
-#clearweapons
-#weapon 2033 -- shadow claws
-#weapon 2032 -- shadow bite
-#weapon 2034 -- shadow razor wings
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14042
-#end
-
-#newmonster 5501
-#copystats 7108 -- Hellcat
-#copyspr 7108 -- Hellcat
-#name "Shadow Hellcat"
-#hp 25
-#clearweapons
-#weapon 2033 -- shadow claws
-#weapon 2032 -- shadow bite
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14042
-#end
-
-#newmonster 5502
-#copystats 5305 -- Fiendish Dire Tiger
-#copyspr 5305 -- Fiendish Dire Tiger
-#name "Shadow Fiendish Dire Tiger"
-#hp 30
-#clearweapons
-#weapon 2020 -- shadow bite
-#weapon 2028 -- shadow claw
-#weapon 2028 -- shadow claw
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14042
-#end
-
-#newmonster 5503
-#copystats 5306 -- Fiendish Tyrannosaurus Rex
-#copyspr 5306 -- Fiendish Tyrannosaurus Rex
-#name "Shadow Fiendish Tyrannosaurus Rex"
-#hp 40
-#clearweapons
-#weapon 2035 -- shadow sharpest bite
-#weapon 2032 -- shadow tail slap
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14042
-#end
-
-#newmonster 5504
-#copystats 5308 -- Colossal Fiendish Monstrous Spider
-#copyspr 5308 -- Colossal Fiendish Monstrous Spider
-#name "Shadow Colossal Fiendish Spider"
-#hp 60
-#clearweapons
-#weapon 2029 -- shadow venomous fangs
-#weapon 2036 -- shadow web
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14042
-#end
-
-#newmonster 5505
-#copystats 5307 -- Fiendish Giant Squid
-#copyspr 5307 -- Fiendish Giant Squid
-#name "Shadow Fiendish Giant Squid"
-#hp 32
-#clearweapons
-#weapon 2037 -- Shadow tentacle
-#weapon 2037 -- Shadow tentacle
-#weapon 2037 -- Shadow tentacle
-#weapon 2037 -- Shadow tentacle
--- Shadow conjuration template
-#descr "Shadow conjurations are quasi-real illusions infused with material from the plane of shadow. Because they are partly real, they can even harm enemies who disbelieve the illusion, albeit to a lesser extent."
-#illusion
-#amphibian
-#montag 14042
-#end
-
------------------------------------------- Misc Summoned Critters -----------------------------------------------------
--- id range 5530-5544
-
-#newmonster 5530
-#copyspr 3724 -- air elemental
-#name "Whirlwind"
-#descr "The cyclone is the terror of small creatures."
-#hp 40
-#size 6
-#prot 0
-#mr 20
-#mor 50
-#str 12
-#att 17
-#def 17
-#stormpower 4
-#prec 5
-#ap 30
-#enc 0
-#startage 1
-#maxage 1000
-#woundfend 99
-#invulnerable 30
-#poisonres 30
-#shockres 30
-#fireres 30
-#coldres 30
-#acidres 30
-#bluntres
-#slashres
-#pieceres
-#airshield 100
-#blind
-#unsurr 20
-#inanimate
-#trample
-#spiritsight
-#spiritform
-#weapon 547 -- buff
-#end
-
------------------------------------------------------------------------------------------------------------------------------
------------------------------------------- Reworked Spells & New Spells -----------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------
-
-#selectspell 1122 --Flying Shield
-#name "Shield"
-#descr "The mage creates an invisible, tower shield-sized mobile disk of force that hovers in front of him. The shield will randomly block about half of the attacks against his person."
-#path 0 4 --astral
-#path 1 -1
-#fatiguecost 15
-#researchlevel 1
-#end
-
-#selectspell 1152 --Cloud Trapeze
-#name "Wind Walk"
-#descr "The caster alters the substance of their body to a cloudlike vapor and moves through the air at great speed, travelling to a province far away. Although much faster than normal flying, the caster does not really teleport and can have the path blocked by impassable mountains ranges or the Sea of Ice global enchantment."
-#school 1 -- Alteration
-#researchlevel 5
-#pathlevel 0 3
-#path 1 9 --holy
-#pathlevel 1 1
-#end
-
-#selectspell 783 --Enlarge
-#name "Enlarge Person"
-#descr "A few humanoid soldiers are magically enlarged for the duration of the battle. Enlarged soldiers get increased size, hit points and strength."
-#researchlevel 1
-#path 0 4 --astral
-#pathlevel 0 1
--- friendlies only; does not affect illusions, inanimate, spiritform, demons, undead, animals, or void-sane
--- can be cast underwater
-#spec 148618788521639940
-#details "Size +1, HP +30%, Str +3, Def -1.
-
-Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
-#end
-
-#selectspell 867 --Giant Warriors
-#name "Mass Enlarge Person"
-#descr "A large group of humanoid soldiers are magically enlarged for the duration of the battle. Enlarged soldiers get increased size, hit points and strength."
-#researchlevel 4
-#path 0 4 --astral
-#range 15
-#aoe 3001
-#fatiguecost 99
-#ainocast 1
--- friendlies only; does not affect illusions, inanimate, spiritform, demons, undead, animals, or void-sane
--- can be cast underwater
-#spec 148618788521639940
-#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
-#end
-
-#selectspell 1109 --Strength of Giants
-#name "Bull's Strength"
-#descr "Gives the target increased strength."
-#details "Grants Str +4"
-#end
-
-#selectspell "Gift of Giant Strength"
-#school -1
-#end
-
-#selectspell 1176 --Giant Strength Warriors
-#name "Mass Bull's Strength"
-#descr "Gives a group of targets increased strength."
-#details "Grants Str +4"
-#researchlevel 5
-#fatiguecost 99
-#range 15
-#aoe 3001
-#ainocast1
-#end
-
-#selectspell 1211 --Foul Vapors
-#name "Cloudkill"
-#descr "Poisonous gas will begin to seep from the ground shortly after this spell is cast. The gas will rise over a large area, covering the entire battlefield, and will continue to seep for the duration of the battle."
-#details "Poison Clouds (level 1) appear all over the battlefield."
-#school 3 -- const (conj--creation)
-#researchlevel 6
-#path 1 4 -- Astral
-#pathlevel 0 3
-#pathlevel 1 3
-#end
-
--- unfortunately beam spells are not possible to implement
-#selectspell "Lightning Bolt"
-#pathlevel 0 3
-#path 1 4 --astral
-#pathlevel 1 2
-#researchlevel 3
-#aoe 4
-#dmg 3008
-#fatiguecost 40
-#end
-
-#selectspell "Fireball"
-#copyspell "Fire Blast"
-#name "Fireball"
-#descr "The caster launches a glowing pea-sized bead from their pointing finger. When it reaches the target the bead detonates with a low roar and blossoms into a fireball."
-#aoe 15
-#fatiguecost 50
-#researchlevel 3
-#path 0 0
-#pathlevel 0 3
-#path 1 4 --astral
-#pathlevel 1 2
-#range 5025
-#damage 4005
-#strikesound 89
-#end
-
-#selectspell "Rage"
-#name "Rage (disabled)"
-#school -1
-#end
-
-#selectspell "Touch of Madness"
--- Overwriting the Rage spell name seems to cause issues for some reason
-#name "Rage"
-#descr "A small group of soldiers are forced to go berserk. Berserkers never rout, get increased fighting skills, but do not care much for their own safety."
-#details " "
-#school 4 --enchantment
-#path 0 7  --Glamour
-#path 1 4 --astral
-#pathlevel 1 1
-#researchlevel 2
-#aoe 3001
--- Does not affect mindless, inanimate, enemy, undead, or the caster; can be cast underwater
-#spec 140738038464512
-#end
-
-#selectspell 1124 --Proud Steed
-#school -1
-#end
-
-#selectspell 1161 --Immaculate Mounts
-#school -1
-#end
-
-#selectspell 1463 --Army of Immaculate Mounts
-#school -1
-#end
-
-#selectspell "Battle Fury"
-#name "Heroism"
-#descr "The caster imbues a few allies with great bravery and morale in battle. Each affected creature gains increased attack skill, defence skill, morale and MR."
-#details "Attack skill +2, defence skill +2, morale +4, MR +2."
-#damage 281475513581568 -- Fury + proud steed effect
-#school 4 --enchantment
-#path 0 7 --Glamour
-#path 1 4 --astral
-#pathlevel 0 1
-#pathlevel 1 1
-#researchlevel 1
--- does not affect enemies or mindless, can be used underwater
-#spec 12713984
-#end
-
-#selectspell "Furious Warriors"
-#school -1
-#end
-
-#selectspell "Gift of the Furies"
-#name "Good Hope"
-#descr "The caster instills powerful hope in a group of living allies. Each affected creature gains increased attack skill, defence skill, morale and MR."
-#details "Attack skill +2, defence skill +2, morale +4, MR +2."
-#damage 281475513581568 -- Fury + proud steed effect
-#school 4 --enchantment
-#path 0 7 --Glamour
-#path 1 4 --astral
-#pathlevel 1 1
-#researchlevel 4
-#fatiguecost 50
-#aoe 3001
--- does not affect enemies, does not affect inanimate/undead/mindless, can be used underwater
-#spec 550109184
-#end
-
-#selectspell "Air Shield"
-#name "Protection From Arrows"
-#descr "The caster gains resistance to ranged weapons."
-#path 0 4 --astral
-#school 4 --enchantment
-#end
-
-#selectspell "Arrow Ward"
-#name "Wind Wall"
-#descr "An invisible curtain of wind will protect a large number of friendly units from enemy projectiles."
-#details "Grants Air Shield: 80"
-#school 2 --evocation
-#fatiguecost 99
-#end
-
-#newspell
-#copyspell 842 --Invulnerability
-#name "Mage Armour"
-#descr "An invisible but tangible field of force surrounds the caster, protecting them from normal weapons."
-#damage 17179869184
-#details "Grants Invulnerability 15"
-#school 0 --conj
-#researchlevel 0
-#path 0 4 --astral
-#pathlevel 0 1
-#end
-
-#selectspell "Mist"
-#name "Fog Cloud"
-#descr "The caster creates a dense bank of fog across the battlefield that makes it difficult to see far and prevents any cloud effects from dissipating properly. The mist will limit the precision of all spells and missiles."
-#school 3 --const (conj-creation)
-#researchlevel 4
-#end
-
-#selectspell "Darkness"
-#name "Deeper Darkness"
-#descr "The battlefield is covered in a blanket of darkness that even renders torches useless. Most ordinary beings will stumble and have great difficulty fighting or shooting in the darkness. The darkness ends if the caster dies."
-#details "Battlefield Darkness -6. Demons, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
-#school 2 --evocation
-#path 0 7 --glamour
-#path 1 9 --holy
-#pathlevel 1 2
-#end
-
-#selectspell "Solar Eclipse"
-#name "Darkness"
-#school 2 --evocation
-#path 0 7
-#pathlevel 0 3
-#pathlevel 1 0
-#end
-
-#selectspell "Solar Brilliance"
-#name "Daylight"
-#descr "The caster conjures a light so brilliant that it destroys the retinas of all soldiers on the battlefield and burns all undead and demonic units to cinders."
-#details "All units: Chance of being blinded (easy MR negates). All undead and demonic units: 5 AP dmg (MR negates)"
-#path 0 0 -- fire
-#path 1 6 -- nature
-#pathlevel 1 2
-#school 2 --evocation
-#reqsun 0
-#spec 8388608 -- can be cast underwater
-#end
-
-#selectspell "Gust of Winds"
-#name "Gust of Wind"
-#descr "Creates a wind gust strong enough to knock soldiers prone. Large beings are rarely affected by the spell and titans and other huge beings will ignore the winds entirely."
-#end
-
-#selectspell "Shatter"
-#school 2 --evocation
-#end
-
-#selectspell "Blur"
-#school 5 -- Illusion (Thaumaturgy)
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "Invisibility"
-#school 5 -- Illusion (Thaumaturgy)
-#researchlevel 3 --originally  a level 2 spell
-#pathlevel 0 2
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#newspell
-#copyspell "Displaced Warriors"
-#name "Mass Invisibility"
-#descr "The caster renders a large group of warriors invisible and almost impossible to hit in melee. The invisibility ends for each subject if they are wounded."
-#details "The targets gain the ability Unseen."
-#effect 10
-#damage 1073741824
-#school 5 -- Illusion (Thaumaturgy)
-#researchlevel 6
-#pathlevel 0 4
-#path 1 4 --astral
-#pathlevel 1 3
-#researchlevel 6
-#aoe 3001
-#range 15
-#fatiguecost 60
-#end
-
-#selectspell "Mirror Image"
-#school 5 -- Illusion (Thaumaturgy)
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "Cat Eyes"
-#name "Darkvision"
-#descr "This spell grants the caster partial darkvision"
-#path 0 4 --astral
-#end
-
-#selectspell "Levitate"
-#school 1 --alteration
-#path 0 4 --astral
-#end
-
-#selectspell "Levitate Soldiers"
-#school -1
-#end
-
-#selectspell "Featherweight Army"
-#school -1
-#end
-
-#selectspell "Gift of Displacement"
-#name "Displacement"
-#descr "The target's images appear beside their actual location and are very difficult to hit in melee."
-#school 5 -- Illusion (Thaumaturgy)
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "Displace Body"
-#school -1
-#end
-
-#selectspell "Displaced Warriors"
-#school -1
-#end
-
-#selectspell "Warrior Illusion"
-#name "Major Image"
-#descr "The illusionist creates a Warrior Illusion who attacks the enemy. Illusions inflict false damage that is eventually made real by the presence of glamour mages."
-#school 5 -- Illusion (Thaumaturgy)
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "Personal Flight"
-#school 1 --alteration
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "Gift of Flight"
-#name "Fly"
-#descr "Grants a few units the ability to fly."
-#school 1 --alteration
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#newspell
-#copyspell "Fly"
-#name "Air Walk"
-#descr "Grants a few units the ability to walk on air."
-#researchlevel 4
-#path 1 9 --Holy
-#details "Functions as flight."
-#end
-
-#selectspell "Mass Flight"
-#name "Mass Fly"
-#descr "The caster grants a large number of soldiers the ability to fly."
-#school 1 --alteration
-#path 1 4 --astral
-#pathlevel 1 2
-#fatiguecost 99
-#end
-
-#selectspell "Soaring Army"
-#school -1
-#end
-
-#selectspell "Quicken Self"
-#school -1
-#end
-
-#selectspell "Haste"
-#name "Haste (disabled)"
-#school -1
-#end
-
-#selectspell "Quickness"
-#name "Haste"
-#descr "This spells grants haste to a large number of units. Haste increases the speed and ability to dodge of the quickened one. A quickened person can act twice every turn, but quickened spell casters still cannot cast more than one spell per combat round."
-#details "Grants +2 Att, +2 Def and Combat speed is doubled"
-#path 0 4 --astral
-#pathlevel 0 3
-#aoe 3001
-#fatiguecost 60
-#end
-
-#selectspell "Quickening"
-#school -1
-#end
-
-#selectspell "Weapons of Sharpness"
-#name "Keen Edge"
-#descr "A few friendly units are gifted with magically keen weapons that they can cut through armor and flesh with equal ease. This enchantment does not work on blunt or missile weapons."
-#school 1 --alteration
-#researchlevel 3
-#pathlevel 0 2
-#path 1 4 --astral
-#pathlevel 0 1
-#end
-
-#selectspell "Steel Slice Warriors"
-#school -1
-#end
-
-#selectspell "Slow"
-#path 0 4--astral
-#end
-
-#selectspell "Personal Stoneskin"
-#school -1
-#end
-
-#selectspell "Stoneskin"
-#researchlevel 3
-#school 1 -- alteration(abjuration)
-#end
-
-#selectspell "Group Stoneskin"
-#school -1
-#end
-
-#selectspell "Marble Warriors"
-#school -1
-#end
-
-#selectspell "Marble Army"
-#school -1
-#end
-
-#selectspell "Teleport"
-#descr "With this spell, the mage can transport himself to a distant province."
-#school 0 --conjuration
-#provrange 4
-#end
-
-#newspell
-#copyspell "Teleport"
-#name "Greater Teleport"
-#descr "With this spell, the mage can transport himself to almost any province in the world, only those very very far away are out of range for this ritual."
-#researchlevel 7
-#provrange 7
-#pathlevel 0 4
-#fatiguecost 300
-#end
-
-#selectspell "Teleport Item"
-#school 0 --conjuration
-#end
-
-#selectspell "Teleport Gems"
-#school 0 --conjuration
-#end
-
-#selectspell "Gateway"
-#school 0 --conjuration
-#end
-
-#selectspell "Astral Travel"
-#name "Teleportation Circle"
-#descr "The caster draws a magical circle that manifests a rift in the fabric of space, transporting himself and and all troops under his command to a distant province."
-#school 0 --conjuration
-#provrange 7
-#end
-
-#newspell
-#copyspell "Niefel Flames"
-#name "Cone of Cold"
-#descr "The caster projects an area of extreme cold outward from their hand. Anyone in the area suffers massive cold damage. The caster will not be hit by the spell."
-#researchlevel 5
--- cold, armour piercing, can be cast underwater, does not affect caster
-#pathlevel 0 4
-#path 1 4 --astral
-#pathlevel 1 2
-#spec 140737496744512
-#range 20
-#aoe 30
-#fatiguecost 60
-#damage 4005 --same as fireball
-#strikesound 21 -- frost blast
-#speedmult 3
-#end
-
-#newspell
-#copyspell 867 --Giant Warriors
-#name "Animal Growth"
-#descr "A large group of animals are magically enlarged for the duration of the battle. Enlarged animals get increased size, hit points and strength."
-#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
-#researchlevel 4
-#path 0 6 --nature
-#pathlevel 0 3
--- allies only, animals only, no illusion/spiritform, no undead, no demon, no void sanity, can be cast underwater
-#spec 4785074885754884
-#end
-
-#selectmonster 2222 --frog
-#descr "A small amphibian. Legend has it that some frogs are actually adventurers transformed by curmudgeonly wizards."
-#end
-
-#selectspell "Polymorph"
-#aoe 0
-#name "Baleful Polymorph"
-#descr "The caster transforms his hapless target into a frog."
-#range 5025
-#fatiguecost 30
-#damage 2222 -- Frog
-#pathlevel 0 4
-#researchlevel 6
--- does not affect allies, inaimates, illusions, or spiritforms. MR negates. May use underwater
-#spec 4840493060
-#end
-
-#selectspell "Astral Shield"
-#name "Repulsion"
-#descr "A shield of Astral energies forms around the mage. Anyone trying to strike through the shield will have their mind blasted unconscious by the force of the shield. Magic resistance may negate the effect of the shield and allow enemies to strike the mage. The power of the Astral Shield is greater for mages who are highly skilled in Astral magic."
-#school 1 -- alteration(abjuration)
-#path 0 3 --earth
-#path 0 1
-#path 1 4 --astral
-#path 1 1
-#end
-
-#selectspell "Ritual of Returning"
-#name "Contingency"
-#descr "The mage will return to the home citadel at once if he is wounded. The spell lasts until the mage actually has been wounded and returned home. This ritual will result in swift death for a mage if the home citadel has been conquered by the enemy."
-#school 2 --evocation
-#pathlevel 0 3
-#researchlevel 5
-#end
-
-#newspell
-#copyspell "Returning"
-#name "Emergency Teleport"
-#descr "The caster escapes the battlefield by teleporting back to the home citadel. Teleporting in battlefield conditions is risky. If the caster is unlucky he might get lost in time and might return later, not at all or completely insane. The spell will not work on other planes or if the home citadel is controlled by the enemy."
-#school 0
-#researchlevel 4
-#pathlevel 0 3
-#end
-
-#selectspell "Returning"
-#name "Word of Recall"
-#descr "The caster speaks a word of recall, instantaneously teleporting him back to the home citadel. Teleporting in battlefield conditions is risky. If the caster is unlucky he might get lost in time and might return later, not at all or completely insane. The spell will not work on other planes or if the home citadel is controlled by the enemy."
-#school 0
-#researchlevel 5
-#path 1 9 --holy
-#pathlevel 1 2
-#end
-
-#selectspell "Vortex of Returning"
-#school -1
-#end
-
-#newspell
-#copyspell "Teleport"
-#name "Shadow Walk"
-#descr "The caster shifts into the Plane of Shadow to travel to a distant province in a fraction of the usual time."
-#researchlevel 6
-#provrange 5
-#school 5 -- Illusion (Thaumaturgy)
-#path 0 7 --glamour
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "Project Self"
-#school 5 --Illusion (Thaumaturgy)
-#researchlevel 6
-#end
-
-#selectspell "Rain"
-#name "Control Weather: Rain"
-#descr "The caster controls the weather and conjures a heavy rain upon the battlefield. This makes it harder to fly, fires will be put out quicker and any cloud effects will dissipate faster than usual. Fire magic is more difficult to use during heavy rain. If it is cold the rain will become snow instead. Snow does not increase the fatigue for fire spells, but it still puts out fires and dissipates clouds."
-#school 1 --alteration
-#researchlevel 6
-#path 1 1 --Air
-#pathlevel 1 1
-#fatiguecost 99
-#end
-
-#selectspell "Storm"
-#name "Control Weather: Storm"
-#descr "The caster controls the weather and conjures a heavy rain upon the battlefield. This makes it harder to fly, fires will be put out quicker and any cloud effects will dissipate faster than usual. Fire magic is more difficult to use during heavy rain. If it is cold the rain will become snow instead. Snow does not increase the fatigue for fire spells, but it still puts out fires and dissipates clouds."
-#researchlevel 6
-#pathlevel 0 3
-#path 1 2 --water
-#pathlevel 1 1
-#end
-
-#selectspell "Blizzard"
-#name "Control Weather: Blizzard"
-#descr "The caster controls the weather and conjures an unexpected blizzard. The blizzard spell can only be cast in regions of neutral or slight heat. When cast the temperature drops suddenly and a snowstorm covers the battlefield."
-#pathlevel 0 3
-#end
-
-#selectspell "Fire Shield"
-#school 2 --evocation
-#researchlevel 2
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#newspell
-#copyspell "Fire Shield"
-#name "Mass Fire Shield"
-#descr "The caster wreathes a large group of allies in flame. Anyone trying to strike the subjects in melee combat will be burned by the Fire Shield immediately after attacking. Attackers with long weapons such as spears and pikes will not suffer as severe burns as an attacker with a shortsword or a dagger."
-#researchlevel 5
-#pathlevel 0 3
-#pathlevel 1 2
-#aoe 3001
-#spec 4194304
-#end
-
-#selectspell "Fire Storm"
-#path 1 9 --Holy
-#pathlevel 1 1
-#end
-
--- TODO: Partly ignore fire resistance??
-#selectspell "Pillar of Fire"
-#name "Flame Strike"
-#descr "This spell produces a vertical column of divine fire roaring downward. It will kill those who are hit and set fire to anyone who is standing nearby."
-#aoe 4
-#pathlevel 0 3
-#path 1 9 --Holy
-#pathlevel 1 1
-#researchlevel 5
-#fatiguecost 30
-#end
-
-#selectspell "Thunder Strike"
-#name "Call Lightning"
-#descr "The caster calls down thunderbolts to strike the battlefield. The mage can make the thunderbolts strike very far away. Even if it misses, the shock wave is powerful enough to severely stun and damage anyone nearby."
-#researchlevel 3
-#pathlevel 0 2
-#path 1 9 --Holy
-#pathlevel 1 1
-#nreff 501
-#notindoors 1
-#end
-
-#selectspell "Wrathful Skies"
-#name "Call Lightning Storm"
-#descr "The sky turns dark and lightning strikes all over the battlefield. This spell is most effective during a storm."
-#path 1 9 --Holy
-#pathlevel 1 1
-#end
-
-#newspell
-#copyspell "Gift of Reason"
-#name "Awaken"
-#descr "The caster awakens the intellect of an animal, granting it commander status. The target animal must be in the same province as the caster. Mindless animals cannot be affected by the spell."
-#school 1 --alteration
-#pathlevel 0 3
-#path 1 9 --Holy
-#pathlevel 1 1
-#fatiguecost 500
-#researchlevel 4
-#spec 281474976841728
-#end
-
-#selectspell "Falling Frost"
-#name "Ice Storm"
-#aoe 15
-#damage 2007
-#end
-
-#selectspell "Faery Trod"
-#name "Transport via Plants"
-#descr "The mage steps into a plant and passes to a plant of the same kind a vast distance away, leading his army behind him. Both the source and destination provinces must be forests for this spell to work. Navigating via plants is less reliable than conventional teleportation and it might be that you won't emerge exactly where you planned."
-#school 0 --conj
-#researchlevel 6
-#path 1 9 --Holy
-#fatiguecost 15
-#end
-
-#selectspell "Earthquake"
-#path 1 9 --Holy
-#pathlevel 1 1
-#end
-
-#selectspell "Cure Disease"
-#name "Remove Disease"
-#descr "This ritual cures a unit from disease, an affliction that otherwise is certain to result in a quick and early death. The target unit must be in the same province as the caster."
-#school 0 --conj
-#pathlevel 0 2
-#path 1 9 --Holy
-#pathlevel 1 1
-#fatiguecost 100
-#end
-
-#newspell
-#copyspell 1310 --Remove Disease
-#name "Remove Curse"
-#descr "This ritual instantaneously removes curses on a creature. The target unit must be in the same province as the caster."
-#damage 2
-#school 1 -- alteration(abjuration)
-#path 0 4 --astral
-#pathlevel 0 2
-#path 1 -1
-#fatiguecost 100
-#end
-
-#newspell
-#copyspell 1310 --Remove Disease
-#name "Remove Blindness"
-#descr "This ritual instantaneously cures a creature of blindness. The target unit must be in the same province as the caster."
-#damage 528384
-#school 0 -- conjuration (healing)
-#path 0 4 --astral
-#pathlevel 0 2
-#fatiguecost 100
-#end
-
-#newspell
-#copyspell 1310 --Remove Disease
-#name "Regenerate"
-#descr "This ritual instantaneously regenerates the subject's body, curing them of any and all physical (but not mental) afflictions and diseases. The target must be in the same province as the caster."
-#details "The ritual will fail if the target is undead, inanimate or a spiritform."
-#researchlevel 7
-#damage 3319529473
-#school 0 -- conjuration (healing)
-#pathlevel 0 4
-#path 1 9 --Holy
-#pathlevel 1 3
-#fatiguecost 500
--- does not affect undead/inanimate/spiritform, can be cast UW
-#spec 545783812
-#end
-
-#newspell
-#copyspell 1310 --Remove Disease
-#name "Restoration"
-#descr "This ritual instantaneously removes weakness, mental afflictions and the shrunken condition. The target unit must be in the same province as the caster."
-#damage 141770620928 -- weaken/battle fright/feeble minded/shrunken/dementia
-#school 0 --conjuration
-#path 0 4 --astral
-#pathlevel 0 2
-#path 1 -1
-#fatiguecost 100
-#end
-
-#newspell
-#name "Unholy Death"
-#effect 2
-#damage 999
--- Does not affect demons, undead, caster, MR negates (easy), may use underwater
-#spec 140737782480896
-#school -1
-#aoe 1
-#end
-
-#newspell
-#name "Blasphemy"
-#descr "The caster utters a word so blasphemous that nearby creatures are stunned and the weak ones may even be instantly killed. Demons and undead are not affected, and the caster is not affected by his own blasphemy."
-#effect 66
-#damage 100
--- Does not affect demons, undead, caster, MR negates, may use underwater
-#spec 140737765707776
-#aoe 60
-#range 0
-#nextspell "Unholy Death"
-#school 2 --evocation
-#researchlevel 7
-#path 0 9 --Holy
-#pathlevel 0 4
-#path 1 8 --Blood
-#pathlevel 1 3
-#end
-
-#newspell
-#name "Holy Death"
-#effect 2
-#damage 999
--- Only affects demons & undead, MR negates (easy), may use underwater
-#spec 25165832
-#school -1
-#aoe 1
-#end
-
-#newspell
-#name "Holy Word"
-#descr "The caster utters a word so holy that nearby demons and undead are stunned and the weak ones may even be instantly killed."
-#effect 66
-#damage 100
--- Only affects demons & undead, caster, MR negates, may use underwater
-#spec 8392712
-#aoe 60
-#range 0
-#nextspell "Holy Death"
-#school 2 --evocation
-#researchlevel 7
-#path 0 9 --Holy
-#pathlevel 0 4
-#path 1 4 --astral
-#pathlevel 1 3
-#end
-
-
-#selectspell "Personal Barkskin"
-#school -1
-#end
-
-#selectspell "Group Barkskin"
-#school -1
-#end
-
-#selectspell "Wooden Warriors"
-#school -1
-#end
-
-#selectspell "Oaken Army"
-#school -1
-#end
-
-#selectspell "Barkskin"
-#path 1 9 --Holy
-#pathlevel 1 1
-#researchlevel 1
-#end
-
-#selectspell "Enslave Mind"
-#school -1
-#end
-
-#selectspell "Charm"
-#name "Dominate Person"
-#descr "The caster attempts to dominate the mind of a living humanoid victim. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
-#school 4 --Enchantment
-#researchlevel 4
-#path 1 4 --astral
-#pathlevel 1 1
--- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane
--- can be cast underwater
-#spec 148618788517449732
-#range 5020
-#end
-
-#newspell
-#copyspell "Dominate Person"
-#name "Dominate Monster"
-#descr "The caster attempts to dominate the mind of a victim. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
-#researchlevel 7
-#pathlevel 0 4
-#path 1 4 --astral
-#pathlevel 1 3
--- MR negates, mindless immune, can be cast underwater
-#spec 8523776
-#end
-
-#selectspell "Dominate Person"
-#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
-#end
-
-#selectspell "Charm Animal"
-#name "Dominate Animal"
-#descr "The caster attempts to dominate the mind of an animal. The victim of spell will become totally loyal to the caster of the spell. A dominated commander will retain all his special skills and magic items and use them for the benefit of his new master. All Pretender Gods are immune to this spell."
-#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
-#school 4 --Enchantment
-#path 1 9 --Holy
-#pathlevel 1 1
--- MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; animals only
--- can be cast underwater
-#spec 4785075418435588
-#end
-
-#selectspell "Paralyze"
-#name "Hold Person"
-#descr "The caster overloads the target humanoid's mind and effectively paralyzes the target for a very long time."
-#school 4 --Enchantment
-#researchlevel 2
-#path 0 7 --Glamour
--- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
--- can be cast underwater
-#spec 148618788517449860
-#end
-
-#newspell
-#copyspell "Hold Person"
-#name "Command"
-#descr "The caster forces an enemy to carry out a simple command. In practice this briefly incapacitates the subject."
-#path 0 9 --holy
-#pathlevel 0 2
-#pathlevel 1 0
-#fatiguecost 15
-#range 10
-#damage 25
-#spec 545919104 -- MR negates, AN, does not affect mindless/undead/inanimate. Can be cast UW
-#researchlevel 0
-#end
-
-#newspell
-#copyspell "Command"
-#name "Greater Command"
-#descr "The caster forces several enemies to carry out a simple command. In practice this briefly incapacitates the subject."
-#range 20
-#researchlevel 4
-#pathlevel 0 3
-#fatiguecost 50
-#range 15
-#nreff 2000
-#damage 50
-#spec 546181248 -- MR negates, AN, does not affect mindless/undead/inanimate, does not affect friends. Can be cast UW
-#end
-
-#newspell
-#copyspell "Hold Person"
-#name "Hold Animal"
-#descr "The caster overloads the target animal's primal instincts and effectively paralyzes the target for a very long time."
-#school 4 --Enchantment
-#researchlevel 1
-#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
-#path 0 6 --Nature
-#pathlevel 0 1
-#path 1 9 --Holy
-#pathlevel 1 1
--- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; animals only
--- can be cast underwater
-#spec 4785075418435716
-#end
-
-#newspell
-#copyspell "Hold Person"
-#name "Hold Monster"
-#descr "The caster overloads the mind and effectively paralyzes the target for a very long time."
-#researchlevel 4
-#pathlevel 0 3
-#path 1 4 --astral
-#pathlevel 1 1
--- Armour negating, MR negates, mindless immune, can be cast underwater
-#spec 8523904
-#end
-
-#selectspell "Hold Person"
-#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
-#end
-
-#newspell
-#copyspell "Hold Person"
-#name "Mass Hold Person"
-#descr "The caster overloads the minds of a group of humanoids, effectively paralyzing them for a very long time."
-#researchlevel 6
-#details "Only ordinary, living humanoids are affected; animals, undead, demons, extraplanar beings, and monstrous humanoids such as giants are excluded."
-#pathlevel 0 4
-#path 1 4
-#pathlevel 1 2
-#fatiguecost 60
-#aoe 3001
--- Armour negating, MR negates; does not affect mindless, illusions, spiritform, inanimate, demons, undead, animals, or void-sane; does not affect allies
--- can be cast underwater
-#spec 148618788517712004
-#end
-
-#newspell
-#copyspell "Hold Monster"
-#name "Mass Hold Monster"
-#descr "The caster overloads the minds of a group of creatures, effectively paralyzing them for a very long time."
-#researchlevel 8
-#pathlevel 0 5
-#pathlevel 1 3
-#aoe 3001
-#fatiguecost 60
--- Armour negating, MR negates, mindless immune, can be cast underwater, does not affect friendly
-#spec 8786048
-#end
-
-#selectspell "Calm Emotions"
-#copyspell "Serenity"
-#name "Calm Emotions"
-#descr "This spell calms agitated creatures. The targets calm down and lose their berserker rage."
-#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates)."
-#researchlevel 3
-#school 4 --Enchantment
-#path 0 7 --Glamour
-#aoe 3001
-#range 5025
-#end
-
-#selectspell "Fascination"
-#name "Hypnotism"
-#descr "The caster's gestures and droning incantation fascinate nearby living creatures, causing them to stop and stare blankly at him."
-#school 4-- enchantment
-#path 1 4 --astral
-#pathlevel 1 1
-#researchlevel 0
-#aoe 3001
--- can cast UW, armour negating, mr easy, undead/inanimate/mindless immune
-#spec 562692224
-#end
-
-#newspell
-#copyspell "Hypnotism"
-#name "Hypnotic Pattern"
-#descr "A twisting pattern of subtle, shifting colors weaves through the air, fascinating creatures within it. The illusion is useless against blind creatures or those with true seeing."
-#school 5-- thaumaturgy(illusion)
-#path 1 4 --astral
-#pathlevel 1 1
-#researchlevel 1
-#range 5025
-#aoe 4
--- can cast UW, armour negating, mr negates, mindless/true seeing immune
-#spec 1125899915366528
-#end
-
-#newspell
-#copyspell "Hypnotic Pattern"
-#name "Rainbow Pattern"
-#descr "A glowing, rainbow-hued pattern of interweaving colors fascinates a large group of creatures caught within it."
-#range 5035
-#pathlevel 0 3
-#researchlevel 3
-#school 2 --evocation
-#aoe 16
-#end
-
-#newspell
-#copyspell "Confusion"
-#name "Scintillating Confusion"
-#school -1
-#aoe 1
--- can cast UW, armour negating, mr negates, mindless/true seeing immune
-#spec 1125899915366528
-#end
-
-#newspell
-#copyspell "Hypnotic Pattern"
-#name "Scintillating Pattern"
-#descr "A twisting pattern of discordant, coruscating colors weaves through the air, stunning and confusing creatures within it."
-#researchlevel 7
-#pathlevel 0 4
-#pathlevel 1 3
-#range 25
-#aoe 20
-#end
-
-#newspell
-#copyspell "Calm Emotions"
-#name "Calm Animals"
-#descr "This spell calms agitated animals. The targets calm down and lose their berserker rage."
-#details "Str -1, Att -1, reduces berserk value by 1, -4 morale on going berserk check, berserking has a chance to end each round (easy MR negates).
-Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait."
-#school 4 --Enchantment
-#researchlevel 1
-#path 0 6 --Nature
-#pathlevel 0 1
--- MR negates, mindless immune, void sane immune, illusion/spiritform immune demons/undead immune, animals only, can be cast underwater
-#spec 4785074881564676
-#end
-
-#selectspell "Hand of Death"
-#school -1
-#end
-
-#newspell
-#copyspell "Hand of Death"
-#name "Inflict Light Wounds"
-#school 6 --Blood
-#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
-#damage 2010
-#path 1 9 --Holy
-#pathlevel 0 1
-#pathlevel 1 1
--- Armour negating, MR negates, does not affect allies, undead, or inanimates; may be cast underwater
-#spec 546050176
-#researchlevel 0
-#aispellmod 0
-#end
-
-#newspell
-#copyspell "Inflict Light Wounds"
-#name "Inflict Moderate Wounds"
-#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
-#damage 1014
-#pathlevel 1 2
-#researchlevel 1
-#aispellmod 0
-#end
-
-#newspell
-#copyspell "Inflict Light Wounds"
-#name "Inflict Serious Wounds"
-#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
-#damage 2015
-#pathlevel 0 2
-#pathlevel 1 2
-#researchlevel 2
-#aispellmod 40
-#end
-
-#newspell
-#copyspell "Inflict Light Wounds"
-#name "Inflict Critical Wounds"
-#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
-#damage 3015
-#pathlevel 0 3
-#pathlevel 1 2
-#researchlevel 3
--- Armour negating, difficult MR negates, does not affect allies, undead, or inanimates; may be cast underwater
-#spec 17592732090496
-#aispellmod 70
-#end
-
-#newspell
-#copyspell "Inflict Light Wounds"
-#name "Harm"
-#descr "The caster channels negative energy through their hand, dealing damage to a living creature."
-#damage 5030
-#pathlevel 0 3
-#pathlevel 1 3
-#researchlevel 4
--- Armour negating, difficult MR negates, does not affect allies, undead, or inanimates; may be cast underwater
-#spec 17592732090496
-#aispellmod 70
-#end
-
-#newspell
-#copyspell "Inflict Light Wounds"
-#name "Mass Inflict Light Wounds"
-#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
-#casttime 100
-#precision 100
-#fatiguecost 60
-#range 5020
-#nreff 3001
-#pathlevel 0 4
-#pathlevel 1 3
-#researchlevel 4
-#end
-
-#newspell
-#copyspell "Inflict Moderate Wounds"
-#name "Mass Inflict Moderate Wounds"
-#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
-#fatiguecost 60
-#casttime 100
-#precision 100
-#range 5020
-#nreff 3001
-#pathlevel 0 4
-#pathlevel 1 3
-#researchlevel 5
-#end
-
-#newspell
-#copyspell "Inflict Serious Wounds"
-#name "Mass Inflict Serious Wounds"
-#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
-#fatiguecost 60
-#casttime 100
-#precision 100
-#range 5020
-#nreff 3001
-#pathlevel 0 5
-#pathlevel 1 3
-#researchlevel 6
-#end
-
-#newspell
-#copyspell "Inflict Critical Wounds"
-#name "Mass Inflict Critical Wounds"
-#descr "Negative energy spreads out in all directions from the point of origin, dealing damage to nearby living enemies."
-#fatiguecost 100
-#casttime 100
-#precision 100
-#range 5020
-#nreff 3001
-#pathlevel 0 5
-#pathlevel 1 3
-#researchlevel 7
-#end
-
-#newspell
-#copyspell 639 -- Water Strike
-#name "Cure Light Wounds"
-#descr "Divine spellcasters can seal combat wounds by means of this basic channeling."
-#school 4
-#researchlevel 0
-#path 0 9
-#pathlevel 0 1
-#effect 13
-#damage 5005
--- difficult to negate with MR
--- + armor negating
--- + can use underwater
--- + doesn't affect friendly
-#spec 17592194695296
-#range 30
-#casttime 100
-#aoe 0
-#nreff 1
-#precision 100
-#fatiguecost 10
-#explspr 10007 -- Falling light green
-#strikesound 29 -- Elf shot
-#aispellmod 35
-#end
-
-#selectspell "Heal"
-#school -1
-#end
-
-#newspell
-#copyspell 1145 --Heal
-#name "Cure Light Wounds"
-#descr "The caster channels positive energy to heal a nearby living ally."
-#school 0 --Conjuration
-#researchlevel 0
-#path 0 6 --nature
-#path 1 9 --holy
-#pathlevel 0 1
-#pathlevel 1 1
-#damage 2008
--- allies only + can use UW + no undead + no inanimate + armour negating
-#spec 549978240
-#range 10
-#casttime 75
-#aoe 0
-#nreff 1
-#precision 100
-#fatiguecost 10
-#end
-
-#newspell
-#copyspell "Cure Light Wounds"
-#name "Cure Moderate Wounds"
-#descr "The caster channels positive energy to heal a nearby living ally."
-#pathlevel 0 1
-#pathlevel 1 2
-#researchlevel 1
-#damage 3012
-#end
-
-#newspell
-#copyspell "Cure Light Wounds"
-#name "Cure Serious Wounds"
-#descr "The caster channels positive energy to heal a nearby living ally."
-#pathlevel 0 2
-#pathlevel 1 2
-#researchlevel 2
-#damage 3020
-#end
-
-#newspell
-#copyspell "Cure Light Wounds"
-#name "Cure Critical Wounds"
-#descr "The caster channels positive energy to heal a nearby living ally."
-#pathlevel 0 2
-#pathlevel 1 3
-#researchlevel 3
-#damage 4020
-#end
-
-#selectspell "Heal"
-#copyspell "Cure Light Wounds"
-#name "Heal"
-#descr "The caster channels positive energy into a nearby ally, wiping away injury and afflictions."
-#damage 100
-#pathlevel 0 3
-#pathlevel 1 3
-#researchlevel 5
-#end
-
-#newspell
-#copyspell "Cure Light Wounds"
-#name "Mass Cure Light Wounds"
-#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
-#casttime 100
-#precision 100
-#fatiguecost 60
-#range 5020
-#nreff 3001
-#pathlevel 0 2
-#pathlevel 1 3
-#researchlevel 4
-#end
-
-#newspell
-#copyspell "Cure Moderate Wounds"
-#name "Mass Cure Moderate Wounds"
-#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
-#fatiguecost 60
-#casttime 100
-#precision 100
-#range 5020
-#nreff 3001
-#pathlevel 0 3
-#pathlevel 1 3
-#researchlevel 5
-#end
-
-#newspell
-#copyspell "Cure Serious Wounds"
-#name "Mass Cure Serious Wounds"
-#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
-#fatiguecost 60
-#casttime 100
-#precision 100
-#range 5020
-#nreff 3001
-#pathlevel 0 3
-#pathlevel 1 4
-#researchlevel 6
-#aispellmod 50
-#end
-
-#newspell
-#copyspell "Cure Critical Wounds"
-#name "Mass Cure Critical Wounds"
-#descr "Positive energy spreads out in all directions from the point of origin, healing nearby living allies."
-#fatiguecost 60
-#casttime 100
-#precision 100
-#range 5020
-#nreff 3001
-#pathlevel 0 4
-#pathlevel 1 4
-#researchlevel 7
-#aispellmod 50
-#end
-
-#newspell
-#copyspell "Heal"
-#name "Mass Heal"
-#descr "Positive energy floods into allies in the target area, wiping away injury and afflictions."
-#fatiguecost 100
-#casttime 100
-#precision 100
-#range 5020
-#nreff 3001
-#pathlevel 0 4
-#pathlevel 1 4
-#researchlevel 8
-#end
-
-
-#selectspell "Sleep"
-#school 4 --enchantment
-#name "Deep Slumber"
-#descr "The caster makes a group of targets fall into an enchanted slumber."
-#details "Sleeping units will not take actions nor defend themselves against melee attacks. Sleeping units wake up if wounded."
-#range 5015
-#path 1 4 --astral
-#pathlevel 1 1
-#spec 545918976 -- can be caster UW, does not affect undead/inanimate/mindless, MR negates
-#end
-
-#selectspell "Sleep Ray"
-#name "Sleep"
-#descr "The caster makes the target fall into an enchanted slumber."
-#details "Sleeping units will not take actions nor defend themselves against melee attacks. Sleeping units wake up if wounded."
-#school 4 --enchantment
-#spec 545918976 -- can be caster UW, does not affect undead/inanimate/mindless, MR negates
-#end
-
-#selectspell "Frighten"
-#name "Cause Fear"
-#descr "The spell fills the targeted unit with fear."
-#researchlevel 0
-#path 1 7 --glamour
-#pathlevel 1 1
-#damage 15
-#spec 545788032 -- Mr negates, can  use underwater, armour negating, undead immune, inanimate immune
-#range 5020
-#end
-
-#selectspell "Terror"
-#name "Fear"
-#descr "An invisible cone of terror causes each living creature in the area to become panicked unless it is of sufficiently strong will."
-#path 1 7 --glamour
-#pathlevel 1 1
-#damage 15
-#spec 545788032 -- Mr negates, can  use underwater, armour negating, undead immune, inanimate immune
-#range 25
-#aoe 10
-#end
-
-#selectspell "Weakness"
-#name "Ray of Enfeeblement"
-#descr "A coruscating ray springs from the caster's hand. The target of the ray will be permanently weakened."
-#researchlevel 1
-#school 5 --Thaumaturgy (neutral necromancy)
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#newspell
-#copyspell "Ray of Enfeeblement"
-#name "Enervation"
-#descr "The caster releases a black ray of crackling negative energy that suppresses the life force of any living creature it strikes."
-#researchlevel 3
-#pathlevel 0 2
-#pathlevel 1 2
-#details "The target is slowed, decayed and affected by the Curse of Stones effect."
-#effect 11 --Cause affliction
--- slow/decay/curse of stones
-#damage 68719477024
-#end
-
-#newspell
-#copyspell "Hand of Death"
-#name "Vampiric Touch"
-#descr "The caster's touch steals the target's life force."
-#effect 103 --drain life
-#damage 4010
--- armour negating, can use underwater, no undead, no inanimate
-#spec 545783936
-#school 5 -- thaumaturgy (neutral necromancy)
-#researchlevel 2
-#pathlevel 0 2
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "Personal Ironskin"
-#school -1
-#end
-
-#selectspell "Ironskin"
-#school -1
-#end
-
-#selectspell "Group Ironskin"
-#school -1
-#end
-
-#selectspell "Iron Warriors"
-#school -1
-#end
-
-#selectspell "Temper Flesh"
-#name "Iron Body"
-#descr "This spell transforms the caster's body into living iron, granting powerful resistances and rendering them all but impervious to ordinary weapons."
-#researchlevel 7
-#damage 6341068756642430976
-#details "Grants Slash, Blunt and Pierce resistance, Fire Resistance +15, Shock Resistance +10, Poison Resistance +15, and natural protection +13 (max up to 20), or +5 if 15 or higher."
-#pathlevel 0 4
-#path 1 4 --astral
-#pathlevel 1 2
-#end
-
-#selectspell "Thunder Fend"
-#school -1
-#end
-
-#selectspell "Resist Lightning"
-#name "Resist Lightning (disabled)"
-#school -1
-#end
-
-#selectspell "Lightning Resistance"
-#school -1
-#end
-
-#selectspell "Lightning Resistant Warriors"
-#school -1
-#end
-
-#selectspell "Ground Army"
-#school -1
-#end
-
-#selectspell "Resist Fire"
-#name "Resist Fire (disabled)"
-#school -1
-#end
-
-#selectspell "Fire Resistance"
-#school -1
-#end
-
-#selectspell "Fire Resistant Warriors"
-#school -1
-#end
-
-#selectspell "Frostflesh Army"
-#school -1
-#end
-
-#selectspell "Resist Cold"
-#name "Resist Cold (disabled)"
-#school -1
-#end
-
-#selectspell "Cold Resistance"
-#school -1
-#end
-
-#selectspell "Cold Resistant Warriors"
-#school -1
-#end
-
-#selectspell "Flameflesh Army"
-#school -1
-#end
-
-#selectspell "Protection From Fire"
-#school -1
-#end
-
-#selectspell "Lesser Flame Ward"
-#name "Resist Fire"
-#descr "This spell partially protects a few units from fire and flames."
-#details "Fire Resistance +5"
-#researchlevel 1
-#pathlevel 0 1
-#school 1 --alteration(abjuration)
-#end
-
-#selectspell "Flame Ward"
-#name "Mass Resist Fire"
-#descr "This spell partially protects a large group of units from fire and flames."
-#details "Fire Resistance +5"
-#researchlevel 3
-#pathlevel 0 2
-#aoe 3001
-#fatiguecost 99
-#school 1 --alteration(abjuration)
-#end
-
-#selectspell "Fire Fend"
-#school -1
-#end
-
-#selectspell "Protection From Cold"
-#school -1
-#end
-
-#selectspell "Lesser Winter Ward"
-#name "Resist Cold"
-#descr "This spell partially protects a few units from cold."
-#details "Cold Resistance +5"
-#researchlevel 1
-#pathlevel 0 1
-#school 1 --alteration(abjuration)
-#end
-
-#selectspell "Winter Ward"
-#name "Mass Resist Cold"
-#descr "This spell partially protects a large group of units from cold."
-#details "Cold Resistance +5"
-#researchlevel 3
-#pathlevel 0 2
-#aoe 3001
-#fatiguecost 99
-#school 1 --alteration(abjuration)
-#end
-
-#selectspell "Frost Fend"
-#school -1
-#end
-
-#selectspell "Protection From Lightning"
-#school -1
-#end
-
-#selectspell "Lesser Thunder Ward"
-#name "Resist Electricity"
-#descr "This spell protects a few units from damage and stun effects caused by lightning and thunder."
-#details "Shock Resistance +5"
-#researchlevel 1
-#pathlevel 0 1
-#school 1 --alteration(abjuration)
-#end
-
-#selectspell "Thunder Ward"
-#name "Mass Resist Electricity"
-#descr "This spell protects a few units from damage and stun effects caused by lightning and thunder."
-#details "Shock Resistance +5"
-#researchlevel 3
-#pathlevel 0 2
-#aoe 3001
-#fatiguecost 99
-#school 1 --alteration(abjuration)
-#end
-
-#newspell
-#copyspell "Resist Cold"
-#name "Protection From Cold"
-#descr "A few creatures are granted superior protection from the chosen energy type."
-#details "Cold Resistance +10. Does not stack with lower-tier resistance buffs."
-#damage 144115188075855872 -- 10 cold resistance
-#researchlevel 4
-#pathlevel 0 2
-#school 1 --alteration(abjuration)
-#end
-
-#newspell
-#copyspell "Mass Resist Cold"
-#name "Mass Protection From Cold"
-#descr "A group of creatures are granted superior protection from the chosen energy type."
-#details "Cold Resistance +10. Does not stack with lower-tier resistance buffs."
-#damage 144115188075855872 -- 10 cold resistance
-#researchlevel 6
-#pathlevel 0 4
-#school 1 --alteration(abjuration)
-#end
-
-#newspell
-#copyspell "Resist Fire"
-#name "Protection From Fire"
-#descr "A few creatures are granted superior protection from the chosen energy type."
-#details "Fire Resistance +10. Does not stack with lower-tier resistance buffs."
-#damage 36028797018963968 -- 10 fire resistance
-#researchlevel 4
-#pathlevel 0 2
-#school 1 --alteration(abjuration)
-#end
-
-#newspell
-#copyspell "Mass Resist Fire"
-#name "Mass Protection From Fire"
-#descr "A group of creatures are granted superior protection from the chosen energy type."
-#details "Fire Resistance +10. Does not stack with lower-tier resistance buffs."
-#damage 36028797018963968 -- 10 fire resistance
-#researchlevel 6
-#pathlevel 0 4
-#school 1 --alteration(abjuration)
-#end
-
-#newspell
-#copyspell "Resist Electricity"
-#name "Protection From Electricity"
-#descr "A few creatures are granted superior protection from to the chosen energy type."
-#details "Shock Resistance +10. Does not stack with lower-tier resistance buffs."
-#damage 72057594037927936 -- 10 shock resistance
-#researchlevel 4
-#pathlevel 0 2
-#school 1 --alteration(abjuration)
-#end
-
-#newspell
-#copyspell "Mass Resist Electricity"
-#name "Mass Protection From Electricity"
-#descr "A group of creatures are granted superior protection from the chosen energy type."
-#details "Shock Resistance +10. Does not stack with lower-tier resistance buffs."
-#damage 72057594037927936 -- 10 shock resistance
-#researchlevel 6
-#pathlevel 0 4
-#school 1 --alteration(abjuration)
-#end
-
-#newspell
-#copyspell "Hold Person"
-#name "Halt Undead"
-#descr "This spell renders as many as three undead creatures temporarily immobile."
-#aoe 1
-#school 5 --thaumaturgy (neutral necromancy)
-#path 0 5 --death
-#path 1 4 --astral
-#pathlevel 1 1
-#spec 276828296 -- armour negating, mr negates, can be cast underwater, only affect undead
-#end
-
-#newspell
-#copyspell "Personal Mistform"
-#name "Blink"
-#descr "The caster rapidly blinks back and forth between the Material Plane and the Ethereal Plane. Most mundane attacks are negated entirely by dodging into the Ethereal Plane."
-#details "Grants Ethereal"
-#path 0 4 --astral
-#pathlevel 0 2
-#path 1 7 --glamour
-#pathlevel 0 2
-#researchlevel 2
-#effect 10 --buff 1
-#damage 134217728 --ethereal
-#end
-
-#newspell
-#copyspell "Blink"
-#name "Ethereal Jaunt"
-#descr "The caster shifts his body into the ethereal plane, rendering him all but immune to mundane weapons."
-#details "Grants Ethereal and Invulnerability 25"
-#path 0 4 --astral
-#pathlevel 0 3
-#researchlevel 6
-#nextspell 842 --Invulnerability
-#end
-
-#newspell
-#copyspell "Fog Warriors"
-#name "Etherealness"
-#descr "The caster shifts an entire group of allies into the ethereal plane, rendering them all but immune to mundane weapons."
-#details "Grants Ethereal and Invulnerability 25"
-#path 0 4 --astral
-#pathlevel 0 5
-#researchlevel 8
-#effect 10 --buff 1
-#damage 134217728 --ethereal
-#nextspell 842 --Invulnerability
-#aoe 3001
-#end
-
-#selectspell "Body Ethereal"
-#school -1
-#end
-
-#selectspell "Personal Mistform"
-#school -1
-#end
-
-#selectspell "Mistform"
-#school -1
-#end
-
-#selectspell "Fog Warriors"
-#school -1
-#end
-
-#selectspell "Army of Mist"
-#school -1
-#end
-
-#selectspell "Chain Lightning"
-#researchlevel 5
-#path 1 4 --astral
-#pathlevel 1 2
-#end
-
-#selectspell "Gifts from Heaven"
-#school -1
-#end
-
-#newspell
-#copyspell "Area Fire"
-#name "Meteor Explosion"
-##aoe 15
-#damage 15
-#end
-
-#newspell
-#copyspell 659 -- Fireball
-#name "Meteor Swarm"
-#descr "Four two-foot diameter spheres spring from the caster's outstretched hand and streak in straight lines to the targeted location. The spheres will do tremendous damage to anyone they strike and will also explode dealing damage in a wide area."
-#researchlevel 8
-#school 2 --evocation
-#path 0 0 --fire
-#pathlevel 0 5
-#path 1 4 --astral
-#pathlevel 0 4
-#effect 2
-#fatiguecost 100
-#nreff 4
-#range 100
-#prec 100
-#damage 75
-#aoe 1
-#strikesound 89
-#makecrater 1
-#flightspr 100 -- fire boulder
-#speedmult 3
-#nextspell "Meteor Explosion"
-#explspr 10101
-#spec 549755813888
-#end
-
-#newspell
-#name "Lethal Terror"
-#effect 2
-#damage 999
-#spec 17205035136
-#school -1
--- AN, MR negates easily, may use UW, undead/inanimate/mindless immune, false damage, does not affect allies
-#spec 17742823552
-#end
-
-#selectspell "Visions of Death"
-#name "Phantasmal Killer"
-#descr "The caster creates a phantasmal image of the most fearsome creature the target can imagine. Only the victim can see the illusion. The weak-willed will fail to recognise the image is not real and may even die from fear."
-#school 4 --enchantment
-#damage 7
-#path 1 4 --astral
-#pathlevel 1 2
--- AN, MR negates, may use UW, undead/inanimate/mindless immune, false damage
-#spec 17725788288
-#nextspell "Lethal Terror"
-#end
-
-#newspell
-#copyspell "Phantasmal Killer"
-#name "Weird"
-#descr "The caster creates a phantasmal image of the most fearsome creature each target can imagine. Each victim can only see their own personal illusion. The weak-willed will fail to recognise the image is not real and may even die from fear."
-#pathlevel 0 5
-#pathlevel 1 4
-#aoe 3001
-#researchlevel 8
--- AN, MR negates, may use UW, undead/inanimate/mindless immune, false damage, does not affect allies
-#spec 17726050432
-#end
-
-#selectspell "Simulacrum"
-#name "Clone"
-#descr "The caster creates an inert duplicate of himself and stores it safely. If his original body dies, his soul immediately transfers to the clone. However, there is a chance that the caster's soul will fail to return and become trapped and lost in the outer planes, possibly until his soul withers away and dies."
-#details "If the original body dies the caster will reappear where the ritual was cast. There is a 80% chance that the caster reappears a month after his original body's death. Each month thereafter the chance is reduced by half. The soul withers away after one year."
-#school 5 -- thaum (neutral necromancy)
-#researchlevel 7
-#path 0 5--death
-#pathlevel 0 4
-#path 1 4 --astral
-#pathlevel 1 4
-#fatiguecost 1000 -- higher path requirement but cheaper
-#end
-
-#newspell
-#copyspell "Personal Mistform"
-#name "Expeditious Retreat"
-#descr "The caster's land speed is increased."
-#details "Combat speed +50%"
-#researchlevel 0
-#school 1 -- alteration (transmutation)
-#path 0 4 --astral
-#pathlevel 0 1
-#damage 4 -- swiftness
-#spec 0
-#end
-
-#newspell
-#copyspell "Expeditious Retreat"
-#name "Longstrider"
-#descr "The caster's land speed is increased."
-#details "Combat speed +50%"
-#path 0 6 --nature
-#path 1 9 --holy
-#pathlevel 1 1
-#spec 0
-#end
-
-#newspell
-#copyspell "Longstrider"
-#name "Mass Longstrider"
-#descr "The caster increases the land speed of a large group of allies."
-#details "Combat speed +50%"
-#researchlevel 4
-#pathlevel 0 3
-#fatiguecost 60
-#aoe 6002
-#spec 4194304 --affects friendlies only
-#end
-
-#selectspell "Aura of Bewilderment"
-#name "Cloak of Chaos"
-#descr "A random pattern of color surrounds a group of allies, granting them resistance to spells, and causing creatures that strike the subjects to become confused."
-#details "Grants MR+4, Invulnerability 15, and Shroud of Bewilderment.
-
-MR check to resist the bewilderment. Failure means no strike and the next action will be a random one. Units that can see/sense invisible get a +4 bonus to the MR roll."
-#path 1 9 --holy
-#pathlevel 1 3
-#school 1 -- alteration (abjuration)
-#aoe 3001
-#nextspell 1110 --resist magic
-#end
-
-#newspell
-#name "Righteous Wrath of the Faithful"
-#descr "The caster imbues a group of the faithful with a divine fury that greatly enhances their combat ability. Subjects will be driven into an irrational berserk state and attack at twice the usual speed."
-#details "Subjects will be quickened, blessed, and driven berserk. The caster will likely be affected - and driven berserk - too."
-#path 0 9 --holy
-#pathlevel 0 3
-#school 4 --enchantment
-#path 1 0 -- fire
-#pathlevel 1 2
-#range 0
-#aoe 20
-#researchlevel 5
-#fatiguecost 40
-#effect 10
--- gone berserk + quickness + bless
-#damage 262401
--- does not affect enemies or mindless; only affects sacreds; can be cast underwater
-#spec 12746752
-#ainocast 1
-#end
-
-#selectspell "Mind Blank"
-#school 1 --alteration
-#end
-
-#selectspell "Mirror Mind"
-#school -1
-#end
-
-#selectspell "Tangle Vines"
-#school -1
-#end
-
-#selectspell "Tangle Thicket"
-#school -1
-#end
-
-#selectspell "Wild Growth"
-#name "Entangle"
-#descr "Vines and roots sprout from the ground, grabbing all enemies within reach. The stronger a victim is, the faster the vines will be destroyed and the more fertile the province is, the stronger the vines will be."
-#details "Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
-#school 1 --alteration
-#researchlevel 1
-#range 5025
-#fatiguecost 60
-#pathlevel 0 2
-#path 1 9 --holy
-#pathlevel 1 1
-#end
-
---------------- Summon Monster line ---------------------------
-
-#newspell
-#name "Summon Monster I"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#school 0 --conj
-#researchlevel 0
-#path 0 4 --astral
-#pathlevel 0 1
-#effect 1
-#damage -14001
-#casttime 125
-#nreff 1
-#fatiguecost 60
-#end
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Summon Monster II"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 1
-#pathlevel 0 2
-#damage -14002
-#end
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Summon Monster III"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 2
-#pathlevel 0 3
-#damage -14003
-#end
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Summon Monster IV"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 3
-#pathlevel 0 4
-#damage -14004
-#end
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Summon Monster V"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 4
-#pathlevel 0 4
-#fatiguecost 100
-#damage -14005
-#end
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Summon Monster VI"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 5
-#pathlevel 0 5
-#fatiguecost 100
-#damage -14006
-#end
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Summon Monster VII"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects. Some high level summoned creatures are even powerful mages in their own right."
-#researchlevel 6
-#pathlevel 0 5
-#fatiguecost 200
-#effect 21 -- summon commander
-#damage -14007
-#end
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Summon Monster VIII"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects. Some high level summoned creatures are even powerful mages in their own right."
-#researchlevel 7
-#pathlevel 0 6
-#fatiguecost 200
-#effect 21 -- summon commander
-#damage -14008
-#end
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Summon Monster IX"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects. Some high level summoned creatures are even powerful mages in their own right."
-#researchlevel 8
-#pathlevel 0 6
-#fatiguecost 300
-#effect 21 -- summon commander
-#damage -14009
-#end
-
----------------- Summon Aquatic Monster line ------------------------------
-
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Summon Aquatic Monster I"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#damage -14011
-#spec 41943040 -- Can be cast underwater only
-#end
-
-#newspell
-#copyspell "Summon Aquatic Monster I"
-#name "Summon Aquatic Monster II"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 1
-#pathlevel 0 2
-#damage -14012
-#end
-
-#newspell
-#copyspell "Summon Aquatic Monster I"
-#name "Summon Aquatic Monster III"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 2
-#pathlevel 0 3
-#damage -14013
-#end
-
-#newspell
-#copyspell "Summon Aquatic Monster I"
-#name "Summon Aquatic Monster IV"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 3
-#pathlevel 0 4
-#damage -14014
-#end
-
-#newspell
-#copyspell "Summon Aquatic Monster I"
-#name "Summon Aquatic Monster V"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 4
-#pathlevel 0 4
-#fatiguecost 100
-#damage -14015
-#end
-
-#newspell
-#copyspell "Summon Aquatic Monster I"
-#name "Summon Aquatic Monster VI"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 5
-#pathlevel 0 5
-#fatiguecost 100
-#damage -14016
-#end
-
-#newspell
-#copyspell "Summon Aquatic Monster I"
-#name "Summon Aquatic Monster VII"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 6
-#pathlevel 0 5
-#fatiguecost 200
-#effect 21 -- summon commander
-#damage -14017
-#end
-
-#newspell
-#copyspell "Summon Aquatic Monster I"
-#name "Summon Aquatic Monster VIII"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 7
-#pathlevel 0 6
-#fatiguecost 200
-#effect 21 -- summon commander
-#damage -14018
-#end
-
-#newspell
-#copyspell "Summon Aquatic Monster I"
-#name "Summon Aquatic Monster IX"
-#descr "The caster summons an extraplnar creature to serve as his ally in battle. Some extraplanar beings look similar to ordinary creatures, but they are superior in many respects."
-#researchlevel 8
-#pathlevel 0 6
-#fatiguecost 300
-#effect 21 -- summon commander
-#damage -14019
-#end
-
----------------- Summon Nature's Ally line ------------------------------
-
-#newspell
-#name "Summon Nature's Ally I"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#school 0 --conj
-#researchlevel 0
-#path 0 6 --nature
-#pathlevel 0 1
-#path 1 9 --holy
-#pathlevel 1 1
-#effect 1
-#damage -14021
-#casttime 125
-#nreff 1
-#fatiguecost 60
-#end
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Summon Nature's Ally II"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 1
-#pathlevel 0 2
-#damage -14022
-#end
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Summon Nature's Ally III"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 2
-#pathlevel 0 3
-#damage -14023
-#end
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Summon Nature's Ally IV"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 3
-#pathlevel 0 4
-#damage -14024
-#end
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Summon Nature's Ally V"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 4
-#pathlevel 0 4
-#fatiguecost 100
-#damage -14025
-#end
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Summon Nature's Ally VI"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 5
-#pathlevel 0 5
-#fatiguecost 100
-#damage -14026
-#end
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Summon Nature's Ally VII"
-#descr "The caster summons a natural creature to serve as his ally in battle. Some high level summoned creatures are even powerful mages in their own right."
-#researchlevel 6
-#pathlevel 0 5
-#fatiguecost 200
-#effect 21 -- summon commander
-#damage -14027
-#end
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Summon Nature's Ally VIII"
-#descr "The caster summons a natural creature to serve as his ally in battle. Some high level summoned creatures are even powerful mages in their own right."
-#researchlevel 7
-#pathlevel 0 6
-#fatiguecost 200
-#effect 21 -- summon commander
-#damage -14028
-#end
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Summon Nature's Ally IX"
-#descr "The caster summons a natural creature to serve as his ally in battle. Some high level summoned creatures are even powerful mages in their own right."
-#researchlevel 8
-#pathlevel 0 6
-#fatiguecost 300
-#effect 21 -- summon commander
-#damage -14029
-#end
-
----------------- Summon Aquatic Ally line ------------------------------
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Summon Aquatic Ally I"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#damage -14031
-#spec 41943040 -- Can be cast underwater only
-#end
-
-#newspell
-#copyspell "Summon Aquatic Ally I"
-#name "Summon Aquatic Ally II"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 1
-#pathlevel 0 2
-#damage -14032
-#end
-
-#newspell
-#copyspell "Summon Aquatic Ally I"
-#name "Summon Aquatic Ally III"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 2
-#pathlevel 0 3
-#damage -14033
-#end
-
-#newspell
-#copyspell "Summon Aquatic Ally I"
-#name "Summon Aquatic Ally IV"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 3
-#pathlevel 0 4
-#damage -14034
-#end
-
-#newspell
-#copyspell "Summon Aquatic Ally I"
-#name "Summon Aquatic Ally V"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 4
-#pathlevel 0 4
-#fatiguecost 100
-#damage -14035
-#end
-
-#newspell
-#copyspell "Summon Aquatic Ally I"
-#name "Summon Aquatic Ally VI"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 5
-#pathlevel 0 5
-#fatiguecost 100
-#damage -14036
-#end
-
-#newspell
-#copyspell "Summon Aquatic Ally I"
-#name "Summon Aquatic Ally VII"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 6
-#pathlevel 0 5
-#fatiguecost 200
-#effect 21 -- summon commander
-#damage -14037
-#end
-
-#newspell
-#copyspell "Summon Aquatic Ally I"
-#name "Summon Aquatic Ally VIII"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 7
-#pathlevel 0 6
-#fatiguecost 200
-#effect 21 -- summon commander
-#damage -14038
-#end
-
-#newspell
-#copyspell "Summon Aquatic Ally I"
-#name "Summon Aquatic Ally IX"
-#descr "The caster summons a natural creature to serve as his ally in battle."
-#researchlevel 8
-#pathlevel 0 6
-#fatiguecost 300
-#effect 21 -- summon commander
-#damage -14039
-#school -1 -- Disabled for now, there aren't any level 9 aquatic nature's allies
-#end
-
--------- Shadow Conjuration
-
-#newspell
-#name "Shadow Conjuration"
-#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions into a creature. Shadow Conjuration mimics the effects of Summon Monster III.
-
-Shadow illusions are more fragile than the real thing, but otherwise have the same abilities. Strrong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
-#details "Shadow illusions do not deal false damage."
-#researchlevel 3
-#school 5 -- Illusion (Thaumaturgy)
-#path 0 7 -- glamour
-#pathlevel 0 2
-#path 1 4 -- astral
-#pathlevel 1 1
-#effect 1 -- summon
-#damage -14040 -- shadow conjuration montag
-#nreff 1
-#fatiguecost 60
-#spec 8388608 -- can be cast underwater
-#end
-
-#newspell
-#copyspell "Shadow Conjuration"
-#name "Greater Shadow Conjuration"
---- Make elementals as well?
-#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions into a creature. Greater Shadow Conjuration mimics the effects of Summon Monster VI.
-
-Shadow illusions are more fragile than the real thing, but otherwise have the same abilities. Strong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
-#details "Shadow illusions do not deal false damage."
-#researchlevel 6
-#pathlevel 0 4
-#pathlevel 1 3
-#damage -14041 -- greater shadow conjuration montag
-#end
-
-#newspell
-#copyspell "Shadow Conjuration"
-#name "Shades"
---- Make elementals as well?
-#descr "The caster uses material from the Plane of Shadow to shape quasi-real illusions into a creature. Shades mimics the effects of Summon Monster VIII.
-
-Shadow illusions are more fragile than the real thing, and do not cast spells, but otherwise have the same abilities. Strong-willed enemies can see through the illusion, but they will still take some damage because it is partly real."
-#details "Shadow illusions do not deal false damage."
-#researchlevel 8
-#pathlevel 0 5
-#pathlevel 1 4
-#fatiguecost 80
-#damage -14042 -- shades montag
-#end
-
-#selectspell "Burning Hands"
-#path 1 4 --astral
-#researchlevel 0
-#pathlevel 1 1
-#aoe 3
-#spec 140737488355424 -- fire/armour piercing/does not affect caster
-#end
-
-#newspell
-#copyspell 123 -- stun magic
-#name "Stun Weakling"
--- can be cast UW; armor negating, true sight negates, difficult mr negates, size negates; caster immune, mindless immune, undead/inanimate immune
-#spec 1288628173668480
-#end
-
-#newspell
-#copyspell "Hypnotic Pattern"
-#name "Color Spray"
-#descr "A vivid cone of clashing colors springs forth from the caster's hand, stunning creatures who fail to resist. Weak creatures will be affected much more severely."
-#details "The caster cannot hit themself with this spell."
-#range 15
-#aoe 5
-#flightspr 10080
-#nextspell "Stun Weakling"
--- can be cast UW; armor negating, true sight negates, mr negates; caster immune, mindless immune
-#spec 1266637403721856
-#end
-
-#selectspell "Mass Confusion"
-#name "Confusion"
-#descr "The spell will confuse the minds of a large group of soldiers for the remainder of the battle. The confused units can easily attack friends instead of enemies."
-#details "Confused 50% of combat rounds. Confused targets may stand still and stare, or try to move in a random direction, attacking anyone standing in their way, be it friend or foe."
-#aoe 9
-#school 4 -- enchantment
-#researchlevel 3
-#end
-
-#selectspell "Acid Bolt"
-#name "Acid Arrow"
-#descr "A magical arrow of acid springs from the caster's hand and speeds to its target. The acid burns the armor of the target as well as his, her or its flesh."
-#path 0 3 -- earth
-#path 1 4 -- astral
-#school 3 -- construction - conjuration(creation)
-#researchlevel 2
-#end
-
-#selectspell "Swarm"
-#name "Summon Swarm"
-#descr "The caster summons a swarm of vermin to attack his enemies."
-#school 0 --conjuration
-#fatiguecost 60
-#nreff 1008
-#researchlevel 1
-#end
-
-#selectspell "Creeping Doom"
-#name "Insect Plague"
-#descr "The caster summons a plague of vermin to attack his enemies."
-#school 0 --conjuration
-#researchlevel 4
-#path 1 9 --holy
-#nreff 4032
-#pathlevel 1 1
-#end
-
-#selectspell "Web"
-#fatiguecost 60
-#school 3 -- construction - conjuration(creation)
-#aoe 16
-#pathlevel 0 2
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "True Sight"
-#name "See Invisibility"
-#descr "The caster gains the ability to discern illusions and see the unseen."
-#details "True Sight enables a unit to attack invisible or glamoured targets without penalties."
-#school 5 -- divination (thaumaturgy)
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "Gift of True Sight"
-#school -1
-#end
-
-#selectspell "Fay-eyed Warriors"
-#school -1
-#end
-
-#selectspell "Gift of Spirit Sight"
-#school -1
-#end
-
-#selectspell "Second Sight"
-#name "True Seeing"
-#descr "The caster opens his third eye and observes the spirit world. The caster gains Spirit Sight for the remainder of the battle."
-#details "Units with Spirit Sight can see invisible and glamoured units for what they are. Spirit Sight also grants 100% darkvision."
-#school 5 -- divination (thaumaturgy)
-#researchlevel 5
-#path 0 7 --glamour
-#pathlevel 0 2
-pathlevel 1 0
-#end
-
-#selectspell "Fire Flies"
-#name "Scorching Ray"
-#descr "The caster blasts his enemies with fiery rays. The number and strength of the rays improve with the caster's power."
-#speedmult 3
-#researchlevel 1
-#damage 2010
-#pathlevel 0 2
-#path 1 4 -- astral
-#pathlevel 1 1
-#nreff 1000
-#prec 2
-#fatiguecost 30
-#end
-
-#newspell
-#copyspell "Scorching Ray"
-#name "Searing Light"
-#descr "Focusing divine power like a ray of the sun, the caster projects a blast of light from their open palm. The ray of light is particularly harmful to undead."
-#effect 124 -- holy damage (x2 vs demons)
-#nreff 1
-#path 1 9 -- holy
-#spec 8388608 -- can be cast underwater
-#end
-
-#selectspell "Flame Bolt"
-#school -1
-#end
-
-#selectspell "Slime"
-#school -1
-#end
-
-#selectspell "Water Strike"
-#school -1
-#end
-
-#selectspell "Geyser"
-#school -1
-#end
-
-#selectspell "Cold Bolt"
-#school -1
-#end
-
-#selectspell "Acid Spray"
-#school -1
-#end
-
-#selectspell "Star Fires"
-#school -1
-#end
-
-#selectspell "Arcane Bolt"
-#school -1
-#end
-
-#selectspell "Vine Arrow"
-#school -1
-#end
-
-#selectspell "Bewitching Lights"
-#school -1
-#end
-
-#selectspell "Steam Blast"
-#school -1
-#end
-
-#selectspell "Fire Blast"
-#school -1
-#end
-
-#selectspell "Flare"
-#school -1
-#end
-
-#selectspell "Shock Wave"
-#school -1
-#end
-
-#selectspell "Thalassemia"
-#school -1
-#end
-
-#selectspell "Cold Blast"
-#school -1
-#end
-
-#selectspell "Rust Mist"
-#school -1
-#end
-
-#selectspell "Solar Rays"
-#school -1
-#end
-
-#selectspell "Ephemeral Bolt"
-#school -1
-#end
-
-#selectspell "Storm Wind"
-#school -1
-#end
-
-#selectspell "Freezing Mist"
-#school -1
-#end
-
-#selectspell "Magma Bolts"
-#school -1
-#end
-
-#selectspell "Healing Light"
-#school -1
-#end
-
-#selectspell "Shadow Bolt"
-#school -1
-#end
-
-#selectspell "Poison Darts"
-#school -1
-#end
-
-#selectspell "False Fire"
-#school -1
-#end
-
-#selectspell "Elf Shot"
-#school -1
-#end
-
-#selectspell "Dance of Ephemeral Swords"
-#school -1
-#end
-
-#selectspell "Cloud of Dreamless Slumber"
-#school -1
-#end
-
-#selectspell "Fire Cloud"
-#school -1
-#end
-
-#selectspell "Acid Rain"
-#school -1
-#end
-
-#selectspell "Blade Wind"
-#school -1
-#end
-
-#selectspell "Nether Bolt"
-#school -1
-#end
-
-#selectspell "Bane Fire Dart"
-#school -1
-#end
-
-#selectspell "Bolt of Unlife"
-#school -1
-#end
-
-#selectspell "Ephemeral Blast"
-#school -1
-#end
-
-#selectspell "Ghost Wolves"
-#school -1
-#end
-
-#selectspell "Falling Fires"
-#school -1
-#end
-
-#selectspell "Hidden Flame"
-#school -1
-#end
-
-#selectspell "Orb Lightning"
-#school -1
-#end
-
-#selectspell "Ice Storm"
-#school -1
-#end
-
-#selectspell "Shatter"
-#school -1
-#end
-
-#selectspell "Stellar Cascades"
-#school -1
-#end
-
-#selectspell "Astral Geyser"
-#school -1
-#end
-
-#selectspell "Shadow Blast"
-#school -1
-#end
-
-#selectspell "Poison Arrows"
-#school -1
-#end
-
-#selectspell "Poison Cloud"
-#school -1
-#end
-
-#selectspell "Illusory Army"
-#school -1
-#end
-
-#selectspell "Flame Eruption"
-#school -1
-#end
-
-#selectspell "Cleansing Water"
-#school -1
-#end
-
-#selectspell "Magma Eruption"
-#school -1
-#end
-
-#selectspell "Astral Fires"
-#school -1
-#end
-
-#selectspell "Blast of Unlife"
-#school -1
-#end
-
-#selectspell "Bane Fire"
-#school -1
-#end
-
-#selectspell "Stream of Life"
-#school -1
-#end
-
-#selectspell "Ice Strike"
-#school -1
-#end
-
-#selectspell "Acid Storm"
-#school -1
-#end
-
-#selectspell "Rain of Stones"
-#school -1
-#end
-
-#selectspell "Nether Darts"
-#school -1
-#end
-
-#selectspell "Stygian Rains"
-#school -1
-#end
-
-#selectspell "Cloud of Death"
-#school -1
-#end
-
-#selectspell "Wind of Death"
-#school -1
-#end
-
-#selectspell "Storm of Thorns"
-#school -1
-#end
-
-#selectspell "Poison Mist"
-#school -1
-#end
-
-#selectspell "Wailing Winds"
-#school -1
-#end
-
-#selectspell "Shimmering Fields"
-#school -1
-#end
-
-#selectspell "Meteor Shower"
-#school -1
-#end
-
-#selectspell "Astral Tempest"
-#school -1
-#end
-
-#selectspell "Aurora Borealis"
-#school -1
-#end
-
-#selectspell "Flame Storm"
-#school -1
-#end
-
-#selectspell "Lightning Field"
-#school -1
-#end
-
-#selectspell "Niefel Flames"
-#school -1
-#end
-
-#newspell
-#copyspell "Rain of Stones"
-#name "Storm of Vengeance"
-#descr "The caster creates a massive storm cloud which pelts the battlefield with acid and giant hailstones."
-#school 0 --conjuration
-#researchlevel 8
-#path 0 6 -- nature
-#pathlevel 0 5
-#path 1 9 --holy (maybe air instead?)
-#pathlevel 1 2
-#details "Continuously targets the battlefield with 5 points of mundane blunt dmg and 4 armour piercing acid damage."
-#nextspell "Acid Storm"
-#end
-
-#newspell
-#copyspell 217 -- smite demon
-#name "Sunbeam"
-#descr "The caster evokes a dazzling beam of light which blinds enemies and is particularly destructive to undead."
-#school 2 --evocation
-#effect 124 -- holy damage (x2 vs undead)
-#aoe 6 -- unfortunately line effect is not available
-#damage 16
-#range 40
-#path 0 0 --fire
-#pathlevel 0 4
-#path 1 6 -- nature
-#pathlevel 1 2
-#researchlevel 6
-#fatiguecost 40
-#nextspell "Blindness"
--- armour piercing, can be cast underwater
-#spec 8388672
-#end
-
-#newspell
-#copyspell 217 --Smite Demon
-#name "Sunburst"
-#descr "The caster causes a globe of searing radiance to explode silently from the targeted point. Anyone caught in the burst suffers severe damage and will be blinded unless they resist. The burst deals greatly increased damage to undead creatures."
-#school 2 --evocation
-#effect 124 -- holy damage (x2 vs undead)
-#range 100
-#aoe 50
-#damage 2000
-#casttime 200
-#path 0 0 -- fire
-#pathlevel 0 5
-#path 1 6 -- nature
-#pathlevel 1 3
-#researchlevel 8
-#fatiguecost 200
-#nextspell "Blindness"
--- armour piercing, can be cast underwater
-#spec 8388672
-#end
-
-#selectspell "Earth Grip"
-#school -1
-#end
-
-#selectspell "Earth Meld"
-#school -1
-#end
-
-#selectspell "Maws of the Earth"
-#name "Black Tentacles"
-#descr "This spell conjures a field of rubbery black tentacles, each 10 feet long. These waving members seem to spring forth from the earth, floor, or whatever surface is underfoot—including water. They grasp and entwine around creatures that enter the area, holding them fast and crushing them with great strength."
-#details "Str +DRN vs 23 to get free."
-#school 3 --construction; conjuration(creation)
-#researchlevel 4
-#path 0 2 -- water
-#path 1 4 -- astral
-#pathlevel 1 2
-#end
-
-#selectspell "Temper Armors"
-#school -1
-#end
-
-#selectspell "Legions of Steel"
-#school -1
-#end
-
-#selectspell "Ignite Arrows"
-#name "Flame Arrow"
-#descr "The mage enchants the arrows of a few archers on the battlefield. The arrows burst into flame as they are fired, doing considerable damage to their targets. The spell will not affect magical weapons. The fire damage of the arrow is magic and will affect ethereal and invulnerable creatures even if the arrow itself doesn't."
-#details "Extra +8 AP fire dmg."
-#school 1 -- alteration (transmutation)
-#path 1 4 --astral
-#pathlevel 1 1
-#end
-
-#selectspell "Flaming Arrows"
-#name "Mass Flame Arrow"
-#descr "The mage enchants the arrows of a large number of friendly archers. The arrows burst into flame as they are fired, doing considerable damage to their targets. The spell will not affect magical weapons. The fire damage of the arrow is magic and will affect ethereal and invulnerable creatures even if the arrow itself doesn't."
-#details "Extra +8 AP fire dmg."
-#aoe 3001
-#fatiguecost 60
-#school 1 -- alteration (transmutation)
-#path 1 4 --astral
-#pathlevel 1 2
-#end
-
-#selectspell "Hail of Burning Embers"
-#school -1
-#end
-
-#selectspell "Petrify"
-#name "Flesh to Stone"
-#descr "The caster transforms some targets into stone. The target might end up dead when the petrification ends."
-#details "Petrified targets have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
-#path 1 4 --astral
-#pathlevel 1 2
-#pathlevel 0 4
-#end
-
-#selectspell "Curse"
-#name "Bestow Curse"
-#descr "The mage curses the target with bad luck. The spell has long range and always hits the chosen target. There is no protection against being cursed and it can never be removed."
-#range 15
-#path 0 5 -- D
-#end
-
-#selectspell "Seven Year Fever"
-#name "Contagion"
-#descr "The caster curses some targets with a horrible fever that never ends. The victims will not be severely affected during combat, but their wounds will never heal and the victim will slowly die in the following years."
-#path 0 5 -- D
-#path 1  8 --blood
-#school 6 -- blood
-#end
-
-#selectspell "Opposition"
-#name "Dismissal"
-#descr "The caster attempts to force an extraplanar creature back to its proper plane."
-#nextspell 0
-#researchlevel 4
-#school 1 -- alteration(abjuration)
-#end
-
-#newspell
-#copyspell "Contagion"
-#name "Feeblemind"
-#descr "The caster attempts to destroy the target's higher mental faculties. Feeble minded victims have diminished fighting ability and are unable to use magic."
-#damage 33554432 -- feeble minded
-#spec 545918976 -- can be used UW, MR negates, no mindless/undead/inanimate
-#range 5025
-#aoe 0
-#path 0 7 -- glamour
-#pathlevel 0 3
-#path 1 4 --astral
-#pathlevel 1 2
-#school 4 -- enchantment
-#researchlevel 4
-#end
-
-#selectspell "Ghost Grip"
-#name "Waves of Fatigue"
-#descr "Waves of negative energy render all living creatures in the spell’s area fatigued."
-#researchlevel 4
-#school 5 -- thaumaturgy (neutral necromancy)
-#pathlevel 0 3
-#path 1 4 --astral
-#pathlevel 1 2
-#nreff 1
-#aoe 6
-#spec 140738034143360 -- armour negating, can be used UW, no undead/inanimate, MR negate, does not affect caster
-#end
-
-#newspell
-#copyspell "Waves of Fatigue"
-#name "Waves of Exhaustion"
-#descr "Waves of negative energy render all living creatures in the spell’s area exhausted. Even resistant enemies are not fully protected."
-#researchlevel 6
-#pathlevel 0 4
-#pathlevel 1 3
-#aoe 10
-#damage 3025
-#spec 2305983747247833216 -- armour negating, can be used UW, no undead/inanimate, MR half, does not affect caster
-#end
-
-#selectspell "Sulphur Haze"
-#name "Acid Fog"
-#descr "This spell creates several clouds of toxic mist that remain on the battlefield. Units passing through these mists will suffer from sore throats and poisoning."
-#school 3 -- const (conj-creation)
-#path 0 3 --earth
-#path 1 4 --astral
-#end
-
-#selectspell "Vortex of Unlife"
-#name "Circle of Death"
-#descr "A circle of death snuffs out the life force of living creatures, killing them instantly."
-#path 1 4 --astral
-#pathlevel 1 3
-#school 5 -- thaum (neutral necromancy). ? Is this really neutral?
-#effect 2 -- damage
-#damage 999
--- AN, mr easy, undead immune, inanimate immune, can be cast UW
-#spec 562561152
-#end
-
-#newspell
-#copyspell "Hold Monster"
-#name "Comatose"
--- AN, MR negates, can cast UW, undead/inanimate immune
-#spec 545788032
-#school -1
-#end
-
-#newspell
-#name "Eyebite"
-#descr "The caster strikes a living creature with waves of evil power. Weak creatures will be driven into a catatonic coma, but even the strong may be weakened."
-#school 6 -- blood (necromancy[evil])
-#researchlevel 5
-#fatiguecost 20
-#path 0 7 --glamour
-#pathlevel 0 3
-#path 1 8 -- blood
-#pathlevel 1 1
-#school 6 -- blood
-#range 25
-#effect 3 -- fatigue damage
-#damage 5025
-#nextspell "Comatose"
--- difficult MR negates, can cast UW, undead/inanimate immune
-#spec 17592731828224
-#end
-
-#newspell
-#copyspell "Circle of Death"
-#name "Undeath to Death"
-#descr "The caster snuffs out the animating force of undead creatures in the area, destroying them instantly."
-#pathlevel 1 0
-#school 5 -- thaum (neutral necromancy)
--- AN, mr negates (easy), only affect undead/demon, demon immune, can be cast UW
-#spec 293601416
-#end
-
-#selectspell "Fire Cloud"
-#name "Incendiary Cloud"
-#descr "This spell creates a large cloud of fire and smoke that remain on the battlefield. Units passing through this cloud will be severely burned."
-#school 0 --conjuration (creation)
-#path 1 4 --astral
-#pathlevel 1 2
-#end
-
-#selectspell "Blindness"
-#descr "The caster calls upon the powers of unlife to render the subject blinded."
-#path 0 5 --death
-#school 5 -- thaum (neutral necromancy)
-#spec 545787904 -- can be cast UW, MR negates, undead/inanimate immune
-#end
-
-#selectspell "Transformation"
-#name "Transformed (disabled)"
-#school -1
-#end
-
-#newspell
-#copyspell "Personal Regeneration"
-#name "Transformation"
-#descr "The caster transforms themself into a virtual fighting machine. They grow tougher, but their mind-set changes so that they relish combat and they can’t cast spells."
-#details "Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6); gone berserk"
-#fatiguecost 100
-#school 1 --alteration (transmutation)
-#path 0 6 -- nature
-#pathlevel 0 1
-#path 1 4 --astral
-#pathlevel 1 3
-#researchlevel 5
--- gone berserk + limited enlargement + enlargement
-#damage 1101659111680
-#spec 8519680 -- can be cast UW, does not affect mindless
-#spec2 4 -- does not affect riders
-#end
-
-#newspell
-#name "Damage Negation"
-#effect 13 -- healing
-#damage 50
--- AN, no mindless/undead/inanimate, real damage, internal damage, can be cast UW
-#spec 54043196074360960
-#school -1
-#end
-
-#newspell
-#copyspell "Disintegrate"
-#name "Power Word Kill"
-#descr "The caster utters a single word of power that instantly kills one creature of their choice, whether the creature can hear the word or not. Any creature that has sufficient hit points is unaffected by power word kill."
-#flyspr -1
-#explspr 10141
-#effect 2 -- damage
-#damage 50
-#nextspell "Damage Negation"
-#range 3025
--- AN, no mindless/undead/inanimate, real damage, internal damage, can be cast UW
-#spec 54043196074360960
-#school 4 -- enchantment
-#researchlevel 8
-#end
-
-#newspell
-#copyspell "Dismissal"
-#name "Banishment"
-#descr "The caster attempts to force a group of extraplanar creatures back to their proper plane."
-#aoe 3001
-#researchlevel 6
-#pathlevel 0 4
-#flightspr 10069 -- particle ball
-#end
-
-#newspell
-#copyspell "Infernal Prison"
-#name "Violet Beam"
-#aoe 1
-#school -1
-#spec 25165952 -- AN, mr easy, can be cast UW
-#flightspr 10068 -- particle ball
-#explspr 10001
-#end
-
-#newspell
-#name "Indigo Beam"
-#aoe 1
-#school -1
-#effect 609 -- add to effect value (10)
-#damage 309 -- insanity
-#spec 25297024 -- can cast UW, mr easy, mindless immune, AN
-#flightspr 10067 -- particle ball
-#explspr 10001
-#end
-
-#newspell
-#copyspell "Flesh to Stone"
-#name "Blue Beam"
-#aoe 1
-#school -1
-#spec 562036864 -- can cast UW, mr easy, inanimate immune, AN
-#nextspell "Indigo Beam"
-#flightspr 10066 -- particle ball
-#explspr 10001
-#end
-
-#newspell
-#name "Green Beam"
-#aoe 1
-#school -1
-#effect 2
-#damage 100
--- poison res, AN, MR easy, can be cast UW, undead/inanimate immune
-#spec 562569344
-#nextspell "Blue Beam"
-#flightspr 10065 -- particle ball
-#explspr 10001
-#end
-
-#newspell
-#name "Yellow Beam"
-#effect 2
-#aoe 1
-#school -1
-#damage 20
--- shock res, AN, MR easy, can be cast UW
-#spec 25168000
-#nextspell "Green Beam"
-#flightspr 10064 -- particle ball
-#explspr 10001
-#end
-
-#newspell
-#name "Orange Beam"
-#effect 2
-#aoe 1
-#school -1
-#damage 20
--- acid res, AP, MR easy, can be cast UW
-#spec 2199048421440
-#nextspell "Yellow Beam"
-#flightspr 10063 -- particle ball
-#explspr 10001
-#end
-
-#newspell
-#name "Red Beam"
-#effect 2
-#aoe 1
-#school -1
-#damage 20
--- fire res, AP, MR easy, can be cast UW
-#spec 25165920
-#nextspell "Orange Beam"
-#flightspr 10062 -- particle ball
-#explspr 10001
-#end
-
-#newspell
-#copyspell "Violet Beam"
-#name "Prismatic Spray"
-#descr "Seven shimmering, intetwined, multicoloured beams of light spray from the casters hand. Each beam will strike some of the creautres in the area with various effects."
-#details "Red Beam: 20 AP Fire damage
-Orange Beam: 20 AP acid damage
-Yellow Beam: 20 AN shock damage
-Green Beam: 100 AN poison damage
-Blue Beam: Petrification
-Indigo Beam: +10 Insanity
-Violet Beam: Plane shift to the inferno"
-#nextspell "Red Beam"
-#range 20
-#aoe 30
-#school 2 --evocation
-#researchlevel 6
-#path 0 4 --astral
-#pathlevel 0 4
-#path 1 7 --glamour
-#pathlevel 1 2
-#flightspr 10061 -- particle ball
-#explspr 10001
-#speedmult 3
-#end
-
-#selectspell "Control the Dead"
-#name "Control Undead"
-#descr "The caster commands udead creatures to obey them."
-#researchlevel 6
-#range 2025
-#aoe 3001
-#pathlevel 0 3
-#path 1 4 --astral
-#pathlevel 1 2
-#end
-
-#newspell
-#name "Harm Living"
-#effect 2
-#damage 15
-#spec 36028797564747904 -- AN, can be cast UW, undead/inanimate immune, internal damage
-#school -1
-#end
-
-#newspell
-#copyspell "Disintegrate"
-#name "Finger of Death"
-#descr "The caster attempts to slay a living creature. Survivors will still be injured."
-#effect 2
-#damage 999
-#spec 545788032 -- AN, MR negates, can be cast UW, undead/inanimate immune
-#nextspell "Harm Living"
-#school 5 -- thuam (neutral necromancy)
-#researchlevel 6
-#path 0 5 -- death
-#pathlevel 0 4
-#pathlevel 1 0
-#end
-
-#newspell
-#copyspell "Finger of Death"
-#name "Wail of the Banshee"
-#descr "The caster emits a terrible scream that kills creatures that hear it."
-#details "Does not affect the caster or his mount."
-#flightspr -1
-#explspr 10200 -- curse
-#researchlevel 8
-#pathlevel 0 6
-#pathlevel 1 0
-#fatiguecost 60
-#range 0
-#range 2025
-#aoe 40
-#nextspell 0
- -- AN, MR negates, can be cast UW, undead/inanimate immune, internal dmg, does not affect caster
-#spec 36169535053107328
-#end
-
-#newspell
-#copyspell "Finger of Death"
-#name "Slay Living"
-#descr "The caster attempts to slay a living creature. Survivors will still be injured."
-#range 1
-#researchlevel 4
-#pathlevel 0 2
-#path 1 9 -- holy
-#pathlevel 1 2
-#end
-
-#newspell
-#copyspell "Harm Living"
-#name "Greater Harm Living"
-#damage 25
-#end
-
-#selectspell "Destruction"
-#name "Destruction (disabled)"
-#school -1
-#end
-
-#newspell
-#copyspell "Slay Living"
-#name "Destruction"
-#descr "The caster attempts to instantly slay the subject and consume its remains utterly."
-#prec 100
-#details " "
-#range 2025
-#pathlevel 0 3
-#pathlevel 1 3
-#nextspell "Greater Harm Living"
-#researchlevel 6
-#end
-
-#newspell
-#copyspell "Hypnotism"
-#name "Irresistible Dance"
-#school 4 -- enchantment
-#researchlevel 5
-#path 0 7 --glamour
-#pathlevel 0 3
-#path 1 4 -- astral
-#pathlevel 1 1
-#descr "The subject feels an undeniable urge to dance and begins doing so, complete with foot shuffling and tapping. The spell effect makes it impossible for the subject to do anything other than caper and prance in place."
-#aoe 0
-#range 1
-#spec 545915008 -- AN, mindless/undead/inanimate immune, can be cast underwater
-#end
-
-#newspell
-#copyspell "Disintegrate"
-#name "Polar Ray"
-#school 2 -- evocation
-#researchlevel 7
-#path 0 2 --water
-#pathlevel 0 2
-#path 1 4 --astral
-#pathlevel 1 2
-#descr "A blue-white ray of freezing air and ice springs from the caster's hand. The ray deals cold damage to anyone it hits."
-#spec 8389184 -- AP, can be cast UW, cold dam
-#end
-
-#newspell
-#name "Shout Deafen"
-#aoe 1
-#effect 3 -- fatigue damage
-#damage 20
-#spec 2305983746712535168 -- caster immune, mundane dmg, AN, MR for half dmg, can be cast UW
-#school -1
-#end
-
-#newspell
-#copyspell "Shout Deafen"
-#name "Minor Stun"
-#damage 20
-#effect 128
-#spec 140737496748160 -- AN, mr negates, caster immune, can be cast UW
-#end
-
-#newspell
-#name "Shout"
-#descr "The caster emits an ear-splitting yell that deafens and damages creatures in its path."
-#school 2 --evocation
-#researchlevel 3
-#path 0 7 --glamour
-#pathlevel 0 2
-#path 1 4 --astral
-#pathlevel 1 1
-#range 0
-#aoe 10
-#effect 2
-#damage 10
-#fatiguecost 25
-#spec 2305983746712535168 -- caster immune, mundane dmg, AN, MR for half dmg, can be cast UW
-#nextspell "Shout Deafen"
-#end
-
-#newspell
-#copyspell "Shout"
-#name "Sound Burst"
-#descr "A burst of sound damages a few creatures and stuns the weak ones"
-#damage 5
-#pathlevel 0 1
-#pathlevel 1 0
-#researchlevel 1
-#fatiguecost 10
-#range 2025
-#aoe 1
-#nextspell "Minor Stun"
-#end
-
-#newspell
-#copyspell "Shout Deafen"
-#name "Greater Shout Deafen"
-#damage 40
-#nextspell "Minor Stun"
-#end
-
-#newspell
-#copyspell "Shout"
-#name "Greater Shout"
-#descr "The caster emits an ear-splitting yell that stuns and damages creatures in its path."
-#researchlevel 6
-#damage 15
-#pathlevel 0 4
-#pathlevel 1 1
-#aoe 25
-#fatiguecost 25
-#nextspell "Greater Shout Deafen"
-#end
-
-#newspell
-#copyspell "Desiccation"
-#name "Horrid Wilting"
-#descr "The caster evaporates moisture from the body of each living creature in the target area, dealing potential lethal damage in a wide area."
-#school 5 -- thaum (neutral necromancy)
-#researchlevel 7
-#pathlevel 0 4
-#path 1 4 --astral
-#pathlevel 1 3
-#range 5040
-#aoe 4020
-#effect 2
-#damage 2012
-#fatiguecost 40
-#spec 2341871806772150400 -- AN, undead/inanimate immune, mundane damage MR half
-#end
-
-#selectspell "Flying Shards"
-#name "Magic Stone"
-#descr "The caster transmutes several pebbles so that they strike with great force when thrown or slung."
-#school 1 -- alteration (transmutation)
-#path 1 9 --holy
-#pathlevel 1 1
-#spec 549764202496 -- blunt, can be used underwater
-#end
-
-#selectspell "Blood Poisoning"
-#name "Poison"
-#descr "The caster calls upon the venomous powers of natural predators to infect the subject with a horrible poison."
-#range 1
-#pathlevel 0 1
-#path 1 5 --death
-#pathlevel 1 1
-#range 1
-#damage 25
-#school 5 -- thaum (neutral necromancy)
-#end
-
-#selectspell "Gift of the Serpent"
-#name "Neutralize Poison"
-#descr "The caster mitigates the onset of poisons in a small group of allies."
-#details "Poison Resistance + 10"
-#school 0 --conjuration (healing)
-#end
-
-#selectspell "Personal Poison Resistance"
-#school -1
-#end
-
-#selectspell "Protection from Poison"
-#school -1
-#end
-
-#selectspell "Poison Ward"
-#school -1
-#end
-
-#selectspell "Serpent's Blessing"
-#school -1
-#end
-
-#newspell
-#copyspell "Summon Nature's Ally I"
-#name "Giant Vermin"
-#descr "The caster transmutes a scorpion into a large and powerful minion under their command."
-#damage 524 --scorpion beast
-#school 1 --alteration
-#researchlevel 3
-#pathlevel 0 2
-#end"
-
-#newspell
-#copyspell "Conflagration"
-#name "Catch Fire"
-#aoe 1
-#school -1
-#end
-
-#newspell
-#copyspell "Scorching Ray"
-#name "Fire Seeds"
-#descr "The caster transforms four acorns into combustible explosives. Each acorn deals fire damage in an area and sets fire to anything it hits."
-#range 40
-#school 3 -- const (conjuration - creation)
-#researchlevel 6
-#speedmult 1
-#pathlevel 0 3
-#path 1 9 -- holy
-#pathlevel 1 1
-#nreff 4
-#aoe 3
-#explspr 10113 -- fireball
-#strikesound 89 -- explosion
-#nextspell "Catch Fire"
-#end
-
-#selectspell "Animate Tree"
-#name "Animate Plants"
-#descr "The caster imbues inanimate plants with mobility and a semblance of life. Each animated plant then immediately attacks the caster's enemies."
-#researchlevel 6
-#pathlevel 0 3
-#path 1 9 -- holy
-#pathlevel 1 1
-#nreff 1001
-#range 3025
-#end
-
-#newspell
-#copyspell "Summon Monster I"
-#name "Whirlwind"
-#descr "The caster creates a powerful cyclone of raging wind to tear through the ranks of most enemies. Large monsters and giants may be too heavy to be tossed by the winds."
-#details "Size 6 trampler"
-#damage 5530 -- whirlwind
-#school 2 -- evo
-#researchlevel 7
-#range 0
-#path 0 1 -- air
-#pathlevel 0 4
-#path 1 9 -- holy
-#pathlevel 1 1
-#fatiguecost 100
-#end
-
-#newspell
-#copyspell "Personal Regeneration"
-#name "Righteous Might"
-#descr "The caster is filled with divine power, increasing their size and resistance to damage."
-#details "Size +1, HP +30%, Str +3, Def -1, Natural Protection +5. (Natural protection does not stack with Hard Skin bless)"
-#damage 70370891661312 -- enlargement
-#school 1 --alteration (transmutation)
-#researchlevel 4
-#path 0 9 -- holy
-#pathlevel 0 2
-#fatiguecost 40
-#end
-
-#selectspell "Bone Melter"
-#name "Implosion"
-#descr "The caster create a destructive resonance in a corporeal creature's body. The victim collapses in on itself and dies."
-#school 2 --evocation
-#researchlevel 8
-#casttime 50
-#fatiguecost 10
-#path 0 9 --holy
-#pathlevel 0 3
-#path 1 8 --blood
-#pathlevel 1 2
-#aoe 0
-#range 2025
-#prec 100
-#end
-
-#newspell
-#copyspell "Haste"
-#name "Abyssal Frenzy"
-#descr "The caster speaks a dark epithet and transforms a few creatures into a demonic version of their true selves."
-#details "Grants +2 Att, +2 Def and Combat speed is doubled; +4 Strength; subjects are driven berserk"
-#aoe 1
-#explspr 10103
-#strikesound 106 --banshee
-#path 0 8 -- blood
-#pathlevel 0 2
-#path 1 9 -- holy
-#pathlevel 1 3
-#researchlevel 6
-#damage 262528 -- quickness, +4 strength, gone berserk
-#spec 818544640 -- does not affect mindless, undead, inanimate, demons; enemies immune, can be cast UW
-#end
-
-#newspell
-#copyspell "Abyssal Frenzy"
-#name "Mass Abyssal Frenzy"
-#descr "The caster speaks a dark epithet and transforms a large group of creatures into demonic versions of their true selves."
-#details "Grants +2 Att, +2 Def and Combat speed is doubled; +4 Strength; subjects are driven berserk"
-#pathlevel 0 4
-#researchlevel 8
-#aoe 3001
-#end
-
-#newspell
-#name "Nature's Avatar"
-#descr "The caster infuses an animal with the spirit of nature, vastly increasing its speed and might.""
-#details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait.
-Grants +2 Att, +2 Def and Combat speed is doubled;
-Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
-#school 2 -- evocation
-#researchlevel 8
-#path 0 6 --nature
-#pathlevel 0 4
-#path 1 9 --holy
-#pathlevel 1 1
-#range 15
--- allies only, animals only, no illusion/spiritform, no undead, no demon, no void sanity, can be cast underwater
-#spec 4785074885754884
-#effect 10 -- buff type 1
-#damage 1101659373568 -- quickness + enlargement + limited enlargement
-#aoe 0
-#explspr 10104 -- green explosion
-#flightspr -1
-#strikesound 78 -- lion
-#end
-
-#selectspell "Summon Hawk"
-#school -1
-#end
-
-#selectspell "Conjure Phantasmal Wolves"
-#school -1
-#end
-
-#selectspell "Nest of Salamanders"
-#school -1
-#end
-
-#selectspell "School of Sharks"
-#school -1
-#end
-
-#selectspell "Summon Lammashtas"
-#school -1
-#end
-
-#selectspell "Maggots"
-#school -1
-#end
-
-#selectspell "Nest of Firesnakes"
-#school -1
-#end
-
-#selectspell "Conjure Phantasmal Warriors"
-#school -1
-#end
-
-#selectspell "Will o' the Wisp"
-#school -1
-#end
-
-#selectspell "Corpse Candle"
-#school -1
-#end
-
-#selectspell "Howl"
-#school -1
-#end
-
-#selectspell "Conjure Phantasmal Beast"
-#school -1
-#end
-
-#selectspell "Shark Attack"
-#school -1
-#end
-
-#selectspell "Summon Sprites"
-#school -1
-#end
-
-#selectspell "Conjure Phantasmal Knight"
-#school -1
-#end
-
-#selectspell "Living Fire"
-#school -1
-#end
-
-#selectspell "Living Clouds"
-#school -1
-#end
-
-#selectspell "Living Water"
-#school -1
-#end
-
-#selectspell "Living Earth"
-#school -1
-#end
-
-#selectspell "Twist Fate"
-#school -1
-#end
-
-#selectspell "Hand of Dust"
-#school -1
-#end
-
-#selectspell "Poison Touch"
-#school -1
-#end
-
-#selectspell "Charge Body"
-#school -1
-#end
-
-#selectspell "Fists of iron"
-#school -1
-#end
-
-#selectspell "Skeletal Body"
-#school -1
-#end
-
-#selectspell "Eagle Eyes"
-#school -1
-#end
-
-#selectspell "Blurred Body"
-#school -1
-#end
-
-#selectspell "Burn"
-#school -1
-#end
-
-#selectspell "Ice Shield"
-#school -1
-#end
-
-#selectspell "Gooey Water"
-#school -1
-#end
-
-#selectspell "Armor of Achilles"
-#school -1
-#end
-
-#selectspell "Gift of Cheated Fate"
-#school -1
-#end
-
-#selectspell "Immolation"
-#school -1
-#end
-
-#selectspell "Protective Winds"
-#school -1
-#end
-
-#selectspell "Freeze"
-#school -1
-#end
-
-#selectspell "Gift of Cat Eyes"
-#school -1
-#end
-
-#selectspell "Mossbody"
-#school -1
-#end
-
-#selectspell "Torpor"
-#school -1
-#end
-
-#selectspell "Group Blur"
-#school -1
-#end
-
-#selectspell "Combustion"
-#school -1
-#end
-
-#selectspell "Lacerating Winds"
-#school -1
-#end
-
-#selectspell "Liquid Body"
-#school -1
-#end
-
-#selectspell "Encase in Ice"
-#school -1
-#end
-
-#selectspell "Curse of Stones"
-#school -1
-#end
-
-#selectspell "Stygian Skin"
-#school -1
-#end
-
-#selectspell "Elemental Fortitude"
-#school -1
-#end
-
-#selectspell "Twilight"
-#school -1
-#end
-
-#selectspell "Incinerate"
-#school -1
-#end
-
-#selectspell "Gift of Formlessness"
-#school -1
-#end
-
-#selectspell "Winter's Chill"
-#school -1
-#end
-
-#selectspell "Enfeeble"
-#school -1
-#end
-
-#selectspell "Invulnerability"
-#school -1
-#end
-
-#selectspell "Drain Life"
-#school -1
-#end
-
-#selectspell "Cat-eyed Warriors"
-#school -1
-#end
-
-#selectspell "Nightfall"
-#school -1
-#end
-
-#selectspell "Shadow Warriors"
-#school -1
-#end
-
-#selectspell "Boil"
-#school -1
-#end
-
-#selectspell "Frozen Heart"
-#school -1
-#end
-
-#selectspell "Iron Bane"
-#school -1
-#end
-
-#selectspell "Control"
-#school -1
-#end
-
-#selectspell "Rewrite Fate"
-#school -1
-#end
-
-#selectspell "Soul Vortex"
-#school -1
-#end
-
-#selectspell "Skeletal Legion"
-#school -1
-#end
-
-#selectspell "Venomous Death"
-#school -1
-#end
-
-#selectspell "Eagle-eyed Warriors"
-#school -1
-#end
-
-#selectspell "Phoenix Pyre"
-#school -1
-#end
-
-#selectspell "Arrow Fend"
-#school -1
-#end
-
-#selectspell "Wave Warriors"
-#school -1
-#end
-
-#selectspell "Doom"
-#school -1
-#end
-
-#selectspell "Will of the Fates"
-#school -1
-#end
-""
-#selectspell "Bone Grinding"
-#school -1
-#end
-
-#selectspell "Curse of the Frog Prince"
-#school -1
-#end
-
-#selectspell "Army of Shades"
-#school -1
-#end
-
-#selectspell "Conflagration"
-#school -1
-#end
-
-#selectspell "Liquify"
-#school -1
-#end
-
-#selectspell "Arcane Domination"
-#school -1
-#end
-
-#selectspell "Army of Giants"
-#school -1
-#end
-
-#selectspell "Trueshot"
-#school -1
-#end
-
-#selectspell "Windrunner"
-#school -1
-#end
-
-#selectspell "Animate Skeleton"
-#school -1
-#end
-
-#selectspell "Animate Zombies"
-#school -1
-#end
-
-#selectspell "False Fetters"
-#school -1
-#end
-
-#selectspell "Water Shield"
-#school -1
-#end
-
-#selectspell "Breath of Winter"
-#school -1
-#end
-
-#selectspell "Gift of the Hare"
-#school -1
-#end
-
-#selectspell "Envenom Arrows"
-#school -1
-#end
-
-#selectspell "Personal Regeneration"
-#school -1
-#end
-
-#selectspell "Shroud of Splendor"
-#school -1
-#end
-
-#selectspell "Farflight"
-#school -1
-#end
-
-#selectspell "Arrow of the Western Wind"
-#school -1
-#end
-
-#selectspell "Raise Skeletons"
-#school -1
-#end
-
-#selectspell "Regeneration"
-#school -1
-#end
-
-#selectspell "Shroud of Bewilderment"
-#school -1
-#end
-
-#selectspell "Horrible Visage"
-#school -1
-#end
-
-#selectspell "Trueshot Warriors"
-#school -1
-#end
-
-#selectspell "Earth Shatter Hammers"
-#school -1
-#end
-
-#selectspell "Shroud of Flying Shards"
-#school -1
-#end
-
-#selectspell "Spell Ward"
-#school -1
-#end
-
-#selectspell "Astral Healing"
-#school -1
-#end
-
-#selectspell "Raise Dead"
-#school -1
-#end
-
-#selectspell "Serpent Fang Arrows"
-#school -1
-#end
-
-#selectspell "Gift of Splendor"
-#school -1
-#end
-
-#selectspell "Farflight Arrows"
-#school -1
-#end
-
-#selectspell "Friendly Currents"
-#school -1
-#end
-
-#selectspell "Quagmire"
-#school -1
-#end
-
-#selectspell "Horde of Skeletons"
-#school -1
-#end
-
-#selectspell "Group Regeneration"
-#school -1
-#end
-
-#selectspell "Heat from Hell"
-#school -1
-#end
-
-#selectspell "Greater Farflight"
-#school -1
-#end
-
-#selectspell "Water Ward"
-#school -1
-#end
-
-#selectspell "Grip of Winter"
-#school -1
-#end
-
-#selectspell "Earthquake Warriors"
-#school -1
-#end
-
-#selectspell "Rigor Mortis"
-#school -1
-#end
-
-#selectspell "Hail of Serpent Fangs"
-#school -1
-#end
-
-#selectspell "Relief"
-#school -1
-#end
-
-#selectspell "Steal Sight"
-#school -1
-#end
-
-#selectspell "Aura of Splendor"
-#school -1
-#end
-
-#selectspell "Antimagic"
-#school -1
-#end
-
-#selectspell "Life after Death"
-#school -1
-#end
-
-#selectspell "Mass Regeneration"
-#school -1
-#end
-
-#selectspell "Nightmare Masks"
-#school -1
-#end
-
-#selectspell "Warriors of the Dawn"
-#school -1
-#end
-
-#selectspell "Unraveling"
-#school -1
-#end
-
-#selectspell "Fields of the Dead"
-#school -1
-#end
-
-#selectspell "Army Regeneration"
-#school -1
-#end
-
-#selectspell "Mists of Deception"
-#school -1
-#end
-
-#selectspell "Desiccation"
-#school -1
-#end
-
-#selectspell "Farstrike"
-#school -1
-#end
-
-#selectspell "Dust to Dust"
-#school -1
-#end
-
-#selectspell "Decay"
-#school -1
-#end
-
-#selectspell "Personal Luck"
-#school -1
-#end
-
-#selectspell "Bonds of Fire"
-#school -1
-#end
-
-#selectspell "Steal Breath"
-#school -1
-#end
-
-#selectspell "Mind Burn"
-#school -1
-#end
-
-#selectspell "Beast Fury"
-#school -1
-#end
-
-#selectspell "Sailors' Death"
-#school -1
-#end
-
-#selectspell "Iron Will"
-#school -1
-#end
-
-#selectspell "Panic"
-#school -1
-#end
-
-#selectspell "Luck"
-#school -1
-#end
-
-#selectspell "Despair"
-#school -1
-#end
-
-#selectspell "Prison of Fire"
-#school -1
-#end
-
-#selectspell "Curse of the Desert"
-#school -1
-#end
-
-#selectspell "Ferocity"
-#school -1
-#end
-
-#selectspell "Rage of the Cornered Rat"
-#school -1
-#end
-
-#selectspell "Wildness"
-#school -1
-#end
-
-#selectspell "Slumber"
-#school -1
-#end
-
-#selectspell "Serenity"
-#school -1
-#end
-
-#selectspell "Leeching Darkness"
-#school -1
-#end
-
-#selectspell "Pack Ferocity"
-#school -1
-#end
-
-#selectspell "The Ravenous Swarm"
-#school -1
-#end
-
-#selectspell "Group Luck"
-#school -1
-#end
-
-#selectspell "Wither Bones"
-#school -1
-#end
-
-#selectspell "Growing Fury"
-#school -1
-#end
-
-#selectspell "Unending Nightmare"
-#school -1
-#end
-
-#selectspell "Sandman's Blessing"
-#school -1
-#end
-
-#selectspell "Plague"
-#school -1
-#end
-
-#selectspell "Fury of the Wild"
-#school -1
-#end
-
-#selectspell "Hydrophobia"
-#school -1
-#end
-
-#selectspell "Soul Drain"
-#school -1
-#end
-
-#selectspell "Undead Mastery"
-#school -1
-#end
-
-#selectspell "Battle Fortune"
-#school -1
-#end
-
-#selectspell "Bleed"
-#school -1
-#end
-
-#selectspell "Blood Burst"
-#school -1
-#end
-
-#selectspell "Blood Heal"
-#school -1
-#end
-
-#selectspell "Summon Imps"
-#school -1
-#end
-
-#selectspell "Blood Boil"
-#school -1
-#end
-
-#selectspell "Banish Demon"
-#school -1
-#end
-
-#selectspell "Agony"
-#school -1
-#end
-
-#selectspell "Hell Power"
-#school -1
-#end
-
-#selectspell "Leeching Touch"
-#school -1
-#end
-
-#selectspell "Pain Transfer"
-#school -1
-#end
-
-#selectspell "Hellfire"
-#school -1
-#end
-
-#selectspell "Blood Lust"
-#school -1
-#end
-
-#selectspell "Hellbind Heart"
-#school -1
-#end
-
-#selectspell "Summon Illearth"
-#school -1
-#end
-
-#selectspell "Bloodletting"
-#school -1
-#end
-
-#selectspell "Soul Transaction"
-#school -1
-#end
-
-#selectspell "Harm"
-#school -1
-#end
-
-#selectspell "Blood Rain"
-#school -1
-#end
-
-#selectspell "Leech"
-#school -1
-#end
-
-#selectspell "Purify Blood"
-#school -1
-#end
-
-#selectspell "Damage Reversal"
-#school -1
-#end
-
-#selectspell "Rush of Strength"
-#school -1
-#end
-
-#selectspell "Life for a Life"
-#school -1
-#end
-
-#selectspell "Infernal Prison"
-#school -1
-#end
-
-#selectspell "Claws of Kokytos"
-#school -1
-#end
-
-#selectspell "All-consuming Pyre"
-#school -1
-#end
-
-#selectspell "Resist Magic"
-#school -1
-#end
