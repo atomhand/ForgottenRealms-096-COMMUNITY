@@ -22,7 +22,7 @@ Other changes
 Spells rework scheme
  * Abjuration -> Alteration
  * Conjuration (exception creation) -> Conjuration
- * Conjuration (creation) -> split between Construction & Conjuration (earth/construction spells to Const, clouds to conj)
+ * Conjuration (creation) -> Construction
  * Divination -> Thaumaturgy
  * Enchantment -> Enchantment
  * Evil Necromancy -> Blood
@@ -30,7 +30,7 @@ Spells rework scheme
  * Illusion -> Thaumaturgy
  * Transmutation -> Alteration
 
-Spell levels:
+Interpreting DnD spell levels
  * Research level is typically spell level -1
  * Path level is typically half spell level (rounded up)
  * These are adjusted for balance reasons

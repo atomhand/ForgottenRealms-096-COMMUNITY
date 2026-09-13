@@ -64193,7 +64193,7 @@ This nation is merely for watching games in the background. It is located in the
 #newspell
 #copyspell 775 --Gooey Water
 #name "Grease"
-#descr "The caster conjures an area of slimey grease. Units stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
+#descr "The caster conjures an area of slimy grease. Units stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
 #spec 4096 -- Mr roll negates
 #school 3 -- construction (conj - creation)
 #researchlevel 1
@@ -72710,8 +72710,8 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #end
 
 #newmonster 5295
-#copystats 5429 -- Djinn
-#copyspr 5429 -- Djinn
+#copystats 5428 -- Djinn
+#copyspr 5428 -- Djinn
 #name "Djinn"
 #descr "This mid-rank genie has been summoned to fight alongside a wizard in battle."
 #montag 14007 -- Summon Monster VII (land)
@@ -73419,7 +73419,10 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #details " "
 #school 4 --enchantment
 #path 0 7  --Glamour
+#path 1 4 --astral
+#pathlevel 1 1
 #researchlevel 2
+#aoe 3001
 -- Does not affect mindless, inanimate, enemy, undead, or the caster; can be cast underwater
 #spec 140738038464512
 #end
@@ -75053,8 +75056,8 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #damage 999
 #spec 17205035136
 #school -1
--- AN, MR negates easily, may use UW, undead/inanimate/mindless immune, false damage
-#spec 17742561408
+-- AN, MR negates easily, may use UW, undead/inanimate/mindless immune, false damage, does not affect allies
+#spec 17742823552
 #end
 
 #selectspell "Visions of Death"
@@ -76680,7 +76683,8 @@ Violet Beam: Plane shift to the inferno"
 
 #selectspell "Gift of the Serpent"
 #name "Neutralize Poison"
-#descr "The caster delays the onset of poisons in a small group of allies."
+#descr "The caster mitigates the onset of poisons in a small group of allies."
+#details "Poison Resistance + 10"
 #school 0 --conjuration (healing)
 #end
 
@@ -77433,10 +77437,6 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #school -1
 #end
 
-#selectspell "Poison"
-#school -1
-#end
-
 #selectspell "Pack Ferocity"
 #school -1
 #end
@@ -77590,5 +77590,9 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end
 
 #selectspell "All-consuming Pyre"
+#school -1
+#end
+
+#selectspell "Resist Magic"
 #school -1
 #end
