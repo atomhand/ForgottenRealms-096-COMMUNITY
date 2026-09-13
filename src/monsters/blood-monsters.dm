@@ -107,9 +107,10 @@ Young Barghests will mature upon reaching 35 XP, at which time they will gain aw
 #magicboost 4 -1
 #magicboost 5 -1
 #magicboost 7 -1
-#magicskill 8 -1
+#magicboost 8 -1
 #xpshape 35
 #end
+
 
 
 -- 5109 -- Matured Barghest

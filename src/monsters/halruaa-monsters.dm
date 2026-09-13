@@ -302,8 +302,8 @@ Such individuals that achieved this feat, and earned the title of a 'Halruaan El
 #magicskill 3 1
 #magicskill 4 3
 #magicskill 7 1
-#magicskill 18304 200
-#magicskill 18304 200
+#custommagic 18304 200
+#custommagic 18304 200
 #nobadevents 20
 #allrange 1
 #masterrit 1

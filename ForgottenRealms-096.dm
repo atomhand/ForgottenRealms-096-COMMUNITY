@@ -14151,9 +14151,10 @@ Young Barghests will mature upon reaching 35 XP, at which time they will gain aw
 #magicboost 4 -1
 #magicboost 5 -1
 #magicboost 7 -1
-#magicskill 8 -1
+#magicboost 8 -1
 #xpshape 35
 #end
+
 
 
 -- 5109 -- Matured Barghest
@@ -17833,7 +17834,7 @@ In southernmost Faerûn, the Tashalan were a distinct human culture of loosely a
 #copystats 352
 #copyspr 830
 #name "Tashalan Adept"
-#descr "The people's of Tashalar were skeptical of arcane magic, believing it to be the cause of much suffering throughout the Realms. Their traditions encouraged more mundane, physical resistance to their enemies, and as such, very few became "adept in the arts. Psionics and divine magic were far more common, as was the worship of nature deities and genius loci."
+#descr "The people's of Tashalar were skeptical of arcane magic, believing it to be the cause of much suffering throughout the Realms. Their traditions encouraged more mundane, physical resistance to their enemies, and as such, very few became adept in the arts. Psionics and divine magic were far more common, as was the worship of nature deities and genius loci."
 #gcost 10010
 #hp 16
 #mr 15
@@ -21345,6 +21346,8 @@ Throughout the four centuries of human occupation since, the Twisted Tower has r
 --COMPILED FROM src/monsters\demon-recruits.dm
 ------------------------------------------------------------------------------------------------------------------
 
+
+
 -- 7448 -- "Tanarukk" 
 #newmonster 7448 
 #copystats 6600
@@ -24762,8 +24765,8 @@ Though religion played a large part in drow society, the caste system and other 
 #magicskill 7 1
 #magicskill 8 1
 #magicskill 9 2
-#magicskill 63488 100
-#magicskill 63488 100
+#custommagic 63488 100
+#custommagic 63488 100
 #holy
 #gcost 10020
 #noslowrec
@@ -33203,8 +33206,8 @@ Such individuals that achieved this feat, and earned the title of a 'Halruaan El
 #magicskill 3 1
 #magicskill 4 3
 #magicskill 7 1
-#magicskill 18304 200
-#magicskill 18304 200
+#custommagic 18304 200
+#custommagic 18304 200
 #nobadevents 20
 #allrange 1
 #masterrit 1
@@ -34760,7 +34763,7 @@ Leaders, nobles, loremasters, and many who inherited wealth and status venerated
 #nametype 281 -- Tethyrian Female Names
 #descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common. Silvanus, Mielikki and especially Eldath, the Green Goddess and Mother Guardian of Groves were the most common deities worshipped by Tethyrian Druids. Most choose the wildshape form of the gryphon.
 
-Take care of your equipment. The gryphon form taken by the Tethyrian Druid allows for her armor, helm, boots, and misc items to be retained, but weapons may be lost in combat. Adjust accordingly.""
+Take care of your equipment. The gryphon form taken by the Tethyrian Druid allows for her armor, helm, boots, and misc items to be retained, but weapons may be lost in combat. Adjust accordingly."
 #female
 #gcost 10010
 #hp 18
@@ -38861,7 +38864,7 @@ Due to their gills, sea elves could only leave the water for brief periods. Whil
 #name "Sea Elf Druid" 
 #descr "Sea Elf Druids see themselves as the defenders of the oceans and waves and work to prevent the surface world from polluting the aquatic realms with their lackadaisical outlook on the natural world. Many join the Circle Beneath the Waves, an organization of like-minded wavekeepers and allied druids and rangers. 
 
-Due to their gills, sea elves could only leave the water for brief periods. While there were common workarounds, they were not cheap and this additional expense of keeping large numbers of sea elves on land made the cost a significant consideration. Additionally, the awkardness of their webbed feet led to increased encumbrance, reduced speed, and the loss of some other abilities."
+Due to their gills, sea elves could only leave the water for brief periods. While there were common workarounds, they were not cheap and this additional expense of keeping large numbers of sea elves on land made the cost a significant consideration. Additionally, the awkardness of their webbed feet led to increased encumbrance, reduced speed, and the loss of some other abilities.
 
 Sea Elf Druids can wildshape into Sea Cats - dangerous predators capable of living on both land and in the sea. "
 #addupkeep 20  
@@ -41547,7 +41550,7 @@ The principle temples of the church of Osiris were the Crypt of Shadows located 
 #name "Anhurite Infiltrator"
 #descr "Sacred spies and assassins, members of the Order of the Watchful Lion were often Mulhorand's first line of defense. In addition to reporting important events and exploring new lands, Anhurite Infiltrators were equipped for assassinations when divine duty demanded it."
 #hp 18
-#magicskill 7 -1
+#magicskill 7 1
 #magicskill 9 1
 #researchbonus -5
 #spy
@@ -56021,7 +56024,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #selectspell "Will of the Fates"
 #school -1
 #end
-""
+
 #selectspell "Bone Grinding"
 #school -1
 #end
@@ -59467,7 +59470,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #name "Summon a Spirit Naga"
 #descr "Spirit Nagas are the most wicked of all their kind. Powerful sorcerers, they abuse their immortality by rushing into conflict for the sheer joy of causing pain and death. They are equally excellent researchers and combatants."
 #school 0
-#researchlevel 45
+#researchlevel 5
 #path 0 8
 #pathlevel 0 3
 #fatiguecost 7500
@@ -63086,7 +63089,7 @@ Violet Beam: Plane shift to the inferno"
 #school 1 --alteration
 #researchlevel 3
 #pathlevel 0 2
-#end"
+#end
 
 #newspell
 #copyspell "Conflagration"
@@ -63198,7 +63201,7 @@ Violet Beam: Plane shift to the inferno"
 
 #newspell
 #name "Nature's Avatar"
-#descr "The caster infuses an animal with the spirit of nature, vastly increasing its speed and might.""
+#descr "The caster infuses an animal with the spirit of nature, vastly increasing its speed and might."
 #details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait.
 Grants +2 Att, +2 Def and Combat speed is doubled;
 Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"

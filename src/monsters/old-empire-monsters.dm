@@ -1085,7 +1085,7 @@ The principle temples of the church of Osiris were the Crypt of Shadows located 
 #name "Anhurite Infiltrator"
 #descr "Sacred spies and assassins, members of the Order of the Watchful Lion were often Mulhorand's first line of defense. In addition to reporting important events and exploring new lands, Anhurite Infiltrators were equipped for assassinations when divine duty demanded it."
 #hp 18
-#magicskill 7 -1
+#magicskill 7 1
 #magicskill 9 1
 #researchbonus -5
 #spy

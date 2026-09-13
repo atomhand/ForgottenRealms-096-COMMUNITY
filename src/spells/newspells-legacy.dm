@@ -1825,7 +1825,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #name "Summon a Spirit Naga"
 #descr "Spirit Nagas are the most wicked of all their kind. Powerful sorcerers, they abuse their immortality by rushing into conflict for the sheer joy of causing pain and death. They are equally excellent researchers and combatants."
 #school 0
-#researchlevel 45
+#researchlevel 5
 #path 0 8
 #pathlevel 0 3
 #fatiguecost 7500

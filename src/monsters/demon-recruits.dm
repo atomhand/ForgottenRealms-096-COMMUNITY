@@ -1,4 +1,6 @@
 
+
+
 -- 7448 -- "Tanarukk" 
 #newmonster 7448 
 #copystats 6600

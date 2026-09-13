@@ -2424,7 +2424,7 @@ Violet Beam: Plane shift to the inferno"
 #school 1 --alteration
 #researchlevel 3
 #pathlevel 0 2
-#end"
+#end
 
 #newspell
 #copyspell "Conflagration"
@@ -2536,7 +2536,7 @@ Violet Beam: Plane shift to the inferno"
 
 #newspell
 #name "Nature's Avatar"
-#descr "The caster infuses an animal with the spirit of nature, vastly increasing its speed and might.""
+#descr "The caster infuses an animal with the spirit of nature, vastly increasing its speed and might."
 #details "Only ordinary, living animals are affected; demons, undead, magical beasts and aberrations (marked with Void Sanity) are not affected even if they have the animal trait.
 Grants +2 Att, +2 Def and Combat speed is doubled;
 Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"

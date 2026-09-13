@@ -2069,7 +2069,7 @@ In southernmost Faerûn, the Tashalan were a distinct human culture of loosely a
 #copystats 352
 #copyspr 830
 #name "Tashalan Adept"
-#descr "The people's of Tashalar were skeptical of arcane magic, believing it to be the cause of much suffering throughout the Realms. Their traditions encouraged more mundane, physical resistance to their enemies, and as such, very few became "adept in the arts. Psionics and divine magic were far more common, as was the worship of nature deities and genius loci."
+#descr "The people's of Tashalar were skeptical of arcane magic, believing it to be the cause of much suffering throughout the Realms. Their traditions encouraged more mundane, physical resistance to their enemies, and as such, very few became adept in the arts. Psionics and divine magic were far more common, as was the worship of nature deities and genius loci."
 #gcost 10010
 #hp 16
 #mr 15

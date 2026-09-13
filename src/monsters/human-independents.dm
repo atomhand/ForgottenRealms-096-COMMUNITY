@@ -1112,7 +1112,7 @@ Leaders, nobles, loremasters, and many who inherited wealth and status venerated
 #nametype 281 -- Tethyrian Female Names
 #descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common. Silvanus, Mielikki and especially Eldath, the Green Goddess and Mother Guardian of Groves were the most common deities worshipped by Tethyrian Druids. Most choose the wildshape form of the gryphon.
 
-Take care of your equipment. The gryphon form taken by the Tethyrian Druid allows for her armor, helm, boots, and misc items to be retained, but weapons may be lost in combat. Adjust accordingly.""
+Take care of your equipment. The gryphon form taken by the Tethyrian Druid allows for her armor, helm, boots, and misc items to be retained, but weapons may be lost in combat. Adjust accordingly."
 #female
 #gcost 10010
 #hp 18

@@ -22,8 +22,8 @@ Though religion played a large part in drow society, the caste system and other 
 #magicskill 7 1
 #magicskill 8 1
 #magicskill 9 2
-#magicskill 63488 100
-#magicskill 63488 100
+#custommagic 63488 100
+#custommagic 63488 100
 #holy
 #gcost 10020
 #noslowrec

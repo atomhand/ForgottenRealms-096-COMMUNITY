@@ -357,7 +357,7 @@
 #selectspell "Will of the Fates"
 #school -1
 #end
-""
+
 #selectspell "Bone Grinding"
 #school -1
 #end

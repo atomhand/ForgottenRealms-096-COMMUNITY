@@ -755,7 +755,7 @@ Due to their gills, sea elves could only leave the water for brief periods. Whil
 #name "Sea Elf Druid" 
 #descr "Sea Elf Druids see themselves as the defenders of the oceans and waves and work to prevent the surface world from polluting the aquatic realms with their lackadaisical outlook on the natural world. Many join the Circle Beneath the Waves, an organization of like-minded wavekeepers and allied druids and rangers. 
 
-Due to their gills, sea elves could only leave the water for brief periods. While there were common workarounds, they were not cheap and this additional expense of keeping large numbers of sea elves on land made the cost a significant consideration. Additionally, the awkardness of their webbed feet led to increased encumbrance, reduced speed, and the loss of some other abilities."
+Due to their gills, sea elves could only leave the water for brief periods. While there were common workarounds, they were not cheap and this additional expense of keeping large numbers of sea elves on land made the cost a significant consideration. Additionally, the awkardness of their webbed feet led to increased encumbrance, reduced speed, and the loss of some other abilities.
 
 Sea Elf Druids can wildshape into Sea Cats - dangerous predators capable of living on both land and in the sea. "
 #addupkeep 20  

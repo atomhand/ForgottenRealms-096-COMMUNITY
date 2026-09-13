@@ -18,6 +18,8 @@ Other changes
  * Wolf bite attack replaced with Bite and Trip
  * Morkoths set to size 4 (from 8)
  * Sebekian Crocodile shouldn't have humanoid slots
+ * Priestess of Lolth, Elder Councillor, Anhurite Infiltrator were missing their random paths due to a typo
+ * Spirit Naga is now usable (think its RL being 45 was a typo)
 
 Spells rework scheme
  * Abjuration -> Alteration
