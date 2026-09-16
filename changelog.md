@@ -1,5 +1,5 @@
 
-## 0.96 Candidate A ##
+## 0.96 Candidate A
 
 Around ~211 added or reworked spells
 Many spells disabled due to overlap, or lacking an equivalent in D&D 3.5e
@@ -68,6 +68,7 @@ Fixes
    * Gray One disease grinder (This seems extremely strong, review as a balance concern)
    * Cimbari sage magic path (S1)
 
+## 0.95 Indev
   
 Integrate some changes/fixes from Razorfire's 0.95 indev version
  * Goblin buffs
@@ -84,7 +85,7 @@ Integrate some changes/fixes from Razorfire's 0.95 indev version
    * Several new sites - Tethyr seems to be mosted affected
      * Indev version doesn't include the updated map with the sites added
 
-## 0.95 Community Patch ##
+## 0.95 Community Patch
 
 Balance Changes
  * Nerf excessively cheap Blood summoned demon mages. Reason: Blood hunt -> summon more blood hunters engine scales way too fast.
