@@ -368,8 +368,8 @@ Lion taming became an important tradition and lions were used in gladiatorial ar
 #okleader
 #beastmaster 3
 #unsurr 2
-#makemonsters1 -- 7694 -- Faerûnian Lion
-#batstartsum1 -- 7694 -- Faerûnian Lion
+#makemonsters1 7694 -- Faerûnian Lion
+#batstartsum1 7694 -- Faerûnian Lion
 #end
 
 -- 7692 -- Chondathan Knight-errant
@@ -502,8 +502,8 @@ As inheritors of the Jhaamdathan psiocracy, Chondathans do not have a strong arc
 #holy
 #magicskill 6 2
 #magicskill 9 1
-#cusommagic 1920 200 -- EAFW
-#cusommagic 8192 25 -- N
+#custommagic 1920 200 -- EAFW
+#custommagic 8192 25 -- N
 #nobadevents 20
 #incprovdef 1
 #incunrest -10
@@ -797,7 +797,7 @@ Tethyrians could commonly be found in Amn, Calimshan, Cormyr, the Dragon Coast, 
 #armor 5 -- leather cuirass
 #armor 119 -- reinforced leather cap
 #ambidextrous 2 
-#stealth 15
+#stealthy 15
 #pillagebonus 2
 #mountainsurvival
 #forestsurvival
@@ -1133,8 +1133,8 @@ Take care of your equipment. The gryphon form taken by the Tethyrian Druid allow
 #holy
 #magicskill 6 2
 #magicskill 9 1
-#cusommagic 1920 100 -- EAFW
-#cusommagic 10112 50 -- EAFWN
+#custommagic 1920 100 -- EAFW
+#custommagic 10112 50 -- EAFWN
 #researchbonus -5
 #nobadevents 20
 #autohealer 1
@@ -1190,7 +1190,7 @@ Take care of your equipment. The Gryphon form taken by the Tethyrian Druid allow
 #descr "The Northlanders, or sometimes Northmen, were seafaring people who inhabited the northern parts of the Moonshae Isles. Descendants of raiders from the island of Ruathym, the Northlanders were a sturdy, war-ready people. Unlike the Ffolk, who also inhabited the Moonshaes, the Northlanders were not interested in the subtle beauty of nature and were more comfortable out at sea. The Northlanders were believed to be related to the Uthgardt barbarians and traced their lineage back to the people's of Luskan."
 #stealthy 10
 #pillagebonus 1
-#unrest 1
+#incunrest 1
 #end
 
 
@@ -1207,7 +1207,7 @@ The Berserker tradition is strong among the Uthgardt tribes. They venerate their
 #stealthy 20
 #pillagebonus 2
 #mapmove 20
-#unrest 4
+#incunrest 4
 #end
 
 -- 7734 -- Illuskan Lord
@@ -1245,7 +1245,7 @@ The White-beards ensured the youth were well versed in hardship and suffering wi
 This unit cancels the unrest caused by up to 40 Reavers and adds a PD bonus of +2 per turn. The White-beards are also able to mentor (recruit) one berserker into the ranks each turn." 
 #clearmagic
 #clearspec
-#decunrest 40
+#incunrest -40
 #incprovdef 2
 #sailing 123 3
 #inspirational 1

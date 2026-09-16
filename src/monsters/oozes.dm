@@ -307,7 +307,7 @@ Such puddings were considered sacred by the church of Ghaunadaur and are believe
 #fireres 10
 #shockres 10
 #coldres 10
-#decayres 10
+#decayres 1
 #poisonres 35
 #acidres 35
 #polyimmune
@@ -570,7 +570,7 @@ Such puddings were considered sacred by the church of Ghaunadaur and are believe
 #fireres 10
 #shockres 10
 #coldres 10
-#decayres 10
+#decayres 1
 #poisonres 35
 #acidres 35
 #polyimmune
@@ -625,7 +625,7 @@ In combat, Ghaunadans were adept at waiting for the opponents to strike, then en
 #douse 1
 #holy
 #magicboost 9 0
-#magicsboost 8 -1
+#magicboost 8 -1
 #magicboost 2 -1
 #adeptsacr 1
 #seduce 8
@@ -700,7 +700,7 @@ They had natural resistances to fire, acid, cold, and poison."
 #stealthy 20
 #clearweapons
 #weapon 542 -- acid touch
-#regenerate 10
+#regeneration 10
 #heal
 #firstshape 7334 -- Slithermorph
 #voidsanity 1 --ooze

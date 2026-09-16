@@ -115,7 +115,7 @@ Balors, Glabrezu, Vrock, and Succubi were the most common demons selected for in
 #expertundeadleader
 #weapon 320 -- Flaming Fist
 #weapon 597 -- Drain Life 10
-#armor 194 - Enchanted Ring Mail Hauberk
+#armor 194 -- Enchanted Ring Mail Hauberk
 #armor 223 -- Enchanted Helmet
 #magicskill 0 2
 #magicskill 1 2
@@ -161,7 +161,7 @@ Balors, Glabrezu, Vrock, and Succubi were the most common demons selected for in
 #stealthy 50
 #poorleader
 #weapon 597 -- Drain Life 10
-#armor 244 - Magic Silk Garments
+#armor 244 -- Magic Silk Garments
 #armor 249 -- Cloth Headpiece
 #magicskill 6 2
 #magicskill 7 2
@@ -209,7 +209,7 @@ Sarya survived her defeat and relocated to the ruins of Myth Drannor, planning t
 #goodleader
 #expertundeadleader
 #weapon 597 -- Drain Life 10
-#armor 244 - Magic Silk Garments
+#armor 244 -- Magic Silk Garments
 #armor 249 -- Cloth Headpiece
 #magicskill 0 2
 #magicskill 1 3
@@ -376,7 +376,7 @@ Being the result of fiendish interference with humans, tieflings had no true hom
 #spr1 "ForgottenRealms/tieflingrogue.tga"
 #spr2 "ForgottenRealms/tieflingrogue2.tga"
 #name "Tiefling Spellfilcher"
-#nametype 119 - Misc Female
+#nametype 119 -- Misc Female
 #descr "Tieflings Spellfilchers are excellent wizards, rogues and spies, carrying on the ancient elven tradition of stealing the secrets of other mages. 
 
 Overall, tieflings were naturally gifted warriors, both agile and quick on their feet as well as sanguine in the sight of blood. They preferred to use weapons that combined sharpness with speed and enjoyed two-hand fighting styles that accented their graceful movement and decisive instincts. 
@@ -429,7 +429,7 @@ Being the result of fiendish interference with humans, tieflings had no true hom
 #spr1 "ForgottenRealms/durzagonsmith.tga"
 #spr2 "ForgottenRealms/durzagonsmith2.tga"
 #name "Durzagon Hellforger"
-#nametype 271 - Dwarven Males
+#nametype 271 -- Dwarven Males
 #descr "Durzagon were first-generation, half-fiend crossbreeds between Demons or Devils and Dwarves or Duergar, akin to Cambions and Daemonfey of human and elven bloodlines. Taller than their Dwarven kin, Durzagon had razor-sharp claws and teeth.
 
 Not every durzagon was aware of their infernal heritage since devils normally kept their true identity secret from their duergar mates. Durzagons made aware of their origin typically kept such knowledge secret from enemies and allies alike if they could, and because of this, often tended to rise high in their societies if they could go undetected. 
@@ -467,7 +467,6 @@ The rarity of successfully crossbreeding with dwarves made Durzagon fairly rare,
 #fireres 5
 #stealthy 20
 #demon
-#male
 #darkvision 80
 #goodleader 
 #startage 130

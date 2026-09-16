@@ -269,7 +269,7 @@ He ruled Cairnheim through fear alone. He considered wherever he was feared to b
 #pierceres
 #inanimate
 #neednoteat
-#snowmove
+#snow
 #spiritsight
 #mountainsurvival
 #reformtime 1

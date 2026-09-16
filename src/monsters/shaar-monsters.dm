@@ -324,8 +324,8 @@ Upon reaching independence, rakshasa usually attempted to establish their own te
 #gcost 10040
 #ap 15
 #mapmove 24
-#bluntres 15
-#slashres 15
+#bluntres
+#slashres
 #demon
 #spiritsight
 #darkvision 60

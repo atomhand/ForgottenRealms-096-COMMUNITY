@@ -141,7 +141,7 @@
 #end
 
 #newmonster 5352
-#copystats 5200 - small summoned monster template
+#copystats 5200 -- small summoned monster template
 #copyspr 3266 -- Tanuki/raccoon form (placeholder)
 #name "Dire Badger"
 #descr "This natural creature has been summoned to fight alongside a druid in battle."
@@ -158,7 +158,7 @@
 #end
 
 #newmonster 5353
-#copystats 5200 - small summoned monster template
+#copystats 5200 -- small summoned monster template
 #copyspr 1357 -- beast bat
 #name "Dire Bat"
 #descr "This natural creature has been summoned to fight alongside a druid in battle."
@@ -1906,7 +1906,7 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #acidres 30
 #bluntres
 #slashres
-#pieceres
+#pierceres
 #airshield 100
 #blind
 #unsurr 20

@@ -164,7 +164,7 @@ Each Red Wizard was expected to wholly dedicate themself to a single school of m
 #goodleader
 #taskmaster 3
 #crossbreeder 6
-#heretic
+#heretic 1
 #magicskill 0 1
 #magicskill 1 1
 #magicskill 3 1

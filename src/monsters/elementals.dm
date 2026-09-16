@@ -464,7 +464,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #fireres 25
 #coldres -5
 #darkvision 60
-#floating
+#float
 #slashres
 #pierceres
 #bluntres
@@ -499,7 +499,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #fireres 25
 #coldres -5
 #darkvision 60
-#floating
+#float
 #slashres
 #pierceres
 #bluntres
@@ -537,7 +537,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #coldres -5
 #darkvision 60
 #invulnerable 15
-#floating
+#float
 #slashres
 #pierceres
 #bluntres
@@ -575,7 +575,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #coldres -5
 #darkvision 60
 #invulnerable 15
-#floating
+#float
 #slashres
 #pierceres
 #bluntres
@@ -631,7 +631,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 10
 #prec 10
 #ap 8
-#floating
+#float
 #weapon 417 -- Ice Fist
 --#trample
 --#trampswallow
@@ -671,7 +671,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 11
 #prec 11
 #ap 8
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample
@@ -712,7 +712,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 12
 #prec 15
 #ap 10
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample
@@ -755,7 +755,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 14
 #prec 15
 #ap 14
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample

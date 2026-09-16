@@ -44,7 +44,7 @@ While most returned to their scattered homes across the realms at the conclusion
 #holy
 #researchbonus -3
 -- #stealthy 5
-#heretic
+#heretic 1
 #noreqtemple
 #end
 
@@ -404,7 +404,7 @@ They provide a useful siege defense bonus for those who can afford them."
 #name "Cimbari Sage"
 #descr "The Akademeia of Cimbar produced not only learned priests but also the erudite Cimbari Sages."
 #nobadevents 10
-#magicskills 4 1
+#magicskill 4 1
 #end
 
 

@@ -709,7 +709,7 @@ They were surprisingly intelligent despite having no brain structures or any sim
 #prec 10
 #enc 2
 #ap 12
-#researchbonus - 20
+#researchbonus -20
 #mapmove 14
 #darkvision 60
 #poorleader
@@ -785,7 +785,7 @@ Cyric, Gruumsh, Shar, the Gods of Fury, and espeically Myrkul were sworn enemies
 -- #magicskill 9 2
 --#custommagic 81920 100
 #researchbonus -12
-#airshield
+#airshield 50
 #falsearmy -75
 #incunrest 5
 #montag 13000
@@ -833,7 +833,7 @@ In 1371 DR, a contingent of Tomb Guardians was operating under the leadership of
 #mountainsurvival
 #swampsurvival
 #wastesurvival
-#snowmove
+#snow
 #magicboost 0 -2
 #magicboost 1 -2
 #magicboost 2 -2
@@ -1167,7 +1167,7 @@ During the 13th century DR, a tribe of dragonkin resided in the mountains overlo
 #spr2 "ForgottenRealms/druidelemental2.tga"
 #name "Stormfire Druid Adventurer"
 #descr "While most druids focus their attention upon the rich earth and the bounty of nature that springs forth from it, the Stormfire Druid’s eyes have ever been cast to the skies and the endless expanse of blue, channeling the most raw and untamed aspects of nature."
-#drawshape 10
+#drawsize 10
 #clearmagic
 #armor 15
 #armor 121

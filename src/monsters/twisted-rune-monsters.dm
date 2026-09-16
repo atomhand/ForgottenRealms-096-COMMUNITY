@@ -53,7 +53,7 @@ The Twisted Rune actively recruited the deathtouched, and members of the church 
 #maxage 65
 #almostundead
 #poisonres 5
-#decayres 5
+#decayres 1
 #diseaseres 50
 #darkvision 60
 #holy
@@ -102,14 +102,14 @@ Most Gray Ones were Deathtouched either by the act of necromanctic fusing, the d
 #twiceborn 7706 -- Heucuva -- Twiceborn
 #almostundead
 #poisonres 5
-#decayres 5
+#decayres 1
 #diseaseres 80
 #darkvision 60
 #incunrest 4
 #autocorpsehealer 1
 #makemonsters3 7288 -- Unsated Ghoul
 #reanimpriest
-#autodisgrinder
+#autodisgrinder 1
 #end
 
 
@@ -183,7 +183,7 @@ Much like ghouls, ghasts spoke whatever language they did in life. They often la
 #maxage 65
 #almostundead
 #poisonres 5
-#decayres 5
+#decayres 1
 #diseaseres 50
 #darkvision 60
 #holy

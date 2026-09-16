@@ -158,8 +158,8 @@ Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambit
 #float
 #drainimmune
 #stealthy 10
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
+#twiceborn 5050 -- Alhoon - Twiceborn form
+#lich 5050 -- Alhoon - Twiceborn form
 #montag 13002
 #montagweight 4
 #end
@@ -261,8 +261,8 @@ Superior in nearly all ways to a regular mind flayer, ulitharids possess two ext
 #drainimmune
 #slowrec
 #stealthy 10
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
+#twiceborn 5050 -- Alhoon - Twiceborn form
+#lich 5050 -- Alhoon - Twiceborn form
 #montag 13002
 #end
 
@@ -302,8 +302,8 @@ In spite of their lack of physical abilities, mind flayers were feared by all be
 #darkpower 3
 #drainimmune
 #stealthy 10
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
+#twiceborn 5050 -- Alhoon - Twiceborn form
+#lich 5050 -- Alhoon - Twiceborn form
 #montag 13002
 #montagweight 3
 #end

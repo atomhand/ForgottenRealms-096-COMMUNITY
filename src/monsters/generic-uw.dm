@@ -757,7 +757,7 @@ Gogglers were excellent fishermen, capable of diving deep to collect mollusks, c
 #str 5
 #att 5
 #def 5
-#pillager 1
+#pillagebonus 1
 #amphibian
 #swimming
 #darkvision 100
@@ -791,7 +791,7 @@ Guards were drawn from the lowest caste of serfs within kuo-toan society. Armed 
 #att 6
 #def 6
 -- #stealthy 20
-#pillager 1
+#pillagebonus 1
 #amphibian
 #swimming
 #darkvision 100

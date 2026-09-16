@@ -244,7 +244,7 @@ The monitors practiced a special kuo-toan type of martial art that involved the 
 #ap 14
 #mapmove 14
 #ambidextrous 2
-#pillager 4
+#pillagebonus 4
 #amphibian
 #darkvision 100
 #darkpower 3
@@ -285,7 +285,7 @@ Any kuo-toa who succumbed to madness was captured. The violent were either sacri
 #def 10
 #ap 12
 #mapmove 12
-#pillager 2
+#pillagebonus 2
 #amphibian
 #darkvision 100
 #darkpower 3
@@ -461,7 +461,7 @@ Guards were drawn from the lowest caste of serfs within kuo-toan society. Armed 
 #str 5
 #att 6
 #def 6
-#pillager 1
+#pillagebonus 1
 #amphibian
 #swimming
 #darkvision 100

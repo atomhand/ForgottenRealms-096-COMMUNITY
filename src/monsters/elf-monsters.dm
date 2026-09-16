@@ -47,7 +47,7 @@ All elves study magic at some point in their lives and those who fuse spellcraft
 #spr2 "ForgottenRealms/druidelemental2.tga"
 #name "Stormfire Druid"
 #descr "While most druids focus their attention upon the rich earth and the bounty of nature that springs forth from it, the Stormfire Druid’s eyes have ever been cast to the skies and the endless expanse of blue, channeling the most raw and untamed aspects of nature."
-#drawshape 10
+#drawsize 10
 #clearmagic
 #armor 15
 #armor 121
@@ -426,7 +426,7 @@ High Elves typically gravitated toward a life devoted to magical study as they g
 #darkvision 60
 #clearweapons
 #cleararmor
-#weapon 9 - Dagger
+#weapon 9 -- Dagger
 #magicskill 1 1
 #magicskill 4 2
 #magicskill 5 1
@@ -476,7 +476,7 @@ Of course, this practice often led elven dualists to many untested and poorly un
 #darkvision 60
 #clearweapons
 #cleararmor
-#weapon 9 - Dagger
+#weapon 9 -- Dagger
 #magicskill 4 3
 #custommagic 1920 400
 #custommagic 61440 400
@@ -1187,7 +1187,7 @@ In 1371 DR, a contingent of Tomb Guardians was operating under the leadership of
 #mountainsurvival
 #swampsurvival
 #wastesurvival
-#snowmove
+#snow
 -- #stealthy 25
 #end
 
@@ -1232,7 +1232,7 @@ In 1371 DR, a contingent of Tomb Guardians was operating under the leadership of
 #mountainsurvival
 #swampsurvival
 #wastesurvival
-#snowmove
+#snow
 #magicskill 4 2
 #magicskill 7 2
 #custommagic 8576 200
@@ -1279,7 +1279,7 @@ Cyric, Gruumsh, Shar, the Gods of Fury, and espeically Myrkul were sworn enemies
 #magicskill 9 2
 #researchbonus -8
 #custommagic 81920 100
-#airshield
+#airshield 50
 #falsearmy -75
 #end
 
@@ -1527,7 +1527,7 @@ The Church of Kelemvor did not hunt baelnorns and did not consider them true und
 #undead
 #magicboost 53 1
 #magicboost 4 1
-#bluntres 5
+#bluntres
 #invulnerable 20
 #woundfend 100
 #diseaseres 100
@@ -1536,7 +1536,7 @@ The Church of Kelemvor did not hunt baelnorns and did not consider them true und
 #coldres 25
 #shockres 25
 #poisonres 25
-#decayres 25
+#decayres 1
 #stealthy 5
 #neednoteat
 #spiritsight

@@ -48,9 +48,9 @@ Shamans of Gruumsh, among other requirements, could never lose a personal battle
 #name "Orc Greatbow"
 #descr "The elite hunters of orc tribes, the Greatbows will happily flee the battlefield in order to find new ground from which to fire their terrifying longbows."
 #clearweapons
-#weapon 9 - dagger
-#weapon 9 - dagger
-#weapon 24 - longbow
+#weapon 9 -- dagger
+#weapon 9 -- dagger
+#weapon 24 -- longbow
 #ambidextrous 2
 #hp 11
 #mor 8
@@ -73,9 +73,9 @@ Shamans of Gruumsh, among other requirements, could never lose a personal battle
 #fixedname "King Obould I"
 #descr "King Obould I Many-Arrows, was an orc king of the Broken Arrow tribe in the mid–14th century DR and later an exarch of Gruumsh. Obould was a large orc who was intelligent even by human standards. Considering that the blessings bestowed upon him calmed him somewhat, he became able to see things in a far broader perspective than any orc before him. This led to a change in orcish society under his leadership and the founding of the Kingdom of Many-Arrows."
 #clearweapons
-#weapon 18 - Battleaxe
+#weapon 18 -- Battleaxe
 #cleararmor
-#armor 38 - Blacksteel Full Plate
+#armor 38 -- Blacksteel Full Plate
 #unsurr 20
 #holy
 #hp 85

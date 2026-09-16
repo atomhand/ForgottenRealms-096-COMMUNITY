@@ -176,7 +176,7 @@ While Tritons could take to the land without fear, they lost many of their physi
 #maxage 350
 #amphibian
 #darkvision 80
-#darkpower 1er
+#darkpower 1
 #clearweapons
 #cleararmor 
 #weapon 1867 -- Coral Trident
@@ -241,7 +241,7 @@ In this form, the unit will keep all of its equipment is the added plus, because
 
 Due to their gills, sea elves could only leave the water for brief periods. While there were common workarounds, they were not cheap and this additional expense of keeping large numbers of sea elves on land made the cost a significant consideration. Additionally, the awkardness of their webbed feet led to increased encumbrance, reduced speed, and the loss of some other abilities."
 #nametype 274 -- Elves, Female
-#landform 7546
+#landshape 7546
 #gcost 365
 #rcost 1
 #rpcost 10000
@@ -442,8 +442,8 @@ Sea Elf Druids can wildshape into Sea Cats - dangerous predators capable of livi
 #magicskill 2 1 -- W1
 #magicskill 6 1 -- N1
 #magicskill 9 1 -- H1
-#custommagic 8704 100 WN
-#custommagic 9472 100 AEN
+#custommagic 8704 100 --WN
+#custommagic 9472 100 --AEN
 #researchbonus -6
 #holy
 #autohealer 1
@@ -788,8 +788,8 @@ Sea Elf Druids can wildshape into Sea Cats - dangerous predators capable of livi
 #magicskill 2 1 -- W1
 #magicskill 6 1 -- N1
 #magicskill 9 1 -- H1
-#custommagic 8704 100 WN
-#custommagic 9472 100 AEN
+#custommagic 8704 100 --WN
+#custommagic 9472 100 --AEN
 #researchbonus -4
 #holy
 #autohealer 1
@@ -1131,7 +1131,7 @@ Tritons, while regarding shalarin as naive, nonetheless respected their tenacity
 #armor 417 -- Eel-skin Armor
 #armor 418 -- Eel-skin Cap
 #goodleader
-#res 10
+#resources 10
 #gold 5
 #taxcollector
 #supplybonus 20
@@ -1267,7 +1267,7 @@ While a dolphin's echolocation made them capable in darkness, their inability to
 #weapon 300 -- Head Butt
 #custommagic 65536 100
 #custommagic 65536 30
-#holyattunded 100
+#holyattuned 100
 #smartmount 85
 #animal
 #montag 13015
@@ -1299,7 +1299,7 @@ While a dolphin's echolocation made them capable in darkness, their inability to
 #weapon 300 -- Head Butt
 #custommagic 65536 100
 #custommagic 65536 30
-#holyattunded 100
+#holyattuned 100
 #holy
 #animal
 #smartmount 85
@@ -1625,7 +1625,7 @@ Note that all Baelnorns around bound to their home province. While they can leav
 #magicskill 4 4 -- S4
 #magicskill 5 2 -- D2
 #magicskill 7 2 -- G2
-#bluntres 5
+#bluntres
 #invulnerable 20
 --#undead
 #woundfend 100
@@ -1635,7 +1635,7 @@ Note that all Baelnorns around bound to their home province. While they can leav
 #coldres 25
 #shockres 25
 #poisonres 25
-#decayres 25
+#decayres 1
 #stealthy 5
 #neednoteat
 #spiritsight
@@ -1689,7 +1689,7 @@ The Third Epoch saw the rise and fall of the great Merfolk empires, and in the e
 #batstartsum2d6 7607 -- Sacred Dolphins
 #patrolbonus 100
 #nobadevents 50
-#autospell 1174 -- Friendly Currents
+#onebattlespell 1174 -- Friendly Currents
 #mastersmith 0
 #fixforgebonus 1
 #end
@@ -1733,7 +1733,7 @@ Centuries ago, the triton fought a number of elemental evils within the Elementa
 #armor 429 -- Silverweave Hauberk
 #holy
 #okleader
-#inspiration 1
+#inspirational 1
 #voidsanity 1 --giant
 #end
 
@@ -2224,7 +2224,7 @@ Shalarin were generally very private about their religious beliefs and practices
 #spr1 "ForgottenRealms/dolphin.tga"
 #spr2 "ForgottenRealms/dolphin2.tga"
 #name "Dolphin Scout"
-#descr "Some dolphins learned to communicate in Currentspeak and made fine scouts." These highly intelligent cetaceans could also often be found in the service of aquatic elves, both riderless and as mounts, and were a favored creature of the goddess Trishina, who sometimes granted them divine powers.
+#descr "Some dolphins learned to communicate in Currentspeak and made fine scouts. These highly intelligent cetaceans could also often be found in the service of aquatic elves, both riderless and as mounts, and were a favored creature of the goddess Trishina, who sometimes granted them divine powers."
 #aquatic
 #gcost 10010
 #rcost 1
@@ -2242,7 +2242,7 @@ Shalarin were generally very private about their religious beliefs and practices
 #clearweapons
 #weapon 300 -- Head Butt
 #custommagic 8704 10
-#waterattunded 20
+#waterattuned 20
 #stealthy 25
 #noleader
 #itemslots 860160 -- head, body, 2 misc
@@ -2277,7 +2277,7 @@ Shalarin were generally very private about their religious beliefs and practices
 #weapon 1847 -- Subsurface Shockwave
 #custommagic 8704 100
 #custommagic 8704 25
-#waterattunded 20
+#waterattuned 20
 #montag 13015
 #animal
 #end
@@ -2304,7 +2304,7 @@ Shalarin were generally very private about their religious beliefs and practices
 #weapon 300 --headbutt
 #custommagic 8704 100
 #custommagic 8704 25
-#waterattunded 20
+#waterattuned 20
 #montag 13015
 #animal
 #nofalldmg
@@ -2343,7 +2343,7 @@ Nahaal, the famed whale bard of Serôs, born in 613 DR, was the famous of all Le
 #magicskill 2 1
 #custommagic 8704 50
 #makemonsters2 7612 -- Blessed Creatures of the Sea
-#waterattunded 20
+#waterattuned 20
 #beastmaster 3
 #inspirational 1
 #okleader

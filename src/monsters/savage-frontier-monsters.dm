@@ -15,7 +15,7 @@ The Beast Lord may not evolve into an Elder Brain, like the other Illithids, due
 #weapon 536 -- Mind Blast in melee too
 #weapon 274 -- Enslave Mind
 #weapon 1811 -- Mindflayer Blast
-#armor 230 - Magic Robes
+#armor 230 -- Magic Robes
 #hp 60
 #size 3
 #mr 20

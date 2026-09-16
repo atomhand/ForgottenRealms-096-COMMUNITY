@@ -1410,7 +1410,7 @@ The Eye felt the deteriorating effects of its great age, and by 1370 DR it had b
 #stealthy 200
 #startage 3500
 #maxage 3900
-#floating
+#float
 #goodleader
 #goodmagicleader
 #warning 5
@@ -1501,8 +1501,8 @@ Khelben Arunson costructed the first of the Walking Statues, though it was not t
 #fireres 10
 #shockres 10
 #poisonres 50
-#pierceres 1
-#slashres 1
+#pierceres
+#slashres
 #castledef 200
 #itemslots 1 -- no items
 #inanimate

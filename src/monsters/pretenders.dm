@@ -1900,7 +1900,7 @@ As one of Mystra's Chosen, Elminster will remain immortal, so long as he is with
 #magicskill 1 1
 #magicskill 4 2
 --#inspiringres 3
-#moreoprod 1
+#moreprod 1
 #end
 
 
@@ -1942,7 +1942,7 @@ As one of Mystra's Chosen, Elminster will remain immortal, so long as he is with
 #magicskill 3 1
 #magicskill 4 2
 --#inspiringres 3
-#moreoprod 1
+#moreprod 1
 #unteleportable
 #end
 
@@ -2159,7 +2159,7 @@ Lolth demanded absolute fealty and obedience from all drow, and questioning her 
 #weapon 779 -- web spit
 #weapon 583 -- taloned kick
 #weapon 583 -- taloned kick
-#dominion 2
+#startdom 2
 #gcost 10000
 #female
 #armor 98 -- Robes of the Sorceress
@@ -2785,7 +2785,7 @@ He served Talos for a time and was granted Cyric's portfolio over necromancy aft
 #magicskill 5 2
 #batstartsum3 7244
 #stealthy 15
-#dominion 1
+#startdom 1
 #pathcost 20
 #moregrowth -1
 #moremagic 1
@@ -2894,7 +2894,7 @@ Insane cultists were known to try and call her back to the physical world and th
 #weapon 311 -- Mind Blast
 #weapon 311 -- Mind Blast
 #weapon 311 -- Mind Blast
-#mindslimer 500
+#mindslime 500
 #magicskill 2 1
 #magicskill 3 1
 #magicskill 4 1
@@ -3349,7 +3349,7 @@ Dagon repeated this tactic every 720 years until the last wild tide of 1371 DR w
 #weapon 822 -- magic bite
 #weapon 835 -- magic tentacle
 #weapon 835 -- magic tentacle
-#mindslimer 500
+#mindslime 500
 #magicskill 2 6
 #magicskill 4 3
 #magicskill 5 4
@@ -3404,7 +3404,7 @@ Dagon repeated this tactic every 720 years until the last wild tide of 1371 DR w
 #weapon 822 -- magic bite
 #weapon 835 -- magic tentacle
 #weapon 835 -- magic tentacle
-#mindslimer 500
+#mindslime 500
 #magicskill 2 1
 #magicskill 5 1
 #magicskill 8 1

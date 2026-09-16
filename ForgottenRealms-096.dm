@@ -4208,7 +4208,6 @@
 #att 1
 #def 1
 #dt_holy
-#itemcost1 -30
 #end
 
 #newweapon 1813
@@ -6483,7 +6482,7 @@ While not all the Bhaalspawn turned to evil, those who did and who learned of th
 #magicskill 8 1
 -- #stealthy 10
 #sailing 999 7 
-#ambidextrous
+#ambidextrous 4
 #combatcaster
 #unsurr 5
 #end
@@ -6521,7 +6520,7 @@ Demoncyst Warlocks seek chaos and power through blood magic and are practiced cr
 #armor 119
 #magicskill 1 2
 #magicskill 8 3
-#custommagic 200 -- WNG
+#custommagic 25088 200 -- WNG
 #batstartsum1 7044 -- Quasit
 #stealthy 5
 #crossbreeder 2
@@ -7347,7 +7346,7 @@ Free locathah live in communal tribes. Those of 100 members or less are usually 
 --#montag 13014
 #berserk 3
 #nofalldmg
-#blindsight
+#blind
 #aquatic
 #smartmount 100
 #end
@@ -7894,7 +7893,7 @@ The Shard's primary attack was on the ego, collecting slaves with promises of gr
 #coldres 40
 #shockres 40
 #acidres 40
-#decayres 40
+#decayres 1
 #invulnerable 25
 #blind
 #bonusspells 1
@@ -7966,7 +7965,7 @@ Ogres were known to typically associate with goblinoids, orcs, and their fellow 
 Phaerimms dated back to the Days of Thunder. The wizards of the sarrukh empire battled the Phaerimm, and although the sarrukh succeeded in driving the phaerimms deep into the Underdark, the massive ecological change resulting from the war caused the sarrukh empire to collapse. The Phaerimm have been responsible for the destruction of several empires since, including Netheril and the dwarven Northkingdom, Delzoun. In 329, the Sharns finally defeated the Phaerimm, erecting the Sharn Wall beneath Anauroch, trapping the Phaerimm within the place now known as the Buried Realms.
 
 1346 DR, a portal to Avernus was erected in the Burial Glen of Myth Drannor by a cabal of Alhoon - undead Mindflayer liches. They worked alongside banite priests of the Zhentarim and others with the intent to draw devils from the 9 hells to help deal with the Phaerimm menace within the ruins. This led, eventually, to the breaching of the Sharn Wall and the release of the Phaerimm to wreak havoc across the continent once more."
-#nametype 140 - demons
+#nametype 140 -- demons
 #size 6
 #blind
 #eyes 0
@@ -8012,8 +8011,8 @@ Phaerimms dated back to the Days of Thunder. The wizards of the sarrukh empire b
 #weapon 33 -- Claws
 #weapon 33 -- Claws
 #weapon 592 -- Strong Poison Stinger
-#bite 20 -- bite
-#thronekill
+#weapon 20 -- bite
+#thronekill 10
 #defector 99
 #nowish
 #voidsanity 1 --aberration
@@ -8466,7 +8465,7 @@ All treants were known to enjoy mutually beneficial relationships with forest an
 #animal
 #darkvision 50
 #itemslots 786432 -- 2 misc
-#bodyguards 2
+#bodyguard 2
 #end
 
 -- 7715 -- Remorhaz
@@ -8685,7 +8684,7 @@ Frost Giants were known to tame Remorhaz in the Spine of the World, using them a
 #end
 
 #newmonster 5352
-#copystats 5200 - small summoned monster template
+#copystats 5200 -- small summoned monster template
 #copyspr 3266 -- Tanuki/raccoon form (placeholder)
 #name "Dire Badger"
 #descr "This natural creature has been summoned to fight alongside a druid in battle."
@@ -8702,7 +8701,7 @@ Frost Giants were known to tame Remorhaz in the Spine of the World, using them a
 #end
 
 #newmonster 5353
-#copystats 5200 - small summoned monster template
+#copystats 5200 -- small summoned monster template
 #copyspr 1357 -- beast bat
 #name "Dire Bat"
 #descr "This natural creature has been summoned to fight alongside a druid in battle."
@@ -10450,7 +10449,7 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #acidres 30
 #bluntres
 #slashres
-#pieceres
+#pierceres
 #airshield 100
 #blind
 #unsurr 20
@@ -10651,7 +10650,7 @@ Their only Order was known as the Calming Wave. Founded by a group of pirates fr
 #mr 13
 #mor 16
 #att 13
-#def 114
+#def 14
 #prec 12
 -- #stealthy 5
 #researchbonus -5
@@ -11202,7 +11201,7 @@ Now awake, he seeks his revenge."
 #rcost 1
 #rpcost 2
 #clearweapons
-#clararmor
+#cleararmor
 #demon
 #weapon 872 -- Meteorite Dagger
 #armor 188 -- Sharkskin Cuirass
@@ -11841,7 +11840,7 @@ Wherever he traveled, he was accompanied by a retinue of bodyguards consisting o
 #startage 1250
 #maxage 3500
 #unique
-#slaver 
+#slaver 7564 -- aquatic slaves
 #taskmaster 5
 #expertleader
 #domsummon20 7307
@@ -11980,7 +11979,7 @@ Like most amphibious creatures in the mod, they are somewhat less capable in com
 #neednoteat
 #shapechange 7590 -- Wereshark Hybrid Form -- Watershape
 #stealthy 50
-#regenerate 10
+#regeneration 10
 #holy
 #end
 
@@ -12126,7 +12125,7 @@ It is notable that Malenti are not susceptible to the mythal's holy fire at Myth
 #fixforgebonus 1
 #custommagic 3968 100 -- FEWAS
 #custommagic 61440 100 -- DNGB
-#cusommagic 65408 100 -- all but priest
+#custommagic 65408 100 -- all but priest
 #mastersmith 1
 #holy
 #demon
@@ -12179,7 +12178,7 @@ It is notable that Malenti are not susceptible to the mythal's holy fire at Myth
 #fixforgebonus 1
 #custommagic 3968 100 -- FEWAS
 #custommagic 61440 100 -- DNGB
-#cusommagic 65408 100 -- all but priest
+#custommagic 65408 100 -- all but priest
 #holy
 #demon
 #end
@@ -13958,7 +13957,7 @@ Wererats shared the animal instinctiveness of all lycanthropes and were markedly
 #str 12
 #att 10
 #def 10
-#morale 28
+#mor 28
 #berserk 2
 #darkvision 80
 #darkpower 2
@@ -13989,7 +13988,7 @@ If this form dies, the wererat will transform into hybrid or human shape."
 #hp 35
 #prot 0
 #mr 3
-#morale 4
+#mor 4
 #stealthy 50
 #str 5
 #att 11
@@ -14022,7 +14021,7 @@ If this form dies, the wererat will transform into hybrid or human shape."
 #hp 6
 #prot 0
 #mr 3
-#morale 50
+#mor 50
 #str 3
 #att 6
 #def 11
@@ -15591,7 +15590,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #prec 11
 #ap 8
 #mapmove 16
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample
@@ -15635,7 +15634,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #prec 15
 #ap 10
 #mapmove 16
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample
@@ -15680,7 +15679,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #prec 15
 #ap 14
 #mapmove 16
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 #ambidextrous 2
@@ -15840,7 +15839,7 @@ Wastriliths were master summoners, preferring to call in minions over fighting d
 #name "Calishite Archer"
 #descr "The Calishite tribes boasted elite archers equipped with shortbows, long daggers, and light but effective armor. They were a quick and reliable unit, but were vulnerable without adequate front-line support."
 #clearweapons
-#weapon 9 - dagger
+#weapon 9 -- dagger
 #weapon 1831 -- elite shortbow
 #cleararmor 
 #armor 7 -- scale cuirass
@@ -16213,7 +16212,7 @@ Without any political enemies willing to risk setting themselves against el Pesa
 #clearweapons
 #cleararmor
 #clearmagic
-#weapon 151 - wand
+#weapon 151 -- wand
 #armor 202
 #armor 249
 #magicskill 0 1 
@@ -16341,7 +16340,7 @@ Qysaghanni Vizars made frequent use of flying carpets in the context of their du
 #startage 35
 #maxage 70
 #unsurr 2
-#floating
+#float
 #end
 
 ---------------------------- PRIESTS OF CALIMSHAN
@@ -16658,7 +16657,7 @@ As humans aged far more quickly than elves, Artemis first started to feel the bi
 #mr 16
 #mor 22
 #ap 16
-#incscale 0 - increases turmoil
+#incscale 0 -- increases turmoil
 #patrolbonus 20
 #stealthy 35
 #assassin
@@ -17227,7 +17226,7 @@ A Sylph's mastery over air gives them the ability to withstand prolonged exposur
 #unsurr 2
 #ambidextrous 2
 #holy
-#weapon 6 - shortsword
+#weapon 6 -- shortsword
 #weapon 1858 -- Aqilari Amentum
 #weapon 1830 -- elite longbow
 #armor 7 -- scale cuirass
@@ -17902,7 +17901,7 @@ In the view of some scholars, lantern archons were not true archons but only 'pr
 
 -- 7074 -- Hound Archon 
 #newmonster 7074
-#copystats 51
+#copystats 3282 -- Ind, Soldier Priest (to acquire autobless)
 #spr1 "ForgottenRealms/houndarchon1.tga"
 #spr2 "ForgottenRealms/houndarchon2.tga"
 #name "Hound Archon"
@@ -17911,7 +17910,6 @@ In the view of some scholars, lantern archons were not true archons but only 'pr
 When one looked upon a hound archon, he or she sensed a feeling of simultaneous peacefulness and readiness for action. Hounds were intelligent and very protective, seeking to defend the innocent and helpless against the dark forces of the multiverse. Despite their combat skill, like all archons, hounds preferred not to fight if at all possible, and would usually only be driven to combat if protecting themselves, their plane, or their lantern archons or others who are unable to defend themselves. Like all archons, a hound's ultimate goal was to ascend to higher state of goodness and eventually become one with the plane. In the meantime, they served as proxies of the deific powers. 
 
 They could not only see invisible and shapeshifting beings for who and what they really were, they could also teleport at will and call on the divine aid of their patron deity."
-#clearspec
 #hp 22
 #size 4
 #mr 16
@@ -17929,8 +17927,6 @@ They could not only see invisible and shapeshifting beings for who and what they
 #shockres 15
 #fireres 15
 #spiritsight
-#holy
-#autobless 
 #weapon 749 -- enchanted scimitar
 #weapon 821 -- magic bite
 #awe 2
@@ -18048,7 +18044,7 @@ Their twin, holy flaming longswords were extensions of their arms. A sword archo
 #invulnerable 20
 #darkvision 50
 #itemslots 786432 -- 2 misc
-#bodyguards 2
+#bodyguard 2
 #acidres 5
 #coldres 5
 #shockres 5
@@ -19274,7 +19270,7 @@ The Druids who protected these Moonwells became all too familiar with the dark g
 #descr "The Northlanders, or sometimes Northmen, were seafaring people who inhabited the northern parts of the Moonshae Isles. Descendants of raiders from the island of Ruathym, the Northlanders were a sturdy, war-ready people. Unlike the Ffolk, who also inhabited the Moonshaes, the Northlanders were not interested in the subtle beauty of nature and were more comfortable out at sea. The Northlanders were believed to be related to the Uthgardt barbarians and traced their lineage back to the people's of Luskan."
 #stealthy 10
 #pillagebonus 1
-#unrest 1
+#incunrest 1
 #end
 
 
@@ -19289,7 +19285,7 @@ The Northlanders, or sometimes Northmen, were seafaring people who inhabited the
 #holy
 #stealthy 10
 #pillagebonus 2
-#unrest 4
+#incunrest 4
 #end
 
 -- Northlander Jarl
@@ -20264,7 +20260,7 @@ The White-beards ensured the youth were well versed in hardship and suffering wi
 This unit cancels the unrest caused by up to 40 Reavers and adds a PD bonus of +2 per turn. The White-beards are also able to mentor (recruit) one berserker into the ranks each turn." 
 #clearmagic
 #clearspec
-#decunrest 40
+#incunrest -40
 #incprovdef 2
 #sailing 123 3
 #inspirational 1
@@ -20354,7 +20350,7 @@ With the decline in power of House Kendrick, and the restlessness of his own Nor
 
 While away, however, Rogarsheim was assaulted by hill giants and duergar from the Jotenhammer Range. In Rault's absence, several of his would-be Northlander usurpers took the attack as an opportunity to sieze power for themselves. They have unseated all the remaining loyalists with incredulous speed, leading to the suspicion that the upstart, foreign priests of Talos are somehow to blame." 
 #clearmagic
-#decunrest 120
+#incunrest -120
 #gold 25
 #resources 25
 #sailing 999 5
@@ -20386,7 +20382,7 @@ Born in 800 DR, he lived a storied life as a heroic adventurer before turning to
 #nowish
 #undead
 #immortal
-#dragonlord
+#dragonlord 2
 #startage 571
 #maxage 2000
 -- #stealthy 45
@@ -21462,7 +21458,7 @@ Balors, Glabrezu, Vrock, and Succubi were the most common demons selected for in
 #expertundeadleader
 #weapon 320 -- Flaming Fist
 #weapon 597 -- Drain Life 10
-#armor 194 - Enchanted Ring Mail Hauberk
+#armor 194 -- Enchanted Ring Mail Hauberk
 #armor 223 -- Enchanted Helmet
 #magicskill 0 2
 #magicskill 1 2
@@ -21508,7 +21504,7 @@ Balors, Glabrezu, Vrock, and Succubi were the most common demons selected for in
 #stealthy 50
 #poorleader
 #weapon 597 -- Drain Life 10
-#armor 244 - Magic Silk Garments
+#armor 244 -- Magic Silk Garments
 #armor 249 -- Cloth Headpiece
 #magicskill 6 2
 #magicskill 7 2
@@ -21556,7 +21552,7 @@ Sarya survived her defeat and relocated to the ruins of Myth Drannor, planning t
 #goodleader
 #expertundeadleader
 #weapon 597 -- Drain Life 10
-#armor 244 - Magic Silk Garments
+#armor 244 -- Magic Silk Garments
 #armor 249 -- Cloth Headpiece
 #magicskill 0 2
 #magicskill 1 3
@@ -21723,7 +21719,7 @@ Being the result of fiendish interference with humans, tieflings had no true hom
 #spr1 "ForgottenRealms/tieflingrogue.tga"
 #spr2 "ForgottenRealms/tieflingrogue2.tga"
 #name "Tiefling Spellfilcher"
-#nametype 119 - Misc Female
+#nametype 119 -- Misc Female
 #descr "Tieflings Spellfilchers are excellent wizards, rogues and spies, carrying on the ancient elven tradition of stealing the secrets of other mages. 
 
 Overall, tieflings were naturally gifted warriors, both agile and quick on their feet as well as sanguine in the sight of blood. They preferred to use weapons that combined sharpness with speed and enjoyed two-hand fighting styles that accented their graceful movement and decisive instincts. 
@@ -21776,7 +21772,7 @@ Being the result of fiendish interference with humans, tieflings had no true hom
 #spr1 "ForgottenRealms/durzagonsmith.tga"
 #spr2 "ForgottenRealms/durzagonsmith2.tga"
 #name "Durzagon Hellforger"
-#nametype 271 - Dwarven Males
+#nametype 271 -- Dwarven Males
 #descr "Durzagon were first-generation, half-fiend crossbreeds between Demons or Devils and Dwarves or Duergar, akin to Cambions and Daemonfey of human and elven bloodlines. Taller than their Dwarven kin, Durzagon had razor-sharp claws and teeth.
 
 Not every durzagon was aware of their infernal heritage since devils normally kept their true identity secret from their duergar mates. Durzagons made aware of their origin typically kept such knowledge secret from enemies and allies alike if they could, and because of this, often tended to rise high in their societies if they could go undetected. 
@@ -21814,7 +21810,6 @@ The rarity of successfully crossbreeding with dwarves made Durzagon fairly rare,
 #fireres 5
 #stealthy 20
 #demon
-#male
 #darkvision 80
 #goodleader 
 #startage 130
@@ -25131,7 +25126,7 @@ Hers was an uphill battle, however, as her power was little and she was opposed 
 #weapon 775 -- singing sword
 #weapon 775 -- singing sword
 #ambidextrous 2
-#dominion 2
+#startdom 2
 #gcost 10000
 #female
 #armor 98 -- Robes of the Sorceress
@@ -25147,7 +25142,7 @@ Hers was an uphill battle, however, as her power was little and she was opposed 
 #ap 17
 #unsurr 4
 #autohealer 1
-#autodishealer
+#autodishealer 1
 #mapmove 22
 #maxage 6000
 #spiritsight
@@ -27676,7 +27671,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #fireres 25
 #coldres -5
 #darkvision 60
-#floating
+#float
 #slashres
 #pierceres
 #bluntres
@@ -27711,7 +27706,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #fireres 25
 #coldres -5
 #darkvision 60
-#floating
+#float
 #slashres
 #pierceres
 #bluntres
@@ -27749,7 +27744,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #coldres -5
 #darkvision 60
 #invulnerable 15
-#floating
+#float
 #slashres
 #pierceres
 #bluntres
@@ -27787,7 +27782,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #coldres -5
 #darkvision 60
 #invulnerable 15
-#floating
+#float
 #slashres
 #pierceres
 #bluntres
@@ -27843,7 +27838,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 10
 #prec 10
 #ap 8
-#floating
+#float
 #weapon 417 -- Ice Fist
 --#trample
 --#trampswallow
@@ -27883,7 +27878,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 11
 #prec 11
 #ap 8
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample
@@ -27924,7 +27919,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 12
 #prec 15
 #ap 10
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample
@@ -27967,7 +27962,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #def 14
 #prec 15
 #ap 14
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample
@@ -28047,7 +28042,7 @@ All elves study magic at some point in their lives and those who fuse spellcraft
 #spr2 "ForgottenRealms/druidelemental2.tga"
 #name "Stormfire Druid"
 #descr "While most druids focus their attention upon the rich earth and the bounty of nature that springs forth from it, the Stormfire Druid’s eyes have ever been cast to the skies and the endless expanse of blue, channeling the most raw and untamed aspects of nature."
-#drawshape 10
+#drawsize 10
 #clearmagic
 #armor 15
 #armor 121
@@ -28426,7 +28421,7 @@ High Elves typically gravitated toward a life devoted to magical study as they g
 #darkvision 60
 #clearweapons
 #cleararmor
-#weapon 9 - Dagger
+#weapon 9 -- Dagger
 #magicskill 1 1
 #magicskill 4 2
 #magicskill 5 1
@@ -28476,7 +28471,7 @@ Of course, this practice often led elven dualists to many untested and poorly un
 #darkvision 60
 #clearweapons
 #cleararmor
-#weapon 9 - Dagger
+#weapon 9 -- Dagger
 #magicskill 4 3
 #custommagic 1920 400
 #custommagic 61440 400
@@ -29187,7 +29182,7 @@ In 1371 DR, a contingent of Tomb Guardians was operating under the leadership of
 #mountainsurvival
 #swampsurvival
 #wastesurvival
-#snowmove
+#snow
 -- #stealthy 25
 #end
 
@@ -29232,7 +29227,7 @@ In 1371 DR, a contingent of Tomb Guardians was operating under the leadership of
 #mountainsurvival
 #swampsurvival
 #wastesurvival
-#snowmove
+#snow
 #magicskill 4 2
 #magicskill 7 2
 #custommagic 8576 200
@@ -29279,7 +29274,7 @@ Cyric, Gruumsh, Shar, the Gods of Fury, and espeically Myrkul were sworn enemies
 #magicskill 9 2
 #researchbonus -8
 #custommagic 81920 100
-#airshield
+#airshield 50
 #falsearmy -75
 #end
 
@@ -29527,7 +29522,7 @@ The Church of Kelemvor did not hunt baelnorns and did not consider them true und
 #undead
 #magicboost 53 1
 #magicboost 4 1
-#bluntres 5
+#bluntres
 #invulnerable 20
 #woundfend 100
 #diseaseres 100
@@ -29536,7 +29531,7 @@ The Church of Kelemvor did not hunt baelnorns and did not consider them true und
 #coldres 25
 #shockres 25
 #poisonres 25
-#decayres 25
+#decayres 1
 #stealthy 5
 #neednoteat
 #spiritsight
@@ -30436,7 +30431,7 @@ Unlike many other forms of undead, Mohrgs were fast, with quicker reflexes than 
 #undead
 #neednoteat
 #poisonres 25
-#decayres 25
+#decayres 1
 #diseaseres 99
 #darkvision 100
 #raiseonkill 100
@@ -31411,7 +31406,7 @@ Gogglers were excellent fishermen, capable of diving deep to collect mollusks, c
 #str 5
 #att 5
 #def 5
-#pillager 1
+#pillagebonus 1
 #amphibian
 #swimming
 #darkvision 100
@@ -31445,7 +31440,7 @@ Guards were drawn from the lowest caste of serfs within kuo-toan society. Armed 
 #att 6
 #def 6
 -- #stealthy 20
-#pillager 1
+#pillagebonus 1
 #amphibian
 #swimming
 #darkvision 100
@@ -31911,7 +31906,7 @@ He ruled Cairnheim through fear alone. He considered wherever he was feared to b
 #pierceres
 #inanimate
 #neednoteat
-#snowmove
+#snow
 #spiritsight
 #mountainsurvival
 #reformtime 1
@@ -32857,8 +32852,8 @@ During the Darkwalker Wars, they successfully tainted several Moonwells, creatin
 #clearspec
 #darkvision 60
 #clearweapons
-#weapon 1833 - Elite Sling
-#weapon 9 - Dagger
+#weapon 1833 -- Elite Sling
+#weapon 9 -- Dagger
 #end
 
 
@@ -34019,8 +34014,8 @@ Lion taming became an important tradition and lions were used in gladiatorial ar
 #okleader
 #beastmaster 3
 #unsurr 2
-#makemonsters1 -- 7694 -- Faerûnian Lion
-#batstartsum1 -- 7694 -- Faerûnian Lion
+#makemonsters1 7694 -- Faerûnian Lion
+#batstartsum1 7694 -- Faerûnian Lion
 #end
 
 -- 7692 -- Chondathan Knight-errant
@@ -34153,8 +34148,8 @@ As inheritors of the Jhaamdathan psiocracy, Chondathans do not have a strong arc
 #holy
 #magicskill 6 2
 #magicskill 9 1
-#cusommagic 1920 200 -- EAFW
-#cusommagic 8192 25 -- N
+#custommagic 1920 200 -- EAFW
+#custommagic 8192 25 -- N
 #nobadevents 20
 #incprovdef 1
 #incunrest -10
@@ -34448,7 +34443,7 @@ Tethyrians could commonly be found in Amn, Calimshan, Cormyr, the Dragon Coast, 
 #armor 5 -- leather cuirass
 #armor 119 -- reinforced leather cap
 #ambidextrous 2 
-#stealth 15
+#stealthy 15
 #pillagebonus 2
 #mountainsurvival
 #forestsurvival
@@ -34784,8 +34779,8 @@ Take care of your equipment. The gryphon form taken by the Tethyrian Druid allow
 #holy
 #magicskill 6 2
 #magicskill 9 1
-#cusommagic 1920 100 -- EAFW
-#cusommagic 10112 50 -- EAFWN
+#custommagic 1920 100 -- EAFW
+#custommagic 10112 50 -- EAFWN
 #researchbonus -5
 #nobadevents 20
 #autohealer 1
@@ -34841,7 +34836,7 @@ Take care of your equipment. The Gryphon form taken by the Tethyrian Druid allow
 #descr "The Northlanders, or sometimes Northmen, were seafaring people who inhabited the northern parts of the Moonshae Isles. Descendants of raiders from the island of Ruathym, the Northlanders were a sturdy, war-ready people. Unlike the Ffolk, who also inhabited the Moonshaes, the Northlanders were not interested in the subtle beauty of nature and were more comfortable out at sea. The Northlanders were believed to be related to the Uthgardt barbarians and traced their lineage back to the people's of Luskan."
 #stealthy 10
 #pillagebonus 1
-#unrest 1
+#incunrest 1
 #end
 
 
@@ -34858,7 +34853,7 @@ The Berserker tradition is strong among the Uthgardt tribes. They venerate their
 #stealthy 20
 #pillagebonus 2
 #mapmove 20
-#unrest 4
+#incunrest 4
 #end
 
 -- 7734 -- Illuskan Lord
@@ -34896,7 +34891,7 @@ The White-beards ensured the youth were well versed in hardship and suffering wi
 This unit cancels the unrest caused by up to 40 Reavers and adds a PD bonus of +2 per turn. The White-beards are also able to mentor (recruit) one berserker into the ranks each turn." 
 #clearmagic
 #clearspec
-#decunrest 40
+#incunrest -40
 #incprovdef 2
 #sailing 123 3
 #inspirational 1
@@ -35161,7 +35156,7 @@ Miklos sees the Ravens as his answer to the Harpers, with whom Sembia has regula
 #descr "The Warswords were the regular militia of Impiltur. Typically organised in patrols of twenty or more, they kept the peace on the roads and in settlements. The lords of the realm could also mobilise larger forces to scour major threats from orc to demon.
 
 Impiltur is a martial society and at any time the Warswords are continually deployed in patrols, training exercises or major expeditions. Accordingly the Warswords are composed of highly skilled veterans."  
-#basecost 10010
+#gcost 10010
 #hp 12
 #att 11
 #def 11
@@ -35748,8 +35743,8 @@ Illithids were megalomaniacal in the extreme, tyrants driven by an immense ambit
 #float
 #drainimmune
 #stealthy 10
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
+#twiceborn 5050 -- Alhoon - Twiceborn form
+#lich 5050 -- Alhoon - Twiceborn form
 #montag 13002
 #montagweight 4
 #end
@@ -35851,8 +35846,8 @@ Superior in nearly all ways to a regular mind flayer, ulitharids possess two ext
 #drainimmune
 #slowrec
 #stealthy 10
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
+#twiceborn 5050 -- Alhoon - Twiceborn form
+#lich 5050 -- Alhoon - Twiceborn form
 #montag 13002
 #end
 
@@ -35892,8 +35887,8 @@ In spite of their lack of physical abilities, mind flayers were feared by all be
 #darkpower 3
 #drainimmune
 #stealthy 10
-#twiceborn 5050 - Alhoon - Twiceborn form
-#lich 5050 - Alhoon - Twiceborn form
+#twiceborn 5050 -- Alhoon - Twiceborn form
+#lich 5050 -- Alhoon - Twiceborn form
 #montag 13002
 #montagweight 3
 #end
@@ -38285,7 +38280,7 @@ While Tritons could take to the land without fear, they lost many of their physi
 #maxage 350
 #amphibian
 #darkvision 80
-#darkpower 1er
+#darkpower 1
 #clearweapons
 #cleararmor 
 #weapon 1867 -- Coral Trident
@@ -38350,7 +38345,7 @@ In this form, the unit will keep all of its equipment is the added plus, because
 
 Due to their gills, sea elves could only leave the water for brief periods. While there were common workarounds, they were not cheap and this additional expense of keeping large numbers of sea elves on land made the cost a significant consideration. Additionally, the awkardness of their webbed feet led to increased encumbrance, reduced speed, and the loss of some other abilities."
 #nametype 274 -- Elves, Female
-#landform 7546
+#landshape 7546
 #gcost 365
 #rcost 1
 #rpcost 10000
@@ -38551,8 +38546,8 @@ Sea Elf Druids can wildshape into Sea Cats - dangerous predators capable of livi
 #magicskill 2 1 -- W1
 #magicskill 6 1 -- N1
 #magicskill 9 1 -- H1
-#custommagic 8704 100 WN
-#custommagic 9472 100 AEN
+#custommagic 8704 100 --WN
+#custommagic 9472 100 --AEN
 #researchbonus -6
 #holy
 #autohealer 1
@@ -38897,8 +38892,8 @@ Sea Elf Druids can wildshape into Sea Cats - dangerous predators capable of livi
 #magicskill 2 1 -- W1
 #magicskill 6 1 -- N1
 #magicskill 9 1 -- H1
-#custommagic 8704 100 WN
-#custommagic 9472 100 AEN
+#custommagic 8704 100 --WN
+#custommagic 9472 100 --AEN
 #researchbonus -4
 #holy
 #autohealer 1
@@ -39240,7 +39235,7 @@ Tritons, while regarding shalarin as naive, nonetheless respected their tenacity
 #armor 417 -- Eel-skin Armor
 #armor 418 -- Eel-skin Cap
 #goodleader
-#res 10
+#resources 10
 #gold 5
 #taxcollector
 #supplybonus 20
@@ -39376,7 +39371,7 @@ While a dolphin's echolocation made them capable in darkness, their inability to
 #weapon 300 -- Head Butt
 #custommagic 65536 100
 #custommagic 65536 30
-#holyattunded 100
+#holyattuned 100
 #smartmount 85
 #animal
 #montag 13015
@@ -39408,7 +39403,7 @@ While a dolphin's echolocation made them capable in darkness, their inability to
 #weapon 300 -- Head Butt
 #custommagic 65536 100
 #custommagic 65536 30
-#holyattunded 100
+#holyattuned 100
 #holy
 #animal
 #smartmount 85
@@ -39734,7 +39729,7 @@ Note that all Baelnorns around bound to their home province. While they can leav
 #magicskill 4 4 -- S4
 #magicskill 5 2 -- D2
 #magicskill 7 2 -- G2
-#bluntres 5
+#bluntres
 #invulnerable 20
 --#undead
 #woundfend 100
@@ -39744,7 +39739,7 @@ Note that all Baelnorns around bound to their home province. While they can leav
 #coldres 25
 #shockres 25
 #poisonres 25
-#decayres 25
+#decayres 1
 #stealthy 5
 #neednoteat
 #spiritsight
@@ -39798,7 +39793,7 @@ The Third Epoch saw the rise and fall of the great Merfolk empires, and in the e
 #batstartsum2d6 7607 -- Sacred Dolphins
 #patrolbonus 100
 #nobadevents 50
-#autospell 1174 -- Friendly Currents
+#onebattlespell 1174 -- Friendly Currents
 #mastersmith 0
 #fixforgebonus 1
 #end
@@ -39842,7 +39837,7 @@ Centuries ago, the triton fought a number of elemental evils within the Elementa
 #armor 429 -- Silverweave Hauberk
 #holy
 #okleader
-#inspiration 1
+#inspirational 1
 #voidsanity 1 --giant
 #end
 
@@ -40333,7 +40328,7 @@ Shalarin were generally very private about their religious beliefs and practices
 #spr1 "ForgottenRealms/dolphin.tga"
 #spr2 "ForgottenRealms/dolphin2.tga"
 #name "Dolphin Scout"
-#descr "Some dolphins learned to communicate in Currentspeak and made fine scouts." These highly intelligent cetaceans could also often be found in the service of aquatic elves, both riderless and as mounts, and were a favored creature of the goddess Trishina, who sometimes granted them divine powers.
+#descr "Some dolphins learned to communicate in Currentspeak and made fine scouts. These highly intelligent cetaceans could also often be found in the service of aquatic elves, both riderless and as mounts, and were a favored creature of the goddess Trishina, who sometimes granted them divine powers."
 #aquatic
 #gcost 10010
 #rcost 1
@@ -40351,7 +40346,7 @@ Shalarin were generally very private about their religious beliefs and practices
 #clearweapons
 #weapon 300 -- Head Butt
 #custommagic 8704 10
-#waterattunded 20
+#waterattuned 20
 #stealthy 25
 #noleader
 #itemslots 860160 -- head, body, 2 misc
@@ -40386,7 +40381,7 @@ Shalarin were generally very private about their religious beliefs and practices
 #weapon 1847 -- Subsurface Shockwave
 #custommagic 8704 100
 #custommagic 8704 25
-#waterattunded 20
+#waterattuned 20
 #montag 13015
 #animal
 #end
@@ -40413,7 +40408,7 @@ Shalarin were generally very private about their religious beliefs and practices
 #weapon 300 --headbutt
 #custommagic 8704 100
 #custommagic 8704 25
-#waterattunded 20
+#waterattuned 20
 #montag 13015
 #animal
 #nofalldmg
@@ -40452,7 +40447,7 @@ Nahaal, the famed whale bard of Serôs, born in 613 DR, was the famous of all Le
 #magicskill 2 1
 #custommagic 8704 50
 #makemonsters2 7612 -- Blessed Creatures of the Sea
-#waterattunded 20
+#waterattuned 20
 #beastmaster 3
 #inspirational 1
 #okleader
@@ -40737,9 +40732,9 @@ Slave soldiers in the Old Empires enjoyed fair living conditions and protections
 #clearspec
 #cleararmor
 #clearweapons
-#weapon 1 - spear
-#armor 5 - leather 
-#armor 120 - leather cap
+#weapon 1 -- spear
+#armor 5 -- leather 
+#armor 120 -- leather cap
 #xpshape 25 
 #slave
 #end
@@ -41102,7 +41097,7 @@ The secret center of the church of Set was the Cavern of the Jackal, located ben
 #clearweapons
 #cleararmor
 #clearmagic
-#weapon 9 - Dagger
+#weapon 9 -- Dagger
 #armor 5
 #armor 20
 #holy
@@ -41138,7 +41133,7 @@ These are among the best researchers in the game, just don't expect them to cont
 #prec 10
 #clearweapons
 #cleararmor
-#weapon 9 - Dagger
+#weapon 9 -- Dagger
 #magicskill 2 1
 #magicskill 4 1
 #magicskill 5 1
@@ -41912,7 +41907,7 @@ Such puddings were considered sacred by the church of Ghaunadaur and are believe
 #fireres 10
 #shockres 10
 #coldres 10
-#decayres 10
+#decayres 1
 #poisonres 35
 #acidres 35
 #polyimmune
@@ -42175,7 +42170,7 @@ Such puddings were considered sacred by the church of Ghaunadaur and are believe
 #fireres 10
 #shockres 10
 #coldres 10
-#decayres 10
+#decayres 1
 #poisonres 35
 #acidres 35
 #polyimmune
@@ -42230,7 +42225,7 @@ In combat, Ghaunadans were adept at waiting for the opponents to strike, then en
 #douse 1
 #holy
 #magicboost 9 0
-#magicsboost 8 -1
+#magicboost 8 -1
 #magicboost 2 -1
 #adeptsacr 1
 #seduce 8
@@ -42305,7 +42300,7 @@ They had natural resistances to fire, acid, cold, and poison."
 #stealthy 20
 #clearweapons
 #weapon 542 -- acid touch
-#regenerate 10
+#regeneration 10
 #heal
 #firstshape 7334 -- Slithermorph
 #voidsanity 1 --ooze
@@ -42365,9 +42360,9 @@ Shamans of Gruumsh, among other requirements, could never lose a personal battle
 #name "Orc Greatbow"
 #descr "The elite hunters of orc tribes, the Greatbows will happily flee the battlefield in order to find new ground from which to fire their terrifying longbows."
 #clearweapons
-#weapon 9 - dagger
-#weapon 9 - dagger
-#weapon 24 - longbow
+#weapon 9 -- dagger
+#weapon 9 -- dagger
+#weapon 24 -- longbow
 #ambidextrous 2
 #hp 11
 #mor 8
@@ -42390,9 +42385,9 @@ Shamans of Gruumsh, among other requirements, could never lose a personal battle
 #fixedname "King Obould I"
 #descr "King Obould I Many-Arrows, was an orc king of the Broken Arrow tribe in the mid–14th century DR and later an exarch of Gruumsh. Obould was a large orc who was intelligent even by human standards. Considering that the blessings bestowed upon him calmed him somewhat, he became able to see things in a far broader perspective than any orc before him. This led to a change in orcish society under his leadership and the founding of the Kingdom of Many-Arrows."
 #clearweapons
-#weapon 18 - Battleaxe
+#weapon 18 -- Battleaxe
 #cleararmor
-#armor 38 - Blacksteel Full Plate
+#armor 38 -- Blacksteel Full Plate
 #unsurr 20
 #holy
 #hp 85
@@ -44317,7 +44312,7 @@ As one of Mystra's Chosen, Elminster will remain immortal, so long as he is with
 #magicskill 1 1
 #magicskill 4 2
 --#inspiringres 3
-#moreoprod 1
+#moreprod 1
 #end
 
 
@@ -44359,7 +44354,7 @@ As one of Mystra's Chosen, Elminster will remain immortal, so long as he is with
 #magicskill 3 1
 #magicskill 4 2
 --#inspiringres 3
-#moreoprod 1
+#moreprod 1
 #unteleportable
 #end
 
@@ -44576,7 +44571,7 @@ Lolth demanded absolute fealty and obedience from all drow, and questioning her 
 #weapon 779 -- web spit
 #weapon 583 -- taloned kick
 #weapon 583 -- taloned kick
-#dominion 2
+#startdom 2
 #gcost 10000
 #female
 #armor 98 -- Robes of the Sorceress
@@ -45202,7 +45197,7 @@ He served Talos for a time and was granted Cyric's portfolio over necromancy aft
 #magicskill 5 2
 #batstartsum3 7244
 #stealthy 15
-#dominion 1
+#startdom 1
 #pathcost 20
 #moregrowth -1
 #moremagic 1
@@ -45311,7 +45306,7 @@ Insane cultists were known to try and call her back to the physical world and th
 #weapon 311 -- Mind Blast
 #weapon 311 -- Mind Blast
 #weapon 311 -- Mind Blast
-#mindslimer 500
+#mindslime 500
 #magicskill 2 1
 #magicskill 3 1
 #magicskill 4 1
@@ -45766,7 +45761,7 @@ Dagon repeated this tactic every 720 years until the last wild tide of 1371 DR w
 #weapon 822 -- magic bite
 #weapon 835 -- magic tentacle
 #weapon 835 -- magic tentacle
-#mindslimer 500
+#mindslime 500
 #magicskill 2 6
 #magicskill 4 3
 #magicskill 5 4
@@ -45821,7 +45816,7 @@ Dagon repeated this tactic every 720 years until the last wild tide of 1371 DR w
 #weapon 822 -- magic bite
 #weapon 835 -- magic tentacle
 #weapon 835 -- magic tentacle
-#mindslimer 500
+#mindslime 500
 #magicskill 2 1
 #magicskill 5 1
 #magicskill 8 1
@@ -45857,7 +45852,7 @@ The Beast Lord may not evolve into an Elder Brain, like the other Illithids, due
 #weapon 536 -- Mind Blast in melee too
 #weapon 274 -- Enslave Mind
 #weapon 1811 -- Mindflayer Blast
-#armor 230 - Magic Robes
+#armor 230 -- Magic Robes
 #hp 60
 #size 3
 #mr 20
@@ -46422,8 +46417,8 @@ Upon reaching independence, rakshasa usually attempted to establish their own te
 #gcost 10040
 #ap 15
 #mapmove 24
-#bluntres 15
-#slashres 15
+#bluntres
+#slashres
 #demon
 #spiritsight
 #darkvision 60
@@ -47136,7 +47131,7 @@ The monitors practiced a special kuo-toan type of martial art that involved the 
 #ap 14
 #mapmove 14
 #ambidextrous 2
-#pillager 4
+#pillagebonus 4
 #amphibian
 #darkvision 100
 #darkpower 3
@@ -47177,7 +47172,7 @@ Any kuo-toa who succumbed to madness was captured. The violent were either sacri
 #def 10
 #ap 12
 #mapmove 12
-#pillager 2
+#pillagebonus 2
 #amphibian
 #darkvision 100
 #darkpower 3
@@ -47353,7 +47348,7 @@ Guards were drawn from the lowest caste of serfs within kuo-toan society. Armed 
 #str 5
 #att 6
 #def 6
-#pillager 1
+#pillagebonus 1
 #amphibian
 #swimming
 #darkvision 100
@@ -48079,7 +48074,7 @@ They were surprisingly intelligent despite having no brain structures or any sim
 #prec 10
 #enc 2
 #ap 12
-#researchbonus - 20
+#researchbonus -20
 #mapmove 14
 #darkvision 60
 #poorleader
@@ -48155,7 +48150,7 @@ Cyric, Gruumsh, Shar, the Gods of Fury, and espeically Myrkul were sworn enemies
 -- #magicskill 9 2
 --#custommagic 81920 100
 #researchbonus -12
-#airshield
+#airshield 50
 #falsearmy -75
 #incunrest 5
 #montag 13000
@@ -48203,7 +48198,7 @@ In 1371 DR, a contingent of Tomb Guardians was operating under the leadership of
 #mountainsurvival
 #swampsurvival
 #wastesurvival
-#snowmove
+#snow
 #magicboost 0 -2
 #magicboost 1 -2
 #magicboost 2 -2
@@ -48537,7 +48532,7 @@ During the 13th century DR, a tribe of dragonkin resided in the mountains overlo
 #spr2 "ForgottenRealms/druidelemental2.tga"
 #name "Stormfire Druid Adventurer"
 #descr "While most druids focus their attention upon the rich earth and the bounty of nature that springs forth from it, the Stormfire Druid’s eyes have ever been cast to the skies and the endless expanse of blue, channeling the most raw and untamed aspects of nature."
-#drawshape 10
+#drawsize 10
 #clearmagic
 #armor 15
 #armor 121
@@ -48980,7 +48975,7 @@ Aboleth society was utterly alien in many ways to that of more familiar races, i
 #weapon 550 -- weakness tentacle
 #weapon 274 -- enslave mind
 #weapon 311 -- Mind Blast
-#mindslimer 20
+#mindslime 20
 #magicskill 2 3
 #magicskill 3 2
 #magicskill 4 3
@@ -49036,7 +49031,7 @@ The Aboleth Savant spreads dominion without having to preach."
 #weapon 550 -- weakness tentacle
 #weapon 274 -- enslave mind
 #weapon 311 -- Mind Blast
-#mindslimer 30
+#mindslime 30
 #magicskill 2 4
 #magicskill 3 3
 #magicskill 4 4
@@ -49093,7 +49088,7 @@ Aboleths originally came to Toril when the world was young. The ancient obelisk-
 #weapon 550 -- weakness tentacle
 #weapon 274 -- enslave mind
 #weapon 311 -- Mind Blast
-#mindslimer 60
+#mindslime 60
 #magicskill 1 2
 #magicskill 2 5
 #magicskill 3 3
@@ -49154,7 +49149,7 @@ The Eldest was an aboleth of massive size, incalculable age and inconceivable ma
 #weapon 550 -- weakness tentacle
 #weapon 274 -- enslave mind
 #weapon 311 -- Mind Blast
-#mindslimer 60
+#mindslime 60
 #magicskill 0 2
 #magicskill 1 3
 #magicskill 2 5
@@ -49278,7 +49273,7 @@ One benefit of a long-dreaming aboleth is their passive ability to spread domini
 --#magicskill 3 3
 #magicskill 4 3
 #magicskill 7 1
-#magicksill 9 2
+#magicskill 9 2
 --#custommagic 19968 100
 #voidsanity 20
 #xpshape 350
@@ -50581,7 +50576,7 @@ Each Red Wizard was expected to wholly dedicate themself to a single school of m
 #goodleader
 #taskmaster 3
 #crossbreeder 6
-#heretic
+#heretic 1
 #magicskill 0 1
 #magicskill 1 1
 #magicskill 3 1
@@ -50969,7 +50964,7 @@ The Twisted Rune actively recruited the deathtouched, and members of the church 
 #maxage 65
 #almostundead
 #poisonres 5
-#decayres 5
+#decayres 1
 #diseaseres 50
 #darkvision 60
 #holy
@@ -51018,14 +51013,14 @@ Most Gray Ones were Deathtouched either by the act of necromanctic fusing, the d
 #twiceborn 7706 -- Heucuva -- Twiceborn
 #almostundead
 #poisonres 5
-#decayres 5
+#decayres 1
 #diseaseres 80
 #darkvision 60
 #incunrest 4
 #autocorpsehealer 1
 #makemonsters3 7288 -- Unsated Ghoul
 #reanimpriest
-#autodisgrinder
+#autodisgrinder 1
 #end
 
 
@@ -51099,7 +51094,7 @@ Much like ghouls, ghasts spoke whatever language they did in life. They often la
 #maxage 65
 #almostundead
 #poisonres 5
-#decayres 5
+#decayres 1
 #diseaseres 50
 #darkvision 60
 #holy
@@ -51160,7 +51155,7 @@ While most returned to their scattered homes across the realms at the conclusion
 #holy
 #researchbonus -3
 -- #stealthy 5
-#heretic
+#heretic 1
 #noreqtemple
 #end
 
@@ -51520,7 +51515,7 @@ They provide a useful siege defense bonus for those who can afford them."
 #name "Cimbari Sage"
 #descr "The Akademeia of Cimbar produced not only learned priests but also the erudite Cimbari Sages."
 #nobadevents 10
-#magicskills 4 1
+#magicskill 4 1
 #end
 
 
@@ -53097,7 +53092,7 @@ The Eye felt the deteriorating effects of its great age, and by 1370 DR it had b
 #stealthy 200
 #startage 3500
 #maxage 3900
-#floating
+#float
 #goodleader
 #goodmagicleader
 #warning 5
@@ -53188,8 +53183,8 @@ Khelben Arunson costructed the first of the Walking Statues, though it was not t
 #fireres 10
 #shockres 10
 #poisonres 50
-#pierceres 1
-#slashres 1
+#pierceres
+#slashres
 #castledef 200
 #itemslots 1 -- no items
 #inanimate
@@ -53879,10 +53874,10 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #mapmove 14
 #startage 22
 #maxage 50
-#weapon 746 - Scimitar
-#weapon 9 - dagger
+#weapon 746 -- Scimitar
+#weapon 9 -- dagger
 --#weapon 1831 -- Elite Shortbow
-#armor 10 - leather hauberk
+#armor 10 -- leather hauberk
 #ambidextrous 2
 #pillagebonus 2
 #stealthy 5

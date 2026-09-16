@@ -419,7 +419,7 @@ While not all the Bhaalspawn turned to evil, those who did and who learned of th
 #magicskill 8 1
 -- #stealthy 10
 #sailing 999 7 
-#ambidextrous
+#ambidextrous 4
 #combatcaster
 #unsurr 5
 #end
@@ -457,7 +457,7 @@ Demoncyst Warlocks seek chaos and power through blood magic and are practiced cr
 #armor 119
 #magicskill 1 2
 #magicskill 8 3
-#custommagic 200 -- WNG
+#custommagic 25088 200 -- WNG
 #batstartsum1 7044 -- Quasit
 #stealthy 5
 #crossbreeder 2
@@ -1283,7 +1283,7 @@ Free locathah live in communal tribes. Those of 100 members or less are usually 
 --#montag 13014
 #berserk 3
 #nofalldmg
-#blindsight
+#blind
 #aquatic
 #smartmount 100
 #end
@@ -1830,7 +1830,7 @@ The Shard's primary attack was on the ego, collecting slaves with promises of gr
 #coldres 40
 #shockres 40
 #acidres 40
-#decayres 40
+#decayres 1
 #invulnerable 25
 #blind
 #bonusspells 1
@@ -1902,7 +1902,7 @@ Ogres were known to typically associate with goblinoids, orcs, and their fellow 
 Phaerimms dated back to the Days of Thunder. The wizards of the sarrukh empire battled the Phaerimm, and although the sarrukh succeeded in driving the phaerimms deep into the Underdark, the massive ecological change resulting from the war caused the sarrukh empire to collapse. The Phaerimm have been responsible for the destruction of several empires since, including Netheril and the dwarven Northkingdom, Delzoun. In 329, the Sharns finally defeated the Phaerimm, erecting the Sharn Wall beneath Anauroch, trapping the Phaerimm within the place now known as the Buried Realms.
 
 1346 DR, a portal to Avernus was erected in the Burial Glen of Myth Drannor by a cabal of Alhoon - undead Mindflayer liches. They worked alongside banite priests of the Zhentarim and others with the intent to draw devils from the 9 hells to help deal with the Phaerimm menace within the ruins. This led, eventually, to the breaching of the Sharn Wall and the release of the Phaerimm to wreak havoc across the continent once more."
-#nametype 140 - demons
+#nametype 140 -- demons
 #size 6
 #blind
 #eyes 0
@@ -1948,8 +1948,8 @@ Phaerimms dated back to the Days of Thunder. The wizards of the sarrukh empire b
 #weapon 33 -- Claws
 #weapon 33 -- Claws
 #weapon 592 -- Strong Poison Stinger
-#bite 20 -- bite
-#thronekill
+#weapon 20 -- bite
+#thronekill 10
 #defector 99
 #nowish
 #voidsanity 1 --aberration
@@ -2402,7 +2402,7 @@ All treants were known to enjoy mutually beneficial relationships with forest an
 #animal
 #darkvision 50
 #itemslots 786432 -- 2 misc
-#bodyguards 2
+#bodyguard 2
 #end
 
 -- 7715 -- Remorhaz

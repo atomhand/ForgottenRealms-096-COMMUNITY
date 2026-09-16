@@ -184,7 +184,7 @@ Their only Order was known as the Calming Wave. Founded by a group of pirates fr
 #mr 13
 #mor 16
 #att 13
-#def 114
+#def 14
 #prec 12
 -- #stealthy 5
 #researchbonus -5

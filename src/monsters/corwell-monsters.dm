@@ -84,7 +84,7 @@ The Druids who protected these Moonwells became all too familiar with the dark g
 #descr "The Northlanders, or sometimes Northmen, were seafaring people who inhabited the northern parts of the Moonshae Isles. Descendants of raiders from the island of Ruathym, the Northlanders were a sturdy, war-ready people. Unlike the Ffolk, who also inhabited the Moonshaes, the Northlanders were not interested in the subtle beauty of nature and were more comfortable out at sea. The Northlanders were believed to be related to the Uthgardt barbarians and traced their lineage back to the people's of Luskan."
 #stealthy 10
 #pillagebonus 1
-#unrest 1
+#incunrest 1
 #end
 
 
@@ -99,7 +99,7 @@ The Northlanders, or sometimes Northmen, were seafaring people who inhabited the
 #holy
 #stealthy 10
 #pillagebonus 2
-#unrest 4
+#incunrest 4
 #end
 
 -- Northlander Jarl
@@ -1074,7 +1074,7 @@ The White-beards ensured the youth were well versed in hardship and suffering wi
 This unit cancels the unrest caused by up to 40 Reavers and adds a PD bonus of +2 per turn. The White-beards are also able to mentor (recruit) one berserker into the ranks each turn." 
 #clearmagic
 #clearspec
-#decunrest 40
+#incunrest -40
 #incprovdef 2
 #sailing 123 3
 #inspirational 1
@@ -1164,7 +1164,7 @@ With the decline in power of House Kendrick, and the restlessness of his own Nor
 
 While away, however, Rogarsheim was assaulted by hill giants and duergar from the Jotenhammer Range. In Rault's absence, several of his would-be Northlander usurpers took the attack as an opportunity to sieze power for themselves. They have unseated all the remaining loyalists with incredulous speed, leading to the suspicion that the upstart, foreign priests of Talos are somehow to blame." 
 #clearmagic
-#decunrest 120
+#incunrest -120
 #gold 25
 #resources 25
 #sailing 999 5

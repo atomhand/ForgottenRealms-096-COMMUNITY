@@ -387,7 +387,7 @@ Now awake, he seeks his revenge."
 #rcost 1
 #rpcost 2
 #clearweapons
-#clararmor
+#cleararmor
 #demon
 #weapon 872 -- Meteorite Dagger
 #armor 188 -- Sharkskin Cuirass
@@ -1026,7 +1026,7 @@ Wherever he traveled, he was accompanied by a retinue of bodyguards consisting o
 #startage 1250
 #maxage 3500
 #unique
-#slaver 
+#slaver 7564 -- aquatic slaves
 #taskmaster 5
 #expertleader
 #domsummon20 7307
@@ -1165,7 +1165,7 @@ Like most amphibious creatures in the mod, they are somewhat less capable in com
 #neednoteat
 #shapechange 7590 -- Wereshark Hybrid Form -- Watershape
 #stealthy 50
-#regenerate 10
+#regeneration 10
 #holy
 #end
 
@@ -1311,7 +1311,7 @@ It is notable that Malenti are not susceptible to the mythal's holy fire at Myth
 #fixforgebonus 1
 #custommagic 3968 100 -- FEWAS
 #custommagic 61440 100 -- DNGB
-#cusommagic 65408 100 -- all but priest
+#custommagic 65408 100 -- all but priest
 #mastersmith 1
 #holy
 #demon
@@ -1364,7 +1364,7 @@ It is notable that Malenti are not susceptible to the mythal's holy fire at Myth
 #fixforgebonus 1
 #custommagic 3968 100 -- FEWAS
 #custommagic 61440 100 -- DNGB
-#cusommagic 65408 100 -- all but priest
+#custommagic 65408 100 -- all but priest
 #holy
 #demon
 #end

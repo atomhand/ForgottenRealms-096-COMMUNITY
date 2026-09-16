@@ -528,10 +528,10 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #mapmove 14
 #startage 22
 #maxage 50
-#weapon 746 - Scimitar
-#weapon 9 - dagger
+#weapon 746 -- Scimitar
+#weapon 9 -- dagger
 --#weapon 1831 -- Elite Shortbow
-#armor 10 - leather hauberk
+#armor 10 -- leather hauberk
 #ambidextrous 2
 #pillagebonus 2
 #stealthy 5

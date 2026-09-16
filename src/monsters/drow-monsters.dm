@@ -388,7 +388,7 @@ Hers was an uphill battle, however, as her power was little and she was opposed 
 #weapon 775 -- singing sword
 #weapon 775 -- singing sword
 #ambidextrous 2
-#dominion 2
+#startdom 2
 #gcost 10000
 #female
 #armor 98 -- Robes of the Sorceress
@@ -404,7 +404,7 @@ Hers was an uphill battle, however, as her power was little and she was opposed 
 #ap 17
 #unsurr 4
 #autohealer 1
-#autodishealer
+#autodishealer 1
 #mapmove 22
 #maxage 6000
 #spiritsight

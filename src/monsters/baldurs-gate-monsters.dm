@@ -245,7 +245,7 @@ Wererats shared the animal instinctiveness of all lycanthropes and were markedly
 #str 12
 #att 10
 #def 10
-#morale 28
+#mor 28
 #berserk 2
 #darkvision 80
 #darkpower 2
@@ -276,7 +276,7 @@ If this form dies, the wererat will transform into hybrid or human shape."
 #hp 35
 #prot 0
 #mr 3
-#morale 4
+#mor 4
 #stealthy 50
 #str 5
 #att 11
@@ -309,7 +309,7 @@ If this form dies, the wererat will transform into hybrid or human shape."
 #hp 6
 #prot 0
 #mr 3
-#morale 50
+#mor 50
 #str 3
 #att 6
 #def 11

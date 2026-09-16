@@ -75,7 +75,7 @@
 #name "Calishite Archer"
 #descr "The Calishite tribes boasted elite archers equipped with shortbows, long daggers, and light but effective armor. They were a quick and reliable unit, but were vulnerable without adequate front-line support."
 #clearweapons
-#weapon 9 - dagger
+#weapon 9 -- dagger
 #weapon 1831 -- elite shortbow
 #cleararmor 
 #armor 7 -- scale cuirass
@@ -448,7 +448,7 @@ Without any political enemies willing to risk setting themselves against el Pesa
 #clearweapons
 #cleararmor
 #clearmagic
-#weapon 151 - wand
+#weapon 151 -- wand
 #armor 202
 #armor 249
 #magicskill 0 1 
@@ -576,7 +576,7 @@ Qysaghanni Vizars made frequent use of flying carpets in the context of their du
 #startage 35
 #maxage 70
 #unsurr 2
-#floating
+#float
 #end
 
 ---------------------------- PRIESTS OF CALIMSHAN
@@ -893,7 +893,7 @@ As humans aged far more quickly than elves, Artemis first started to feel the bi
 #mr 16
 #mor 22
 #ap 16
-#incscale 0 - increases turmoil
+#incscale 0 -- increases turmoil
 #patrolbonus 20
 #stealthy 35
 #assassin
@@ -1462,7 +1462,7 @@ A Sylph's mastery over air gives them the ability to withstand prolonged exposur
 #unsurr 2
 #ambidextrous 2
 #holy
-#weapon 6 - shortsword
+#weapon 6 -- shortsword
 #weapon 1858 -- Aqilari Amentum
 #weapon 1830 -- elite longbow
 #armor 7 -- scale cuirass

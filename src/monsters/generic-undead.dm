@@ -423,7 +423,7 @@ Unlike many other forms of undead, Mohrgs were fast, with quicker reflexes than 
 #undead
 #neednoteat
 #poisonres 25
-#decayres 25
+#decayres 1
 #diseaseres 99
 #darkvision 100
 #raiseonkill 100

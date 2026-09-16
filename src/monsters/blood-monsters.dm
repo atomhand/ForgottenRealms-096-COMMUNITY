@@ -1547,7 +1547,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #prec 11
 #ap 8
 #mapmove 16
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample
@@ -1591,7 +1591,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #prec 15
 #ap 10
 #mapmove 16
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 --#trample
@@ -1636,7 +1636,7 @@ Like other elementals, they were often conjured in combat either through spellcr
 #prec 15
 #ap 14
 #mapmove 16
-#floating
+#float
 #weapon 417 -- Ice Fist
 #weapon 417 -- Ice Fist
 #ambidextrous 2

@@ -272,9 +272,9 @@ Slave soldiers in the Old Empires enjoyed fair living conditions and protections
 #clearspec
 #cleararmor
 #clearweapons
-#weapon 1 - spear
-#armor 5 - leather 
-#armor 120 - leather cap
+#weapon 1 -- spear
+#armor 5 -- leather 
+#armor 120 -- leather cap
 #xpshape 25 
 #slave
 #end
@@ -637,7 +637,7 @@ The secret center of the church of Set was the Cavern of the Jackal, located ben
 #clearweapons
 #cleararmor
 #clearmagic
-#weapon 9 - Dagger
+#weapon 9 -- Dagger
 #armor 5
 #armor 20
 #holy
@@ -673,7 +673,7 @@ These are among the best researchers in the game, just don't expect them to cont
 #prec 10
 #clearweapons
 #cleararmor
-#weapon 9 - Dagger
+#weapon 9 -- Dagger
 #magicskill 2 1
 #magicskill 4 1
 #magicskill 5 1

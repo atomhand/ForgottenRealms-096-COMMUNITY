@@ -52,7 +52,7 @@ Aboleth society was utterly alien in many ways to that of more familiar races, i
 #weapon 550 -- weakness tentacle
 #weapon 274 -- enslave mind
 #weapon 311 -- Mind Blast
-#mindslimer 20
+#mindslime 20
 #magicskill 2 3
 #magicskill 3 2
 #magicskill 4 3
@@ -108,7 +108,7 @@ The Aboleth Savant spreads dominion without having to preach."
 #weapon 550 -- weakness tentacle
 #weapon 274 -- enslave mind
 #weapon 311 -- Mind Blast
-#mindslimer 30
+#mindslime 30
 #magicskill 2 4
 #magicskill 3 3
 #magicskill 4 4
@@ -165,7 +165,7 @@ Aboleths originally came to Toril when the world was young. The ancient obelisk-
 #weapon 550 -- weakness tentacle
 #weapon 274 -- enslave mind
 #weapon 311 -- Mind Blast
-#mindslimer 60
+#mindslime 60
 #magicskill 1 2
 #magicskill 2 5
 #magicskill 3 3
@@ -226,7 +226,7 @@ The Eldest was an aboleth of massive size, incalculable age and inconceivable ma
 #weapon 550 -- weakness tentacle
 #weapon 274 -- enslave mind
 #weapon 311 -- Mind Blast
-#mindslimer 60
+#mindslime 60
 #magicskill 0 2
 #magicskill 1 3
 #magicskill 2 5
@@ -350,7 +350,7 @@ One benefit of a long-dreaming aboleth is their passive ability to spread domini
 --#magicskill 3 3
 #magicskill 4 3
 #magicskill 7 1
-#magicksill 9 2
+#magicskill 9 2
 --#custommagic 19968 100
 #voidsanity 20
 #xpshape 350

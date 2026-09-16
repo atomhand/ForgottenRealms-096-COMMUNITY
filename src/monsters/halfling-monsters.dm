@@ -677,8 +677,8 @@ During the Darkwalker Wars, they successfully tainted several Moonwells, creatin
 #clearspec
 #darkvision 60
 #clearweapons
-#weapon 1833 - Elite Sling
-#weapon 9 - Dagger
+#weapon 1833 -- Elite Sling
+#weapon 9 -- Dagger
 #end
 
 

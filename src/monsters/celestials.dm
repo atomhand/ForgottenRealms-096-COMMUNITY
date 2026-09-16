@@ -40,7 +40,7 @@ In the view of some scholars, lantern archons were not true archons but only 'pr
 
 -- 7074 -- Hound Archon 
 #newmonster 7074
-#copystats 51
+#copystats 3282 -- Ind, Soldier Priest (to acquire autobless)
 #spr1 "ForgottenRealms/houndarchon1.tga"
 #spr2 "ForgottenRealms/houndarchon2.tga"
 #name "Hound Archon"
@@ -49,7 +49,6 @@ In the view of some scholars, lantern archons were not true archons but only 'pr
 When one looked upon a hound archon, he or she sensed a feeling of simultaneous peacefulness and readiness for action. Hounds were intelligent and very protective, seeking to defend the innocent and helpless against the dark forces of the multiverse. Despite their combat skill, like all archons, hounds preferred not to fight if at all possible, and would usually only be driven to combat if protecting themselves, their plane, or their lantern archons or others who are unable to defend themselves. Like all archons, a hound's ultimate goal was to ascend to higher state of goodness and eventually become one with the plane. In the meantime, they served as proxies of the deific powers. 
 
 They could not only see invisible and shapeshifting beings for who and what they really were, they could also teleport at will and call on the divine aid of their patron deity."
-#clearspec
 #hp 22
 #size 4
 #mr 16
@@ -67,8 +66,6 @@ They could not only see invisible and shapeshifting beings for who and what they
 #shockres 15
 #fireres 15
 #spiritsight
-#holy
-#autobless 
 #weapon 749 -- enchanted scimitar
 #weapon 821 -- magic bite
 #awe 2
@@ -186,7 +183,7 @@ Their twin, holy flaming longswords were extensions of their arms. A sword archo
 #invulnerable 20
 #darkvision 50
 #itemslots 786432 -- 2 misc
-#bodyguards 2
+#bodyguard 2
 #acidres 5
 #coldres 5
 #shockres 5

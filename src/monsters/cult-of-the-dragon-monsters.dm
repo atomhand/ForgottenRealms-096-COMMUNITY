@@ -16,7 +16,7 @@ Born in 800 DR, he lived a storied life as a heroic adventurer before turning to
 #nowish
 #undead
 #immortal
-#dragonlord
+#dragonlord 2
 #startage 571
 #maxage 2000
 -- #stealthy 45
