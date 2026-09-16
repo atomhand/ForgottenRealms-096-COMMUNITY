@@ -116,7 +116,6 @@
 #att 1
 #def 1
 #dt_holy
-#itemcost1 -30
 #end
 
 #newweapon 1813
@@ -895,7 +894,7 @@
 #prot 26
 #enc 1
 #rcost 4
-#magic
+#magicarmor
 #end
 
 -- 408 -- thick skull
@@ -1136,7 +1135,7 @@
 #newarmor 434
 #copyarmor 24 -- Coral Cap
 #name "Skyship Hull"
-#prot 20
+#protparts 20 20
 #rcost 50
 #end
 
@@ -1150,10 +1149,11 @@
 -----------------------------------------------------------------------------------------------------
 
 ----- Stormsplitter
-#newitem 800 -- Stormsplitter
+#selectitem 800 -- Stormsplitter
 #spr "ForgottenRealms/stormsplitter.tga"
 #name "Stormsplitter"
 #unique
+#type 2 -- 2-handed weapon
 #weapon 1800
 #constlevel 9
 #mainpath 1
@@ -1219,7 +1219,7 @@
 #name "Silver Longsword"
 #descr "A mainstay in coinage for its resistance to rust, Silver's true value was as a weapon against the undead."
 #weapon 1812
-#constlevel 0
+#constlevel 1
 #mainpath 4
 #mainlevel 1
 #type 1 -- one-handed weapon
@@ -1275,7 +1275,6 @@
 #mainlevel 5
 #coldres 10
 #fireres 25
-#dt_magic
 #type 1
 #hp 5
 #end
@@ -1497,8 +1496,8 @@
 #unsurr 2
 #inspirational -2
 #researchbonus -10
-#heal
-#waterbreathing 1
+#recuperation
+#waterbreathing
 #airbreathing 1
 #amphibian
 #darkvision 60
@@ -1533,8 +1532,8 @@
 #coldres 5
 #acidres 5
 #poisonres 5
-#heal
-#waterbreathing 1
+#recuperation
+#waterbreathing
 #airbreathing 1
 #amphibian
 #darkvision 80
@@ -1569,8 +1568,8 @@
 #coldres 5
 #acidres 5
 #poisonres 5
-#heal
-#waterbreathing 1
+#recuperation
+#waterbreathing
 #airbreathing 1
 #amphibian
 #allret 50
@@ -1620,7 +1619,7 @@
 #descr "Exclusive to the Dalelands and only craftable by Elminster himself, this item provides an automatic blessing to even non-holy carriers. In addition, it provides HP, stealth, luck, magic resistance, and darkvision. Unlike adventuring gear, it does NOT come at the cost of leadership and research."
 #itemdrawsize -50
 #type 8 -- Misc
-#constlevel 0
+#constlevel 1
 #mainpath 4
 #mainlevel 4
 #noforgebonus
@@ -1685,7 +1684,7 @@
 #str 4
 #att 2
 #def 2
-#mor 4
+#morale 4
 #quickness
 #poisonres 10
 #polyimmune
@@ -1820,7 +1819,7 @@
 #magicboost 51 1
 #mr -2
 #regeneration 10
-#heal
+#recuperation
 #waterbreathing
 #cursed
 #nodemon
@@ -1848,7 +1847,7 @@
 #str 2
 #att 2
 #def 2
-#mor 2
+#morale 2
 #quickness
 #poisonres 10
 #polyimmune
@@ -1875,8 +1874,8 @@
 #coldres 5
 #shockres 5
 #fireres 5
-#decayres 5
+#decayres 1
 #acidres 5
 #waterbreathing
-#airshield
+#airshield 50
 #end

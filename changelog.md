@@ -19,6 +19,7 @@
      * Illithids have standard humanoid hit locations can wear boots (unlike Dom6, D&D illithids seem to have legs)
      * Add base magic paths to the Elder Brain, so it's not useless if you acquire one in a way other than transforming another unit
  * Wolf bite attack replaced with Bite and Trip
+ * Disable Bind Incubus (non-updated vanilla summon)
 
 ### Fixes
  * Morkoths set to size 4 (from 8)
@@ -63,8 +64,19 @@
    * Mindslime for Pisaethces, Dagon, Dagon pretender, Aboleth Broodling, Aboleth Savant, Aboleth Sovereign, Elder Aboleth
    * heretic for Red Wizard, Priestess of Akadi
    * Gray One disease grinder (This seems extremely strong, review as a balance concern)
+   * Armour prot for Halruaan Skyship (fixed prot is possibly imbalanced)
  * Nations
    * Halruaa missing foreign recruit archers & peltasts
+ * Magic items
+  * Stormsplitter should be 2-handed weapon (not misc)
+  * Dwarven shield counts as magic
+  * Adventuring gear
+   * recuperation for Advanced and above
+  * morale for Dikar peacekeeper's mantle, Crown of Eadraal
+  * recuperation for Dukar Coral Hand
+  * airshield for Iridea's Tear
+ * Spells
+   * Missing details for 23 spells
 
 ## 0.95 Indev
   

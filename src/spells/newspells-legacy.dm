@@ -1784,8 +1784,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #descr "The profane artifact, Crenshinibon - the Crystal Shard - can construct a towering replica of itself to act as a defensive structure. The Cryshal-Tirith is nearly indestructible and will attempt to enslave the minds of any who attempt to draw near it."
 #school -1
 #researchlevel 0
-#path -1
-#pathlevel 0
+#path 0 -1
 #effect 10021 -- summon commander
 #nreff 1
 #damage 7207 -- crystal tower
@@ -2133,7 +2132,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #copyspell 337 -- Grow Fortress
 #name "Thorncalling of Silvanus"
 #descr "This grim ceremony allows thick, maze-like walls of dangerous thorns to be raised out of the forest soil. It was used to protect the forest and wild lands from despoliation. However, the labyrinthine walls could only be raised over the body of a slain servant of Silvanus."
-#brief "This ritual creates a fortress of brambles in the current province. Be warned, it will kill its caster." 
+#details "This ritual creates a fortress of brambles in the current province. Be warned, it will kill its caster." 
 #school 0
 #researchlevel 0
 #path 0 6
@@ -2228,7 +2227,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Incubate Carrion Crawlers"
 #descr "Carrion Crawlers are 10 foot long abberations that resemble centipedes armed with tentacles capable of paralyzing their prey prior to consuming them. They have tough exoskeletons but lack intelligence beyond an overwhelming desire to consume flesh."
-#brief "This spell enchants 10 carrion crawlers to do your bidding."
+#details "This spell enchants 10 carrion crawlers to do your bidding."
 #school 0
 #researchlevel 1
 #path 0 6
@@ -2247,7 +2246,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Small Water Elemental"
 #descr "A small water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acids and cold. "
+#details "Water Elementals are immune to acids and cold. "
 #school 0
 #researchlevel 1
 #path 0 2
@@ -2264,7 +2263,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Medium Water Elemental"
 #descr "A medium water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acids and cold. "
+#details "Water Elementals are immune to acids and cold. "
 #school 0
 #researchlevel 3
 #path 0 2
@@ -2281,7 +2280,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Large Water Elemental"
 #descr "A large water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acids and cold. "
+#details "Water Elementals are immune to acids and cold. "
 #school 0
 #researchlevel 5
 #path 0 2
@@ -2297,7 +2296,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Huge Water Elemental"
 #descr "A huge water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acid and cold. "
+#details "Water Elementals are immune to acid and cold. "
 #school 0
 #researchlevel 7
 #path 0 2
@@ -2313,7 +2312,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Bind Guardian Water Elemental"
 #descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but will be otherwise unable to leave its locale."
-#brief "Water Elementals are immune to acids and cold. Huge Elementals produce one gem of their elemental nature per turn."
+#details "Water Elementals are immune to acids and cold. Huge Elementals produce one gem of their elemental nature per turn."
 #school 0
 #researchlevel 5
 #path 0 2
@@ -2330,7 +2329,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Bind Guardian Air Elemental"
 #descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but will be otherwise unable to leave its locale. "
-#brief "Air Elementals are immune to cold and shock and can swallow smaller foes in their whirlwind.  Guardian Elementals produce one gem of their elemental nature per turn."
+#details "Air Elementals are immune to cold and shock and can swallow smaller foes in their whirlwind.  Guardian Elementals produce one gem of their elemental nature per turn."
 #school 0
 #researchlevel 5
 #path 0 1
@@ -2345,7 +2344,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Huge Air Elemental"
 #descr "A huge air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
+#details "Air Elementals are immune to cold and shock. "
 #school 0
 #researchlevel 7
 #path 0 1
@@ -2360,7 +2359,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Large Air Elemental"
 #descr "A large air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
+#details "Air Elementals are immune to cold and shock. "
 #school 0
 #researchlevel 5
 #path 0 1
@@ -2375,7 +2374,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Medium Air Elemental"
 #descr "A medium air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
+#details "Air Elementals are immune to cold and shock. "
 #school 0
 #researchlevel 3
 #path 0 1
@@ -2391,7 +2390,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Small Air Elemental"
 #descr "A small air elemental is conjured through a temporary gate to the elemental plane of air, binding this creature to the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
+#details "Air Elementals are immune to cold and shock. "
 #school 0
 #researchlevel 1
 #path 0 1
@@ -2408,7 +2407,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Huge Earth Elemental"
 #descr "A huge earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay."
+#details "Earth Elementals are immune to poison and decay."
 #school 0
 #researchlevel 7
 #path 0 3
@@ -2424,7 +2423,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Bind Huge Earth Elemental"
 #descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but can otherwise only be transported to a new location via teleportation."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense.  Guardian Elementals produce one gem of their elemental nature per turn."
+#details "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense.  Guardian Elementals produce one gem of their elemental nature per turn."
 #school 0
 #researchlevel 5
 #path 0 3
@@ -2440,7 +2439,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Large Earth Elemental"
 #descr "A large earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
+#details "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
 #school 0
 #researchlevel 5
 #path 0 3
@@ -2456,7 +2455,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Medium Earth Elemental"
 #descr "A medium earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
+#details "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
 #school 0
 #researchlevel 3
 #path 0 3
@@ -2473,7 +2472,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Small Earth Elemental"
 #descr "A small earth elemental is conjured through a temporary gate to the elemental plane of earth, binding this creature to the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
+#details "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
 #school 0
 #researchlevel 1
 #path 0 3
@@ -2490,7 +2489,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Huge Fire Elemental"
 #descr "A huge fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
+#details "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
 #school 0
 #researchlevel 7
 #path 0 0
@@ -2505,7 +2504,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Bind Huge Fire Elemental"
 #descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but can otherwise only be transported to a new location via teleportation."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield.  Huge Elementals produce one gem of their elemental nature per turn."
+#details "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield.  Huge Elementals produce one gem of their elemental nature per turn."
 #school 0
 #researchlevel 5
 #path 0 0
@@ -2520,7 +2519,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Large Fire Elemental"
 #descr "A large fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to poison and decay and can wrap themselves in a fiery shield.. "
+#details "Fire Elementals are immune to poison and decay and can wrap themselves in a fiery shield.. "
 #school 0
 #researchlevel 5
 #path 0 0
@@ -2535,7 +2534,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Medium Fire Elemental"
 #descr "A medium fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
+#details "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
 #school 0
 #researchlevel 3
 #path 0 0
@@ -2551,7 +2550,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Small Fire Elemental"
 #descr "A small fire elemental is conjured through a temporary gate to the elemental plane of fire, binding this creature to the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
+#details "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
 #school 0
 #researchlevel 1
 #path 0 0

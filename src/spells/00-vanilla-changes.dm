@@ -77,10 +77,6 @@
 #school -1
 #end
 
-#selectspell 943 -- Krakens
-#school - 1
-#end
-
 #selectspell 946 -- Yetis
 #school -1
 #end
@@ -511,6 +507,10 @@
 #end
 
 #selectspell 1454 -- Infernal Crusade
+#school -1
+#end
+
+#selectspell 1459 -- Bind Incubus
 #school -1
 #end
 
@@ -1437,7 +1437,7 @@
 #end
 
 #selectspell "Mistform"
-#ainocast -96
+#aispellmod -96
 #end
 
 #selectspell "Fire Resistance"

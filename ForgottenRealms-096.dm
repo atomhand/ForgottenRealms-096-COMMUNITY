@@ -4208,7 +4208,6 @@
 #att 1
 #def 1
 #dt_holy
-#itemcost1 -30
 #end
 
 #newweapon 1813
@@ -4987,7 +4986,7 @@
 #prot 26
 #enc 1
 #rcost 4
-#magic
+#magicarmor
 #end
 
 -- 408 -- thick skull
@@ -5228,7 +5227,7 @@
 #newarmor 434
 #copyarmor 24 -- Coral Cap
 #name "Skyship Hull"
-#prot 20
+#protparts 20 20
 #rcost 50
 #end
 
@@ -5242,10 +5241,11 @@
 -----------------------------------------------------------------------------------------------------
 
 ----- Stormsplitter
-#newitem 800 -- Stormsplitter
+#selectitem 800 -- Stormsplitter
 #spr "ForgottenRealms/stormsplitter.tga"
 #name "Stormsplitter"
 #unique
+#type 2 -- 2-handed weapon
 #weapon 1800
 #constlevel 9
 #mainpath 1
@@ -5311,7 +5311,7 @@
 #name "Silver Longsword"
 #descr "A mainstay in coinage for its resistance to rust, Silver's true value was as a weapon against the undead."
 #weapon 1812
-#constlevel 0
+#constlevel 1
 #mainpath 4
 #mainlevel 1
 #type 1 -- one-handed weapon
@@ -5367,7 +5367,6 @@
 #mainlevel 5
 #coldres 10
 #fireres 25
-#dt_magic
 #type 1
 #hp 5
 #end
@@ -5589,8 +5588,8 @@
 #unsurr 2
 #inspirational -2
 #researchbonus -10
-#heal
-#waterbreathing 1
+#recuperation
+#waterbreathing
 #airbreathing 1
 #amphibian
 #darkvision 60
@@ -5625,8 +5624,8 @@
 #coldres 5
 #acidres 5
 #poisonres 5
-#heal
-#waterbreathing 1
+#recuperation
+#waterbreathing
 #airbreathing 1
 #amphibian
 #darkvision 80
@@ -5661,8 +5660,8 @@
 #coldres 5
 #acidres 5
 #poisonres 5
-#heal
-#waterbreathing 1
+#recuperation
+#waterbreathing
 #airbreathing 1
 #amphibian
 #allret 50
@@ -5712,7 +5711,7 @@
 #descr "Exclusive to the Dalelands and only craftable by Elminster himself, this item provides an automatic blessing to even non-holy carriers. In addition, it provides HP, stealth, luck, magic resistance, and darkvision. Unlike adventuring gear, it does NOT come at the cost of leadership and research."
 #itemdrawsize -50
 #type 8 -- Misc
-#constlevel 0
+#constlevel 1
 #mainpath 4
 #mainlevel 4
 #noforgebonus
@@ -5777,7 +5776,7 @@
 #str 4
 #att 2
 #def 2
-#mor 4
+#morale 4
 #quickness
 #poisonres 10
 #polyimmune
@@ -5912,7 +5911,7 @@
 #magicboost 51 1
 #mr -2
 #regeneration 10
-#heal
+#recuperation
 #waterbreathing
 #cursed
 #nodemon
@@ -5940,7 +5939,7 @@
 #str 2
 #att 2
 #def 2
-#mor 2
+#morale 2
 #quickness
 #poisonres 10
 #polyimmune
@@ -5967,10 +5966,10 @@
 #coldres 5
 #shockres 5
 #fireres 5
-#decayres 5
+#decayres 1
 #acidres 5
 #waterbreathing
-#airshield
+#airshield 50
 #end
 
 
@@ -33569,7 +33568,7 @@ A behir usually bites and grabs its prey first, then either swallows or constric
 #end
 
 
-#newitem 1000
+#selectitem 1000
 #copyitem 430 -- The Flying Ship
 #copyspr 430
 #constlevel 11
@@ -54123,10 +54122,6 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #school -1
 #end
 
-#selectspell 943 -- Krakens
-#school - 1
-#end
-
 #selectspell 946 -- Yetis
 #school -1
 #end
@@ -54557,6 +54552,10 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #end
 
 #selectspell 1454 -- Infernal Crusade
+#school -1
+#end
+
+#selectspell 1459 -- Bind Incubus
 #school -1
 #end
 
@@ -55483,7 +55482,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #end
 
 #selectspell "Mistform"
-#ainocast -96
+#aispellmod -96
 #end
 
 #selectspell "Fire Resistance"
@@ -57053,7 +57052,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #nreff 1
 #damage -13014 -- Shark Montag
 #restricted 240 -- Aleaxtis
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 21 -- frost blast
 #spec 41943040
@@ -57074,7 +57073,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #nreff 3
 #damage -13014 -- Shark Montag
 #restricted 240 -- Aleaxtis
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 21 -- frost blast
 #spec 41943040
@@ -57095,7 +57094,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #nreff 6
 #damage -13014 -- Shark Montag
 #restricted 240 -- Aleaxtis
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 21 -- frost blast
 #spec 41943040
@@ -57238,7 +57237,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #nreff 1
 #aoe 1
 #precision 100
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 9 -- whip
 #spec 2413982185964716160
@@ -57260,7 +57259,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #nreff 1
 #aoe 1004 -- base 4 + (1x pathlevel)
 #precision 100
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 9 -- whip
 #spec 2413982185964716160
@@ -57272,7 +57271,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #copyspell 730 -- Cloud of Death
 #name "Blackwater Taint"
 #descr "In the dark, sunless abysses of the deep ocean, shadows gather, the cold beckons, and the corpses of many things in the oceans lie slowly rotting. When this spell is cast, you call up this cold blackness, infusing the waters in the spell's area with negative energy. Those in or entering the area must make a MR save to resist its terrible power."
-#brief "This spells damages and weakens living creatures while acting to heal demons and undead in the same area."
+#details "This spells damages and weakens living creatures while acting to heal demons and undead in the same area."
 #school 0 -- conjuration
 #researchlevel 5
 #path 0 5 -- death
@@ -57309,7 +57308,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #damage 1009
 #range 5035
 #precision 100
-#flightspr 10084 1 = ??? particles
+#flightspr 10084 --1 = ??? particles
 #explspr 10121 -- ???
 #sound 27 -- Thunder
 #end
@@ -59425,8 +59424,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #descr "The profane artifact, Crenshinibon - the Crystal Shard - can construct a towering replica of itself to act as a defensive structure. The Cryshal-Tirith is nearly indestructible and will attempt to enslave the minds of any who attempt to draw near it."
 #school -1
 #researchlevel 0
-#path -1
-#pathlevel 0
+#path 0 -1
 #effect 10021 -- summon commander
 #nreff 1
 #damage 7207 -- crystal tower
@@ -59774,7 +59772,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #copyspell 337 -- Grow Fortress
 #name "Thorncalling of Silvanus"
 #descr "This grim ceremony allows thick, maze-like walls of dangerous thorns to be raised out of the forest soil. It was used to protect the forest and wild lands from despoliation. However, the labyrinthine walls could only be raised over the body of a slain servant of Silvanus."
-#brief "This ritual creates a fortress of brambles in the current province. Be warned, it will kill its caster." 
+#details "This ritual creates a fortress of brambles in the current province. Be warned, it will kill its caster." 
 #school 0
 #researchlevel 0
 #path 0 6
@@ -59869,7 +59867,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Incubate Carrion Crawlers"
 #descr "Carrion Crawlers are 10 foot long abberations that resemble centipedes armed with tentacles capable of paralyzing their prey prior to consuming them. They have tough exoskeletons but lack intelligence beyond an overwhelming desire to consume flesh."
-#brief "This spell enchants 10 carrion crawlers to do your bidding."
+#details "This spell enchants 10 carrion crawlers to do your bidding."
 #school 0
 #researchlevel 1
 #path 0 6
@@ -59888,7 +59886,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Small Water Elemental"
 #descr "A small water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acids and cold. "
+#details "Water Elementals are immune to acids and cold. "
 #school 0
 #researchlevel 1
 #path 0 2
@@ -59905,7 +59903,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Medium Water Elemental"
 #descr "A medium water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acids and cold. "
+#details "Water Elementals are immune to acids and cold. "
 #school 0
 #researchlevel 3
 #path 0 2
@@ -59922,7 +59920,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Large Water Elemental"
 #descr "A large water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acids and cold. "
+#details "Water Elementals are immune to acids and cold. "
 #school 0
 #researchlevel 5
 #path 0 2
@@ -59938,7 +59936,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Huge Water Elemental"
 #descr "A huge water elemental is conjured through a temporary gate to the elemental plane of water, binding this creature to the service of the caster for the duration of combat."
-#brief "Water Elementals are immune to acid and cold. "
+#details "Water Elementals are immune to acid and cold. "
 #school 0
 #researchlevel 7
 #path 0 2
@@ -59954,7 +59952,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Bind Guardian Water Elemental"
 #descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but will be otherwise unable to leave its locale."
-#brief "Water Elementals are immune to acids and cold. Huge Elementals produce one gem of their elemental nature per turn."
+#details "Water Elementals are immune to acids and cold. Huge Elementals produce one gem of their elemental nature per turn."
 #school 0
 #researchlevel 5
 #path 0 2
@@ -59971,7 +59969,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Bind Guardian Air Elemental"
 #descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but will be otherwise unable to leave its locale. "
-#brief "Air Elementals are immune to cold and shock and can swallow smaller foes in their whirlwind.  Guardian Elementals produce one gem of their elemental nature per turn."
+#details "Air Elementals are immune to cold and shock and can swallow smaller foes in their whirlwind.  Guardian Elementals produce one gem of their elemental nature per turn."
 #school 0
 #researchlevel 5
 #path 0 1
@@ -59986,7 +59984,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Huge Air Elemental"
 #descr "A huge air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
+#details "Air Elementals are immune to cold and shock. "
 #school 0
 #researchlevel 7
 #path 0 1
@@ -60001,7 +59999,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Large Air Elemental"
 #descr "A large air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
+#details "Air Elementals are immune to cold and shock. "
 #school 0
 #researchlevel 5
 #path 0 1
@@ -60016,7 +60014,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Medium Air Elemental"
 #descr "A medium air elemental is conjured through a temporary gate to the elemental plane of air, placing this creature in the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
+#details "Air Elementals are immune to cold and shock. "
 #school 0
 #researchlevel 3
 #path 0 1
@@ -60032,7 +60030,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Small Air Elemental"
 #descr "A small air elemental is conjured through a temporary gate to the elemental plane of air, binding this creature to the service of the caster for the duration of combat."
-#brief "Air Elementals are immune to cold and shock. "
+#details "Air Elementals are immune to cold and shock. "
 #school 0
 #researchlevel 1
 #path 0 1
@@ -60049,7 +60047,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Huge Earth Elemental"
 #descr "A huge earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay."
+#details "Earth Elementals are immune to poison and decay."
 #school 0
 #researchlevel 7
 #path 0 3
@@ -60065,7 +60063,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Bind Huge Earth Elemental"
 #descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but can otherwise only be transported to a new location via teleportation."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense.  Guardian Elementals produce one gem of their elemental nature per turn."
+#details "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense.  Guardian Elementals produce one gem of their elemental nature per turn."
 #school 0
 #researchlevel 5
 #path 0 3
@@ -60081,7 +60079,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Large Earth Elemental"
 #descr "A large earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
+#details "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
 #school 0
 #researchlevel 5
 #path 0 3
@@ -60097,7 +60095,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Medium Earth Elemental"
 #descr "A medium earth elemental is conjured through a temporary gate to the elemental plane of earth, placing this creature in the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
+#details "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
 #school 0
 #researchlevel 3
 #path 0 3
@@ -60114,7 +60112,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Small Earth Elemental"
 #descr "A small earth elemental is conjured through a temporary gate to the elemental plane of earth, binding this creature to the service of the caster for the duration of combat."
-#brief "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
+#details "Earth Elementals are immune to poison and decay and can greatly aid in sieges and fortification defense. "
 #school 0
 #researchlevel 1
 #path 0 3
@@ -60131,7 +60129,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Huge Fire Elemental"
 #descr "A huge fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
+#details "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
 #school 0
 #researchlevel 7
 #path 0 0
@@ -60146,7 +60144,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Bind Huge Fire Elemental"
 #descr "Binding an elemental requires the caster to prove his or her dominance over the element of the elemental's nature. Once the creature is subdued, it can be tasked to guard the location of its binding, but can otherwise only be transported to a new location via teleportation."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield.  Huge Elementals produce one gem of their elemental nature per turn."
+#details "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield.  Huge Elementals produce one gem of their elemental nature per turn."
 #school 0
 #researchlevel 5
 #path 0 0
@@ -60161,7 +60159,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Large Fire Elemental"
 #descr "A large fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to poison and decay and can wrap themselves in a fiery shield.. "
+#details "Fire Elementals are immune to poison and decay and can wrap themselves in a fiery shield.. "
 #school 0
 #researchlevel 5
 #path 0 0
@@ -60176,7 +60174,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Medium Fire Elemental"
 #descr "A medium fire elemental is conjured through a temporary gate to the elemental plane of fire, placing this creature in the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
+#details "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
 #school 0
 #researchlevel 3
 #path 0 0
@@ -60192,7 +60190,7 @@ Unlike most summons, Mindflayers cost gold maintenance."
 #newspell
 #name "Summon Small Fire Elemental"
 #descr "A small fire elemental is conjured through a temporary gate to the elemental plane of fire, binding this creature to the service of the caster for the duration of combat."
-#brief "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
+#details "Fire Elementals are immune to fire and decay and can wrap themselves in a fiery shield. "
 #school 0
 #researchlevel 1
 #path 0 0
@@ -60748,7 +60746,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #fatiguecost 99
 #range 15
 #aoe 3001
-#ainocast1
+#ainocast 1
 #end
 
 #selectspell 1211 --Foul Vapors
@@ -60769,7 +60767,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #pathlevel 1 2
 #researchlevel 3
 #aoe 4
-#dmg 3008
+#damage 3008
 #fatiguecost 40
 #end
 
@@ -62195,7 +62193,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #fatiguecost 100
 #nreff 4
 #range 100
-#prec 100
+#precision 100
 #damage 75
 #aoe 1
 #strikesound 89
@@ -62445,7 +62443,7 @@ pathlevel 1 0
 #path 1 4 -- astral
 #pathlevel 1 1
 #nreff 1000
-#prec 2
+#precision 2
 #fatiguecost 30
 #end
 
@@ -62565,7 +62563,7 @@ pathlevel 1 0
 #name "Contagion"
 #descr "The caster curses some targets with a horrible fever that never ends. The victims will not be severely affected during combat, but their wounds will never heal and the victim will slowly die in the following years."
 #path 0 5 -- D
-#path 1  8 --blood
+#path 1 8 --blood
 #school 6 -- blood
 #end
 
@@ -62721,7 +62719,7 @@ pathlevel 1 0
 #copyspell "Disintegrate"
 #name "Power Word Kill"
 #descr "The caster utters a single word of power that instantly kills one creature of their choice, whether the creature can hear the word or not. Any creature that has sufficient hit points is unaffected by power word kill."
-#flyspr -1
+#flightspr -1
 #explspr 10141
 #effect 2 -- damage
 #damage 50
@@ -62926,7 +62924,7 @@ Violet Beam: Plane shift to the inferno"
 #copyspell "Slay Living"
 #name "Destruction"
 #descr "The caster attempts to instantly slay the subject and consume its remains utterly."
-#prec 100
+#precision 100
 #details " "
 #range 2025
 #pathlevel 0 3
@@ -63165,7 +63163,7 @@ Violet Beam: Plane shift to the inferno"
 #pathlevel 1 2
 #aoe 0
 #range 2025
-#prec 100
+#precision 100
 #end
 
 #newspell

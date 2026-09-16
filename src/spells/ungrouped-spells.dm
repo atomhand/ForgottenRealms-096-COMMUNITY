@@ -87,7 +87,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #fatiguecost 99
 #range 15
 #aoe 3001
-#ainocast1
+#ainocast 1
 #end
 
 #selectspell 1211 --Foul Vapors
@@ -108,7 +108,7 @@ Only ordinary, living humanoids are affected; animals, undead, demons, extraplan
 #pathlevel 1 2
 #researchlevel 3
 #aoe 4
-#dmg 3008
+#damage 3008
 #fatiguecost 40
 #end
 
@@ -1534,7 +1534,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #fatiguecost 100
 #nreff 4
 #range 100
-#prec 100
+#precision 100
 #damage 75
 #aoe 1
 #strikesound 89
@@ -1784,7 +1784,7 @@ pathlevel 1 0
 #path 1 4 -- astral
 #pathlevel 1 1
 #nreff 1000
-#prec 2
+#precision 2
 #fatiguecost 30
 #end
 
@@ -1904,7 +1904,7 @@ pathlevel 1 0
 #name "Contagion"
 #descr "The caster curses some targets with a horrible fever that never ends. The victims will not be severely affected during combat, but their wounds will never heal and the victim will slowly die in the following years."
 #path 0 5 -- D
-#path 1  8 --blood
+#path 1 8 --blood
 #school 6 -- blood
 #end
 
@@ -2060,7 +2060,7 @@ pathlevel 1 0
 #copyspell "Disintegrate"
 #name "Power Word Kill"
 #descr "The caster utters a single word of power that instantly kills one creature of their choice, whether the creature can hear the word or not. Any creature that has sufficient hit points is unaffected by power word kill."
-#flyspr -1
+#flightspr -1
 #explspr 10141
 #effect 2 -- damage
 #damage 50
@@ -2265,7 +2265,7 @@ Violet Beam: Plane shift to the inferno"
 #copyspell "Slay Living"
 #name "Destruction"
 #descr "The caster attempts to instantly slay the subject and consume its remains utterly."
-#prec 100
+#precision 100
 #details " "
 #range 2025
 #pathlevel 0 3
@@ -2504,7 +2504,7 @@ Violet Beam: Plane shift to the inferno"
 #pathlevel 1 2
 #aoe 0
 #range 2025
-#prec 100
+#precision 100
 #end
 
 #newspell

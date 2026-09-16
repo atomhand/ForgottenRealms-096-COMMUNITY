@@ -62,7 +62,7 @@
 #nreff 1
 #damage -13014 -- Shark Montag
 #restricted 240 -- Aleaxtis
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 21 -- frost blast
 #spec 41943040
@@ -83,7 +83,7 @@
 #nreff 3
 #damage -13014 -- Shark Montag
 #restricted 240 -- Aleaxtis
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 21 -- frost blast
 #spec 41943040
@@ -104,7 +104,7 @@
 #nreff 6
 #damage -13014 -- Shark Montag
 #restricted 240 -- Aleaxtis
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 21 -- frost blast
 #spec 41943040
@@ -247,7 +247,7 @@
 #nreff 1
 #aoe 1
 #precision 100
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 9 -- whip
 #spec 2413982185964716160
@@ -269,7 +269,7 @@
 #nreff 1
 #aoe 1004 -- base 4 + (1x pathlevel)
 #precision 100
-#flightspr 10083 1 = red/pink thick particles
+#flightspr 10083 --1 = red/pink thick particles
 #explspr 10043 -- explosion
 #sound 9 -- whip
 #spec 2413982185964716160
@@ -281,7 +281,7 @@
 #copyspell 730 -- Cloud of Death
 #name "Blackwater Taint"
 #descr "In the dark, sunless abysses of the deep ocean, shadows gather, the cold beckons, and the corpses of many things in the oceans lie slowly rotting. When this spell is cast, you call up this cold blackness, infusing the waters in the spell's area with negative energy. Those in or entering the area must make a MR save to resist its terrible power."
-#brief "This spells damages and weakens living creatures while acting to heal demons and undead in the same area."
+#details "This spells damages and weakens living creatures while acting to heal demons and undead in the same area."
 #school 0 -- conjuration
 #researchlevel 5
 #path 0 5 -- death
@@ -318,7 +318,7 @@
 #damage 1009
 #range 5035
 #precision 100
-#flightspr 10084 1 = ??? particles
+#flightspr 10084 --1 = ??? particles
 #explspr 10121 -- ???
 #sound 27 -- Thunder
 #end

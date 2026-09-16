@@ -669,7 +669,7 @@ A behir usually bites and grabs its prey first, then either swallows or constric
 #end
 
 
-#newitem 1000
+#selectitem 1000
 #copyitem 430 -- The Flying Ship
 #copyspr 430
 #constlevel 11
