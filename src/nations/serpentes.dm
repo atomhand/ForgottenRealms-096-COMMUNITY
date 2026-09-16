@@ -70,7 +70,7 @@ Whenever possible, yuan-ti choose manipulation over open confrontation, the whis
 
 --#caverec 3657 -- Serpent of the Deeps
 
-#swamprec 6828 Chultan Raptor
+#swamprec 6828 -- Chultan Raptor
 -- #swamprec -- 6827 Chultan Frogg
 
 #addreccom 2891 -- trog warchief

@@ -4208,6 +4208,7 @@
 #att 1
 #def 1
 #dt_holy
+#itemcost1 -30
 #end
 
 #newweapon 1813
@@ -72396,8 +72397,8 @@ Mechanics:  Magehounds make excellent patrollers. Jordain Viziers are outstandin
 #addreccom 6847 	-- Cleric of Mystra
 #addreccom 6849 	-- Elder Councillor
 
-#addforeignrec 6844 	-- Archers
-#addforeignrec 6845 	-- Peltasts
+#addforeignunit 6844 	-- Archers
+#addforeignunit 6845 	-- Peltasts
 #addforeigncom 6848 	-- Cleric of Azuth
 #addforeigncom 6851		-- Halruaan Apprentice
 
@@ -73836,7 +73837,7 @@ Whenever possible, yuan-ti choose manipulation over open confrontation, the whis
 
 --#caverec 3657 -- Serpent of the Deeps
 
-#swamprec 6828 Chultan Raptor
+#swamprec 6828 -- Chultan Raptor
 -- #swamprec -- 6827 Chultan Frogg
 
 #addreccom 2891 -- trog warchief

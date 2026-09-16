@@ -63,6 +63,8 @@
    * Mindslime for Pisaethces, Dagon, Dagon pretender, Aboleth Broodling, Aboleth Savant, Aboleth Sovereign, Elder Aboleth
    * heretic for Red Wizard, Priestess of Akadi
    * Gray One disease grinder (This seems extremely strong, review as a balance concern)
+ * Nations
+   * Halruaa missing foreign recruit archers & peltasts
 
 ## 0.95 Indev
   

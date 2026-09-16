@@ -61,8 +61,8 @@ Mechanics:  Magehounds make excellent patrollers. Jordain Viziers are outstandin
 #addreccom 6847 	-- Cleric of Mystra
 #addreccom 6849 	-- Elder Councillor
 
-#addforeignrec 6844 	-- Archers
-#addforeignrec 6845 	-- Peltasts
+#addforeignunit 6844 	-- Archers
+#addforeignunit 6845 	-- Peltasts
 #addforeigncom 6848 	-- Cleric of Azuth
 #addforeigncom 6851		-- Halruaan Apprentice
 
