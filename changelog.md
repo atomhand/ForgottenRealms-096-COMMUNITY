@@ -1,13 +1,13 @@
 
 ## 0.96 Candidate A
 
-Around ~211 added or reworked spells
-Many spells disabled due to overlap, or lacking an equivalent in D&D 3.5e
+### Spells rework
+ * Around ~211 added or reworked spells
+ * Many spells disabled due to overlap, or lacking an equivalent in D&D 3.5e
+ * Summon Monster & Summon Nature's Ally
+   * About 100 monsters (many adjusted/templated, some new)
 
-Summon Monster & Summon Nature's Ally
- * About 100 monsters (many adjusted/templated, some new)
-
-Other changes
+### Other changes
  * Initiate Ceramorphosis and Free a Mindflayer summons a random Illithid directly from the montag instead of doing silly stuff with firstshapes
      * This way the summoned Illithids are the same unit as the ones you recruit, have the same path randoms and maintenance, and there will be no unexpected strange paths when you transform them (e.g. Elder Brain or Alhoon transformation)
      * It also fixes several mistakes (paths, maintenance, nametype) that were affecting the summoned Illithids
@@ -20,29 +20,28 @@ Other changes
      * Add base magic paths to the Elder Brain, so it's not useless if you acquire one in a way other than transforming another unit
  * Wolf bite attack replaced with Bite and Trip
 
-Fixes
+### Fixes
  * Morkoths set to size 4 (from 8)
  * Sebekian Crocodile shouldn't have humanoid slots
- * Priestess of Lolth, Elder Councillor, Anhurite Infiltrator were missing their random paths due to a typo
  * Spirit Naga is now usable (think its RL being 45 was a typo)
  * Wavecaptain of Valkur def 114 -> 14
  * Missing unit abilities due to incorrect commands and typos
-   * Floating tag - 13 units (all water & fire elementals, Qysaghanni Vizar, The Xanathar)
+   * **Missing Path randoms:** Priestess of Lolth, Elder Councillor, Anhurite Infiltrator, Demoncyst Warlock,  Malenti Artificer
+   * Holy path for Long-dreaming Savant (doesn't do anything since it's a shapechange, long-dreaming path shifts need to be reimplemented as path boosts/penalties)
+   * Cimbari sage magic path (S1)
+   * Floating tag for 13 units (all water, corrupted water & fire elementals, Qysaghanni Vizar, The Xanathar)
    * Ambidextrous for Abdel Adrian
-   * Random paths for Demoncyst Warlock
    * Blind for Deepwater shark
    * Missing Bite attack for Phaerimm
    * Phaerimm thronekill ability (chance parameter was missing, went with 10%)
    * Bodyguard for Faerûnian Lion, Celestial Lion
    * Slaver for Slarkrethel, Chosen of Umberlee
-   * Regeneration for wereshark shark form
-   * Path randoms for Malenti Artificer
+   * Regeneration for wereshark shark form, Slithermorph Ooze Form
    * Morale for Giant rat, Wererat hybrid form, wererat giant rat form
    * Autoblessed for Hound Archon
    * Increase unrest for Northlander Berserker, Northlander Reaver, Uthgardt Berserker, Illuskan Reaver
    * Decrease unrest for Northlander Whitebeard, Rault the Wise
    * Dragonlord for Sammaster, First Speaker of the Dragons
-   * Startdom 2, autodishealer for Eilistraee
    * drawsize for Stormfire Druid, Stormfire Druid adventurer
    * Snow move for Tomb Guard, Tomb Master, Dodkong, Tomb Guardian adventurer
    * Airshield for moonbow priestess + moonbow priestess adventurer (missing param, chose 50%)
@@ -52,21 +51,18 @@ Fixes
    * Path randoms for Chondathan Druid, Tethyrian Druid
    * Stealth for Tethyrian Brigand
    * landshape for Sea Elf Delphion
-   * holyattuned for dolphin, sacred dolphin
    * Auto Friendly Currents for The Living Reef
    * Description + water attuned for dolphin scout
    * Water attuned for dolphin scout, orca, serosian whale, sacred leviathan
    * Inspirational for Triton Tapalero (watershape)
    * Resource generation for Shalarin ruler
    * Blood penalty for Ghaunadan shapeshift form
-   * Regeneration for Slithermorph Ooze Form
    * moreprod for City of Eternity, Unthalass
-   * startdom for Lolth (2), Velsharoon (1)
+   * startdom for Lolth (2), Velsharoon (1), Eilistraee (2)
+   * autodishealer for Eilistraee
    * Mindslime for Pisaethces, Dagon, Dagon pretender, Aboleth Broodling, Aboleth Savant, Aboleth Sovereign, Elder Aboleth
-   * Holy path for Long-dreaming Savant (*doesn't do anything, long-dreaming path shifts need to be reimplemented path boosts/penalties)
    * heretic for Red Wizard, Priestess of Akadi
    * Gray One disease grinder (This seems extremely strong, review as a balance concern)
-   * Cimbari sage magic path (S1)
 
 ## 0.95 Indev
   
@@ -87,7 +83,7 @@ Integrate some changes/fixes from Razorfire's 0.95 indev version
 
 ## 0.95 Community Patch
 
-Balance Changes
+### Balance Changes
  * Nerf excessively cheap Blood summoned demon mages. Reason: Blood hunt -> summon more blood hunters engine scales way too fast.
    * Increase price for Bind Kyton (10->20), Summon an Erinye Seductress (14->28), Summon Infernal Barghest (25->40), Call a Madcap (12->36)
    * Disable Summon a Contract Devil (blood slave "maintenance" mechanic doesn't work + cheap hunter + strategic teleport + corruptor = POSSIBLY A LITTLE MUCH)
@@ -143,7 +139,7 @@ Balance Changes
 
     *also affected by consequential bugfixes
 
-Fixes
+### Fixes
  * "The darkstalker wars conclude" event (Calimshan) was broken due to a missing quote mark
  * Auramycos PD & fort defenders was useless placeholder units (meant to firstshape to a montag, but this doesn't work for PD)
    * Myconid poptype PD is also affected
