@@ -76269,106 +76269,387 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 
 
 ------------------------------------------------------------------------------------------------------------------
---COMPILED FROM src/events\ungrouped-events.dm
+--COMPILED FROM src/events\calimshan-events.dm
 ------------------------------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------
------------EVENTS -- with major contributions from Casus Belli and hawkraider ------
-------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+--------------------------------------- A Realm of Adventure Events --------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+#newevent -- Calimport's Opening Frame
+#rarity 5
+#req_fornation 203 -- Calimshan
+#req_unique 1 -- only happens once per game
+#req_pregame 1
+#header 2
+#magicitem 9 -- Custom - Basic Adventuring Gear
+#magicitem 9 -- Custom - Basic Adventuring Gear
+#magicitem 9 -- Custom - Basic Adventuring Gear
+#magicitem 9 -- Custom - Basic Adventuring Gear
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 2 -- level 1 to 5
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 2 -- level 1 to 5
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 2 -- level 1 to 5
+#gold 500
+#msg "- - CALIMSHAN - - 
+
+The despotic Shoon Imperium ruled over Calimshan at the height of the kingdom's power. Its final ruler, the Necroqysar, Shoon VII, left a swath of destruction across western and southern Faerûn. His ascension to lichdom and subsequent disappearance led to 60 years of debaucherous rule by his lustful daughter who fell under the sway of Loviatar. The Pashas high mage Vizars siezed power for themselves whereever they could and doomed the Shoon Imperium in their greed. Costly wars led to the annihilation of the empire's capital city of Shoonach. The empire's economic engine of Calimport was burned to the ground. Slave revolts splintered the empire and the Mameluks, the Slave-kings, came to rule. Magic became feared and even outlawed for a time, further weakening the imperial remnants until they could not even unify against local threats. In the east, the last of the great Mameluk kings was killed after managing to narrowly defeat a rebellion of powerful, beholder-worshipping fanatics. In the end, however, it was The Rage of Dragons in 1018 DR that was the final doom of the Memeluks. Slavery was reinstituted and the wealthy assumed power - and the wealthiest of all were the Djenispools. 
+
+Perhaps short of instituting a Golden Age, the Djenispool dynasty did manage to force an internal peace that lasted over 300 years, albeit through increasingly violent means. Their alliance with the Shadow Thieves led to assassinations becoming increasingly common across the Shining South as the Bhaalists flourished. This came to a head with the Darkstalker Wars in 1358 DR in which at least 9 powerful factions all vied for control over the region. The Djenispool family was erased at the war's height by their trusted advisor and most powerful Vizar, Ralan el Pesarkhal. No one dared dispute the usurper when he named himself the new Syl-Pasha of Calimshan. His lone goal - to reunite the lands of the Shoon Imperium under his 'benevolent' rule. [Basic Adventuring Gear]"
+#nolog
+#end
+
+#newevent -- THE DARKSTALKER WARS 
+#rarity 5
+#req_unique 1
+#req_turn 1
+#req_rare 100 
+#req_site 1
+#header 2
+#req_fornation 203 -- Calimshan
+#magicitem 4 -- level 5 to 7
+#magicitem 4 -- level 5 to 7
+#magicitem 4 -- level 5 to 7
+#magicitem 4 -- level 5 to 7
+#magicitem 4 -- level 5 to 7
+#magicitem 4 -- level 5 to 7
+#msg "- - THE DARKSTALKER WARS - - 
+
+The Darkstalker Wars were a series of battles between the various guild thieves and assassins of Calimshan that drew in the entire power structure of the regions that once comprised the Shoon Imperium, including Baldur's Gate, Amn, Tethyr, the Border Kingdoms and Lapalaayan coast, and the rising Kingdom of Calimshan. Even Waterdeep was pulled into the conflict. The Shadow Thieves held considerable power across the region. The Dusk Daggers, the Rundeen Slavers Guild, and several other factions had long worked both with and against the Shadow Thieves. 
+
+The silencing of the God of Murders, Bhaal, by the Black Hand of Bane kicked off the deadly power-struggle. Long led by Bhaalists, The Shadow Thieves fell into a leadership crisis, and soon an all out war with the Dusk Daggers and the Rundeen ensued, nearly wiping out all three factions in Calimshan. Their mutual destruction did not, however, bring an end to the chaos of the conflict. After many long years of rampant murder and paranoia and with no end in sight, it was revealed that the Twisted Rune was the true power behind the continuing madness. [Qysagghani Fortress]"
+#end
 
 --------------------------------
--- Events for Cormyr and the Moonwells on Moonshae by Casus Belli
+-- THE CHAOS OF THE DARKSTALKER WARS -- Codes -2520 to -2530
 --------------------------------
 
--- Cormyr spreads drain outside of its capital
 #newevent
 #rarity 0 -- once per province per turn when requirements are met
-#req_fornation 204 -- only for cormyr
-#nation 204 -- cormyr owns this event, important for next command
-#req_mydominion 1 -- only in owner's dominion - cormyr
-#req_nositenbr 1721 -- province does not have a collage of war wizards
-#incscale2 5 -- increases drain by 2 steps, so medium drain
-#notext -- the event doesn't display any text when it happens
-#nolog -- event doesn't leave a log in the history of events in the province
+#req_rare 20 
+#req_fornation 203 -- Calimshan
+#req_targorder 4 -- research
+#req_site 1
+--#req_targmnr 7035 -- shadow thief
+--#req_targmnr 7036 -- cloakmaster
+#req_turn 2
+#req_notcode -2520
+#assassin "Dark Dagger Assassin"
+#header 2
+#msg "- A Dark Dagger Assassin makes his move against one of your agents. [Shadow Thieves Guild]"
 #end
 
---------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------
-------------------- Moonshae Events by Casus Belli -----------------------------------------------------
---------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------
-
--- remove sites when Fey Queen Dies
 #newevent
-#rarity 0 -- always happens if req met, 1 per province 
-#req_nomnr 5088 --eladrin Fey Queen
-#req_site 1 --requires site in the province 
-#msg "The Fey Queen is no more, her dominion withers [LeShay Dominion]"
-#req_turn 2 -- cannot happen before turn 2 (not necessary, just in case)
-#req_indepok 1 -- can happen for independent provinces too
---===== PUT SITE NUMBER BELOW INSTEAD OF NAME !! ======
-#removesite 1727 -- "LeShay Dominion" 
+#rarity 0 -- once per province per turn when requirements are met
+#req_rare 20 
+#req_fornation 203 -- Calimshan
+#req_targorder 4 -- research
+--#req_targmnr 7035 -- shadow thief
+--#req_targmnr 7036 -- cloakmaster
+#req_site 1
+#req_turn 2
+#req_notcode -2520
+#assassin "Shadow Thief"
+#header 2
+#msg "- A Shadow Thief assassin makes his move against one of your agents. [Dusk Dagger Guild]"
 #end
 
---
-#newspell 
-#name "Taint Moonwell"
-#descr "Taints the local Moonwell, thus creating a Darkwell from which Bhaalist and Malarite forces may be recruited."
-#onlyatsite 1725 -- "Moonwell"
-#provrange 0
-#school 4 
-#researchlevel 5
-#path 0 8
---#path 1 8
-#pathlevel 0 3
---#pathlevel 1 3
-#fatiguecost 1000 -- 10 gems
-#effect 10042 --triggers event
-#damage 8000 --event id
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_rare 20 
+#req_fornation 203 -- Calimshan
+#req_targorder 4 -- research
+--#req_targmnr 7035 -- shadow thief
+--#req_targmnr 7036 -- cloakmaster
+#req_site 1
+#req_turn 2
+#req_notcode -2520
+#assassin "Rundeen Assassin"
+#header 2
+#msg "- A Rundeen Assassin makes his move against one of your agents. [Rundeen Guildhall]"
 #end
 
-#newevent 
-#id 8000
-#rarity 0 --always once per province but..
-#req_rare 0 --...0% chance to happen, only triggered by spell
-#removesite 1725 -- "Moonwell"
-#addsite 1726 -- "Darkwell"
-#msg "The Moonwell was corrupted. Let Chauntea, the Earthmother, cry her pathetic tears over her faithfuls' blood."
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_rare 20 
+#req_fornation 203 -- Calimshan
+#req_targorder 4 -- research
+--#req_targmnr 7035 -- shadow thief
+--#req_targmnr 7036 -- cloakmaster
+#req_site 1
+#req_turn 2
+#req_notcode -2520
+#assassin "Rogue"
+#header 2
+#msg "- An unknown assassin makes his move against one of your agents. [Pook's Guild]"
 #end
 
---
-#newspell 
-#name "Cleanse Darkwell"
-#descr "Cleanses the local Darkwell, restoring that which was tainted."
-#onlyatsite 1726 -- "Darkwell"
-#provrange 0
-#school 4 
-#researchlevel 5
-#path 0 6
---#path 1 8
-#pathlevel 0 3
---#pathlevel 1 3
-#fatiguecost 1000 -- 10 gems
-#effect 10042 --triggers event
-#damage 8001 --event id
+-- Pook's Guild spreads turmoil 
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_site 1
+#req_turn 2
+#req_maxturn 9
+#header 2
+#incscale2 0 -- increases turmoil by 2 steps, so medium drain
+#msg "Pasha Pook reports on a number of attempted murders, no doubt part of the ongoing Darkstalker Wars. [Pook's Guild]" 
 #end
 
----------------------------------------------------------------
-#newevent 
-#id 8001
-#rarity 0 --always once per province but..
-#req_rare 0 --...0% chance to happen, only triggered by spell
-#removesite 1726 -- "Darkwell"
-#addsite 1725 -- "Moonwell"
-#msg "The Moonwell's corruption is no more. Let the eyes of Chauntea, the Earthmother, brim over with the water of redemption."
+-- Shadow Thieves Guilds spread turmoil 
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_site 1
+#req_turn 2
+#req_maxturn 9
+#header 2
+#incscale2 0 -- increases turmoil by 2 steps, so medium drain
+#msg "The chaos of the Darkstalker Wars continues to cause turmoil in ##landname##. [Shadow Thieves Guild]" 
 #end
 
+-- Rundeen Guildhalls spread turmoil 
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_site 1
+#req_turn 2
+#req_maxturn 9
+#header 2
+#incscale2 0 -- increases turmoil by 2 steps, so medium drain
+#msg "The chaos of the Darkstalker Wars continues to cause turmoil in ##landname##. [Rundeen Guildhall]" 
+#end
+
+-- Dusk Dagger Guilds spread turmoil 
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_site 1
+#req_turn 2
+#req_maxturn 9
+#header 2
+#incscale2 0 -- increases turmoil by 2 steps, so medium drain
+#msg "The chaos of the Darkstalker Wars continues to cause turmoil in ##landname##. [Dusk Dagger Guild]" 
+#end
+
+-- End of the Darkstalker Wars - Shadow Thieves Guilds
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_notcode -2520
+#req_site 1
+#req_turn 12
+#header 2
+#decscale 0 -- decreases turmoil by 1 step
+#msg "The Darkstalker Wars have subsided in ##landname##. [Shadow Thieves Guild]" 
+#code -2520
+#end
+
+-- End of the Darkstalker Wars - Rundeen Guildhalls 
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_notcode -2520
+#req_site 1
+#req_turn 12
+#req_maxturn 13
+#header 2
+#incscale2 1 -- increases sloth by 2 steps
+#msg "The Darkstalker Wars have subsided in ##landname##. The Rundeen have clung on to their power, but are much reduced. [Rundeen Guildhall]"  
+#code -2520
+#end
+
+-- End of the Darkstalker Wars - Dusk Dagger Guilds
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_notcode -2520
+#req_site 1
+#req_turn 12
+#req_maxturn 13
+#header 2
+#decscale 0 -- decreases turmoil by 1 step
+#msg "The Darkstalker Wars have subsided in ##landname##. The Dusk Dagger Guild has clung on to survival. [Dusk Dagger Guild]"  
+#code -2520
+#end
+
+-- End of the Darkstalker Wars - Pook's Guild
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_fornation 203 -- Calimshan
+#req_notcode -2520
+#req_site 1
+#req_turn 12
+#req_maxturn 13
+#header 2
+#decscale2 0 -- decreases turmoil by 2 steps
+#msg "The Darkstalker Wars have subsided in ##landname##. Pasha Pook's Guild has survived the conflict. [Pook's Guild]"  
+#code -2520
+#end
+
+-- Shadow Thieves destroyed in Calimshan
+#newevent
+#rarity 5 -- always, but...
+#req_rare 100
+#req_fornation 203 -- Calimshan
+#req_code -2520
+#req_site 1
+#header 2
+#req_turn 13
+#req_maxturn 13
+#msg "- The Darkstalker Wars Conclude - 
+Myrkul and Bane betrayed their brother, Bhaal, but in many lands, the Shadow Thieves clung on, weakened but alive. Such was not the case in Calimshan, where the Rundeen Slavers Guild, the Dusk Daggers, and the Syl-Pasha all worked to permanently remove the agents and influence of the Lord of Murders. 
+
+The vaults of the Thieves Guild have been looted in ##landname##, and their shrines to Bhaal destroyed. [Qysagghani Fortress]"
+#removesite 2995
+#decscale 0 -- decreases turmoil by 1 step
+#gold 125
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\cotd-events.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------
+-------------------------Cult of the Dragon Instability events by Hashashyyin-------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+#newsite 2200
+#name "Unstable Occupation"
+#path 8
+#rarity 5
+#decunrest -30
+#incscale 0 -- Turmoil
+#end
+
+#newevent
+#rarity 5
+#req_pregame 1
+#header 2
+#req_site 1
+#msg "THE CULT SEIZES SELGAUNT
+
+In a sudden attack, the Cult's strongest opponents in Selgaunt have been destroyed and the only remaining leaders are under our control, but the transition has not been gentle and the territory is in chaos. Great efforts will be required to consolidate the Cult's control here.
+
+Unrest will continue to rise for approximately the next 12 months. [Selgaunt]"
+#unrest 150
+#incscale3 0
+#addsite 2200
+#nolog
+#end
+
+#newevent
+#rarity 5
+#req_pregame 1
+#header 2
+#req_site 1
+#msg "THE CULT SEIZES WESTGATE
+
+In a sudden attack, the Cult's strongest opponents in Westgate have been destroyed and the only remaining leaders are under our control, but the transition has not been gentle and the territory is in chaos. Great efforts will be required to consolidate the Cult's control here.
+
+Unrest will continue to rise for approximately the next 12 months. [Westgate]"
+#unrest 150
+#incscale3 0
+#addsite 2200
+#nolog
+#end
+
+#newevent
+#rarity 5
+#req_rare 25
+#header 2
+#req_site 1
+#msg "Resistance ends in ##landname##
+
+The ringleaders have been hunted down and will no longer stir up dissidents in ##landname##. [Unstable Occupation]"
+#req_turn 10
+#removesite 2200
+#nolog
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\elminster.events.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+-------------------------Elminster Events by Razorfire------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+#newevent -- Elminster opens his collection
+#rarity 5
+#req_fornation 237 -- Shadowdale
+#req_unique 1 -- only happens once per game
+#req_pregame 1
+#header 2
+#magicitem 9 -- Custom - Elminster's Favor in msg
+#magicitem 9 -- Custom - Elminster's Favor in msg
+#magicitem 9 -- Custom - Elminster's Favor in msg
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 2 -- level 1 to 5
+#magicitem 2 -- level 1 to 5
+#magicitem 2 -- level 1 to 5
+#magicitem 2 -- level 1 to 5
+#msg "Elminster, the Sage of Shadowdale, has many strange and wonderous items he keeps in the growing collection of ramshackle lean-tos and huts attached to his hubmle wizard's tower. As plain and simple as they looks (and as unprotected), no one recalls anyone taking the risk of rummaging through these out-buildings. Rumor has it that people have tried over the years, but their existence was erased along with any memory of them having ever lived. Regardless of the veracity of those tall tales, Elminster has deemed now to be a fitting time to share the contents of a few of his locked warehouses and is planning on taking a special interest in a few of the heroes of the Dales. [Elminster's Favor]"
+#nolog
+#end
+
+#newevent -- Elminster's Annual Jaunt
+#rarity 5
+#req_owncapital 1
+#req_season 3 -- Winter
+#req_mnr "The Sage of Shadowdale"
+#req_fornation 237 -- Shadowdale
+#header 2
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 2 -- level 1 to 5
+#msg "Every winter, Elminster returns from a brief jaunt beyond the Prime Material Plane, bringing back some items to aid in the just cause of the realm. His spirits always seem uplifted from these journeys. "
+#nolog
+#end
+
+#newevent -- Dalelands Adventurers
+#rarity 5
+#req_fornation 237 -- Dalelands
+#req_owncapital 1
+#req_site 1
+#req_month 5 -- end of summer
+#header 2
+#nolog
+#nation -2
+#2com "Wanted: Spellcasters"
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 2 -- level 1 to 5
+#msg "A pair of spellcasters have wandered into Shadowdale to answer the call for adventurers. They've come with a few items from their travels. [Shadowdale]"
+#end
+
+#newevent -- Dalelands Adventurers
+#rarity 5
+#req_fornation 237 -- Dalelands
+#req_owncapital 1
+#req_site 1
+#req_month 5 -- end of summer
+#header 2
+#nolog
+#nation -2
+#2com "Wanted: Fighters and Such"
+#magicitem 1 -- level 1 to 3
+#magicitem 1 -- level 1 to 3
+#magicitem 2 -- level 1 to 5
+#msg "Two brave warriors accompany the spellcasters. They've also come with a few items from their travels. [Shadowdale]"
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\elven-bastion-events.dm
+------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------
@@ -76497,31 +76778,9 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #end
 
 
-------------------------------------------------------------------------------------------------------------------------------------
-------------------------- Bhaalspawn Events by hawkraider --------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
-
-#newevent
-#rarity -1 -- common good event
-#req_2monsters 7037 -- bhaalspawn
-#killcom 7037 -- bhaalspawn
-#bloodboost 7037 -- bhaalspawn
-#msg "One of the Bhaalspawn in your service has killed another one. This divine murder has empowered their abilities in blood magic."
-#end
-
-#newevent
-#rarity 1 -- common bad event
-#req_2monsters 7037 -- bhaalspawn
-#killcom 7037 -- bhaalspawn
-#msg "One of the Bhaalspawn in your service has killed another one. They seem disapointed in the lack of power granted to them as a result."
-#end
-
-------------------------------------------------------------------------------------------------------------------------------------
-------------------------- Aboleth Stasis Events by hawkraider and Razorfire --------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
-
---REMOVED
-
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\mercantile-events.dm
+------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ------ Mercantile Events by hawkraider -- replaces prior Merchant type units for several nations------------------------------------
@@ -76661,473 +76920,102 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 -- #msg "Trade ebs and flows with the season, but our merchants know how to make a deal."
 -- #end
 
-------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
--------------------------Elminster Events by Razorfire------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\moonshae-events.dm
+------------------------------------------------------------------------------------------------------------------
 
-#newevent -- Elminster opens his collection
-#rarity 5
-#req_fornation 237 -- Shadowdale
-#req_unique 1 -- only happens once per game
-#req_pregame 1
-#header 2
-#magicitem 9 -- Custom - Elminster's Favor in msg
-#magicitem 9 -- Custom - Elminster's Favor in msg
-#magicitem 9 -- Custom - Elminster's Favor in msg
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 2 -- level 1 to 5
-#magicitem 2 -- level 1 to 5
-#magicitem 2 -- level 1 to 5
-#magicitem 2 -- level 1 to 5
-#msg "Elminster, the Sage of Shadowdale, has many strange and wonderous items he keeps in the growing collection of ramshackle lean-tos and huts attached to his hubmle wizard's tower. As plain and simple as they looks (and as unprotected), no one recalls anyone taking the risk of rummaging through these out-buildings. Rumor has it that people have tried over the years, but their existence was erased along with any memory of them having ever lived. Regardless of the veracity of those tall tales, Elminster has deemed now to be a fitting time to share the contents of a few of his locked warehouses and is planning on taking a special interest in a few of the heroes of the Dales. [Elminster's Favor]"
-#nolog
+--------------------------------
+-- Events for Cormyr and the Moonwells on Moonshae by Casus Belli
+--------------------------------
+
+-- Cormyr spreads drain outside of its capital
+#newevent
+#rarity 0 -- once per province per turn when requirements are met
+#req_fornation 204 -- only for cormyr
+#nation 204 -- cormyr owns this event, important for next command
+#req_mydominion 1 -- only in owner's dominion - cormyr
+#req_nositenbr 1721 -- province does not have a collage of war wizards
+#incscale2 5 -- increases drain by 2 steps, so medium drain
+#notext -- the event doesn't display any text when it happens
+#nolog -- event doesn't leave a log in the history of events in the province
 #end
 
-#newevent -- Elminster's Annual Jaunt
-#rarity 5
-#req_owncapital 1
-#req_season 3 -- Winter
-#req_mnr "The Sage of Shadowdale"
-#req_fornation 237 -- Shadowdale
-#header 2
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 2 -- level 1 to 5
-#msg "Every winter, Elminster returns from a brief jaunt beyond the Prime Material Plane, bringing back some items to aid in the just cause of the realm. His spirits always seem uplifted from these journeys. "
-#nolog
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+------------------- Moonshae Events by Casus Belli -----------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+-- remove sites when Fey Queen Dies
+#newevent
+#rarity 0 -- always happens if req met, 1 per province 
+#req_nomnr 5088 --eladrin Fey Queen
+#req_site 1 --requires site in the province 
+#msg "The Fey Queen is no more, her dominion withers [LeShay Dominion]"
+#req_turn 2 -- cannot happen before turn 2 (not necessary, just in case)
+#req_indepok 1 -- can happen for independent provinces too
+--===== PUT SITE NUMBER BELOW INSTEAD OF NAME !! ======
+#removesite 1727 -- "LeShay Dominion" 
 #end
 
-#newevent -- Dalelands Adventurers
-#rarity 5
-#req_fornation 237 -- Dalelands
-#req_owncapital 1
-#req_site 1
-#req_month 5 -- end of summer
-#header 2
-#nolog
-#nation -2
-#2com "Wanted: Spellcasters"
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 2 -- level 1 to 5
-#msg "A pair of spellcasters have wandered into Shadowdale to answer the call for adventurers. They've come with a few items from their travels. [Shadowdale]"
-#end
-
-#newevent -- Dalelands Adventurers
-#rarity 5
-#req_fornation 237 -- Dalelands
-#req_owncapital 1
-#req_site 1
-#req_month 5 -- end of summer
-#header 2
-#nolog
-#nation -2
-#2com "Wanted: Fighters and Such"
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 2 -- level 1 to 5
-#msg "Two brave warriors accompany the spellcasters. They've also come with a few items from their travels. [Shadowdale]"
-#end
-
-------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
--------------------------Tiefling Events by Razorfire---------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
-
--- Mulhorand and Unther, Baldur's Gate, Calimport, and the Dragon Coast, Aglarond 
--- 7344 -- Tiefling Priestess
--- 7502 -- Tiefling Warlock
--- 7503 -- Tiefling Rogue 
-
--- Mulhorandi Tieflings
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in the City of the Gods, prepared to dedicate her worship to your cause. [City of the Gods]"
+--
+#newspell 
+#name "Taint Moonwell"
+#descr "Taints the local Moonwell, thus creating a Darkwell from which Bhaalist and Malarite forces may be recruited."
+#onlyatsite 1725 -- "Moonwell"
+#provrange 0
+#school 4 
+#researchlevel 5
+#path 0 8
+--#path 1 8
+#pathlevel 0 3
+--#pathlevel 1 3
+#fatiguecost 1000 -- 10 gems
+#effect 10042 --triggers event
+#damage 8000 --event id
 #end
 
 #newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [City of the Gods]"
+#id 8000
+#rarity 0 --always once per province but..
+#req_rare 0 --...0% chance to happen, only triggered by spell
+#removesite 1725 -- "Moonwell"
+#addsite 1726 -- "Darkwell"
+#msg "The Moonwell was corrupted. Let Chauntea, the Earthmother, cry her pathetic tears over her faithfuls' blood."
 #end
 
+--
+#newspell 
+#name "Cleanse Darkwell"
+#descr "Cleanses the local Darkwell, restoring that which was tainted."
+#onlyatsite 1726 -- "Darkwell"
+#provrange 0
+#school 4 
+#researchlevel 5
+#path 0 6
+--#path 1 8
+#pathlevel 0 3
+--#pathlevel 1 3
+#fatiguecost 1000 -- 10 gems
+#effect 10042 --triggers event
+#damage 8001 --event id
+#end
+
+---------------------------------------------------------------
 #newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [City of the Gods]"
-#end
-
---- Unther Tiefling Events in 'Unthalass - The City of Gems'
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in Unthalass, prepared to dedicate her worship to your cause. [Unthalass - The City of Gems]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Unthalass - The City of Gems]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Unthalass - The City of Gems]"
-#end
-
--- Baldur's Gate Tieflings at 'Gray Harbor'
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in Baldur's Gate, prepared to dedicate her worship to your cause. [Gray Harbor]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Gray Harbor]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Gray Harbor]"
+#id 8001
+#rarity 0 --always once per province but..
+#req_rare 0 --...0% chance to happen, only triggered by spell
+#removesite 1726 -- "Darkwell"
+#addsite 1725 -- "Moonwell"
+#msg "The Moonwell's corruption is no more. Let the eyes of Chauntea, the Earthmother, brim over with the water of redemption."
 #end
 
 
--- Calimport Tieflings at Fountain of the Qysars
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in Calimport, prepared to dedicate her worship to your cause. [Fountain of the Qysars]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Fountain of the Qysars]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Fountain of the Qysars]"
-#end
-
-
--- Westgate, Dragon Coast
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in Westgate, prepared to dedicate her worship to your cause. [Westgate]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Westgate]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Westgate]"
-#end
-
--- Waterdeep Tieflings The Yawning Portal Inn
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives at The Yawning Portal Inn, prepared to dedicate her life to adventure. [The Yawning Portal Inn]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [The Yawning Portal Inn]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [The Yawning Portal Inn]"
-#end
-
-
--- Cormyr Tieflings - Arabel
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_notfornation 204
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in Arabel, prepared to dedicate her worship to your cause. [Arabel]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#req_fornation 204
-#header 2
-#nolog
-#nation -2
-#com "Watchwarden of Helm"
-#msg "The Watchwardens of Helm are uncompromising in their loyalty to their ever-vigilant god. Seeing Cormyr as a bastion of stabliity in the realms, one of their faithful has arrived at Arabel, seeking to pledge his service. [Arabel]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_notfornation 204
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Arabel]"
-#end
-
--- Impiltur -- Lyrabar
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in Lyrabar, prepared to dedicate her worship to your cause. [Lyrabar]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Lyrabar]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 4 -- only 4% chance or roughly every 25 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Lyrabar]"
-#end
-
--- Dalelands Tieflings
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in Lyrabar, prepared to dedicate her worship to your cause. [Lyrabar]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Lyrabar]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Lyrabar]"
-#end
-
-
--- Silver Marches - Rauvinwatch Keep
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in Rauvinwatch Keep, prepared to dedicate her worship to your cause. [Rauvinwatch Keep]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Rauvinwatch Keep]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Rauvinwatch Keep]"
-#end
-
--- Aglarond Tieflings - Yeshelmaar
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Priestess"
-#msg "A Tiefling Priestess arrives in Yeshelmaar, prepared to dedicate her worship to your cause. [Yeshelmaar]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Warlock"
-#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Yeshelmaar]"
-#end
-
-#newevent 
-#rarity 5
-#req_rare 3 -- only 3% chance or every 30 turns
-#req_site 1
-#header 2
-#nolog
-#nation -2
-#com "Tiefling Spellfilcher"
-#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Yeshelmaar]"
-#end
-
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\scoured-legion-events.dm
+------------------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -77166,108 +77054,10 @@ In the Year of Lightning Storms, 1374 DR, the daemonfey, Sarya Dlardrageth, mana
 #nolog
 #end
 
-------------------------------------------------------------------------------------------------------------------------------------
--------------------------  Masked Lords of Waterdeep -------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
 
--- "Witch Queen of the North" -- Laeral Silverhand arrives in Waterdeep
-#newevent 
-#rarity 5
-#req_fornation 200 -- Waterdeep
-#req_unique 1
-#req_turn 6
-#req_rare 20 -- 20 percent chance after turn 6
-#req_site 1
-#req_nomnr "Witch Queen of the North"
-#header 2
-#nolog
-#nation -2
-#com "Witch Queen of the North"
-#msg "Laeral Silverhand has joined the city. Also known as the Witch Queen of the North, Laeral was one of the Seven Sisters, the daughters of Mystra. The lover of the legendary wizard, Khelben 'Blackstaff' Arunson, her role as one of the Masked Lords of Waterdeep was a closely guarded secret until the 15th century DR when she became the Open Lord. 
-
-The Lords of Waterdeep were the mysterious and predominantly anonymous ruling council of Waterdeep, having governed the city from the 11th century onwards. They oversaw the regional economy, maintained security, performed diplomacy, and held legal jurisdiction over the city, exerting their will over the surrounding lands for approximately 100 miles (160 km) beyond its walls. [The Palace of Waterdeep]"
-#end
-
--- "Noble Fool to Some" -- Danilo Thann joins the city
-#newevent 
-#rarity 5
-#req_fornation 200 -- Waterdeep
-#req_unique 1
-#req_turn 12
-#req_rare 20 -- 20 percent chance after turn 12
-#req_site 1
-#req_nomnr "Noble Fool to Some" -- Danilo Thann
-#header 2
-#nolog
-#nation -2
-#com "Noble Fool to Some" -- Danilo Thann
-#msg "Danilo Thann was a young nobleman of Waterdeep. A dedicated pupil of his uncle, Khelben Arunsun, he became a Harper and later a Masked Lord. His public persona was that of a spoiled, shallow, and selfish noble and an unpredictible and brash spellcaster whose spells often went awry and casued mayhem throughout the city. In truth, however, he was a master of the art and used his foolish persona to better serve both the Harpers and the city.
-
-The Lords of Waterdeep were the mysterious and predominantly anonymous ruling council of Waterdeep, having governed the city from the 11th century onwards. They oversaw the regional economy, maintained security, performed diplomacy, and held legal jurisdiction over the city, exerting their will over the surrounding lands for approximately 100 miles (160 km) beyond its walls. [The Palace of Waterdeep]"
-#end
-
--- "Master of Secrets" -- Sangalor joins the city
-#newevent 
-#rarity 5
-#req_fornation 200 -- Waterdeep
-#req_unique 1
-#req_turn 18
-#req_rare 20 -- 20 percent chance after turn 18
-#req_site 1
-#req_nomnr "Master of Secrets" -- Sangalor
-#header 2
-#nolog
-#nation -2
-#com "Master of Secrets" -- Sangalor
-#msg "Sangalor, the Master of Secrets, has broken free of its Illithid creators, dedicating itself to the bardic deity, Oghma, and joined your cause. 
-
-Originating in the city of Ch'Chitl, deep in the underdark, Sangalor escaped the mindflayers who created it and fled, first to Skullport, and later to Waterdeep proper. Hiding within the Temple of Oghma, he was eventually discovered by the Lords of Waterdeep who struck an agreement to allow him to remain in the city in exchange for keeping an eye on mindflayer activities in the Underdark. Sangalor would later go on to become a Masked Lord of Waterdeep, a secret that few even among the lords was aware.
-
-The Lords of Waterdeep were the mysterious and predominantly anonymous ruling council of Waterdeep, having governed the city from the 11th century onwards. They oversaw the regional economy, maintained security, performed diplomacy, and held legal jurisdiction over the city, exerting their will over the surrounding lands for approximately 100 miles (160 km) beyond its walls. [Skull Island]"
-#end
-
--- "Blackstaff's Successor" -- Kiriani Agrivar
-#newevent 
-#rarity 5
-#req_fornation 200 -- Waterdeep
-#req_unique 1
-#req_turn 24
-#req_rare 20 -- 20 percent chance after turn 24
-#req_site 1
-#req_nomnr "Blackstaff's Successor" -- Kiriani Agrivar
-#header 2
-#nolog
-#nation -2
-#com "Blackstaff's Successor" -- Kiriani Agrivar
-#msg "Kiriani Agrivar, the half-drow wizard, has joined the City of Splendors. Her life began as the half-elven daughter of a human wizard and a drow sorceress. Born with a strange birthmark which took on a sinister nature as she grew older, it was eventually revealed to contain an evil spirit. In an effort to save the child, a ritual was performed to remove the birthmark and trap the spirit within. The ritual succeeded only in part, however, and the evil spirit escaped, terrorizing the countryside and allying with an extraplanar being known as Imgig Zu. The child, realizing that the only way to stop the spirit was to reincorporate it into her being, chose to accept her dual nature and united with the darkness. The resulting person who emerged gave herself the name Kyriani, would go on to defeat and banish Imgig Zu from Faerûn, and would later join Khelben Arunsun at Blackstaff Tower, where she became his most accomplished student and eventually, his successor. She would adventure with Harpers and Moonstars and eventually joined the Lords of Waterdeep. [The Palace of Waterdeep]"
-#end
-
-
--- Immigration to Zero population provinces event
-#newevent 
-#rarity 0
-#req_rare 25 
-#req_growth -1
-#req_pop0ok
-#req_maxpop 0
-#incpop 100
-#header 2
-#msg "Immigrants flock to the new region, attracted by opportunity and intent on bettering their lot in life."
-#end
-
--- Immigration to Low Population provinces event
-#newevent 
-#rarity 0
-#req_rare 10 
-#req_growth 0
-#req_order -1
-#req_waste 0 -- Cannot be Wasteland
-#req_cave 0 -- Cannot be Cave
-#req_maxpop 400
-#incpop 50
-#header 2
-#msg "Immigrants arrive, escaping the pestilence and upheaval in the lands, hoping for a second chance."
-#end
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\seros-events.dm
+------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------Serôs Events by Razorfire-----------------------------------------------------------------------
@@ -77965,237 +77755,476 @@ These events are rare but also likely to continue in sea provinces with less tha
 --#extramsg -2
 #end
 
-----------------------------------------------------------------------------------------------------------------
---------------------------------------- A Realm of Adventure Events --------------------------------------------
-----------------------------------------------------------------------------------------------------------------
 
-#newevent -- Calimport's Opening Frame
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\tiefling-events.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+-------------------------Tiefling Events by Razorfire---------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+-- Mulhorand and Unther, Baldur's Gate, Calimport, and the Dragon Coast, Aglarond 
+-- 7344 -- Tiefling Priestess
+-- 7502 -- Tiefling Warlock
+-- 7503 -- Tiefling Rogue 
+
+-- Mulhorandi Tieflings
+#newevent 
 #rarity 5
-#req_fornation 203 -- Calimshan
-#req_unique 1 -- only happens once per game
-#req_pregame 1
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
 #header 2
-#magicitem 9 -- Custom - Basic Adventuring Gear
-#magicitem 9 -- Custom - Basic Adventuring Gear
-#magicitem 9 -- Custom - Basic Adventuring Gear
-#magicitem 9 -- Custom - Basic Adventuring Gear
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 2 -- level 1 to 5
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 2 -- level 1 to 5
-#magicitem 1 -- level 1 to 3
-#magicitem 1 -- level 1 to 3
-#magicitem 2 -- level 1 to 5
-#gold 500
-#msg "- - CALIMSHAN - - 
-
-The despotic Shoon Imperium ruled over Calimshan at the height of the kingdom's power. Its final ruler, the Necroqysar, Shoon VII, left a swath of destruction across western and southern Faerûn. His ascension to lichdom and subsequent disappearance led to 60 years of debaucherous rule by his lustful daughter who fell under the sway of Loviatar. The Pashas high mage Vizars siezed power for themselves whereever they could and doomed the Shoon Imperium in their greed. Costly wars led to the annihilation of the empire's capital city of Shoonach. The empire's economic engine of Calimport was burned to the ground. Slave revolts splintered the empire and the Mameluks, the Slave-kings, came to rule. Magic became feared and even outlawed for a time, further weakening the imperial remnants until they could not even unify against local threats. In the east, the last of the great Mameluk kings was killed after managing to narrowly defeat a rebellion of powerful, beholder-worshipping fanatics. In the end, however, it was The Rage of Dragons in 1018 DR that was the final doom of the Memeluks. Slavery was reinstituted and the wealthy assumed power - and the wealthiest of all were the Djenispools. 
-
-Perhaps short of instituting a Golden Age, the Djenispool dynasty did manage to force an internal peace that lasted over 300 years, albeit through increasingly violent means. Their alliance with the Shadow Thieves led to assassinations becoming increasingly common across the Shining South as the Bhaalists flourished. This came to a head with the Darkstalker Wars in 1358 DR in which at least 9 powerful factions all vied for control over the region. The Djenispool family was erased at the war's height by their trusted advisor and most powerful Vizar, Ralan el Pesarkhal. No one dared dispute the usurper when he named himself the new Syl-Pasha of Calimshan. His lone goal - to reunite the lands of the Shoon Imperium under his 'benevolent' rule. [Basic Adventuring Gear]"
 #nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in the City of the Gods, prepared to dedicate her worship to your cause. [City of the Gods]"
 #end
 
-#newevent -- THE DARKSTALKER WARS 
+#newevent 
 #rarity 5
-#req_unique 1
-#req_turn 1
-#req_rare 100 
+#req_rare 4 -- only 4% chance or roughly every 25 turns
 #req_site 1
 #header 2
-#req_fornation 203 -- Calimshan
-#magicitem 4 -- level 5 to 7
-#magicitem 4 -- level 5 to 7
-#magicitem 4 -- level 5 to 7
-#magicitem 4 -- level 5 to 7
-#magicitem 4 -- level 5 to 7
-#magicitem 4 -- level 5 to 7
-#msg "- - THE DARKSTALKER WARS - - 
-
-The Darkstalker Wars were a series of battles between the various guild thieves and assassins of Calimshan that drew in the entire power structure of the regions that once comprised the Shoon Imperium, including Baldur's Gate, Amn, Tethyr, the Border Kingdoms and Lapalaayan coast, and the rising Kingdom of Calimshan. Even Waterdeep was pulled into the conflict. The Shadow Thieves held considerable power across the region. The Dusk Daggers, the Rundeen Slavers Guild, and several other factions had long worked both with and against the Shadow Thieves. 
-
-The silencing of the God of Murders, Bhaal, by the Black Hand of Bane kicked off the deadly power-struggle. Long led by Bhaalists, The Shadow Thieves fell into a leadership crisis, and soon an all out war with the Dusk Daggers and the Rundeen ensued, nearly wiping out all three factions in Calimshan. Their mutual destruction did not, however, bring an end to the chaos of the conflict. After many long years of rampant murder and paranoia and with no end in sight, it was revealed that the Twisted Rune was the true power behind the continuing madness. [Qysagghani Fortress]"
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [City of the Gods]"
 #end
 
---------------------------------
--- THE CHAOS OF THE DARKSTALKER WARS -- Codes -2520 to -2530
---------------------------------
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [City of the Gods]"
+#end
+
+--- Unther Tiefling Events in 'Unthalass - The City of Gems'
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in Unthalass, prepared to dedicate her worship to your cause. [Unthalass - The City of Gems]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Unthalass - The City of Gems]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Unthalass - The City of Gems]"
+#end
+
+-- Baldur's Gate Tieflings at 'Gray Harbor'
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in Baldur's Gate, prepared to dedicate her worship to your cause. [Gray Harbor]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Gray Harbor]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Gray Harbor]"
+#end
+
+
+-- Calimport Tieflings at Fountain of the Qysars
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in Calimport, prepared to dedicate her worship to your cause. [Fountain of the Qysars]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Fountain of the Qysars]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Fountain of the Qysars]"
+#end
+
+
+-- Westgate, Dragon Coast
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in Westgate, prepared to dedicate her worship to your cause. [Westgate]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Westgate]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Westgate]"
+#end
+
+-- Waterdeep Tieflings The Yawning Portal Inn
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives at The Yawning Portal Inn, prepared to dedicate her life to adventure. [The Yawning Portal Inn]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [The Yawning Portal Inn]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [The Yawning Portal Inn]"
+#end
+
+
+-- Cormyr Tieflings - Arabel
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_notfornation 204
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in Arabel, prepared to dedicate her worship to your cause. [Arabel]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#req_fornation 204
+#header 2
+#nolog
+#nation -2
+#com "Watchwarden of Helm"
+#msg "The Watchwardens of Helm are uncompromising in their loyalty to their ever-vigilant god. Seeing Cormyr as a bastion of stabliity in the realms, one of their faithful has arrived at Arabel, seeking to pledge his service. [Arabel]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_notfornation 204
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Arabel]"
+#end
+
+-- Impiltur -- Lyrabar
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in Lyrabar, prepared to dedicate her worship to your cause. [Lyrabar]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Lyrabar]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 4 -- only 4% chance or roughly every 25 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Lyrabar]"
+#end
+
+-- Dalelands Tieflings
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in Lyrabar, prepared to dedicate her worship to your cause. [Lyrabar]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Lyrabar]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Lyrabar]"
+#end
+
+
+-- Silver Marches - Rauvinwatch Keep
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in Rauvinwatch Keep, prepared to dedicate her worship to your cause. [Rauvinwatch Keep]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Rauvinwatch Keep]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Rauvinwatch Keep]"
+#end
+
+-- Aglarond Tieflings - Yeshelmaar
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Priestess"
+#msg "A Tiefling Priestess arrives in Yeshelmaar, prepared to dedicate her worship to your cause. [Yeshelmaar]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Warlock"
+#msg "'A Pact is a tool, not a damnation,' or so says the Tiefling Warlock before you as he pledges his life in service to the realm. [Yeshelmaar]"
+#end
+
+#newevent 
+#rarity 5
+#req_rare 3 -- only 3% chance or every 30 turns
+#req_site 1
+#header 2
+#nolog
+#nation -2
+#com "Tiefling Spellfilcher"
+#msg "A Tiefling Rogue has been making quite a name for herself among the diviners, who've been watching her for several months as she evaded the guards time and again. After thoroughly vetting her motivations, it seems she'll make an excellent agent for our schemes. [Yeshelmaar]"
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\ungrouped-events.dm
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+-----------EVENTS -- with major contributions from Casus Belli and hawkraider ------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------- Bhaalspawn Events by hawkraider --------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 
 #newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_rare 20 
-#req_fornation 203 -- Calimshan
-#req_targorder 4 -- research
-#req_site 1
---#req_targmnr 7035 -- shadow thief
---#req_targmnr 7036 -- cloakmaster
-#req_turn 2
-#req_notcode -2520
-#assassin "Dark Dagger Assassin"
-#header 2
-#msg "- A Dark Dagger Assassin makes his move against one of your agents. [Shadow Thieves Guild]"
+#rarity -1 -- common good event
+#req_2monsters 7037 -- bhaalspawn
+#killcom 7037 -- bhaalspawn
+#bloodboost 7037 -- bhaalspawn
+#msg "One of the Bhaalspawn in your service has killed another one. This divine murder has empowered their abilities in blood magic."
 #end
 
 #newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_rare 20 
-#req_fornation 203 -- Calimshan
-#req_targorder 4 -- research
---#req_targmnr 7035 -- shadow thief
---#req_targmnr 7036 -- cloakmaster
-#req_site 1
-#req_turn 2
-#req_notcode -2520
-#assassin "Shadow Thief"
-#header 2
-#msg "- A Shadow Thief assassin makes his move against one of your agents. [Dusk Dagger Guild]"
+#rarity 1 -- common bad event
+#req_2monsters 7037 -- bhaalspawn
+#killcom 7037 -- bhaalspawn
+#msg "One of the Bhaalspawn in your service has killed another one. They seem disapointed in the lack of power granted to them as a result."
 #end
 
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_rare 20 
-#req_fornation 203 -- Calimshan
-#req_targorder 4 -- research
---#req_targmnr 7035 -- shadow thief
---#req_targmnr 7036 -- cloakmaster
-#req_site 1
-#req_turn 2
-#req_notcode -2520
-#assassin "Rundeen Assassin"
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------- Aboleth Stasis Events by hawkraider and Razorfire --------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+--REMOVED
+
+------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------- Repopulation Events -----------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+-- Immigration to Zero population provinces event
+#newevent 
+#rarity 0
+#req_rare 25 
+#req_growth -1
+#req_pop0ok
+#req_maxpop 0
+#incpop 100
 #header 2
-#msg "- A Rundeen Assassin makes his move against one of your agents. [Rundeen Guildhall]"
+#msg "Immigrants flock to the new region, attracted by opportunity and intent on bettering their lot in life."
 #end
 
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_rare 20 
-#req_fornation 203 -- Calimshan
-#req_targorder 4 -- research
---#req_targmnr 7035 -- shadow thief
---#req_targmnr 7036 -- cloakmaster
-#req_site 1
-#req_turn 2
-#req_notcode -2520
-#assassin "Rogue"
+-- Immigration to Low Population provinces event
+#newevent 
+#rarity 0
+#req_rare 10 
+#req_growth 0
+#req_order -1
+#req_waste 0 -- Cannot be Wasteland
+#req_cave 0 -- Cannot be Cave
+#req_maxpop 400
+#incpop 50
 #header 2
-#msg "- An unknown assassin makes his move against one of your agents. [Pook's Guild]"
+#msg "Immigrants arrive, escaping the pestilence and upheaval in the lands, hoping for a second chance."
 #end
 
--- Pook's Guild spreads turmoil 
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_site 1
-#req_turn 2
-#req_maxturn 9
-#header 2
-#incscale2 0 -- increases turmoil by 2 steps, so medium drain
-#msg "Pasha Pook reports on a number of attempted murders, no doubt part of the ongoing Darkstalker Wars. [Pook's Guild]" 
-#end
-
--- Shadow Thieves Guilds spread turmoil 
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_site 1
-#req_turn 2
-#req_maxturn 9
-#header 2
-#incscale2 0 -- increases turmoil by 2 steps, so medium drain
-#msg "The chaos of the Darkstalker Wars continues to cause turmoil in ##landname##. [Shadow Thieves Guild]" 
-#end
-
--- Rundeen Guildhalls spread turmoil 
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_site 1
-#req_turn 2
-#req_maxturn 9
-#header 2
-#incscale2 0 -- increases turmoil by 2 steps, so medium drain
-#msg "The chaos of the Darkstalker Wars continues to cause turmoil in ##landname##. [Rundeen Guildhall]" 
-#end
-
--- Dusk Dagger Guilds spread turmoil 
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_site 1
-#req_turn 2
-#req_maxturn 9
-#header 2
-#incscale2 0 -- increases turmoil by 2 steps, so medium drain
-#msg "The chaos of the Darkstalker Wars continues to cause turmoil in ##landname##. [Dusk Dagger Guild]" 
-#end
-
--- End of the Darkstalker Wars - Shadow Thieves Guilds
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_notcode -2520
-#req_site 1
-#req_turn 12
-#header 2
-#decscale 0 -- decreases turmoil by 1 step
-#msg "The Darkstalker Wars have subsided in ##landname##. [Shadow Thieves Guild]" 
-#code -2520
-#end
-
--- End of the Darkstalker Wars - Rundeen Guildhalls 
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_notcode -2520
-#req_site 1
-#req_turn 12
-#req_maxturn 13
-#header 2
-#incscale2 1 -- increases sloth by 2 steps
-#msg "The Darkstalker Wars have subsided in ##landname##. The Rundeen have clung on to their power, but are much reduced. [Rundeen Guildhall]"  
-#code -2520
-#end
-
--- End of the Darkstalker Wars - Dusk Dagger Guilds
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_notcode -2520
-#req_site 1
-#req_turn 12
-#req_maxturn 13
-#header 2
-#decscale 0 -- decreases turmoil by 1 step
-#msg "The Darkstalker Wars have subsided in ##landname##. The Dusk Dagger Guild has clung on to survival. [Dusk Dagger Guild]"  
-#code -2520
-#end
-
--- End of the Darkstalker Wars - Pook's Guild
-#newevent
-#rarity 0 -- once per province per turn when requirements are met
-#req_fornation 203 -- Calimshan
-#req_notcode -2520
-#req_site 1
-#req_turn 12
-#req_maxturn 13
-#header 2
-#decscale2 0 -- decreases turmoil by 2 steps
-#msg "The Darkstalker Wars have subsided in ##landname##. Pasha Pook's Guild has survived the conflict. [Pook's Guild]"  
-#code -2520
-#end
-
--- Shadow Thieves destroyed in Calimshan
-#newevent
-#rarity 5 -- always, but...
-#req_rare 100
-#req_fornation 203 -- Calimshan
-#req_code -2520
-#req_site 1
-#header 2
-#req_turn 13
-#req_maxturn 13
-#msg "- The Darkstalker Wars Conclude - 
-Myrkul and Bane betrayed their brother, Bhaal, but in many lands, the Shadow Thieves clung on, weakened but alive. Such was not the case in Calimshan, where the Rundeen Slavers Guild, the Dusk Daggers, and the Syl-Pasha all worked to permanently remove the agents and influence of the Lord of Murders. 
-
-The vaults of the Thieves Guild have been looted in ##landname##, and their shrines to Bhaal destroyed. [Qysagghani Fortress]"
-#removesite 2995
-#decscale 0 -- decreases turmoil by 1 step
-#gold 125
-#end
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------- Ao's Eyes ----------------------------------------------------------------------------------------------------------- 
@@ -78242,60 +78271,85 @@ The vaults of the Thieves Guild have been looted in ##landname##, and their shri
 -- #newsite 2002, "Abyssal Rift"
 
 
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\waterdeep-events.dm
+------------------------------------------------------------------------------------------------------------------
+
 ------------------------------------------------------------------------------------------------------------------------------------
--------------------------Cult of the Dragon Instability events by Hashashyyin-------------------------------------------------------
+-------------------------  Masked Lords of Waterdeep -------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------
 
-#newsite 2200
-#name "Unstable Occupation"
-#path 8
+-- "Witch Queen of the North" -- Laeral Silverhand arrives in Waterdeep
+#newevent 
 #rarity 5
-#decunrest -30
-#incscale 0 -- Turmoil
-#end
-
-#newevent
-#rarity 5
-#req_pregame 1
-#header 2
+#req_fornation 200 -- Waterdeep
+#req_unique 1
+#req_turn 6
+#req_rare 20 -- 20 percent chance after turn 6
 #req_site 1
-#msg "THE CULT SEIZES SELGAUNT
-
-In a sudden attack, the Cult's strongest opponents in Selgaunt have been destroyed and the only remaining leaders are under our control, but the transition has not been gentle and the territory is in chaos. Great efforts will be required to consolidate the Cult's control here.
-
-Unrest will continue to rise for approximately the next 12 months. [Selgaunt]"
-#unrest 150
-#incscale3 0
-#addsite 2200
-#nolog
-#end
-
-#newevent
-#rarity 5
-#req_pregame 1
+#req_nomnr "Witch Queen of the North"
 #header 2
-#req_site 1
-#msg "THE CULT SEIZES WESTGATE
-
-In a sudden attack, the Cult's strongest opponents in Westgate have been destroyed and the only remaining leaders are under our control, but the transition has not been gentle and the territory is in chaos. Great efforts will be required to consolidate the Cult's control here.
-
-Unrest will continue to rise for approximately the next 12 months. [Westgate]"
-#unrest 150
-#incscale3 0
-#addsite 2200
 #nolog
+#nation -2
+#com "Witch Queen of the North"
+#msg "Laeral Silverhand has joined the city. Also known as the Witch Queen of the North, Laeral was one of the Seven Sisters, the daughters of Mystra. The lover of the legendary wizard, Khelben 'Blackstaff' Arunson, her role as one of the Masked Lords of Waterdeep was a closely guarded secret until the 15th century DR when she became the Open Lord. 
+
+The Lords of Waterdeep were the mysterious and predominantly anonymous ruling council of Waterdeep, having governed the city from the 11th century onwards. They oversaw the regional economy, maintained security, performed diplomacy, and held legal jurisdiction over the city, exerting their will over the surrounding lands for approximately 100 miles (160 km) beyond its walls. [The Palace of Waterdeep]"
 #end
 
-#newevent
+-- "Noble Fool to Some" -- Danilo Thann joins the city
+#newevent 
 #rarity 5
-#req_rare 25
-#header 2
+#req_fornation 200 -- Waterdeep
+#req_unique 1
+#req_turn 12
+#req_rare 20 -- 20 percent chance after turn 12
 #req_site 1
-#msg "Resistance ends in ##landname##
-
-The ringleaders have been hunted down and will no longer stir up dissidents in ##landname##. [Unstable Occupation]"
-#req_turn 10
-#removesite 2200
+#req_nomnr "Noble Fool to Some" -- Danilo Thann
+#header 2
 #nolog
+#nation -2
+#com "Noble Fool to Some" -- Danilo Thann
+#msg "Danilo Thann was a young nobleman of Waterdeep. A dedicated pupil of his uncle, Khelben Arunsun, he became a Harper and later a Masked Lord. His public persona was that of a spoiled, shallow, and selfish noble and an unpredictible and brash spellcaster whose spells often went awry and casued mayhem throughout the city. In truth, however, he was a master of the art and used his foolish persona to better serve both the Harpers and the city.
+
+The Lords of Waterdeep were the mysterious and predominantly anonymous ruling council of Waterdeep, having governed the city from the 11th century onwards. They oversaw the regional economy, maintained security, performed diplomacy, and held legal jurisdiction over the city, exerting their will over the surrounding lands for approximately 100 miles (160 km) beyond its walls. [The Palace of Waterdeep]"
 #end
+
+-- "Master of Secrets" -- Sangalor joins the city
+#newevent 
+#rarity 5
+#req_fornation 200 -- Waterdeep
+#req_unique 1
+#req_turn 18
+#req_rare 20 -- 20 percent chance after turn 18
+#req_site 1
+#req_nomnr "Master of Secrets" -- Sangalor
+#header 2
+#nolog
+#nation -2
+#com "Master of Secrets" -- Sangalor
+#msg "Sangalor, the Master of Secrets, has broken free of its Illithid creators, dedicating itself to the bardic deity, Oghma, and joined your cause. 
+
+Originating in the city of Ch'Chitl, deep in the underdark, Sangalor escaped the mindflayers who created it and fled, first to Skullport, and later to Waterdeep proper. Hiding within the Temple of Oghma, he was eventually discovered by the Lords of Waterdeep who struck an agreement to allow him to remain in the city in exchange for keeping an eye on mindflayer activities in the Underdark. Sangalor would later go on to become a Masked Lord of Waterdeep, a secret that few even among the lords was aware.
+
+The Lords of Waterdeep were the mysterious and predominantly anonymous ruling council of Waterdeep, having governed the city from the 11th century onwards. They oversaw the regional economy, maintained security, performed diplomacy, and held legal jurisdiction over the city, exerting their will over the surrounding lands for approximately 100 miles (160 km) beyond its walls. [Skull Island]"
+#end
+
+-- "Blackstaff's Successor" -- Kiriani Agrivar
+#newevent 
+#rarity 5
+#req_fornation 200 -- Waterdeep
+#req_unique 1
+#req_turn 24
+#req_rare 20 -- 20 percent chance after turn 24
+#req_site 1
+#req_nomnr "Blackstaff's Successor" -- Kiriani Agrivar
+#header 2
+#nolog
+#nation -2
+#com "Blackstaff's Successor" -- Kiriani Agrivar
+#msg "Kiriani Agrivar, the half-drow wizard, has joined the City of Splendors. Her life began as the half-elven daughter of a human wizard and a drow sorceress. Born with a strange birthmark which took on a sinister nature as she grew older, it was eventually revealed to contain an evil spirit. In an effort to save the child, a ritual was performed to remove the birthmark and trap the spirit within. The ritual succeeded only in part, however, and the evil spirit escaped, terrorizing the countryside and allying with an extraplanar being known as Imgig Zu. The child, realizing that the only way to stop the spirit was to reincorporate it into her being, chose to accept her dual nature and united with the darkness. The resulting person who emerged gave herself the name Kyriani, would go on to defeat and banish Imgig Zu from Faerûn, and would later join Khelben Arunsun at Blackstaff Tower, where she became his most accomplished student and eventually, his successor. She would adventure with Harpers and Moonstars and eventually joined the Lords of Waterdeep. [The Palace of Waterdeep]"
+#end
+
 
