@@ -1745,7 +1745,7 @@ A devout worshipper of Mielikki, goddess of rangers and wild places, she would g
 #unsurr 2
 #sailing 3 3
 #okleader
-#startingaff 26 -- never healing wound
+#startingaff 67108864 -- never healing wound
 #immortal
 #reformtime 36
 #inspirational 2

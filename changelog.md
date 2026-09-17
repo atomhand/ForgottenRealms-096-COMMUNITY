@@ -65,6 +65,7 @@
    * heretic for Red Wizard, Priestess of Akadi
    * Gray One disease grinder (This seems extremely strong, review as a balance concern)
    * Armour prot for Halruaan Skyship (fixed prot is possibly imbalanced)
+   * Starting affliction for Catti-brie
  * Nations
    * Halruaa missing foreign recruit archers & peltasts
  * Magic items
@@ -72,11 +73,33 @@
   * Dwarven shield counts as magic
   * Adventuring gear
    * recuperation for Advanced and above
+  * Heatseeker Longbow - swiftness 20%
   * morale for Dikar peacekeeper's mantle, Crown of Eadraal
   * recuperation for Dukar Coral Hand
   * airshield for Iridea's Tear
+ * Sites
+  * Downshadow - dwarven hammer recruit
+  * Tower of Arcane Might - 20% enchantment discount
+  * increased unrest for Trench of Lopok and The Cloakwood
+  * resource bonus for Procampur - Steel City and Ffolk Villages, Iron Tabernacle
+  * Summons for Duskwood Dell (unicorn), Lake of Blood (wraith), Haunted Plains (wraith),Citadel of the Raven (wraith), The Sunglade (unicorn)
  * Spells
    * Missing details for 23 spells
+ * Events
+   * Turmoil decrease for some of the "Darkstalker Wars have ended" events
+   * "Seros captures the Pythan Trench" event can trigger
+   * "An enemy nation has crossed the Sharksbane Wall" unique tag fixed
+   * "The summoned patron from the Nine Hells in ##landname## was found and cornered " missing barbazu spawns
+   * "- - A lone Wastrilith has left As'Arem in search of a lair of its own. - - " missing stealth Wastrilith Guardian spawn
+   * "Rumors of the construction of a Hidden Shrine to Dagon" emigration
+
+Reworked/abandoned functionality - certain content was trying to do something that is impossible with the modding commands
+ * Ego Whip (weapon) - Stuns and deal 1 psychic damage (MR negates). A target who fails a second MR check is also subject to Confusion.
+ * Adventuring Gear - originally was meant to grant Sailing/Air breathing - this is technically difficult to do and not really needed
+ * Dukar Order of Maalirn - was meant to grant a thaumaturgy cost reduction, but this is impossible (and OP)
+
+Misc
+ * Move site ids 1590-1699 to 3190-3299 - mod manual recommends mods use ids 1700-3999 only
 
 ## 0.95 Indev
   

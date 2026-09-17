@@ -4301,11 +4301,8 @@
 #newweapon 1821
 #copyweapon 311 -- Mind Blast
 #name "Ego Whip"
-#dt_aff 22 -- mute
-#dt_aff 34 -- confused
-#dt_raise -- yikes
-#dt_stun 10
-#dt_realstun 100
+#dt_realstun
+#dmg 100
 #sound 9
 #internal
 #mind
@@ -4316,7 +4313,16 @@
 #natural
 #ammo 10
 #range 30
-#dmg 6
+#secondaryeffect 1872
+#end
+
+#newweapon 1872
+#name "Confusion"
+#dt_aff
+#dmg 17179869184
+#mrnegates
+#mind
+#secondaryeffectalways 293 -- psychic damage
 #end
 
 
@@ -5382,7 +5388,7 @@
 #mainpath 1
 #mainlevel 3
 #hp 4
-#ap 2
+#swift 20
 #type 3
 #end
 
@@ -5461,7 +5467,6 @@
 #ironskin
 #cursed
 #autospell "Horde of Skeletons"
-#rec
 #end
 
 -- Claw of the Revenancer
@@ -5480,7 +5485,7 @@
 #unique
 #undcommand 25
 #tmpdeathgems 3
-#reanimpriest 10
+#reanimpriest
 #makemonsters2 7336 -- Silveraith
 #end
 
@@ -5563,7 +5568,6 @@
 #inspirational -1
 #researchbonus -5
 #darkvision 60
-#sailing 7 7
 #noimmobile
 #itemcost1 -20
 #end
@@ -5590,10 +5594,7 @@
 #researchbonus -10
 #recuperation
 #waterbreathing
-#airbreathing 1
-#amphibian
 #darkvision 60
-#sailing 7 7
 #noimmobile
 
 #end
@@ -5626,10 +5627,7 @@
 #poisonres 5
 #recuperation
 #waterbreathing
-#airbreathing 1
-#amphibian
 #darkvision 80
-#sailing 7 7
 #noimmobile
 #end
 
@@ -5662,11 +5660,8 @@
 #poisonres 5
 #recuperation
 #waterbreathing
-#airbreathing 1
-#amphibian
 #allret 50
 #spiritsight
-#sailing 8 8
 #pen 1
 #noimmobile
 --#tainted 20
@@ -5855,7 +5850,6 @@
 #secondarylevel 3
 #noforgebonus 
 #hp 5
-#thaucost -20
 #nobadevents 25
 #incunrest -20
 #patrolbonus 50
@@ -7808,7 +7802,7 @@ A devout worshipper of Mielikki, goddess of rangers and wild places, she would g
 #unsurr 2
 #sailing 3 3
 #okleader
-#startingaff 26 -- never healing wound
+#startingaff 67108864 -- never healing wound
 #immortal
 #reformtime 36
 #inspirational 2
@@ -63228,2488 +63222,6 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 --//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-#newsite 1490
-#name "Jungle Tomb"
-#path 6
-#level 0
-#rarity 5
-#gems  5 2
-#com 161 		-- Death 3 Sauromancer
-#end
-
-#newsite 1491
-#name "Aarokocra Hunting Ground"
-#path 1
-#level 0
-#rarity 5
-#gems  1 1
-#mon 6814 	-- Aarokocra Hunter
-#com 6815	-- Aarokocra Shaman
-#end
-
-#newsite 1492
-#name "Kir Sabal"
-#path 1
-#level 0
-#rarity 5
-#gems  1 2
-#mon 6814 	-- Aarokocra Hunter
-#com 6815	-- Aarokocra Shaman
-#end
-
-#newsite 1493
-#name  "Ruins of Omu"
-#path 1
-#level 0
-#rarity 5
-#gems  1 2
-#mon 6814 	-- Aarokocra Hunter
-#com 6815	-- Aarokocra Shaman 
-#end
-
-#newsite 1494
-#name  "Amphitheater of Mezro"
-#path 8
-#level 0
-#rarity 5
-#gems 8 1
-#mon 6828	-- Chultan Raptor
-#end
-
-#newsite 1495
-#name  "Mezro College of Wizards"
-#path 4
-#level 0
-#rarity 5
-#gems 4 1
-#gems 3 1
-#decscale 5 -- increases magic
-#com 1194 -- Couatl
-#end
-
-#newsite 1496
-#name  "Library of Mezro"
-#path 1
-#level 0
-#rarity 5
-#gems 1 1 
-#incscale 1 -- increases sloth
-#decscale 5 -- increases magic
-#end
-
-#newsite 1497
-#name  "Temple of Ubtao"
-#path 9
-#level 0
-#rarity 5
-#gems 6 2
-#gems 5 1
-#com 6820 -- Mazewalker of Ubtao
-#com 6817 -- Barae
-#end
-
-#newsite 1498
-#name "Lizardfolk Lairs"
-#path 6
-#level 0
-#rarity 1
-#gems 5 1
-#com 7406 -- Lizard Man Chieftain
-#com 6734		-- T1 MAGE Lizardman Shaman
-#mon 783 		-- Serpent Dancer
-#mon 6727 		-- Lizardfolk Scavenger
-#end
-
-#newsite 1499
-#name "Troglodyte Dens"
-#path 3
-#level 0
-#rarity 5
-#gems 2 1
-#com 2749 		-- T1 MAGE Troglodyte Shaman
-#mon 6677		-- Troglodyte warrio
-#end
-
-#newsite 1500
-#name "Shrine of Sacrilege"
-#path 8
-#level 0
-#rarity 5
-#incscale 0 -- increases turmoil
-#com 5072 -- Duergar Blackguard - holy commander ( X )
-#com 7232 -- Duergar Mind Master
-#mon 7227 -- Duergar Heavy Axe - unit ( X )
-#mon 7228 -- Duergar Mauler - unit ( X )
-#mon 7229 -- Duergar Scorpion - ranged unit ( X )
-#end
-
-#newsite 1501
-#name "Gallery of Angels"
-#path 4
-#level 0
-#rarity 5 -- Unique
-#incscale 4 -- increases misfortune
-#decscale 5 -- increases magic
-#gems 4 1
-#enchcost 10
-#end
-
-#newsite 1502
-#name "Eryndlyn"
-#path 7
-#level 0
-#rarity 5
-#gems 8 3
-#gems 7 1
-#gems 3 1
-#gold 75
-#mon 7234 -- Drow Sargtlin
-#mon 6723 -- Goblin Dogslicer
-#mon 6676 -- Orc Marauders
-#mon 2219 -- Forest Troll
-#com 7169 -- Soul Spider
-#com 6771 -- Drow Priestess
-#end
-
-#newsite 1503
-#name "Three Torn Towers"
-#path 6
-#level 2
-#rarity 5
-#gems 6 2
-#com 6938 -- Wildshape Druid
-#end
-
-#newsite 1504
-#name "Surface Ruins of Ascalhorn"
-#path 3
-#look 3
-#level 2
-#rarity 5
-#gems 3 1
-#gems 4 2
-#end
-
-#newsite 1505
-#name "Ruins of Arryvandaar"
-#path 5
-#level 0
-#rarity 5
-#gems 5 2
-#enchcost 20
-#adventureruin 10
-#com 310 -- necromancer
-#end
-
-#newsite 1506
-#name "Adamantine Ziggurat"
-#path 0
-#level 0
-#rarity 5
-#gems 0 3
-#enchcost 10
-#firerange 2
-#end
-
-#newsite 1507
-#name "Great Forge"
-#path 3
-#level 0
-#rarity 5
-#gems 3 2
-#constcost 20
-#end
-
-#newsite 1508
-#name "Iron Tabernacle"
-#path 0
-#level 0
-#rarity 5
-#mon  7185 -- Dwarven Defender
-#com  7192 -- Deathchanter
-#com  6616	-- Cleric of Moradin
-#resources 50
-#end
-
-#newsite 1509
-#name "Citadel of the Bloody Hand"
-#path 8
-#level 0
-#rarity 5
-#gold 25
-#com 7035 -- Shadow Thief
-#com 6926 -- Rogue
-#mon 482 -- Villain
-#end
-
-#newsite 1510
-#name "Festering Clogs"
-#path 8
-#level 0
-#rarity 5
-#disease 3
-#gems 2 1
-#com 7137 -- Wererat 
-#incscale 1 -- increased sloth down here
-#adventureruin 20
-#end
-
-#newsite 1511
-#name "Downshadow"
-#path 1
-#level 0
-#rarity 5
-#gems 1 1
-#com 3496 -- storm mage
-#com 7183 -- Dwarven Battlesmith
-#unit 7009 -- Dwarven Hammer
-#gold 25
-#end
-
-#newsite 1512
-#name "The House of Pain"
-#path 8
-#level 0
-#rarity 5
-#gems 8 1
-#com 6701 -- Caressor of Loviatar
-#incscale 0 -- increased turmoil down here
-#end
-
-#newsite 1513
-#name "Hall of the Sleeping Kings"
-#path 5
-#level 0
-#rarity 5
-#gems 4 1
-#gems 5 1
-#mon 7234 -- Drow Sargtlin 
-#com 7515 -- Drow Adept
-#incscale 3 -- increased death down here
-#decscale 5 -- incrased magic
-#adventureruin 20
-#end
-
-#newsite 1514
-#name "Kyorlamshin"
-#path 7
-#level 0
-#rarity 5
-#gold 25
-#gems 7 1
-#com 7172 -- Sword Dancer of Eilistraee
-#mon 7234 -- Drow Sargtlin
-#incscale 0
-#end
-
-#newsite 1515
-#name "Duergar Hall"
-#path 4
-#level 0
-#rarity 5
-#res 25
-#gems 4 1
-#mon 7227 -- Duergar Heavy Axe 
-#mon 7228 -- Duergar Mauler
-#com 7242 -- Duergar Deepscout
-#com 7230 -- Duergar Laird
-#com 7233 -- Duergar Runesmith 
-#decscale 1
-#end
-
-#newsite 1516
-#name "Lair of the Umber Hulks"
-#path 3
-#level 0
-#rarity 5
-#com 7165 -- Umberhulks
-#mon 7165 -- Umberhulks
-#incscale 0
-#end
-
-#newsite 1517
-#name "Trobriand's Graveyard"
-#path 9
-#level 0
-#rarity 5
-#gems 3 2
-#summon 3232 -- Iron Fly
-#adventureruin 20
-#decscale 1
-#decscale 5
-#end
-
-#newsite 1518
-#name "Heart Ward"
-#path 2
-#level 0
-#rarity 5
-#gems 5 1
-#gems 8 1
-#mon 7360 -- Kobold Slinger
-#mon 7359 -- Kobold Spear
-#com 7361 -- Kobold Chieftain
-#com 7362 -- Kobold Sorcerer
-#com 6831 -- yuan-ti abomination
-#incscale 0
-#incscale 4
-#end
-
-#newsite 1519
-#name "The Dredge and Port" 
-#path 8
-#level 0
-#rarity 5
-#gems 2 1
-#gems 8 1 
-#com 6811 -- bugbear champion
-#com 5078 -- Northlander Jarl
-#com 5101 -- Black Blood Skinshifter
-#com 7242 -- Duergar Deepscout
-#com 7233 -- Duergar Runesmith
-#mon 7228 -- Duergar Mauler
-#mon 5076 -- Northlander Reaver
-#incscale 0
-#incscale 4
-#end
-
-#newsite 1520
-#name "The Crown and Venter" 
--- Mummy, Duergar, Zhentarim, archmage Tasselgryn Velldarn, Merchant-Lord Thorvin Twinbeard
-#path 1
-#level 0
-#rarity 5
-#gold 275
-#com 7515 -- Drow Adept
-#com 6775 -- Green Hag
-#mon 7234 -- Drow Sargtlin
-#mon 7081 -- Otyugh
-#incscale 0
-#incscale 4
-#end
-
-#newsite 1521
-#name "The Crystal Labyrinth" -- Former drow training ground, claimed by Halaster and used as his treasure room
-#path 4
-#level 0
-#rarity 5 
-#gems 4 2
-#incscale 0 -- increases turmoil
-#decscale 5 -- increases magic
-#adventureruin 20
-#end
-
-#newsite 1522
-#name "Arcturiadoom"
-#path 5
-#level 0
-#rarity 5
-#gems 5 2
-#com 6738 -- Fire Giant Commander
-#com 6704 -- nighbringer of shar
-#mon 7234 -- Drow Sargtlin 
-#incscale 3 -- increases death
-#decscale 5 -- increases magic
-#end
-
-#newsite 1523
-#name "Muiral's Gauntlet"
-#path 9
-#level 0
-#rarity 5
-#gems 4 1 
-#gems 7 2
-#mon 6774 -- Drow Hunter
-#com 7317 -- Drow Commander
-#com 7275 -- Drow Mage Apprentice
-#decscale 5 -- increases magic
-#end
-
-#newsite 1524
-#name "Great Pit of Ghaunadaur"
-#path 8
-#level 0 -- always found
-#rarity 5 -- never random
-#gems 8 3
-#gems 2 1
-#summon 7220 -- Ochre Jelly
-#summon 7220 -- Ochre Jelly
-#summon 7220 -- Ochre Jelly
-#summonlvl2 7217 -- Gelatinous Cube
-#summonlvl2 7217 -- Gelatinous Cube
-#summonlvl3 7235 -- Black Pudding
-#com 7219 -- Ghaunadan
-#end
-
-#newsite 1525
-#name "Thrall Caverns of Oryndoll"
-#path 8
-#level 0 -- always found
-#rarity 5 -- never random
-#gold 100
-#gems 8 3
-#bloodcost 20
-#end
-
-#newsite 1526
-#name "Ring Caverns of Oryndoll"
-#path 4
-#level 0 -- always found
-#rarity 5 -- never random
-#gems 7 2
-#end
-
-#newsite 1527
-#name "Undervaults of Ilsensine"
-#path 2
-#level 0 -- always found
-#rarity 5 -- never random
-#gems 4 2
-#decscale 0 
-#end
-
-#newsite 1528
-#name "Sacred Pool of the Sea Mother"
-#path 2
-#level 0 -- always found
-#rarity 5 -- never random
-#gems 2 2
-#gems 4 1
-#end
-
-#newsite 1529
-#name "Sarrukh Ruin"
-#path 6
-#level 0 -- always found
-#rarity 5 -- never random
-#com 7177 -- sarrukh
-#gems 8 2
-#gems 6 1
-#end
-
-#newsite 1530
-#name "Castle Cormanthor"
-#level 0 -- always found
-#rarity 5 -- never random
-#adventureruin 15
-#gems 3 1
-#gems 5 1
-#fort
-#end
-
-#newsite 1531
-#name "House of Song"
-#level 0 -- always found
-#rarity 5 -- never random
-#gems 1 1
-#gems 7 2
-#temple
-#end
-
-#newsite 1532
-#name "Castle Waterdeep"
-#path 3
-#level 0
-#rarity 5
-#decunrest 5
-#mon 6608 	-- Griffon Rider
-#com 6604 	-- Grey Hand Captain (Initiate)
-#mon 6620 	-- Grey Hand Enforcer
-#mon 6621 	-- Vigilant of the Guard
-#gems 6 1   -- 1 earth gem
-#gems 2 1 	-- 1 water gem
-#gems 1 2 	-- 1 air gems
-#end
-
-#newsite 1533
-#name "The Palace of Waterdeep"
-#path 1
-#level 0
-#rarity 5
-#mon 6601 	-- Constables
-#com 6602 -- Senior Civilar
-#com 6609 -- Wizard Corps Civilar
-#com 6610 -- Eltorchul Graduate
-#com 6615 -- Ranger of the Emerald Enclave
-#com 6619 -- Dawnmaster of the Morninglord
-#com 6616 -- Cleric of Moradin
-#decscale 1 -- increases growth by decreasing death
-#end
-
-#newsite 1534
-#name "Blackstaff Tower"
-#path 4
-#level 0
-#rarity 5
-#com 6613 -- Blackstaff Apprentice
-#com 6611 -- Bard of New Olamn
-#com 6612 -- Lady of the Watchful Order 
-#gems 4 2 -- 2 astral gems
-#end
-
-#newsite 1535
-#name "Deepwater Harbor"
-#path 2
-#level 0
-#rarity 5
-#gold 150
-#gems 2 1 -- 1 water gem
-#gems 1 1 -- 1 air gem
-#end
-
-#newsite 1536
-#name "The Yawning Portal Inn"
-#path 5
-#level 0
-#rarity 5
-#mon 7516 -- Red Sash Vigilante
-#com 6925 -- Wanted: Fighters 
-#com 6913 -- Wanted: Spellcasters
-#gems 3 1 -- 1 earth gem
-#gems 0 1 -- 1 fire gem
-#gems 7 1 -- 1 glamour gem
-#end
-
-#newsite 1537
-#name "Elven Enclave"
-#path 6
-#level 0
-#rarity 5
-#mon 7348 -- Wood Elf Ranger
-#com 6617 -- Seldarine Cleric
-#com 6813 -- Elven Bladesinger
-#gems 6 1 -- 1 nature gem
-#gems 4 1 -- 1 astral gem
-#decscale 5 -- increases magic scales
-#end
-
-#newsite 1538
-#name "Lightfoot Village"
-#loc 23
-#path 6
-#level 0
-#rarity 5
-#com 6647 	-- Cleric of Yondalla
-#com 6646	-- Halfling Spellsinger
-#mon 6641	-- Lightfoot Spear
-#mon 3390 	-- hoburg slinger
-#gems 6 1 	-- 1 nature gem
-#gems 7 1 	-- 1 glamour gem
-#decscale 4 -- increases luck by decreasing misfortune
-#end
-
-#newsite 1539
-#name "Halfling Stronghold"
-#loc 23
-#path 6
-#level 0
-#rarity 5
-#com 6647 	--  Cleric of Yondalla
-#com 6649 	--  Halfling Illusionist
---#com 6652 	--  Rogue Traders
-#mon 6642	--  Strongheart Sword Infantry
-#gems 3 1 	-- 1 earth gem
-#gems 7 1 	-- 1 glamour gem
-#decscale 4 -- increases luck by decreasing misfortune
-#end
-
-#newsite 1540
-#name "Ghostwise Enclave"
-#mon 6651 	-- Ghostwise Hunter 
-#com 6650 	-- Ghostwise Cleric of Malarr
-#com 6649 	-- Halfling Illusionist
-#gems 5 1 	-- 1 death gem
-#gems 7 1 	-- 1 glamour gem
-#decscale 4 -- increases luck by decreasing misfortune
-#path 6
-#level 3
-#rarity 5
-#end
-
-#newsite 1541
-#name "Zhentil Keep"
-#path 5
-#level 0
-#rarity 5
-#gold 50
-#res 50
-#decscale 0 -- increases order
-#gems 3 2 	-- 2 earth gems
-#mon 6665 	-- Lance
-#mon 6867 -- Black Unicorn Rider
-#mon 6672 	-- Wyverns
-#com 6664 	-- Swordcaptain
-#com 6666	-- Ardragon
-#com 6868 -- Sister of Cyric
-#end
-
-#newsite 1542
-#name "The Temple of Bane"
-#path 5
-#level 0
-#rarity 5
-#gems 0 1	--  1 fire gem
-#incscale 3 -- increases death
-#com 6668 	-- Banefists
-#end
-
-#newsite 1543
-#name "The Tower of the Art"
-#path 4
-#level 0
-#rarity 5
-#gems 4 1 -- 1 astral gem
-#com 310 	-- Stock Necromancer
-#com 6667 	-- Dark Hand
-#end
-
-#newsite 1544
-#name "The Black Altar"
-#path 5
-#level 0
-#rarity 5
-#incscale 3 -- increases death
-#gems 5 2	--  2 death gems
-#mon 6671 	-- Hellhounds
-#end
-
-#newsite 1545
-#name "Zhentarim Barracks"
-#path 3
-#level 0
-#rarity 5
-#mon 6661 -- x Stalwart - lowest ranking soldier
-#mon 6662 -- x  Sternhelm (lead small squads of 4 Stalwarts)
-#com 6663 -- x  Swordhar (Lead 4-6 Sternhelms/ a platoon)
-#end
-
-#newsite 1546
-#name "Fountain of the Qysars" -- a magical fountain from the time of the Shoon imperium, last structural relic of that age in the city.
-#path 8
-#level 0
-#rarity 5
-#decunrest 2
-#gems 5 1 -- 1 death gem
-#gems 4 1 -- 1 astral gem
-#gems 2 1 -- 1 water gem
-#end
-
-#newsite 1547
-#name "Plaza of Divine Truth" -- sixteen faiths worship here, including the god of destruction
-#path 4
-#level 0
-#rarity 5
-#gems 4 1 -- 1 astral gem
-#gems 6 1 -- 1 nature gem
-#com 6700 -- Cleric of Tempus
-#com 6701 -- Loviatar
-#com 6702 -- Stormherald of Talos
-#com 6704 -- Priestess of Shar
-#com 6605 -- Cleric of Lathander
-#com 7040 -- Gondar Wonderbringer
-#end
-
-#newsite 1548
-#name "Qysagghani Fortress" -- The Pasha's Fortress
-#path 3
-#level 0
-#rarity 5
-#gems 3 1 -- 1 earth gem
-#gems 0 1 -- 1 fire gem
-#mon 7659 	-- Yestaadi Archer 
-#mon 7663 	-- Tabarzin
-#mon 6683 	-- Djawal Knight
-#com 6686	-- Saref Centurion
-#com 6688	-- Murabir General
-#com 6691 	-- Pasha
-#com 6692 	-- Samira Princess
-#end
-
-#newsite 1549
-#name "The Auret" -- Wizards Ward - solid gold wizards tower - the most impressive sight in Calimport?
-#path 0
-#level 0
-#rarity 5
-#decscale 5 -- increases magic
-#gems 4 1 -- 1 death gem
-#gems 1 1 -- 1 air gem
-#com 6694 -- Artificer
-#com 6696 -- Djenispool Conjurer
-#com 6698 -- Quelzarn Tower Mage
-#com 6699 -- Qysaghanni Vizar
-#end
-
-#newsite 1550
-#name "Lighthouse of the Moon" -- magical lighthouse in the harbor coalesces moonlight and shine it over the entire dock ward
-#path 2
-#level 0
-#rarity 5
-#gems 8 2 -- 2 blood slaves
-#gems 2 1 -- 1 water gem
-#incscale 0 -- increases turmoil -- slave trade
-#com 7039 -- Umberlant Cleric
-#end
-
-#newsite 1551
-#name "Castle Obarskyr"
-#path 3
-#level 0
-#rarity 5
-#com 6747 -- aide-de-camp 
-#mon 6752 -- Talon
-#com 6753 -- Ornrion
-#end
-
-#newsite 1552
-#name "College of War Wizards"
-#path 0
-#level 0
-#rarity 5
-#gems 0 1 -- 1 fire gem
-#gems 1 1 -- 1 air gem
-#gems 3 1 -- 1 earth gem
-#com 6755 -- War Wizard
-#com 6758 -- Royal Magician
-#decscale 5 -- increases magic 
-#end
-
-#newsite 1553
-#name "Shrines of Suzail"
-#path 4
-#level 0
-#rarity 5
-#gems 4 1 -- 1 astral pearls
-#com 6703 -- Cleric of Waukeen
-#com 6605 -- Lathander
-#com 6623 -- Tyr
-#com 7008 -- Torm
-#com 6705 -- Ilmater
-#com 7007 -- Helm
-#decscale 0 -- increases order
-#end
-
-#newsite 1554
-#name "King's Forest"
-#path 6
-#level 0
-#rarity 5
-#res 20
-#gems 6 1 -- 1 nature gems
-#com 6646 -- Halfling Spellsinger
-#com 6615 -- Ranger of the Emerald Enclave
-#end
-
-#newsite 1555
-#name "Arabel"
-#path 4
-#rarity 5
-#gold 50
-#com 7003 -- chauntea
-#com 7007 -- Helm
-#com 6618 -- Selune
-#end
-
-#newsite 1556
-#name "Citadel of the Purple Dragon"
-#path 9
-#level 0
-#rarity 5
-#decscale 0 -- increases order
-#gems 3 1 -- 1 earth gem
-#mon 6743 -- Guidon (standard bearer)
-#mon 6744 -- Purple Dragon Knight
-#com 6749 -- Purple Dragon Lancelord
---#com 6750 -- Commander: Battlemaster 
-#end
-
-#newsite 1557
-#name "Cackling Chasm"
-#path 2
-#level 0
-#rarity 5
-#gems 2 1 -- 1 water gems
-#incscale 5 -- increases drain
-#end
-
-#newsite 1558
-#name "Fell Pass"
-#path 1
-#level 0
-#rarity 5
-#gems 1 1 -- 1 air gems
-#incscale 2 -- increases cold
-#end
-
-#newsite 1559
-#name "Raven Rock"
-#path 3
-#level 0
-#rarity 5
-#gems 3 2 -- 2 earth gems
-#decscale 0 -- increases order
-#end
-
-#newsite 1560
-#name "Dark Arrow Keep"
-#path 8
-#level 0
-#rarity 5
-#decscale 1 -- increases productivity
-#decscale 3 -- increases growth
-#end
-
-#newsite 1561
-#name "The Deep Forge"
-#path 0
-#level 0
-#rarity 5
-#gems 0 2 	-- 2 fire gems
-#com 5072 -- Duergar Blackguard
-#com 5108 -- Young Barghest
-#end
-
-#newsite 1562
-#name "Eye of the All-Father"
-#path 3
-#level 0
-#rarity 5
-#com 6810 	-- Stone Giant Elder
-#com 6738 	-- Firegiant Commander
-#com 6805 	-- Cloud Giant
-#com 5106	-- Storm Giant
-#end
-
-#newsite 1563
-#name "Llorkh"
-#path 9
-#level 0
-#rarity 5
-#gold 85 
-#end
-
-#newsite 1564
-#name "Temple to Annam"
-#path 3
-#level 0
-#rarity 5
-#com 6805 		-- Cloud Giants
-#gems 1 2
-#gems 0 1
-#end
-
-#newsite 1565
-#name "Vale of Whispers"
-#path 5
-#level 0
-#rarity 5
-#com 6704 -- Priestess of Shar
-#gems 5 1
-#gems 4 1
-#end
-
-#newsite 1566
-#name "Mines of Dekanter"
-#path 3
-#level 0
-#rarity 5
-#gems 8 2
-#gold 50 
---#com 5055 -- Illithid Montag Initiator
-#com 7068 -- beholder
-#end
-
-#newsite 1567
-#name "Deadstone Cleft"
-#path 6
-#level 0
-#rarity 5
-#gems 3 1
-#mon 6809 -- Stone Giant Mauler
-#com 6810 -- Stone Giant Elder
-#end
-
-#newsite 1568
-#name "Wyrmheart Mine"
-#path 3
-#level 0
-#rarity 5
-#gems 3 3
-#gold 50
-#com 323 -- dwarven smith
-#mon 6834 -- Dimetrodon
-#end
-
-#newsite 1569
-#name "Ubtaos Rest"
-#path 6
-#level 0
-#rarity 5
-#mon 723		-- Slightly better Mictlan Warrior
-#com 177 		-- T2 COMMANDER	Lizard King	
-#end
-
-#newsite 1570
-#name "Hydra Nest"
-#path 6
-#level 0
-#rarity 5
-#gems 6 1
-#mon 1831		-- Hydra 
-#end
-
-#newsite 1571
-#name "Deep Chultan Jungle"
-#path 6
-#level 0
-#rarity 5
-#mon 2689		-- Giant Scorpions
-#mon 6812		-- Giant Spiders
-#end
-
-#newsite 1572
-#name "Dinosaur Hunting Ground"
-#path 6
-#level 0
-#rarity 5
-#gems 6 1
-#mon 6828	-- Chultan Raptor
-#mon 6819 	-- T-Rex aka Aspect of Ubtao
-#mon 6834 -- Dimetrodon
-#end
-
-#newsite 1573
-#name "Batiri Goblin Caves"
-#path 8
-#level 0
-#rarity 5
-#gems 8 1
-#mon 6723 	-- Goblin Dogslicers
-#com 6733	-- T1 MAGE: Goblin Shaman (1608)
-#end
-
-#newsite 1574
-#name "Hidden Temple of the Yuan-ti"
-#path 8
-#level 0
-#rarity 5
-#gems 8 1
-#gems 6 1
---#comshaarlan
-#mon 6830 -- Yuan-ti Temple Guard
-#com 6831 -- Yuan-ti Abomination
-#com 6832 -- Yuan-ti Assassin
-#end
-
-#newsite 1575
-#name "Port Nyanzaru"
-#path 9
-#level 0
-#rarity 5
-#gems 1 1
-#gems 2 1
-#com 6832 -- Yuan-ti Assassin
-#com 6617 -- Cleric of Moradin 
-#com 6703 -- Cleric of Waukeen
---#com 6833 -- Merchant
-#mon 6824 -- Tabaxi Warrior
-#gold 50
-#end
-
-#newsite 1576
-#name "Chultengar Jungles"
-#path 6
-#level 0
-#rarity 5
-#gems 6 1
-#gems 8 1
-#com 7406 		-- Lizard Man Chieftain
-#com 6734		-- T1 MAGE Lizardman Shaman
-#mon 783 		-- Serpent Dancer
-#mon 6727 		-- Lizardfolk Scavenger
-#mon 6672		-- Wyverns from wastelands
-#mon 6723 		-- Goblin Dogslicers
-#com 6733		-- T1 MAGE: Goblin Shaman (1608)
-#incscale 0 	-- INCREASES Turmoil
-#end
-
-#newsite 1577
-#name "Ziggurat of Orlunga"
-#path 6
-#level 0
-#rarity 5
-#gems 5 1
-#gems 6 1
-#res 30
-#com 6819		-- T-Rex
-#com 6831		-- Yuan-ti Abomination
-#mon 6830		-- Yuan-ti Temple Guard
-#end
-
-#newsite 1578
-#name "Lake Luo"
-#path 6
-#level 0
-#rarity 5
-#gems 0 1
-#gems 1 1
-#gems 3 1
-#com 6819		-- T-Rex
-#com 6831		-- Yuan-ti Abomination
-#mon 6830		-- Yuan-ti Temple Guard
-#decscale 2 	-- increases heat
-#incscale 4 	-- increases misfortune
-#end
-
-#newsite 1579
-#name "The Goldmane Expanse"
-#path 1
-#level 0
-#rarity 5
-#gems 3 1
-#gems 5 1
-#gems 6 1
-#end
-
-#newsite 1580
-#name "Wemic Pridelands"
-#path 1
-#level 0
-#rarity 5
-#com 6836	-- Wemic Proudspear
-#com 6837 	-- Wemic Shaman
-#mon 6840	-- Wemic Warrior
-#end
-
-#newsite 1581
-#name "Gnoll Packlands"
-#path 8
-#level 0
-#gems 8 1
-#rarity 5
-#com 6808 		-- Gnoll Chieftain
-#com 6732		-- Fang of Yeenoghu
-#mon 6724 		-- Gnoll Scavengers
-#end
-
-#newsite 1582
-#name "The Ruins of Blaskaltar" 	
-#path 1
-#level 0
-#rarity 5
-#gems 1 2
-#com 346	-- Crystal Sorceress
-#end
-
-#newsite 1583
-#name "The Ruins of Lhesper" 	
-#path 6
-#level 0
-#rarity 5
-#gems 1 1
-#gems 3 1
-#gems 5 1
-#com 6831		-- Yuan-ti Abomination
-#mon 6830		-- Yuan-ti Temple Guard
-#com 6829 		-- Yuan-ti Malison
-#decscale 2 	-- increases heat
-#incscale 4 	-- increases misfortune
-#end
-
-#newsite 1584
-#name "The Illysum" 	
-#path 4
-#level 0
-#rarity 5
-#gems 4 3
-#gems 3 1
-#mon 5118 -- Halruaan Arcane Guard
-#com 6853 -- Netyarch Wizard-King
-#com 8032 -- Halruaan Skyship
-#end
-
-#newsite 1585
-#name "Kholstar's Keep" 	
-#path 3
-#level 0
-#rarity 5
-#gems 0 1
-#gems 1 1
-#com 6852 -- Halruaan Artificer
-#end
-
-#newsite 1586
-#name "The Promenade"
-#level 8
-#rarity 5
-#gems 2 1
-#gold 75
-#com 6854 -- Jordain Vizier - House of Jordain
-#com 6895 -- Mystic Theurge
-#end
-
-#newsite 1587
-#name "Haerlu Vineyards"
-#level 8
-#path 6
-#rarity 5
-#gems 2 1
-#gold 35
-#end
-
-#newsite 1588
-#name "Electrum Mines"
-#level 8
-#rarity 5
-#gems 3 1
-#gold 35
-#end
-
-#newsite 1589
-#name "The Citadel"
-#level 8
-#rarity 5
-#path 5
-#gems 5 2
-#gems 3 1
-#mon 6861 -- Thayan Knight
-#com 6673 -- Myrkul
-#com 6864 -- Zulkir
-#com 6868 -- Sister of Cyric
-#mon 6867 -- Black Unicorn Rider
-
-#end
-
-#newsite 1590
-#name "Thayvian Gold Mine"
-#level 8
-#rarity 5
-#path 3
-#gems 3 2
-#gems 4 1
-#gold 160
-#com 6869 -- Centaur Taskmaster
-#end
-
-#newsite 1591
-#name "Doomvault"
-#level 8
-#rarity 5
-#path 8
-#gems 8 3
-#gems 1 1
-#gems 6 1
-#com 6704 -- Shar (darkness and night) Favored weapon: Chakram throwing disc
-#com 6701 -- Loviatar (God of Agony, Pain, Torment - weapon is a scourge)
-#com 6870 -- Darkenbeast
-#end
-
-#newsite 1592
-#name "Volcanic Forge"
-#level 8
-#rarity 5
-#path 0
-#gems 0 3
-#gold 60
-#decscale 1 -- increases productivity
-#end
-
-#newsite 1593
-#name "Palaces of the Mulan"
-#level 8
-#rarity 5
-#path 2
-#gems 2 1
-#gold 30
-#res 30
-#decscale 1 -- increases productivity
-#com 6866 -- Mulan Oppressor
-#com 6912 -- Mulan Adept
-#mon 6858 -- Mulan Bowman
-#end
-
-#newsite 1594
-#name "Faunglade"
-#level 8
-#rarity 5
-#path 6
-#gems 6 1
-#incscale 1 -- decreases productivity
-#mon 1532 	-- Satyr Warriors
-#mon 227	-- Satyr Sneaks
-#com 238	-- Pan
-#end
-
-#newsite 1595
-#name "Centaur Rangelands"
-#level 8
-#rarity 5
-#path 6
-#gems 6 1
-#mon 7488 -- Centauride Nomad
-#mon 7487 -- Centaur Huntsman
-#mon 7491 -- Centaur Protector
-#com 7490 -- Centaur Windrunner
-#com 7489 -- Centauride Thorncaller
-#end
-
-#newsite 1596
-#name "The Black Keep of Bezantur"
-#level 8
-#rarity 5
-#path 5
-#com 6870 -- Darkenbeast
-#mon 6724 -- Gnoll Hunters
-#com 6808 -- Gnoll Chieftain
-#mon 6723 	-- Goblin Dogslicers
-#com 6811	-- Bugbear Captain
-#com 6733	-- Goblin Shaman
-#mon 612	-- Gryphon Rider
-#end
-
-#newsite 1597
-#name "Street of White Roses"
-#level 8
-#rarity 5
-#path 8
-#res 25
-#gems 8 2
-#incscale 0 -- increases turmoil
-#com 6869 -- Centaur Taskmaster
-#com 428 -- stock Assassin
-#com 6829 		-- Yuan-ti Malison
-#end
-
-#newsite 1598
-#name "Great Harbor of Bezantur"
-#level 8
-#rarity 5
-#path 2
-#gold 50
-#gems 8 2
-#gems 2 1
-#decscale 3 -- increases growth
---#com 6652 -- Halfling Rogue Trader
-#end
-
-#newsite 1599
-#name "Caravanserai"
-#level 8
-#rarity 5
-#path 3
-#gold 50
-#decscale 3 -- increases growth
-#incscale 0 -- increases turmoil
-#com 6622 -- Merchant Prince
-#com 6869 -- Centaur Taskmaster
-#mon 451 -- Horse Tribe Brother
-#end
-
-#newsite 1600
-#name "Guild of Heroes"
-#level 8
-#rarity 5
-#path 4
-#com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
-#com 6925 -- FIGHTER HERO RECRUITABLE MONTAG
-#end
-
-#newsite 1601
-#name "Dragon Turtle Lair"
-#level 8
-#rarity 5
-#path 2
-#gems 2 2
-#end
-
-#newsite 1602
-#name "Wyvern Hunting Ground"
-#level 8
-#rarity 5
-#path 1
-#level 0
-#incscale 0 -- increases turmoil
-#mon 6672 -- Wyverns
-#com 6687 -- Hydar Beastmaster
-#end
-
-#newsite 1603
-#name "Hill Giant Ordning"
-#level 8
-#rarity 5
-#path 3
-#level 0
-#gems 3 1
-#incscale 0 -- increases turmoil
-#com 6772	-- Hill Giant Shaman
-#com 6678	-- Hill Giant Reavers
-#end
-
-#newsite 1604
-#name "Goblin Cave Networks"
-#level 8
-#rarity 5
-#path 6
-#level 0
-#gems 6 1
-#incscale 0 -- increases turmoil
-#com 6733	-- Goblin Shaman
-#mon 6773 	-- Goblin Wolfriders
-#mon 6807 	-- Goblin Shortbow
-#com 6770 	-- Goblin King
-#end
-
-#newsite 1605
-#name "Troll Haven"
-#level 8
-#rarity 5
-#path 2
-#level 0
-#gems 2 1
-#incscale 0 -- increases turmoil
-#com 2220 	-- Troll Shaman
-#mon 2219	-- Forest Troll
-#mon 6806 	-- Krenshar
-#end
-
-#newsite 1606
-#name "Orc Villages"
-#level 8
-#rarity 5
-#path 0
-#level 0
-#gems 6 1
-#incscale 0 -- increases turmoil
-#com 6737 	-- Orc King
-#mon 6676	-- Orc Marauders
-#end
-
-#newsite 1607
-#name "Orc Strongholds"
-#level 8
-#rarity 5
-#path 0
-#level 0
-#gems 0 1
-#incscale 0 -- increases turmoil
-#com 6737 	-- Orcish King
-#com 6801 	-- Cleric of Gruumsh	
-#mon 6676	-- Orc Marauders
-#end
-
-#newsite 1608
-#name "Taurian Labyrinth"
-#level 8
-#rarity 5
-#path 0
-#level 3
-#gems 3 1
-#incscale 0 -- increases turmoil
-#com 6843 	-- Minotaur Champion	
-#mon 6842 	-- Minotaur Brute
-#end
-
-
-#newsite 1609
-#name "Unthalass - The City of Gems"
-#level 8
-#rarity 5
-#path 9
-#level 0
-#gems 0 1
-#gems 1 1
-#gems 2 1
-#gems 3 1
-#gems 4 2
-#com 7503 -- Tiefling Spellfilcher 
-#com 7502 -- Tiefling Warlock
-#com 1894 -- Minister of Magic
-#end
-
-#newsite 1610
-#name "Fertile Flood Plain"
-#level 8
-#rarity 5
-#path 6
-#gems 6 1
-#gold 50
-#end
-
-#newsite 1611
-#name "City of the Gods"
-#level 8
-#rarity 5
-#path 9
-#gold 50
-#gems 2 1
-#com 6901 -- Cleric of Isis
-#mon 6910 -- Anhurite Crusader -- sacred troops
-#com 7503 	-- Tiefling Spellfilcher 
-#com 7344 	-- Tiefling Priestess
-#com 7502 	-- Tiefling Warlock
-#end
-
-#newsite 1612
-#name "The Solarium"
-#path 9
-#level 8
-#rarity 5
-#gems 3 2
-#end
-
-#newsite 1613
-#name "Library of the Gods"
-#path 7
-#level 8
-#rarity 5
-#gems 4 1
-#gems 1 2
-#com 6895 -- Mystic Theurge
-#end
-
-#newsite 1614
-#name "Tower of the Sun"
-#path 9
-#level 8
-#rarity 5
-#gems 0 3
-#end
-
-#newsite 1615
-#name "The Mystic Cornucopia"
-#path 6
-#level 8
-#rarity 5
-#gems 2 1
-#gems 4 1
-#gems 6 1
-#com 6897 -- Sister of the Quill
-#end
-
-#newsite 1616
-#name "Mishtan - City of the Dead"
-#path 4
-#level 8
-#rarity 5
-#gems 4 1
-#gems 5 1
-#com 6902 -- Risen Scepter
-#end
-
-#newsite 1617
-#name "Blood Fortress of Anhur"
-#path 3
-#level 8
-#rarity 5
-#gems 4 1
-#gems 3 1
-#mon 6910 	-- Anhurite Crusader
-#com 6911 	-- Anhurite Infiltrator 
-#end
-
-#newsite 1618
-#name "Arcanum of Magic"
-#path 9
-#level 8
-#rarity 5
-#gems 4 3
-#com 6898 -- Loremaster
-#com 6896 -- Thaumaturge of Artifice
-#end
-
-#newsite 1619
-#name "Sebek's Tooth"
-#path 6
-#level 8
-#rarity 5
-#gems 2 1
-#gems 6 1
-#incscale 0 -- increases turmoil
-#end
-
-#newsite 1620
-#name "Temple of Set"
-#path 5
-#level 3
-#rarity 5
-#gems 5 2
-#incscale 0 -- increases turmoil
-#incscale 3 -- increases death
-#com 6903 -- Fang of Set
-#end
-
-#newsite 1621
-#name "Palace of the Sceptanar"
-#path 9
-#level 0
-#rarity 5
-#gold 50
-#res 20
---#com 6921 -- Seneschal
-#com 7103 -- Sceptanar Wizard
-#end
-
-#newsite 1622
-#name "The Akademeia of Cimbar"
-#path 9
-#level 0
-#rarity 5
-#gems 0 1
-#gems 3 1
-#gems 4 1
-#com 6848 	-- Cleric of Azuth
-#com 6605	-- Cleric of Lathander	
-#com 6703 	-- Cleric of Waukeen
-#com 1070   -- Philosopher
-#end
-
-#newsite 1623
-#name "Airspur"
-#path 1
-#level 0
-#rarity 5
-#gems 1 1
-#com 6702 	-- Cleric of Talos
-#end
-
-#newsite 1624
-#name "Palace of the Simbul"
-#path 9
-#level 0
-#rarity 5
-#gems 0 2
-#gems 1 1
-#gems 4 1
-#gems 6 2
-#com 7006   -- Simbarch Apprentice
-#com 7005 	-- Simbarch Sorceress
-#mon 56 	-- Royal Forester
-#mon 6004 -- Griffon Ranger
-#end
-
-#newsite 1625
-#name "Holy City of Tantras"
-#path 9
-#level 0
-#rarity 11
-#gems 3 1
-#gems 4 2
-#com 6623 -- Cleric of Tyr
-#com 7007 -- Cleric of Helm
-#com 7008 -- Trueblade of Torm
-#com 440 -- Paladin of the Golden Lion
-#com 6700 -- Battlechaplain of Tempus
-#com 5044 -- Cleric of Tymora
-#com 6705 -- Ilmatari Cleric
-#com 6618 -- Priestess of Selune
-#com 6605 -- Cleric of Lathander	
-#com 6703 -- Cleric of Waukeen
-#com 7040 -- Gondar Wonderbringer
-#claim
-#dominion 1
-#thaucost 20
-#end
-
-
-#newsite 1626
-#name "Lyrabar"
-#path 2
-#level 0
-#rarity 5
-#gems 2 1
-#gems 1 1
-#com 5084 	-- Court Wizard
-#com 7003 	-- Priestess of Chauntea
-#com 6618 	-- Priestess of Selune
-#com 6703 	-- Cleric of Waukeen
-#gold 50
-#end
-
-#newsite 1627
-#name "Dwarven Colony"
-#path 3
-#level 0
-#rarity 5
-#gems 3 1
-#gold 75
-#mon 6874 -- Dwarven Miners
-#mon 7009 -- Dwarven Hammers
-#mon 7010 -- Dwarven Crossbows
-#com 6616 -- Dwarven Smith
-#com 7030 -- DWARVEN LORD
-#end
-
-#newsite 1628
-#name "The Conclave of Silverymoon" 
-#path 4
-#level 0
-#rarity 5
-#com 6646		-- Halfling Spellsinger
-#com 7012 		-- Spellguard
-#com 6898		-- Loremaster
-#com 7014 		-- Sage of the Vault
-#gems 4 3
-#end
-
-#newsite 1629
-#name "Rauvinwatch Keep" 
-#path 9
-#level 0
-#rarity 5
-#mon 6874 	-- Dwarven Miners
-#mon 6641	-- Lightfoot Spear
-#mon 7013 	-- Silverwatch
-#gems 3 1
-#end
-
-#newsite 1630
-#name "The Moonbridge" 
-#path 2
-#level 0
-#rarity 5
-#gems 1 2
-#gems 2 1
-#gems 4 1
-#end
-
-#newsite 1631
-#name "Halls and Glades" 
-#path 6
-#level 0
-#rarity 5
-#com 6616	-- Cleric of Moradin
-#com 6617 	-- Seldarine Cleric
-#com 6615 	-- Ranger of the Emerald Enclave
-#com 6618 	-- Priestess of Selune
-#com 6605 -- Priest of Lathander
-#gems 6 2
-#end
-
-#newsite 1632
-#name "Castle Al'hanar" 
-#path 5
-#level 0
-#rarity 5
-#fort 2
-#lab
-#temple
-#com 7017	-- Death Knight
-#gems 5 2
-#gems 3 1
-#end
-
-#newsite 1633
-#name "Citadel Sundabar"
-#path 9
-#level 0
-#rarity 5
-#com 6623 -- Cleric of Tyr
-#com 7007 -- Cleric of Helm
-#com 7008 -- Trueblade of Torm
-#com 6605 -- Priest of Lathander
-#mon 7011 -- Knight in Silver
-#end
-
-#newsite 1634
-#name "Goldspires" 
-#path 9
-#level 0
-#rarity 5
-#gems 3 2
-#gold 50
-#com 6703 -- Cleric of Waukeen
-#com 6673 -- Myrkul
-#com 6701 -- Loviatar
-#com 6674 -- Priestess of Bane
-#com 6605 -- Cleric of Lathander
-#end
-
-#newsite 1635
-#name "Shadow Thieves Council"
-#path 3
-#level 0
-#rarity 5
-#com 7035 -- Shadow Thief
-#com 7036 -- Shadow Thief Cloakmaster
-#com 7037 -- BHAALSPAWN
-#end
-
-#newsite 1636
-#name "Council of the High Houses" 
-#path 0
-#level 0
-#rarity 5
-#gems 0 1
-#mon 7294 -- Amnian Merchant Guard 
-#com 6622 -- Merchant Prince
-#end
-
-
-#newsite 1637
-#name "Wave District" 
-#path 2
-#level 0
-#rarity 5
-#gold 200
-#gems 2 2
-#com 6866 -- Mulan Oppressor
-#com 870 -- Captain
-#mon 7298 -- Sea Dog Swashbuckler 
-#mon 7299 -- Sea Dog Deadeye
-#com 7301 -- Pirate Lord 
-#end
-
-#newsite 1638
-#name "Twin Songs" -- temple district
-#path 9
-#level 0
-#rarity 5
-#gems 4 2
-#com 6623 		-- Cleric of Tyr
-#com 7007 		-- Cleric of Helm
-#com 6605		-- Cleric of Lathander
-#com 6618 		-- Priestess of Selune
-#com 6705 		-- Cleric of Ilmater
-#com 6847 		-- Cleric of Mystra
-#end
-
-#newsite 1639
-#name "High Hall" -- council seat
-#path 3
-#level 0
-#rarity 5
-#gems 3 2
-#com 5084 -- Court Wizard
-#mon 7130
-#end
-
-#newsite 1640
-#name "Gray Harbor" -- busy port
-#path 2
-#level 0
-#rarity 5
-#gold 200
-#gems 2 2
-#mon 7135
-#mon 7136
-#mon 7610 -- Sea Elf Shoalguard - Landshape
-#com 7626 -- Shoalguard Captain - Landshape
-#com 7039 -- Umberlant Cleric
-#com 870 -- Sea Captain
-#end
-
-#newsite 1641
-#name "Seatower of Balduran" -- Home of the Flaming Fists 
-#path 1
-#level 0
-#rarity 5
-#gems 1 2
-#com 6925 -- FIGHTER HERO RECRUITABLE MONTAG
-#com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
---#com 6921 -- Seneschal
---Flaming Fist
-#mon 7131
-#mon 7132
-#mon 7133
-#com 7134
-#end
-
-
-#newsite 1642
-#name "Bildoobaris Tenday" -- inc growth generates money and gems
-#path 6
-#level 0
-#rarity 5
-#gems 3 2
-#gems 6 2
-#decscale 3 -- incr growth
-#res 25
-#com 6702 -- Stormherald of Talos
-#com 6701 -- Caressor of Loviatar
-#end
-
-#newsite 1643
-#name "The Long Road" -- inc growth and produces lots of gold
-#path 2
-#level 0
-#rarity 5
-#gems 0 1
-#gems 1 1
-#gems 2 1
-#decscale 3 -- incr growth
-#gold 75
-#end
-
-#newsite 1644
-#name "Fortress of the Half-Demon"
-#path 5
-#level 1
-#rarity 5
-#gems 5 1
-#gems 8 1
-#incscale 3 -- incr death
-#com 6775 -- Hag
-#fort 2
-#end
-
-#newsite 1645
-#name "The Marching Mountains"
-#path 3
-#level 0
-#rarity 5
-#gems 3 1
-#res 100
-#com 6687 -- Beastmaster
-#end
-
-#newsite 1646
-#name "Ul'sahab"
-#path 4
-#level 3
-#rarity 5
-#gems 4 1
-#decunrest 100
-#com 1114 -- Augur
-#end
-
-#newsite 1647 
-#name "St. Faelar's Cloisters"
-#path 3
-#level 0
-#rarity 5
-#decscale 4 -- increases luck
-#com 6705 -- Cleric of Ilmater
-#end
-
-#newsite 1648
-#name "The Hearth"
-#path 4
-#level 0
-#rarity 5
-#incscale 5
-#decscale 0
-#gold 50
-#com 6611 -- Companion of Oghma
-#com 7040 -- Gondar Wonderbringer
-#end
-
-#newsite 1649
-#name "Tower of Thought"
-#path 4
-#level 0
-#rarity 5
-#decscale 5
-#decscale 0
-#gold 50
-#com 6611 -- Companion of Oghma
-#end
-
-#newsite 1650
-#name "Leaves of Learning"
-#path 4
-#level 0
-#rarity 5
-#decscale 5
-#decscale 0
-#gold 50
-#com 6611 -- Companion of Oghma
-#com 7349 -- Half-elf Champion
-#end
-
-#newsite 1651
-#name "Library of Curna"
-#path 4
-#level 0
-#rarity 5
-#decscale 5
-#decscale 0
-#gold 50
-#com 6611 -- Companion of Oghma
-#end
-
-#newsite 1652
-#name "The Chamber of Ascendance"
-#path 9
-#level 0
-#rarity 5
-#gems 4 3
-#decscale 5 -- incr magic
-#end
-
-#newsite 1653
-#name "Battlefield of the Bones"
-#path 5
-#level 0
-#rarity 5
-#gems 5 4
-#incscale 3 -- incr death
-#end
-
-#newsite 1654
-#name "Major Trade Hub"
-#level 8
-#rarity 5
-#path 3
-#gold 50
-#decscale 3 -- increases growth
-#incscale 0 -- increases turmoil
-#com 6622 -- Merchant Prince
-#com 23 -- Knight Commander
-#mon 38 -- Heavy Infantry
-#mon 33 -- Archers
-#end
-
-#newsite 1655
-#name "Minor Trade Hub"
-#level 8
-#rarity 5
-#path 3
-#gold 25
-#decscale 1 -- increases productivity
-#com 6622 -- Merchant Prince
-#end
-
-#newsite 1656
-#name "Mourktar"
-#level 8
-#rarity 5
-#path 5
-#gems 5 2
-#incscale 3 -- increases death
-#incscale 0 -- increases turmoil
-#com 6674 -- Priestess of Bane
-#com 6702 -- Stormherald of Talos
-#end
-
-#newsite 1657
-#name "Wyrmsmoke Keep"
-#level 8
-#rarity 5
-#path 3
-#gems 0 1
-#gems 3 1
-#end
-
-#newsite 1658
-#name "Temple of the Triad"
-#level 0
-#rarity 5
-#path 9
-#gems 4 1
-#com 440 -- Paladin
-#mon 2359 -- Holy Knight
-#end
-
-#newsite 1659
-#name "Place of the Unicorn"
-#level 0
-#rarity 5
-#path 6
-#gems 6 1
-#decscale 4
-#decscale 5
-#end
-
-#newsite 1660
-#name "Entrance to the Underdark"
-#level 0
-#rarity 5
-#path 6
-#incscale 0 -- increases turmoil
-#end
-
-#newsite 1661
-#name "Shrines of Tilverton"
-#level 0
-#rarity 5
-#path 9
-#gems 3 1
-#gems 4 1
-#gems 6 1
-#com 7040		-- Gondar Wonderbringer
-#com 6605		-- Cleric of Lathander
-#com 7007 		-- Cleric of Helm
-#com 7003 		-- Priestess of Chauntea
-#end
-
-#newsite 1662
-#name "City of a Thousand Spires"
-#level 0
-#rarity 5
-#path 9
-#gold 50
-#incscale 0		-- increases turmoil
-#com 7003 		-- Priestess of Chauntea
-#com 6703 		-- Cleric of Waukeen
-#com 6618 		-- Priestess of Selune
-#end
-
-#newsite 1663
-#name "Westgate"
-#level 0
-#rarity 5
-#path 2
-#gold 75
-#incscale 0		-- increases turmoil
-#mon 7684 -- Rethari Pikemen
-#com 7713 -- Night Mask Deathbringer
-#com 6622 -- Merchant Prince
-#com 6704 -- Priestess of Shar
-#com 6702 -- Stormherald of Talos
-#com 6701 -- Caressor of Loviatar
-#com 6650 -- Malarite
-#end
-
-#newsite 1664
-#name "Elversult"
-#level 0
-#rarity 5
-#path 3
-#gold 50
-#decscale 3 -- increases growth
-#incscale 0 -- increases turmoil
-#com 6622 -- Merchant Prince
-#com 7040 -- Gondar Wonderbringer
-#com 6704 -- Priestess of Shar
-#com 6650 -- Servant of Malar
-#com 7003 		-- Priestess of Chauntea
-#end
-
-#newsite 1665
-#name "Manticore Hunting Grounds"
-#level 0
-#rarity 5
-#path 6
-#incscale 0 -- increases turmoil
-#com 6728 -- Manticore
-#end
-
-#newsite 1666
-#name "Shaarmid"
-#level 0
-#rarity 5
-#path 4
-#gold 25
-#com 7085 -- Rakshasa
-#com 6622 -- Merchant Prince
-#end
-
-#newsite 1667
-#name "Seabreeze Academy"
-#level 0
-#rarity 5
-#path 1
-#gems 1 1
-#gems 2 1
-#com 7399 -- Seabreeze Mage 
-#com 7400 -- Eldritch Knight
-#end
-
-#newsite 1668
-#name "Lapal League Tradeport"
-#level 0
-#rarity 5
-#path 2
-#gold 25
---#com 6833 	-- Merchant Lord
-#com 6703 		-- Cleric of Waukeen
-#mon 1352		-- Entrance Guard
-#end
-
-#newsite 1669
-#name "Trader's Way"
-#level 0
-#rarity 5
-#path 9
-#gold 25
-#com 7085		-- Rakshasa
-#end
-
-#newsite 1670
-#name "Thri-Kreen Cluster"
-#level 0
-#rarity 5
-#path 6
-#mon 7069	-- thri kreen
-#com 7069	-- thri kreen
-#end
-
-#newsite 1671
-#name "Vampire Lair"
-#level 0
-#rarity 5
-#path 5
-#gems 5 2
-#gems 8 1
-#end
-
-#newsite 1672
-#name "Temple of Ishtar"
-#level 0
-#rarity 5
-#path 9
-#gems 6 1
-#com 7096 -- Priestess of Ishtar
-#end
-
-#newsite 1673
-#name "Shussel"
-#level 0
-#rarity 5
-#path 2
-#gold 25
-#incscale 0
---#com 6833 		-- Merchant Lord
-#com 870 		-- Captain
-#end
-
-#newsite 1674
-#name "Messemprar"
-#level 0
-#rarity 5
-#path 2
-#gold 25
-#incscale 0
-#com 2986 -- Northern Wizards
-#com 6925 -- FIGHTER HERO RECRUITABLE MONTAG
-#end
-
-#newsite 1675
-#name "The Greenfields"
-#level 0
-#rarity 5
-#path 6
-#gold 25
-#decscale 3
-#com 7096 -- Priestess of Ishtar
-#end
-
-#newsite 1676
-#name "The Firetrees"
-#level 0
-#rarity 5
-#path 0
-#gems 0 1
-#incscale 0
-#com 7097 -- Cultist of Tiamat
-#end
-
-#newsite 1677
-#name "Towers of the Enclave"
-#level 0
-#rarity 5
-#path 4
-#decscale 5
-#com 2987 -- enclave mages
-#end
-
-#newsite 1678
-#name "Black Ash Hall"
-#path 3
-#level 0
-#rarity 5
-#gems 3 1
-#mon 6809 -- Stone Giant Mauler
-#com 6810 -- Stone Giant Elder
-#end
-
-#newsite 1679
-#name "Lost City of Turami"
-#path 4
-#level 4
-#rarity 5
-#gems 4 2
-#gems 5 1
-#com 340 -- Crystal Mage
-#end
-
-#newsite 1680
-#name "Reth"
-#level 8
-#rarity 5
-#path 3
-#gold 30
-#decscale 1 -- increases productivity
---#com 6833 		-- Merchant Lord
-#com 6703 		-- Cleric of Waukeen
-#end
-
-#newsite 1681
-#name "Soorenar"
-#level 8
-#rarity 5
-#path 9
-#res 50
-#decscale 1 -- increases productivity
-#com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
---#com XXX -- Werecrocodile
-#end
-
-#newsite 1682
-#name "House Jedea"
-#level 8
-#rarity 5
-#path 2
-#gems 2 2
-#com 7101
-#com 7102
-#end
-
-#newsite 1683
-#name "Shadowcursed Lands"
-#level 1
-#rarity 5
-#path 5
-#gems 5 2
-#decscale 5 -- increases magic
-#incscale 0 -- increases turmoil
-#incscale 1 -- increases sloth
-#com 310 -- necromancer
-#com 6775 -- Hag
-#curse 2
-#end
-
-#newsite 1684
-#name "The Trollclaws"
-#level 1
-#rarity 5
-#path 6
-#gems 6 1
-#incscale 0 -- increases turmoil
-#incscale 1 -- increases sloth
-#com 6925 -- FIGHTER HERO RECRUITABLE MONTAG
-#com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
-#end
-
-#newsite 1685
-#name "Moonrise Towers"
-#level 1
-#rarity 5
-#path 4
-#gems 4 1
-#gems 1 1
-#decscale 4 -- increase luck
-#com 6618 -- Priestess of Selune
---#com 6921 -- Seneschal 
-#end
-
-#newsite 1686
-#name "Emerald Grove"
-#level 1
-#rarity 5
-#path 6
-#gems 6 1
-#com 6938 -- Wildshape Druid
-#com 7347 -- Stormfire Druid
-#com 7328 -- Spiritbound Druid
-#end
-
-#newsite 1687
-#name "Pool of Radiance"
-#level 3
-#rarity 5
-#path 4
-#gems 4 3
-#allrange 2
-#heal 1
-#curse 1
--- #horrormark 1
--- #adventureruin 10
-#enchcost 20
-#thaucost 20
-#bloodcost 20
-#end
-
-#newsite 1688
-#name "Ankhapur"
-#level 1
-#rarity 5
-#path 4
-#gems 4 1
-#mon 7686 -- Vaedric Axeman  
-#com 7685 -- Chondathan Lionar -- com
-#com 7691 -- Arnaden Lion Tamer
-#com 7711 -- Chondathan Lord
-#end
-
-#newsite 1689
-#name "Ormpetarr - City on the Plains"
-#level 1
-#rarity 11
-#path 9
-#look 8
-#gems 1 1
-#gems 2 1
-#mon 7684 -- Rethari Pikemen 
-#com 7690 -- Soulknife
-#com 7688 -- Psychic Warrior
-#com 7689 -- Psion 
-#com 7712 -- Chondathan Warlord
-#com 7003 -- Priestess of Chauntea
-#com 7007 -- Watchwarden of Helm
-#com 6623 -- Justiciar of Tyr
-#com 6700 -- Battlechaplain of Tempus
-#end
-
-#newsite 1690
-#name "Shining City of Arrabar"
-#level 1
-#rarity 12
-#path 9
-#look 8
-#gold 100
-#mon 7684 -- Rethari Pikemen
-#mon 7686 -- Vaedric Axeman  
-#com 7690 -- Soulknife
-#com 7688 -- Psychic Warrior
-#com 7689 -- Psion 
-#com 291 -- Inner Sea Captain
-#com 7712 -- Chondathan Warlord
-#claim
-#dominion 1
-#constcost 20
-#end
-
-#newsite 1691
-#name "Golden Temples of Arrabar"
-#level 1
-#rarity 5
-#path 9
-#look 0
-#gems 0 1
-#gems 2 1
-#gems 3 1
-#gems 4 1
-#com 6703 -- Goldeye Cleric of Waukeen
-#com 6605 -- Cleric of Lathander
-#com 5044 -- Cleric of Tymora
-#com 6701 -- Caressor of Loviatar
-#com 6700 -- Battlechaplain of Tempus
-#com 6705 -- Ilmatari Cleric
-#end
-
-#newsite 1692
-#name "The Emerald Corridor"
-#level 1
-#rarity 5
-#path 3
-#gold 50
-#mon 7100 -- Chessentan Corsair
-#mon 1918 -- Salty Sea Dog
-#com 291 -- Inner Sea Captain 
-#end
-
-#newsite 1693
-#name "Temple of Talona"
-#level 1
-#rarity 5
-#path 5
-#gems 4 1
-#gems 5 1
-#com 310 -- Necromancer
-#com 7701 -- Gray One
-#com 6733 -- Goblin Shaman
-#mon 6773 -- Goblin Wolfriders
-#mon 6807 -- Goblin Shortbow
-#com 6770 -- Goblin King
-#end
-
-#newsite 1694
-#name "Saerloon - City of Exotics"
-#level 1
-#rarity 5
-#path 9
-#gold 25
-#mon 7684 -- Rethari Pikemen
-#com 6622 -- Merchant Prince
-#com 6703 -- Goldeye Cleric of Waukeen
-#com 6605 -- Cleric of Lathander
-#com 5044 -- Cleric of Tymora
-#com 6701 -- Caressor of Loviatar
-#com 6700 -- Battlechaplain of Tempus
-#com 6847 -- Cleric of Mystra
-#com 6704 -- Priestess of Shar
-#end
-
-#newsite 1695
-#name "Teziir - City of Greed"
-#level 1
-#rarity 5
-#path 3
-#gems 3 1
-#gold 25
-#mon 7686 -- Vaedric Axeman 
-#com 7713 -- Night Mask Deathbringer
-#com 6622 -- Merchant Prince
-#com 7003 -- Priestess of Chauntea
-#com 5044 -- Cleric of Tymora
-#com 7007 -- Watchwarden of Helm
-#com 6623 -- Justiciar of Tyr
-#com 7008 -- Trueblade of Torm
-#com 6848 -- Cleric of Azuth
-#end
-
-#newsite 1696
-#name "Gateway to the West"
-#level 1
-#rarity 11
-#path 9
-#gems 4 1
-#claim
-#dominion 1
-#constcost 20
-#com 7040 -- Gondar Wonderbringer
-#com 6703 -- Goldeye Cleric of Waukeen
-#com 6605 -- Cleric of Lathander
-#com 5044 -- Cleric of Tymora
-#com 6700 -- Battlechaplain of Tempus
-#com 7003 -- Priestess of Chauntea
-#com 7007 -- Watchwarden of Helm
-#com 6623 -- Justiciar of Tyr
-#com 7008 -- Trueblade of Torm
-#com 6848 -- Cleric of Azuth
-#end
-
-
-#newsite 1697
-#name "Procampur - Steel City"
-#level 1
-#rarity 5
-#path 9
-#resources 50
-#gems 3 2
-#mon 7686 -- Vaedric Axeman
-#com 5084 -- Court Wizard
-#com 6611 -- Companion of Oghma
-#com 6703 -- Goldeye Cleric of Waukeen
-#com 5044 -- Cleric of Tymora
-#com 7008 -- Trueblade of Torm
-#com 7007 -- Watchwarden of Helm
-#end
-
-#newsite 1698
-#name "Gray Forest"
-#level 1
-#rarity 5
-#path 7
-#gems 6 1
-#gems 7 1
-#mon 7306 -- Nightshadow of Vhaeraun
-#com 7397 -- Eldreth Veluuthra Blade
-#com 7172 -- Sword Dancer of Eilistraee
-#end
-
-#newsite 1699
-#name "Monastery of the Yellow Rose"
-#level 1
-#rarity 5
-#path 9
-#gems 4 1
-#gems 6 1
-#mon 2359 -- Holy Knight
-#com 6705 -- Cleric of Ilmater
-#com 440 -- Paladin of the Golden Lion
-#end
-
 #newsite 1700
 #name "Barroch's Hold"
 #level 1
@@ -65827,7 +63339,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #gems 6 3
 #dominion 1
 #enchcost 20
-#summon2 7070 -- Unicorn 
+#summonlvl2 7070 -- Unicorn 
 #com 7347 -- Stormfire Druid
 #com 7328 -- Spiritbound Druid 
 #end
@@ -66150,7 +63662,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #rarity 5
 #path 6
 #gold 5
-#resource 5
+#res 5
 #supply 20
 #mon 61 -- Ffolkspear
 #mon 2455 -- Longbowman
@@ -66629,8 +64141,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #gems 5 3
 #curse 1
 #com 7305 -- Crone of Kiaransalee
-#summon1 7288 -- Ghoul
-#summon2 7269 -- Wraith
+#summon 7288 -- Ghoul
+#summonlvl2 7269 -- Wraith
 #end
 
 #newsite 1774
@@ -67459,7 +64971,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end
 
 #newsite 1845
-#name "Shrine of the Undying Heart" inner sanctum of the cult of karsus and lair of Wulgreth
+#name "Shrine of the Undying Heart" --inner sanctum of the cult of karsus and lair of Wulgreth
 #path 4
 #level 0
 #rarity 5
@@ -67804,7 +65316,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #gems 5 1
 #level 0
 #rarity 5
-#incunrest 10
+#decunrest -10
 #mon 7532 -- Triton Sentinel
 #mon 7621 -- Triton Crossbowman
 #mon 7619 -- Triton Tapalero
@@ -67933,8 +65445,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #gems 5 2
 #level 0
 #rarity 5
-#summon1 7288 -- "Unsated Ghoul"
-#summon2 7269 -- Wraith
+#summon 7288 -- "Unsated Ghoul"
+#summonlvl2 7269 -- Wraith
 #com 8022 -- Sea Hag
 #end
 
@@ -68161,7 +65673,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #gems 5 1
 #gems 6 1
 #gems 7 1
-#incunrest 10
+#decunrest -10
 #mon 7398 -- Wild Elf Hunter
 #mon 7348 -- Wood Elf Ranger
 #com 7349 -- Half-Elf Champion
@@ -68563,7 +66075,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #claim
 #blessmr 1
 #enchcost 20
-#com 5114 - Alhoun - RECRUITABLE
+#com 5114 -- Alhoun - RECRUITABLE
 #end
 
 #newsite 2010
@@ -68882,7 +66394,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 
 #newsite 2029
 #name "Blackglass Temple to Entropy"
-#level 8
+#level 0 -- Was 8, but why?
 #rarity 12 -- THRONELOC 2
 #path 5
 #gems 5 1
@@ -69153,7 +66665,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #rarity 11 -- level 1 throne
 #gems 3 1
 #gems 5 2
-#summon2 7269 -- enter to summon a wraith  
+#summonlvl2 7269 -- enter to summon a wraith  
 #claim
 #dominion 1
 #enchcost 10
@@ -69166,7 +66678,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #rarity 13
 #gems 6 3
 #gems 2 2
-#summon2 7070 -- Unicorn  
+#summonlvl2 7070 -- Unicorn  
 #com 7002 -- Yuirwood Ranger
 #claim
 #dominion 2
@@ -69218,7 +66730,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 
 #newsite 2052 
 #name "Tower of the Talon" -- THRONELOC 1
-#level 8
+#level 0 -- Was 8, but why?
 #rarity 11 -- level 1 throne
 #path 5
 #gems 5 2
@@ -70035,7 +67547,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #com 478 -- Sage
 #claim 
 #dominion 1
-#enchcost
+#enchcost 20
 #end
 
 #newsite 2101
@@ -70529,6 +68041,2490 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #rarity 5
 --#mon 
 --#com 
+#end
+
+-- empty range 3011-3090
+
+#newsite 3090
+#name "Jungle Tomb"
+#path 6
+#level 0
+#rarity 5
+#gems  5 2
+#com 161 		-- Death 3 Sauromancer
+#end
+
+#newsite 3091
+#name "Aarokocra Hunting Ground"
+#path 1
+#level 0
+#rarity 5
+#gems  1 1
+#mon 6814 	-- Aarokocra Hunter
+#com 6815	-- Aarokocra Shaman
+#end
+
+#newsite 3092
+#name "Kir Sabal"
+#path 1
+#level 0
+#rarity 5
+#gems  1 2
+#mon 6814 	-- Aarokocra Hunter
+#com 6815	-- Aarokocra Shaman
+#end
+
+#newsite 3093
+#name  "Ruins of Omu"
+#path 1
+#level 0
+#rarity 5
+#gems  1 2
+#mon 6814 	-- Aarokocra Hunter
+#com 6815	-- Aarokocra Shaman 
+#end
+
+#newsite 3094
+#name  "Amphitheater of Mezro"
+#path 8
+#level 0
+#rarity 5
+#gems 8 1
+#mon 6828	-- Chultan Raptor
+#end
+
+#newsite 3095
+#name  "Mezro College of Wizards"
+#path 4
+#level 0
+#rarity 5
+#gems 4 1
+#gems 3 1
+#decscale 5 -- increases magic
+#com 1194 -- Couatl
+#end
+
+#newsite 3096
+#name  "Library of Mezro"
+#path 1
+#level 0
+#rarity 5
+#gems 1 1 
+#incscale 1 -- increases sloth
+#decscale 5 -- increases magic
+#end
+
+#newsite 3097
+#name  "Temple of Ubtao"
+#path 9
+#level 0
+#rarity 5
+#gems 6 2
+#gems 5 1
+#com 6820 -- Mazewalker of Ubtao
+#com 6817 -- Barae
+#end
+
+#newsite 3098
+#name "Lizardfolk Lairs"
+#path 6
+#level 0
+#rarity 1
+#gems 5 1
+#com 7406 -- Lizard Man Chieftain
+#com 6734		-- T1 MAGE Lizardman Shaman
+#mon 783 		-- Serpent Dancer
+#mon 6727 		-- Lizardfolk Scavenger
+#end
+
+#newsite 3099
+#name "Troglodyte Dens"
+#path 3
+#level 0
+#rarity 5
+#gems 2 1
+#com 2749 		-- T1 MAGE Troglodyte Shaman
+#mon 6677		-- Troglodyte warrio
+#end
+
+#newsite 3100
+#name "Shrine of Sacrilege"
+#path 8
+#level 0
+#rarity 5
+#incscale 0 -- increases turmoil
+#com 5072 -- Duergar Blackguard - holy commander ( X )
+#com 7232 -- Duergar Mind Master
+#mon 7227 -- Duergar Heavy Axe - unit ( X )
+#mon 7228 -- Duergar Mauler - unit ( X )
+#mon 7229 -- Duergar Scorpion - ranged unit ( X )
+#end
+
+#newsite 3101
+#name "Gallery of Angels"
+#path 4
+#level 0
+#rarity 5 -- Unique
+#incscale 4 -- increases misfortune
+#decscale 5 -- increases magic
+#gems 4 1
+#enchcost 10
+#end
+
+#newsite 3102
+#name "Eryndlyn"
+#path 7
+#level 0
+#rarity 5
+#gems 8 3
+#gems 7 1
+#gems 3 1
+#gold 75
+#mon 7234 -- Drow Sargtlin
+#mon 6723 -- Goblin Dogslicer
+#mon 6676 -- Orc Marauders
+#mon 2219 -- Forest Troll
+#com 7169 -- Soul Spider
+#com 6771 -- Drow Priestess
+#end
+
+#newsite 3103
+#name "Three Torn Towers"
+#path 6
+#level 2
+#rarity 5
+#gems 6 2
+#com 6938 -- Wildshape Druid
+#end
+
+#newsite 3104
+#name "Surface Ruins of Ascalhorn"
+#path 3
+#look 3
+#level 2
+#rarity 5
+#gems 3 1
+#gems 4 2
+#end
+
+#newsite 3105
+#name "Ruins of Arryvandaar"
+#path 5
+#level 0
+#rarity 5
+#gems 5 2
+#enchcost 20
+#adventureruin 10
+#com 310 -- necromancer
+#end
+
+#newsite 3106
+#name "Adamantine Ziggurat"
+#path 0
+#level 0
+#rarity 5
+#gems 0 3
+#enchcost 10
+#firerange 2
+#end
+
+#newsite 3107
+#name "Great Forge"
+#path 3
+#level 0
+#rarity 5
+#gems 3 2
+#constcost 20
+#end
+
+#newsite 3108
+#name "Iron Tabernacle"
+#path 0
+#level 0
+#rarity 5
+#mon  7185 -- Dwarven Defender
+#com  7192 -- Deathchanter
+#com  6616	-- Cleric of Moradin
+#res 50
+#end
+
+#newsite 3109
+#name "Citadel of the Bloody Hand"
+#path 8
+#level 0
+#rarity 5
+#gold 25
+#com 7035 -- Shadow Thief
+#com 6926 -- Rogue
+#mon 482 -- Villain
+#end
+
+#newsite 3110
+#name "Festering Clogs"
+#path 8
+#level 0
+#rarity 5
+#disease 3
+#gems 2 1
+#com 7137 -- Wererat 
+#incscale 1 -- increased sloth down here
+#adventureruin 20
+#end
+
+#newsite 3111
+#name "Downshadow"
+#path 1
+#level 0
+#rarity 5
+#gems 1 1
+#com 3496 -- storm mage
+#com 7183 -- Dwarven Battlesmith
+#mon 7009 -- Dwarven Hammer
+#gold 25
+#end
+
+#newsite 3112
+#name "The House of Pain"
+#path 8
+#level 0
+#rarity 5
+#gems 8 1
+#com 6701 -- Caressor of Loviatar
+#incscale 0 -- increased turmoil down here
+#end
+
+#newsite 3113
+#name "Hall of the Sleeping Kings"
+#path 5
+#level 0
+#rarity 5
+#gems 4 1
+#gems 5 1
+#mon 7234 -- Drow Sargtlin 
+#com 7515 -- Drow Adept
+#incscale 3 -- increased death down here
+#decscale 5 -- incrased magic
+#adventureruin 20
+#end
+
+#newsite 3114
+#name "Kyorlamshin"
+#path 7
+#level 0
+#rarity 5
+#gold 25
+#gems 7 1
+#com 7172 -- Sword Dancer of Eilistraee
+#mon 7234 -- Drow Sargtlin
+#incscale 0
+#end
+
+#newsite 3115
+#name "Duergar Hall"
+#path 4
+#level 0
+#rarity 5
+#res 25
+#gems 4 1
+#mon 7227 -- Duergar Heavy Axe 
+#mon 7228 -- Duergar Mauler
+#com 7242 -- Duergar Deepscout
+#com 7230 -- Duergar Laird
+#com 7233 -- Duergar Runesmith 
+#decscale 1
+#end
+
+#newsite 3116
+#name "Lair of the Umber Hulks"
+#path 3
+#level 0
+#rarity 5
+#com 7165 -- Umberhulks
+#mon 7165 -- Umberhulks
+#incscale 0
+#end
+
+#newsite 3117
+#name "Trobriand's Graveyard"
+#path 9
+#level 0
+#rarity 5
+#gems 3 2
+#summon 3232 -- Iron Fly
+#adventureruin 20
+#decscale 1
+#decscale 5
+#end
+
+#newsite 3118
+#name "Heart Ward"
+#path 2
+#level 0
+#rarity 5
+#gems 5 1
+#gems 8 1
+#mon 7360 -- Kobold Slinger
+#mon 7359 -- Kobold Spear
+#com 7361 -- Kobold Chieftain
+#com 7362 -- Kobold Sorcerer
+#com 6831 -- yuan-ti abomination
+#incscale 0
+#incscale 4
+#end
+
+#newsite 3119
+#name "The Dredge and Port" 
+#path 8
+#level 0
+#rarity 5
+#gems 2 1
+#gems 8 1 
+#com 6811 -- bugbear champion
+#com 5078 -- Northlander Jarl
+#com 5101 -- Black Blood Skinshifter
+#com 7242 -- Duergar Deepscout
+#com 7233 -- Duergar Runesmith
+#mon 7228 -- Duergar Mauler
+#mon 5076 -- Northlander Reaver
+#incscale 0
+#incscale 4
+#end
+
+#newsite 3120
+#name "The Crown and Venter" 
+-- Mummy, Duergar, Zhentarim, archmage Tasselgryn Velldarn, Merchant-Lord Thorvin Twinbeard
+#path 1
+#level 0
+#rarity 5
+#gold 275
+#com 7515 -- Drow Adept
+#com 6775 -- Green Hag
+#mon 7234 -- Drow Sargtlin
+#mon 7081 -- Otyugh
+#incscale 0
+#incscale 4
+#end
+
+#newsite 3121
+#name "The Crystal Labyrinth" -- Former drow training ground, claimed by Halaster and used as his treasure room
+#path 4
+#level 0
+#rarity 5 
+#gems 4 2
+#incscale 0 -- increases turmoil
+#decscale 5 -- increases magic
+#adventureruin 20
+#end
+
+#newsite 3122
+#name "Arcturiadoom"
+#path 5
+#level 0
+#rarity 5
+#gems 5 2
+#com 6738 -- Fire Giant Commander
+#com 6704 -- nighbringer of shar
+#mon 7234 -- Drow Sargtlin 
+#incscale 3 -- increases death
+#decscale 5 -- increases magic
+#end
+
+#newsite 3123
+#name "Muiral's Gauntlet"
+#path 9
+#level 0
+#rarity 5
+#gems 4 1 
+#gems 7 2
+#mon 6774 -- Drow Hunter
+#com 7317 -- Drow Commander
+#com 7275 -- Drow Mage Apprentice
+#decscale 5 -- increases magic
+#end
+
+#newsite 3124
+#name "Great Pit of Ghaunadaur"
+#path 8
+#level 0 -- always found
+#rarity 5 -- never random
+#gems 8 3
+#gems 2 1
+#summon 7220 -- Ochre Jelly
+#summon 7220 -- Ochre Jelly
+#summon 7220 -- Ochre Jelly
+#summonlvl2 7217 -- Gelatinous Cube
+#summonlvl2 7217 -- Gelatinous Cube
+#summonlvl3 7235 -- Black Pudding
+#com 7219 -- Ghaunadan
+#end
+
+#newsite 3125
+#name "Thrall Caverns of Oryndoll"
+#path 8
+#level 0 -- always found
+#rarity 5 -- never random
+#gold 100
+#gems 8 3
+#bloodcost 20
+#end
+
+#newsite 3126
+#name "Ring Caverns of Oryndoll"
+#path 4
+#level 0 -- always found
+#rarity 5 -- never random
+#gems 7 2
+#end
+
+#newsite 3127
+#name "Undervaults of Ilsensine"
+#path 2
+#level 0 -- always found
+#rarity 5 -- never random
+#gems 4 2
+#decscale 0 
+#end
+
+#newsite 3128
+#name "Sacred Pool of the Sea Mother"
+#path 2
+#level 0 -- always found
+#rarity 5 -- never random
+#gems 2 2
+#gems 4 1
+#end
+
+#newsite 3129
+#name "Sarrukh Ruin"
+#path 6
+#level 0 -- always found
+#rarity 5 -- never random
+#com 7177 -- sarrukh
+#gems 8 2
+#gems 6 1
+#end
+
+#newsite 3130
+#name "Castle Cormanthor"
+#level 0 -- always found
+#rarity 5 -- never random
+#adventureruin 15
+#gems 3 1
+#gems 5 1
+#fort 3 -- castle
+#end
+
+#newsite 3131
+#name "House of Song"
+#level 0 -- always found
+#rarity 5 -- never random
+#gems 1 1
+#gems 7 2
+#temple
+#end
+
+#newsite 3132
+#name "Castle Waterdeep"
+#path 3
+#level 0
+#rarity 5
+#decunrest 5
+#mon 6608 	-- Griffon Rider
+#com 6604 	-- Grey Hand Captain (Initiate)
+#mon 6620 	-- Grey Hand Enforcer
+#mon 6621 	-- Vigilant of the Guard
+#gems 6 1   -- 1 earth gem
+#gems 2 1 	-- 1 water gem
+#gems 1 2 	-- 1 air gems
+#end
+
+#newsite 3133
+#name "The Palace of Waterdeep"
+#path 1
+#level 0
+#rarity 5
+#mon 6601 	-- Constables
+#com 6602 -- Senior Civilar
+#com 6609 -- Wizard Corps Civilar
+#com 6610 -- Eltorchul Graduate
+#com 6615 -- Ranger of the Emerald Enclave
+#com 6619 -- Dawnmaster of the Morninglord
+#com 6616 -- Cleric of Moradin
+#decscale 1 -- increases growth by decreasing death
+#end
+
+#newsite 3134
+#name "Blackstaff Tower"
+#path 4
+#level 0
+#rarity 5
+#com 6613 -- Blackstaff Apprentice
+#com 6611 -- Bard of New Olamn
+#com 6612 -- Lady of the Watchful Order 
+#gems 4 2 -- 2 astral gems
+#end
+
+#newsite 3135
+#name "Deepwater Harbor"
+#path 2
+#level 0
+#rarity 5
+#gold 150
+#gems 2 1 -- 1 water gem
+#gems 1 1 -- 1 air gem
+#end
+
+#newsite 3136
+#name "The Yawning Portal Inn"
+#path 5
+#level 0
+#rarity 5
+#mon 7516 -- Red Sash Vigilante
+#com 6925 -- Wanted: Fighters 
+#com 6913 -- Wanted: Spellcasters
+#gems 3 1 -- 1 earth gem
+#gems 0 1 -- 1 fire gem
+#gems 7 1 -- 1 glamour gem
+#end
+
+#newsite 3137
+#name "Elven Enclave"
+#path 6
+#level 0
+#rarity 5
+#mon 7348 -- Wood Elf Ranger
+#com 6617 -- Seldarine Cleric
+#com 6813 -- Elven Bladesinger
+#gems 6 1 -- 1 nature gem
+#gems 4 1 -- 1 astral gem
+#decscale 5 -- increases magic scales
+#end
+
+#newsite 3138
+#name "Lightfoot Village"
+#loc 23
+#path 6
+#level 0
+#rarity 5
+#com 6647 	-- Cleric of Yondalla
+#com 6646	-- Halfling Spellsinger
+#mon 6641	-- Lightfoot Spear
+#mon 3390 	-- hoburg slinger
+#gems 6 1 	-- 1 nature gem
+#gems 7 1 	-- 1 glamour gem
+#decscale 4 -- increases luck by decreasing misfortune
+#end
+
+#newsite 3139
+#name "Halfling Stronghold"
+#loc 23
+#path 6
+#level 0
+#rarity 5
+#com 6647 	--  Cleric of Yondalla
+#com 6649 	--  Halfling Illusionist
+--#com 6652 	--  Rogue Traders
+#mon 6642	--  Strongheart Sword Infantry
+#gems 3 1 	-- 1 earth gem
+#gems 7 1 	-- 1 glamour gem
+#decscale 4 -- increases luck by decreasing misfortune
+#end
+
+#newsite 3140
+#name "Ghostwise Enclave"
+#mon 6651 	-- Ghostwise Hunter 
+#com 6650 	-- Ghostwise Cleric of Malarr
+#com 6649 	-- Halfling Illusionist
+#gems 5 1 	-- 1 death gem
+#gems 7 1 	-- 1 glamour gem
+#decscale 4 -- increases luck by decreasing misfortune
+#path 6
+#level 3
+#rarity 5
+#end
+
+#newsite 3141
+#name "Zhentil Keep"
+#path 5
+#level 0
+#rarity 5
+#gold 50
+#res 50
+#decscale 0 -- increases order
+#gems 3 2 	-- 2 earth gems
+#mon 6665 	-- Lance
+#mon 6867 -- Black Unicorn Rider
+#mon 6672 	-- Wyverns
+#com 6664 	-- Swordcaptain
+#com 6666	-- Ardragon
+#com 6868 -- Sister of Cyric
+#end
+
+#newsite 3142
+#name "The Temple of Bane"
+#path 5
+#level 0
+#rarity 5
+#gems 0 1	--  1 fire gem
+#incscale 3 -- increases death
+#com 6668 	-- Banefists
+#end
+
+#newsite 3143
+#name "The Tower of the Art"
+#path 4
+#level 0
+#rarity 5
+#gems 4 1 -- 1 astral gem
+#com 310 	-- Stock Necromancer
+#com 6667 	-- Dark Hand
+#end
+
+#newsite 3144
+#name "The Black Altar"
+#path 5
+#level 0
+#rarity 5
+#incscale 3 -- increases death
+#gems 5 2	--  2 death gems
+#mon 6671 	-- Hellhounds
+#end
+
+#newsite 3145
+#name "Zhentarim Barracks"
+#path 3
+#level 0
+#rarity 5
+#mon 6661 -- x Stalwart - lowest ranking soldier
+#mon 6662 -- x  Sternhelm (lead small squads of 4 Stalwarts)
+#com 6663 -- x  Swordhar (Lead 4-6 Sternhelms/ a platoon)
+#end
+
+#newsite 3146
+#name "Fountain of the Qysars" -- a magical fountain from the time of the Shoon imperium, last structural relic of that age in the city.
+#path 8
+#level 0
+#rarity 5
+#decunrest 2
+#gems 5 1 -- 1 death gem
+#gems 4 1 -- 1 astral gem
+#gems 2 1 -- 1 water gem
+#end
+
+#newsite 3147
+#name "Plaza of Divine Truth" -- sixteen faiths worship here, including the god of destruction
+#path 4
+#level 0
+#rarity 5
+#gems 4 1 -- 1 astral gem
+#gems 6 1 -- 1 nature gem
+#com 6700 -- Cleric of Tempus
+#com 6701 -- Loviatar
+#com 6702 -- Stormherald of Talos
+#com 6704 -- Priestess of Shar
+#com 6605 -- Cleric of Lathander
+#com 7040 -- Gondar Wonderbringer
+#end
+
+#newsite 3148
+#name "Qysagghani Fortress" -- The Pasha's Fortress
+#path 3
+#level 0
+#rarity 5
+#gems 3 1 -- 1 earth gem
+#gems 0 1 -- 1 fire gem
+#mon 7659 	-- Yestaadi Archer 
+#mon 7663 	-- Tabarzin
+#mon 6683 	-- Djawal Knight
+#com 6686	-- Saref Centurion
+#com 6688	-- Murabir General
+#com 6691 	-- Pasha
+#com 6692 	-- Samira Princess
+#end
+
+#newsite 3149
+#name "The Auret" -- Wizards Ward - solid gold wizards tower - the most impressive sight in Calimport?
+#path 0
+#level 0
+#rarity 5
+#decscale 5 -- increases magic
+#gems 4 1 -- 1 death gem
+#gems 1 1 -- 1 air gem
+#com 6694 -- Artificer
+#com 6696 -- Djenispool Conjurer
+#com 6698 -- Quelzarn Tower Mage
+#com 6699 -- Qysaghanni Vizar
+#end
+
+#newsite 3150
+#name "Lighthouse of the Moon" -- magical lighthouse in the harbor coalesces moonlight and shine it over the entire dock ward
+#path 2
+#level 0
+#rarity 5
+#gems 8 2 -- 2 blood slaves
+#gems 2 1 -- 1 water gem
+#incscale 0 -- increases turmoil -- slave trade
+#com 7039 -- Umberlant Cleric
+#end
+
+#newsite 3151
+#name "Castle Obarskyr"
+#path 3
+#level 0
+#rarity 5
+#com 6747 -- aide-de-camp 
+#mon 6752 -- Talon
+#com 6753 -- Ornrion
+#end
+
+#newsite 3152
+#name "College of War Wizards"
+#path 0
+#level 0
+#rarity 5
+#gems 0 1 -- 1 fire gem
+#gems 1 1 -- 1 air gem
+#gems 3 1 -- 1 earth gem
+#com 6755 -- War Wizard
+#com 6758 -- Royal Magician
+#decscale 5 -- increases magic 
+#end
+
+#newsite 3153
+#name "Shrines of Suzail"
+#path 4
+#level 0
+#rarity 5
+#gems 4 1 -- 1 astral pearls
+#com 6703 -- Cleric of Waukeen
+#com 6605 -- Lathander
+#com 6623 -- Tyr
+#com 7008 -- Torm
+#com 6705 -- Ilmater
+#com 7007 -- Helm
+#decscale 0 -- increases order
+#end
+
+#newsite 3154
+#name "King's Forest"
+#path 6
+#level 0
+#rarity 5
+#res 20
+#gems 6 1 -- 1 nature gems
+#com 6646 -- Halfling Spellsinger
+#com 6615 -- Ranger of the Emerald Enclave
+#end
+
+#newsite 3155
+#name "Arabel"
+#path 4
+#rarity 5
+#gold 50
+#com 7003 -- chauntea
+#com 7007 -- Helm
+#com 6618 -- Selune
+#end
+
+#newsite 3156
+#name "Citadel of the Purple Dragon"
+#path 9
+#level 0
+#rarity 5
+#decscale 0 -- increases order
+#gems 3 1 -- 1 earth gem
+#mon 6743 -- Guidon (standard bearer)
+#mon 6744 -- Purple Dragon Knight
+#com 6749 -- Purple Dragon Lancelord
+--#com 6750 -- Commander: Battlemaster 
+#end
+
+#newsite 3157
+#name "Cackling Chasm"
+#path 2
+#level 0
+#rarity 5
+#gems 2 1 -- 1 water gems
+#incscale 5 -- increases drain
+#end
+
+#newsite 3158
+#name "Fell Pass"
+#path 1
+#level 0
+#rarity 5
+#gems 1 1 -- 1 air gems
+#incscale 2 -- increases cold
+#end
+
+#newsite 3159
+#name "Raven Rock"
+#path 3
+#level 0
+#rarity 5
+#gems 3 2 -- 2 earth gems
+#decscale 0 -- increases order
+#end
+
+#newsite 3160
+#name "Dark Arrow Keep"
+#path 8
+#level 0
+#rarity 5
+#decscale 1 -- increases productivity
+#decscale 3 -- increases growth
+#end
+
+#newsite 3161
+#name "The Deep Forge"
+#path 0
+#level 0
+#rarity 5
+#gems 0 2 	-- 2 fire gems
+#com 5072 -- Duergar Blackguard
+#com 5108 -- Young Barghest
+#end
+
+#newsite 3162
+#name "Eye of the All-Father"
+#path 3
+#level 0
+#rarity 5
+#com 6810 	-- Stone Giant Elder
+#com 6738 	-- Firegiant Commander
+#com 6805 	-- Cloud Giant
+#com 5106	-- Storm Giant
+#end
+
+#newsite 3163
+#name "Llorkh"
+#path 9
+#level 0
+#rarity 5
+#gold 85 
+#end
+
+#newsite 3164
+#name "Temple to Annam"
+#path 3
+#level 0
+#rarity 5
+#com 6805 		-- Cloud Giants
+#gems 1 2
+#gems 0 1
+#end
+
+#newsite 3165
+#name "Vale of Whispers"
+#path 5
+#level 0
+#rarity 5
+#com 6704 -- Priestess of Shar
+#gems 5 1
+#gems 4 1
+#end
+
+#newsite 3166
+#name "Mines of Dekanter"
+#path 3
+#level 0
+#rarity 5
+#gems 8 2
+#gold 50 
+--#com 5055 -- Illithid Montag Initiator
+#com 7068 -- beholder
+#end
+
+#newsite 3167
+#name "Deadstone Cleft"
+#path 6
+#level 0
+#rarity 5
+#gems 3 1
+#mon 6809 -- Stone Giant Mauler
+#com 6810 -- Stone Giant Elder
+#end
+
+#newsite 3168
+#name "Wyrmheart Mine"
+#path 3
+#level 0
+#rarity 5
+#gems 3 3
+#gold 50
+#com 323 -- dwarven smith
+#mon 6834 -- Dimetrodon
+#end
+
+#newsite 3169
+#name "Ubtaos Rest"
+#path 6
+#level 0
+#rarity 5
+#mon 723		-- Slightly better Mictlan Warrior
+#com 177 		-- T2 COMMANDER	Lizard King	
+#end
+
+#newsite 3170
+#name "Hydra Nest"
+#path 6
+#level 0
+#rarity 5
+#gems 6 1
+#mon 1831		-- Hydra 
+#end
+
+#newsite 3171
+#name "Deep Chultan Jungle"
+#path 6
+#level 0
+#rarity 5
+#mon 2689		-- Giant Scorpions
+#mon 6812		-- Giant Spiders
+#end
+
+#newsite 3172
+#name "Dinosaur Hunting Ground"
+#path 6
+#level 0
+#rarity 5
+#gems 6 1
+#mon 6828	-- Chultan Raptor
+#mon 6819 	-- T-Rex aka Aspect of Ubtao
+#mon 6834 -- Dimetrodon
+#end
+
+#newsite 3173
+#name "Batiri Goblin Caves"
+#path 8
+#level 0
+#rarity 5
+#gems 8 1
+#mon 6723 	-- Goblin Dogslicers
+#com 6733	-- T1 MAGE: Goblin Shaman (1608)
+#end
+
+#newsite 3174
+#name "Hidden Temple of the Yuan-ti"
+#path 8
+#level 0
+#rarity 5
+#gems 8 1
+#gems 6 1
+--#comshaarlan
+#mon 6830 -- Yuan-ti Temple Guard
+#com 6831 -- Yuan-ti Abomination
+#com 6832 -- Yuan-ti Assassin
+#end
+
+#newsite 3175
+#name "Port Nyanzaru"
+#path 9
+#level 0
+#rarity 5
+#gems 1 1
+#gems 2 1
+#com 6832 -- Yuan-ti Assassin
+#com 6617 -- Cleric of Moradin 
+#com 6703 -- Cleric of Waukeen
+--#com 6833 -- Merchant
+#mon 6824 -- Tabaxi Warrior
+#gold 50
+#end
+
+#newsite 3176
+#name "Chultengar Jungles"
+#path 6
+#level 0
+#rarity 5
+#gems 6 1
+#gems 8 1
+#com 7406 		-- Lizard Man Chieftain
+#com 6734		-- T1 MAGE Lizardman Shaman
+#mon 783 		-- Serpent Dancer
+#mon 6727 		-- Lizardfolk Scavenger
+#mon 6672		-- Wyverns from wastelands
+#mon 6723 		-- Goblin Dogslicers
+#com 6733		-- T1 MAGE: Goblin Shaman (1608)
+#incscale 0 	-- INCREASES Turmoil
+#end
+
+#newsite 3177
+#name "Ziggurat of Orlunga"
+#path 6
+#level 0
+#rarity 5
+#gems 5 1
+#gems 6 1
+#res 30
+#com 6819		-- T-Rex
+#com 6831		-- Yuan-ti Abomination
+#mon 6830		-- Yuan-ti Temple Guard
+#end
+
+#newsite 3178
+#name "Lake Luo"
+#path 6
+#level 0
+#rarity 5
+#gems 0 1
+#gems 1 1
+#gems 3 1
+#com 6819		-- T-Rex
+#com 6831		-- Yuan-ti Abomination
+#mon 6830		-- Yuan-ti Temple Guard
+#decscale 2 	-- increases heat
+#incscale 4 	-- increases misfortune
+#end
+
+#newsite 3179
+#name "The Goldmane Expanse"
+#path 1
+#level 0
+#rarity 5
+#gems 3 1
+#gems 5 1
+#gems 6 1
+#end
+
+#newsite 3180
+#name "Wemic Pridelands"
+#path 1
+#level 0
+#rarity 5
+#com 6836	-- Wemic Proudspear
+#com 6837 	-- Wemic Shaman
+#mon 6840	-- Wemic Warrior
+#end
+
+#newsite 3181
+#name "Gnoll Packlands"
+#path 8
+#level 0
+#gems 8 1
+#rarity 5
+#com 6808 		-- Gnoll Chieftain
+#com 6732		-- Fang of Yeenoghu
+#mon 6724 		-- Gnoll Scavengers
+#end
+
+#newsite 3182
+#name "The Ruins of Blaskaltar" 	
+#path 1
+#level 0
+#rarity 5
+#gems 1 2
+#com 346	-- Crystal Sorceress
+#end
+
+#newsite 3183
+#name "The Ruins of Lhesper" 	
+#path 6
+#level 0
+#rarity 5
+#gems 1 1
+#gems 3 1
+#gems 5 1
+#com 6831		-- Yuan-ti Abomination
+#mon 6830		-- Yuan-ti Temple Guard
+#com 6829 		-- Yuan-ti Malison
+#decscale 2 	-- increases heat
+#incscale 4 	-- increases misfortune
+#end
+
+#newsite 3184
+#name "The Illysum" 	
+#path 4
+#level 0
+#rarity 5
+#gems 4 3
+#gems 3 1
+#mon 5118 -- Halruaan Arcane Guard
+#com 6853 -- Netyarch Wizard-King
+#com 8032 -- Halruaan Skyship
+#end
+
+#newsite 3185
+#name "Kholstar's Keep" 	
+#path 3
+#level 0
+#rarity 5
+#gems 0 1
+#gems 1 1
+#com 6852 -- Halruaan Artificer
+#end
+
+#newsite 3186
+#name "The Promenade"
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 2 1
+#gold 75
+#com 6854 -- Jordain Vizier - House of Jordain
+#com 6895 -- Mystic Theurge
+#end
+
+#newsite 3187
+#name "Haerlu Vineyards"
+#level 0 -- Was 8, but why?
+#path 6
+#rarity 5
+#gems 2 1
+#gold 35
+#end
+
+#newsite 3188
+#name "Electrum Mines"
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 3 1
+#gold 35
+#end
+
+#newsite 3189
+#name "The Citadel"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 5
+#gems 5 2
+#gems 3 1
+#mon 6861 -- Thayan Knight
+#com 6673 -- Myrkul
+#com 6864 -- Zulkir
+#com 6868 -- Sister of Cyric
+#mon 6867 -- Black Unicorn Rider
+
+#end
+
+#newsite 3190
+#name "Thayvian Gold Mine"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 3
+#gems 3 2
+#gems 4 1
+#gold 160
+#com 6869 -- Centaur Taskmaster
+#end
+
+#newsite 3191
+#name "Doomvault"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 8
+#gems 8 3
+#gems 1 1
+#gems 6 1
+#com 6704 -- Shar (darkness and night) Favored weapon: Chakram throwing disc
+#com 6701 -- Loviatar (God of Agony, Pain, Torment - weapon is a scourge)
+#com 6870 -- Darkenbeast
+#end
+
+#newsite 3192
+#name "Volcanic Forge"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 0
+#gems 0 3
+#gold 60
+#decscale 1 -- increases productivity
+#end
+
+#newsite 3193
+#name "Palaces of the Mulan"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 2
+#gems 2 1
+#gold 30
+#res 30
+#decscale 1 -- increases productivity
+#com 6866 -- Mulan Oppressor
+#com 6912 -- Mulan Adept
+#mon 6858 -- Mulan Bowman
+#end
+
+#newsite 3194
+#name "Faunglade"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 6
+#gems 6 1
+#incscale 1 -- decreases productivity
+#mon 1532 	-- Satyr Warriors
+#mon 227	-- Satyr Sneaks
+#com 238	-- Pan
+#end
+
+#newsite 3195
+#name "Centaur Rangelands"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 6
+#gems 6 1
+#mon 7488 -- Centauride Nomad
+#mon 7487 -- Centaur Huntsman
+#mon 7491 -- Centaur Protector
+#com 7490 -- Centaur Windrunner
+#com 7489 -- Centauride Thorncaller
+#end
+
+#newsite 3196
+#name "The Black Keep of Bezantur"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 5
+#com 6870 -- Darkenbeast
+#mon 6724 -- Gnoll Hunters
+#com 6808 -- Gnoll Chieftain
+#mon 6723 	-- Goblin Dogslicers
+#com 6811	-- Bugbear Captain
+#com 6733	-- Goblin Shaman
+#mon 612	-- Gryphon Rider
+#end
+
+#newsite 3197
+#name "Street of White Roses"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 8
+#res 25
+#gems 8 2
+#incscale 0 -- increases turmoil
+#com 6869 -- Centaur Taskmaster
+#com 428 -- stock Assassin
+#com 6829 		-- Yuan-ti Malison
+#end
+
+#newsite 3198
+#name "Great Harbor of Bezantur"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 2
+#gold 50
+#gems 8 2
+#gems 2 1
+#decscale 3 -- increases growth
+--#com 6652 -- Halfling Rogue Trader
+#end
+
+#newsite 3199
+#name "Caravanserai"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 3
+#gold 50
+#decscale 3 -- increases growth
+#incscale 0 -- increases turmoil
+#com 6622 -- Merchant Prince
+#com 6869 -- Centaur Taskmaster
+#mon 451 -- Horse Tribe Brother
+#end
+
+#newsite 3200
+#name "Guild of Heroes"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 4
+#com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
+#com 6925 -- FIGHTER HERO RECRUITABLE MONTAG
+#end
+
+#newsite 3201
+#name "Dragon Turtle Lair"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 2
+#gems 2 2
+#end
+
+#newsite 3202
+#name "Wyvern Hunting Ground"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 1
+#level 0
+#incscale 0 -- increases turmoil
+#mon 6672 -- Wyverns
+#com 6687 -- Hydar Beastmaster
+#end
+
+#newsite 3203
+#name "Hill Giant Ordning"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 3
+#level 0
+#gems 3 1
+#incscale 0 -- increases turmoil
+#com 6772	-- Hill Giant Shaman
+#com 6678	-- Hill Giant Reavers
+#end
+
+#newsite 3204
+#name "Goblin Cave Networks"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 6
+#level 0
+#gems 6 1
+#incscale 0 -- increases turmoil
+#com 6733	-- Goblin Shaman
+#mon 6773 	-- Goblin Wolfriders
+#mon 6807 	-- Goblin Shortbow
+#com 6770 	-- Goblin King
+#end
+
+#newsite 3205
+#name "Troll Haven"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 2
+#level 0
+#gems 2 1
+#incscale 0 -- increases turmoil
+#com 2220 	-- Troll Shaman
+#mon 2219	-- Forest Troll
+#mon 6806 	-- Krenshar
+#end
+
+#newsite 3206
+#name "Orc Villages"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 0
+#level 0
+#gems 6 1
+#incscale 0 -- increases turmoil
+#com 6737 	-- Orc King
+#mon 6676	-- Orc Marauders
+#end
+
+#newsite 3207
+#name "Orc Strongholds"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 0
+#level 0
+#gems 0 1
+#incscale 0 -- increases turmoil
+#com 6737 	-- Orcish King
+#com 6801 	-- Cleric of Gruumsh	
+#mon 6676	-- Orc Marauders
+#end
+
+#newsite 3208
+#name "Taurian Labyrinth"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 0
+#level 3
+#gems 3 1
+#incscale 0 -- increases turmoil
+#com 6843 	-- Minotaur Champion	
+#mon 6842 	-- Minotaur Brute
+#end
+
+
+#newsite 3209
+#name "Unthalass - The City of Gems"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 9
+#level 0
+#gems 0 1
+#gems 1 1
+#gems 2 1
+#gems 3 1
+#gems 4 2
+#com 7503 -- Tiefling Spellfilcher 
+#com 7502 -- Tiefling Warlock
+#com 1894 -- Minister of Magic
+#end
+
+#newsite 3210
+#name "Fertile Flood Plain"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 6
+#gems 6 1
+#gold 50
+#end
+
+#newsite 3211
+#name "City of the Gods"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 9
+#gold 50
+#gems 2 1
+#com 6901 -- Cleric of Isis
+#mon 6910 -- Anhurite Crusader -- sacred troops
+#com 7503 	-- Tiefling Spellfilcher 
+#com 7344 	-- Tiefling Priestess
+#com 7502 	-- Tiefling Warlock
+#end
+
+#newsite 3212
+#name "The Solarium"
+#path 9
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 3 2
+#end
+
+#newsite 3213
+#name "Library of the Gods"
+#path 7
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 4 1
+#gems 1 2
+#com 6895 -- Mystic Theurge
+#end
+
+#newsite 3214
+#name "Tower of the Sun"
+#path 9
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 0 3
+#end
+
+#newsite 3215
+#name "The Mystic Cornucopia"
+#path 6
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 2 1
+#gems 4 1
+#gems 6 1
+#com 6897 -- Sister of the Quill
+#end
+
+#newsite 3216
+#name "Mishtan - City of the Dead"
+#path 4
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 4 1
+#gems 5 1
+#com 6902 -- Risen Scepter
+#end
+
+#newsite 3217
+#name "Blood Fortress of Anhur"
+#path 3
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 4 1
+#gems 3 1
+#mon 6910 	-- Anhurite Crusader
+#com 6911 	-- Anhurite Infiltrator 
+#end
+
+#newsite 3218
+#name "Arcanum of Magic"
+#path 9
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 4 3
+#com 6898 -- Loremaster
+#com 6896 -- Thaumaturge of Artifice
+#end
+
+#newsite 3219
+#name "Sebek's Tooth"
+#path 6
+#level 0 -- Was 8, but why?
+#rarity 5
+#gems 2 1
+#gems 6 1
+#incscale 0 -- increases turmoil
+#end
+
+#newsite 3220
+#name "Temple of Set"
+#path 5
+#level 3
+#rarity 5
+#gems 5 2
+#incscale 0 -- increases turmoil
+#incscale 3 -- increases death
+#com 6903 -- Fang of Set
+#end
+
+#newsite 3221
+#name "Palace of the Sceptanar"
+#path 9
+#level 0
+#rarity 5
+#gold 50
+#res 20
+--#com 6921 -- Seneschal
+#com 7103 -- Sceptanar Wizard
+#end
+
+#newsite 3222
+#name "The Akademeia of Cimbar"
+#path 9
+#level 0
+#rarity 5
+#gems 0 1
+#gems 3 1
+#gems 4 1
+#com 6848 	-- Cleric of Azuth
+#com 6605	-- Cleric of Lathander	
+#com 6703 	-- Cleric of Waukeen
+#com 1070   -- Philosopher
+#end
+
+#newsite 3223
+#name "Airspur"
+#path 1
+#level 0
+#rarity 5
+#gems 1 1
+#com 6702 	-- Cleric of Talos
+#end
+
+#newsite 3224
+#name "Palace of the Simbul"
+#path 9
+#level 0
+#rarity 5
+#gems 0 2
+#gems 1 1
+#gems 4 1
+#gems 6 2
+#com 7006   -- Simbarch Apprentice
+#com 7005 	-- Simbarch Sorceress
+#mon 56 	-- Royal Forester
+#mon 6004 -- Griffon Ranger
+#end
+
+#newsite 3225
+#name "Holy City of Tantras"
+#path 9
+#level 0
+#rarity 11
+#gems 3 1
+#gems 4 2
+#com 6623 -- Cleric of Tyr
+#com 7007 -- Cleric of Helm
+#com 7008 -- Trueblade of Torm
+#com 440 -- Paladin of the Golden Lion
+#com 6700 -- Battlechaplain of Tempus
+#com 5044 -- Cleric of Tymora
+#com 6705 -- Ilmatari Cleric
+#com 6618 -- Priestess of Selune
+#com 6605 -- Cleric of Lathander	
+#com 6703 -- Cleric of Waukeen
+#com 7040 -- Gondar Wonderbringer
+#claim
+#dominion 1
+#thaucost 20
+#end
+
+
+#newsite 3226
+#name "Lyrabar"
+#path 2
+#level 0
+#rarity 5
+#gems 2 1
+#gems 1 1
+#com 5084 	-- Court Wizard
+#com 7003 	-- Priestess of Chauntea
+#com 6618 	-- Priestess of Selune
+#com 6703 	-- Cleric of Waukeen
+#gold 50
+#end
+
+#newsite 3227
+#name "Dwarven Colony"
+#path 3
+#level 0
+#rarity 5
+#gems 3 1
+#gold 75
+#mon 6874 -- Dwarven Miners
+#mon 7009 -- Dwarven Hammers
+#mon 7010 -- Dwarven Crossbows
+#com 6616 -- Dwarven Smith
+#com 7030 -- DWARVEN LORD
+#end
+
+#newsite 3228
+#name "The Conclave of Silverymoon" 
+#path 4
+#level 0
+#rarity 5
+#com 6646		-- Halfling Spellsinger
+#com 7012 		-- Spellguard
+#com 6898		-- Loremaster
+#com 7014 		-- Sage of the Vault
+#gems 4 3
+#end
+
+#newsite 3229
+#name "Rauvinwatch Keep" 
+#path 9
+#level 0
+#rarity 5
+#mon 6874 	-- Dwarven Miners
+#mon 6641	-- Lightfoot Spear
+#mon 7013 	-- Silverwatch
+#gems 3 1
+#end
+
+#newsite 3230
+#name "The Moonbridge" 
+#path 2
+#level 0
+#rarity 5
+#gems 1 2
+#gems 2 1
+#gems 4 1
+#end
+
+#newsite 3231
+#name "Halls and Glades" 
+#path 6
+#level 0
+#rarity 5
+#com 6616	-- Cleric of Moradin
+#com 6617 	-- Seldarine Cleric
+#com 6615 	-- Ranger of the Emerald Enclave
+#com 6618 	-- Priestess of Selune
+#com 6605 -- Priest of Lathander
+#gems 6 2
+#end
+
+#newsite 3232
+#name "Castle Al'hanar" 
+#path 5
+#level 0
+#rarity 5
+#fort 2
+#lab
+#temple
+#com 7017	-- Death Knight
+#gems 5 2
+#gems 3 1
+#end
+
+#newsite 3233
+#name "Citadel Sundabar"
+#path 9
+#level 0
+#rarity 5
+#com 6623 -- Cleric of Tyr
+#com 7007 -- Cleric of Helm
+#com 7008 -- Trueblade of Torm
+#com 6605 -- Priest of Lathander
+#mon 7011 -- Knight in Silver
+#end
+
+#newsite 3234
+#name "Goldspires" 
+#path 9
+#level 0
+#rarity 5
+#gems 3 2
+#gold 50
+#com 6703 -- Cleric of Waukeen
+#com 6673 -- Myrkul
+#com 6701 -- Loviatar
+#com 6674 -- Priestess of Bane
+#com 6605 -- Cleric of Lathander
+#end
+
+#newsite 3235
+#name "Shadow Thieves Council"
+#path 3
+#level 0
+#rarity 5
+#com 7035 -- Shadow Thief
+#com 7036 -- Shadow Thief Cloakmaster
+#com 7037 -- BHAALSPAWN
+#end
+
+#newsite 3236
+#name "Council of the High Houses" 
+#path 0
+#level 0
+#rarity 5
+#gems 0 1
+#mon 7294 -- Amnian Merchant Guard 
+#com 6622 -- Merchant Prince
+#end
+
+
+#newsite 3237
+#name "Wave District" 
+#path 2
+#level 0
+#rarity 5
+#gold 200
+#gems 2 2
+#com 6866 -- Mulan Oppressor
+#com 870 -- Captain
+#mon 7298 -- Sea Dog Swashbuckler 
+#mon 7299 -- Sea Dog Deadeye
+#com 7301 -- Pirate Lord 
+#end
+
+#newsite 3238
+#name "Twin Songs" -- temple district
+#path 9
+#level 0
+#rarity 5
+#gems 4 2
+#com 6623 		-- Cleric of Tyr
+#com 7007 		-- Cleric of Helm
+#com 6605		-- Cleric of Lathander
+#com 6618 		-- Priestess of Selune
+#com 6705 		-- Cleric of Ilmater
+#com 6847 		-- Cleric of Mystra
+#end
+
+#newsite 3239
+#name "High Hall" -- council seat
+#path 3
+#level 0
+#rarity 5
+#gems 3 2
+#com 5084 -- Court Wizard
+#mon 7130
+#end
+
+#newsite 3240
+#name "Gray Harbor" -- busy port
+#path 2
+#level 0
+#rarity 5
+#gold 200
+#gems 2 2
+#mon 7135
+#mon 7136
+#mon 7610 -- Sea Elf Shoalguard - Landshape
+#com 7626 -- Shoalguard Captain - Landshape
+#com 7039 -- Umberlant Cleric
+#com 870 -- Sea Captain
+#end
+
+#newsite 3241
+#name "Seatower of Balduran" -- Home of the Flaming Fists 
+#path 1
+#level 0
+#rarity 5
+#gems 1 2
+#com 6925 -- FIGHTER HERO RECRUITABLE MONTAG
+#com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
+--#com 6921 -- Seneschal
+--Flaming Fist
+#mon 7131
+#mon 7132
+#mon 7133
+#com 7134
+#end
+
+
+#newsite 3242
+#name "Bildoobaris Tenday" -- inc growth generates money and gems
+#path 6
+#level 0
+#rarity 5
+#gems 3 2
+#gems 6 2
+#decscale 3 -- incr growth
+#res 25
+#com 6702 -- Stormherald of Talos
+#com 6701 -- Caressor of Loviatar
+#end
+
+#newsite 3243
+#name "The Long Road" -- inc growth and produces lots of gold
+#path 2
+#level 0
+#rarity 5
+#gems 0 1
+#gems 1 1
+#gems 2 1
+#decscale 3 -- incr growth
+#gold 75
+#end
+
+#newsite 3244
+#name "Fortress of the Half-Demon"
+#path 5
+#level 1
+#rarity 5
+#gems 5 1
+#gems 8 1
+#incscale 3 -- incr death
+#com 6775 -- Hag
+#fort 2
+#end
+
+#newsite 3245
+#name "The Marching Mountains"
+#path 3
+#level 0
+#rarity 5
+#gems 3 1
+#res 100
+#com 6687 -- Beastmaster
+#end
+
+#newsite 3246
+#name "Ul'sahab"
+#path 4
+#level 3
+#rarity 5
+#gems 4 1
+#decunrest 100
+#com 1114 -- Augur
+#end
+
+#newsite 3247 
+#name "St. Faelar's Cloisters"
+#path 3
+#level 0
+#rarity 5
+#decscale 4 -- increases luck
+#com 6705 -- Cleric of Ilmater
+#end
+
+#newsite 3248
+#name "The Hearth"
+#path 4
+#level 0
+#rarity 5
+#incscale 5
+#decscale 0
+#gold 50
+#com 6611 -- Companion of Oghma
+#com 7040 -- Gondar Wonderbringer
+#end
+
+#newsite 3249
+#name "Tower of Thought"
+#path 4
+#level 0
+#rarity 5
+#decscale 5
+#decscale 0
+#gold 50
+#com 6611 -- Companion of Oghma
+#end
+
+#newsite 3250
+#name "Leaves of Learning"
+#path 4
+#level 0
+#rarity 5
+#decscale 5
+#decscale 0
+#gold 50
+#com 6611 -- Companion of Oghma
+#com 7349 -- Half-elf Champion
+#end
+
+#newsite 3251
+#name "Library of Curna"
+#path 4
+#level 0
+#rarity 5
+#decscale 5
+#decscale 0
+#gold 50
+#com 6611 -- Companion of Oghma
+#end
+
+#newsite 3252
+#name "The Chamber of Ascendance"
+#path 9
+#level 0
+#rarity 5
+#gems 4 3
+#decscale 5 -- incr magic
+#end
+
+#newsite 3253
+#name "Battlefield of the Bones"
+#path 5
+#level 0
+#rarity 5
+#gems 5 4
+#incscale 3 -- incr death
+#end
+
+#newsite 3254
+#name "Major Trade Hub"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 3
+#gold 50
+#decscale 3 -- increases growth
+#incscale 0 -- increases turmoil
+#com 6622 -- Merchant Prince
+#com 23 -- Knight Commander
+#mon 38 -- Heavy Infantry
+#mon 33 -- Archers
+#end
+
+#newsite 3255
+#name "Minor Trade Hub"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 3
+#gold 25
+#decscale 1 -- increases productivity
+#com 6622 -- Merchant Prince
+#end
+
+#newsite 3256
+#name "Mourktar"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 5
+#gems 5 2
+#incscale 3 -- increases death
+#incscale 0 -- increases turmoil
+#com 6674 -- Priestess of Bane
+#com 6702 -- Stormherald of Talos
+#end
+
+#newsite 3257
+#name "Wyrmsmoke Keep"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 3
+#gems 0 1
+#gems 3 1
+#end
+
+#newsite 3258
+#name "Temple of the Triad"
+#level 0
+#rarity 5
+#path 9
+#gems 4 1
+#com 440 -- Paladin
+#mon 2359 -- Holy Knight
+#end
+
+#newsite 3259
+#name "Place of the Unicorn"
+#level 0
+#rarity 5
+#path 6
+#gems 6 1
+#decscale 4
+#decscale 5
+#end
+
+#newsite 3260
+#name "Entrance to the Underdark"
+#level 0
+#rarity 5
+#path 6
+#incscale 0 -- increases turmoil
+#end
+
+#newsite 3261
+#name "Shrines of Tilverton"
+#level 0
+#rarity 5
+#path 9
+#gems 3 1
+#gems 4 1
+#gems 6 1
+#com 7040		-- Gondar Wonderbringer
+#com 6605		-- Cleric of Lathander
+#com 7007 		-- Cleric of Helm
+#com 7003 		-- Priestess of Chauntea
+#end
+
+#newsite 3262
+#name "City of a Thousand Spires"
+#level 0
+#rarity 5
+#path 9
+#gold 50
+#incscale 0		-- increases turmoil
+#com 7003 		-- Priestess of Chauntea
+#com 6703 		-- Cleric of Waukeen
+#com 6618 		-- Priestess of Selune
+#end
+
+#newsite 3263
+#name "Westgate"
+#level 0
+#rarity 5
+#path 2
+#gold 75
+#incscale 0		-- increases turmoil
+#mon 7684 -- Rethari Pikemen
+#com 7713 -- Night Mask Deathbringer
+#com 6622 -- Merchant Prince
+#com 6704 -- Priestess of Shar
+#com 6702 -- Stormherald of Talos
+#com 6701 -- Caressor of Loviatar
+#com 6650 -- Malarite
+#end
+
+#newsite 3264
+#name "Elversult"
+#level 0
+#rarity 5
+#path 3
+#gold 50
+#decscale 3 -- increases growth
+#incscale 0 -- increases turmoil
+#com 6622 -- Merchant Prince
+#com 7040 -- Gondar Wonderbringer
+#com 6704 -- Priestess of Shar
+#com 6650 -- Servant of Malar
+#com 7003 		-- Priestess of Chauntea
+#end
+
+#newsite 3265
+#name "Manticore Hunting Grounds"
+#level 0
+#rarity 5
+#path 6
+#incscale 0 -- increases turmoil
+#com 6728 -- Manticore
+#end
+
+#newsite 3266
+#name "Shaarmid"
+#level 0
+#rarity 5
+#path 4
+#gold 25
+#com 7085 -- Rakshasa
+#com 6622 -- Merchant Prince
+#end
+
+#newsite 3267
+#name "Seabreeze Academy"
+#level 0
+#rarity 5
+#path 1
+#gems 1 1
+#gems 2 1
+#com 7399 -- Seabreeze Mage 
+#com 7400 -- Eldritch Knight
+#end
+
+#newsite 3268
+#name "Lapal League Tradeport"
+#level 0
+#rarity 5
+#path 2
+#gold 25
+--#com 6833 	-- Merchant Lord
+#com 6703 		-- Cleric of Waukeen
+#mon 1352		-- Entrance Guard
+#end
+
+#newsite 3269
+#name "Trader's Way"
+#level 0
+#rarity 5
+#path 9
+#gold 25
+#com 7085		-- Rakshasa
+#end
+
+#newsite 3270
+#name "Thri-Kreen Cluster"
+#level 0
+#rarity 5
+#path 6
+#mon 7069	-- thri kreen
+#com 7069	-- thri kreen
+#end
+
+#newsite 3271
+#name "Vampire Lair"
+#level 0
+#rarity 5
+#path 5
+#gems 5 2
+#gems 8 1
+#end
+
+#newsite 3272
+#name "Temple of Ishtar"
+#level 0
+#rarity 5
+#path 9
+#gems 6 1
+#com 7096 -- Priestess of Ishtar
+#end
+
+#newsite 3273
+#name "Shussel"
+#level 0
+#rarity 5
+#path 2
+#gold 25
+#incscale 0
+--#com 6833 		-- Merchant Lord
+#com 870 		-- Captain
+#end
+
+#newsite 3274
+#name "Messemprar"
+#level 0
+#rarity 5
+#path 2
+#gold 25
+#incscale 0
+#com 2986 -- Northern Wizards
+#com 6925 -- FIGHTER HERO RECRUITABLE MONTAG
+#end
+
+#newsite 3275
+#name "The Greenfields"
+#level 0
+#rarity 5
+#path 6
+#gold 25
+#decscale 3
+#com 7096 -- Priestess of Ishtar
+#end
+
+#newsite 3276
+#name "The Firetrees"
+#level 0
+#rarity 5
+#path 0
+#gems 0 1
+#incscale 0
+#com 7097 -- Cultist of Tiamat
+#end
+
+#newsite 3277
+#name "Towers of the Enclave"
+#level 0
+#rarity 5
+#path 4
+#decscale 5
+#com 2987 -- enclave mages
+#end
+
+#newsite 3278
+#name "Black Ash Hall"
+#path 3
+#level 0
+#rarity 5
+#gems 3 1
+#mon 6809 -- Stone Giant Mauler
+#com 6810 -- Stone Giant Elder
+#end
+
+#newsite 3279
+#name "Lost City of Turami"
+#path 4
+#level 4
+#rarity 5
+#gems 4 2
+#gems 5 1
+#com 340 -- Crystal Mage
+#end
+
+#newsite 3280
+#name "Reth"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 3
+#gold 30
+#decscale 1 -- increases productivity
+--#com 6833 		-- Merchant Lord
+#com 6703 		-- Cleric of Waukeen
+#end
+
+#newsite 3281
+#name "Soorenar"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 9
+#res 50
+#decscale 1 -- increases productivity
+#com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
+--#com XXX -- Werecrocodile
+#end
+
+#newsite 3282
+#name "House Jedea"
+#level 0 -- Was 8, but why?
+#rarity 5
+#path 2
+#gems 2 2
+#com 7101
+#com 7102
+#end
+
+#newsite 3283
+#name "Shadowcursed Lands"
+#level 1
+#rarity 5
+#path 5
+#gems 5 2
+#decscale 5 -- increases magic
+#incscale 0 -- increases turmoil
+#incscale 1 -- increases sloth
+#com 310 -- necromancer
+#com 6775 -- Hag
+#curse 2
+#end
+
+#newsite 3284
+#name "The Trollclaws"
+#level 1
+#rarity 5
+#path 6
+#gems 6 1
+#incscale 0 -- increases turmoil
+#incscale 1 -- increases sloth
+#com 6925 -- FIGHTER HERO RECRUITABLE MONTAG
+#com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
+#end
+
+#newsite 3285
+#name "Moonrise Towers"
+#level 1
+#rarity 5
+#path 4
+#gems 4 1
+#gems 1 1
+#decscale 4 -- increase luck
+#com 6618 -- Priestess of Selune
+--#com 6921 -- Seneschal 
+#end
+
+#newsite 3286
+#name "Emerald Grove"
+#level 1
+#rarity 5
+#path 6
+#gems 6 1
+#com 6938 -- Wildshape Druid
+#com 7347 -- Stormfire Druid
+#com 7328 -- Spiritbound Druid
+#end
+
+#newsite 3287
+#name "Pool of Radiance"
+#level 3
+#rarity 5
+#path 4
+#gems 4 3
+#allrange 2
+#heal 1
+#curse 1
+-- #horrormark 1
+-- #adventureruin 10
+#enchcost 20
+#thaucost 20
+#bloodcost 20
+#end
+
+#newsite 3288
+#name "Ankhapur"
+#level 1
+#rarity 5
+#path 4
+#gems 4 1
+#mon 7686 -- Vaedric Axeman  
+#com 7685 -- Chondathan Lionar -- com
+#com 7691 -- Arnaden Lion Tamer
+#com 7711 -- Chondathan Lord
+#end
+
+#newsite 3289
+#name "Ormpetarr - City on the Plains"
+#level 1
+#rarity 11
+#path 9
+#look 8
+#gems 1 1
+#gems 2 1
+#mon 7684 -- Rethari Pikemen 
+#com 7690 -- Soulknife
+#com 7688 -- Psychic Warrior
+#com 7689 -- Psion 
+#com 7712 -- Chondathan Warlord
+#com 7003 -- Priestess of Chauntea
+#com 7007 -- Watchwarden of Helm
+#com 6623 -- Justiciar of Tyr
+#com 6700 -- Battlechaplain of Tempus
+#end
+
+#newsite 3290
+#name "Shining City of Arrabar"
+#level 1
+#rarity 12
+#path 9
+#look 8
+#gold 100
+#mon 7684 -- Rethari Pikemen
+#mon 7686 -- Vaedric Axeman  
+#com 7690 -- Soulknife
+#com 7688 -- Psychic Warrior
+#com 7689 -- Psion 
+#com 291 -- Inner Sea Captain
+#com 7712 -- Chondathan Warlord
+#claim
+#dominion 1
+#constcost 20
+#end
+
+#newsite 3291
+#name "Golden Temples of Arrabar"
+#level 1
+#rarity 5
+#path 9
+#look 0
+#gems 0 1
+#gems 2 1
+#gems 3 1
+#gems 4 1
+#com 6703 -- Goldeye Cleric of Waukeen
+#com 6605 -- Cleric of Lathander
+#com 5044 -- Cleric of Tymora
+#com 6701 -- Caressor of Loviatar
+#com 6700 -- Battlechaplain of Tempus
+#com 6705 -- Ilmatari Cleric
+#end
+
+#newsite 3292
+#name "The Emerald Corridor"
+#level 1
+#rarity 5
+#path 3
+#gold 50
+#mon 7100 -- Chessentan Corsair
+#mon 1918 -- Salty Sea Dog
+#com 291 -- Inner Sea Captain 
+#end
+
+#newsite 3293
+#name "Temple of Talona"
+#level 1
+#rarity 5
+#path 5
+#gems 4 1
+#gems 5 1
+#com 310 -- Necromancer
+#com 7701 -- Gray One
+#com 6733 -- Goblin Shaman
+#mon 6773 -- Goblin Wolfriders
+#mon 6807 -- Goblin Shortbow
+#com 6770 -- Goblin King
+#end
+
+#newsite 3294
+#name "Saerloon - City of Exotics"
+#level 1
+#rarity 5
+#path 9
+#gold 25
+#mon 7684 -- Rethari Pikemen
+#com 6622 -- Merchant Prince
+#com 6703 -- Goldeye Cleric of Waukeen
+#com 6605 -- Cleric of Lathander
+#com 5044 -- Cleric of Tymora
+#com 6701 -- Caressor of Loviatar
+#com 6700 -- Battlechaplain of Tempus
+#com 6847 -- Cleric of Mystra
+#com 6704 -- Priestess of Shar
+#end
+
+#newsite 3295
+#name "Teziir - City of Greed"
+#level 1
+#rarity 5
+#path 3
+#gems 3 1
+#gold 25
+#mon 7686 -- Vaedric Axeman 
+#com 7713 -- Night Mask Deathbringer
+#com 6622 -- Merchant Prince
+#com 7003 -- Priestess of Chauntea
+#com 5044 -- Cleric of Tymora
+#com 7007 -- Watchwarden of Helm
+#com 6623 -- Justiciar of Tyr
+#com 7008 -- Trueblade of Torm
+#com 6848 -- Cleric of Azuth
+#end
+
+#newsite 3296
+#name "Gateway to the West"
+#level 1
+#rarity 11
+#path 9
+#gems 4 1
+#claim
+#dominion 1
+#constcost 20
+#com 7040 -- Gondar Wonderbringer
+#com 6703 -- Goldeye Cleric of Waukeen
+#com 6605 -- Cleric of Lathander
+#com 5044 -- Cleric of Tymora
+#com 6700 -- Battlechaplain of Tempus
+#com 7003 -- Priestess of Chauntea
+#com 7007 -- Watchwarden of Helm
+#com 6623 -- Justiciar of Tyr
+#com 7008 -- Trueblade of Torm
+#com 6848 -- Cleric of Azuth
+#end
+
+
+#newsite 3297
+#name "Procampur - Steel City"
+#level 1
+#rarity 5
+#path 9
+#res 50
+#gems 3 2
+#mon 7686 -- Vaedric Axeman
+#com 5084 -- Court Wizard
+#com 6611 -- Companion of Oghma
+#com 6703 -- Goldeye Cleric of Waukeen
+#com 5044 -- Cleric of Tymora
+#com 7008 -- Trueblade of Torm
+#com 7007 -- Watchwarden of Helm
+#end
+
+#newsite 3298
+#name "Gray Forest"
+#level 1
+#rarity 5
+#path 7
+#gems 6 1
+#gems 7 1
+#mon 7306 -- Nightshadow of Vhaeraun
+#com 7397 -- Eldreth Veluuthra Blade
+#com 7172 -- Sword Dancer of Eilistraee
+#end
+
+#newsite 3299
+#name "Monastery of the Yellow Rose"
+#level 1
+#rarity 5
+#path 9
+#gems 4 1
+#gems 6 1
+#mon 2359 -- Holy Knight
+#com 6705 -- Cleric of Ilmater
+#com 440 -- Paladin of the Golden Lion
 #end
 
 ---------------- Removed Random Magic Sites ----------------
@@ -76238,7 +76234,7 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #req_site 1 --requires site in the province 
 #msg "The Fey Queen is no more, her dominion withers [LeShay Dominion]"
 #req_turn 2 -- cannot happen before turn 2 (not necessary, just in case)
-#req_indepok -- can happen for independent provinces too
+#req_indepok 1 -- can happen for independent provinces too
 --===== PUT SITE NUMBER BELOW INSTEAD OF NAME !! ======
 #removesite 1727 -- "LeShay Dominion" 
 #end
@@ -76322,7 +76318,7 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #copyspell 106 -- Record of Creation
 #name "Establish an Elven Bastion"
 #descr "This spell will draw many brave elves from across the continent and as far off as Evermeet. Local recruitment via this spell will include a wide range of High Elven units and commanders. "
-#brief "This spell also generates a makeshift fort and temple upon completion."
+#details "This spell also generates a makeshift fort and temple upon completion."
 #school 4
 #researchlevel 3
 #path 0 6
@@ -76419,7 +76415,7 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #msg "The summoned patron from the Nine Hells in ##landname## was found and cornered - a battle has ensued! [Elven Bastion]"
 #nation 2 -- special independents
 #com "Contract Devil"
-#3com "Barbazu"
+#2d3units "Barbazu"
 #code 0
 #end
 
@@ -77640,7 +77636,7 @@ We fear these events will continue, my lord, until Dagon himself is removed from
 #req_land 0 -- only targets sea provinces
 #header 2
 #nation 2
-#hiddencom "Wastrilith Guardian" 
+#stealthcom "Wastrilith Guardian" 
 #msg "- - A lone Wastrilith has left As'Arem in search of a lair of its own. - - 
 
 Once established in a hidden den, a Wastrilith will corrupt all waters nearby, poisoning and corrupting those who venture too close. Be sure to set patrols! "
@@ -77704,7 +77700,7 @@ We fear these events will continue, my lord, until Dagon himself is removed from
 #req_poptype 187 -- Shalarin
 #req_site 0
 #hiddensite 2994 -- Hidden Shrine to Dagon
-#incpop -425
+#emigration 10
 #nation -2
 #msg "Rumors of the construction of a Hidden Shrine to Dagon are been reported in ##landname##. In fear, many local shalarin are emmigrating to other lands. [Hidden Shrine to Dagon]"
 #end
@@ -77836,6 +77832,7 @@ These events are likely to continue until you increase your dominion in this pro
 ------- Nantarn Invasion of Alamber Sea Events
 
 -- Seros captures the Pythan Trench
+#newevent
 #rarity 5
 #req_rare 100
 #req_unique 1
@@ -77850,7 +77847,7 @@ You have invaded the sahuagin stronghold in the Alamber Sea! The Sea-devils have
 #newevent
 #rarity 5
 #req_anycode -2516
-#unique 1
+#req_unique 1
 #req_fornation 240 -- Aleaxtis
 #nation -2
 #incpop 15 -- 15 percent capital pop increase
@@ -78060,7 +78057,7 @@ The silencing of the God of Murders, Bhaal, by the Black Hand of Bane kicked off
 #req_site 1
 #req_turn 12
 #header 2
-#decscale1 0 -- decreases turmoil by 1 step
+#decscale 0 -- decreases turmoil by 1 step
 #msg "The Darkstalker Wars have subsided in ##landname##. [Shadow Thieves Guild]" 
 #code -2520
 #end
@@ -78086,7 +78083,7 @@ The silencing of the God of Murders, Bhaal, by the Black Hand of Bane kicked off
 #req_turn 12
 #req_maxturn 13
 #header 2
-#decscale1 0 -- decreases turmoil by 1 step
+#decscale 0 -- decreases turmoil by 1 step
 #msg "The Darkstalker Wars have subsided in ##landname##. The Dusk Dagger Guild has clung on to survival. [Dusk Dagger Guild]"  
 #code -2520
 #end
@@ -78120,7 +78117,7 @@ Myrkul and Bane betrayed their brother, Bhaal, but in many lands, the Shadow Thi
 
 The vaults of the Thieves Guild have been looted in ##landname##, and their shrines to Bhaal destroyed. [Qysagghani Fortress]"
 #removesite 2995
-#decscale1 0 -- decreases turmoil by 1 step
+#decscale 0 -- decreases turmoil by 1 step
 #gold 125
 #end
 

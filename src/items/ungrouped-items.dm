@@ -209,11 +209,8 @@
 #newweapon 1821
 #copyweapon 311 -- Mind Blast
 #name "Ego Whip"
-#dt_aff 22 -- mute
-#dt_aff 34 -- confused
-#dt_raise -- yikes
-#dt_stun 10
-#dt_realstun 100
+#dt_realstun
+#dmg 100
 #sound 9
 #internal
 #mind
@@ -224,7 +221,16 @@
 #natural
 #ammo 10
 #range 30
-#dmg 6
+#secondaryeffect 1872
+#end
+
+#newweapon 1872
+#name "Confusion"
+#dt_aff
+#dmg 17179869184
+#mrnegates
+#mind
+#secondaryeffectalways 293 -- psychic damage
 #end
 
 
@@ -1290,7 +1296,7 @@
 #mainpath 1
 #mainlevel 3
 #hp 4
-#ap 2
+#swift 20
 #type 3
 #end
 
@@ -1369,7 +1375,6 @@
 #ironskin
 #cursed
 #autospell "Horde of Skeletons"
-#rec
 #end
 
 -- Claw of the Revenancer
@@ -1388,7 +1393,7 @@
 #unique
 #undcommand 25
 #tmpdeathgems 3
-#reanimpriest 10
+#reanimpriest
 #makemonsters2 7336 -- Silveraith
 #end
 
@@ -1471,7 +1476,6 @@
 #inspirational -1
 #researchbonus -5
 #darkvision 60
-#sailing 7 7
 #noimmobile
 #itemcost1 -20
 #end
@@ -1498,10 +1502,7 @@
 #researchbonus -10
 #recuperation
 #waterbreathing
-#airbreathing 1
-#amphibian
 #darkvision 60
-#sailing 7 7
 #noimmobile
 
 #end
@@ -1534,10 +1535,7 @@
 #poisonres 5
 #recuperation
 #waterbreathing
-#airbreathing 1
-#amphibian
 #darkvision 80
-#sailing 7 7
 #noimmobile
 #end
 
@@ -1570,11 +1568,8 @@
 #poisonres 5
 #recuperation
 #waterbreathing
-#airbreathing 1
-#amphibian
 #allret 50
 #spiritsight
-#sailing 8 8
 #pen 1
 #noimmobile
 --#tainted 20
@@ -1763,7 +1758,6 @@
 #secondarylevel 3
 #noforgebonus 
 #hp 5
-#thaucost -20
 #nobadevents 25
 #incunrest -20
 #patrolbonus 50

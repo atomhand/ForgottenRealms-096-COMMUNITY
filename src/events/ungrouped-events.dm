@@ -38,7 +38,7 @@
 #req_site 1 --requires site in the province 
 #msg "The Fey Queen is no more, her dominion withers [LeShay Dominion]"
 #req_turn 2 -- cannot happen before turn 2 (not necessary, just in case)
-#req_indepok -- can happen for independent provinces too
+#req_indepok 1 -- can happen for independent provinces too
 --===== PUT SITE NUMBER BELOW INSTEAD OF NAME !! ======
 #removesite 1727 -- "LeShay Dominion" 
 #end
@@ -122,7 +122,7 @@
 #copyspell 106 -- Record of Creation
 #name "Establish an Elven Bastion"
 #descr "This spell will draw many brave elves from across the continent and as far off as Evermeet. Local recruitment via this spell will include a wide range of High Elven units and commanders. "
-#brief "This spell also generates a makeshift fort and temple upon completion."
+#details "This spell also generates a makeshift fort and temple upon completion."
 #school 4
 #researchlevel 3
 #path 0 6
@@ -219,7 +219,7 @@
 #msg "The summoned patron from the Nine Hells in ##landname## was found and cornered - a battle has ensued! [Elven Bastion]"
 #nation 2 -- special independents
 #com "Contract Devil"
-#3com "Barbazu"
+#2d3units "Barbazu"
 #code 0
 #end
 
@@ -1440,7 +1440,7 @@ We fear these events will continue, my lord, until Dagon himself is removed from
 #req_land 0 -- only targets sea provinces
 #header 2
 #nation 2
-#hiddencom "Wastrilith Guardian" 
+#stealthcom "Wastrilith Guardian" 
 #msg "- - A lone Wastrilith has left As'Arem in search of a lair of its own. - - 
 
 Once established in a hidden den, a Wastrilith will corrupt all waters nearby, poisoning and corrupting those who venture too close. Be sure to set patrols! "
@@ -1504,7 +1504,7 @@ We fear these events will continue, my lord, until Dagon himself is removed from
 #req_poptype 187 -- Shalarin
 #req_site 0
 #hiddensite 2994 -- Hidden Shrine to Dagon
-#incpop -425
+#emigration 10
 #nation -2
 #msg "Rumors of the construction of a Hidden Shrine to Dagon are been reported in ##landname##. In fear, many local shalarin are emmigrating to other lands. [Hidden Shrine to Dagon]"
 #end
@@ -1636,6 +1636,7 @@ These events are likely to continue until you increase your dominion in this pro
 ------- Nantarn Invasion of Alamber Sea Events
 
 -- Seros captures the Pythan Trench
+#newevent
 #rarity 5
 #req_rare 100
 #req_unique 1
@@ -1650,7 +1651,7 @@ You have invaded the sahuagin stronghold in the Alamber Sea! The Sea-devils have
 #newevent
 #rarity 5
 #req_anycode -2516
-#unique 1
+#req_unique 1
 #req_fornation 240 -- Aleaxtis
 #nation -2
 #incpop 15 -- 15 percent capital pop increase
@@ -1860,7 +1861,7 @@ The silencing of the God of Murders, Bhaal, by the Black Hand of Bane kicked off
 #req_site 1
 #req_turn 12
 #header 2
-#decscale1 0 -- decreases turmoil by 1 step
+#decscale 0 -- decreases turmoil by 1 step
 #msg "The Darkstalker Wars have subsided in ##landname##. [Shadow Thieves Guild]" 
 #code -2520
 #end
@@ -1886,7 +1887,7 @@ The silencing of the God of Murders, Bhaal, by the Black Hand of Bane kicked off
 #req_turn 12
 #req_maxturn 13
 #header 2
-#decscale1 0 -- decreases turmoil by 1 step
+#decscale 0 -- decreases turmoil by 1 step
 #msg "The Darkstalker Wars have subsided in ##landname##. The Dusk Dagger Guild has clung on to survival. [Dusk Dagger Guild]"  
 #code -2520
 #end
@@ -1920,7 +1921,7 @@ Myrkul and Bane betrayed their brother, Bhaal, but in many lands, the Shadow Thi
 
 The vaults of the Thieves Guild have been looted in ##landname##, and their shrines to Bhaal destroyed. [Qysagghani Fortress]"
 #removesite 2995
-#decscale1 0 -- decreases turmoil by 1 step
+#decscale 0 -- decreases turmoil by 1 step
 #gold 125
 #end
 
