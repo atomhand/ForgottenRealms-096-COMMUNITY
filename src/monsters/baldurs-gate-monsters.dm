@@ -94,7 +94,10 @@ Unlike the Flaming Fist, who acted as soldiers and fought against threats both d
 #mor 15 -- improved morale to an elite defensive last stand force for the citadel
 #str 13 -- slightly improved
 #def 14 -- slightly improved
-#xp 50 -- starting them as veterans
+--#xp 50 -- starting them as veterans
+#hp 15
+#att 14
+#mr 11
 #formationfighter 4
 #end
 

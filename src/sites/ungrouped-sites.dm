@@ -836,7 +836,7 @@
 #path 4
 #level 1
 #rarity 5
-#constcost -25
+--#constcost -25
 #gems 4 2
 #end
 

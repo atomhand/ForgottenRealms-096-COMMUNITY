@@ -103,8 +103,11 @@ Reworked/abandoned functionality - certain content was trying to do something th
  * Dukar Order of Maalirn - was meant to grant a thaumaturgy cost reduction, but this is impossible (and OP)
  * Nations had an attempt to script UW gate guards, but there isn't a modding command to do this (Aleaxtis, Baldur's Gate, Nantarn, Oryndoll, Savage Frontier, Serpentes, Sloopdilmonpolop, Spine of the World, Waterdeep affected)
  * Nations had attempt to add over 7 multiheroes, which isn't supported (CoTD) 
+ * Baldurian Watch were meant to start with 50 XP, but there is no modding command for this. Gave them bonus stats to compensate.
  * Hpoverflow - the original author used this command as if it could be used to apply a cap, but there is no such thing. Affected monsters are being left uncapped for now - keep an eye on this for balance review.
    * Affected: Atropal Scion, Atropal, Gelatinuous Cube, Moander, Ghaunadaur
+ * Site Ogremoch's Bane had a Const penalty, this doesn't work (at least on UI) and is kinda pointless so is disabled
+ * Contract devil blood slave maintenance mechanic doesn't work
 
 Misc
  * Move site ids 1590-1699 to 3190-3299 - mod manual recommends mods use ids 1700-3999 only

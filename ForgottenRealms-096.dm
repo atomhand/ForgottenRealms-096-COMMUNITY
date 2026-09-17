@@ -13801,7 +13801,10 @@ Unlike the Flaming Fist, who acted as soldiers and fought against threats both d
 #mor 15 -- improved morale to an elite defensive last stand force for the citadel
 #str 13 -- slightly improved
 #def 14 -- slightly improved
-#xp 50 -- starting them as veterans
+--#xp 50 -- starting them as veterans
+#hp 15
+#att 14
+#mr 11
 #formationfighter 4
 #end
 
@@ -15438,7 +15441,7 @@ Infernal contracts could be voided so long as both parties agreed. Under these c
 #poisonres 10
 #gold 50
 #resources 25
-#gemprod 8 -2
+--#gemprod 8 -2
 #deathcurse
 #deathfire 5
 #clearmagic
@@ -15493,7 +15496,7 @@ Infernal contracts could be voided so long as both parties agreed. Under these c
 #poisonres 10
 #gold 50
 #resources 25
-#gemprod 8 -2
+--#gemprod 8 -2
 #clearmagic
 #magicskill 0 2
 #magicskill 4 2
@@ -64053,7 +64056,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #path 4
 #level 1
 #rarity 5
-#constcost -25
+--#constcost -25
 #gems 4 2
 #end
 
