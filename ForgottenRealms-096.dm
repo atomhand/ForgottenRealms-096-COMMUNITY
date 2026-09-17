@@ -77522,7 +77522,7 @@ Each of the prior Passings brought thousands of shalarin to Serôs and each seem
 
 Of course, not all shalarin have kept to their silent, powerless gods. In the thiry-six hundred years of inhabiting the Sea of Fallen Stars, many have converted to Faerûnian deities such as Eadro, Deep Sashelas, Mystra, and even Umberlee. In anticipation for the Fifth Passing, the old temples have been cleaned and dressed, and fervor for the long-silent shalarin gods has risen to an all time high. With preparations complete and the arrival of the shalarin new year's celebration upon us, regular daily life has ground to a halt in As'Arem and the streets are flooding with pilgrims and party-goers. [Wildtider Gate]"
 #code -2510
-#extramsg -1
+-- #extramsg -1
 #end
 
 -- Troubling Visions
@@ -77547,7 +77547,7 @@ Some, however, are fanaticizing. They claim that those suffering such nightmares
 
 The cultish behavior is taking a dark turn as the days pass by. Equipment once used for public executions has been erected in many city centers with kelp and coral effigies of the 'guilty' on display. Crass and gruesome acts are performed on these effigies and while only symbolic at first, lynch mobs have begun forming. Those who speak of nightmares are now forced into hiding. Several prominent leaders among the Rulers and Scholars are now publicly encouraging this behavior and witch hunts seem imminent. [Wildtider Gate]"
 #code -2511
-#extramsg -1
+-- #extramsg -1
 #end
 
 -- The Gate Opens - The Horror
@@ -77577,7 +77577,7 @@ The day has finally come. The Wildtide Gate opens in the heart of the holy city,
 In the hours that follow, more and more and still more shalarin arrive until the streets of Us'rath are choked. The newcomers speak in odd accents and have many strange new words and ideas, but prove friendly overall. They speak little of their departure and their journey through the gate, and less of their faith and theology. They appear to have no leaders and no familiarity with one-another. Planned celebratory feasts become long lines of aid and the high priests of Us'rath eventually order the temple district cleared to prevent dangerous overcrowding - for still more of these Judges continue pouring in. 
 
 A few have stepped forward to act as representatives and to assist in distributing food and erecting makeshift shelters. [Wildtider Gate]"
-#extramsg -1
+-- #extramsg -1
 #end
 
 -- Dagon and his shalarin forces arrive
@@ -77621,7 +77621,7 @@ Teeth and tentacles and a thousand great eyes appeared in the vortex as madness 
 
 Let us hope the defenders are able to hold. [Wildtider Gate]"
 #code -2514
-#extramsg -1
+-- #extramsg -1
 #end
 
 -- Dagon calls in reinforcements.
@@ -77640,7 +77640,7 @@ Let us hope the defenders are able to hold. [Wildtider Gate]"
 #com "Corynax Arcane" 
 #6d6units "Corynax Justiciar"
 #msg "- - Dagon is reinforcing his stronghold at As'Arem... - -"
-#extramsg -1
+#extramsg 239 -- Nantarn alliance
 #end
 
 -- If the province remains independent, then a small force attacks a neighbor.
@@ -77662,7 +77662,7 @@ Let us hope the defenders are able to hold. [Wildtider Gate]"
 #msg "- - Dagonite Shalarin are raiding a province near As'Arem! - -
 
 We fear these events will continue until Dagon himself is removed from his stronghold at As'Arem."
-#extramsg -1
+#extramsg 239 -- Nantarn alliance
 #end
 
 #newevent 
@@ -77684,7 +77684,7 @@ We fear these events will continue until Dagon himself is removed from his stron
 #msg "- - Dagonites are staging a heavy assault near As'Arem! - -
 
 We fear these events will continue until Dagon himself is removed from his stronghold at As'Arem."
-#extramsg -1
+#extramsg 239 -- Nantarn alliance
 #end
 
 #newevent 
@@ -77702,7 +77702,7 @@ We fear these events will continue until Dagon himself is removed from his stron
 #msg "- - An abyssal Wastrilith and other servants of Dagon are invading a province near As'Arem!
 
 We fear these events will continue, my lord, until Dagon himself is removed from his stronghold at As'Arem..."
-#extramsg -1
+#extramsg 239 -- Nantarn alliance
 #end
 
 #newevent 
@@ -77717,7 +77717,7 @@ We fear these events will continue, my lord, until Dagon himself is removed from
 #msg "- - A lone Wastrilith has left As'Arem in search of a lair of its own. - - 
 
 Once established in a hidden den, a Wastrilith will corrupt all waters nearby, poisoning and corrupting those who venture too close. Be sure to set patrols! "
-#extramsg -1
+#extramsg 239 -- Nantarn alliance
 #end
 
 #newevent 
@@ -77732,7 +77732,7 @@ Once established in a hidden den, a Wastrilith will corrupt all waters nearby, p
 #msg "- - A wandering Wastrilith has left As'Arem in search of a lair of its own - it MUST be stopped!
 
 We fear these events will continue, my lord, until Dagon himself is removed from his stronghold at As'Arem..."
-#extramsg -1
+#extramsg 239 -- Nantarn alliance
 #end
 
 -- if Dagon is indeed dead, then make an announcement
@@ -77748,7 +77748,7 @@ We fear these events will continue, my lord, until Dagon himself is removed from
 #nation -2
 #code 0 
 #msg "Dagon is dead and incursions through the Wildtide Gate have ceased. With luck, these events will be forgotten in time. [Wildtider Gate]"
-#extramsg -1
+#extramsg 239 -- Nantarn alliance
 #code -2515
 #end
 
@@ -77765,7 +77765,6 @@ We fear these events will continue, my lord, until Dagon himself is removed from
 #nation -2
 #code 0 
 #msg "While the Wildtide Gate has been sealed off by the Dukars, there is much concern that the defeated Corynax Shalarin will cling to their worship of the Lord of the Darkened Depths, spreading Dagon's influence not only in Serôs, but also beyond. [Wildtider Gate]"
-#extramsg -1
 #code -2517
 #end
 
@@ -77836,7 +77835,7 @@ These events are likely to continue until you increase your dominion in this pro
 #msg "A major uprising among the Sea-devils in ##landname## occurred.  
 
 These events are likely to continue until you increase your dominion in this province to 5 or more, or reduce the province population to under 2,000. The larger the province population, the larger revolts are likely to take place."
-#extramsg -2
+--#extramsg -2
 #end
 
 
@@ -77865,7 +77864,7 @@ These events are likely to continue until you increase your dominion in this pro
 #msg "A greater uprising among the Sea-devils in ##landname## occurred.  
 
 These events are likely to continue until you increase your dominion in this province to 5 or more, or reduce the province population to under 2,000. The larger the province population, the larger revolts are likely to take place."
-#extramsg -2
+--#extramsg -2
 #end
 
 
@@ -77963,7 +77962,7 @@ Their invasion of our Alamber Sea will not go unpunished! We Sea-devils have lon
 #msg "Demon Rays are raiding ##landname##, looking for food and slaves and scouting for territory! We must root out any survivors or word will spread among their kind that this province is ripe for claiming.
 
 These events are rare but also likely to continue in sea provinces with less than 5 dominion. "
-#extramsg -2
+--#extramsg -2
 #end
 
 ----------------------------------------------------------------------------------------------------------------
