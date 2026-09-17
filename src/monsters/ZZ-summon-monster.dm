@@ -1269,7 +1269,7 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #name "Celestial Baleen Whale"
 #montag 14017 -- Summon Monster VII (water)
 ----- Celestial Template HD12+ -----
-descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
 
 Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
 #darkvision 100
@@ -1455,7 +1455,7 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #name "Celestial Roc"
 #montag 14009 -- Summon Monster IX (land)
 ----- Celestial Template HD12+ -----
-descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
 
 Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
 #darkvision 100

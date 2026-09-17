@@ -577,7 +577,7 @@
 #fatiguecost 2800
 #end
 
-7509 -- Contract Devil
+-- 7509 -- Contract Devil
 #newspell 
 #name "Summon a Contract Devil"
 #descr "Contract Devils draw gold and resources to your cause in exchange for ongoing souls. They will consume 2 blood slaves each month in exchange for 50 gold and 25 resources."

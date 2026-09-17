@@ -114,9 +114,10 @@ Oryndoll's main united purpose was to acquire knowledge no matter how trivial, t
 #uwdefmult2 20
 
 --UW WALL DEFENCE
-#uwguardcom 5113 -- Illithid -- RECRUITABLE
-#uwguardunit 7566 -- Merrow Behemoth
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 5113 -- Illithid -- RECRUITABLE
+--#uwguardunit 7566 -- Merrow Behemoth
+--#uwguardmult 20
 #uwwallcom 5113 -- Illithid -- RECRUITABLE
 #uwwallunit 6727 -- Lizard folk
 #uwwallmult 16

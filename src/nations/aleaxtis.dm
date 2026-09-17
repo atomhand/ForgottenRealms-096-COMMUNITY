@@ -117,9 +117,10 @@ There will be no shortage of enemies in the long term - in addition to a scatter
 #uwdefmult2 12
 
 --UW WALL DEFENCE
-#uwguardcom 7576 -- Sahuagin Raidmaster -- Watershape
-#uwguardunit 7575 -- Sahuagin Hunter - Watershape
-#uwguardmult 16
+-- No modding cmd for UW gate guards
+--#uwguardcom 7576 -- Sahuagin Raidmaster -- Watershape
+--#uwguardunit 7575 -- Sahuagin Hunter - Watershape
+--#uwguardmult 16
 #uwwallcom 7574 -- Priestess of Sekolah -- Watershape
 #uwwallunit 7572 -- Sahuagin Guard -- Watershape
 #uwwallmult 12	

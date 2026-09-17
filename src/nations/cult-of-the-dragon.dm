@@ -42,8 +42,9 @@ Although it was active all over Faerûn, particularly the Heartlands, the Cult o
 #multihero5 6780 -- Mature Red Dragon
 #multihero6 7458 -- Red Dracolich
 #multihero7 7459 -- Black Dracolich
-#multihero8 404 -- Vampire Lord
-#multihero9 6864 -- Red Wizard Zulkir
+-- too many multiheroes
+--#multihero8 404 -- Vampire Lord
+--#multihero9 6864 -- Red Wizard Zulkir
 
 #startcom 7411 -- Dragonkin Captain
 #startunittype1 7408 -- Dragonclaw Swordsman

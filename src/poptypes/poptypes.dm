@@ -58,15 +58,17 @@
 #clearrec
 #cleardef
 #defcom1 7489 -- Centauride Thorncaller
-#defcom2 3066 -- Hamadryad -- Treant
+-- Defcom2 not valid for poptypes
+-- #defcom2 3066 -- Hamadryad -- Treant
 #defunit1 228 -- Satyr
 #defunit1b 7398 -- Wild Elf Ranger
 #defunit1c 592 -- Sprite
 #defmult1 15
 #defmult1b 10
 #defmult1c 5
-#defunit2 1704 -- Centaur Warrior
-#defmult2 20
+-- Defunit2 not valid for poptypes
+-- #defunit2 1704 -- Centaur Warrior
+-- #defmult2 20
 #addrecunit 228 -- Satyr
 #addrecunit 7488 -- Centauride Nomad
 #addrecunit 7491 -- Centaur Protector
@@ -95,13 +97,15 @@
 #clearrec
 #cleardef
 #defcom1 7169 -- Soul Spider
-#defcom2 6771 -- Drow Priestess
+-- Defcom2 not valid for poptypes
+-- #defcom2 6771 -- Drow Priestess
 #defunit1 7234 -- Drow Sargtlin
 #defunit1b 6774 -- Drow Hunter 
 #defmult1 20
 #defmult1b 10
-#defunit2 6774 -- Drow Hunter
-#defmult2 20
+-- Defunit2 not valid for poptypes
+-- #defunit2 6774 -- Drow Hunter
+-- #defmult2 20
 #addrecunit 7234 -- Drow Sargtlin
 #addrecunit 6774 -- Drow Hunter 
 #addreccom 6725 -- Drow Assassin
@@ -111,7 +115,8 @@
 #clearrec
 #cleardef
 #defcom1 7163 -- Quaggoth Jald
-#defcom2 7164 -- Quaggoth Thonot Shaman
+-- Defcom2 not valid for poptypes
+-- #defcom2 7164 -- Quaggoth Thonot Shaman
 #defunit1 7162 -- Quaggoth Hunter
 #defmult1 20
 #addrecunit 7162 -- Quaggoth Hunter
@@ -123,13 +128,15 @@
 #clearrec
 #cleardef
 #defcom1 7147 -- Locathah Chieftain
-#defcom2 7149 -- Locathah Matriarch
+-- Defcom2 not valid for poptypes
+-- #defcom2 7149 -- Locathah Matriarch
 #defunit1 7146 -- Locathah Nomad
 #defunit1b 7148 -- Locathah Slave
 #defmult1 12
 #defmult1b 20
-#defunit2 7377 -- Locathah Hunter
-#defmult2 20
+-- Defunit2 not valid for poptypes
+-- #defunit2 7377 -- Locathah Hunter
+-- #defmult2 20
 #addrecunit 7146 -- Locathah Nomad
 #addrecunit 7377 -- Locathah Hunter
 #addreccom 7147 -- Locathah Chieftain
@@ -140,7 +147,8 @@
 #clearrec
 #cleardef
 #defcom1 7155 -- Kuo-Toan Monitor
-#defcom2 7154 -- Kuo-Toan Lash
+-- Defcom2 not valid for poptypes
+-- #defcom2 7154 -- Kuo-Toan Lash
 #defunit1 7179 -- Kuo-toan Gogglers 
 #defunit1b 7180 -- Kuo-toan Guards
 #defmult1 20
@@ -155,7 +163,8 @@
 #clearrec
 #cleardef
 #defcom1 7576 -- Sahuagin Raidmaster -- Watershape
-#defcom2 7588 -- Sahuagin Shark-Knight Commander
+-- Defcom2 not valid for poptypes
+-- #defcom2 7588 -- Sahuagin Shark-Knight Commander
 #defunit1 7575 -- Sahuagin Hunter - Watershape
 #defunit1b 7572 -- Sahuagin Guard -- Watershape
 #defmult1 20
@@ -171,7 +180,8 @@
 #clearrec
 #cleardef
 #defcom1 6770 -- Goblin King
-#defcom2 6733 -- Goblin Lab-Rats
+-- Defcom2 not valid for poptypes
+-- #defcom2 6733 -- Goblin Lab-Rats
 #defunit1 6723 -- Goblin Dogslicer
 #defunit1b 6807 -- Goblin Shortbow
 #defunit1c 6773 -- Goblin Wolfriders	
@@ -189,7 +199,8 @@
 #clearrec
 #cleardef
 #defcom1 6737 	-- Orcish King
-#defcom2 6801 	-- Cleric of Gruumsh
+-- Defcom2 not valid for poptypes
+-- #defcom2 6801 	-- Cleric of Gruumsh
 #defunit1 6676	-- Orc Marauders
 #defunit1b 6802 -- Orc Greatbows
 #defmult1 10
@@ -204,7 +215,8 @@
 #clearrec
 #cleardef
 #defcom1 6810 -- Stone Giant Elder
-#defcom2 6733 -- Goblin Lab-Rats
+-- Defcom2 not valid for poptypes
+-- #defcom2 6733 -- Goblin Lab-Rats
 #defunit1 6723 -- Goblin Dogslicer
 #defunit1b 6809 -- Stone Giant Mauler
 #defunit1c 7210 -- Ogre 
@@ -223,7 +235,8 @@
 #clearrec
 #cleardef
 #defcom1 6843 -- Minotaur Elder
-#defcom2 7086 -- Bull Priest
+-- Defcom2 not valid for poptypes
+-- #defcom2 7086 -- Bull Priest
 #defunit1 6842 -- Minotaur Brute
 #defunit1b 7081 -- Otyugh
 #defmult1 10
@@ -239,15 +252,17 @@
 #clearrec
 #cleardef
 #defcom1 6775 -- Hag
-#defcom2 2220 -- Troll Shaman
+-- Defcom2 not valid for poptypes
+-- #defcom2 2220 -- Troll Shaman
 #defunit1 2219	-- Forest Troll
 #defunit1b 6806 -- Krenshar
 #defunit1c 6812 -- Cave Spiders
 #defmult1 12
 #defmult1b 10
 #defmult1c 4
-#defunit2 7472 -- Shambling Mound
-#defmult2 20
+-- Defunit2 not valid for poptypes
+-- #defunit2 7472 -- Shambling Mound
+-- #defmult2 20
 #addrecunit 2219 -- Forest Troll
 #addrecunit 6806 -- Krenshar
 #addrecunit 7472 -- Shambling Mound
@@ -259,7 +274,8 @@
 #clearrec
 #cleardef
 #defcom1 6816 -- Night Hag
-#defcom2 2220 -- Troll Shaman
+-- Defcom2 not valid for poptypes
+-- #defcom2 2220 -- Troll Shaman
 #defunit1 2121 -- longdead warrior
 #defunit1b 535 -- longdead archer
 #defunit1c 6812 -- Cave Spiders
@@ -276,7 +292,8 @@
 #clearrec
 #cleardef
 #defcom1 2891 -- trog warchief
-#defcom2 2749 -- Troglodyte Druhyidd
+-- Defcom2 not valid for poptypes
+-- #defcom2 2749 -- Troglodyte Druhyidd
 #defunit1 6677 -- Troglodyte Raider
 #defunit1b 7081 -- Otyugh
 #defmult1 20
@@ -291,7 +308,8 @@
 #clearrec
 #cleardef
 #defcom1 7160 -- Cloaker Lord
-#defcom2 7160 -- Cloaker Lord
+-- Defcom2 not valid for poptypes
+-- #defcom2 7160 -- Cloaker Lord
 #defunit1 7161 -- Cloaker
 #defunit1b 7072 -- Displacer Beast
 #defmult1 6
@@ -303,7 +321,8 @@
 #clearrec
 #cleardef
 #defcom1 7165 -- Umber Hulk
-#defcom2 7165 -- Umber Hulk
+-- Defcom2 not valid for poptypes
+-- #defcom2 7165 -- Umber Hulk
 #defunit1 7165 -- Umber Hulk
 #defmult1 5
 #addrecunit 7165 -- Umber Hulk
@@ -314,7 +333,8 @@
 #clearrec
 #cleardef
 #defcom1 7166 -- Hook Horror 
-#defcom2 7166 -- Hook Horror 
+-- Defcom2 not valid for poptypes
+-- #defcom2 7166 -- Hook Horror 
 #defunit1 7166 -- Hook Horror 
 #defmult1 5
 #addrecunit 7166 -- Hook Horror 
@@ -325,7 +345,8 @@
 #clearrec
 #cleardef
 #defcom1 7078 -- SALAMANDER NOBLE
-#defcom2 7078 -- SALAMANDER NOBLE
+-- Defcom2 not valid for poptypes
+-- #defcom2 7078 -- SALAMANDER NOBLE
 #defunit1 7032 -- SALAMANDER FLAMEGUARD
 #defmult1 10
 #addrecunit 7032 -- SALAMANDER FLAMEGUARD
@@ -336,7 +357,8 @@
 #clearrec
 #cleardef
 #defcom1 7068 -- Beholder
-#defcom2 7068 -- Beholder
+-- Defcom2 not valid for poptypes
+-- #defcom2 7068 -- Beholder
 #defunit1 6676	-- Orc Marauders
 #defunit1b 6727	-- Lizard folk
 #defunit1c 6856 -- Behir
@@ -351,7 +373,8 @@
 #clearrec
 #cleardef
 #defcom1 7085 -- Rakshasa
-#defcom2 7085 -- Rakshasa
+-- Defcom2 not valid for poptypes
+-- #defcom2 7085 -- Rakshasa
 #defunit1 6727 -- Lizard folk
 #defunit1b 7069 -- Thri-Kreen
 #defunit1c 7082 -- Purple Worm
@@ -366,7 +389,8 @@
 #clearrec
 #cleardef
 #defcom1 7406 -- Lizard Man Chieftain
-#defcom2 6734 -- Lizardman shaman
+-- Defcom2 not valid for poptypes
+-- #defcom2 6734 -- Lizardman shaman
 #defunit1 6727 -- Lizard folk
 #defunit1b 783 -- Serpent Dancer
 #defunit1c 6827 -- Chultan Frog
@@ -383,7 +407,8 @@
 #clearrec
 #cleardef
 #defcom1 7318 -- Fomorian Deepthane
-#defcom2 6726 -- Fomorian 
+-- Defcom2 not valid for poptypes
+-- #defcom2 6726 -- Fomorian 
 #defunit1 6726 -- Fomorian 
 #defunit1b 6724 -- Gnoll Hunters
 #defunit1c 7166 -- Hook Horror 
@@ -399,7 +424,8 @@
 #clearrec
 #cleardef
 #defcom1 7258 -- Myconid Circle Leader -- (f) Nature
-#defcom2 7257 -- Myconid Circle Leader -- (c) Astral
+-- Defcom2 not valid for poptypes
+-- #defcom2 7257 -- Myconid Circle Leader -- (c) Astral
 #defunit1 -13007 -- Myconid Sprout Firstshape
 #defmult1 20
 #addrecunit 7247 -- Myconid Sprout Firstshape
@@ -411,11 +437,13 @@
 #clearrec
 #cleardef
 #defcom1 7268 -- Chitine Cleric
-#defcom2 7267 -- Chitine Warrior
+-- Defcom2 not valid for poptypes
+-- #defcom2 7267 -- Chitine Warrior
 #defunit1 7267 -- Chitine Warrior
-#defunit2 7166 -- Hook Horror 
+-- Defunit2 not valid for poptypes
+-- #defunit2 7166 -- Hook Horror 
 #defmult1 20
-#defmult2 10
+-- #defmult2 10
 #addrecunit 7267 -- Chitine Warrior
 #addreccom 7268 -- Chitine Cleric
 #end
@@ -424,7 +452,8 @@
 #clearrec
 #cleardef
 #defcom1 7212 -- Tomb Tapper
-#defcom2 7212 -- Tomb Tapper
+-- Defcom2 not valid for poptypes
+-- #defcom2 7212 -- Tomb Tapper
 #defunit1 7212 -- Tomb Tapper
 #defmult1 6
 #addrecunit 6726 -- Fomorian Slave
@@ -458,15 +487,17 @@
 #clearrec
 #cleardef
 #defcom1 7210 -- Ogre 
-#defcom2 6810 -- Stone Giant Elder
+-- Defcom2 not valid for poptypes
+-- #defcom2 6810 -- Stone Giant Elder
 #defunit1 7210 -- Ogre 
 #defunit1b 6678 -- Hill Giants
 #defunit1c 6809 -- Stone Giant Mauler
-#defunit2 6675 -- Frost Giant Mercenenary
+-- Defunit2 not valid for poptypes
+-- #defunit2 6675 -- Frost Giant Mercenenary
 #defmult1 12
 #defmult1b 8
 #defmult1c 4
-#defmult2 12	
+-- #defmult2 12	
 #addrecunit 6675 -- Frost Giant Mercenenary
 #addrecunit 7210 -- Ogre
 #addrecunit 6678 -- Hill Giants
@@ -480,15 +511,17 @@
 #clearrec
 #cleardef
 #defcom1 2210 -- Troll Shaman
-#defcom2 6738 -- Fire Giant Commander !!
+-- Defcom2 not valid for poptypes
+-- #defcom2 6738 -- Fire Giant Commander !!
 #defunit1 2219 -- Troll
 #defunit1b 6726 -- Fomorian Half-Giant !! 
 #defunit1c 5091 -- Firbolg Fanatic
-#defunit2 6809 -- Stone Giant Mauler
+-- Defunit2 not valid for poptypes
+-- #defunit2 6809 -- Stone Giant Mauler
 #defmult1 12
 #defmult1b 12
 #defmult1c 8
-#defmult2 12	
+-- #defmult2 12	
 #addrecunit 6726 -- Fomorian Half-Giant !!
 #addrecunit 5091 -- Firbolg Fanatic
 #addrecunit 6809 -- Stone Giant Mauler
@@ -502,13 +535,15 @@
 #clearrec
 #cleardef
 #defcom1 6808 -- Gnoll Chieftain
-#defcom2 6732 -- Fang of Yeenoghu
+-- Defcom2 not valid for poptypes
+-- #defcom2 6732 -- Fang of Yeenoghu
 #defunit1 6724 -- Gnoll Scavengers 
 #defunit1b 7273 -- Cockatrice
-#defunit2 6672 -- Wyvern
+-- Defunit2 not valid for poptypes
+-- #defunit2 6672 -- Wyvern
 #defmult1 20
 #defmult1b 5
-#defmult2 12	
+-- #defmult2 12	
 #addrecunit 6724 -- Gnoll Scavengers
 #addrecunit 7273 -- Cockatrice
 #addrecunit 6672 -- Wyvern
@@ -521,13 +556,15 @@
 #clearrec
 #cleardef
 #defcom1 6602 		-- Senior Civilar
-#defcom2 6609 		-- the 2nd PD Commander - Wizard Corps Civilar
+-- Defcom2 not valid for poptypes
+-- #defcom2 6609 		-- the 2nd PD Commander - Wizard Corps Civilar
 #defunit1 6621 		-- Vigilants
 #defunit1b 6601 	-- Constables
-#defunit2 6621 		-- Vigilants	
+-- Defunit2 not valid for poptypes
+-- #defunit2 6621 		-- Vigilants	
 #defmult1 20 		-- Vigilants
 #defmult1b 10 		-- Constables
-#defmult2 20		-- Vigilants
+-- #defmult2 20		-- Vigilants
 #addrecunit 6621 	-- Vigilants	
 #addreccom 6602 	-- Senior Civilar
 #addreccom 6609 	-- Wizard Corps Civilar
@@ -537,15 +574,17 @@
 #clearrec
 #cleardef
 #defcom1 7137		-- Wererat
-#defcom2 7318 		-- Fomorian Deepthane
+-- Defcom2 not valid for poptypes
+-- #defcom2 7318 		-- Fomorian Deepthane
 #defunit1 482 		-- Villain
 #defunit1b 7234 	-- Drow Sargtlin
 #defunit1c 7359 	-- Kobold Spear
-#defunit2 6726		-- Fomorian Half-Giant 		
+-- Defunit2 not valid for poptypes
+-- #defunit2 6726		-- Fomorian Half-Giant 		
 #defmult1 20 		
 #defmult1b 10 		
 #defmult1c 10 		
-#defmult2 20	
+-- #defmult2 20	
 #addrecunit 6726	-- Fomorian Half-Giant 	
 #addreccom 7137		-- Wererat
 #addreccom 7318 	-- Fomorian Deepthane
@@ -555,13 +594,15 @@
 #clearrec
 #cleardef
 #defcom1 7484 -- Wild Elf Clan Leader
-#defcom2 7483 -- Feywarden
+-- Defcom2 not valid for poptypes
+-- #defcom2 7483 -- Feywarden
 #defunit1 7481 -- Wild Elf Warrior
 #defunit1b 7398 -- Wild Elf Hunter
-#defunit2 367 -- Pegasus Rider
+-- Defunit2 not valid for poptypes
+-- #defunit2 367 -- Pegasus Rider
 #defmult1 20 		
 #defmult1b 14 		
-#defmult2 12	
+-- #defmult2 12	
 #addrecunit 7398 -- Wild Elf Hunter
 #addrecunit 7481 -- Wild Elf Warrior
 #addreccom 7484 -- Wild Elf Clan Leader
@@ -573,15 +614,17 @@
 #clearrec
 #cleardef
 #defcom1 7603 -- Morkoth Captain
-#defcom2 7600 -- Morkoth Mage
+-- Defcom2 not valid for poptypes
+-- #defcom2 7600 -- Morkoth Mage
 #defunit1 7148 -- Locathah Slave
 #defunit1b 7598 -- Morkoth  
 #defunit1c 7599 -- Morkoth Warrior
-#defunit2 7566 -- Merrow Behemoth
+-- Defunit2 not valid for poptypes
+-- #defunit2 7566 -- Merrow Behemoth
 #defmult1 30 		
 #defmult1b 10 		
 #defmult1c 5	
-#defmult2 20	
+-- #defmult2 20	
 #addrecunit 7148 -- Locathah Slave
 #addrecunit 7598 -- Morkoth 
 #addrecunit 7599 -- Morkoth Warrior
@@ -595,13 +638,15 @@
 #clearrec
 #cleardef
 #defcom1 7520 -- Merfolk Commander
-#defcom2 7614 -- Merfolk Knight Commander
+-- Defcom2 not valid for poptypes
+-- #defcom2 7614 -- Merfolk Knight Commander
 #defunit1 7518 -- Merfolk Militia
 #defunit1b 7519 -- Merfolk Soldier
 #defmult1 20
 #defmult1b 10
-#defunit2 7522 -- Merfolk Knight
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7522 -- Merfolk Knight
+-- #defmult2 12
 #addrecunit 7518 -- Merfolk Militia
 #addrecunit 7519 -- Merfolk Soldier
 #addrecunit 7625 -- Merfolk Crossbowmen
@@ -617,13 +662,15 @@
 #clearrec
 #cleardef
 #defcom1 7553 -- Shalarin Ruler
-#defcom2 7552 -- Shalarin Mantaback Captain
+-- Defcom2 not valid for poptypes
+-- #defcom2 7552 -- Shalarin Mantaback Captain
 #defunit1 7549 -- Shalarin Protector
 #defunit1b 7551 -- Shalarin Finblade
 #defmult1 20
 #defmult1b 10
-#defunit2 7548 -- Shalarin Mantaback
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7548 -- Shalarin Mantaback
+-- #defmult2 12
 #addrecunit 7549 -- Shalarin Protector
 #addrecunit 7551 -- Shalarin Finblade
 #addreccom 7554 -- Shalarin Seeker
@@ -634,13 +681,15 @@
 #clearrec
 #cleardef
 #defcom1 7627 -- Shoalguard Captain
-#defcom2 7539 -- Sea Elf Druid
+-- Defcom2 not valid for poptypes
+-- #defcom2 7539 -- Sea Elf Druid
 #defunit1 7611 -- Sea Elf Shoalguard
 #defunit1b 7538 -- Sea Elf Ranger
 #defmult1 16
 #defmult1b 10
-#defunit2 7540 -- Sea Elf Warden
-#defmult2 10
+-- Defunit2 not valid for poptypes
+-- #defunit2 7540 -- Sea Elf Warden
+-- #defmult2 10
 #addrecunit 7611 -- Sea Elf Shoalguard
 #addrecunit 7538 -- Sea Elf Ranger
 #addreccom 7627 -- Shoalguard Captain
@@ -651,13 +700,15 @@
 #clearrec
 #cleardef
 #defcom1 7563 -- Demon Ray Vampire
-#defcom2 7570 -- Demon Ray Zealot
+-- Defcom2 not valid for poptypes
+-- #defcom2 7570 -- Demon Ray Zealot
 #defunit1 7565 -- Ixitxachitl
 #defunit1b 7148 -- Locathah Slave
 #defmult1 20
 #defmult1b 20
-#defunit2 564 -- Scrag
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 564 -- Scrag
+-- #defmult2 12
 #addrecunit 7565 -- Ixitxachitl
 #addrecunit 7148 -- Locathah Slave
 #addreccom 7563 -- Demon Ray Vampire
@@ -668,13 +719,15 @@
 #clearrec
 #cleardef
 #defcom1 7361 -- Kobold Chieftain 
-#defcom2 7362 -- Kobold Sorcerer 
+-- Defcom2 not valid for poptypes
+-- #defcom2 7362 -- Kobold Sorcerer 
 #defunit1 7359 -- Kobold Spear 
 #defunit1b 7360 -- Kobold Slinger
 #defmult1 20
 #defmult1b 20
-#defunit2 7567 -- Merrow Behemoth
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7567 -- Merrow Behemoth
+-- #defmult2 12
 #addrecunit 7359 -- Kobold Spear 
 #addrecunit 7360 -- Kobold Slinger
 #addrecunit 7567 -- Merrow Behemoth
@@ -686,13 +739,15 @@
 #clearrec
 #cleardef
 #defcom1 7384 -- Anguiliian Chieftain
-#defcom2 7307 -- Juvenile Kraken
+-- Defcom2 not valid for poptypes
+-- #defcom2 7307 -- Juvenile Kraken
 #defunit1 7383 -- Anguiliian Hunter
 #defunit1b 7179 -- Kuo-toan Goggler
 #defmult1 20
 #defmult1b 20
-#defunit2 7561 -- Deep Vodyanoi
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7561 -- Deep Vodyanoi
+-- #defmult2 12
 #addrecunit 7179 -- Kuo-toan Goggler
 #addrecunit 7383 -- Anguiliian Hunter
 #addrecunit 7561 -- Deep Vodyanoi
@@ -705,13 +760,15 @@
 #clearrec
 #cleardef
 #defcom1 7520 -- Merfolk Commander
-#defcom2 7627 -- Shoalguard Captain
+-- Defcom2 not valid for poptypes
+-- #defcom2 7627 -- Shoalguard Captain
 #defunit1 7611 -- Sea Elf Shoalguard
 #defunit1b 7625 -- Merfolk Crossbowmen
 #defmult1 20
 #defmult1b 12
-#defunit2 7551 -- Shalarin Finblade
-#defmult2 10
+-- Defunit2 not valid for poptypes
+-- #defunit2 7551 -- Shalarin Finblade
+-- #defmult2 10
 #addrecunit 7549 -- Shalarin Protector
 #addrecunit 7518 -- Merfolk Militia
 #addrecunit 7519 -- Merfolk Soldier
@@ -733,13 +790,15 @@
 #clearrec
 #cleardef
 #defcom1 7666 	-- Calishite Captain
-#defcom2 7665	-- Calishite Conjurer
+-- Defcom2 not valid for poptypes
+-- #defcom2 7665	-- Calishite Conjurer
 #defunit1 6680 	-- Calishite Spearman
 #defunit1b 6682 -- Calishite Archer
 #defmult1 20
 #defmult1b 12
-#defunit2 7660 	-- Calishite Rider
-#defmult2 15
+-- Defunit2 not valid for poptypes
+-- #defunit2 7660 	-- Calishite Rider
+-- #defmult2 15
 #addrecunit 6680 	-- Calishite Spearman
 #addrecunit 6681 	-- Calishite Swordsman
 #addrecunit 6682 	-- Calishite Archer
@@ -754,13 +813,15 @@
 #clearrec
 #cleardef
 #defcom1 7679 -- Tashalan Commandant
-#defcom2 7677 -- Tashalan Snakemaster
+-- Defcom2 not valid for poptypes
+-- #defcom2 7677 -- Tashalan Snakemaster
 #defunit1 7674 -- Tashalan Militar
 #defunit1b 7675 -- Tashalan Mercenary
 #defmult1 18
 #defmult1b 12
-#defunit2 7676 -- Tashalan Yuan-ti Hunter
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7676 -- Tashalan Yuan-ti Hunter
+-- #defmult2 12
 #addrecunit 7674 -- Tashalan Militar
 #addrecunit 7675 -- Tashalan Mercenary
 #addrecunit 7676 -- Tashalan Yuan-ti Hunter
@@ -773,13 +834,15 @@
 #clearrec
 #cleardef
 #defcom1 7687 -- Chondathan Captain - com
-#defcom2 7693 -- Chondathan Mercenary Captain
+-- Defcom2 not valid for poptypes
+-- #defcom2 7693 -- Chondathan Mercenary Captain
 #defunit1 7681 -- Chondathan Levy
 #defunit1b 7683 -- Chondathan Boman
 #defmult1 18
 #defmult1b 12
-#defunit2 7692 -- Chondathan Knight-errant
-#defmult2 18 
+-- Defunit2 not valid for poptypes
+-- #defunit2 7692 -- Chondathan Knight-errant
+-- #defmult2 18 
 #addrecunit 7681 -- Chondathan Levy
 #addrecunit 7682 -- Chondathan Lineman
 #addrecunit 7683 -- Chondathan Boman
@@ -794,13 +857,15 @@
 #clearrec
 #cleardef
 #defcom1 7725 -- Tethyrian Captain
-#defcom2 7717 -- Tethyrian Noble
+-- Defcom2 not valid for poptypes
+-- #defcom2 7717 -- Tethyrian Noble
 #defunit1 7719 -- Tethyrian Levy
 #defunit1b 7722 -- Tethyrian Crossbowman
 #defmult1 20
 #defmult1b 12
-#defunit2 7724 -- Tethyrian Heavy Infantry
-#defmult2 20 
+-- Defunit2 not valid for poptypes
+-- #defunit2 7724 -- Tethyrian Heavy Infantry
+-- #defmult2 20 
 #addrecunit 7719 -- Tethyrian Levy
 #addrecunit 7722 -- Tethyrian Crossbowman
 #addrecunit 7723 -- Tethyrian Phalanx 
@@ -817,13 +882,15 @@
 #clearrec
 #cleardef
 #defcom1 7725 -- Tethyrian Captain
-#defcom2 7717 -- Tethyrian Noble
+-- Defcom2 not valid for poptypes
+-- #defcom2 7717 -- Tethyrian Noble
 #defunit1 7719 -- Tethyrian Levy
 #defunit1b 7721 -- Tethyrian Archer 
 #defmult1 20
 #defmult1b 12
-#defunit2 7718 -- Tethyrian Light Cavalry
-#defmult2 20 
+-- Defunit2 not valid for poptypes
+-- #defunit2 7718 -- Tethyrian Light Cavalry
+-- #defmult2 20 
 #addrecunit 7719 -- Tethyrian Levy
 #addrecunit 7720 -- Tethyrian Brigand
 #addrecunit 7721 -- Tethyrian Archer 

@@ -771,5 +771,5 @@ The Peacehammers formed a vital element of the defenses of the Great Rift's rim.
 #gcost 10025
 #rcost 2
 #rpcost 10000
-reclimit 4
+#reclimit 4
 #end

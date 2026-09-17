@@ -105,9 +105,10 @@ A tense alliance between the Xanathar and the Lords of Waterdeep exists beyond t
 #uwdefmult2 14
 
 --UW WALL DEFENCE
-#uwguardcom 7520 -- Merfolk Commander
-#uwguardunit 7519 -- Merfolk Soldier
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7520 -- Merfolk Commander
+--#uwguardunit 7519 -- Merfolk Soldier
+--#uwguardmult 20
 #uwwallcom 7520 -- Merfolk Commander
 #uwwallunit 7625 -- Merfolk Crossbowman 
 #uwwallmult 16

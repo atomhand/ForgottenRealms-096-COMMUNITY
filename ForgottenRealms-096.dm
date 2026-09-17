@@ -4078,6 +4078,7 @@
 #addname "Zephara"
 #end
 
+
 ------------------------------------------------------------------------------------------------------------------
 --COMPILED FROM src/items\balance.dm
 ------------------------------------------------------------------------------------------------------------------
@@ -6625,7 +6626,7 @@ An atropal scion was truly one of the most perverse undead creatures willed to u
 #cold 2
 #invulnerable 25
 #coldres 75
-#hpoverflow 100
+#hpoverflow --100
 #poisonres 75
 #shockres 75
 #flying
@@ -6674,7 +6675,7 @@ The atropals spewed obscenities, stuck in perpetual state of anger at the univer
 #cold 3
 #invulnerable 25
 #coldres 75
-#hpoverflow 500
+#hpoverflow --500
 #poisonres 75
 #shockres 75
 #flying
@@ -9806,7 +9807,7 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #name "Celestial Baleen Whale"
 #montag 14017 -- Summon Monster VII (water)
 ----- Celestial Template HD12+ -----
-descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
 
 Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
 #darkvision 100
@@ -9992,7 +9993,7 @@ Celestial creatures often come in metallic colors (usually silver, gold, or plat
 #name "Celestial Roc"
 #montag 14009 -- Summon Monster IX (land)
 ----- Celestial Template HD12+ -----
-descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
+#descr "Celestial creatures dwell on the upper planes, the realms of good, although they resemble beings found on the Material Plane. They are more regal and more beautiful than their earthly counterparts.
 
 Celestial creatures often come in metallic colors (usually silver, gold, or platinum). They can be mistaken for half-celestials, more powerful creatures that are created when a celestial mates with a non-celestial creature."
 #darkvision 100
@@ -15436,7 +15437,7 @@ Infernal contracts could be voided so long as both parties agreed. Under these c
 #fireres 20
 #poisonres 10
 #gold 50
-#res 25
+#resources 25
 #gemprod 8 -2
 #deathcurse
 #deathfire 5
@@ -15491,7 +15492,7 @@ Infernal contracts could be voided so long as both parties agreed. Under these c
 #fireres 20
 #poisonres 10
 #gold 50
-#res 25
+#resources 25
 #gemprod 8 -2
 #clearmagic
 #magicskill 0 2
@@ -22376,7 +22377,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -22686,7 +22687,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -23013,7 +23014,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -23333,7 +23334,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -23647,7 +23648,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -23959,7 +23960,7 @@ Mechanic: Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP). "
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -24304,7 +24305,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -27192,7 +27193,7 @@ The Peacehammers formed a vital element of the defenses of the Great Rift's rim.
 #gcost 10025
 #rcost 2
 #rpcost 10000
-reclimit 4
+#reclimit 4
 #end
 
 
@@ -41659,7 +41660,7 @@ The Waterdhavian dungeon complex of Undermountain contained numerous gelatinous 
 #fireres 0
 #poisonres 5
 #shockres 5
-#hpoverflow 100
+#hpoverflow --100
 #end
 
 -- 7219 -- Ghaunadan
@@ -43942,7 +43943,7 @@ The Sea Mother placed a high value on pearls, which were considerably more effec
 
 In his Abomination avatar shape, Moander was unable to cast spells. However, that was compensated by the sheer power and resilience of the creature. The rotting hulk was could freely move across vertical surfaces or float on water. The entirety of its putrid mass could sprout tendrils, eyes, or mouths to communicate or to land devastating attacks on its enemies. Despite being an easy target, the Abomination of Moander had thick natural defenses, absorbing most attacks into its rotting mass.
 
-Those who were unlucky enough to be swallowed by the Abomination were crushed as endless tendrils rotted away their equipment, clothes, eventually killing them and adding the carcasses to Moander's avatar. Some who survived within the creature could be infected with the seed of Moander. The deity gained knowledge of all those "blessed" with the seed. That connection worked both ways, granting the victims a brief look into the god's mind. 
+Those who were unlucky enough to be swallowed by the Abomination were crushed as endless tendrils rotted away their equipment, clothes, eventually killing them and adding the carcasses to Moander's avatar. Some who survived within the creature could be infected with the seed of Moander. The deity gained knowledge of all those 'blessed' with the seed. That connection worked both ways, granting the victims a brief look into the god's mind. 
 
 During cold months, the Abomination of Moander retreated to warm lands or into lava filled hot cavers of the Underdark, where it was fed and guarded by the dread god's clergy. Moander's core could move between piles of filth of big enough size through exuding a relatively small flying egg-shaped pod. These pods contained the essence of Moander and allowed it to possess another rotting body, creating a new Abomination. Given enough putrified matter, the Jawed God's avatar could vomit a shambling mound or other foul and rotting creation."
 #fixedname "Moander"
@@ -43975,7 +43976,7 @@ During cold months, the Abomination of Moander retreated to warm lands or into l
 #regeneration 10
 #trample
 #trampswallow
-#hpoverflow 500
+#hpoverflow --500
 #aciddigest 30
 #incorporate 30
 #popkill 15
@@ -44906,7 +44907,7 @@ That Which Lurks was easily compelled to send an avatar to his followers if it m
 #regeneration 10
 #trample
 #trampswallow
-#hpoverflow 100
+#hpoverflow --100
 #aciddigest 30
 #incorporate 30
 #supplybonus -30
@@ -54818,7 +54819,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 
 #selectspell "Blade Wind" -- Situationally useful, but often less useful than other stuff
 #aispellmod -20
-8388608 -- uwok
+#spec 8388608 -- uwok
 #end
 
 
@@ -58211,7 +58212,7 @@ Orc Marauders, like all of Zhent's mercenary forces, are excellent pillagers. "
 #fatiguecost 2800
 #end
 
-7509 -- Contract Devil
+-- 7509 -- Contract Devil
 #newspell 
 #name "Summon a Contract Devil"
 #descr "Contract Devils draw gold and resources to your cause in exchange for ongoing souls. They will consume 2 blood slaves each month in exchange for 50 gold and 25 resources."
@@ -62169,7 +62170,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #newspell
 #copyspell "Area Fire"
 #name "Meteor Explosion"
-##aoe 15
+#aoe 15
 #damage 15
 #end
 
@@ -62424,7 +62425,7 @@ MR check to resist the bewilderment. Failure means no strike and the next action
 #researchlevel 5
 #path 0 7 --glamour
 #pathlevel 0 2
-pathlevel 1 0
+#pathlevel 1 0
 #end
 
 #selectspell "Fire Flies"
@@ -70805,9 +70806,10 @@ There will be no shortage of enemies in the long term - in addition to a scatter
 #uwdefmult2 12
 
 --UW WALL DEFENCE
-#uwguardcom 7576 -- Sahuagin Raidmaster -- Watershape
-#uwguardunit 7575 -- Sahuagin Hunter - Watershape
-#uwguardmult 16
+-- No modding cmd for UW gate guards
+--#uwguardcom 7576 -- Sahuagin Raidmaster -- Watershape
+--#uwguardunit 7575 -- Sahuagin Hunter - Watershape
+--#uwguardmult 16
 #uwwallcom 7574 -- Priestess of Sekolah -- Watershape
 #uwwallunit 7572 -- Sahuagin Guard -- Watershape
 #uwwallmult 12	
@@ -71241,9 +71243,10 @@ The Flaming Fists began operating in Baldur's Gate in the early 14th century DR.
 #uwdefmult2 14
 
 --UW WALL DEFENCE
-#uwguardcom 7520 -- Merfolk Commander
-#uwguardunit 7519 -- Merfolk Soldier
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7520 -- Merfolk Commander
+--#uwguardunit 7519 -- Merfolk Soldier
+--#uwguardmult 20
 #uwwallcom 7520 -- Merfolk Commander
 #uwwallunit 7625 -- Merfolk Crossbowman 
 #uwwallmult 16	
@@ -71862,8 +71865,9 @@ Although it was active all over Faerûn, particularly the Heartlands, the Cult o
 #multihero5 6780 -- Mature Red Dragon
 #multihero6 7458 -- Red Dracolich
 #multihero7 7459 -- Black Dracolich
-#multihero8 404 -- Vampire Lord
-#multihero9 6864 -- Red Wizard Zulkir
+-- too many multiheroes
+--#multihero8 404 -- Vampire Lord
+--#multihero9 6864 -- Red Wizard Zulkir
 
 #startcom 7411 -- Dragonkin Captain
 #startunittype1 7408 -- Dragonclaw Swordsman
@@ -73188,9 +73192,10 @@ Amidst this time of uncertainty, dark prophecies and fearful spies speak of a co
 #uwdefmult2 10
 
 --UW WALL DEFENCE
-#uwguardcom 7520 -- Merfolk Commander
-#uwguardunit 7519 -- Merfolk Soldier
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7520 -- Merfolk Commander
+--#uwguardunit 7519 -- Merfolk Soldier
+--#uwguardmult 20
 #uwwallcom 7520 -- Merfolk Commander
 #uwwallunit 7625 -- Merfolk Crossbowman 
 #uwwallmult 16	
@@ -73432,9 +73437,10 @@ Oryndoll's main united purpose was to acquire knowledge no matter how trivial, t
 #uwdefmult2 20
 
 --UW WALL DEFENCE
-#uwguardcom 5113 -- Illithid -- RECRUITABLE
-#uwguardunit 7566 -- Merrow Behemoth
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 5113 -- Illithid -- RECRUITABLE
+--#uwguardunit 7566 -- Merrow Behemoth
+--#uwguardmult 20
 #uwwallcom 5113 -- Illithid -- RECRUITABLE
 #uwwallunit 6727 -- Lizard folk
 #uwwallmult 16
@@ -73615,9 +73621,10 @@ Oryndoll's main united purpose was to acquire knowledge no matter how trivial, t
 
 
 --UW WALL DEFENCE
-#uwguardcom 5113 -- Illithid -- RECRUITABLE
-#uwguardunit 7599 -- Morkoth Warrior
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 5113 -- Illithid -- RECRUITABLE
+--#uwguardunit 7599 -- Morkoth Warrior
+--#uwguardmult 20
 #uwwallcom 5113 -- Illithid -- RECRUITABLE
 #uwwallunit 7566 -- Merrow Behemoth
 #uwwallmult 16
@@ -73875,9 +73882,10 @@ Whenever possible, yuan-ti choose manipulation over open confrontation, the whis
 #wallunit 6727
 #wallmult 20 	
 
-#uwguardcom 7143 -- Sahuagin Raidmaster
-#uwguardunit 7142 -- Sahuagin Hunter
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7143 -- Sahuagin Raidmaster
+--#uwguardunit 7142 -- Sahuagin Hunter
+--#uwguardmult 20
 #uwwallunit 6727 -- Lizard folk
 #uwwallmult 20
 #uwwallcom 6734 -- Lizardman shaman
@@ -73887,7 +73895,6 @@ Whenever possible, yuan-ti choose manipulation over open confrontation, the whis
 #startsite "Flowering Bog"
 #startsite "The Shrouded Lands"
 #end
-
 
 
 ------------------------------------------------------------------------------------------------------------------
@@ -74224,9 +74231,10 @@ Sloopdilmonpolop was recently flooded by kuo-toan, morkoth, and demon ray refuge
 #wallunit 7153 -- Kuo-Toan Pincer - UNIT
 #wallmult 14 	
 
-#uwguardcom 7144 -- Kuo-Toa Whip
-#uwguardunit 7156 -- Kuo-Toan Harpooner - UNIT
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7144 -- Kuo-Toa Whip
+--#uwguardunit 7156 -- Kuo-Toan Harpooner - UNIT
+--#uwguardmult 20
 #uwwallunit 7153 -- Kuo-Toan Pincer - UNIT
 #uwwallmult 14
 #uwwallcom 7152 -- Kuo-Toan Inquisitor
@@ -74405,9 +74413,10 @@ Meanwhile, their cousins on the Moonshae Isles were deeply involved in a plot to
 #uwdefmult2 14
 
 --UW WALL DEFENCE
-#uwguardcom 7361 -- Kobold Chieftain 
-#uwguardunit 7359 -- Kobold Spear
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7361 -- Kobold Chieftain 
+--#uwguardunit 7359 -- Kobold Spear
+--#uwguardmult 20
 #uwwallcom 7362 -- Kobold Sorcerer 
 #uwwallunit 7360 -- Kobold Slinger
 #uwwallmult 20
@@ -75198,9 +75207,10 @@ A tense alliance between the Xanathar and the Lords of Waterdeep exists beyond t
 #uwdefmult2 14
 
 --UW WALL DEFENCE
-#uwguardcom 7520 -- Merfolk Commander
-#uwguardunit 7519 -- Merfolk Soldier
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7520 -- Merfolk Commander
+--#uwguardunit 7519 -- Merfolk Soldier
+--#uwguardmult 20
 #uwwallcom 7520 -- Merfolk Commander
 #uwwallunit 7625 -- Merfolk Crossbowman 
 #uwwallmult 16
@@ -75407,15 +75417,17 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7489 -- Centauride Thorncaller
-#defcom2 3066 -- Hamadryad -- Treant
+-- Defcom2 not valid for poptypes
+-- #defcom2 3066 -- Hamadryad -- Treant
 #defunit1 228 -- Satyr
 #defunit1b 7398 -- Wild Elf Ranger
 #defunit1c 592 -- Sprite
 #defmult1 15
 #defmult1b 10
 #defmult1c 5
-#defunit2 1704 -- Centaur Warrior
-#defmult2 20
+-- Defunit2 not valid for poptypes
+-- #defunit2 1704 -- Centaur Warrior
+-- #defmult2 20
 #addrecunit 228 -- Satyr
 #addrecunit 7488 -- Centauride Nomad
 #addrecunit 7491 -- Centaur Protector
@@ -75444,13 +75456,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7169 -- Soul Spider
-#defcom2 6771 -- Drow Priestess
+-- Defcom2 not valid for poptypes
+-- #defcom2 6771 -- Drow Priestess
 #defunit1 7234 -- Drow Sargtlin
 #defunit1b 6774 -- Drow Hunter 
 #defmult1 20
 #defmult1b 10
-#defunit2 6774 -- Drow Hunter
-#defmult2 20
+-- Defunit2 not valid for poptypes
+-- #defunit2 6774 -- Drow Hunter
+-- #defmult2 20
 #addrecunit 7234 -- Drow Sargtlin
 #addrecunit 6774 -- Drow Hunter 
 #addreccom 6725 -- Drow Assassin
@@ -75460,7 +75474,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7163 -- Quaggoth Jald
-#defcom2 7164 -- Quaggoth Thonot Shaman
+-- Defcom2 not valid for poptypes
+-- #defcom2 7164 -- Quaggoth Thonot Shaman
 #defunit1 7162 -- Quaggoth Hunter
 #defmult1 20
 #addrecunit 7162 -- Quaggoth Hunter
@@ -75472,13 +75487,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7147 -- Locathah Chieftain
-#defcom2 7149 -- Locathah Matriarch
+-- Defcom2 not valid for poptypes
+-- #defcom2 7149 -- Locathah Matriarch
 #defunit1 7146 -- Locathah Nomad
 #defunit1b 7148 -- Locathah Slave
 #defmult1 12
 #defmult1b 20
-#defunit2 7377 -- Locathah Hunter
-#defmult2 20
+-- Defunit2 not valid for poptypes
+-- #defunit2 7377 -- Locathah Hunter
+-- #defmult2 20
 #addrecunit 7146 -- Locathah Nomad
 #addrecunit 7377 -- Locathah Hunter
 #addreccom 7147 -- Locathah Chieftain
@@ -75489,7 +75506,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7155 -- Kuo-Toan Monitor
-#defcom2 7154 -- Kuo-Toan Lash
+-- Defcom2 not valid for poptypes
+-- #defcom2 7154 -- Kuo-Toan Lash
 #defunit1 7179 -- Kuo-toan Gogglers 
 #defunit1b 7180 -- Kuo-toan Guards
 #defmult1 20
@@ -75504,7 +75522,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7576 -- Sahuagin Raidmaster -- Watershape
-#defcom2 7588 -- Sahuagin Shark-Knight Commander
+-- Defcom2 not valid for poptypes
+-- #defcom2 7588 -- Sahuagin Shark-Knight Commander
 #defunit1 7575 -- Sahuagin Hunter - Watershape
 #defunit1b 7572 -- Sahuagin Guard -- Watershape
 #defmult1 20
@@ -75520,7 +75539,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 6770 -- Goblin King
-#defcom2 6733 -- Goblin Lab-Rats
+-- Defcom2 not valid for poptypes
+-- #defcom2 6733 -- Goblin Lab-Rats
 #defunit1 6723 -- Goblin Dogslicer
 #defunit1b 6807 -- Goblin Shortbow
 #defunit1c 6773 -- Goblin Wolfriders	
@@ -75538,7 +75558,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 6737 	-- Orcish King
-#defcom2 6801 	-- Cleric of Gruumsh
+-- Defcom2 not valid for poptypes
+-- #defcom2 6801 	-- Cleric of Gruumsh
 #defunit1 6676	-- Orc Marauders
 #defunit1b 6802 -- Orc Greatbows
 #defmult1 10
@@ -75553,7 +75574,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 6810 -- Stone Giant Elder
-#defcom2 6733 -- Goblin Lab-Rats
+-- Defcom2 not valid for poptypes
+-- #defcom2 6733 -- Goblin Lab-Rats
 #defunit1 6723 -- Goblin Dogslicer
 #defunit1b 6809 -- Stone Giant Mauler
 #defunit1c 7210 -- Ogre 
@@ -75572,7 +75594,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 6843 -- Minotaur Elder
-#defcom2 7086 -- Bull Priest
+-- Defcom2 not valid for poptypes
+-- #defcom2 7086 -- Bull Priest
 #defunit1 6842 -- Minotaur Brute
 #defunit1b 7081 -- Otyugh
 #defmult1 10
@@ -75588,15 +75611,17 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 6775 -- Hag
-#defcom2 2220 -- Troll Shaman
+-- Defcom2 not valid for poptypes
+-- #defcom2 2220 -- Troll Shaman
 #defunit1 2219	-- Forest Troll
 #defunit1b 6806 -- Krenshar
 #defunit1c 6812 -- Cave Spiders
 #defmult1 12
 #defmult1b 10
 #defmult1c 4
-#defunit2 7472 -- Shambling Mound
-#defmult2 20
+-- Defunit2 not valid for poptypes
+-- #defunit2 7472 -- Shambling Mound
+-- #defmult2 20
 #addrecunit 2219 -- Forest Troll
 #addrecunit 6806 -- Krenshar
 #addrecunit 7472 -- Shambling Mound
@@ -75608,7 +75633,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 6816 -- Night Hag
-#defcom2 2220 -- Troll Shaman
+-- Defcom2 not valid for poptypes
+-- #defcom2 2220 -- Troll Shaman
 #defunit1 2121 -- longdead warrior
 #defunit1b 535 -- longdead archer
 #defunit1c 6812 -- Cave Spiders
@@ -75625,7 +75651,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 2891 -- trog warchief
-#defcom2 2749 -- Troglodyte Druhyidd
+-- Defcom2 not valid for poptypes
+-- #defcom2 2749 -- Troglodyte Druhyidd
 #defunit1 6677 -- Troglodyte Raider
 #defunit1b 7081 -- Otyugh
 #defmult1 20
@@ -75640,7 +75667,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7160 -- Cloaker Lord
-#defcom2 7160 -- Cloaker Lord
+-- Defcom2 not valid for poptypes
+-- #defcom2 7160 -- Cloaker Lord
 #defunit1 7161 -- Cloaker
 #defunit1b 7072 -- Displacer Beast
 #defmult1 6
@@ -75652,7 +75680,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7165 -- Umber Hulk
-#defcom2 7165 -- Umber Hulk
+-- Defcom2 not valid for poptypes
+-- #defcom2 7165 -- Umber Hulk
 #defunit1 7165 -- Umber Hulk
 #defmult1 5
 #addrecunit 7165 -- Umber Hulk
@@ -75663,7 +75692,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7166 -- Hook Horror 
-#defcom2 7166 -- Hook Horror 
+-- Defcom2 not valid for poptypes
+-- #defcom2 7166 -- Hook Horror 
 #defunit1 7166 -- Hook Horror 
 #defmult1 5
 #addrecunit 7166 -- Hook Horror 
@@ -75674,7 +75704,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7078 -- SALAMANDER NOBLE
-#defcom2 7078 -- SALAMANDER NOBLE
+-- Defcom2 not valid for poptypes
+-- #defcom2 7078 -- SALAMANDER NOBLE
 #defunit1 7032 -- SALAMANDER FLAMEGUARD
 #defmult1 10
 #addrecunit 7032 -- SALAMANDER FLAMEGUARD
@@ -75685,7 +75716,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7068 -- Beholder
-#defcom2 7068 -- Beholder
+-- Defcom2 not valid for poptypes
+-- #defcom2 7068 -- Beholder
 #defunit1 6676	-- Orc Marauders
 #defunit1b 6727	-- Lizard folk
 #defunit1c 6856 -- Behir
@@ -75700,7 +75732,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7085 -- Rakshasa
-#defcom2 7085 -- Rakshasa
+-- Defcom2 not valid for poptypes
+-- #defcom2 7085 -- Rakshasa
 #defunit1 6727 -- Lizard folk
 #defunit1b 7069 -- Thri-Kreen
 #defunit1c 7082 -- Purple Worm
@@ -75715,7 +75748,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7406 -- Lizard Man Chieftain
-#defcom2 6734 -- Lizardman shaman
+-- Defcom2 not valid for poptypes
+-- #defcom2 6734 -- Lizardman shaman
 #defunit1 6727 -- Lizard folk
 #defunit1b 783 -- Serpent Dancer
 #defunit1c 6827 -- Chultan Frog
@@ -75732,7 +75766,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7318 -- Fomorian Deepthane
-#defcom2 6726 -- Fomorian 
+-- Defcom2 not valid for poptypes
+-- #defcom2 6726 -- Fomorian 
 #defunit1 6726 -- Fomorian 
 #defunit1b 6724 -- Gnoll Hunters
 #defunit1c 7166 -- Hook Horror 
@@ -75748,7 +75783,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7258 -- Myconid Circle Leader -- (f) Nature
-#defcom2 7257 -- Myconid Circle Leader -- (c) Astral
+-- Defcom2 not valid for poptypes
+-- #defcom2 7257 -- Myconid Circle Leader -- (c) Astral
 #defunit1 -13007 -- Myconid Sprout Firstshape
 #defmult1 20
 #addrecunit 7247 -- Myconid Sprout Firstshape
@@ -75760,11 +75796,13 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7268 -- Chitine Cleric
-#defcom2 7267 -- Chitine Warrior
+-- Defcom2 not valid for poptypes
+-- #defcom2 7267 -- Chitine Warrior
 #defunit1 7267 -- Chitine Warrior
-#defunit2 7166 -- Hook Horror 
+-- Defunit2 not valid for poptypes
+-- #defunit2 7166 -- Hook Horror 
 #defmult1 20
-#defmult2 10
+-- #defmult2 10
 #addrecunit 7267 -- Chitine Warrior
 #addreccom 7268 -- Chitine Cleric
 #end
@@ -75773,7 +75811,8 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7212 -- Tomb Tapper
-#defcom2 7212 -- Tomb Tapper
+-- Defcom2 not valid for poptypes
+-- #defcom2 7212 -- Tomb Tapper
 #defunit1 7212 -- Tomb Tapper
 #defmult1 6
 #addrecunit 6726 -- Fomorian Slave
@@ -75807,15 +75846,17 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7210 -- Ogre 
-#defcom2 6810 -- Stone Giant Elder
+-- Defcom2 not valid for poptypes
+-- #defcom2 6810 -- Stone Giant Elder
 #defunit1 7210 -- Ogre 
 #defunit1b 6678 -- Hill Giants
 #defunit1c 6809 -- Stone Giant Mauler
-#defunit2 6675 -- Frost Giant Mercenenary
+-- Defunit2 not valid for poptypes
+-- #defunit2 6675 -- Frost Giant Mercenenary
 #defmult1 12
 #defmult1b 8
 #defmult1c 4
-#defmult2 12	
+-- #defmult2 12	
 #addrecunit 6675 -- Frost Giant Mercenenary
 #addrecunit 7210 -- Ogre
 #addrecunit 6678 -- Hill Giants
@@ -75829,15 +75870,17 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 2210 -- Troll Shaman
-#defcom2 6738 -- Fire Giant Commander !!
+-- Defcom2 not valid for poptypes
+-- #defcom2 6738 -- Fire Giant Commander !!
 #defunit1 2219 -- Troll
 #defunit1b 6726 -- Fomorian Half-Giant !! 
 #defunit1c 5091 -- Firbolg Fanatic
-#defunit2 6809 -- Stone Giant Mauler
+-- Defunit2 not valid for poptypes
+-- #defunit2 6809 -- Stone Giant Mauler
 #defmult1 12
 #defmult1b 12
 #defmult1c 8
-#defmult2 12	
+-- #defmult2 12	
 #addrecunit 6726 -- Fomorian Half-Giant !!
 #addrecunit 5091 -- Firbolg Fanatic
 #addrecunit 6809 -- Stone Giant Mauler
@@ -75851,13 +75894,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 6808 -- Gnoll Chieftain
-#defcom2 6732 -- Fang of Yeenoghu
+-- Defcom2 not valid for poptypes
+-- #defcom2 6732 -- Fang of Yeenoghu
 #defunit1 6724 -- Gnoll Scavengers 
 #defunit1b 7273 -- Cockatrice
-#defunit2 6672 -- Wyvern
+-- Defunit2 not valid for poptypes
+-- #defunit2 6672 -- Wyvern
 #defmult1 20
 #defmult1b 5
-#defmult2 12	
+-- #defmult2 12	
 #addrecunit 6724 -- Gnoll Scavengers
 #addrecunit 7273 -- Cockatrice
 #addrecunit 6672 -- Wyvern
@@ -75870,13 +75915,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 6602 		-- Senior Civilar
-#defcom2 6609 		-- the 2nd PD Commander - Wizard Corps Civilar
+-- Defcom2 not valid for poptypes
+-- #defcom2 6609 		-- the 2nd PD Commander - Wizard Corps Civilar
 #defunit1 6621 		-- Vigilants
 #defunit1b 6601 	-- Constables
-#defunit2 6621 		-- Vigilants	
+-- Defunit2 not valid for poptypes
+-- #defunit2 6621 		-- Vigilants	
 #defmult1 20 		-- Vigilants
 #defmult1b 10 		-- Constables
-#defmult2 20		-- Vigilants
+-- #defmult2 20		-- Vigilants
 #addrecunit 6621 	-- Vigilants	
 #addreccom 6602 	-- Senior Civilar
 #addreccom 6609 	-- Wizard Corps Civilar
@@ -75886,15 +75933,17 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7137		-- Wererat
-#defcom2 7318 		-- Fomorian Deepthane
+-- Defcom2 not valid for poptypes
+-- #defcom2 7318 		-- Fomorian Deepthane
 #defunit1 482 		-- Villain
 #defunit1b 7234 	-- Drow Sargtlin
 #defunit1c 7359 	-- Kobold Spear
-#defunit2 6726		-- Fomorian Half-Giant 		
+-- Defunit2 not valid for poptypes
+-- #defunit2 6726		-- Fomorian Half-Giant 		
 #defmult1 20 		
 #defmult1b 10 		
 #defmult1c 10 		
-#defmult2 20	
+-- #defmult2 20	
 #addrecunit 6726	-- Fomorian Half-Giant 	
 #addreccom 7137		-- Wererat
 #addreccom 7318 	-- Fomorian Deepthane
@@ -75904,13 +75953,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7484 -- Wild Elf Clan Leader
-#defcom2 7483 -- Feywarden
+-- Defcom2 not valid for poptypes
+-- #defcom2 7483 -- Feywarden
 #defunit1 7481 -- Wild Elf Warrior
 #defunit1b 7398 -- Wild Elf Hunter
-#defunit2 367 -- Pegasus Rider
+-- Defunit2 not valid for poptypes
+-- #defunit2 367 -- Pegasus Rider
 #defmult1 20 		
 #defmult1b 14 		
-#defmult2 12	
+-- #defmult2 12	
 #addrecunit 7398 -- Wild Elf Hunter
 #addrecunit 7481 -- Wild Elf Warrior
 #addreccom 7484 -- Wild Elf Clan Leader
@@ -75922,15 +75973,17 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7603 -- Morkoth Captain
-#defcom2 7600 -- Morkoth Mage
+-- Defcom2 not valid for poptypes
+-- #defcom2 7600 -- Morkoth Mage
 #defunit1 7148 -- Locathah Slave
 #defunit1b 7598 -- Morkoth  
 #defunit1c 7599 -- Morkoth Warrior
-#defunit2 7566 -- Merrow Behemoth
+-- Defunit2 not valid for poptypes
+-- #defunit2 7566 -- Merrow Behemoth
 #defmult1 30 		
 #defmult1b 10 		
 #defmult1c 5	
-#defmult2 20	
+-- #defmult2 20	
 #addrecunit 7148 -- Locathah Slave
 #addrecunit 7598 -- Morkoth 
 #addrecunit 7599 -- Morkoth Warrior
@@ -75944,13 +75997,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7520 -- Merfolk Commander
-#defcom2 7614 -- Merfolk Knight Commander
+-- Defcom2 not valid for poptypes
+-- #defcom2 7614 -- Merfolk Knight Commander
 #defunit1 7518 -- Merfolk Militia
 #defunit1b 7519 -- Merfolk Soldier
 #defmult1 20
 #defmult1b 10
-#defunit2 7522 -- Merfolk Knight
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7522 -- Merfolk Knight
+-- #defmult2 12
 #addrecunit 7518 -- Merfolk Militia
 #addrecunit 7519 -- Merfolk Soldier
 #addrecunit 7625 -- Merfolk Crossbowmen
@@ -75966,13 +76021,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7553 -- Shalarin Ruler
-#defcom2 7552 -- Shalarin Mantaback Captain
+-- Defcom2 not valid for poptypes
+-- #defcom2 7552 -- Shalarin Mantaback Captain
 #defunit1 7549 -- Shalarin Protector
 #defunit1b 7551 -- Shalarin Finblade
 #defmult1 20
 #defmult1b 10
-#defunit2 7548 -- Shalarin Mantaback
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7548 -- Shalarin Mantaback
+-- #defmult2 12
 #addrecunit 7549 -- Shalarin Protector
 #addrecunit 7551 -- Shalarin Finblade
 #addreccom 7554 -- Shalarin Seeker
@@ -75983,13 +76040,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7627 -- Shoalguard Captain
-#defcom2 7539 -- Sea Elf Druid
+-- Defcom2 not valid for poptypes
+-- #defcom2 7539 -- Sea Elf Druid
 #defunit1 7611 -- Sea Elf Shoalguard
 #defunit1b 7538 -- Sea Elf Ranger
 #defmult1 16
 #defmult1b 10
-#defunit2 7540 -- Sea Elf Warden
-#defmult2 10
+-- Defunit2 not valid for poptypes
+-- #defunit2 7540 -- Sea Elf Warden
+-- #defmult2 10
 #addrecunit 7611 -- Sea Elf Shoalguard
 #addrecunit 7538 -- Sea Elf Ranger
 #addreccom 7627 -- Shoalguard Captain
@@ -76000,13 +76059,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7563 -- Demon Ray Vampire
-#defcom2 7570 -- Demon Ray Zealot
+-- Defcom2 not valid for poptypes
+-- #defcom2 7570 -- Demon Ray Zealot
 #defunit1 7565 -- Ixitxachitl
 #defunit1b 7148 -- Locathah Slave
 #defmult1 20
 #defmult1b 20
-#defunit2 564 -- Scrag
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 564 -- Scrag
+-- #defmult2 12
 #addrecunit 7565 -- Ixitxachitl
 #addrecunit 7148 -- Locathah Slave
 #addreccom 7563 -- Demon Ray Vampire
@@ -76017,13 +76078,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7361 -- Kobold Chieftain 
-#defcom2 7362 -- Kobold Sorcerer 
+-- Defcom2 not valid for poptypes
+-- #defcom2 7362 -- Kobold Sorcerer 
 #defunit1 7359 -- Kobold Spear 
 #defunit1b 7360 -- Kobold Slinger
 #defmult1 20
 #defmult1b 20
-#defunit2 7567 -- Merrow Behemoth
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7567 -- Merrow Behemoth
+-- #defmult2 12
 #addrecunit 7359 -- Kobold Spear 
 #addrecunit 7360 -- Kobold Slinger
 #addrecunit 7567 -- Merrow Behemoth
@@ -76035,13 +76098,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7384 -- Anguiliian Chieftain
-#defcom2 7307 -- Juvenile Kraken
+-- Defcom2 not valid for poptypes
+-- #defcom2 7307 -- Juvenile Kraken
 #defunit1 7383 -- Anguiliian Hunter
 #defunit1b 7179 -- Kuo-toan Goggler
 #defmult1 20
 #defmult1b 20
-#defunit2 7561 -- Deep Vodyanoi
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7561 -- Deep Vodyanoi
+-- #defmult2 12
 #addrecunit 7179 -- Kuo-toan Goggler
 #addrecunit 7383 -- Anguiliian Hunter
 #addrecunit 7561 -- Deep Vodyanoi
@@ -76054,13 +76119,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7520 -- Merfolk Commander
-#defcom2 7627 -- Shoalguard Captain
+-- Defcom2 not valid for poptypes
+-- #defcom2 7627 -- Shoalguard Captain
 #defunit1 7611 -- Sea Elf Shoalguard
 #defunit1b 7625 -- Merfolk Crossbowmen
 #defmult1 20
 #defmult1b 12
-#defunit2 7551 -- Shalarin Finblade
-#defmult2 10
+-- Defunit2 not valid for poptypes
+-- #defunit2 7551 -- Shalarin Finblade
+-- #defmult2 10
 #addrecunit 7549 -- Shalarin Protector
 #addrecunit 7518 -- Merfolk Militia
 #addrecunit 7519 -- Merfolk Soldier
@@ -76082,13 +76149,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7666 	-- Calishite Captain
-#defcom2 7665	-- Calishite Conjurer
+-- Defcom2 not valid for poptypes
+-- #defcom2 7665	-- Calishite Conjurer
 #defunit1 6680 	-- Calishite Spearman
 #defunit1b 6682 -- Calishite Archer
 #defmult1 20
 #defmult1b 12
-#defunit2 7660 	-- Calishite Rider
-#defmult2 15
+-- Defunit2 not valid for poptypes
+-- #defunit2 7660 	-- Calishite Rider
+-- #defmult2 15
 #addrecunit 6680 	-- Calishite Spearman
 #addrecunit 6681 	-- Calishite Swordsman
 #addrecunit 6682 	-- Calishite Archer
@@ -76103,13 +76172,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7679 -- Tashalan Commandant
-#defcom2 7677 -- Tashalan Snakemaster
+-- Defcom2 not valid for poptypes
+-- #defcom2 7677 -- Tashalan Snakemaster
 #defunit1 7674 -- Tashalan Militar
 #defunit1b 7675 -- Tashalan Mercenary
 #defmult1 18
 #defmult1b 12
-#defunit2 7676 -- Tashalan Yuan-ti Hunter
-#defmult2 12
+-- Defunit2 not valid for poptypes
+-- #defunit2 7676 -- Tashalan Yuan-ti Hunter
+-- #defmult2 12
 #addrecunit 7674 -- Tashalan Militar
 #addrecunit 7675 -- Tashalan Mercenary
 #addrecunit 7676 -- Tashalan Yuan-ti Hunter
@@ -76122,13 +76193,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7687 -- Chondathan Captain - com
-#defcom2 7693 -- Chondathan Mercenary Captain
+-- Defcom2 not valid for poptypes
+-- #defcom2 7693 -- Chondathan Mercenary Captain
 #defunit1 7681 -- Chondathan Levy
 #defunit1b 7683 -- Chondathan Boman
 #defmult1 18
 #defmult1b 12
-#defunit2 7692 -- Chondathan Knight-errant
-#defmult2 18 
+-- Defunit2 not valid for poptypes
+-- #defunit2 7692 -- Chondathan Knight-errant
+-- #defmult2 18 
 #addrecunit 7681 -- Chondathan Levy
 #addrecunit 7682 -- Chondathan Lineman
 #addrecunit 7683 -- Chondathan Boman
@@ -76143,13 +76216,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7725 -- Tethyrian Captain
-#defcom2 7717 -- Tethyrian Noble
+-- Defcom2 not valid for poptypes
+-- #defcom2 7717 -- Tethyrian Noble
 #defunit1 7719 -- Tethyrian Levy
 #defunit1b 7722 -- Tethyrian Crossbowman
 #defmult1 20
 #defmult1b 12
-#defunit2 7724 -- Tethyrian Heavy Infantry
-#defmult2 20 
+-- Defunit2 not valid for poptypes
+-- #defunit2 7724 -- Tethyrian Heavy Infantry
+-- #defmult2 20 
 #addrecunit 7719 -- Tethyrian Levy
 #addrecunit 7722 -- Tethyrian Crossbowman
 #addrecunit 7723 -- Tethyrian Phalanx 
@@ -76166,13 +76241,15 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #clearrec
 #cleardef
 #defcom1 7725 -- Tethyrian Captain
-#defcom2 7717 -- Tethyrian Noble
+-- Defcom2 not valid for poptypes
+-- #defcom2 7717 -- Tethyrian Noble
 #defunit1 7719 -- Tethyrian Levy
 #defunit1b 7721 -- Tethyrian Archer 
 #defmult1 20
 #defmult1b 12
-#defunit2 7718 -- Tethyrian Light Cavalry
-#defmult2 20 
+-- Defunit2 not valid for poptypes
+-- #defunit2 7718 -- Tethyrian Light Cavalry
+-- #defmult2 20 
 #addrecunit 7719 -- Tethyrian Levy
 #addrecunit 7720 -- Tethyrian Brigand
 #addrecunit 7721 -- Tethyrian Archer 

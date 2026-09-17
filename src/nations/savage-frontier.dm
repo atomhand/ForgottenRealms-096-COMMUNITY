@@ -161,9 +161,10 @@
 
 
 --UW WALL DEFENCE
-#uwguardcom 5113 -- Illithid -- RECRUITABLE
-#uwguardunit 7599 -- Morkoth Warrior
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 5113 -- Illithid -- RECRUITABLE
+--#uwguardunit 7599 -- Morkoth Warrior
+--#uwguardmult 20
 #uwwallcom 5113 -- Illithid -- RECRUITABLE
 #uwwallunit 7566 -- Merrow Behemoth
 #uwwallmult 16

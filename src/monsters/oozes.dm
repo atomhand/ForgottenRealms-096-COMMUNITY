@@ -65,7 +65,7 @@ The Waterdhavian dungeon complex of Undermountain contained numerous gelatinous 
 #fireres 0
 #poisonres 5
 #shockres 5
-#hpoverflow 100
+#hpoverflow --100
 #end
 
 -- 7219 -- Ghaunadan

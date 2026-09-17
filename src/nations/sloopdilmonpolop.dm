@@ -110,9 +110,10 @@ Sloopdilmonpolop was recently flooded by kuo-toan, morkoth, and demon ray refuge
 #wallunit 7153 -- Kuo-Toan Pincer - UNIT
 #wallmult 14 	
 
-#uwguardcom 7144 -- Kuo-Toa Whip
-#uwguardunit 7156 -- Kuo-Toan Harpooner - UNIT
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7144 -- Kuo-Toa Whip
+--#uwguardunit 7156 -- Kuo-Toan Harpooner - UNIT
+--#uwguardmult 20
 #uwwallunit 7153 -- Kuo-Toan Pincer - UNIT
 #uwwallmult 14
 #uwwallcom 7152 -- Kuo-Toan Inquisitor

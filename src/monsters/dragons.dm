@@ -324,7 +324,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -634,7 +634,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -961,7 +961,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -1281,7 +1281,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -1595,7 +1595,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -1907,7 +1907,7 @@ Mechanic: Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP). "
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0
@@ -2252,7 +2252,7 @@ Dragon Eggs hatch into baby dragon hatchlings in 2 months (2 XP)."
 #noleader
 #nomagicleader
 #noundeadleader
-#str 0
+#str 1
 #att 0
 #def 0
 #prec 0

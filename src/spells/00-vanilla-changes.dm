@@ -779,7 +779,7 @@
 
 #selectspell "Blade Wind" -- Situationally useful, but often less useful than other stuff
 #aispellmod -20
-8388608 -- uwok
+#spec 8388608 -- uwok
 #end
 
 

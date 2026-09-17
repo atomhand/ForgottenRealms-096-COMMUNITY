@@ -568,7 +568,7 @@ An atropal scion was truly one of the most perverse undead creatures willed to u
 #cold 2
 #invulnerable 25
 #coldres 75
-#hpoverflow 100
+#hpoverflow --100
 #poisonres 75
 #shockres 75
 #flying
@@ -617,7 +617,7 @@ The atropals spewed obscenities, stuck in perpetual state of anger at the univer
 #cold 3
 #invulnerable 25
 #coldres 75
-#hpoverflow 500
+#hpoverflow --500
 #poisonres 75
 #shockres 75
 #flying

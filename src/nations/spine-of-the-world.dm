@@ -161,9 +161,10 @@ Meanwhile, their cousins on the Moonshae Isles were deeply involved in a plot to
 #uwdefmult2 14
 
 --UW WALL DEFENCE
-#uwguardcom 7361 -- Kobold Chieftain 
-#uwguardunit 7359 -- Kobold Spear
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7361 -- Kobold Chieftain 
+--#uwguardunit 7359 -- Kobold Spear
+--#uwguardmult 20
 #uwwallcom 7362 -- Kobold Sorcerer 
 #uwwallunit 7360 -- Kobold Slinger
 #uwwallmult 20

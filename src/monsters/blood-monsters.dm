@@ -1399,7 +1399,7 @@ Infernal contracts could be voided so long as both parties agreed. Under these c
 #fireres 20
 #poisonres 10
 #gold 50
-#res 25
+#resources 25
 #gemprod 8 -2
 #deathcurse
 #deathfire 5
@@ -1454,7 +1454,7 @@ Infernal contracts could be voided so long as both parties agreed. Under these c
 #fireres 20
 #poisonres 10
 #gold 50
-#res 25
+#resources 25
 #gemprod 8 -2
 #clearmagic
 #magicskill 0 2

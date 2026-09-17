@@ -1516,7 +1516,7 @@ Only ordinary, living animals are affected; demons, undead, magical beasts and a
 #newspell
 #copyspell "Area Fire"
 #name "Meteor Explosion"
-##aoe 15
+#aoe 15
 #damage 15
 #end
 
@@ -1771,7 +1771,7 @@ MR check to resist the bewilderment. Failure means no strike and the next action
 #researchlevel 5
 #path 0 7 --glamour
 #pathlevel 0 2
-pathlevel 1 0
+#pathlevel 1 0
 #end
 
 #selectspell "Fire Flies"

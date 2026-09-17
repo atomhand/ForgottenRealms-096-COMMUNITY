@@ -1536,7 +1536,7 @@ The Sea Mother placed a high value on pearls, which were considerably more effec
 
 In his Abomination avatar shape, Moander was unable to cast spells. However, that was compensated by the sheer power and resilience of the creature. The rotting hulk was could freely move across vertical surfaces or float on water. The entirety of its putrid mass could sprout tendrils, eyes, or mouths to communicate or to land devastating attacks on its enemies. Despite being an easy target, the Abomination of Moander had thick natural defenses, absorbing most attacks into its rotting mass.
 
-Those who were unlucky enough to be swallowed by the Abomination were crushed as endless tendrils rotted away their equipment, clothes, eventually killing them and adding the carcasses to Moander's avatar. Some who survived within the creature could be infected with the seed of Moander. The deity gained knowledge of all those "blessed" with the seed. That connection worked both ways, granting the victims a brief look into the god's mind. 
+Those who were unlucky enough to be swallowed by the Abomination were crushed as endless tendrils rotted away their equipment, clothes, eventually killing them and adding the carcasses to Moander's avatar. Some who survived within the creature could be infected with the seed of Moander. The deity gained knowledge of all those 'blessed' with the seed. That connection worked both ways, granting the victims a brief look into the god's mind. 
 
 During cold months, the Abomination of Moander retreated to warm lands or into lava filled hot cavers of the Underdark, where it was fed and guarded by the dread god's clergy. Moander's core could move between piles of filth of big enough size through exuding a relatively small flying egg-shaped pod. These pods contained the essence of Moander and allowed it to possess another rotting body, creating a new Abomination. Given enough putrified matter, the Jawed God's avatar could vomit a shambling mound or other foul and rotting creation."
 #fixedname "Moander"
@@ -1569,7 +1569,7 @@ During cold months, the Abomination of Moander retreated to warm lands or into l
 #regeneration 10
 #trample
 #trampswallow
-#hpoverflow 500
+#hpoverflow --500
 #aciddigest 30
 #incorporate 30
 #popkill 15
@@ -2500,7 +2500,7 @@ That Which Lurks was easily compelled to send an avatar to his followers if it m
 #regeneration 10
 #trample
 #trampswallow
-#hpoverflow 100
+#hpoverflow --100
 #aciddigest 30
 #incorporate 30
 #supplybonus -30

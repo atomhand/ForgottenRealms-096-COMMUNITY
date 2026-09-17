@@ -56,16 +56,19 @@
    * Description + water attuned for dolphin scout
    * Water attuned for dolphin scout, orca, serosian whale, sacred leviathan
    * Inspirational for Triton Tapalero (watershape)
-   * Resource generation for Shalarin ruler
+   * Resource generation for Shalarin ruler, Contract Devil (both forms)
    * Blood penalty for Ghaunadan shapeshift form
    * moreprod for City of Eternity, Unthalass
    * startdom for Lolth (2), Velsharoon (1), Eilistraee (2)
    * autodishealer for Eilistraee
-   * Mindslime for Pisaethces, Dagon, Dagon pretender, Aboleth Broodling, Aboleth Savant, Aboleth Sovereign, Elder Aboleth
+   * Mindslime for Pisaethces, Dagon, Dagon pretender, Aboleth Broodling, Aboleth Savant, Aboleth Sovereign, Elder Aboleth (AoE is set very high for these, review for balance)
    * heretic for Red Wizard, Priestess of Akadi
    * Gray One disease grinder (This seems extremely strong, review as a balance concern)
    * Armour prot for Halruaan Skyship (fixed prot is possibly imbalanced)
    * Starting affliction for Catti-brie
+   * Dragon eggs Str 1 (0 doesn't seem to be accepted as a parameter)
+   * Reclimit 4 for peacehammer
+   * Moander description truncated
  * Nations
    * Halruaa missing foreign recruit archers & peltasts
  * Magic items
@@ -84,7 +87,8 @@
   * resource bonus for Procampur - Steel City and Ffolk Villages, Iron Tabernacle
   * Summons for Duskwood Dell (unicorn), Lake of Blood (wraith), Haunted Plains (wraith),Citadel of the Raven (wraith), The Sunglade (unicorn)
  * Spells
-   * Missing details for 23 spells
+   * Missing details for 24 spells
+   * Blade Wind - can be cast underwater
  * Events
    * Turmoil decrease for some of the "Darkstalker Wars have ended" events
    * "Seros captures the Pythan Trench" event can trigger
@@ -97,6 +101,10 @@ Reworked/abandoned functionality - certain content was trying to do something th
  * Ego Whip (weapon) - Stuns and deal 1 psychic damage (MR negates). A target who fails a second MR check is also subject to Confusion.
  * Adventuring Gear - originally was meant to grant Sailing/Air breathing - this is technically difficult to do and not really needed
  * Dukar Order of Maalirn - was meant to grant a thaumaturgy cost reduction, but this is impossible (and OP)
+ * Nations had an attempt to script UW gate guards, but there isn't a modding command to do this (Aleaxtis, Baldur's Gate, Nantarn, Oryndoll, Savage Frontier, Serpentes, Sloopdilmonpolop, Spine of the World, Waterdeep affected)
+ * Nations had attempt to add over 7 multiheroes, which isn't supported (CoTD) 
+ * Hpoverflow - the original author used this command as if it could be used to apply a cap, but there is no such thing. Affected monsters are being left uncapped for now - keep an eye on this for balance review.
+   * Affected: Atropal Scion, Atropal, Gelatinuous Cube, Moander, Ghaunadaur
 
 Misc
  * Move site ids 1590-1699 to 3190-3299 - mod manual recommends mods use ids 1700-3999 only

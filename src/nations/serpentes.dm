@@ -114,9 +114,10 @@ Whenever possible, yuan-ti choose manipulation over open confrontation, the whis
 #wallunit 6727
 #wallmult 20 	
 
-#uwguardcom 7143 -- Sahuagin Raidmaster
-#uwguardunit 7142 -- Sahuagin Hunter
-#uwguardmult 20
+-- No modding cmd for UW gate guards
+--#uwguardcom 7143 -- Sahuagin Raidmaster
+--#uwguardunit 7142 -- Sahuagin Hunter
+--#uwguardmult 20
 #uwwallunit 6727 -- Lizard folk
 #uwwallmult 20
 #uwwallcom 6734 -- Lizardman shaman
@@ -126,4 +127,3 @@ Whenever possible, yuan-ti choose manipulation over open confrontation, the whis
 #startsite "Flowering Bog"
 #startsite "The Shrouded Lands"
 #end
-
