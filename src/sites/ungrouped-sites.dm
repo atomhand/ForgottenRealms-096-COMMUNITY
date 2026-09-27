@@ -5619,7 +5619,7 @@
 #gems 3 1 -- 1 earth gem
 #mon 6743 -- Guidon (standard bearer)
 #mon 6744 -- Purple Dragon Knight
-#com 6749 -- Purple Dragon Lancelord
+--#com 6749 -- Purple Dragon Lancelord
 --#com 6750 -- Commander: Battlemaster 
 #end
 

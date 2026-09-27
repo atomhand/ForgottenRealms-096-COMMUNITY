@@ -20053,11 +20053,10 @@ Blades are the lowest rank of enlisted soldiers, but don't let that distract fro
 #mor 11
 #clearweapons
 #cleararmor
-#armor 15 -- Full Leather
-#armor 2 -- Shield
-#armor 120 -- leather cap
-#weapon 6 -- shortsword
-#weapon 1831 -- Elite Shortbow
+#armor 13 -- chain mail hauberk
+#armor 3 -- kite Shield
+#armor 20 -- iron cap
+#weapon 8 --broad sword
 #formationfighter 2
 #startage 20
 #maxage 40
@@ -20067,8 +20066,8 @@ Blades are the lowest rank of enlisted soldiers, but don't let that distract fro
 -- 3742 Troop: Cormyrian Swordmajor
 #newmonster 6742
 #copystats 6740
-#spr1 "ForgottenRealms/cormswordmajor.tga"
-#spr2 "ForgottenRealms/cormswordmajor1.tga"
+#spr1 "ForgottenRealms/cormfirstsword.tga"
+#spr2 "ForgottenRealms/cormfirstsword2.tga"
 #name "Purple Dragon Swordmajor"
 #descr "The Purple Dragons are the regular army of Cormyr. This professional force consists entirely of volunteers who are willing to swear an oath of loyalty and service directly to the Crown of Cormyr. There are no conscripted Purple Dragons; conscription is used only for local militia. Those who wish to join the Purple Dragons must meet tough standards of physical fitness to simply be accepted, and these standards are enforced through rigorous training.
 
@@ -20084,13 +20083,9 @@ Swordmajors are promoted from the Blades and represent the best of the best of t
 #prec 11
 #mr 10
 #mor 14
-#clearweapons
-#cleararmor
-#armor 16 -- Full Ring Mail
-#armor 2 -- Shield
-#armor 162 -- Crested Helmet
-#weapon 8 -- broadsword
-#weapon 1831 -- Elite Shortbow
+#armor 118 -- half helmet
+#armor 19 -- full plate mail
+#weapon 11 -- great sword
 #formationfighter 2
 #siegebonus 2
 #startage 25
@@ -20101,7 +20096,7 @@ Swordmajors are promoted from the Blades and represent the best of the best of t
 #newmonster 6743
 #copystats 6740
 #spr1 "ForgottenRealms/guidon.tga"
-#spr2 "ForgottenRealms/guidon1.tga"
+#spr2 "ForgottenRealms/guidon2.tga"
 #name "Purple Dragon Guidon"
 #descr "The Purple Dragons are the regular army of Cormyr. This professional force consists entirely of volunteers who are willing to swear an oath of loyalty and service directly to the Crown of Cormyr. There are no conscripted Purple Dragons; conscription is used only for local militia. Those who wish to join the Purple Dragons must meet tough standards of physical fitness to simply be accepted, and these standards are enforced through rigorous training.
 
@@ -20117,9 +20112,9 @@ The position of guidon is usually given to a blade or, in larger units, a Swordm
 #prec 11
 #mr 10
 #mor 16
-#armor 9 -- Plate cuirass
-#armor 20 -- iron cap
-#weapon 5 -- Halberd
+#armor 21 -- full helmet
+#armor 19 -- full plate mail
+#weapon 8 -- broad sword
 #formationfighter 2
 #standard 1
 #castledef 2
@@ -20131,21 +20126,23 @@ The position of guidon is usually given to a blade or, in larger units, a Swordm
 #newmonster 6744
 #copystats 6740
 #spr1 "ForgottenRealms/purpledragonknight.tga"
-#spr2 "ForgottenRealms/purpledragonkinght2.tga"
+#spr2 "ForgottenRealms/purpledragonknight2.tga"
 #name "Purple Dragon Knight"
-#mountmnr 3515 -- War Horse - Brown
+#mountmnr 6761 -- black destrier with non-magical plate barding
 #unmountedspr1 "ForgottenRealms/purpledragondis.tga"
 #unmountedspr2 "ForgottenRealms/purpledragondis2.tga"
-#descr "The Purple Dragons are the regular army of Cormyr. This professional force consists entirely of volunteers who are willing to swear an oath of loyalty and service directly to the Crown of Cormyr. There are no conscripted Purple Dragons; conscription is used only for local militia. Those who wish to join the Purple Dragons must meet tough standards of physical fitness to simply be accepted, and these standards are enforced through rigorous training."
+#descr "The Purple Dragon knights were the officers and warrior elite of the Cormyrian army. Being awarded knighthood while serving in the Purple Dragons was a great honor.
+
+Purple Dragon knights were fine soldiers by any measure, but more important than their physical ability was their skilful leadership. Their knightly training cultivated endurance, determination, and the ability to inspire their fellow troops."
 #gcost 10015
 #hp 15
 #prot 0
 #size 3
-#str 11
+#str 12
 #att 13
-#def 11
+#def 13
 #prec 10
-#mr 11
+#mr 12
 #mor 15
 #armor 19 -- full plate mail
 #armor 21 -- Full Helm
@@ -20155,6 +20152,7 @@ The position of guidon is usually given to a blade or, in larger units, a Swordm
 #standard 1
 #startage 25
 #maxage 50
+#skilledrider 2
 #end
 
 -- 3745 Commander: Royal Scout 
@@ -20272,7 +20270,7 @@ The nations of Aglarond and Cormyr were especially famous for their hippogriff-m
 #mor 15
 #str 14
 #att 12
-#def 7
+#def 10
 #prec 10
 #ap 15
 #mapmove 24
@@ -20281,6 +20279,7 @@ The nations of Aglarond and Cormyr were especially famous for their hippogriff-m
 #flying
 #wastesurvival
 #voidsanity 1 -- Magical beast
+#armor 251 -- leather barding
 #end
 
 -- 6749 Commander: Purple Dragon Lancelord
@@ -20372,10 +20371,10 @@ Battlepriests bring divine magic to the field of battle. They are a deadly adver
 #prot 0
 #size 3
 #str 12
-#att 12
-#def 12
+#att 13
+#def 13
 #prec 10
-#mr 13
+#mr 14
 #mor 15
 #armor 9 -- Full Plate
 #armor 21 -- Full Helm
@@ -20397,26 +20396,23 @@ Battlepriests bring divine magic to the field of battle. They are a deadly adver
 -- 6752 Flying Troop: Talon 
 #newmonster 6752
 #copystats 6740
-#spr1 "ForgottenRealms/talon24.tga"
-#spr2 "ForgottenRealms/talon242.tga"
+#spr1 "ForgottenRealms/talon.tga"
+#spr2 "ForgottenRealms/talon2.tga"
 #mountmnr 6748 -- Hippogriff
 #unmountedspr1 "ForgottenRealms/purpledragondis.tga"
 #unmountedspr2 "ForgottenRealms/purpledragondis2.tga"
 #name "Talon"
-#descr "The aerial forces of Cormyr made wide use of the hippogriffs native to the forests and highland meadows of Cormyr.
-
-While Hippogriffs look impressive, they are not as powerful as their half-lion Griffon relatives."
+#descr "The aerial forces of Cormyr made wide use of the hippogriffs native to the forests and highland meadows of Cormyr. Although less intelligent and easier to train than Griffons, Hippogriffs are still highly prized mounts. In Cormyr they would be reserved for elite troops such as the Purple Dragon Knights."
 #gcost 10015
 #hp 15
 #prot 0
 #size 3
 #str 12
-#enc 4
-#att 12
-#def 11
+#att 13
+#def 13
 #prec 10
 #mr 12
-#mor 12
+#mor 15
 #armor 19 -- full plate mail
 #armor 21 -- Full Helm
 #armor 3 -- Kite Shield
@@ -20428,6 +20424,7 @@ While Hippogriffs look impressive, they are not as powerful as their half-lion G
 #mapmove 12
 #startage 30
 #maxage 50
+#skilledrider 3
 #end
 
 -- 6753 Flying Commander: Ornrion - recruited in the capital as well as Thunderpeaks and the source of the Immerflow
@@ -20439,20 +20436,19 @@ While Hippogriffs look impressive, they are not as powerful as their half-lion G
 #unmountedspr1 "ForgottenRealms/azoundis.tga"
 #unmountedspr2 "ForgottenRealms/azoundis2.tga"
 #name "Ornrion"
-#descr "The aerial forces of Cormyr made wide use of the hippogriffs native to the forests and highland meadows of Cormyr.
+#descr "An Ornrion was a senior commanding officer of the Purple Dragons, typically tasked with leading a major company. It was the highest rank that could be attained without joining the true nobility, although as a Purple Dragon Knight an Ornrion would already be considered equivalent to a lesser noble of Cormyr.
 
-While Hippogriffs look impressive, they are not as powerful as their half-lion Griffon relatives."
+The aerial forces of Cormyr made wide use of the hippogriffs native to the forests and highland meadows of Cormyr. Although less intelligent and easier to train than Griffons, Hippogriffs were still highly prized mounts. In Cormyr they would be reserved for elite troops such as the Purple Dragon Knights."
 #gcost 10020
 #hp 24
 #prot 0
 #size 3
-#str 12
-#enc 4
-#att 12
-#def 12
+#str 13
+#att 14
+#def 14
 #prec 14
-#mr 12
-#mor 15
+#mr 14
+#mor 16
 #weapon 1907 --enchanted lance
 #weapon 75 --enchanted sword
 #armor 215 --enchanted full plate (of ulm)
@@ -20464,6 +20460,7 @@ While Hippogriffs look impressive, they are not as powerful as their half-lion G
 #mapmove 12
 #startage 30
 #maxage 60
+#skilledrider 4
 #end
 
 -- 6754 -- Field Wizard 
@@ -20582,11 +20579,11 @@ Surviving countless assassination attempts, King Azoun was never unarmed, he oft
 #prec 12
 #mr 14
 #mor 18
-#armor 38 -- Blacksteel Plate
-#armor 118 -- Half Helm
-#armor 3 -- Kite Shield
-#weapon 4 -- Lance
-#weapon 75 -- Enchanted Sword
+#weapon 1907 --enchanted lance
+#weapon 75 --enchanted sword
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
 #unsurr 4
 #superiorleader
 #noundeadleader
@@ -20747,11 +20744,11 @@ Bannerlords are excellent at raising provincial defenses and fortifications."
 #size 3
 #str 13
 #enc 0
-#att 12
-#def 12
+#att 14
+#def 14
 #prec 12
-#mr 13
-#mor 15
+#mr 14
+#mor 16
 #weapon 1907 --enchanted lance
 #weapon 75 --enchanted sword
 #armor 215 --enchanted full plate (of ulm)
@@ -20767,6 +20764,21 @@ Bannerlords are excellent at raising provincial defenses and fortifications."
 #maxage 70
 #incprovdef 1
 #mason
+#skilledrider 3
+#end
+
+#selectmonster 3519 -- ulm black destrier
+-- remove mention of ulm from desc
+#descr "Destriers are heavy war horses of exceptional breeding and training. They are almost exclusively used by knights. Destriers are very expensive and they are always equipped with the best available armor. Destriers are trained to fight with their hooves while their rider swings his weapon. They are bred to be strong and heavy and are not as fast as regular war horses or riding horses."
+#end
+
+#newmonster 6761
+#copystats 3519 -- black destrier
+#copyspr 3519
+#name "Black Destrier"
+#descr "Destriers are heavy war horses of exceptional breeding and training. They are almost exclusively used by knights. Destriers are very expensive and they are always equipped with the best available armor. Destriers are trained to fight with their hooves while their rider swings his weapon. They are bred to be strong and heavy and are not as fast as regular war horses or riding horses."
+#cleararmor
+#armor 254 --plate barding
 #end
 
 -- POSSIBLE FUTURE CORMYRIAN HERO ADDITIONS
@@ -65467,12 +65479,10 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #com 6737 	-- Orcish King
 #com 6811	-- Bugbear Champion
 #com 6801 	-- Cleric of Gruumsh	
-#mon 6676	-- Orc Marauders
-#mon 6773 	-- Goblin Wolfrider
-#claim
-#dominion 1
 #com 7411	-- Dragonkin Captain
 #com 7412	-- Dragonkin Sorcerer
+#mon 6676	-- Orc Marauders
+#mon 6773 	-- Goblin Wolfrider
 #mon 7410 	-- Dragonkin Savage
 #end
 
@@ -65537,7 +65547,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #name "Dancing Dell and Greenglade"
 #level 1
 #rarity 5
-#path 6
+#path 7
 #gems 6 1
 #gems 7 1
 #com 7415 -- Moon Elf Enchantress
@@ -65803,8 +65813,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end
 
 #newsite 1746
-#name "Breasal Marsh"
-#path 6
+#name "Braesel Marsh"
+#path 4
 #level 1
 #rarity 5
 #gems 2 1
@@ -67843,7 +67853,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end 
 
 #newsite 1930
-#name "Hills of Sythrilia"
+#name "Sythrilian Hills"
 #path 7
 #level 0
 #rarity 5
@@ -69818,8 +69828,6 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #com 7395 -- Red Wizard Academe
 #com 7691 -- Arnaden Lion Tamer
 #com 7685 -- Chondathan Lionar -- com
-#claim
-#dominion 1
 #end
 
 #newsite 2988
@@ -70820,7 +70828,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #gems 3 1 -- 1 earth gem
 #mon 6743 -- Guidon (standard bearer)
 #mon 6744 -- Purple Dragon Knight
-#com 6749 -- Purple Dragon Lancelord
+--#com 6749 -- Purple Dragon Lancelord
 --#com 6750 -- Commander: Battlemaster 
 #end
 
@@ -72436,8 +72444,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #name "Teziir - City of Greed"
 #level 1
 #rarity 5
-#path 9
-#look 8
+#path 3
 #gems 3 1
 #gold 25
 #mon 7686 -- Vaedric Axeman 
@@ -73681,8 +73688,8 @@ Though Azoun would never learn it before his death at the Devil Dragon's hands, 
 #addrecunit 6744 	-- Purple Dragon Knight
 
 #addreccom 6745 	-- Royal Scout 
-#addreccom 6746		-- Lionar
-#addreccom 6749 	-- Purple Dragon Lancelord
+--#addreccom 6746		-- Lionar
+--#addreccom 6749 	-- Purple Dragon Lancelord
 #addreccom 6751 	-- Cormyrian Battlepriest
 #addreccom 6760 	-- Cormyrian Bannerlord
 #addreccom 6754		-- Field Wizard

@@ -7,21 +7,41 @@
  * Summon Monster & Summon Nature's Ally
    * About 100 monsters (many adjusted/templated, some new)
 
-### Troops equipment changes
+### Troops changes
 
+#### General equipment changes
  * Copy over equipment balance changes from Sloop's Comfy Balance Mod
  * Many knights upgraded to advanced gear
    * Tethyrian Knight, Tethyrian Noble (plate armor, kite shield, mace->morningstar)
    * Djawal Cataphract, Murabir General (enchanted scimitar)
  * Holy Knight renamed Triadic Knight and reworked with superior stats and equipment
- * Paladin-type commanders buffed with quality magic gear across the board
-   * Paladin of the Golden Lion, Trueblade of Torm, Watchwraden of Helm (loses crossbow)
+ * Many commanders get high quality magic weapon and armour
+   * Paladin-types: Paladin of the Golden Lion, Trueblade of Torm, Watchwarden of Helm (loses crossbow)
  * (Holy) Destrier ridden by various sacred knights buffed with better stats and magic plate barding
+
+#### Dwarves mini-rework
  * Dwarven Battlerager's Great Boar mount given Leather Barding
  * Standardise dwarven/adamantine weapons to all be "Adamantine X" with consistent stats
    * +2 dmg, +1 att, magic compared to mundane version. Adamantine weapons are not ferrous.
  * Dwarven Hammer, Dwarven Shieldsman, Dwarven Battlerager, Dwarven Thane get an Adamantine weapon
  * Nerf Battlerager str to 12 (14+berserk excessive with their better weapon)
+
+#### Cormyr mini-rework
+ * Commanders get magic weapons and armour 
+   * Cormyrian bannerlord, Ornrion, battlepriest
+ * Remove Purple Dragon Lancelord and Lionar (they already have tons of commanders) 
+ * Slightly improve Purple Dragon Knight stats (str 11->12, def 11->13, mr 11->12) and adjust description
+ * Slightly improve Ornrion/Bannerlord/Battlepriest stats
+ * Talon + Ornrion
+   * Improve descriptions
+   * Basic rider encumbrance to 3 (was 4 for some reason)
+   * Rider upgrade to heavy cavalry gear (lance/broadsword/platemail/full helmet/kite shield)
+     * superior magic version for ornrion
+   * Mount gets a leather barding (9/9 prot with SCBM buffs)
+   * Hippogriff def improved to 10 (from 7)
+   * Add Skilled Rider 3 (4 for ornrion)
+   * Match stats to Purple Dragon Knight
+
   
 
 ### Other changes

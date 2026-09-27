@@ -68,8 +68,8 @@ Though Azoun would never learn it before his death at the Devil Dragon's hands, 
 #addrecunit 6744 	-- Purple Dragon Knight
 
 #addreccom 6745 	-- Royal Scout 
-#addreccom 6746		-- Lionar
-#addreccom 6749 	-- Purple Dragon Lancelord
+--#addreccom 6746		-- Lionar
+--#addreccom 6749 	-- Purple Dragon Lancelord
 #addreccom 6751 	-- Cormyrian Battlepriest
 #addreccom 6760 	-- Cormyrian Bannerlord
 #addreccom 6754		-- Field Wizard
