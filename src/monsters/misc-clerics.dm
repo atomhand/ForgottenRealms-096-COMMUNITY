@@ -50,8 +50,8 @@ Tymoran clergy would often go throughout the lands of Faerûn and urge people to
 
 -- 7007 -- Watchwarden of Helm
 #newmonster 7007
-#copyspr 1648
-#copystats 1648
+#copyspr 65 -- warden of avalon
+#copystats 1648 -- lord warden
 #name "Watchwarden of Helm"
 #gcost 10020
 #descr "Helm is the ultimate guardian, the ever-vigilant sentry who allows nothing to compromise his duty. Often seen as cold and emotionless, he appears as a giant man in full plate armor. In truth, Helm is simply a stern disciplinarian dedicated to his appointed task. He is fond of children and more tolerant of their minor infractions than of anyone else’s. Many believe that Helm would give his own life to guard something entrusted to him. He is silent on the matter. 
@@ -76,6 +76,11 @@ The church of Helm was once seen as a bastion of stability and safety in the oft
 #maxage 70
 #researchbonus -5
 #unsurr 6
+#clearweapons
+#weapon 1906 --enchanted great sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
 #end
 
 -- 7008 -- Trueblade of Torm - Paladin
@@ -83,7 +88,7 @@ The church of Helm was once seen as a bastion of stability and safety in the oft
 #copyspr 1641
 #copystats 1641
 #name "Trueblade of Torm"
-#mountmnr 7320 -- sacred stealthy white horse
+#mountmnr 3582 -- sacred destrier (brown)
 #unmountedspr1 "ForgottenRealms/knightinsilverdis.tga"
 #unmountedspr2 "ForgottenRealms/knightinsilverdis2.tga"
 #gcost 10030
@@ -111,6 +116,13 @@ Their capital and holy-city of Tantras was situated in The Vast, just west of Im
 #maxage 70
 #researchbonus -5
 #unsurr 2
+#clearweapons
+#weapon 1900 --holy lance
+#weapon 75 --enchanted sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
 #end
 
 

@@ -665,10 +665,10 @@ The Night Masks came to prominence in Westgate until 1353 DR, when they cemented
 #ap 12
 #startage 22
 #weapon 4 -- Lance
-#weapon 16 -- Flail
-#armor 18 -- full chain 
+#weapon 347 -- Flail (1-handed)
+#armor 19 -- full plate 
 #armor 21 -- full helm
-#armor 2 -- shield
+#armor 3 -- kite shield
 #skilledrider 2
 #end
 
@@ -697,10 +697,10 @@ Feudal societies remain the norm in Tethyrian culture, though few Tethyrian's su
 #ap 12
 #startage 22
 #weapon 4 -- Lance
-#weapon 12 -- Mace
-#armor 18 -- full chain 
+#weapon 15 -- Morningstar
+#armor 19 -- full plate 
 #armor 21 -- full helm
-#armor 2 -- shield
+#armor 3 -- kite shield
 #skilledrider 2
 #goodleader
 #unsurr 4
@@ -1489,4 +1489,41 @@ Miklos sees the Ravens as his answer to the Harpers, with whom Sembia has regula
 #patrolbonus 4
 #goodleader
 #montag 13003
+#end
+
+#selectmonster 3582 -- holy destrier (brown)
+#mr 12
+#hp 31
+#def 12
+#cleararmor
+#armor 280 --enchanted plate barding (of ulm)
+#end
+
+#selectmonster 3583 -- holy destrier (white)
+#mr 12
+#hp 31
+#def 12
+#cleararmor
+#armor 280 --enchanted plate barding (of ulm)
+#end
+
+#selectmonster 2359 --Holy Knight
+#name "Triadic Knight"
+#descr "Triadic knights are holy warriors who worship the Triad of Tyr, Torm, and Ilmater. Triadic knights trace their history back to the Fiend Wars of Impiltur (729—732 DR), when the three churches joined forces to proclaim the Triad Crusade, but they no longer comprise a single order of paladins. Triadic knights believe that to truly embody the virtues of a paladin, one must draw on the strengths of all three gods. Through courage and perseverance, Triadic knights seek justice for all."
+#hp 17
+#mr 14
+#mor 18
+#str 13
+#att 13
+#def 13
+#skilledrider 3
+#diseaseres 100
+#woundfend 1
+#clearweapons
+#weapon 1900 --holy lance
+#weapon 75 --enchanted sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
 #end

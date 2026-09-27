@@ -426,13 +426,6 @@ As the young Alicia grew into a young woman, Keane would go on to follow her in 
 #fixforgebonus 1
 #end
 
-#newweapon 1900
-#copyweapon 4
-#name "Silver Lance"
-#magic
-#dt_holy
-#end
-
 -- 5086 -- Sisters of Synnoria
 #newmonster 5086
 #copystats 3311 -- Lady Knights

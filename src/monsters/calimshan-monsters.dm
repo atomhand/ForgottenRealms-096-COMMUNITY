@@ -102,7 +102,7 @@
 #def 12
 #ap 12
 #weapon 4 -- lance
-#weapon 746 -- scimitar
+#weapon 749 --enchanted scimitar
 #armor 9 -- plate cuirass
 #armor 118 -- half helm
 #armor 2 -- shield
@@ -259,7 +259,7 @@
 #clearweapons
 #cleararmor
 #weapon 4 -- lance
-#weapon 746 -- scimitar
+#weapon 749 --enchanted scimitar
 #armor 9 -- plate cuirass
 #armor 118 -- half helm
 #armor 2 -- shield

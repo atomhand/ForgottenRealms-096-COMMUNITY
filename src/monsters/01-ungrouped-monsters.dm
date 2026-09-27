@@ -856,15 +856,15 @@ They were highly skilled swimmers and possessed a tremorsense that let them sens
 They lived underground, at least until they erupted from the earth to attack. They were capable of chewing through solid rock as they hunted prey, and thus made many of the tunnels in the Underdark. Fortunately, they rarely returned to these tunnels, making them useful passages. Purple worms were naturally a menace to the denizens of the Underdark, and drow, duergar, and illithids all maintained magical wards against them."
 #transformation 1 
 #clearspec
-#gcost 10085
+--#gcost 10085
 #unsurr 2
 #hp 85
 #size 8
-#prot 16
+#prot 20
 #mr 13
 #mor 25
-#str 20
-#att 16
+#str 28
+#att 15
 #def 10
 #wastesurvival
 #blind
@@ -878,11 +878,9 @@ They lived underground, at least until they erupted from the earth to attack. Th
 #nomagicleader
 #mapmove 10
 #clearweapons
-#weapon 20 -- bite
-#weapon 629 -- strong poison sting
-#noleader
-#nomagicleader
-#noundeadleader
+#weapon 319 -- sharpest bite
+#weapon 609 -- grab and swallow
+#weapon 557 -- death poison AP stinger
 #siegebonus 50
 #gcost 0 -- Summoned unit only
 #end

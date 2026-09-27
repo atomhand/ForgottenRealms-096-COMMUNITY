@@ -49,7 +49,7 @@ Dwarven Miners are typically recruited by slavers, but even when recruited in fr
 #rpcost 20
 #armor 13 -- Chain Hauberk
 #armor 20 -- Iron Cap
-#weapon 14 -- Maul
+#weapon 1818 -- Dwarven Maul
 #size 3
 #hp 13
 #str 12
@@ -115,7 +115,7 @@ Dwarven Miners are typically recruited by slavers, but even when recruited in fr
 #gcost 10030
 #armor 14 -- Plate Hauberk
 #armor 20 -- Iron Cap
-#weapon 18 -- Battleaxe
+#weapon 1816 -- Adamantine Battleaxe
 #hp 35
 #size 3
 #str 15
@@ -234,7 +234,7 @@ Deep defenders serve as the main line of defense along the perimeter. They work 
 #name "Dwarven Shieldsman"
 #descr "Armed with a dwarven tower shield and a stabbing blade, these heavy footmen are trained to stand in the front line and soak the heavy blows of their enemies, giving other elements of the dwarven army a chance to maneuver."
 #gcost 16
-#weapon 6 -- Short Sword
+#weapon 1905 -- adamantine short sword
 #armor 405 -- Dwarven Full Helm
 #armor 402 -- Dwarven Tower Shield
 #armor 400 -- Dwarven Chainmail
@@ -550,6 +550,11 @@ But it was only after many adventures with his companions, from Frozenfar to Lus
 #stealthy 40
 #end
 
+#selectmonster 2136 --Great Boar
+#mr 7
+#armor 251 --leather barding
+#end
+
 -- 7231 -- Dwarven Battlerager (Mounted on a boar)
 #newmonster 7231
 #copystats 1778 -- "Cu Chulainn" Hero
@@ -567,7 +572,7 @@ Despite this simple attitude, battleragers were a key element of dwarven warfare
 Although considered brave by their kin, most battleragers were outcasts, rarely engaging in conversation with other dwarves. Children were kept away from battleragers, owing to their aggressive nature and short temper."
 #gcost 10025
 #clearweapons
-#weapon 17 -- Axe
+#weapon 1820 -- adamantine axe
 #cleararmor
 #armor 400 -- Dwarven Platemail
 #armor 403 -- Dwarven Kite Shield
@@ -591,7 +596,7 @@ Although considered brave by their kin, most battleragers were outcasts, rarely 
 #mountainsurvival
 -- battlerager original stats
 #hp 16
-#str 14
+#str 12
 #att 12 
 #def 11 -- "almost suicidal"
 #mor 15 -- "almost suicidal"

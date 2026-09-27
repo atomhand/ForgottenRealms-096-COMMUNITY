@@ -4080,11 +4080,1957 @@
 
 
 ------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/items\00-scbm-armor.dm
+------------------------------------------------------------------------------------------------------------------
+
+----- ARMOR EDITS ------ (SCBM 1.13)
+
+
+#selectarmor 1 -- Buckler
+#def 3
+#end
+
+#selectarmor 5 -- Leather Cuirass
+#prot 6
+#end
+
+#selectarmor 7 -- Scale Mail Cuirass
+#rcost 7
+#prot 11
+#end
+
+#selectarmor 9 -- Plate Cuirass
+#rcost 13
+#end
+
+#selectarmor 14 -- Plate Hauberk
+#enc 3
+#end
+
+#selectarmor 16 -- Full Ring Mail
+#rcost 8
+#def -1
+#end
+
+#selectarmor 19 -- Full Plate Mail
+#rcost 23
+#enc 4
+#end
+
+#selectarmor 21 -- Full Helmet
+#rcost 4
+#prot 23
+#end
+
+#selectarmor 22 -- Coral Cuirass
+#prot 11
+#end
+
+#selectarmor 23 -- Coral Hauberk
+#prot 13
+#end
+
+#selectarmor 26 -- Ice Cuirass
+#rcost 14
+#end
+
+#selectarmor 30 -- Rusty Plate Hauberk
+#enc 3
+#end
+
+#selectarmor 52 -- Ice Studded Armor
+#rcost 7
+#prot 11
+#end
+
+#selectarmor 53 -- Meteorite Armor
+#enc 3
+#end
+
+#selectarmor 84 -- Amber Hauberk
+#enc 2
+#end
+
+#selectarmor 85 -- Amber Shield
+#rcost 6
+#end
+
+#selectarmor 100 -- Bronze Cuirass
+#rcost 12
+#end
+
+#selectarmor 101 -- Bronze Hauberk
+#enc 4
+#end
+
+#selectarmor 105 -- Hide Shield
+#def 4
+#prot 12
+#end
+
+#selectarmor 111 -- Spider Armor
+#rcost 23
+#def -2
+#enc 3
+#end
+
+#selectarmor 112 -- Great Hide Shield
+#prot 12
+#end
+
+#selectarmor 114 -- Turtle Shell Hauberk
+#prot 12
+#rcost 6
+#end
+
+#selectarmor 117 -- Lorica Squamata
+#enc 1
+#end
+
+#selectarmor 118 -- Half Helmet
+#prot 19
+#end
+
+#selectarmor 119 -- Reinforced Leather Cap
+#prot 11
+#end
+
+#selectarmor 123 -- Hoplite Helmet
+#prot 23
+#rcost 4
+#end
+
+#selectarmor 124 -- Ice Helmet
+#rcost 5
+#end
+
+#selectarmor 129 -- Samurai Armor
+#def -3
+#enc 2
+#end
+
+#selectarmor 130 -- Heavy Samurai Armor
+#def -4
+#enc 3
+#end
+
+#selectarmor 131 -- Jingasa
+#prot 15
+#end
+
+#selectarmor 132 -- Kabuto
+#prot 18
+#end
+
+#selectarmor 133 -- Icicle Mail
+#prot 13
+#enc 1
+#end
+
+#selectarmor 134 -- Turtle Cap
+#prot 15
+#end
+
+#selectarmor 137 -- Turtle Shell Barding, Ichty
+#prot 10
+#rcost 6
+#end
+
+#selectarmor 141 -- Blind Helmet
+#rcost 4
+#prot 26
+#end
+
+#selectarmor 142 -- Bronze Scale Cuirass
+#rcost 6
+#prot 10
+#end
+
+#selectarmor 144 -- Elephant Barding
+#enc 1
+#end
+
+#selectarmor 147 -- Armor of the Dragon King
+#def -3
+#enc 2
+#end
+
+#selectarmor 150 -- Bone Helmet
+#prot 15
+#end
+
+#selectarmor 151 -- Sharkskin Armor
+#rcost 5
+#prot 10
+#end
+
+#selectarmor 152 -- Sharkskin Cap
+#prot 12
+#end
+
+#selectarmor 158 -- Robes
+#rcost 0
+#end
+
+#selectarmor 159 -- Imperial Robes
+#rcost 1
+#end
+
+#selectarmor 162 -- Crested Helmet
+#rcost 2
+#prot 15
+#end
+
+#selectarmor 167 -- Rotten Buckler
+#def 3
+#end
+
+#selectarmor 171 -- Full Scale Archer Armor
+#def -3
+#end
+
+#selectarmor 172 -- Mail Barding
+#def -1
+#enc 2
+#end
+
+#selectarmor 174 -- Helmet of Champions
+#prot 22
+#end
+
+#selectarmor 176 -- Dire Wolf Pelt
+#prot 9
+#end
+
+#selectarmor 184 -- Kithaironic Lion Pelt
+#protparts 7 7
+#end
+
+#selectarmor 188 -- Sharkskin Cuirass
+#rcost 3
+#prot 8
+#end
+
+#selectarmor 189 -- Pearl Shield
+#rcost 6
+#end
+
+#selectarmor 190 -- Coral Barding
+#prot 12
+#enc 3
+#end
+
+#selectarmor 206 -- Obsidian Cuirass
+#rcost 17
+#end
+
+#selectarmor 207 -- Wicker Shield
+#def 4
+#enc 0
+#end
+
+#selectarmor 209 -- Hoplon
+#rcost 4
+#def 4
+#end
+
+#selectarmor 210 -- Meteorite Cuirass
+#rcost 16
+#end
+
+#selectarmor 212 -- Magic Crown
+#rcost 1
+#end
+
+#selectarmor 213 -- Golden Helmet
+#rcost 5
+#end
+
+#selectarmor 214 -- Golden Armor
+#enc 3
+#end
+
+#selectarmor 217 -- Plate Cuirass of Ulm
+#rcost 17
+#end
+
+#selectarmor 218 -- Full Helmet  of Ulm
+#rcost 5
+#prot 25
+#end
+
+#selectarmor 219 -- Half Helmet of Ulm
+#prot 20
+#end
+
+#selectarmor 224 -- Shell Cap
+#prot 14
+#end
+
+#selectarmor 229 -- Metal Scale Armor
+#def -3
+#enc 2
+#end
+
+#selectarmor 230 -- Magic Robes
+#prot 4
+#end
+
+#selectarmor 231 -- Heavy Magic Robes
+#prot 6
+#end
+
+#selectarmor 237 -- Gleaming Hauberk
+#enc 3
+#end
+
+#selectarmor 238 -- Gleaming Hoplon
+#rcost 6
+#def 5
+#end
+
+#selectarmor 239 -- Gleaming Helmet
+#rcost 5
+#prot 25
+#end
+
+#selectarmor 241 -- Orichalcum Cuirass
+#rcost 18
+#end
+
+#selectarmor 242 -- Orichalcum Hoplon
+#rcost 7
+#def 5
+#end
+
+#selectarmor 243 -- Orichalcum Helmet
+#rcost 5
+#prot 25
+#end
+
+#selectarmor 245 -- Cyclope Cuirass
+#rcost 15
+#end
+
+#selectarmor 246 -- Cyclope Hauberk
+#enc 3
+#end
+
+#selectarmor 247 -- Cyclope Hoplon
+#rcost 6
+#def 5
+#end
+
+#selectarmor 248 -- Cyclope Helmet
+#rcost 5
+#end
+
+#selectarmor 250 -- Shield of Wisdom
+#prot 23
+#def 6
+#end
+
+#selectarmor 251 -- Leather Barding
+#protparts 9 9
+#protinspector 9
+#end
+
+#selectarmor 252 -- Light Scale Barding
+#name "Light Chain Barding"
+#protparts 18 12
+#protinspector 12
+#def -1
+#enc 0
+#end
+
+#selectarmor 253 -- Cataphract Barding
+#protparts 21 14
+#protinspector 14
+#enc 1
+#end
+
+#selectarmor 254 -- Plate Barding
+#enc 2
+#end
+
+#selectarmor 255 -- Silver Barding
+#enc 1
+#end
+
+#selectarmor 256 -- Rusty Scale Barding
+#protparts 16 10
+#protinspector 10
+#def -1
+#enc 0
+#end
+
+#selectarmor 257 -- Rusty Cataphract Barding
+#protparts 19 12
+#protinspector 12
+#enc 1
+#end
+
+#selectarmor 263 -- Bronze Barding
+#enc 2
+#end
+
+#selectarmor 264 -- Light Bronze Barding
+#protparts 0 10
+#protinspector 10
+#enc 0
+#end
+
+#selectarmor 270 -- Enchanted Leather Barding
+#protparts 16 12
+#protinspector 12
+#end
+
+#selectarmor 271 -- Boar Leather Barding
+#protparts 20 16
+#def -1
+#protinspector 16
+#end
+
+#selectarmor 272 -- Enchanted Plate Barding
+#enc 1
+#end
+
+#selectarmor 273 -- Blacksteel Barding
+#enc 2
+#end
+
+#selectarmor 274 -- Gossamer Barding
+#protparts 19 15
+#protinspector 15
+#end
+
+#selectarmor 275 -- Fay Steed Barding
+#enc 1
+#end
+
+#selectarmor 276 -- Lightweight Cataphract Barding
+#protparts 22 16
+#protinspector 16
+#enc 0
+#end
+
+#selectarmor 277 -- Golden Barding
+#enc 2
+#end
+
+#selectarmor 280 -- Plate Barding of Ulm
+#enc 2
+#end
+
+#selectarmor 284 -- Fay Helmet
+#prot 24
+#end
+
+#selectarmor 289 -- Lizard Barding
+#protparts 20 14
+#protinspector 14
+#enc 1
+#end
+
+#selectarmor 287 -- Cat Barding
+#protparts 19 13
+#protinspector 13
+#enc 0
+#end
+
+
+----- ARMOR EDITS END ------
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/items\00-scbm-weapons.dm
+------------------------------------------------------------------------------------------------------------------
+
+----- WEAPON EDITS ------ (SCBM 1.13)
+
+
+#selectweapon 1 -- Spear
+#att 1
+#end
+
+#selectweapon 2 -- Pike
+#att 1
+#end
+
+#selectweapon 5 -- Halberd
+#att 0
+#end
+
+#selectweapon 7 -- Quarterstaff
+#dmg 4
+#end
+
+#selectweapon 10 -- Falchion
+#rcost 3
+#end
+
+#selectweapon 12 -- Mace
+#dmg 8
+#end
+
+#selectweapon 13 -- Hammer
+#rcost 1
+#dmg 8
+#def 0
+#end
+
+#selectweapon 14 -- Maul
+#dmg 11
+#def 0
+#end
+
+#selectweapon 15 -- Morningstar
+#def -1
+#end
+
+#selectweapon 17 -- Axe
+#rcost 2
+#def 0
+#end
+
+#selectweapon 20 -- Bite, universal intrinsic
+#def 0
+#end
+
+#selectweapon 22 -- Sling
+#dmg 7
+#ammo 20
+#end
+
+#selectweapon 23 -- Short Bow
+#ammo 15
+#end
+
+#selectweapon 24 -- Long Bow
+#ammo 15
+#end
+
+#selectweapon 25 -- Crossbow
+#rcost 4
+#end
+
+#selectweapon 26 -- Arbalest
+#rcost 5
+#end
+
+#selectweapon 27 -- Boulder, 2h
+#ammo 3
+#end
+
+#selectweapon 28 -- Long Spear
+#att 1
+#end
+
+#selectweapon 31 -- Coral Spear
+#att 1
+#end
+
+#selectweapon 35 -- Snake Hair
+#len 1
+#end
+
+#selectweapon 36 -- Ice Lance, regular
+#att 2
+#end
+
+#selectweapon 40 -- Whip
+#att 0
+#end
+
+#selectweapon 44 -- Ice Mace
+#dmg 7
+#end
+
+#selectweapon 45 -- Coral Club
+#dmg 6
+#end
+
+#selectweapon 46 -- Coral Glaive
+#att 0
+#end
+
+#selectweapon 47 -- Lobster Claw
+#len 2
+#att -1
+#armorpiercing
+#norepel
+#end
+
+#selectweapon 49 -- Iron Prod
+#att 0
+#def 1
+#dmg 6
+#twohanded
+#end
+
+#selectweapon 58 -- Wail
+#bonus
+#end
+
+#selectweapon 65 -- Venomous Fangs, 35
+#def 0
+#end
+
+#selectweapon 66 -- Jotun Axe
+#def 0
+#end
+
+#selectweapon 69 -- Icicle Fist
+#dmg 3
+#end
+
+#selectweapon 89 -- Snake Staff, commander variant
+#dmg 7
+#end
+
+#selectweapon 92 -- Fist
+#dmg -1
+#end
+
+#selectweapon 94 -- Spear, centaur
+#name "Light Lance"
+#att 1
+#charge
+#end
+
+#selectweapon 100 -- Standard
+#dmg 3
+#def -1
+#end
+
+#selectweapon 105 -- Staff of Storms
+#dmg 5
+#end
+
+#selectweapon 115 -- Dwarven Hammer
+#dmg 9
+#def 0
+#end
+
+#selectweapon 124 -- Ice Rod
+#dmg 4
+#end
+
+#selectweapon 127 -- Venomous Bite, bas
+#def 0
+#end
+
+#selectweapon 130 -- Hammer of the Mountains
+#att 0
+#secondaryeffectalways 1335 -- Small Area Stun, flying immune for HotM
+#end
+
+#selectweapon 131 -- Frost Blast
+#bonus
+#end
+
+#selectweapon 145 -- Heavenly Horn
+#bonus
+#end
+
+#selectweapon 146 -- Venomous Claw, cock
+#bonus
+#end
+
+#selectweapon 151 -- Wand
+#dmg -1
+#att 0
+#len 1
+#end
+
+#selectweapon 153 -- Stick
+#len 2
+#end
+
+#selectweapon 165 -- Great Club
+#dmg 8
+#end
+
+#selectweapon 167 -- Poison Sling
+#att -3
+#ammo 15
+#end
+
+#selectweapon 172 -- Magic Sceptre
+#dmg 4
+#end
+
+#selectweapon 186 -- The Admiral's Sword
+#nratt 2
+#end
+
+#selectweapon 189 -- Enslavement
+#bonus
+#end
+
+#selectweapon 198 -- Flame Burst
+#bonus
+#end
+
+#selectweapon 199 -- Banefire Bow
+#dmg 8
+#att 1
+#ammo 15
+#range 40
+#secondaryeffectalways 1292 -- Banefire, bow/xbow
+#end
+
+#selectweapon 200 -- Bane Burst
+#bonus
+#end
+
+#selectweapon 202 -- Magic Sword
+#rcost 5
+#end
+
+#selectweapon 210 -- Fire Sling
+#dmg 7
+#end
+
+#selectweapon 221 -- Fire, 12dmg secondary effect
+#dmg 14
+#end
+
+#selectweapon 223 -- Venomous Bite, drac/barg
+#def 0
+#end
+
+#selectweapon 225 -- Basilisk Bite
+#def 0
+#end
+
+#selectweapon 231 -- Thunder Fist
+#dmg -1
+#end
+
+#selectweapon 234 -- Jotun Spear
+#att 1
+#end
+
+#selectweapon 235 -- Pincer
+#dmg 3
+#bonus
+#end
+
+#selectweapon 238 -- Magic Staff
+#dmg 5
+#end
+
+#selectweapon 239 -- Venomous Fangs, 15
+#def 0
+#end
+
+#selectweapon 240 -- Branch
+#dmg 2
+#bonus
+#end
+
+#selectweapon 243 -- Lightning
+#bonus
+#end
+
+#selectweapon 244 -- Dark Fire Sword
+#def 3
+#secondaryeffectalways 171 -- Small Area Fire
+#end
+
+#selectweapon 249 -- unused Venomous Claw 15, made magic
+#magic
+#end
+
+#selectweapon 252 -- Club
+#dmg 5
+#end
+
+#selectweapon 253 -- Hatchet
+#dmg 6
+#end
+
+#selectweapon 254 -- Plague Breath
+#uwok
+#bonus
+#end
+
+#selectweapon 260 -- Throwing Axe
+#att -3
+#end
+
+#selectweapon 264 -- Composite Bow
+#ammo 15
+#end
+
+#selectweapon 266 -- Great Bow
+#ammo 15
+#end
+
+#selectweapon 267 -- Pick Axe
+#att -1
+#def -1
+#len 2
+#end
+
+#selectweapon 269 -- Soul Leech
+#bonus
+#end
+
+#selectweapon 270 -- Consume Soul
+#bonus
+#end
+
+#selectweapon 276 -- Small Area Holyfire
+#dmg 10
+#end
+
+#selectweapon 280 -- Spectral Spear
+#att 1
+#end
+
+#selectweapon 281 -- Spectral Sword
+#att 1
+#end
+
+#selectweapon 283 -- Paralyze
+#bonus
+#end
+
+#selectweapon 287 -- Phantasmal Bow
+#ammo 15
+#uwok
+#end
+
+#selectweapon 288 -- Obsidian Club Sword 2h
+#dmg 8
+#end
+
+#selectweapon 294 -- Weakness
+#ammo 1005 -- 5 fatigue
+#uwok
+#bonus
+#secondaryeffectalways 1325 -- Sap Life, single target
+#end
+
+#selectweapon 300 -- Head Butt
+#att 0
+#bonus
+#end
+
+#selectweapon 308 -- Glaive
+#att 0
+#end
+
+#selectweapon 310 -- Infernal Scythe
+#def 0
+#end
+
+#selectweapon 312 -- Bane Dagger
+#def 1
+#secondaryeffect 1332 -- Deathly Wound
+#end
+
+#selectweapon 315 -- Machaka Spear
+#att 0
+#end
+
+#selectweapon 317 -- Rake
+#def 0
+#end
+
+#selectweapon 318 -- Snake Staff, SD
+#rcost 3
+#dmg 6
+#end
+
+#selectweapon 319 -- Sharpest Bite
+#def 0
+#end
+
+#selectweapon 320 -- Flaming Fist
+#dmg -1
+#end
+
+#selectweapon 322 -- Bite, lion sound
+#def 0
+#end
+
+#selectweapon 323 -- Venomous Bite, bog/swamp
+#def 0
+#end
+
+#selectweapon 325 -- Venomous Bite, sacred serpent
+#def 0
+#end
+
+#selectweapon 326 -- Iron Crutch
+#dmg 6
+#def 1
+#end
+
+#selectweapon 329 -- Slime
+#len 4
+#bonus
+#end
+
+#selectweapon 331 -- Gore
+#def 0
+#end
+
+#selectweapon 338 -- Sleipnir Hoof
+#magic
+#end
+
+#selectweapon 339 -- Cornucopia
+#att 1
+#def 3
+#len 3
+#end
+
+#selectweapon 343 -- Blade Hand
+#bonus
+#end
+
+#selectweapon 351 -- Pitchfork
+#att 0
+#def 0
+#end
+
+#selectweapon 353 -- Moose Kick
+#dmg 17
+#end
+
+#selectweapon 354 -- Antlers, Troll Moose Knight
+#dmg 17
+#end
+
+#selectweapon 357 -- Light Lance
+#att 1
+#end
+
+#selectweapon 360 -- Sticks and Stones
+#dmg -2
+#end
+
+#selectweapon 362 -- Chakram
+#rcost 3
+#ammo 4
+#end
+
+#selectweapon 363 -- Iron Cudgel
+#dmg 9
+#def 1
+#end
+
+#selectweapon 365 -- Flail of Misfortune
+#def -2
+#end
+
+#selectweapon 372 -- Poison Bow
+#ammo 15
+#end
+
+#selectweapon 373 -- Stone Spear
+#att 1
+#end
+
+#selectweapon 374 -- Flint Sword
+#len 2
+#end
+
+#selectweapon 375 -- Dogs
+#len 1
+#norepel
+#end
+
+#selectweapon 376 -- Yari
+#def 1
+#end
+
+#selectweapon 380 -- Naginata
+#att 0
+#end
+
+#selectweapon 386 -- Sceptre of Dark Regency
+#dmg 4
+#end
+
+#selectweapon 388 -- Pearl Spear
+#att 1
+#end
+
+#selectweapon 389 -- Pearl Trident, 1h
+#att 0
+#len 3
+#end
+
+#selectweapon 398 -- Venomous Fangs, mush
+#def 0
+#end
+
+#selectweapon 399 -- Gore, mush
+#def 0
+#end
+
+#selectweapon 400 -- Devour Soul
+#def 0
+#end
+
+#selectweapon 404 -- Beak
+#dmg 1
+#att 0
+#def 0
+#end
+
+#selectweapon 406 -- Fire Chakram
+#ammo 3
+#end
+
+#selectweapon 410 -- O'al Kan's Sceptre
+#dmg 4
+#att 1
+#end
+
+#selectweapon 417 -- Ice Fist
+#dmg 3
+#end
+
+#selectweapon 419 -- Lightning Strike
+#bonus
+#end
+
+#selectweapon 420 -- Koppo
+#bonus
+#end
+
+#selectweapon 422 -- Stellar Bolt
+#bonus
+#end
+
+#selectweapon 424 -- Boulder, 1h
+#ammo 6
+#end
+
+#selectweapon 427 -- Granite Glaive
+#dmg 8
+#end
+
+#selectweapon 428 -- Granite Sword
+#dmg 5
+#end
+
+#selectweapon 429 -- Stone Club
+#dmg 10
+#end
+
+#selectweapon 437 -- Long Spear, War Elephant
+#att 1
+#end
+
+#selectweapon 438 -- Plague Bow
+#att 10
+#ammo 15
+#end
+
+#selectweapon 439 -- Howling Bow
+#ammo 15
+#end
+
+#selectweapon 443 -- Dimensional Rod
+#dmg 4
+#end
+
+#selectweapon 445 -- Spear of the Dragon King
+#dmg 9
+#att 3
+#def 3
+#nratt 3
+#end
+
+#selectweapon 446 -- Sceptre
+#dmg 3
+#end
+
+#selectweapon 447 -- Crystal Fist
+#dmg 3
+#end
+
+#selectweapon 451 -- Obsidian Club Sword 1h
+#dmg 6
+#att 1
+#end
+
+#selectweapon 452 -- Harpoon
+#ammo 2
+#end
+
+#selectweapon 454 -- Ice Glaive
+#def 1
+#end
+
+#selectweapon 455 -- Bone Glaive
+#att 1
+#def 1
+#end
+
+#selectweapon 456 -- Gaze of Fear
+#uwok
+#end
+
+#selectweapon 461 -- Swallow
+#def -1
+#end
+
+#selectweapon 462 -- Venomous Bite, deadly
+#def 0
+#end
+
+#selectweapon 464 -- Basalt Spear
+#att 2
+#end
+
+#selectweapon 465 -- Basalt Club
+#dmg 10
+#att 0
+#def -1
+#end
+
+#selectweapon 466 -- Apotropaic Sword
+#att 2
+#def 2
+#end
+
+#selectweapon 467 -- Apotropaic Trident
+#att 1
+#def 1
+#end
+
+#selectweapon 469 -- Ancestor Sword
+#dmg 11
+#end
+
+#selectweapon 470 -- Spirit Club 1h
+#dmg 8
+#end
+
+#selectweapon 473 -- Golden Spear
+#att 2
+#end
+
+#selectweapon 475 -- Golden Lance
+#att 2
+#end
+
+#selectweapon 479 -- Unholy Axe
+#def 0
+#end
+
+#selectweapon 481 -- Touch of Madness
+#dmg -2
+#att -2
+#bonus
+#end
+
+#selectweapon 482 -- Spectral Club
+#dmg 5
+#end
+
+#selectweapon 483 -- Gay Bulge
+#att 5
+#end
+
+#selectweapon 484 -- Wail of Doom
+#bonus
+#end
+
+#selectweapon 485 -- Fomorian Bronze Spear
+#att 1
+#end
+
+#selectweapon 492 -- Rainbow
+#bonus
+#end
+
+#selectweapon 493 -- Sickle Staff
+#att 1
+#def 3
+#end
+
+#selectweapon 495 -- Poisonous Bite
+#def 0
+#end
+
+#selectweapon 496 -- Sacred Pitcher
+#len 2
+#nostr
+#bonus
+#end
+
+#selectweapon 501 -- Bamboo Rod
+#dmg 3
+#end
+
+#selectweapon 506 -- Plague Scythe
+#def 0
+#end
+
+#selectweapon 512 -- Fossilized Sword
+#dmg 5
+#end
+
+#selectweapon 513 -- Kopesh
+#dmg 6
+#flail
+#end
+
+#selectweapon 514 -- Vitriol Breath
+#bonus
+#end
+
+#selectweapon 516 -- Censer
+#dmg 3
+#end
+
+#selectweapon 519 -- Poison Tipped Spear
+#att 1
+#end
+
+#selectweapon 522 -- Golden Horns
+#dmg 1
+#end
+
+#selectweapon 524 -- Pillar of Laws
+#att -2
+#end
+
+#selectweapon 531 -- Mighty Yari
+#att 2
+#def 1
+#end
+
+#selectweapon 533 -- Dragon Fire
+#bonus
+#end
+
+#selectweapon 534 -- Dragon Frost
+#bonus
+#end
+
+#selectweapon 535 -- Dragon Gas
+#uwok
+#bonus
+#end
+
+#selectweapon 537 -- Flick Barbs
+#att -3
+#bonus
+#end
+
+#selectweapon 538 -- Head Butt, unarmed
+#dmg -1
+#att -3
+#def -3
+#end
+
+#selectweapon 540 -- The Staff from the Sun
+#dmg 6
+#end
+
+#selectweapon 542 -- Acid Touch
+#dmg 12
+#bonus
+#end
+
+#selectweapon 547 -- Buff
+#bonus
+#end
+
+#selectweapon 550 -- Weakness Tentacle
+#bonus
+#end
+
+#selectweapon 553 -- Rock
+#dmg 2
+#end
+
+#selectweapon 557 -- Stinger, SMH/DL
+#att 1
+#end
+
+#selectweapon 560 -- Venomous Bite, brass
+#def 0
+#end
+
+#selectweapon 562 -- Stone Fist
+#dmg 3
+#end
+
+#selectweapon 563 -- Spirit Club 2h
+#dmg 10
+#def 1
+#end
+
+#selectweapon 567 -- Drake Fire
+#bonus
+#end
+
+#selectweapon 568 -- Drake Frost
+#bonus
+#end
+
+#selectweapon 569 -- Drake Gas
+#uwok
+#bonus
+#end
+
+#selectweapon 572 -- Spectral Long Spear
+#att 1
+#end
+
+#selectweapon 573 -- Poisonous Gore
+#def 0
+#end
+
+#selectweapon 574 -- Shatterfist
+#dmg 4
+#bonus
+#end
+
+#selectweapon 576 -- Weak Bite
+#dmg 1
+#nostr
+#end
+
+#selectweapon 577 -- Coral Lance
+#att 1
+#end
+
+#selectweapon 579 -- Skull Club
+#dmg 7
+#end
+
+#selectweapon 580 -- Coral Long Spear
+#att 1
+#end
+
+#selectweapon 581 -- Bident
+#dmg 10
+#att 2
+#def 2
+#end
+
+#selectweapon 582 -- Snake Skirt
+#len 2
+#norepel
+#magic
+#end
+
+#selectweapon 584 -- Lightning, Ba'al
+#bonus
+#end
+
+#selectweapon 585 -- Serpent Club
+#dmg 9
+#def 1
+#secondaryeffect 52 -- Death Poison
+#end
+
+#selectweapon 586 -- Reanimating Bite
+#def 0
+#end
+
+#selectweapon 587 -- Torc
+#dmg 2
+#end
+
+#selectweapon 589 -- Tail Slap
+#dmg -1
+#att -1
+#sound 10 -- blunt
+#end
+
+#selectweapon 590 -- Short Pike
+#att 1
+#end
+
+#selectweapon 593 -- Spiked Club
+#dmg 6
+#end
+
+#selectweapon 594 -- Poison Bow
+#ammo 15
+#end
+
+#selectweapon 598 -- Shard Glaive
+#def 1
+#end
+
+#selectweapon 600 -- Crab Claw
+#bonus
+#end
+
+#selectweapon 601 -- Cave Fire Bottle
+#dmg 12
+#ammo 2
+#bonus
+#end
+
+#selectweapon 602 -- Fossilized Hatchet
+#dmg 5
+#end
+
+#selectweapon 603 -- Corrosive Bite
+#def 0
+#end
+
+#selectweapon 605 -- Throw Rocks
+#dmg 1
+#end
+
+#selectweapon 606 -- Frost Bow
+#dmg 8
+#att 1
+#ammo 15
+#range 40
+#end
+
+#selectweapon 608 -- Sword of Oaths
+#att 2
+#def 3
+#end
+
+#selectweapon 610 -- Sacred Circlet
+#dmg 2
+#end
+
+#selectweapon 611 -- Ice Spear
+#att 2
+#end
+
+#selectweapon 613 -- Enchanted Bow
+#copyweapon 484 -- Wail of Doom
+#name "Enchanted Bow"
+#dt_normal
+#nouw
+#halfstr
+#dmg 12
+#att 25
+#range 50
+#ammo 20
+#pierce
+#armorpiercing
+#flyspr 109 -- Arrow
+#sound 14 -- Bow
+#explspr -1
+#end
+
+#selectweapon 617 -- Sun Mace
+#dmg 9
+#end
+
+#selectweapon 618 -- Sun Spear
+#att 2
+#end
+
+#selectweapon 619 -- Obsidian Dart
+#ammo 5
+#end
+
+#selectweapon 620 -- Poison Dart
+#name "Poisoned Obsidian Dart"
+#dmg 1
+#ammo 5
+#magic
+#secondaryeffect 624 -- Paralyzing Poison
+#end
+
+#selectweapon 621 -- Obsidian Shard Blade
+#def 2
+#end
+
+#selectweapon 623 -- Poisoned Obsidian Blade
+#def 1
+#end
+
+#selectweapon 625 -- Obsidian Blade
+#def 1
+#end
+
+#selectweapon 630 -- Ghost Rending Bite
+#def 0
+#end
+
+#selectweapon 631 -- Serpent Tail
+#att 1
+#def 0
+#len 2
+#end
+
+#selectweapon 632 -- Serpent Mane
+#len 2
+#norepel
+#magic
+#end
+
+#selectweapon 639 -- Spetum
+#att 1
+#def 1
+#end
+
+#selectweapon 643 -- Bronze Spear
+#att 1
+#end
+
+#selectweapon 644 -- Bronze Long Spear
+#att 1
+#end
+
+#selectweapon 645 -- Bronze Sword
+#rcost 2
+#end
+
+#selectweapon 646 -- Bronze Hatchet
+#dmg 6
+#end
+
+#selectweapon 647 -- Spectral Bow
+#dmg 7
+#ammo 15
+#end
+
+#selectweapon 648 -- Enchanted Hammer
+#dmg 9
+#def 0
+#end
+
+#selectweapon 649 -- Crab Claw, pretenders
+#magic
+#end
+
+#selectweapon 650 -- Torch of Unquenchable Flame
+#dmg 6
+#end
+
+#selectweapon 651 -- Bronze Lance
+#att 1
+#end
+
+#selectweapon 653 -- Anemone Mace
+#dmg 1
+#def 2
+#len 2
+#end
+
+#selectweapon 654 -- Anemone Poison
+#dmg 20
+#end
+
+#selectweapon 663 -- Rudder
+#magic
+#end
+
+#selectweapon 664 -- Sistrum
+#magic
+#end
+
+#selectweapon 666 -- Torch
+#dmg 5
+#end
+
+#selectweapon 667 -- Extinguished Torch
+#dmg 5
+#end
+
+#selectweapon 668 -- Metal Glaive
+#att 0
+#end
+
+#selectweapon 669 -- Metal Yari
+#def 1
+#end
+
+#selectweapon 673 -- Bronze Glaive
+#att 0
+#end
+
+#selectweapon 675 -- Bronze Axe
+#def 0
+#end
+
+#selectweapon 677 -- Wing Buff
+#dmg -1
+#def 0
+#bonus
+#end
+
+#selectweapon 679 -- Short Trident
+#att 0
+#end
+
+#selectweapon 680 -- Short Bronze Trident
+#att 0
+#end
+
+#selectweapon 696 -- Petrifying Gas
+#uwok
+#end
+
+#selectweapon 700 -- Sword of the Five Elements
+#dmg 10
+#end
+
+#selectweapon 702 -- Gore, MC
+#def 0
+#end
+
+#selectweapon 708 -- Stone Lance, random one
+#att 1
+#end
+
+#selectweapon 709 -- Water Breath
+#uwok
+#bonus
+#end
+
+#selectweapon 710 -- Flaming Breath
+#bonus
+#end
+
+#selectweapon 712 -- Apotropaic Spear
+#att 2
+#end
+
+#selectweapon 713 -- Wheel of the Turning Year
+#dmg 8
+#att -1
+#len 2
+#end
+
+#selectweapon 718 -- Apotropaic Mace
+#dmg 8
+#end
+
+#selectweapon 720 -- Ritual Baton
+#copyweapon 12 -- Mace
+#name "Ritual Baton"
+#dmg 6
+#att 1
+#def 1
+#magic
+#secondaryeffectalways 1264 -- Trap Soul, AoE1
+#end
+
+#selectweapon 722 -- God-Slayer Spear
+#def 1
+#end
+
+#selectweapon 723 -- Bronze Discus
+#ammo 5
+#end
+
+#selectweapon 726 -- Brass Horns
+#dmg 1
+#def 0
+#end
+
+#selectweapon 727 -- Fiery Breath
+#dmg 4
+#bonus
+#end
+
+#selectweapon 729 -- Banefire Torch
+#dmg 6
+#end
+
+#selectweapon 731 -- Key to Every Entrance
+#dmg 6
+#att 2
+#armorpiercing
+#end
+
+#selectweapon 733 -- Cyclope Spear
+#att 2
+#end
+
+#selectweapon 737 -- Spark Bite
+#bonus
+#end
+
+#selectweapon 741 -- Poisoned Bronze Spear
+#name "Poisoned Obsidian Spear"
+#rcost 4
+#dmg 4
+#att 2
+#magic
+#end
+
+#selectweapon 742 -- Mantis Claw
+#bonus
+#end
+
+#selectweapon 745 -- Baculus
+#dmg 6
+#end
+
+#selectweapon 747 -- Golden Fist
+#dmg 4
+#end
+
+#selectweapon 752 -- Frost Breath
+#bonus
+#end
+
+#selectweapon 754 -- Razor Wings
+#bonus
+#end
+
+#selectweapon 755 -- Burning Beak
+#dmg 1
+#fireifhit 14
+#end
+
+#selectweapon 756 -- Burning Claw
+#name "Burning Talons"
+#dmg 1
+#end
+
+#selectweapon 757 -- Bronze Scimitar
+#rcost 4
+#end
+
+#selectweapon 758 -- Silver Horns
+#dmg 1
+#end
+
+#selectweapon 760 -- Scourge of Power
+#dmg 5
+#end
+
+#selectweapon 771 -- Phantasmal Weapon, UW spear
+#len 3
+#end
+
+#selectweapon 777 -- Small Hammer
+#dmg 5
+#att 0
+#def 0
+#end
+
+#selectweapon 778 -- Tail Flipper
+#name "Tail Slap"
+#dmg -1
+#att -1
+#sound 10 -- blunt
+#end
+
+#selectweapon 779 -- Web Spite, God Spider
+#magic
+#ammo 1001 -- 1 fatigue
+#end
+
+#selectweapon 785 -- Sword Hand
+#att 1
+#end
+
+#selectweapon 797 -- Man Catcher
+#def 1
+#blunt
+#end
+
+#selectweapon 812 -- Enchanted Pick Axe
+#att -1
+#def -1
+#len 2
+#end
+
+#selectweapon 825 -- Beak, magic
+#dmg 1
+#att 0
+#def 0
+#end
+
+#selectweapon 827 -- Venomous Fangs, magic, no def penalty
+#def 0
+#end
+
+#selectweapon 828 -- Head Butt, magic
+#att 0
+#end
+
+#selectweapon 830 -- Gore, magic, no def penalty
+#def 0
+#end
+
+#selectweapon 833 -- Flick Barbs, magic and extra shots
+#att -3
+#bonus
+#end
+
+#selectweapon 843 -- Sceptre of Corruption
+#dmg 5
+#secondaryeffect 1332 -- Deathly Wound
+#end
+
+#selectweapon 846 -- Phanstasmal Tail Flipper
+#name "Phanstasmal Tail Slap"
+#att -1
+#sound 10 -- blunt
+#end
+
+#selectweapon 851 -- Magic Axe
+#def 0
+#end
+
+#selectweapon 859 -- Infected Bite
+#def 0
+#end
+
+#selectweapon 861 -- Ice Hammer
+#dmg 7
+#def 0
+#end
+
+#selectweapon 862 -- Spectral Great Sword
+#name "Spectral No-Dachi"
+#dmg 8
+#att 2
+#end
+
+#selectweapon 870 -- Entanglement, Carrion Bow
+#secondaryeffectalways 1331 -- Carrion Poison
+#end
+
+#selectweapon 877 -- Bronze Hayfork
+#att 0
+#def 0
+#end
+
+#selectweapon 879 -- Morningstar of Waking Dreams
+#dmg 9
+#end
+
+#selectweapon 880 -- Dreams
+#copyweapon 790 -- Pixie Fatigue
+#name "Dreams"
+#dmg 30
+#end
+
+#selectweapon 883 -- Fay Bow
+#ammo 15
+#end
+
+
+-------- WEAPONS END --------
+
+
+------------------------------------------------------------------------------------------------------------------
 --COMPILED FROM src/items\balance.dm
 ------------------------------------------------------------------------------------------------------------------
 
 #selectitem 393 -- Sanguine Dowsing Rod
 #nodemon
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/items\summons-attacks.dm
+------------------------------------------------------------------------------------------------------------------
+
+#newweapon 2014
+#copyweapon 459 --thrown sutra
+#name "Light Ray"
+#ammo 1005 -- fatigue cost
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/items\troop-armor.dm
+------------------------------------------------------------------------------------------------------------------
+#selectarmor 215 -- full plate of ulm
+#name "Enchanted Full Plate"
+#end
+
+#selectarmor 218 -- full helmet of Ulm
+#name "Enchanted Full Helmet"
+#end
+
+#selectarmor 221 -- Kite shield of ulm
+#name "Enchanted Kite Shield"
+#end
+
+#selectarmor 280 -- plate barding of ulm
+#name "Enchanted Plate Barding"
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/items\troop-weapons.dm
+------------------------------------------------------------------------------------------------------------------
+
+#selectweapon 75 --enchanted sword
+#rcost 5
+#end
+
+#newweapon 1900
+#copyweapon 4
+#name "Holy Lance"
+#magic
+#dt_holy
+#end
+
+#newweapon 1903
+#name "Blackfire Flames"
+#fire
+#armorpiercing
+#nostr
+#dmg 11
+#end
+
+#newweapon 1902
+#name "Blackfire Corrosion"
+#armorpiercing
+#acid
+#nostr
+#dmg 11
+#secondaryeffectalways 1903
+#end
+
+#newweapon 1901
+#copyweapon 4
+#name "Lance of Burning Blackfire"
+#magic
+#att 2
+#dmg 7
+#secondaryeffectalways 1902
+#end
+
+#newweapon 1905
+#name "Adamantine Short Sword"
+#dmg 7
+#att 2
+#def 1
+#len 1
+#slash
+#pierce
+#magic
+#end
+
+#newweapon 1906
+#copyweapon 11 -- Great Sword
+#name "Enchanted Great Sword"
+#dmg 11
+#att 2
+#magic
+#end
+
+#newweapon 1907
+#copyweapon 4 -- Lance
+#name "Enchanted Lance"
+#dmg 7
+#att 2
+#magic
 #end
 
 
@@ -4232,52 +6178,53 @@
 
 -- 1815 -- Adamantine Battlehammer
 #newweapon 1815
-#copyweapon 13 -- hammer
-#name "Dwarven Battlehammer"
-#dmg 9
+#name "Adamantine Hammer"
+#dmg 10
 #len 1
 #att 1
-#def 2
-#rcost 8
+#rcost 4
 #nratt 1
+#magic
+#pierce
+#blunt
 #end
 
 -- 1816 -- Adamantine Battleaxe
 #newweapon 1816
-#copyweapon 18 -- battleaxe
 #name "Adamantine Battleaxe"
-#dmg 11
-#len 2
-#att 3
-#def 0
 #rcost 12
+#dmg 11
 #nratt 1
+#att 2
+#len 2
 #magic
 #slash
+#twohanded
 #end
 
 -- 1817 -- Adamantine Mace
 #newweapon 1817
-#copyweapon 12 -- mace
-#name "Dwarven Mace"
-#dmg 9
+#name "Adamantine Mace"
+#dmg 10
 #len 1
-#att 2
-#def 2
-#rcost 7
+#att 1
+#rcost 4
 #nratt 1
+#blunt
+#magic
 #end
 
 -- 1818 -- Adamantine Warhammer
 #newweapon 1818
-#copyweapon 13
-#name "Dwarven Warhammer"
+#name "Adamantine Maul"
+#rcost 4
 #dmg 13
-#att 0
-#def -1
-#rcost 12
-#nratt 1
+#att 1
 #len 2
+#nratt 1
+#twohanded
+#blunt
+#magic
 #end
 
 -- 1819 -- Aegis-Fang
@@ -4292,10 +6239,14 @@
 
 -- 1820 -- Adamantine Hand-axe
 #newweapon 1820
-#copyweapon 245
-#name "Dwarven Hand-Axe"
+#name "Adamantine Axe"
 #rcost 5
-#dmg 2
+#dmg 10
+#len 1
+#nratt 1
+#att 1
+#magic
+#slash
 #end
 
 -- 1821 -- Ego Whip
@@ -6914,15 +8865,15 @@ They were highly skilled swimmers and possessed a tremorsense that let them sens
 They lived underground, at least until they erupted from the earth to attack. They were capable of chewing through solid rock as they hunted prey, and thus made many of the tunnels in the Underdark. Fortunately, they rarely returned to these tunnels, making them useful passages. Purple worms were naturally a menace to the denizens of the Underdark, and drow, duergar, and illithids all maintained magical wards against them."
 #transformation 1 
 #clearspec
-#gcost 10085
+--#gcost 10085
 #unsurr 2
 #hp 85
 #size 8
-#prot 16
+#prot 20
 #mr 13
 #mor 25
-#str 20
-#att 16
+#str 28
+#att 15
 #def 10
 #wastesurvival
 #blind
@@ -6936,11 +8887,9 @@ They lived underground, at least until they erupted from the earth to attack. Th
 #nomagicleader
 #mapmove 10
 #clearweapons
-#weapon 20 -- bite
-#weapon 629 -- strong poison sting
-#noleader
-#nomagicleader
-#noundeadleader
+#weapon 319 -- sharpest bite
+#weapon 609 -- grab and swallow
+#weapon 557 -- death poison AP stinger
 #siegebonus 50
 #gcost 0 -- Summoned unit only
 #end
@@ -15864,7 +17813,7 @@ Wastriliths were master summoners, preferring to call in minions over fighting d
 #def 12
 #ap 12
 #weapon 4 -- lance
-#weapon 746 -- scimitar
+#weapon 749 --enchanted scimitar
 #armor 9 -- plate cuirass
 #armor 118 -- half helm
 #armor 2 -- shield
@@ -16021,7 +17970,7 @@ Wastriliths were master summoners, preferring to call in minions over fighting d
 #clearweapons
 #cleararmor
 #weapon 4 -- lance
-#weapon 746 -- scimitar
+#weapon 749 --enchanted scimitar
 #armor 9 -- plate cuirass
 #armor 118 -- half helm
 #armor 2 -- shield
@@ -17858,12 +19807,6 @@ In southernmost Faerûn, the Tashalan were a distinct human culture of loosely a
 --COMPILED FROM src/monsters\celestials.dm
 ------------------------------------------------------------------------------------------------------------------
 
-#newweapon 2014
-#copyweapon 459 --thrown sutra
-#name "Light Ray"
-#ammo 1005 -- fatigue cost
-#end
-
 -- 7073 -- Lantern Archon cr 1 xp 0-24
 #newmonster 7073
 #copystats 527
@@ -18174,8 +20117,6 @@ The position of guidon is usually given to a blade or, in larger units, a Swordm
 #prec 11
 #mr 10
 #mor 16
-#clearweapons
-#cleararmor
 #armor 9 -- Plate cuirass
 #armor 20 -- iron cap
 #weapon 5 -- Halberd
@@ -18189,7 +20130,8 @@ The position of guidon is usually given to a blade or, in larger units, a Swordm
 -- 3744 Troop: Purple Dragon Knight 
 #newmonster 6744
 #copystats 6740
-#copyspr 1107 -- Equite of EA Ermor
+#spr1 "ForgottenRealms/purpledragonknight.tga"
+#spr2 "ForgottenRealms/purpledragonkinght2.tga"
 #name "Purple Dragon Knight"
 #mountmnr 3515 -- War Horse - Brown
 #unmountedspr1 "ForgottenRealms/purpledragondis.tga"
@@ -18205,13 +20147,11 @@ The position of guidon is usually given to a blade or, in larger units, a Swordm
 #prec 10
 #mr 11
 #mor 15
-#clearweapons
-#cleararmor
-#armor 12 -- Scale Mail Hauberk
+#armor 19 -- full plate mail
 #armor 21 -- Full Helm
 #armor 3 -- Kite Shield
 #weapon 4 -- Lance
-#weapon 347 -- Flail (one-handed)
+#weapon 8 -- broad sword
 #standard 1
 #startage 25
 #maxage 50
@@ -18460,8 +20400,8 @@ Battlepriests bring divine magic to the field of battle. They are a deadly adver
 #spr1 "ForgottenRealms/talon24.tga"
 #spr2 "ForgottenRealms/talon242.tga"
 #mountmnr 6748 -- Hippogriff
-#unmountedspr1 "ForgottenRealms/talondis.tga"
-#unmountedspr2 "ForgottenRealms/talondis2.tga"
+#unmountedspr1 "ForgottenRealms/purpledragondis.tga"
+#unmountedspr2 "ForgottenRealms/purpledragondis2.tga"
 #name "Talon"
 #descr "The aerial forces of Cormyr made wide use of the hippogriffs native to the forests and highland meadows of Cormyr.
 
@@ -18477,12 +20417,11 @@ While Hippogriffs look impressive, they are not as powerful as their half-lion G
 #prec 10
 #mr 12
 #mor 12
-#armor 20 -- Iron Cap
-#armor 12 -- Scale Mail Hauberk
-#armor 2 -- Shield
-#weapon 8 -- broadsword
-#weapon 596 -- light lance
-#weapon 1830 -- elite longbow
+#armor 19 -- full plate mail
+#armor 21 -- Full Helm
+#armor 3 -- Kite Shield
+#weapon 4 -- Lance
+#weapon 8 -- broad sword
 #unsurr 4
 #patrolbonus 5
 #ap 12
@@ -18497,8 +20436,8 @@ While Hippogriffs look impressive, they are not as powerful as their half-lion G
 #spr1 "ForgottenRealms/ornrion.tga"
 #spr2 "ForgottenRealms/ornrion2.tga"
 #mountmnr 6748 -- Hippogriff
-#unmountedspr1 "ForgottenRealms/purpledragondis.tga"
-#unmountedspr2 "ForgottenRealms/purpledragondis2.tga"
+#unmountedspr1 "ForgottenRealms/azoundis.tga"
+#unmountedspr2 "ForgottenRealms/azoundis2.tga"
 #name "Ornrion"
 #descr "The aerial forces of Cormyr made wide use of the hippogriffs native to the forests and highland meadows of Cormyr.
 
@@ -18514,12 +20453,11 @@ While Hippogriffs look impressive, they are not as powerful as their half-lion G
 #prec 14
 #mr 12
 #mor 15
-#armor 20 -- Iron Cap
-#armor 12 -- Scale Mail Hauberk
-#armor 2 -- Shield
-#weapon 8 -- broadsword
-#weapon 596 -- light lance
-#weapon 1830 -- elite longbow
+#weapon 1907 --enchanted lance
+#weapon 75 --enchanted sword
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
 #goodleader
 #patrolbonus 10
 #ap 12
@@ -18814,11 +20752,11 @@ Bannerlords are excellent at raising provincial defenses and fortifications."
 #prec 12
 #mr 13
 #mor 15
-#armor 38 -- Blacksteel Plate
-#armor 118 -- half helm
-#armor 3 -- Kite Shield
-#weapon 4 -- Lance
-#weapon 75 -- Enchanted Sword
+#weapon 1907 --enchanted lance
+#weapon 75 --enchanted sword
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
 #unsurr 4
 #expertleader
 #patrolbonus 5
@@ -19608,13 +21546,6 @@ As the young Alicia grew into a young woman, Keane would go on to follow her in 
 #magicskill 4 4
 #researchbonus 4
 #fixforgebonus 1
-#end
-
-#newweapon 1900
-#copyweapon 4
-#name "Silver Lance"
-#magic
-#dt_holy
 #end
 
 -- 5086 -- Sisters of Synnoria
@@ -26474,7 +28405,7 @@ Dwarven Miners are typically recruited by slavers, but even when recruited in fr
 #rpcost 20
 #armor 13 -- Chain Hauberk
 #armor 20 -- Iron Cap
-#weapon 14 -- Maul
+#weapon 1818 -- Dwarven Maul
 #size 3
 #hp 13
 #str 12
@@ -26540,7 +28471,7 @@ Dwarven Miners are typically recruited by slavers, but even when recruited in fr
 #gcost 10030
 #armor 14 -- Plate Hauberk
 #armor 20 -- Iron Cap
-#weapon 18 -- Battleaxe
+#weapon 1816 -- Adamantine Battleaxe
 #hp 35
 #size 3
 #str 15
@@ -26659,7 +28590,7 @@ Deep defenders serve as the main line of defense along the perimeter. They work 
 #name "Dwarven Shieldsman"
 #descr "Armed with a dwarven tower shield and a stabbing blade, these heavy footmen are trained to stand in the front line and soak the heavy blows of their enemies, giving other elements of the dwarven army a chance to maneuver."
 #gcost 16
-#weapon 6 -- Short Sword
+#weapon 1905 -- adamantine short sword
 #armor 405 -- Dwarven Full Helm
 #armor 402 -- Dwarven Tower Shield
 #armor 400 -- Dwarven Chainmail
@@ -26975,6 +28906,11 @@ But it was only after many adventures with his companions, from Frozenfar to Lus
 #stealthy 40
 #end
 
+#selectmonster 2136 --Great Boar
+#mr 7
+#armor 251 --leather barding
+#end
+
 -- 7231 -- Dwarven Battlerager (Mounted on a boar)
 #newmonster 7231
 #copystats 1778 -- "Cu Chulainn" Hero
@@ -26992,7 +28928,7 @@ Despite this simple attitude, battleragers were a key element of dwarven warfare
 Although considered brave by their kin, most battleragers were outcasts, rarely engaging in conversation with other dwarves. Children were kept away from battleragers, owing to their aggressive nature and short temper."
 #gcost 10025
 #clearweapons
-#weapon 17 -- Axe
+#weapon 1820 -- adamantine axe
 #cleararmor
 #armor 400 -- Dwarven Platemail
 #armor 403 -- Dwarven Kite Shield
@@ -27016,7 +28952,7 @@ Although considered brave by their kin, most battleragers were outcasts, rarely 
 #mountainsurvival
 -- battlerager original stats
 #hp 16
-#str 14
+#str 12
 #att 12 
 #def 11 -- "almost suicidal"
 #mor 15 -- "almost suicidal"
@@ -29295,7 +31231,7 @@ Wild elves had lost the technical and cultural advances enjoyed by other elven c
 #clearweapons
 #weapon 7 -- Quarterstaff
 #weapon 1832 -- Elite Javelin
-#armor 414 -- Elven Leather Hauberk
+#armor 415 -- Elven Leather Hauberk
 #armor 119 -- Reinforced Leather Cap
 #hp 12
 #str 11
@@ -33489,8 +35425,11 @@ A behir usually bites and grabs its prey first, then either swallows or constric
 #naga
 #weapon 799 -- Dragon Lightning
 #weapon 20 -- bite
+#weapon 609 -- grab and swallow
+#aciddigest 10
+#weapon 33 -- claws
 #mountainsurvival
-#shockres 25
+#shockres 30
 #voidsanity 1 --magical beast
 #end
 
@@ -34309,10 +36248,10 @@ The Night Masks came to prominence in Westgate until 1353 DR, when they cemented
 #ap 12
 #startage 22
 #weapon 4 -- Lance
-#weapon 16 -- Flail
-#armor 18 -- full chain 
+#weapon 347 -- Flail (1-handed)
+#armor 19 -- full plate 
 #armor 21 -- full helm
-#armor 2 -- shield
+#armor 3 -- kite shield
 #skilledrider 2
 #end
 
@@ -34341,10 +36280,10 @@ Feudal societies remain the norm in Tethyrian culture, though few Tethyrian's su
 #ap 12
 #startage 22
 #weapon 4 -- Lance
-#weapon 12 -- Mace
-#armor 18 -- full chain 
+#weapon 15 -- Morningstar
+#armor 19 -- full plate 
 #armor 21 -- full helm
-#armor 2 -- shield
+#armor 3 -- kite shield
 #skilledrider 2
 #goodleader
 #unsurr 4
@@ -35133,6 +37072,43 @@ Miklos sees the Ravens as his answer to the Harpers, with whom Sembia has regula
 #patrolbonus 4
 #goodleader
 #montag 13003
+#end
+
+#selectmonster 3582 -- holy destrier (brown)
+#mr 12
+#hp 31
+#def 12
+#cleararmor
+#armor 280 --enchanted plate barding (of ulm)
+#end
+
+#selectmonster 3583 -- holy destrier (white)
+#mr 12
+#hp 31
+#def 12
+#cleararmor
+#armor 280 --enchanted plate barding (of ulm)
+#end
+
+#selectmonster 2359 --Holy Knight
+#name "Triadic Knight"
+#descr "Triadic knights are holy warriors who worship the Triad of Tyr, Torm, and Ilmater. Triadic knights trace their history back to the Fiend Wars of Impiltur (729—732 DR), when the three churches joined forces to proclaim the Triad Crusade, but they no longer comprise a single order of paladins. Triadic knights believe that to truly embody the virtues of a paladin, one must draw on the strengths of all three gods. Through courage and perseverance, Triadic knights seek justice for all."
+#hp 17
+#mr 14
+#mor 18
+#str 13
+#att 13
+#def 13
+#skilledrider 3
+#diseaseres 100
+#woundfend 1
+#clearweapons
+#weapon 1900 --holy lance
+#weapon 75 --enchanted sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
 #end
 
 
@@ -36115,8 +38091,8 @@ Tymoran clergy would often go throughout the lands of Faerûn and urge people to
 
 -- 7007 -- Watchwarden of Helm
 #newmonster 7007
-#copyspr 1648
-#copystats 1648
+#copyspr 65 -- warden of avalon
+#copystats 1648 -- lord warden
 #name "Watchwarden of Helm"
 #gcost 10020
 #descr "Helm is the ultimate guardian, the ever-vigilant sentry who allows nothing to compromise his duty. Often seen as cold and emotionless, he appears as a giant man in full plate armor. In truth, Helm is simply a stern disciplinarian dedicated to his appointed task. He is fond of children and more tolerant of their minor infractions than of anyone else’s. Many believe that Helm would give his own life to guard something entrusted to him. He is silent on the matter. 
@@ -36141,6 +38117,11 @@ The church of Helm was once seen as a bastion of stability and safety in the oft
 #maxage 70
 #researchbonus -5
 #unsurr 6
+#clearweapons
+#weapon 1906 --enchanted great sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
 #end
 
 -- 7008 -- Trueblade of Torm - Paladin
@@ -36148,7 +38129,7 @@ The church of Helm was once seen as a bastion of stability and safety in the oft
 #copyspr 1641
 #copystats 1641
 #name "Trueblade of Torm"
-#mountmnr 7320 -- sacred stealthy white horse
+#mountmnr 3582 -- sacred destrier (brown)
 #unmountedspr1 "ForgottenRealms/knightinsilverdis.tga"
 #unmountedspr2 "ForgottenRealms/knightinsilverdis2.tga"
 #gcost 10030
@@ -36176,6 +38157,13 @@ Their capital and holy-city of Tantras was situated in The Vast, just west of Im
 #maxage 70
 #researchbonus -5
 #unsurr 2
+#clearweapons
+#weapon 1900 --holy lance
+#weapon 75 --enchanted sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
 #end
 
 
@@ -51480,7 +53468,22 @@ The sea was the crucial trade way for the many people's of Faerûn. The coastal 
 #selectmonster 440
 #name "Paladin of the Golden Lion"
 #descr "The Order of the Golden Lion was established shortly after Torm's rebirth at the end of the Time of Troubles in the Year of Shadows, 1358 DR. They were to be holy warriors of the faith, and in particular undertake the Penance of Duty, including fervently devoting themselves to the goals of the Triad, which included the gods Tyr, Torm, and Ilmater. This had been set by Torm to repay the persecution of other religions by his temple in Tantras during this time and in the years preceding, to atone for their failure to guard against strife, and to relieve the destruction wrought to magic."
-#hp 22
+#hp 25
+#mr 15
+#mor 20
+#str 14
+#att 14
+#def 14
+#skilledrider 4
+#diseaseres 100
+#woundfend 1
+#clearweapons
+#weapon 1900 --holy lance
+#weapon 75 --enchanted sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
 #end
 
 -- x 957 -- Lord of the Desert Sun
@@ -51848,32 +53851,6 @@ This commander is IMMOBILE. They will summon 3d6 constables at the start of each
 #name "Griffon"
 #descr "Griffons were semi-intelligent beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
 #armor 252 -- Light Scale Barding
-#end
-
-#newweapon 1903
-#name "Blackfire Flames"
-#fire
-#armorpiercing
-#nostr
-#dmg 11
-#end
-
-#newweapon 1902
-#name "Blackfire Corrosion"
-#armorpiercing
-#acid
-#nostr
-#dmg 11
-#secondaryeffectalways 1903
-#end
-
-#newweapon 1901
-#copyweapon 4
-#name "Lance of Burning Blackfire"
-#magic
-#att 2
-#dmg 7
-#secondaryeffectalways 1902
 #end
 
 -- 6608 -- Griffon Riders
@@ -63490,10 +65467,12 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #com 6737 	-- Orcish King
 #com 6811	-- Bugbear Champion
 #com 6801 	-- Cleric of Gruumsh	
-#com 7411	-- Dragonkin Captain
-#com 7412	-- Dragonkin Sorcerer
 #mon 6676	-- Orc Marauders
 #mon 6773 	-- Goblin Wolfrider
+#claim
+#dominion 1
+#com 7411	-- Dragonkin Captain
+#com 7412	-- Dragonkin Sorcerer
 #mon 7410 	-- Dragonkin Savage
 #end
 
@@ -63558,7 +65537,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #name "Dancing Dell and Greenglade"
 #level 1
 #rarity 5
-#path 7
+#path 6
 #gems 6 1
 #gems 7 1
 #com 7415 -- Moon Elf Enchantress
@@ -63824,8 +65803,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end
 
 #newsite 1746
-#name "Braesel Marsh"
-#path 4
+#name "Breasal Marsh"
+#path 6
 #level 1
 #rarity 5
 #gems 2 1
@@ -65864,7 +67843,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end 
 
 #newsite 1930
-#name "Sythrilian Hills"
+#name "Hills of Sythrilia"
 #path 7
 #level 0
 #rarity 5
@@ -67839,6 +69818,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #com 7395 -- Red Wizard Academe
 #com 7691 -- Arnaden Lion Tamer
 #com 7685 -- Chondathan Lionar -- com
+#claim
+#dominion 1
 #end
 
 #newsite 2988
@@ -70455,7 +72436,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #name "Teziir - City of Greed"
 #level 1
 #rarity 5
-#path 3
+#path 9
+#look 8
 #gems 3 1
 #gold 25
 #mon 7686 -- Vaedric Axeman 

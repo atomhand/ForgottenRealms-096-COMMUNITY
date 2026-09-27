@@ -1302,7 +1302,7 @@ Wild elves had lost the technical and cultural advances enjoyed by other elven c
 #clearweapons
 #weapon 7 -- Quarterstaff
 #weapon 1832 -- Elite Javelin
-#armor 414 -- Elven Leather Hauberk
+#armor 415 -- Elven Leather Hauberk
 #armor 119 -- Reinforced Leather Cap
 #hp 12
 #str 11

@@ -170,32 +170,6 @@ This commander is IMMOBILE. They will summon 3d6 constables at the start of each
 #armor 252 -- Light Scale Barding
 #end
 
-#newweapon 1903
-#name "Blackfire Flames"
-#fire
-#armorpiercing
-#nostr
-#dmg 11
-#end
-
-#newweapon 1902
-#name "Blackfire Corrosion"
-#armorpiercing
-#acid
-#nostr
-#dmg 11
-#secondaryeffectalways 1903
-#end
-
-#newweapon 1901
-#copyweapon 4
-#name "Lance of Burning Blackfire"
-#magic
-#att 2
-#dmg 7
-#secondaryeffectalways 1902
-#end
-
 -- 6608 -- Griffon Riders
 #newmonster 6608
 #copystats 6600

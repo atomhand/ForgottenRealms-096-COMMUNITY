@@ -371,7 +371,22 @@ The sea was the crucial trade way for the many people's of Faerûn. The coastal 
 #selectmonster 440
 #name "Paladin of the Golden Lion"
 #descr "The Order of the Golden Lion was established shortly after Torm's rebirth at the end of the Time of Troubles in the Year of Shadows, 1358 DR. They were to be holy warriors of the faith, and in particular undertake the Penance of Duty, including fervently devoting themselves to the goals of the Triad, which included the gods Tyr, Torm, and Ilmater. This had been set by Torm to repay the persecution of other religions by his temple in Tantras during this time and in the years preceding, to atone for their failure to guard against strife, and to relieve the destruction wrought to magic."
-#hp 22
+#hp 25
+#mr 15
+#mor 20
+#str 14
+#att 14
+#def 14
+#skilledrider 4
+#diseaseres 100
+#woundfend 1
+#clearweapons
+#weapon 1900 --holy lance
+#weapon 75 --enchanted sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
 #end
 
 -- x 957 -- Lord of the Desert Sun

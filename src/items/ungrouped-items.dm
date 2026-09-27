@@ -139,52 +139,53 @@
 
 -- 1815 -- Adamantine Battlehammer
 #newweapon 1815
-#copyweapon 13 -- hammer
-#name "Dwarven Battlehammer"
-#dmg 9
+#name "Adamantine Hammer"
+#dmg 10
 #len 1
 #att 1
-#def 2
-#rcost 8
+#rcost 4
 #nratt 1
+#magic
+#pierce
+#blunt
 #end
 
 -- 1816 -- Adamantine Battleaxe
 #newweapon 1816
-#copyweapon 18 -- battleaxe
 #name "Adamantine Battleaxe"
-#dmg 11
-#len 2
-#att 3
-#def 0
 #rcost 12
+#dmg 11
 #nratt 1
+#att 2
+#len 2
 #magic
 #slash
+#twohanded
 #end
 
 -- 1817 -- Adamantine Mace
 #newweapon 1817
-#copyweapon 12 -- mace
-#name "Dwarven Mace"
-#dmg 9
+#name "Adamantine Mace"
+#dmg 10
 #len 1
-#att 2
-#def 2
-#rcost 7
+#att 1
+#rcost 4
 #nratt 1
+#blunt
+#magic
 #end
 
 -- 1818 -- Adamantine Warhammer
 #newweapon 1818
-#copyweapon 13
-#name "Dwarven Warhammer"
+#name "Adamantine Maul"
+#rcost 4
 #dmg 13
-#att 0
-#def -1
-#rcost 12
-#nratt 1
+#att 1
 #len 2
+#nratt 1
+#twohanded
+#blunt
+#magic
 #end
 
 -- 1819 -- Aegis-Fang
@@ -199,10 +200,14 @@
 
 -- 1820 -- Adamantine Hand-axe
 #newweapon 1820
-#copyweapon 245
-#name "Dwarven Hand-Axe"
+#name "Adamantine Axe"
 #rcost 5
-#dmg 2
+#dmg 10
+#len 1
+#nratt 1
+#att 1
+#magic
+#slash
 #end
 
 -- 1821 -- Ego Whip

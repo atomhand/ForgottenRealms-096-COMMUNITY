@@ -592,8 +592,11 @@ A behir usually bites and grabs its prey first, then either swallows or constric
 #naga
 #weapon 799 -- Dragon Lightning
 #weapon 20 -- bite
+#weapon 609 -- grab and swallow
+#aciddigest 10
+#weapon 33 -- claws
 #mountainsurvival
-#shockres 25
+#shockres 30
 #voidsanity 1 --magical beast
 #end
 

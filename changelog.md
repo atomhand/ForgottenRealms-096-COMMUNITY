@@ -7,6 +7,23 @@
  * Summon Monster & Summon Nature's Ally
    * About 100 monsters (many adjusted/templated, some new)
 
+### Troops equipment changes
+
+ * Copy over equipment balance changes from Sloop's Comfy Balance Mod
+ * Many knights upgraded to advanced gear
+   * Tethyrian Knight, Tethyrian Noble (plate armor, kite shield, mace->morningstar)
+   * Djawal Cataphract, Murabir General (enchanted scimitar)
+ * Holy Knight renamed Triadic Knight and reworked with superior stats and equipment
+ * Paladin-type commanders buffed with quality magic gear across the board
+   * Paladin of the Golden Lion, Trueblade of Torm, Watchwraden of Helm (loses crossbow)
+ * (Holy) Destrier ridden by various sacred knights buffed with better stats and magic plate barding
+ * Dwarven Battlerager's Great Boar mount given Leather Barding
+ * Standardise dwarven/adamantine weapons to all be "Adamantine X" with consistent stats
+   * +2 dmg, +1 att, magic compared to mundane version. Adamantine weapons are not ferrous.
+ * Dwarven Hammer, Dwarven Shieldsman, Dwarven Battlerager, Dwarven Thane get an Adamantine weapon
+ * Nerf Battlerager str to 12 (14+berserk excessive with their better weapon)
+  
+
 ### Other changes
  * Initiate Ceramorphosis and Free a Mindflayer summons a random Illithid directly from the montag instead of doing silly stuff with firstshapes
      * This way the summoned Illithids are the same unit as the ones you recruit, have the same path randoms and maintenance, and there will be no unexpected strange paths when you transform them (e.g. Elder Brain or Alhoon transformation)
@@ -20,12 +37,14 @@
      * Add base magic paths to the Elder Brain, so it's not useless if you acquire one in a way other than transforming another unit
  * Wolf bite attack replaced with Bite and Trip
  * Disable Bind Incubus (non-updated vanilla summon)
+ * Buff Behir and Purple Worm
 
 ### Fixes
  * Morkoths set to size 4 (from 8)
  * Sebekian Crocodile shouldn't have humanoid slots
  * Spirit Naga is now usable (think its RL being 45 was a typo)
  * Wavecaptain of Valkur def 114 -> 14
+ * Wild Elf Warrior equipment: Should have Elven Leather Hauberk, not two helmets
  * Missing unit abilities due to incorrect commands and typos
    * **Missing Path randoms:** Priestess of Lolth, Elder Councillor, Anhurite Infiltrator, Demoncyst Warlock,  Malenti Artificer
    * Holy path for Long-dreaming Savant (doesn't do anything since it's a shapechange, long-dreaming path shifts need to be reimplemented as path boosts/penalties)
