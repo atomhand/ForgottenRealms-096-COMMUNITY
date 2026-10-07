@@ -267,7 +267,7 @@ The nations of Aglarond and Cormyr were especially famous for their hippogriff-m
 #prot 5
 #mr 10
 #mor 15
-#str 14
+#str 15
 #att 12
 #def 10
 #prec 10
@@ -277,8 +277,13 @@ The nations of Aglarond and Cormyr were especially famous for their hippogriff-m
 #animal
 #flying
 #wastesurvival
+#unsurr 2
 #voidsanity 1 -- Magical beast
 #armor 251 -- leather barding
+#clearweapons
+#weapon 408 -- talons
+#weapon 408 -- talons
+#weapon 404 -- beak
 #end
 
 -- 6749 Commander: Purple Dragon Lancelord
@@ -412,12 +417,12 @@ Battlepriests bring divine magic to the field of battle. They are a deadly adver
 #prec 10
 #mr 12
 #mor 15
+#unsurr 2
 #armor 19 -- full plate mail
 #armor 21 -- Full Helm
 #armor 3 -- Kite Shield
 #weapon 4 -- Lance
 #weapon 8 -- broad sword
-#unsurr 4
 #patrolbonus 5
 #ap 12
 #mapmove 12
@@ -448,6 +453,7 @@ The aerial forces of Cormyr made wide use of the hippogriffs native to the fores
 #prec 14
 #mr 14
 #mor 16
+#unsurr 3
 #weapon 1907 --enchanted lance
 #weapon 75 --enchanted sword
 #armor 215 --enchanted full plate (of ulm)

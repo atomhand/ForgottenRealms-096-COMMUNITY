@@ -4722,7 +4722,7 @@
 
 #selectweapon 130 -- Hammer of the Mountains
 #att 0
-#secondaryeffectalways 1335 -- Small Area Stun, flying immune for HotM
+--#secondaryeffectalways 1335 -- Small Area Stun, flying immune for HotM
 #end
 
 #selectweapon 131 -- Frost Blast
@@ -4777,7 +4777,7 @@
 #att 1
 #ammo 15
 #range 40
-#secondaryeffectalways 1292 -- Banefire, bow/xbow
+--#secondaryeffectalways 1292 -- Banefire, bow/xbow
 #end
 
 #selectweapon 200 -- Bane Burst
@@ -4911,7 +4911,7 @@
 #ammo 1005 -- 5 fatigue
 #uwok
 #bonus
-#secondaryeffectalways 1325 -- Sap Life, single target
+--#secondaryeffectalways 1325 -- Sap Life, single target
 #end
 
 #selectweapon 300 -- Head Butt
@@ -4929,7 +4929,6 @@
 
 #selectweapon 312 -- Bane Dagger
 #def 1
-#secondaryeffect 1332 -- Deathly Wound
 #end
 
 #selectweapon 315 -- Machaka Spear
@@ -5712,16 +5711,6 @@
 #dmg 8
 #end
 
-#selectweapon 720 -- Ritual Baton
-#copyweapon 12 -- Mace
-#name "Ritual Baton"
-#dmg 6
-#att 1
-#def 1
-#magic
-#secondaryeffectalways 1264 -- Trap Soul, AoE1
-#end
-
 #selectweapon 722 -- God-Slayer Spear
 #def 1
 #end
@@ -5870,7 +5859,6 @@
 
 #selectweapon 843 -- Sceptre of Corruption
 #dmg 5
-#secondaryeffect 1332 -- Deathly Wound
 #end
 
 #selectweapon 846 -- Phanstasmal Tail Flipper
@@ -5896,10 +5884,6 @@
 #name "Spectral No-Dachi"
 #dmg 8
 #att 2
-#end
-
-#selectweapon 870 -- Entanglement, Carrion Bow
-#secondaryeffectalways 1331 -- Carrion Poison
 #end
 
 #selectweapon 877 -- Bronze Hayfork
@@ -5956,12 +5940,32 @@
 #name "Enchanted Full Helmet"
 #end
 
+#selectarmor 219 -- full helmet of Ulm
+#name "Enchanted Half Helmet"
+#end
+
 #selectarmor 221 -- Kite shield of ulm
 #name "Enchanted Kite Shield"
 #end
 
 #selectarmor 280 -- plate barding of ulm
 #name "Enchanted Plate Barding"
+#end
+
+#selectarmor 36 -- dragon scale mail
+#rcost 6
+#end
+
+#selectarmor 213 -- golden helmet
+#rcost 5
+#end
+
+#selectarmor 214 -- golden armor
+#rcost 20
+#end
+
+#selectarmor 21
+#rcost 5
 #end
 
 
@@ -5998,8 +6002,11 @@
 #end
 
 #newweapon 1901
-#copyweapon 4
 #name "Lance of Burning Blackfire"
+#charge
+#pierce
+#notdismounted
+#twohanded
 #magic
 #att 2
 #dmg 7
@@ -6031,6 +6038,19 @@
 #dmg 7
 #att 2
 #magic
+#end
+
+#newweapon 1908
+#copyweapon 408 -- Talons
+#name "Talons"
+#nratt 2
+#end
+
+#newweapon 1909
+#copyweapon 308
+#name "Enchanted Glaive"
+#magic
+#att 1
 #end
 
 
@@ -8003,6 +8023,606 @@
 #maxage 65
 #nametype 267
 #end
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/monsters\00-vanilla-edits.dm
+------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+----------------------------------- Selected/Edited Monsters---------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+#selectmonster 1166
+#name "Vanilla Tomb Guard"
+#end
+
+-- 429 -- Black Hand Assassin
+#selectmonster 429
+#clearspec
+#copyspr 629 -- stalker
+#name "Black Hand Assassin"
+#descr "Black Hand Assassins could be found anywhere Bane was worshipped. Thay and the Moonsea were regions of particular concentrations of Banites, but the assassins of the Black Hand could be found anywhere gold flowed freely and scruples were found wanting."
+#nametype 266
+#hp 16
+#stealthy 20
+#ambidextrous 2
+#unsurr 6
+#patience 1
+#assassin
+#scalewalls
+#holy
+#darkvision 60
+#end
+
+-- x 346 -- Crystal Sorceress
+#selectmonster 346 -- Crystal Sorceress
+#name "Priestess of Akadi"
+#descr "Blaskaltar was a settlement in the Shaar, ruined for long ages by the mid–14th century DR. It was home to the First Shrine of the Queen of Air, the first known shrine dedicated to the goddess Akadi. The structure itself had long been erased by time, the elements, and neglect, leaving only a mound by 1370.
+
+Nevertheless, every Midsummer, the faithful of Akadi from all around Faerûn, after traveling for a ritualized ten days, gathered there for their only calendar festival. Together, they chanted the names of all those who'd died in the last year and gave thanks to the heroes of the faith. 
+
+While most returned to their scattered homes across the realms at the conclusion of the celebration, quite a few chose to remain in the Goldmane Expanse and assist the faithful of the local gods and attempt to win converts to Akadi."
+#gcost 110
+#magicskill 9 1
+#holy
+#researchbonus -3
+-- #stealthy 5
+#heretic 1
+#noreqtemple
+#end
+
+-- 273 -- Strongheart Crossbow
+#selectmonster 273 -- hoburg crossbow 
+#name "Strongheart Crossbow"
+#descr "The invention of the crossbow made damn near every child as deadly as a trained bowman. The halfling militia takes full advantage, and their small size means they can hide behind almost anything."
+#clearspec
+#darkvision 60
+#hp 6
+#rcost 7
+#end
+
+-- x 564 -- Scrag -- Sea Troll 
+#selectmonster 564 -- Sea Troll 
+#spr1 "ForgottenRealms/scrag.tga"
+#spr2 "ForgottenRealms/scrag2.tga"
+#name "Scrag"
+#descr "A scrag is a marine troll, a gilled form of the common troll. Tougher than forest trolls, they make very powerful raiders. 
+
+Often found near the mouths of major rivers, Scrags need considerable room to hunt. Scrags did not use tools or weapons, living simple, barbaric lives. When attacking, they would swing their claws with abandon at anything that moved, biting anything that got close enough. If attacking the seagoing vessels of the land-bound races, they would claw into the hull and climb over each other to get onboard and wipe out the crew.
+
+Like their land-bound cousins, they could only be truly harmed by acid and fire—two substances that are much harder to find underwater. Locathah, however, had found that starcoral, a coral that grows ten times as fast as other corals, was nourished by saltwater scrag flesh, and weapons made from it could be used to disrupt a scrag's regeneration. They would then dismember it and stuff the wounds with small pieces of starcoral.
+
+Saltwater scrags found light, even that of merely a full moon, uncomfortable. They would therefore rarely approach the surface of the sea unless it was at night."
+#rpcost 28
+#pillagebonus 5
+#mapmove 20
+#stealthy 10
+#darkpower 2
+#darkvision 60
+#clearweapons
+#weapon 29
+#weapon 29
+#undisciplined
+#montag 13016 -- Greater Aquatic Slavetype
+#voidsanity 1 --giant
+#end
+
+-- x 2749 -- Troglodyte Druhyidd
+#selectmonster 2749 -- Troglodyte Druhyidd
+#name "Troglodyte Druhyidd"
+#drawsize -25
+#descr "Few among the troglodytes possess magical talents, but their close connection to water, nature, and death mixed with their propensity to mate with nearly anything has led to magic in the veins of some. Their shamans possessed greusome but effective healing magic."
+#clearmagic
+#gcost 10005
+#magicskill 2 1
+#magicskill 6 1
+#custommagic 8704 100
+#researchbonus -8
+#size 4
+#startage 20
+#maxage 65
+#autohealer 1
+#autodishealer 1
+#noslowrec
+#holy
+#end
+
+-- 2891 -- trog warchief
+#selectmonster 2891 -- Lakam HaBatab
+#name "Troglodyte Warchief"
+#descr "Troglodytes are foul-smelling, semi-aquatic monstrous humanoids. Living in underground and often water-logged caverns filled with their filth and offal, they are extremely difficult to eradicate from the land once they have settled in. Their birthrate coupled with their natural propensity for rutting makes for a ready of supply of recruits, especially if you don't mind the chaos they bring to your lands. Their mating rituals involve wrestling for dominance, a skill troglodytes are especially reknowned for. "
+#drawsize 20
+#supplybonus -3
+#pillagebonus 2
+#mapmove 24
+#end
+
+#selectmonster 430 -- Black Harpy
+#name "Redfanged Harpy"
+#spr1 "ForgottenRealms/harpy1.tga"
+#spr2 "ForgottenRealms/harpy2.tga"
+#descr "Harpies were notoriously malevolent and sadistic, taking enormous joy in hurting, torturing and killing their victims, and were always seeking more. They were fond of entrancing travelers with their songs and luring them to shockingly cruel dooms. When they were done playing with their captives, they slew them and finally devoured them.
+
+They were not particularly intelligent creatures, and were prone to cowardice in the face of superior power.
+
+The most notorious harpies lived within the Kingdom of Nix, where they were instrumental in Redfang the Reaper's reign of terror over Vanesci Hamlet in the 7th century DR. Swooping down from high in the skies they would kidnap villagers in nets, carrying them away and eventually dropping them into the cauldrons of Nix. The demise of their hapless victims produced a burst of mana that powered the kingdom's bloodforges."
+#supplybonus -3
+#seduce 10
+#humanoid
+#itemslots 860678
+#hp 14
+#mor 9
+#prot 5
+#att 12
+#def 12
+#ap 12
+#douse 1
+#okmagicleader
+#darkvision 60
+#voidsanity 1 --Magical beast/aberration
+#end
+
+#selectmonster 234 --Minotaur
+#voidsanity 1 --monstrous humanoid
+#end
+
+#selectmonster 239 -- Stirge
+#name "Stirge"
+#spr1 "ForgottenRealms/stirge1.tga"
+#spr2 "ForgottenRealms/stirge2.tga"
+#descr "This horrid monster looks like a cross between a large bat and an oversized mosquito. Its legs end in sharp pincers, and its long, needle-like proboscis slashes the air as it seeks to feed on the blood of living creatures. Their bites contain a weak poison that makes closing the wound quite difficult."
+#drawsize -50
+#clearweapons
+#weapon 1825 -- Stirge Bite
+#str 3
+#size 2
+#voidsanity 1 --Magical beast/aberration
+#end
+
+#selectmonster 1301 -- Frost Giant Elder
+#name "Frost Giant Elder"
+#spr1 "ForgottenRealms/frostgiantcom1.tga"
+#spr2 "ForgottenRealms/frostgiantcom2.tga"
+#descr "Among the tallest of true giants, frost giants could tower higher than 21 feet tall. Men often grew beards, which would become matted with frost and icicles.
+
+The frost giants had a reputation among other races for being crude and of low intelligence, but they were very cunning fighters. They greatly respected brute strength and battle prowess. For frost giants an individual's place in the ordning was determined by evidence of physical might, often taking the form of a combination of the individual's ability to wrestle and boast. Though it could also take the form of musculature, scars from battles of renown, or trophies fashioned from the bodies of their enemies. It was not uncommon for them to try proving their strength and improving their status by challenging a white dragon. Because of this violent way of life, most frost giants died in battle rather than passing away peacefully.
+
+Whenever frost giants of different clans met and their status was unclear, they would wrestle for dominance. At times this could resemble a festival, with giants cheering on their clan's champions and making bold boasts or challenges, but at other times it could take the form of a chaotic free-for-all."
+#clearweapons
+#cleararmor
+#armor 192 -- magic furs
+#armor 119 -- reinf leather cap
+#weapon 18 -- battleaxe
+#weapon 27 -- boulder
+#weapon 1822 -- Giant Stomp
+#hp 70
+#magicskill 2 2
+#custommagic 4864 100 --d6x
+#shockres 0
+#coldres 25
+#fireres -5
+#incunrest 7
+#supplybonus -5
+#berserk 3
+#mountainsurvival
+#snow
+#darkvision 50
+#voidsanity 1 --giant
+#end
+
+#selectmonster 2219
+#name "Forest Troll"
+#spr1 "ForgottenRealms/troll1.tga"
+#spr2 "ForgottenRealms/troll2.tga"
+#montag 13003
+#montag 13005
+#clearweapons
+#weapon 29
+#weapon 29
+#darkvision 60
+#supplybonus -5
+#acidres -10
+#fireres -10
+#voidsanity 1 --giant
+#end
+
+#selectmonster 2220
+#name "Troll Shaman"
+#spr1 "ForgottenRealms/trollshaman1.tga"
+#spr2 "ForgottenRealms/trollshaman2.tga"
+#descr "Forest Trolls could reach heights of 11 feet tall. Their thin and wiry frame held deceptive strength and fortitude, and, like all trolls, possessed the remarkable ability to regenerate wounds and even lost limbs. 
+
+Trolls had little in the way of society. They traveled in non-migratory clans of 3-12 and, upon discovery of an area rich with prey, would establish a lair, most often within a cave. They were often located near smaller human settlements, including established roads as those who traveled off the path served as a great source of food. Once established within a region the band of trolls would hunt and devour as extensively as possible until all resources had been exhausted.
+
+Any culture they possessed was passed down orally, usually kept within a single clan. Communication was often simple assertions for dominance or a mating female presenting a kill, along with a shared meal, to a prospective male."
+#drawsize -10
+#researchbonus -8
+#holy
+#clearweapons
+#weapon 18
+#darkvision 50
+#supplybonus -5
+#acidres -10
+#fireres -10
+#voidsanity 1 --giant
+#end
+
+#selectmonster 2986
+#name "Untheric Wizard"
+#descr "Masters of the four elements, the Northern Wizards are among the most accomplished wizards in the Old Empires and will make excellent allies once order is restored to Messemprar.
+
+The Northern Wizards were a powerful group of spellcasters based out northern Unther. Their city was once the largest in Unther and was a regular stop on a trade route between Sultim, Bezantur, and Mourktar. But when ships began avoiding the west coast of the Alamber entirely, the city turned to chaos. The royal palace came under siege by an angry mob for several weeks, as a tax revolt escalated into food riots and then a full-scale revolt. Many city guardsmen were killed. The Northern Wizards exterted their control and claimed the city gates, resulting in swift and terrible retribution from Gilgeam, his assassins, and his armies." 
+#clearspec
+#clearmagic
+#nametype 151
+#magicskill 51 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 3 1
+#sailing 3 3
+#hp 15
+#end
+
+#selectmonster 2987
+#name "Sorcerer of the Enclave"
+#descr "Masters of sorcery, the Enclave was a small but powerful circle of mages in southern Unther. Their hidden sanctuaries lay on the west side of the Greenfields. They have no known loyalties to any of the factions in Unther, though they have angered the king by refusing his summons on several occasions and never pay their taxes. It is said to be one of the most knowledgeable cabals of mages in the entire Realms, but none have entered their chambers or knows their true power." 
+#clearspec
+#clearmagic
+#nametype 151
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#magicskill 3 1
+#magicskill 4 2
+#magicskill 5 2
+#magicskill 8 2
+#custommagic 1920 100 --d6x
+#sailing 3 3
+#hp 15
+#startage 60
+#maxage 65
+#end
+
+-- 291 -- Captain
+#selectmonster 291 -- Captain
+#spr1 "ForgottenRealms/innerseacaptain.tga"
+#spr2 "ForgottenRealms/innerseacaptain2.tga"
+#name "Inner Sea Captain"
+#descr "The Sea of Fallen Stars, also known as the Inner Sea, was the largest inland body of water in Faerûn. From the Dragonmere Bay of Cormyr and Sembia in the west to the Alamber Sea of the Old Empires in the east, it formed a thoroughfare of trade and cultral exchange that laid the foundation for the rampant diversity of the Forgotten Realms. Through an interconnecting series of deepwater bays, navigable rivers, heavily-patrolled canals, dangerous portages, and deadly underground rivers, it allowed naval traffic from Zhentarim's Moonsea in the north all the way through to the southern Lake of Steam to form an unbroken route to the Shining Sea and onward. 
+
+The sea was the crucial trade way for the many people's of Faerûn. The coastal nations that held the shores did so at great peril. Pirates, Sahuagin, Locathah, Krakens, and the sleepless dead were only a small handful of the many dangers the lurked in the mist. The captains who plied these waters prayed day and night to the gods of the sea to keep them safe on their journeys."
+#clearweapons
+#cleararmor
+#armor 6 -- ring mail cuirass 
+#weapon 10 -- falchion   
+#goodleader
+#hp 24
+#stealthy 15
+#montag 13001
+#sailing 999 6
+#patrolbonus 2
+#pillagebonus 2
+#mor 14
+#att 12
+#def 12
+#end
+
+#selectmonster 870 -- Sea Captain
+#name "Sea Captain"
+#descr "The major island chains of the Moonshaes, the Nelanther Isles, and the jutting Tethyr Peninsula formed a rough boundary for the Sea of Swords. The men and women who plied these waters were a tough breed, just as likely to engage in piracy as honest work. They were excellent leaders and fine sailors."
+#goodleader
+#cleararmor
+#hp 18
+#stealthy 5
+#sailing 999 6
+#farsail 1
+#armor 11
+#armor 20
+#patrolbonus 2
+#end
+
+-- 1918 -- Salty Sea Dog
+#selectmonster 1918 -- Salty Sea Dog
+#name "Salty Sea Dog"
+#descr "Sailors on both the open, western seas and on the inner Sea of Fallen Stars were accustomed to danger. Many took up the sword for a better wage and a bit of adventure. Some were even known to traffic in piracy."
+#clearspec
+#gcost 10010
+#mor 12
+#stealthy 5
+#pillagebonus 2
+#mapmove 20
+#patrolbonus 2
+#montag 13003
+#end
+
+
+-- x 2989 -- Nar Hunter
+#selectmonster 2989
+#name "Nar Hunter"
+#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
+#pillagebonus 1
+#snow
+#coldres 3
+#end
+
+-- x 2990 -- Nar Warrior
+#selectmonster 2990
+#name "Nar Warrior"
+#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
+#pillagebonus 1
+#snow
+#coldres 3
+#end
+
+-- x 2991 -- Nar Axeman
+#selectmonster 2991
+#name "Nar Axeman"
+#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
+#pillagebonus 1
+#snow
+#coldres 3
+#montag 13003
+#end
+
+-- 137 -- Nar Cavalry 
+#selectmonster 137
+#name "Nar Horseman"
+#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
+#pillagebonus 1
+#stealthy 5
+#clearspec
+#wastesurvival
+#snow
+#coldres 3
+#mountmnr 3574 --Armored Steppe Horse
+#end
+
+-- 136 -- Nar Horselord
+#selectmonster 136
+#name "Nar Horselord"
+#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
+#pillagebonus 2
+#stealthy 5
+#goodleader
+#wastesurvival
+#snow
+#coldres 3
+#end
+
+-- x 440 -- Paladin
+#selectmonster 440
+#name "Paladin of the Golden Lion"
+#descr "The Order of the Golden Lion was established shortly after Torm's rebirth at the end of the Time of Troubles in the Year of Shadows, 1358 DR. They were to be holy warriors of the faith, and in particular undertake the Penance of Duty, including fervently devoting themselves to the goals of the Triad, which included the gods Tyr, Torm, and Ilmater. This had been set by Torm to repay the persecution of other religions by his temple in Tantras during this time and in the years preceding, to atone for their failure to guard against strife, and to relieve the destruction wrought to magic."
+#hp 25
+#mr 15
+#mor 20
+#str 14
+#att 14
+#def 14
+#skilledrider 4
+#diseaseres 100
+#woundfend 1
+#clearweapons
+#weapon 1900 --holy lance
+#weapon 75 --enchanted sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
+#end
+
+-- x 957 -- Lord of the Desert Sun
+#selectmonster 957
+#name "Lord Firemane"
+#fixedname "Nobanion"
+#descr "Nobanion was a primal spirit sometimes worshiped as a deity of royalty, lions, and other felines, as well as good beasts. The Lion King was considered to have originally been an interloper deity on Toril, but since his arrival he has firmly established himself within the Faerûnian pantheon. Worship of the King of Beasts was especially strong in Gulthmere Forest and among the wemics of the Shining Plains."
+#hp 165
+#size 7
+#prot 9
+#mr 20
+#att 20
+#def 20
+#prec 16
+#spiritsight
+#autohealer 2
+#autodishealer 2
+#supplybonus 20
+#end
+
+-- x 1352 -- entrance guard
+#selectmonster 1352 -- entrance guard
+#name "Lapalguard"
+#descr "The largest cities of The Shining Plains were in the western cities of the Lapal Coast. Organized into a trade league of free cities, their influence spread across much of the south via their trade connections and wealthy ports. These cities drew lavish merchant-lords of all race and ken. The tough and well-equipped soldiers who guarded the gates of these walled cities were some of the best armored forces in the Realms, even if not the best-trained.
+
+They provide a useful siege defense bonus for those who can afford them."
+#end
+
+#selectmonster 1070 -- Philosopher
+#name "Cimbari Sage"
+#descr "The Akademeia of Cimbar produced not only learned priests but also the erudite Cimbari Sages."
+#nobadevents 10
+#magicskill 4 1
+#end
+
+
+-- x -- 63 -- Ffolkspear
+#selectmonster 61
+#name "Ffolkspear"
+#descr "The Ffolk were a race of humans that inhabited the Moonshae Isles alongside the Northlanders. The Ffolk inhabited the southern parts of the Moonshaes, including Flamsterd, Moray, Snowdown, and Sunset, and the southern parts of Alaron and Gwynneth. Their society was mainly agricultural and was ruled by a High King or Queen who resided in Caer Callidyrr, the capital of the Ffolk.
+
+The Ffolk had a deep reverence for nature and the land around them, always respecting the divine power in a misty, forest, a rushing river or even a hidden pool."
+#formationfighter 2
+#end
+
+-- x -- 63 -- Callidyrr Tower Guard
+#selectmonster 63
+#name "Callidyrr Tower Guard"
+#descr "The Ffolk were a race of humans that inhabited the Moonshae Isles alongside the Northlanders. The Ffolk inhabited the southern parts of the Moonshaes, including Flamsterd, Moray, Snowdown, and Sunset, and the southern parts of Alaron and Gwynneth. Their society was mainly agricultural and was ruled by a High King or Queen who resided in Caer Callidyrr, the capital of the Ffolk.
+
+The Ffolk had a deep reverence for nature and the land around them, always respecting the divine power in a misty, forest, a rushing river or even a hidden pool."
+#bodyguard 1
+#att 13
+#def 13
+#mor 13
+#end
+
+--x 184 -- Darkwell Bloodrider
+#selectmonster 184
+#name "Darkwell Bloodrider"
+#descr "The Bloodriders were a unit of several dozen undead cavalry in the service of Kazgoroth the Beast. 
+
+Once human Northmen, they were corrupted by submergence in a tained Moonwell. They emerged as undead, unholy warriors of tremendous power. Some believed they were able to absorb the powers of those they killed. 
+
+To gain access to Darkwell Bloodriders, you must send your blood priests into a Darkwell Magic site."
+#hp 10
+#fear 5
+#holy
+#end
+
+#selectmonster 1831 --Hydra
+#descr "A hydra was a reptilian magical beast that had anywhere from five to twelve heads. Very rarely they could even have up to fifty heads.
+Hydras were not very intelligent, but they were deadly due to their regenerative capabilities.
+
+Hydras were typically found in the marshes of regions with a temperate climate. Many hydras were known to inhabit the Forest of Wyrms. They also were quite common in the jungles of Chult."
+#voidsanity 1 -- Magical beast
+#end
+
+#selectmonster 2185
+#amphibian
+#end
+
+#selectmonster 2186
+#amphibian
+#end
+
+-- asp
+#selectmonster 3657
+#name "Serpent of the Deeps"
+#descr "These vipers of the deep Mhair jungles are reknowned for their venom. They are often used as agents of chaos on the battlefield by the Yuan-ti, who breed them en masse and unleash them on their unprepared enemies.
+
+These serpents are only capable of being bred in the inhospital underdark and not all serpents born in the deep are compliant enough to be used in this way - only 10 such creatures can be recruited in any given province per turn. The remainder of the brood can be used to feed the rest."
+#clearspec
+#gcost 10003
+#animal
+#undisciplined
+#coldblood
+#darkvision 50
+#swampsurvival
+#swimming
+#reclimit 10
+#supplybonus 1
+#amphibian
+#end
+
+#selectmonster 102
+#descr "Aboleths were known for their ability to enslave the minds of their enemies and bend them to their will. The truly depraved, however, came of their own accord to worship the masters of the deeps."
+#end
+
+#selectmonster 3408 -- Svirfneblin Illusionist -- Vaetti Gygja
+#name "Svirfneblin Illusionist"
+#descr "Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret.
+
+Like other gnomes, deep gnomes preferred the use of illusion to other schools of magic. However, while this was simply a cultural preference among rock gnomes, it was a method of survival for deep gnomes.
+
+Deep gnome wizards who were not illusionists were frequently diviners, using their spells to locate and find materials essential to survival. Most magic items forged by deep gnomes were disguised as jewelry, which was relatively common among the svirfneblin."
+#clearmagic
+#magicskill 3 2 
+#magicskill 7 2
+#fixforgebonus 1
+#mastersmith 1
+#darkvision 80
+#darkpower 2
+#hp 12
+#mr 14
+#str 6
+#att 6
+#def 7
+#ap 8
+#end
+
+#selectmonster 3403 -- Svirfneblin Spearmen
+#name "Svirfneblin Spearmen"
+#descr "Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret."
+#darkvision 60
+#darkpower 2
+#str 7
+#att 8
+#def 8
+#ap 6
+#end
+
+#selectmonster 3412 -- Svirfneblin	Crossbowmen
+#name "Svirfneblin	Crossbowmen"
+#descr "Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret."
+#darkvision 60
+#darkpower 2
+#str 7
+#att 8
+#def 7
+#ap 7
+#end
+
+#selectmonster 3410 -- Svirfneblin Burrow Warden
+#name "Burrow Warden"
+#descr "Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret."
+#darkvision 60
+#darkpower 2
+#hp 20
+#str 7
+#att 8
+#def 7
+#ap 7
+#end
+
+#selectmonster 3406 -- Svirneblin King
+#name "Svirfneblin King"
+#descr "Deep Gnomes, where they remained free, lived in monarchical governments. King Schnicktick was among the most famous of the svirfneblin kings. He was ruler of Blingdenstone through its temporary abandonment and repopulation in 1358 when drow entered the city en route to an invasion on Mithril Hall. Schnicktick and his people joined the dwarves and helped turn back their aggressive neighbor. However, he was deposed when the Drow returned in 1371 and laid waste to the city."
+#darkvision 60
+#darkpower 2
+#hp 35
+#goodleader
+#end
+
+#selectmonster 2131 --Gryphon
+#name "Griffon"
+#descr "Griffons were semi-intelligent magical beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
+#voidsanity 1 -- Magical beast
+#mapmove 26
+#str 17
+#unsurr 3
+#clearweapons
+#weapon 408 -- talons
+#weapon 408 -- talons
+#weapon 404 -- beak
+#weapon 753 -- dive attack
+#end
+
+#selectmonster 2159 --Gelatinous Cube
+#voidsanity 1 --ooze
+#end
+
+#selectmonster 3544 --Gryphon
+#name "Griffon"
+#descr "Griffons were semi-intelligent magical beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
+#voidsanity 1 -- Magical beast
+#att 14
+#def 10
+#str 17
+#unsurr 3
+#clearweapons
+#weapon 408 -- talons
+#weapon 408 -- talons
+#weapon 404 -- beak
+#weapon 753 -- dive attack
+#end
+
 
 ------------------------------------------------------------------------------------------------------------------
 --COMPILED FROM src/monsters\01-ungrouped-monsters.dm
@@ -12701,55 +13321,148 @@ Simbarchs had a vitality unusual to wizards, using their magical power to fuel t
 
 #newmonster 6004
 #copystats 6600
-#spr1 "ForgottenRealms/griffridera.tga"
-#spr2 "ForgottenRealms/griffriderb.tga"
+#spr1 "ForgottenRealms/griffon-scout.tga"
+#spr2 "ForgottenRealms/griffon-scout2.tga"
 #mountmnr 3544 -- Griffon (unarmored)
-#unmountedspr1 "ForgottenRealms/aumarrdismounted.tga"
-#unmountedspr2 "ForgottenRealms/aumarrdismounted2.tga"
+#unmountedspr1 "ForgottenRealms/griffon-scout-dis.tga"
+#unmountedspr2 "ForgottenRealms/griffon-scout-dis2.tga"
 #name "Griffon Ranger"
-#descr "Aglarond maintains a small unit of griffon-riders at the capital. They tend to be used as messengers and scouts rather than as shock troops."
-#patrolbonus 2
+#descr "Griffons nested at the highest reaches of the Tannath Mountains and Umbergoth and could also be found around the coastal regions and interior uplands of Aglarond. Accordingly, Aglarond retains a small permanent unit of griffon-riders who serve as messengers and scouts."
 #size 3
-#hp 12
-#str 11
+#hp 25
+#str 12
 #enc 3
-#att 13
-#def 13
-#skilledrider 2
+#att 14
+#def 14
+#skilledrider 5
 #prec 11
-#mr 11
-#mor 13
+#mr 12
+#mor 14
 #stealthy 0
 #patrolbonus 20
 #rpcost 10000
-#reclimit 2
 #gcost 10000
+#custommagic 8192 50
 #cleararmor
-#armor 49 -- light weight scale mail
-#armor 20 -- iron cap
-#armor 2 -- shield
+#armor 414 -- ironwood helm
+#armor 412 -- elven lorica
 #clearweapons
-#weapon 357 -- Light Lance (re-usable)
+#weapon 1909 -- enchanted glaive
 #weapon 1831 -- Elite shortbow
+#poorleader
 #end
 
+#newmonster 6007
+#copystats 3544
+#spr1 "ForgottenRealms/armouredgriffon.tga"
+#spr2 "ForgottenRealms/armouredgriffon2.tga"
+#name "Bonded Griffon"
+#descr "Griffons were semi-intelligent beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
+#armor 252 -- Light Scale Barding
+#holy
+#hp 50
+#str 18
+#mr 14
+#att 15
+#end
+
+#newmonster 6008
+#copystats 6600
+#name "Aglarondan Griffonrider"
+#descr "Soaring above the Yuirwood and the coasts of Aglarond, the famed Aglarondan griffonriders are an elite force of aerial knights who serve the Simbul and defend their homeland against attack. Griffonriders study aerial combat and develop special skills for fighting from the sky.
+
+They are particularly renowned for their riding skills and can coax more out of their mounts than any other rider."
+#mountmnr 6007
+#spr1 "ForgottenRealms/aglarond-griffonrider.tga"
+#spr2 "ForgottenRealms/aglarond-griffonrider2.tga"
+#unmountedspr1 "ForgottenRealms/aglarond-griffonrider-dis.tga"
+#unmountedspr2 "ForgottenRealms/aglarond-griffonrider-dis2.tga"
+#mountainsurvival
+#hp 17
+#mr 14
+#mor 15
+#str 12
+#att 14
+#def 14
+#gcost 10020
+#skilledrider 5
+#unsurr 3
+#weapon 1907 --enchanted lance
+#weapon 75 --enchanted sword
+#armor 214 -- golden armor
+#armor 155 -- golden shield
+#armor 213 -- golden helmet
+#holy
+#end
+
+
 #newmonster 6005
-#copystats 2129 -- Logrian Cavalry
-#spr1 "ForgottenRealms/aglarondan_cav_1.png"
-#spr2 "ForgottenRealms/aglarondan_cav_2.png"
-#unmountedspr1 "ForgottenRealms/aglarondan_cav_unmounted_1.png"
-#unmountedspr2 "ForgottenRealms/aglarondan_cav_unmounted_2.png"
-#name "Aglarondan Cavalry"
-#descr "The standing army stationed at Glarondar and Emmech included a small number of cavalry. Although few in number, the troops of the standing army were the front line of Aglarondan defense, and were well trained and equipped."
-#hp 11
+#copystats 6008
+#name "Griffonrider Commander"
+#descr "Soaring above the Yuirwood and the coasts of Aglarond, the famed Aglarondan griffonriders are an elite force of aerial knights who serve the Simbul and defend their homeland against attack. Griffonriders study aerial combat and develop special skills for fighting from the sky.
+
+They are particularly renowned for their riding skills and can coax more out of their mounts than any other rider."
+#mountmnr 6007
+#spr1 "ForgottenRealms/aglarond-griffoncaptain.tga"
+#spr2 "ForgottenRealms/aglarond-griffoncaptain2.tga"
+#unmountedspr1 "ForgottenRealms/aglarond-griffonrider-dis.tga"
+#unmountedspr2 "ForgottenRealms/aglarond-griffonrider-dis2.tga"
+#mountainsurvival
+#hp 30
+#mr 15
+#mor 16
+#str 14
+#att 15
+#def 15
+#gcost 10020
+#unsurr 4
+#skilledrider 6
+#weapon 1907 --enchanted lance
+#weapon 75 --enchanted sword
+#armor 214 -- golden armor
+#armor 155 -- golden shield
+#armor 213 -- golden helmet
+#superiorleader
+#holy
+#end
+
+#newmonster 6009
+#copystats 289
+#spr1 "ForgottenRealms/aglarond-pikeneer.tga"
+#spr2 "ForgottenRealms/aglarond-pikeneer2.tga"
+#name "Aglarondan Pikeneer"
+#descr "Although not a fundamentally militaristic nation, Aglarond was under perpetual threat from Thay and maintained a standing army supported by compulsory military service. The infantry were well-drilled and motivated in defence of their homeland."
+#mor 12
+#mr 11
+#formationfighter 2
+#str 11
+#att 12
 #def 11
+#gcost 12
 #cleararmor
-#armor 13 -- Chain hauberk
-#armor 20 -- Iron cap
-#armor 2 -- Shield
-#clearweapons
-#weapon 4 -- Lance
-#weapon 17 -- Axe
+#armor 18 -- full chain mail
+#armor 118 -- half helmet
+#end
+
+#selectmonster 3631 -- milesian man at arms
+#name "Aglarondan Man At Arms"
+#descr "Although not a fundamentally militaristic nation, Aglarond was under perpetual threat from Thay and maintained a standing army supported by compulsory military service. The infantry were well-drilled and motivated in defence of their homeland."
+#mor 12
+#mr 11
+#str 11
+#att 12
+#def 12
+#cleararmor
+#armor 18 -- full chain mail
+#armor 118 -- half helmet
+#end
+
+#selectmonster 57 -- Knight of Man
+#name "Knight of Aglarond"
+#descr "Although not particularly known for its knightly tradition, Aglarond have a reserve of quality mounted troops to support its infantry forces."
+#mr 11
+#hp 14
+#skilledrider 3
 #end
 
 
@@ -20268,7 +20981,7 @@ The nations of Aglarond and Cormyr were especially famous for their hippogriff-m
 #prot 5
 #mr 10
 #mor 15
-#str 14
+#str 15
 #att 12
 #def 10
 #prec 10
@@ -20278,8 +20991,13 @@ The nations of Aglarond and Cormyr were especially famous for their hippogriff-m
 #animal
 #flying
 #wastesurvival
+#unsurr 2
 #voidsanity 1 -- Magical beast
 #armor 251 -- leather barding
+#clearweapons
+#weapon 408 -- talons
+#weapon 408 -- talons
+#weapon 404 -- beak
 #end
 
 -- 6749 Commander: Purple Dragon Lancelord
@@ -20413,12 +21131,12 @@ Battlepriests bring divine magic to the field of battle. They are a deadly adver
 #prec 10
 #mr 12
 #mor 15
+#unsurr 2
 #armor 19 -- full plate mail
 #armor 21 -- Full Helm
 #armor 3 -- Kite Shield
 #weapon 4 -- Lance
 #weapon 8 -- broad sword
-#unsurr 4
 #patrolbonus 5
 #ap 12
 #mapmove 12
@@ -20449,6 +21167,7 @@ The aerial forces of Cormyr made wide use of the hippogriffs native to the fores
 #prec 14
 #mr 14
 #mor 16
+#unsurr 3
 #weapon 1907 --enchanted lance
 #weapon 75 --enchanted sword
 #armor 215 --enchanted full plate (of ulm)
@@ -33979,6 +34698,68 @@ Stone Giant Elders who receive the Twiceborn ritual become Dodforerir upon death
 
 
 ------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/monsters\gnome-monsters.dm
+------------------------------------------------------------------------------------------------------------------
+#selectmonster 483 -- hoburg militia
+#name "Gnome Militia"
+#descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. Gnome militia are trained to use very small staffs. Since they are both unskilled and physically weak, they are not very useful in battle."
+#clearspec
+#stealthy 40
+#darkvision 50
+#startage 40
+#maxage 350
+#mr 12
+#end
+
+#selectmonster 3787 -- piconye soldier
+#name "Gnome Soldier"
+#descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. Gnomes generally avoid open conflict, but can be courageous when necessary defend their homes. They are equipped with spears or short swords."
+#clearspec
+#stealthy 40
+#startage 40
+#maxage 350
+#darkvision 50
+#mr 12
+#end
+
+#selectmonster 272 -- hoburg champion
+#name "Gnome Champion"
+#descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. The commanders of the gnomes are armed with short swords and wear heavy plate cuirasses."
+#clearspec
+#stealthy 40
+#startage 40
+#maxage 350
+#darkvision 50
+#mr 12
+#end
+
+#selectmonster 3785 -- piconye crossbowman
+#name "Gnome Crossbowman"
+#descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. Gnomes have problems using bows due to their size. Instead they use crossbows to great effect."
+#clearspec
+#stealthy 40
+#startage 40
+#maxage 350
+#darkvision 50
+#mr 12
+#end
+
+#selectmonster 3798 -- piconye sage priest
+#name "Gnome Illusionist"
+#descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. They were well known for their affinity for illusion magic."
+#clearspec
+#stealthy 60
+#startage 80
+#maxage 350
+#clearmagic
+#magicskill 7 2 -- 4g
+#magicskill 4 1 -- 1S
+#custommagic 18432 100 -- 100% S/G
+#darkvision 50
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
 --COMPILED FROM src/monsters\golems.dm
 ------------------------------------------------------------------------------------------------------------------
 
@@ -36739,7 +37520,7 @@ Take care of your equipment. The gryphon form taken by the Tethyrian Druid allow
 #shapechange 7731 -- Tethyrian Druid Wildshape
 #end
 
--- 7731 -- Tethyrian Druid Wildshape
+-- 7731 -- Tethyrian Druid Wildshape (Griffon)
 #newmonster 7731
 #copystats 6679 -- Calishite Template
 #copyspr 2131 -- gryphon
@@ -37121,6 +37902,212 @@ Miklos sees the Ravens as his answer to the Harpers, with whom Sembia has regula
 #armor 215 --enchanted full plate (of ulm)
 #armor 218 -- enchanted full helmet (of ulm)
 #armor 221 -- enchanted kite shield (of ulm)
+#end
+
+#newmonster 7737
+#copystats 6600 --waterdhavian template
+#spr1 "ForgottenRealms/hippogriffknight.tga"
+#spr2 "ForgottenRealms/hippogriffknight2.tga"
+#mountmnr 6748 -- Hippogriff
+#unmountedspr1 "ForgottenRealms/hippogriffriderdis.tga"
+#unmountedspr2 "ForgottenRealms/hippogriffriderdis2.tga"
+#name "Hippogriff Cavalry"
+#descr "Hippogriffs could be found throughout Faerun including the hills of Aglarond, Cormyr and the foothills of the Starspine mountains. Although less intelligent and easier to train than Griffons, Hippogriffs are still highly prized mounts and only elite troops would get the oppportunity to ride them."
+#gcost 10010
+#hp 14
+#prot 0
+#size 3
+#str 11
+#att 12
+#def 12
+#prec 10
+#mr 11
+#mor 12
+#armor 18 -- full chain mail
+#armor 21 -- Full Helm
+#armor 3 -- Kite Shield
+#weapon 4 -- Lance
+#weapon 13 -- hammer
+#unsurr 2
+#patrolbonus 5
+#ap 12
+#mapmove 12
+#startage 30
+#maxage 50
+#skilledrider 2
+#end
+
+#newmonster 7738
+#copystats 6600 --waterdhavian template
+#spr1 "ForgottenRealms/hippogriffcaptain.tga"
+#spr2 "ForgottenRealms/hippogriffcaptain2.tga"
+#mountmnr 6748 -- Hippogriff
+#unmountedspr1 "ForgottenRealms/hippogriffcaptaindis.tga"
+#unmountedspr2 "ForgottenRealms/hippogriffcaptaindis2.tga"
+#name "Hippogriff Captain"
+#descr "Hippogriffs could be found throughout Faerun including Aglarond, Cormyr and the foothills of the Starspine mountains. Although less intelligent and easier to train than Griffons, Hippogriffs are still highly prized mounts and only elite troops would get the oppportunity to ride them.
+
+Riding  a flying mount gives the commander a superior overview of the battlefield."
+#gcost 10010
+#hp 15
+#prot 0
+#size 3
+#str 12
+#att 13
+#def 13
+#prec 10
+#mr 12
+#mor 13
+#armor 18 -- full chain mail
+#armor 21 -- Full Helm
+#armor 3 -- Kite Shield
+#weapon 4 -- Lance
+#weapon 13 -- hammer
+#unsurr 3
+#patrolbonus 5
+#ap 12
+#mapmove 12
+#startage 30
+#maxage 50
+#skilledrider 3
+#goodleader
+#end
+
+#selectmonster 134 -- Royal Guard (MA mari)
+#name "Elmeti"
+#descr "The Blade Kingdoms descended from people of knowledge, strategy, and education who took pride in avoiding bloodshed, venerated law and order, sciences, art, and rational thinking. Military and political disputes arose between city-states and were resolved by annual competitions of military strategy and prowess.
+
+Elmeti were elite noble cavalry of the Blade Kingdoms. They compensate their lack of battle experience with their phenomenal (and phenomenally expensive) equipment."
+#nametype 114 -- marignon male
+#mor 11
+#att 11
+#def 11
+#mr 12
+#clearweapons
+#weapon 1907 --enchanted lance
+#weapon 75 --enchanted sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
+#end
+
+#selectmonster 3897 --royal guard destrier
+#mr 8
+#cleararmor
+#armor 272 -- enchanted plate barding
+#end
+
+#selectmonster 2110 -- LA Mari Pikeneer
+#descr "The standard armor of the infantry of the Blade Kingdoms is the plate cuirass. Large weapons such as great swords, halberds and pikes are preferred to smaller weapons paired with shields. The soldiers of the Blade Kingdoms are dressed in fancy clothing to enhance morale."
+#end
+
+#newmonster 7740
+#copystats 3275
+#spr1 "ForgottenRealms/bladecaptain.tga"
+#spr2 "ForgottenRealms/bladecaptain2.tga"
+#mountmnr 6001 -- Griffon (armored)
+#unmountedspr1 "ForgottenRealms/bladecaptaindis.tga"
+#unmountedspr2 "ForgottenRealms/bladecaptaindis2.tga"
+#name "Blade Captain"
+#descr "A Blade Captain was the leader of a Blade House, one of the powerful mercenary companies that made up the political system of the Blade Kingdoms. In effect Blade Captains were the nobility, although the status was available to anyone able to expend the exorbitant amount of money required to establish a mercenary company worthy of acknowledgment.
+
+Despite the militaristic foundations of their culture, the cities of the Blade Kingdoms were unused to actual violence - conflicts were resolved through bloodless contests of wits known as 'white wars'. Accordingly, Blade Captains are not experienced warriors, but they are still ambitious and capable leaders with the equipment appropriate to their immense wealth."
+#nametype 114 -- marignon male
+#expertleader
+#clearweapons
+#cleararmor
+#weapon 1907 --enchanted lance
+#weapon 840 --flame blade
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
+#mr 14
+#gcost 10030
+#sailing 999 7
+#incprovdef 3
+#taxcollector
+#end
+
+#newmonster 7741
+#copystats 6600 -- waterdhavian template
+#copyspr 2587 -- zhayedan
+#mountmnr 6001 -- Griffon (armored)
+#spr1 "ForgottenRealms/griffoncavalry.tga"
+#spr2 "ForgottenRealms/griffoncavalry2.tga"
+#name "Griffon Cavalry"
+#descr "Griffon riders are the elite among aerial cavalry - only highly trained and experienced knights of professional soldiers are ever appointed to ride such expensive and powerful mounts."
+#skilledrider 3
+#hp 14
+#mr 11
+#mor 12
+#str 11
+#att 12
+#def 12
+#weapon 4 -- lance
+#weapon 8 -- broad sword
+#armor 19 -- full plate
+#armor 21 -- full helmet
+#armor 2 -- shield
+#unsurr 3
+#mountainsurvival
+#end
+
+#newmonster 7742
+#copystats 6600 -- waterdhavian template
+#copyspr 2629 -- zhayedan
+#mountmnr 6001 -- Griffon (armored)
+#name "Griffon Captain"
+#descr "Griffon riders are the elite among aerial cavalry - only highly trained and experienced knights of professional soldiers are ever appointed to ride such expensive and powerful mounts.
+
+Riding  a flying mount gives the commander a superior overview of the battlefield."
+#skilledrider 4
+#hp 15
+#mr 12
+#mor 13
+#str 12
+#att 13
+#def 13
+#weapon 4 -- lance
+#weapon 8 -- broad sword
+#armor 19 -- full plate
+#armor 21 -- full helmet
+#armor 2 -- shield
+#goodleader
+#unsurr 4
+#mountainsurvival
+#end
+
+#newmonster 7743
+#copystats 6600 -- waterdhavian template
+#name "Telflammar Shadowlord"
+#descr "The Shadowmasters of Telflamm are one of Faerûn's most notorious thieves' guilds, a secret society every bit as grasping and ruthless as the Night Masks of Westgate or the Shadow Thieves of Amn. Under their subtle and cloaked rule, Thesk's port city of Telflamm is a prime center of trade in both legal and illicit goods.
+
+The Shadowmasters are made up of burglars, murderers, and thugs with a variety of talents, including assassins, experts, fighters, rogues, shadowdancers, and warriors. A small number of clerics devoted to Mask belong to the guild, as do some arcane spellcasters whose greed outweighs their scruples.
+Above all these criminals stand the Telflammar shadowlords, the secret captains of iniquity who demand unquestioned obedience from their numerous minions."
+#hp 20
+#str 14
+#att 14
+#def 14
+#mr 14
+#mor 14
+#ap 16
+#darkpower 4
+#glamour
+#darkvision 100
+#magicskill 5 1
+#magicskill 7 1
+#custommagic 20480 100
+#stealthy 90
+#assassin
+#scalewalls
+#patience 2
+#armor 121 -- leather hood
+#armor 10 -- leather hauberk
+#weapon 312 -- bane dagger
+#weapon 312
+#okleader
+#okundeadleader
 #end
 
 
@@ -43583,13 +44570,34 @@ The principle temples of the church of Osiris were the Crypt of Shadows located 
 #armor 120
 #weapon 10
 #hp 15
-#mor 16
+#mor 14
 #ap 16
 #reinvigoration 1
 -- #stealthy 5
 #pillagebonus 2
 #patrolbonus 2
+#swimming
 #montag 13003
+#end
+
+#newmonster 6020
+#copystats 7100 -- chessentan corsair
+#copyspr 1076 -- myrmidon champion
+#name "Myrmidon"
+#descr "Myrmidons were elite troops based at the palace of Sceptanar. Hand-picked from the best of the Chessentan troops, they were the very best this warrior culture had to offer."
+#hp 16
+#mr 12
+#str 12
+#att 13
+#def 13
+#mor 15
+#clearweapons
+#cleararmor
+#weapon 724 -- orichalcum sword
+#armor 242 -- orichalcum hoplon
+#armor 243 -- orichalcum helmet
+#armor 36 -- dragon scale mail
+#holy
 #end
 
 
@@ -53105,592 +54113,6 @@ Much like ghouls, ghasts spoke whatever language they did in life. They often la
 
 
 ------------------------------------------------------------------------------------------------------------------
---COMPILED FROM src/monsters\vanilla-edits.dm
-------------------------------------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------
------------------------------------ Selected/Edited Monsters---------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------
-
-#selectmonster 1166
-#name "Vanilla Tomb Guard"
-#end
-
--- 429 -- Black Hand Assassin
-#selectmonster 429
-#clearspec
-#copyspr 629 -- stalker
-#name "Black Hand Assassin"
-#descr "Black Hand Assassins could be found anywhere Bane was worshipped. Thay and the Moonsea were regions of particular concentrations of Banites, but the assassins of the Black Hand could be found anywhere gold flowed freely and scruples were found wanting."
-#nametype 266
-#hp 16
-#stealthy 20
-#ambidextrous 2
-#unsurr 6
-#patience 1
-#assassin
-#scalewalls
-#holy
-#darkvision 60
-#end
-
--- x 346 -- Crystal Sorceress
-#selectmonster 346 -- Crystal Sorceress
-#name "Priestess of Akadi"
-#descr "Blaskaltar was a settlement in the Shaar, ruined for long ages by the mid–14th century DR. It was home to the First Shrine of the Queen of Air, the first known shrine dedicated to the goddess Akadi. The structure itself had long been erased by time, the elements, and neglect, leaving only a mound by 1370.
-
-Nevertheless, every Midsummer, the faithful of Akadi from all around Faerûn, after traveling for a ritualized ten days, gathered there for their only calendar festival. Together, they chanted the names of all those who'd died in the last year and gave thanks to the heroes of the faith. 
-
-While most returned to their scattered homes across the realms at the conclusion of the celebration, quite a few chose to remain in the Goldmane Expanse and assist the faithful of the local gods and attempt to win converts to Akadi."
-#gcost 110
-#magicskill 9 1
-#holy
-#researchbonus -3
--- #stealthy 5
-#heretic 1
-#noreqtemple
-#end
-
--- 273 -- Strongheart Crossbow
-#selectmonster 273 -- hoburg crossbow 
-#name "Strongheart Crossbow"
-#descr "The invention of the crossbow made damn near every child as deadly as a trained bowman. The halfling militia takes full advantage, and their small size means they can hide behind almost anything."
-#clearspec
-#darkvision 60
-#hp 6
-#rcost 7
-#end
-
--- x 564 -- Scrag -- Sea Troll 
-#selectmonster 564 -- Sea Troll 
-#spr1 "ForgottenRealms/scrag.tga"
-#spr2 "ForgottenRealms/scrag2.tga"
-#name "Scrag"
-#descr "A scrag is a marine troll, a gilled form of the common troll. Tougher than forest trolls, they make very powerful raiders. 
-
-Often found near the mouths of major rivers, Scrags need considerable room to hunt. Scrags did not use tools or weapons, living simple, barbaric lives. When attacking, they would swing their claws with abandon at anything that moved, biting anything that got close enough. If attacking the seagoing vessels of the land-bound races, they would claw into the hull and climb over each other to get onboard and wipe out the crew.
-
-Like their land-bound cousins, they could only be truly harmed by acid and fire—two substances that are much harder to find underwater. Locathah, however, had found that starcoral, a coral that grows ten times as fast as other corals, was nourished by saltwater scrag flesh, and weapons made from it could be used to disrupt a scrag's regeneration. They would then dismember it and stuff the wounds with small pieces of starcoral.
-
-Saltwater scrags found light, even that of merely a full moon, uncomfortable. They would therefore rarely approach the surface of the sea unless it was at night."
-#rpcost 28
-#pillagebonus 5
-#mapmove 20
-#stealthy 10
-#darkpower 2
-#darkvision 60
-#clearweapons
-#weapon 29
-#weapon 29
-#undisciplined
-#montag 13016 -- Greater Aquatic Slavetype
-#voidsanity 1 --giant
-#end
-
--- x 2749 -- Troglodyte Druhyidd
-#selectmonster 2749 -- Troglodyte Druhyidd
-#name "Troglodyte Druhyidd"
-#drawsize -25
-#descr "Few among the troglodytes possess magical talents, but their close connection to water, nature, and death mixed with their propensity to mate with nearly anything has led to magic in the veins of some. Their shamans possessed greusome but effective healing magic."
-#clearmagic
-#gcost 10005
-#magicskill 2 1
-#magicskill 6 1
-#custommagic 8704 100
-#researchbonus -8
-#size 4
-#startage 20
-#maxage 65
-#autohealer 1
-#autodishealer 1
-#noslowrec
-#holy
-#end
-
--- 2891 -- trog warchief
-#selectmonster 2891 -- Lakam HaBatab
-#name "Troglodyte Warchief"
-#descr "Troglodytes are foul-smelling, semi-aquatic monstrous humanoids. Living in underground and often water-logged caverns filled with their filth and offal, they are extremely difficult to eradicate from the land once they have settled in. Their birthrate coupled with their natural propensity for rutting makes for a ready of supply of recruits, especially if you don't mind the chaos they bring to your lands. Their mating rituals involve wrestling for dominance, a skill troglodytes are especially reknowned for. "
-#drawsize 20
-#supplybonus -3
-#pillagebonus 2
-#mapmove 24
-#end
-
-#selectmonster 430 -- Black Harpy
-#name "Redfanged Harpy"
-#spr1 "ForgottenRealms/harpy1.tga"
-#spr2 "ForgottenRealms/harpy2.tga"
-#descr "Harpies were notoriously malevolent and sadistic, taking enormous joy in hurting, torturing and killing their victims, and were always seeking more. They were fond of entrancing travelers with their songs and luring them to shockingly cruel dooms. When they were done playing with their captives, they slew them and finally devoured them.
-
-They were not particularly intelligent creatures, and were prone to cowardice in the face of superior power.
-
-The most notorious harpies lived within the Kingdom of Nix, where they were instrumental in Redfang the Reaper's reign of terror over Vanesci Hamlet in the 7th century DR. Swooping down from high in the skies they would kidnap villagers in nets, carrying them away and eventually dropping them into the cauldrons of Nix. The demise of their hapless victims produced a burst of mana that powered the kingdom's bloodforges."
-#supplybonus -3
-#seduce 10
-#humanoid
-#itemslots 860678
-#hp 14
-#mor 9
-#prot 5
-#att 12
-#def 12
-#ap 12
-#douse 1
-#okmagicleader
-#darkvision 60
-#voidsanity 1 --Magical beast/aberration
-#end
-
-#selectmonster 234 --Minotaur
-#voidsanity 1 --monstrous humanoid
-#end
-
-#selectmonster 239 -- Stirge
-#name "Stirge"
-#spr1 "ForgottenRealms/stirge1.tga"
-#spr2 "ForgottenRealms/stirge2.tga"
-#descr "This horrid monster looks like a cross between a large bat and an oversized mosquito. Its legs end in sharp pincers, and its long, needle-like proboscis slashes the air as it seeks to feed on the blood of living creatures. Their bites contain a weak poison that makes closing the wound quite difficult."
-#drawsize -50
-#clearweapons
-#weapon 1825 -- Stirge Bite
-#str 3
-#size 2
-#voidsanity 1 --Magical beast/aberration
-#end
-
-#selectmonster 1301 -- Frost Giant Elder
-#name "Frost Giant Elder"
-#spr1 "ForgottenRealms/frostgiantcom1.tga"
-#spr2 "ForgottenRealms/frostgiantcom2.tga"
-#descr "Among the tallest of true giants, frost giants could tower higher than 21 feet tall. Men often grew beards, which would become matted with frost and icicles.
-
-The frost giants had a reputation among other races for being crude and of low intelligence, but they were very cunning fighters. They greatly respected brute strength and battle prowess. For frost giants an individual's place in the ordning was determined by evidence of physical might, often taking the form of a combination of the individual's ability to wrestle and boast. Though it could also take the form of musculature, scars from battles of renown, or trophies fashioned from the bodies of their enemies. It was not uncommon for them to try proving their strength and improving their status by challenging a white dragon. Because of this violent way of life, most frost giants died in battle rather than passing away peacefully.
-
-Whenever frost giants of different clans met and their status was unclear, they would wrestle for dominance. At times this could resemble a festival, with giants cheering on their clan's champions and making bold boasts or challenges, but at other times it could take the form of a chaotic free-for-all."
-#clearweapons
-#cleararmor
-#armor 192 -- magic furs
-#armor 119 -- reinf leather cap
-#weapon 18 -- battleaxe
-#weapon 27 -- boulder
-#weapon 1822 -- Giant Stomp
-#hp 70
-#magicskill 2 2
-#custommagic 4864 100 --d6x
-#shockres 0
-#coldres 25
-#fireres -5
-#incunrest 7
-#supplybonus -5
-#berserk 3
-#mountainsurvival
-#snow
-#darkvision 50
-#voidsanity 1 --giant
-#end
-
-#selectmonster 2219
-#name "Forest Troll"
-#spr1 "ForgottenRealms/troll1.tga"
-#spr2 "ForgottenRealms/troll2.tga"
-#montag 13003
-#montag 13005
-#clearweapons
-#weapon 29
-#weapon 29
-#darkvision 60
-#supplybonus -5
-#acidres -10
-#fireres -10
-#voidsanity 1 --giant
-#end
-
-#selectmonster 2220
-#name "Troll Shaman"
-#spr1 "ForgottenRealms/trollshaman1.tga"
-#spr2 "ForgottenRealms/trollshaman2.tga"
-#descr "Forest Trolls could reach heights of 11 feet tall. Their thin and wiry frame held deceptive strength and fortitude, and, like all trolls, possessed the remarkable ability to regenerate wounds and even lost limbs. 
-
-Trolls had little in the way of society. They traveled in non-migratory clans of 3-12 and, upon discovery of an area rich with prey, would establish a lair, most often within a cave. They were often located near smaller human settlements, including established roads as those who traveled off the path served as a great source of food. Once established within a region the band of trolls would hunt and devour as extensively as possible until all resources had been exhausted.
-
-Any culture they possessed was passed down orally, usually kept within a single clan. Communication was often simple assertions for dominance or a mating female presenting a kill, along with a shared meal, to a prospective male."
-#drawsize -10
-#researchbonus -8
-#holy
-#clearweapons
-#weapon 18
-#darkvision 50
-#supplybonus -5
-#acidres -10
-#fireres -10
-#voidsanity 1 --giant
-#end
-
-#selectmonster 2986
-#name "Untheric Wizard"
-#descr "Masters of the four elements, the Northern Wizards are among the most accomplished wizards in the Old Empires and will make excellent allies once order is restored to Messemprar.
-
-The Northern Wizards were a powerful group of spellcasters based out northern Unther. Their city was once the largest in Unther and was a regular stop on a trade route between Sultim, Bezantur, and Mourktar. But when ships began avoiding the west coast of the Alamber entirely, the city turned to chaos. The royal palace came under siege by an angry mob for several weeks, as a tax revolt escalated into food riots and then a full-scale revolt. Many city guardsmen were killed. The Northern Wizards exterted their control and claimed the city gates, resulting in swift and terrible retribution from Gilgeam, his assassins, and his armies." 
-#clearspec
-#clearmagic
-#nametype 151
-#magicskill 51 2
-#magicskill 0 1
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 3 1
-#sailing 3 3
-#hp 15
-#end
-
-#selectmonster 2987
-#name "Sorcerer of the Enclave"
-#descr "Masters of sorcery, the Enclave was a small but powerful circle of mages in southern Unther. Their hidden sanctuaries lay on the west side of the Greenfields. They have no known loyalties to any of the factions in Unther, though they have angered the king by refusing his summons on several occasions and never pay their taxes. It is said to be one of the most knowledgeable cabals of mages in the entire Realms, but none have entered their chambers or knows their true power." 
-#clearspec
-#clearmagic
-#nametype 151
-#magicskill 0 1
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 3 1
-#magicskill 4 2
-#magicskill 5 2
-#magicskill 8 2
-#custommagic 1920 100 --d6x
-#sailing 3 3
-#hp 15
-#startage 60
-#maxage 65
-#end
-
--- 291 -- Captain
-#selectmonster 291 -- Captain
-#spr1 "ForgottenRealms/innerseacaptain.tga"
-#spr2 "ForgottenRealms/innerseacaptain2.tga"
-#name "Inner Sea Captain"
-#descr "The Sea of Fallen Stars, also known as the Inner Sea, was the largest inland body of water in Faerûn. From the Dragonmere Bay of Cormyr and Sembia in the west to the Alamber Sea of the Old Empires in the east, it formed a thoroughfare of trade and cultral exchange that laid the foundation for the rampant diversity of the Forgotten Realms. Through an interconnecting series of deepwater bays, navigable rivers, heavily-patrolled canals, dangerous portages, and deadly underground rivers, it allowed naval traffic from Zhentarim's Moonsea in the north all the way through to the southern Lake of Steam to form an unbroken route to the Shining Sea and onward. 
-
-The sea was the crucial trade way for the many people's of Faerûn. The coastal nations that held the shores did so at great peril. Pirates, Sahuagin, Locathah, Krakens, and the sleepless dead were only a small handful of the many dangers the lurked in the mist. The captains who plied these waters prayed day and night to the gods of the sea to keep them safe on their journeys."
-#clearweapons
-#cleararmor
-#armor 6 -- ring mail cuirass 
-#weapon 10 -- falchion   
-#goodleader
-#hp 24
-#stealthy 15
-#montag 13001
-#sailing 999 6
-#patrolbonus 2
-#pillagebonus 2
-#mor 14
-#att 12
-#def 12
-#end
-
-#selectmonster 870 -- Sea Captain
-#name "Sea Captain"
-#descr "The major island chains of the Moonshaes, the Nelanther Isles, and the jutting Tethyr Peninsula formed a rough boundary for the Sea of Swords. The men and women who plied these waters were a tough breed, just as likely to engage in piracy as honest work. They were excellent leaders and fine sailors."
-#goodleader
-#cleararmor
-#hp 18
-#stealthy 5
-#sailing 999 6
-#farsail 1
-#armor 11
-#armor 20
-#patrolbonus 2
-#end
-
--- 1918 -- Salty Sea Dog
-#selectmonster 1918 -- Salty Sea Dog
-#name "Salty Sea Dog"
-#descr "Sailors on both the open, western seas and on the inner Sea of Fallen Stars were accustomed to danger. Many took up the sword for a better wage and a bit of adventure. Some were even known to traffic in piracy."
-#clearspec
-#gcost 10010
-#mor 12
-#stealthy 5
-#pillagebonus 2
-#mapmove 20
-#patrolbonus 2
-#montag 13003
-#end
-
-
--- x 2989 -- Nar Hunter
-#selectmonster 2989
-#name "Nar Hunter"
-#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
-#pillagebonus 1
-#snow
-#coldres 3
-#end
-
--- x 2990 -- Nar Warrior
-#selectmonster 2990
-#name "Nar Warrior"
-#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
-#pillagebonus 1
-#snow
-#coldres 3
-#end
-
--- x 2991 -- Nar Axeman
-#selectmonster 2991
-#name "Nar Axeman"
-#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
-#pillagebonus 1
-#snow
-#coldres 3
-#montag 13003
-#end
-
--- 137 -- Nar Cavalry 
-#selectmonster 137
-#name "Nar Horseman"
-#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
-#pillagebonus 1
-#stealthy 5
-#clearspec
-#wastesurvival
-#snow
-#coldres 3
-#mountmnr 3574 --Armored Steppe Horse
-#end
-
--- 136 -- Nar Horselord
-#selectmonster 136
-#name "Nar Horselord"
-#descr "Following the fall of Old Narfell, the Nar people remained among the plains of the Cold Lands, forming tribes of nomadic horse-riders that spread across from the Rawlinswood to the southern stretches of the Great Glacier. They gathered in temporary tent settlements known as waymeets. They followed the migration patterns of deer and oxen and gathered frequently to raid nearby lands."
-#pillagebonus 2
-#stealthy 5
-#goodleader
-#wastesurvival
-#snow
-#coldres 3
-#end
-
--- x 440 -- Paladin
-#selectmonster 440
-#name "Paladin of the Golden Lion"
-#descr "The Order of the Golden Lion was established shortly after Torm's rebirth at the end of the Time of Troubles in the Year of Shadows, 1358 DR. They were to be holy warriors of the faith, and in particular undertake the Penance of Duty, including fervently devoting themselves to the goals of the Triad, which included the gods Tyr, Torm, and Ilmater. This had been set by Torm to repay the persecution of other religions by his temple in Tantras during this time and in the years preceding, to atone for their failure to guard against strife, and to relieve the destruction wrought to magic."
-#hp 25
-#mr 15
-#mor 20
-#str 14
-#att 14
-#def 14
-#skilledrider 4
-#diseaseres 100
-#woundfend 1
-#clearweapons
-#weapon 1900 --holy lance
-#weapon 75 --enchanted sword
-#cleararmor
-#armor 215 --enchanted full plate (of ulm)
-#armor 218 -- enchanted full helmet (of ulm)
-#armor 221 -- enchanted kite shield (of ulm)
-#end
-
--- x 957 -- Lord of the Desert Sun
-#selectmonster 957
-#name "Lord Firemane"
-#fixedname "Nobanion"
-#descr "Nobanion was a primal spirit sometimes worshiped as a deity of royalty, lions, and other felines, as well as good beasts. The Lion King was considered to have originally been an interloper deity on Toril, but since his arrival he has firmly established himself within the Faerûnian pantheon. Worship of the King of Beasts was especially strong in Gulthmere Forest and among the wemics of the Shining Plains."
-#hp 165
-#size 7
-#prot 9
-#mr 20
-#att 20
-#def 20
-#prec 16
-#spiritsight
-#autohealer 2
-#autodishealer 2
-#supplybonus 20
-#end
-
--- x 1352 -- entrance guard
-#selectmonster 1352 -- entrance guard
-#name "Lapalguard"
-#descr "The largest cities of The Shining Plains were in the western cities of the Lapal Coast. Organized into a trade league of free cities, their influence spread across much of the south via their trade connections and wealthy ports. These cities drew lavish merchant-lords of all race and ken. The tough and well-equipped soldiers who guarded the gates of these walled cities were some of the best armored forces in the Realms, even if not the best-trained.
-
-They provide a useful siege defense bonus for those who can afford them."
-#end
-
-#selectmonster 1070 -- Philosopher
-#name "Cimbari Sage"
-#descr "The Akademeia of Cimbar produced not only learned priests but also the erudite Cimbari Sages."
-#nobadevents 10
-#magicskill 4 1
-#end
-
-
--- x -- 63 -- Ffolkspear
-#selectmonster 61
-#name "Ffolkspear"
-#descr "The Ffolk were a race of humans that inhabited the Moonshae Isles alongside the Northlanders. The Ffolk inhabited the southern parts of the Moonshaes, including Flamsterd, Moray, Snowdown, and Sunset, and the southern parts of Alaron and Gwynneth. Their society was mainly agricultural and was ruled by a High King or Queen who resided in Caer Callidyrr, the capital of the Ffolk.
-
-The Ffolk had a deep reverence for nature and the land around them, always respecting the divine power in a misty, forest, a rushing river or even a hidden pool."
-#formationfighter 2
-#end
-
--- x -- 63 -- Callidyrr Tower Guard
-#selectmonster 63
-#name "Callidyrr Tower Guard"
-#descr "The Ffolk were a race of humans that inhabited the Moonshae Isles alongside the Northlanders. The Ffolk inhabited the southern parts of the Moonshaes, including Flamsterd, Moray, Snowdown, and Sunset, and the southern parts of Alaron and Gwynneth. Their society was mainly agricultural and was ruled by a High King or Queen who resided in Caer Callidyrr, the capital of the Ffolk.
-
-The Ffolk had a deep reverence for nature and the land around them, always respecting the divine power in a misty, forest, a rushing river or even a hidden pool."
-#bodyguard 1
-#att 13
-#def 13
-#mor 13
-#end
-
---x 184 -- Darkwell Bloodrider
-#selectmonster 184
-#name "Darkwell Bloodrider"
-#descr "The Bloodriders were a unit of several dozen undead cavalry in the service of Kazgoroth the Beast. 
-
-Once human Northmen, they were corrupted by submergence in a tained Moonwell. They emerged as undead, unholy warriors of tremendous power. Some believed they were able to absorb the powers of those they killed. 
-
-To gain access to Darkwell Bloodriders, you must send your blood priests into a Darkwell Magic site."
-#hp 10
-#fear 5
-#holy
-#end
-
-#selectmonster 1831 --Hydra
-#descr "A hydra was a reptilian magical beast that had anywhere from five to twelve heads. Very rarely they could even have up to fifty heads.
-Hydras were not very intelligent, but they were deadly due to their regenerative capabilities.
-
-Hydras were typically found in the marshes of regions with a temperate climate. Many hydras were known to inhabit the Forest of Wyrms. They also were quite common in the jungles of Chult."
-#voidsanity 1 -- Magical beast
-#end
-
-#selectmonster 2185
-#amphibian
-#end
-
-#selectmonster 2186
-#amphibian
-#end
-
--- asp
-#selectmonster 3657
-#name "Serpent of the Deeps"
-#descr "These vipers of the deep Mhair jungles are reknowned for their venom. They are often used as agents of chaos on the battlefield by the Yuan-ti, who breed them en masse and unleash them on their unprepared enemies.
-
-These serpents are only capable of being bred in the inhospital underdark and not all serpents born in the deep are compliant enough to be used in this way - only 10 such creatures can be recruited in any given province per turn. The remainder of the brood can be used to feed the rest."
-#clearspec
-#gcost 10003
-#animal
-#undisciplined
-#coldblood
-#darkvision 50
-#swampsurvival
-#swimming
-#reclimit 10
-#supplybonus 1
-#amphibian
-#end
-
-#selectmonster 102
-#descr "Aboleths were known for their ability to enslave the minds of their enemies and bend them to their will. The truly depraved, however, came of their own accord to worship the masters of the deeps."
-#end
-
-#selectmonster 3408 -- Svirfneblin Illusionist -- Vaetti Gygja
-#name "Svirfneblin Illusionist"
-#descr "Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret.
-
-Like other gnomes, deep gnomes preferred the use of illusion to other schools of magic. However, while this was simply a cultural preference among rock gnomes, it was a method of survival for deep gnomes.
-
-Deep gnome wizards who were not illusionists were frequently diviners, using their spells to locate and find materials essential to survival. Most magic items forged by deep gnomes were disguised as jewelry, which was relatively common among the svirfneblin."
-#clearmagic
-#magicskill 3 2 
-#magicskill 7 2
-#fixforgebonus 1
-#mastersmith 1
-#darkvision 80
-#darkpower 2
-#hp 12
-#mr 14
-#str 6
-#att 6
-#def 7
-#ap 8
-#end
-
-#selectmonster 3403 -- Svirfneblin Spearmen
-#name "Svirfneblin Spearmen"
-#descr "Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret."
-#darkvision 60
-#darkpower 2
-#str 7
-#att 8
-#def 8
-#ap 6
-#end
-
-#selectmonster 3412 -- Svirfneblin	Crossbowmen
-#name "Svirfneblin	Crossbowmen"
-#descr "Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret."
-#darkvision 60
-#darkpower 2
-#str 7
-#att 8
-#def 7
-#ap 7
-#end
-
-#selectmonster 3410 -- Svirfneblin Burrow Warden
-#name "Burrow Warden"
-#descr "Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret."
-#darkvision 60
-#darkpower 2
-#hp 20
-#str 7
-#att 8
-#def 7
-#ap 7
-#end
-
-#selectmonster 3406 -- Svirneblin King
-#name "Svirfneblin King"
-#descr "Deep Gnomes, where they remained free, lived in monarchical governments. King Schnicktick was among the most famous of the svirfneblin kings. He was ruler of Blingdenstone through its temporary abandonment and repopulation in 1358 when drow entered the city en route to an invasion on Mithril Hall. Schnicktick and his people joined the dwarves and helped turn back their aggressive neighbor. However, he was deposed when the Drow returned in 1371 and laid waste to the city."
-#darkvision 60
-#darkpower 2
-#hp 35
-#goodleader
-#end
-
-#selectmonster 2131 --Gryphon
-#name "Griffon"
-#descr "Griffons were semi-intelligent magical beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
-#mapmove 26
-#voidsanity 1 -- Magical beast
-#end
-
-#selectmonster 2159 --Gelatinous Cube
-#voidsanity 1 --ooze
-#end
-
-#selectmonster 3544 --Gryphon
-#name "Griffon"
-#descr "Griffons were semi-intelligent magical beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts.
-
-While carrying a rider the griffon's fighting ability is slightly impaired."
-#voidsanity 1 -- Magical beast
-#end
-
-
-------------------------------------------------------------------------------------------------------------------
 --COMPILED FROM src/monsters\waterdeep-monsters.dm
 ------------------------------------------------------------------------------------------------------------------
 
@@ -53859,7 +54281,8 @@ This commander is IMMOBILE. They will summon 3d6 constables at the start of each
 
 #newmonster 6001
 #copystats 3544
-#copyspr 3544
+#spr1 "ForgottenRealms/armouredgriffon.tga"
+#spr2 "ForgottenRealms/armouredgriffon2.tga"
 #name "Griffon"
 #descr "Griffons were semi-intelligent beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
 #armor 252 -- Light Scale Barding
@@ -53868,28 +54291,28 @@ This commander is IMMOBILE. They will summon 3d6 constables at the start of each
 -- 6608 -- Griffon Riders
 #newmonster 6608
 #copystats 6600
-#spr1 "ForgottenRealms/griffridera.tga"
-#spr2 "ForgottenRealms/griffriderb.tga"
+#spr1 "ForgottenRealms/waterdeep-griffonrider.tga"
+#spr2 "ForgottenRealms/waterdeep-griffonrider2.tga"
 #name "Griffon Rider"
 #mountmnr 6001 -- Griffon (armored)
-#unmountedspr1 "ForgottenRealms/aumarrdismounted.tga"
-#unmountedspr2 "ForgottenRealms/aumarrdismounted2.tga"
+#unmountedspr1 "ForgottenRealms/waterdeep-griffonrider-dis.tga"
+#unmountedspr2 "ForgottenRealms/waterdeep-griffonrider-dis2.tga"
 #descr "The history of the Gryphon Cavalry can perhaps be traced as far back as the second Trollwars (940 DR to 952 DR) when Ilithrew Belabranta rode his gryphon into battle. One of his later heirs, Lord Palinor Belabranta, did the same versus the orc hordes of the Black Claw tribe in the Year of Crimson Magics, 1026 DR. Since then, House Belabranta was a noble family associated with the breeding and training of griffons.
 
 In the Year of the Black Horde, 1235 DR, Open Lord Ahghairon officially declared the Gryphon Cavalry part of the City Guard during a huge orc siege on the city. The riders not only fought the orc hordes again, but were also used to shuttle in much needed supplies to the city."
-#armor 49 -- light weight scale mail
-#armor 20 -- iron cap
-#armor 2 -- shield
+#armor 19 -- full plate
+#armor 118 -- half helmet
+#armor 3 -- kite shield
 #weapon 1901 -- Lance of Burning Blackfire
-#weapon 8 -- Broad Sword
+#weapon 75 -- Enchanted Sword
 #patrolbonus 2
 #size 3
-#hp 13
+#hp 15
 #str 12
 #enc 3
 #att 13
 #def 13
-#skilledrider 2
+#skilledrider 3
 #prec 11
 #mr 11
 #mor 13
@@ -69902,35 +70325,62 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end
 
 #newsite 2996
-#name "dummy"
-#path 8
+#name "The Blade Kingdoms"
+#path 9
+#look 8
 #level 0
 #rarity 5
+#gold 50
+#com 6896 -- thaumaturge of artifice
+#com 7738 -- hippogriff captain
+#com 7740 -- blade captain
+#mon 2110 -- pikeneer
+#mon 2108 -- crossbowman
+#mon 7737 -- hippogriff rider
+#mon 134 -- elmeti
 --#mon 
 --#com 
 #end
 
 #newsite 2997
-#name "dummy"
-#path 8
+#name "Hippogriff Roost"
+#path 1
+#look 1
 #level 0
 #rarity 5
+#gems 1 1
+#gold 25
+#com 7738 -- hippogriff captain
+#mon 7737 -- hippogriff rider
 --#mon 
 --#com 
 #end
 
 #newsite 2998
-#name "dummy"
-#path 8
+#name "Griffon Roost"
+#path 1
+#look 8
 #level 0
 #rarity 5
+#gems 1 1
+#gold 40
+#com 7742 -- griffon captain
+#mon 7741 -- griffon cavalry
 --#mon 
 --#com 
 #end
 
+--look1 spires
+--look 2 hoodoo
+-- look 3 crack
+-- look 4 fort
+
+
 #newsite 2999
-#name "dummy"
-#path 8
+#name "Fort Glarandar"
+#res 100
+#path 3
+#look 3
 #level 0
 #rarity 5
 --#mon 
@@ -69938,8 +70388,10 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end
 
 #newsite 3000
-#name "dummy"
-#path 8
+#name "Fort Emmech"
+#res 100
+#path 3
+#look 3
 #level 0
 #rarity 5
 --#mon 
@@ -69947,46 +70399,63 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end
 
 #newsite 3001
-#name "dummy"
+#name "Griffon's Nest"
 #path 8
 #level 0
 #rarity 5
+#gold 25
+#res 25
+#popgrowth 10
+#mon 7733 -- uthgardt berserker
 --#mon 
 --#com 
 #end
 
 #newsite 3002
-#name "dummy"
-#path 8
+#name "House of the Master's Shadow"
+#path 5 -- death
 #level 0
 #rarity 5
+#gems 5 1
+#gems 7 1
+#com 7743 -- telflammar shadowlord
 --#mon 
 --#com 
 #end
 
 #newsite 3003
-#name "dummy"
-#path 8
+#name "Shemszarr Square"
+#path 9
+#look 1
 #level 0
 #rarity 5
+#gold 50
+#com 7395 -- red wizard academe
+#com 6703 -- goldeye cleric of waukeen
+#com 6622 -- merchant prince
 --#mon 
 --#com 
 #end
 
 #newsite 3004
-#name "dummy"
-#path 8
+#name "Thayan Enclave"
+#path 4
+#look 3
 #level 0
 #rarity 5
+#com 7395 -- red wizard academe
 --#mon 
 --#com 
 #end
 
 #newsite 3005
-#name "dummy"
-#path 8
+#name "The Golden Way"
+#path 9
+#look 5
 #level 0
 #rarity 5
+#gold 50
+#com 6622 -- merchant prince
 --#mon 
 --#com 
 #end
@@ -71449,6 +71918,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #level 0 -- Was 8, but why?
 #rarity 5
 #path 9
+#look 9
 #gold 50
 #gems 2 1
 #com 6901 -- Cleric of Isis
@@ -71556,6 +72026,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #res 20
 --#com 6921 -- Seneschal
 #com 7103 -- Sceptanar Wizard
+#mon 6020 -- myrmdion
 #end
 
 #newsite 3222
@@ -71593,7 +72064,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #com 7006   -- Simbarch Apprentice
 #com 7005 	-- Simbarch Sorceress
 #mon 56 	-- Royal Forester
-#mon 6004 -- Griffon Ranger
+#com 6005 -- aglarondan griffonrider commander
+#mon 6008 -- aglarondan griffonrider
 #end
 
 #newsite 3225
@@ -72236,7 +72708,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #name "Reth"
 #level 0 -- Was 8, but why?
 #rarity 5
-#path 3
+#path 9
+#look 9
 #gold 30
 #decscale 1 -- increases productivity
 --#com 6833 		-- Merchant Lord
@@ -72248,6 +72721,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #level 0 -- Was 8, but why?
 #rarity 5
 #path 9
+#look 9
 #res 50
 #decscale 1 -- increases productivity
 #com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
@@ -72401,7 +72875,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #name "The Emerald Corridor"
 #level 1
 #rarity 5
-#path 3
+#path 6
+#look 3
 #gold 50
 #mon 7100 -- Chessentan Corsair
 #mon 1918 -- Salty Sea Dog
@@ -72485,6 +72960,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #level 1
 #rarity 5
 #path 9
+#look 9
 #res 50
 #gems 3 2
 #mon 7686 -- Vaedric Axeman
@@ -72632,14 +73108,17 @@ In 1320 DR, the half elven dynasty that had reigned since the nation's founding 
 #forestcom 6618 	-- Priestess of Selune
 
 #addrecunit 7001 	-- Free Spear Militia
-#addrecunit 289 	-- Pikeneer
+#addrecunit 3631 	-- Aglarondan man at arms
+#addrecunit 6009 	-- Aglarondan Pikeneer
+#addrecunit 57 	-- Aglarondan knight
 #addrecunit 55 		-- Longbowmen
-#addrecunit 26 		-- Light Cavalry
+--#addrecunit 26 		-- Light Cavalry
 
 
-
+#addreccom 6004 -- Griffon Ranger
 #addreccom 7349 -- Half-elf Champion
-#addreccom 46	-- Mounted Commander
+#addreccom 23	-- knight Commander
+#addreccom 7738	-- hippogriff captain
 #addreccom 6813	-- Elven Bladesinger
 #addreccom 6618 -- Priestess of Selune
 #addreccom 7004 -- Wavecaptain of Valkur
@@ -72653,11 +73132,11 @@ In 1320 DR, the half elven dynasty that had reigned since the nation's founding 
 #defcom1 7349 -- Half-elf Champion
 #defcom2 7002 	-- Yuirwood Ranger
 #defunit1 7001 	-- Free Spear Militia
-#defunit1b 56 	-- Royal Forester
-#defunit2 26 		-- Light Cavalry
+#defunit1b 6009 	-- Aglarondan pikeneer
+#defunit2 57 		-- aglarondan knight
 #defmult1 20 	
 #defmult1b 12 
-#defmult2 8 
+#defmult2 10 
 	
 #guardcom 7349 -- Half-elf Champion
 #guardunit 289
@@ -72672,6 +73151,7 @@ In 1320 DR, the half elven dynasty that had reigned since the nation's founding 
 #startsite "The Cedar Forest"
 #startsite "Elusive Lights"
 #startsite "Waterfall"
+#startsite "Hippogriff Roost"
 
 #end 
 
@@ -74046,6 +74526,66 @@ Recent events, however, have left the Dales in shock. In just the last 30 years,
 #startsite "Shadowdale"
 #startsite "Harper's Hill"
 #startsite "Elminster's Tower"
+
+#end
+
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/nations\dambrath.dm
+------------------------------------------------------------------------------------------------------------------
+-- reserved range 6050-6099
+
+#newmonster 6050
+#name "Crinti Template"
+#hp 10
+#size 3
+#prot 0
+#mr 10
+#mor 11
+#str 10
+#att 10
+#def 10
+#prec 10
+#enc 3
+#rcost 1
+#rpcost 10000
+#gcost 10014
+#ap 12
+#darkvision 50
+#darkpower 1
+#mapmove 14
+#startage 25
+#maxage 180
+#nametype 266
+#end
+
+#newmonster 6051
+#copystats 3573 -- steppe horse
+#copyspr 3573
+#name "Dambrathan Warhorse"
+#descr "Horse breeding is the pillar of Dambrath's economy. So much of the plains country north of the coast is devoted to horse ranches that horseflesh provides the majority of the country’s income. Owning a ranch on the open plains is both lucrative and prestigious,since the horses bred by the Crinti landowners are prized all along the coast of the Great Sea, as well as in other parts of the world, such as Zakhara."
+#hp 21
+#mr 9
+#att 10
+#end
+
+#newmonster 6052
+#copystats 3528 -- nisean war horse
+#copyspr 3528
+#name "Crinti Warhorse"
+#mr 11
+#mapmove 32
+#end
+
+#newmonster 6053
+#copystats 6050 -- crinti template
+#copyspr 1577 -- ancestor vessel
+#mountmnr 6052
+#name "Crinti Shadow Marauder"
+
+-- weapons
+-- throwing knife x2
 
 #end
 
@@ -77347,6 +77887,25 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 
 
 ------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/poptypes\gnomes.dm
+------------------------------------------------------------------------------------------------------------------
+#selectpoptype 38 -- gnome
+#clearrec
+#cleardef
+#defcom1 272 -- gnome champion
+#addreccom 272 -- gnome champion
+#addreccom 3798 -- gnome illusionist
+#addrecunit 483 -- gnome militia
+#addrecunit 3787 -- gnome soldier
+#addrecunit 3785 -- gnome crossbowman
+#defunit1  483 -- militia
+#defmult1 20
+#defunit1b 3785 -- crossbowman
+#defmult1b 10
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
 --COMPILED FROM src/poptypes\poptypes.dm
 ------------------------------------------------------------------------------------------------------------------
 
@@ -78253,11 +78812,30 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #addreccom 7730 -- Tethyrian Druid
 #end
 
-
-
 -- poptype 166 -- Troglodytes  
 -- poptype 173 -- Lizardfolk
 -- poptype 190 -- Kobolds
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/poptypes\thesk.dm
+------------------------------------------------------------------------------------------------------------------
+#selectpoptype 198 -- thresk
+#clearrec
+#cleardef
+#defcom1 6737 -- orc warlord
+#addreccom 272 -- gnome champion
+#addreccom 3798 -- gnome illusionist
+#addreccom 6737 -- orc warlord
+#addrecunit 483 -- gnome militia
+#addrecunit 3787 -- gnome soldier
+#addrecunit 3785 -- gnome crossbowman
+#addrecunit 6676 -- orc marauder
+#defunit1  6676 -- orc marauder
+#defmult1 10
+#defunit1b 3785 -- crossbowman
+#defmult1b 10
+#end
 
 
 ------------------------------------------------------------------------------------------------------------------

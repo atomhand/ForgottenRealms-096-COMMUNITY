@@ -53,14 +53,17 @@ In 1320 DR, the half elven dynasty that had reigned since the nation's founding 
 #forestcom 6618 	-- Priestess of Selune
 
 #addrecunit 7001 	-- Free Spear Militia
-#addrecunit 289 	-- Pikeneer
+#addrecunit 3631 	-- Aglarondan man at arms
+#addrecunit 6009 	-- Aglarondan Pikeneer
+#addrecunit 57 	-- Aglarondan knight
 #addrecunit 55 		-- Longbowmen
-#addrecunit 26 		-- Light Cavalry
+--#addrecunit 26 		-- Light Cavalry
 
 
-
+#addreccom 6004 -- Griffon Ranger
 #addreccom 7349 -- Half-elf Champion
-#addreccom 46	-- Mounted Commander
+#addreccom 23	-- knight Commander
+#addreccom 7738	-- hippogriff captain
 #addreccom 6813	-- Elven Bladesinger
 #addreccom 6618 -- Priestess of Selune
 #addreccom 7004 -- Wavecaptain of Valkur
@@ -74,11 +77,11 @@ In 1320 DR, the half elven dynasty that had reigned since the nation's founding 
 #defcom1 7349 -- Half-elf Champion
 #defcom2 7002 	-- Yuirwood Ranger
 #defunit1 7001 	-- Free Spear Militia
-#defunit1b 56 	-- Royal Forester
-#defunit2 26 		-- Light Cavalry
+#defunit1b 6009 	-- Aglarondan pikeneer
+#defunit2 57 		-- aglarondan knight
 #defmult1 20 	
 #defmult1b 12 
-#defmult2 8 
+#defmult2 10 
 	
 #guardcom 7349 -- Half-elf Champion
 #guardunit 289
@@ -93,5 +96,6 @@ In 1320 DR, the half elven dynasty that had reigned since the nation's founding 
 #startsite "The Cedar Forest"
 #startsite "Elusive Lights"
 #startsite "Waterfall"
+#startsite "Hippogriff Roost"
 
 #end 

@@ -28,8 +28,11 @@
 #end
 
 #newweapon 1901
-#copyweapon 4
 #name "Lance of Burning Blackfire"
+#charge
+#pierce
+#notdismounted
+#twohanded
 #magic
 #att 2
 #dmg 7
@@ -61,4 +64,17 @@
 #dmg 7
 #att 2
 #magic
+#end
+
+#newweapon 1908
+#copyweapon 408 -- Talons
+#name "Talons"
+#nratt 2
+#end
+
+#newweapon 1909
+#copyweapon 308
+#name "Enchanted Glaive"
+#magic
+#att 1
 #end

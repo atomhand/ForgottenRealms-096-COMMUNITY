@@ -4693,35 +4693,62 @@
 #end
 
 #newsite 2996
-#name "dummy"
-#path 8
+#name "The Blade Kingdoms"
+#path 9
+#look 8
 #level 0
 #rarity 5
+#gold 50
+#com 6896 -- thaumaturge of artifice
+#com 7738 -- hippogriff captain
+#com 7740 -- blade captain
+#mon 2110 -- pikeneer
+#mon 2108 -- crossbowman
+#mon 7737 -- hippogriff rider
+#mon 134 -- elmeti
 --#mon 
 --#com 
 #end
 
 #newsite 2997
-#name "dummy"
-#path 8
+#name "Hippogriff Roost"
+#path 1
+#look 1
 #level 0
 #rarity 5
+#gems 1 1
+#gold 25
+#com 7738 -- hippogriff captain
+#mon 7737 -- hippogriff rider
 --#mon 
 --#com 
 #end
 
 #newsite 2998
-#name "dummy"
-#path 8
+#name "Griffon Roost"
+#path 1
+#look 8
 #level 0
 #rarity 5
+#gems 1 1
+#gold 40
+#com 7742 -- griffon captain
+#mon 7741 -- griffon cavalry
 --#mon 
 --#com 
 #end
 
+--look1 spires
+--look 2 hoodoo
+-- look 3 crack
+-- look 4 fort
+
+
 #newsite 2999
-#name "dummy"
-#path 8
+#name "Fort Glarandar"
+#res 100
+#path 3
+#look 3
 #level 0
 #rarity 5
 --#mon 
@@ -4729,8 +4756,10 @@
 #end
 
 #newsite 3000
-#name "dummy"
-#path 8
+#name "Fort Emmech"
+#res 100
+#path 3
+#look 3
 #level 0
 #rarity 5
 --#mon 
@@ -4738,10 +4767,14 @@
 #end
 
 #newsite 3001
-#name "dummy"
+#name "Griffon's Nest"
 #path 8
 #level 0
 #rarity 5
+#gold 25
+#res 25
+#popgrowth 10
+#mon 7733 -- uthgardt berserker
 --#mon 
 --#com 
 #end
@@ -6240,6 +6273,7 @@
 #level 0 -- Was 8, but why?
 #rarity 5
 #path 9
+#look 9
 #gold 50
 #gems 2 1
 #com 6901 -- Cleric of Isis
@@ -6347,6 +6381,7 @@
 #res 20
 --#com 6921 -- Seneschal
 #com 7103 -- Sceptanar Wizard
+#mon 6020 -- myrmdion
 #end
 
 #newsite 3222
@@ -6384,7 +6419,7 @@
 #com 7006   -- Simbarch Apprentice
 #com 7005 	-- Simbarch Sorceress
 #mon 56 	-- Royal Forester
-#mon 6004 -- Griffon Ranger
+#homemon 6008 -- aglarondan griffonrider
 #end
 
 #newsite 3225
@@ -7027,7 +7062,8 @@
 #name "Reth"
 #level 0 -- Was 8, but why?
 #rarity 5
-#path 3
+#path 9
+#look 9
 #gold 30
 #decscale 1 -- increases productivity
 --#com 6833 		-- Merchant Lord
@@ -7039,6 +7075,7 @@
 #level 0 -- Was 8, but why?
 #rarity 5
 #path 9
+#look 9
 #res 50
 #decscale 1 -- increases productivity
 #com 6913 -- SPELLCASTER HERO RECRUITABLE MONTAG
@@ -7192,7 +7229,8 @@
 #name "The Emerald Corridor"
 #level 1
 #rarity 5
-#path 3
+#path 6
+#look 3
 #gold 50
 #mon 7100 -- Chessentan Corsair
 #mon 1918 -- Salty Sea Dog
@@ -7276,6 +7314,7 @@
 #level 1
 #rarity 5
 #path 9
+#look 9
 #res 50
 #gems 3 2
 #mon 7686 -- Vaedric Axeman

@@ -7,7 +7,33 @@
  * Summon Monster & Summon Nature's Ally
    * About 100 monsters (many adjusted/templated, some new)
 
+### New Sites
+
+ * Hippogriff Roost - Umber Marsh (293), Sulduskoon Valley (136), Aglarond (capsite)
+    * Hippogriff Cavalry - a well-trained hippogriff rider - a little cheaper and weaker than Cormyr's Talon
+    * Hippogriff Captain - commander variant
+ * Blade Kingdoms - East Chondath (200)
+    * Small income bonus and several recruits
+    * Hippogriff Cavalry & captains
+    * Thamaturge of Artifice
+    * Pikeneers, crossbowmen
+    * Elmeti - a very well equipped heavy cavalry
+    * Blade Captain - a commander with good leadership, fantastic equipment, and mediocre combat skils
+ * Glarondar - Umber Marsh (293)
+    * Bonus resources
+    * TODO - Aglarond recruits
+ * Griffon Roost
+    * Griffon Cavalry - elite griffon cavalry
+    * Griffon Captain - commander variant
+
 ### Troops changes
+
+#### Mounts 
+
+ * Hippogriff buffed - extra talon attack and better stats, unsurroundable 2
+   * Hippogriff mounts get a leather barding
+ * Griffon buffed - extra talon attack, dive attack, better stats, unsurroundable 3
+ TODO - update Tethyrian druid wildshape to match new Griffon stats
 
 #### General equipment changes
  * Copy over equipment balance changes from Sloop's Comfy Balance Mod
@@ -18,6 +44,18 @@
  * Many commanders get high quality magic weapon and armour
    * Paladin-types: Paladin of the Golden Lion, Trueblade of Torm, Watchwarden of Helm (loses crossbow)
  * (Holy) Destrier ridden by various sacred knights buffed with better stats and magic plate barding
+
+### Indepdents
+  * New: Hippogriff Cavalry + Hippogriff Captain (Hippogriff Roost site)
+  * New: Griffon Cavalry + Griffon Captain (Griffon Roost site)
+
+#### Waterdeep
+ * Juiced up Griffon Rider
+    * Benefits from general Griffon buffs
+    * New sprite
+    * Better stats
+    * Heavier armour
+    * Magic sword
 
 #### Dwarves mini-rework
  * Dwarven Battlerager's Great Boar mount given Leather Barding
@@ -37,12 +75,33 @@
    * Basic rider encumbrance to 3 (was 4 for some reason)
    * Rider upgrade to heavy cavalry gear (lance/broadsword/platemail/full helmet/kite shield)
      * superior magic version for ornrion
-   * Mount gets a leather barding (9/9 prot with SCBM buffs)
-   * Hippogriff def improved to 10 (from 7)
+   * Affected by Hippogriff changes
    * Add Skilled Rider 3 (4 for ornrion)
    * Match stats to Purple Dragon Knight
+   * Reduce Unsurroundable to 2 (3 for Ornrion) - but mount is unsurroundable too
 
-  
+#### Aglarond mini-rework
+ * Griffon Ranger reworked to an anyfort commander recruit
+    * 75% chance of N/E random path
+    * Generally boosted stats
+    * Benefits from Griffon buffs
+ * Starts with Umber Marsh (293) under control and forted
+    * This province is improved by new sites
+ * New commanders
+    * Knight commander (replaces mounted commander)
+    * Hippogriff Captain
+ * New units
+    * Aglarondan Pikeneer (replaces generic Pikeneer) - well-armoured and skilled pikeman
+    * Aglarondan Man At Arms
+    * Aglarondan Knight
+    * Aglarondan Griffonrider - powerful cap sacred
+    * Hippogriff Cavalry - mobile cavalry available at cap and certain special sites
+ * Remove generic Light Cavalry from roster
+ * Remove Aglarondan cavalry (medium cavalry unit) from roster
+
+ ### Chessenta
+  * Chessentan Corsair - add swimming tag
+  * TODO: new unit - Myrmidon
 
 ### Other changes
  * Initiate Ceramorphosis and Free a Mindflayer summons a random Illithid directly from the montag instead of doing silly stuff with firstshapes

@@ -164,7 +164,8 @@ This commander is IMMOBILE. They will summon 3d6 constables at the start of each
 
 #newmonster 6001
 #copystats 3544
-#copyspr 3544
+#spr1 "ForgottenRealms/armouredgriffon.tga"
+#spr2 "ForgottenRealms/armouredgriffon2.tga"
 #name "Griffon"
 #descr "Griffons were semi-intelligent beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
 #armor 252 -- Light Scale Barding
@@ -173,28 +174,28 @@ This commander is IMMOBILE. They will summon 3d6 constables at the start of each
 -- 6608 -- Griffon Riders
 #newmonster 6608
 #copystats 6600
-#spr1 "ForgottenRealms/griffridera.tga"
-#spr2 "ForgottenRealms/griffriderb.tga"
+#spr1 "ForgottenRealms/waterdeep-griffonrider.tga"
+#spr2 "ForgottenRealms/waterdeep-griffonrider2.tga"
 #name "Griffon Rider"
 #mountmnr 6001 -- Griffon (armored)
-#unmountedspr1 "ForgottenRealms/aumarrdismounted.tga"
-#unmountedspr2 "ForgottenRealms/aumarrdismounted2.tga"
+#unmountedspr1 "ForgottenRealms/waterdeep-griffonrider-dis.tga"
+#unmountedspr2 "ForgottenRealms/waterdeep-griffonrider-dis2.tga"
 #descr "The history of the Gryphon Cavalry can perhaps be traced as far back as the second Trollwars (940 DR to 952 DR) when Ilithrew Belabranta rode his gryphon into battle. One of his later heirs, Lord Palinor Belabranta, did the same versus the orc hordes of the Black Claw tribe in the Year of Crimson Magics, 1026 DR. Since then, House Belabranta was a noble family associated with the breeding and training of griffons.
 
 In the Year of the Black Horde, 1235 DR, Open Lord Ahghairon officially declared the Gryphon Cavalry part of the City Guard during a huge orc siege on the city. The riders not only fought the orc hordes again, but were also used to shuttle in much needed supplies to the city."
-#armor 49 -- light weight scale mail
-#armor 20 -- iron cap
-#armor 2 -- shield
+#armor 19 -- full plate
+#armor 118 -- half helmet
+#armor 3 -- kite shield
 #weapon 1901 -- Lance of Burning Blackfire
-#weapon 8 -- Broad Sword
+#weapon 75 -- Enchanted Sword
 #patrolbonus 2
 #size 3
-#hp 13
+#hp 15
 #str 12
 #enc 3
 #att 13
 #def 13
-#skilledrider 2
+#skilledrider 3
 #prec 11
 #mr 11
 #mor 13

@@ -902,8 +902,6 @@
 #addreccom 7730 -- Tethyrian Druid
 #end
 
-
-
 -- poptype 166 -- Troglodytes  
 -- poptype 173 -- Lizardfolk
 -- poptype 190 -- Kobolds

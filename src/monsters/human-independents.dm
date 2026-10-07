@@ -1144,7 +1144,7 @@ Take care of your equipment. The gryphon form taken by the Tethyrian Druid allow
 #shapechange 7731 -- Tethyrian Druid Wildshape
 #end
 
--- 7731 -- Tethyrian Druid Wildshape
+-- 7731 -- Tethyrian Druid Wildshape (Griffon)
 #newmonster 7731
 #copystats 6679 -- Calishite Template
 #copyspr 2131 -- gryphon
@@ -1526,4 +1526,174 @@ Miklos sees the Ravens as his answer to the Harpers, with whom Sembia has regula
 #armor 215 --enchanted full plate (of ulm)
 #armor 218 -- enchanted full helmet (of ulm)
 #armor 221 -- enchanted kite shield (of ulm)
+#end
+
+#newmonster 7737
+#copystats 6600 --waterdhavian template
+#spr1 "ForgottenRealms/hippogriffknight.tga"
+#spr2 "ForgottenRealms/hippogriffknight2.tga"
+#mountmnr 6748 -- Hippogriff
+#unmountedspr1 "ForgottenRealms/hippogriffriderdis.tga"
+#unmountedspr2 "ForgottenRealms/hippogriffriderdis2.tga"
+#name "Hippogriff Cavalry"
+#descr "Hippogriffs could be found throughout Faerun including the hills of Aglarond, Cormyr and the foothills of the Starspine mountains. Although less intelligent and easier to train than Griffons, Hippogriffs are still highly prized mounts and only elite troops would get the oppportunity to ride them."
+#gcost 10010
+#hp 14
+#prot 0
+#size 3
+#str 11
+#att 12
+#def 12
+#prec 10
+#mr 11
+#mor 12
+#armor 18 -- full chain mail
+#armor 21 -- Full Helm
+#armor 3 -- Kite Shield
+#weapon 4 -- Lance
+#weapon 13 -- hammer
+#unsurr 2
+#patrolbonus 5
+#ap 12
+#mapmove 12
+#startage 30
+#maxage 50
+#skilledrider 2
+#end
+
+#newmonster 7738
+#copystats 6600 --waterdhavian template
+#spr1 "ForgottenRealms/hippogriffcaptain.tga"
+#spr2 "ForgottenRealms/hippogriffcaptain2.tga"
+#mountmnr 6748 -- Hippogriff
+#unmountedspr1 "ForgottenRealms/hippogriffcaptaindis.tga"
+#unmountedspr2 "ForgottenRealms/hippogriffcaptaindis2.tga"
+#name "Hippogriff Captain"
+#descr "Hippogriffs could be found throughout Faerun including Aglarond, Cormyr and the foothills of the Starspine mountains. Although less intelligent and easier to train than Griffons, Hippogriffs are still highly prized mounts and only elite troops would get the oppportunity to ride them.
+
+Riding  a flying mount gives the commander a superior overview of the battlefield."
+#gcost 10010
+#hp 15
+#prot 0
+#size 3
+#str 12
+#att 13
+#def 13
+#prec 10
+#mr 12
+#mor 13
+#armor 18 -- full chain mail
+#armor 21 -- Full Helm
+#armor 3 -- Kite Shield
+#weapon 4 -- Lance
+#weapon 13 -- hammer
+#unsurr 3
+#patrolbonus 5
+#ap 12
+#mapmove 12
+#startage 30
+#maxage 50
+#skilledrider 3
+#goodleader
+#end
+
+#selectmonster 134 -- Royal Guard (MA mari)
+#name "Elmeti"
+#descr "The Blade Kingdoms descended from people of knowledge, strategy, and education who took pride in avoiding bloodshed, venerated law and order, sciences, art, and rational thinking. Military and political disputes arose between city-states and were resolved by annual competitions of military strategy and prowess.
+
+Elmeti were elite noble cavalry of the Blade Kingdoms. They compensate their lack of battle experience with their phenomenal (and phenomenally expensive) equipment."
+#nametype 114 -- marignon male
+#mor 11
+#att 11
+#def 11
+#mr 12
+#clearweapons
+#weapon 1907 --enchanted lance
+#weapon 75 --enchanted sword
+#cleararmor
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
+#end
+
+#selectmonster 3897 --royal guard destrier
+#mr 8
+#cleararmor
+#armor 272 -- enchanted plate barding
+#end
+
+#selectmonster 2110 -- LA Mari Pikeneer
+#descr "The standard armor of the infantry of the Blade Kingdoms is the plate cuirass. Large weapons such as great swords, halberds and pikes are preferred to smaller weapons paired with shields. The soldiers of the Blade Kingdoms are dressed in fancy clothing to enhance morale."
+#end
+
+#newmonster 7740
+#copystats 3275
+#spr1 "ForgottenRealms/bladecaptain.tga"
+#spr2 "ForgottenRealms/bladecaptain2.tga"
+#mountmnr 6001 -- Griffon (armored)
+#unmountedspr1 "ForgottenRealms/bladecaptaindis.tga"
+#unmountedspr2 "ForgottenRealms/bladecaptaindis2.tga"
+#name "Blade Captain"
+#descr "A Blade Captain was the leader of a Blade House, one of the powerful mercenary companies that made up the political system of the Blade Kingdoms. In effect Blade Captains were the nobility, although the status was available to anyone able to expend the exorbitant amount of money required to establish a mercenary company worthy of acknowledgment.
+
+Despite the militaristic foundations of their culture, the cities of the Blade Kingdoms were unused to actual violence - conflicts were resolved through bloodless contests of wits known as 'white wars'. Accordingly, Blade Captains are not experienced warriors, but they are still ambitious and capable leaders with the equipment appropriate to their immense wealth."
+#nametype 114 -- marignon male
+#expertleader
+#clearweapons
+#cleararmor
+#weapon 1907 --enchanted lance
+#weapon 840 --flame blade
+#armor 215 --enchanted full plate (of ulm)
+#armor 218 -- enchanted full helmet (of ulm)
+#armor 221 -- enchanted kite shield (of ulm)
+#mr 14
+#gcost 10030
+#sailing 999 7
+#incprovdef 3
+#taxcollector
+#end
+
+#newmonster 7741
+#copystats 6600 -- waterdhavian template
+#copyspr 2587 -- zhayedan
+#mountmnr 6001 -- Griffon (armored)
+#spr1 "ForgottenRealms/griffoncavalry.tga"
+#spr2 "ForgottenRealms/griffoncavalry2.tga"
+#name "Griffon Cavalry"
+#descr "Griffon riders are the elite among aerial cavalry - only highly trained and experienced knights of professional soldiers are ever appointed to ride such expensive and powerful mounts."
+#skilledrider 3
+#hp 14
+#mr 11
+#mor 12
+#str 11
+#att 12
+#def 12
+#weapon 4 -- lance
+#weapon 8 -- broad sword
+#armor 19 -- full plate
+#armor 21 -- full helmet
+#armor 2 -- shield
+#end
+
+#newmonster 7742
+#copystats 6600 -- waterdhavian template
+#copyspr 2629 -- zhayedan
+#mountmnr 6001 -- Griffon (armored)
+#name "Griffon Captain"
+#descr "Griffon riders are the elite among aerial cavalry - only highly trained and experienced knights of professional soldiers are ever appointed to ride such expensive and powerful mounts.
+
+Riding  a flying mount gives the commander a superior overview of the battlefield."
+#skilledrider 4
+#hp 15
+#mr 12
+#mor 13
+#str 12
+#att 13
+#def 13
+#weapon 4 -- lance
+#weapon 8 -- broad sword
+#armor 19 -- full plate
+#armor 21 -- full helmet
+#armor 2 -- shield
+#goodleader
 #end

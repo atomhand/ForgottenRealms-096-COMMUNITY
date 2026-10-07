@@ -564,8 +564,15 @@ Deep gnome wizards who were not illusionists were frequently diviners, using the
 #selectmonster 2131 --Gryphon
 #name "Griffon"
 #descr "Griffons were semi-intelligent magical beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
-#mapmove 26
 #voidsanity 1 -- Magical beast
+#mapmove 26
+#str 17
+#unsurr 3
+#clearweapons
+#weapon 408 -- talons
+#weapon 408 -- talons
+#weapon 404 -- beak
+#weapon 753 -- dive attack
 #end
 
 #selectmonster 2159 --Gelatinous Cube
@@ -574,8 +581,15 @@ Deep gnome wizards who were not illusionists were frequently diviners, using the
 
 #selectmonster 3544 --Gryphon
 #name "Griffon"
-#descr "Griffons were semi-intelligent magical beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts.
-
-While carrying a rider the griffon's fighting ability is slightly impaired."
+#descr "Griffons were semi-intelligent magical beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
 #voidsanity 1 -- Magical beast
+#att 14
+#def 10
+#str 17
+#unsurr 3
+#clearweapons
+#weapon 408 -- talons
+#weapon 408 -- talons
+#weapon 404 -- beak
+#weapon 753 -- dive attack
 #end

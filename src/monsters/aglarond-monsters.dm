@@ -291,53 +291,146 @@ Simbarchs had a vitality unusual to wizards, using their magical power to fuel t
 
 #newmonster 6004
 #copystats 6600
-#spr1 "ForgottenRealms/griffridera.tga"
-#spr2 "ForgottenRealms/griffriderb.tga"
+#spr1 "ForgottenRealms/griffon-scout.tga"
+#spr2 "ForgottenRealms/griffon-scout2.tga"
 #mountmnr 3544 -- Griffon (unarmored)
-#unmountedspr1 "ForgottenRealms/aumarrdismounted.tga"
-#unmountedspr2 "ForgottenRealms/aumarrdismounted2.tga"
+#unmountedspr1 "ForgottenRealms/griffon-scout-dis.tga"
+#unmountedspr2 "ForgottenRealms/griffon-scout-dis2.tga"
 #name "Griffon Ranger"
-#descr "Aglarond maintains a small unit of griffon-riders at the capital. They tend to be used as messengers and scouts rather than as shock troops."
-#patrolbonus 2
+#descr "Griffons nested at the highest reaches of the Tannath Mountains and Umbergoth and could also be found around the coastal regions and interior uplands of Aglarond. Accordingly, Aglarond retains a small permanent unit of griffon-riders who serve as messengers and scouts."
 #size 3
-#hp 12
-#str 11
+#hp 25
+#str 12
 #enc 3
-#att 13
-#def 13
-#skilledrider 2
+#att 14
+#def 14
+#skilledrider 5
 #prec 11
-#mr 11
-#mor 13
+#mr 12
+#mor 14
 #stealthy 0
 #patrolbonus 20
 #rpcost 10000
-#reclimit 2
 #gcost 10000
+#custommagic 8192 50
 #cleararmor
-#armor 49 -- light weight scale mail
-#armor 20 -- iron cap
-#armor 2 -- shield
+#armor 414 -- ironwood helm
+#armor 412 -- elven lorica
 #clearweapons
-#weapon 357 -- Light Lance (re-usable)
+#weapon 1909 -- enchanted glaive
 #weapon 1831 -- Elite shortbow
+#poorleader
 #end
 
+#newmonster 6007
+#copystats 3544
+#spr1 "ForgottenRealms/armouredgriffon.tga"
+#spr2 "ForgottenRealms/armouredgriffon2.tga"
+#name "Bonded Griffon"
+#descr "Griffons were semi-intelligent beasts with a body like a lion and the wings, forelegs, and head like those of an eagle. They were highly sought after as flying mounts."
+#armor 252 -- Light Scale Barding
+#holy
+#hp 50
+#str 18
+#mr 14
+#att 15
+#end
+
+#newmonster 6008
+#copystats 6600
+#name "Aglarondan Griffonrider"
+#descr "Soaring above the Yuirwood and the coasts of Aglarond, the famed Aglarondan griffonriders are an elite force of aerial knights who serve the Simbul and defend their homeland against attack. Griffonriders study aerial combat and develop special skills for fighting from the sky.
+
+They are particularly renowned for their riding skills and can coax more out of their mounts than any other rider."
+#mountmnr 6007
+#spr1 "ForgottenRealms/aglarond-griffonrider.tga"
+#spr2 "ForgottenRealms/aglarond-griffonrider2.tga"
+#unmountedspr1 "ForgottenRealms/aglarond-griffonrider-dis.tga"
+#unmountedspr2 "ForgottenRealms/aglarond-griffonrider-dis2.tga"
+#mountainsurvival
+#hp 17
+#mr 14
+#mor 15
+#str 12
+#att 14
+#def 14
+#gcost 10020
+#skilledrider 5
+#unsurr 3
+#weapon 1907 --enchanted lance
+#weapon 75 --enchanted sword
+#armor 214 -- golden armor
+#armor 155 -- golden shield
+#armor 213 -- golden helmet
+#holy
+#end
+
+
 #newmonster 6005
-#copystats 2129 -- Logrian Cavalry
-#spr1 "ForgottenRealms/aglarondan_cav_1.png"
-#spr2 "ForgottenRealms/aglarondan_cav_2.png"
-#unmountedspr1 "ForgottenRealms/aglarondan_cav_unmounted_1.png"
-#unmountedspr2 "ForgottenRealms/aglarondan_cav_unmounted_2.png"
-#name "Aglarondan Cavalry"
-#descr "The standing army stationed at Glarondar and Emmech included a small number of cavalry. Although few in number, the troops of the standing army were the front line of Aglarondan defense, and were well trained and equipped."
-#hp 11
+#copystats 6008
+#name "Griffonrider Commander"
+#descr "Soaring above the Yuirwood and the coasts of Aglarond, the famed Aglarondan griffonriders are an elite force of aerial knights who serve the Simbul and defend their homeland against attack. Griffonriders study aerial combat and develop special skills for fighting from the sky.
+
+They are particularly renowned for their riding skills and can coax more out of their mounts than any other rider."
+#mountmnr 6007
+#spr1 "ForgottenRealms/aglarond-griffoncaptain.tga"
+#spr2 "ForgottenRealms/aglarond-griffoncaptain2.tga"
+#unmountedspr1 "ForgottenRealms/aglarond-griffonrider-dis.tga"
+#unmountedspr2 "ForgottenRealms/aglarond-griffonrider-dis2.tga"
+#mountainsurvival
+#hp 30
+#mr 15
+#mor 16
+#str 14
+#att 15
+#def 15
+#gcost 10020
+#unsurr 4
+#skilledrider 6
+#weapon 1907 --enchanted lance
+#weapon 75 --enchanted sword
+#armor 214 -- golden armor
+#armor 155 -- golden shield
+#armor 213 -- golden helmet
+#superiorleader
+#holy
+#end
+
+#newmonster 6009
+#copystats 289
+#spr1 "ForgottenRealms/aglarond-pikeneer.tga"
+#spr2 "ForgottenRealms/aglarond-pikeneer2.tga"
+#name "Aglarondan Pikeneer"
+#descr "Although not a fundamentally militaristic nation, Aglarond was under perpetual threat from Thay and maintained a standing army supported by compulsory military service. The infantry were well-drilled and motivated in defence of their homeland."
+#mor 12
+#mr 11
+#formationfighter 2
+#str 11
+#att 12
 #def 11
+#gcost 12
 #cleararmor
-#armor 13 -- Chain hauberk
-#armor 20 -- Iron cap
-#armor 2 -- Shield
-#clearweapons
-#weapon 4 -- Lance
-#weapon 17 -- Axe
+#armor 18 -- full chain mail
+#armor 118 -- half helmet
+#end
+
+#selectmonster 3631 -- milesian man at arms
+#name "Aglarondan Man At Arms"
+#descr "Although not a fundamentally militaristic nation, Aglarond was under perpetual threat from Thay and maintained a standing army supported by compulsory military service. The infantry were well-drilled and motivated in defence of their homeland."
+#mor 12
+#mr 11
+#str 11
+#att 12
+#def 12
+#cleararmor
+#armor 18 -- full chain mail
+#armor 118 -- half helmet
+#end
+
+#selectmonster 57 -- Knight of Man
+#name "Knight of Aglarond"
+#descr "Although not particularly known for its knightly tradition, Aglarond have a reserve of quality mounted troops to support its infantry forces."
+#mr 11
+#hp 14
+#skilledrider 3
 #end
