@@ -1673,6 +1673,8 @@ Despite the militaristic foundations of their culture, the cities of the Blade K
 #armor 19 -- full plate
 #armor 21 -- full helmet
 #armor 2 -- shield
+#unsurr 3
+#mountainsurvival
 #end
 
 #newmonster 7742
@@ -1696,4 +1698,40 @@ Riding  a flying mount gives the commander a superior overview of the battlefiel
 #armor 21 -- full helmet
 #armor 2 -- shield
 #goodleader
+#unsurr 4
+#mountainsurvival
+#end
+
+#newmonster 7743
+#copystats 6600 -- waterdhavian template
+#copyspr 2326 -- assassin adventurer
+#name "Telflammar Shadowlord"
+#descr "The Shadowmasters of Telflamm are one of Faerûn's most notorious thieves' guilds, a secret society every bit as grasping and ruthless as the Night Masks of Westgate or the Shadow Thieves of Amn. Under their subtle and cloaked rule, Thesk's port city of Telflamm is a prime center of trade in both legal and illicit goods.
+
+The Shadowmasters are made up of burglars, murderers, and thugs with a variety of talents, including assassins, experts, fighters, rogues, shadowdancers, and warriors. A small number of clerics devoted to Mask belong to the guild, as do some arcane spellcasters whose greed outweighs their scruples.
+Above all these criminals stand the Telflammar shadowlords, the secret captains of iniquity who demand unquestioned obedience from their numerous minions."
+#hp 25
+#str 14
+#att 15
+#def 15
+#mr 15
+#mor 15
+#ap 16
+#darkpower 3
+#glamour
+#darkvision 100
+#magicskill 5 1
+#magicskill 7 1
+#custommagic 20480 100
+#holy
+#stealthy 35
+#assassin
+#scalewalls
+#patience 2
+#armor 121 -- leather hood
+#armor 10 -- leather hauberk
+#weapon 312 -- bane dagger
+#weapon 312
+#okleader
+#okundeadleader
 #end

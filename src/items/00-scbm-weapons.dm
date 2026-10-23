@@ -175,7 +175,7 @@
 
 #selectweapon 130 -- Hammer of the Mountains
 #att 0
-#secondaryeffectalways 1335 -- Small Area Stun, flying immune for HotM
+--#secondaryeffectalways 1335 -- Small Area Stun, flying immune for HotM
 #end
 
 #selectweapon 131 -- Frost Blast
@@ -230,7 +230,7 @@
 #att 1
 #ammo 15
 #range 40
-#secondaryeffectalways 1292 -- Banefire, bow/xbow
+--#secondaryeffectalways 1292 -- Banefire, bow/xbow
 #end
 
 #selectweapon 200 -- Bane Burst
@@ -364,7 +364,7 @@
 #ammo 1005 -- 5 fatigue
 #uwok
 #bonus
-#secondaryeffectalways 1325 -- Sap Life, single target
+--#secondaryeffectalways 1325 -- Sap Life, single target
 #end
 
 #selectweapon 300 -- Head Butt
@@ -382,7 +382,6 @@
 
 #selectweapon 312 -- Bane Dagger
 #def 1
-#secondaryeffect 1332 -- Deathly Wound
 #end
 
 #selectweapon 315 -- Machaka Spear
@@ -1165,16 +1164,6 @@
 #dmg 8
 #end
 
-#selectweapon 720 -- Ritual Baton
-#copyweapon 12 -- Mace
-#name "Ritual Baton"
-#dmg 6
-#att 1
-#def 1
-#magic
-#secondaryeffectalways 1264 -- Trap Soul, AoE1
-#end
-
 #selectweapon 722 -- God-Slayer Spear
 #def 1
 #end
@@ -1323,7 +1312,6 @@
 
 #selectweapon 843 -- Sceptre of Corruption
 #dmg 5
-#secondaryeffect 1332 -- Deathly Wound
 #end
 
 #selectweapon 846 -- Phanstasmal Tail Flipper
@@ -1349,10 +1337,6 @@
 #name "Spectral No-Dachi"
 #dmg 8
 #att 2
-#end
-
-#selectweapon 870 -- Entanglement, Carrion Bow
-#secondaryeffectalways 1331 -- Carrion Poison
 #end
 
 #selectweapon 877 -- Bronze Hayfork

@@ -4780,37 +4780,50 @@
 #end
 
 #newsite 3002
-#name "dummy"
-#path 8
+#name "House of the Master's Shadow"
+#path 5 -- death
 #level 0
 #rarity 5
+#gems 5 1
+#gems 7 1
+#com 7743 -- telflammar shadowlord
 --#mon 
 --#com 
 #end
 
 #newsite 3003
-#name "dummy"
-#path 8
+#name "Shemszarr Square"
+#path 9
+#look 1
 #level 0
 #rarity 5
+#gold 50
+#com 7395 -- red wizard academe
+#com 6703 -- goldeye cleric of waukeen
+#com 6622 -- merchant prince
 --#mon 
 --#com 
 #end
 
 #newsite 3004
-#name "dummy"
-#path 8
+#name "Thayan Enclave"
+#path 4
+#look 3
 #level 0
 #rarity 5
+#com 7395 -- red wizard academe
 --#mon 
 --#com 
 #end
 
 #newsite 3005
-#name "dummy"
-#path 8
+#name "The Golden Way"
+#path 9
+#look 5
 #level 0
 #rarity 5
+#gold 50
+#com 6622 -- merchant prince
 --#mon 
 --#com 
 #end
@@ -6419,7 +6432,8 @@
 #com 7006   -- Simbarch Apprentice
 #com 7005 	-- Simbarch Sorceress
 #mon 56 	-- Royal Forester
-#homemon 6008 -- aglarondan griffonrider
+#com 6005 -- aglarondan griffonrider commander
+#mon 6008 -- aglarondan griffonrider
 #end
 
 #newsite 3225

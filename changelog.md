@@ -8,7 +8,6 @@
    * About 100 monsters (many adjusted/templated, some new)
 
 ### New Sites
-
  * Hippogriff Roost - Umber Marsh (293), Sulduskoon Valley (136), Aglarond (capsite)
     * Hippogriff Cavalry - a well-trained hippogriff rider - a little cheaper and weaker than Cormyr's Talon
     * Hippogriff Captain - commander variant
@@ -25,11 +24,16 @@
  * Griffon Roost
     * Griffon Cavalry - elite griffon cavalry
     * Griffon Captain - commander variant
+ * Thesk region
+   * House of the master's Shadow, Shemszarr Square, The Golden Way, Thayan Enclave
+
+### New poptypes
+ * Gnomish
+ * Theskan (mixed gnomes and orcs)
 
 ### Troops changes
 
 #### Mounts 
-
  * Hippogriff buffed - extra talon attack and better stats, unsurroundable 2
    * Hippogriff mounts get a leather barding
  * Griffon buffed - extra talon attack, dive attack, better stats, unsurroundable 3
@@ -45,7 +49,7 @@
    * Paladin-types: Paladin of the Golden Lion, Trueblade of Torm, Watchwarden of Helm (loses crossbow)
  * (Holy) Destrier ridden by various sacred knights buffed with better stats and magic plate barding
 
-### Indepdents
+#### Independents
   * New: Hippogriff Cavalry + Hippogriff Captain (Hippogriff Roost site)
   * New: Griffon Cavalry + Griffon Captain (Griffon Roost site)
 

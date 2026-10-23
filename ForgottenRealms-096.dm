@@ -34752,7 +34752,7 @@ Stone Giant Elders who receive the Twiceborn ritual become Dodforerir upon death
 #startage 80
 #maxage 350
 #clearmagic
-#magicskill 7 2 -- 4g
+#magicskill 7 2 -- 2G
 #magicskill 4 1 -- 1S
 #custommagic 18432 100 -- 100% S/G
 #darkvision 50
@@ -38080,25 +38080,27 @@ Riding  a flying mount gives the commander a superior overview of the battlefiel
 
 #newmonster 7743
 #copystats 6600 -- waterdhavian template
+#copyspr 2326 -- assassin adventurer
 #name "Telflammar Shadowlord"
 #descr "The Shadowmasters of Telflamm are one of Faerûn's most notorious thieves' guilds, a secret society every bit as grasping and ruthless as the Night Masks of Westgate or the Shadow Thieves of Amn. Under their subtle and cloaked rule, Thesk's port city of Telflamm is a prime center of trade in both legal and illicit goods.
 
 The Shadowmasters are made up of burglars, murderers, and thugs with a variety of talents, including assassins, experts, fighters, rogues, shadowdancers, and warriors. A small number of clerics devoted to Mask belong to the guild, as do some arcane spellcasters whose greed outweighs their scruples.
 Above all these criminals stand the Telflammar shadowlords, the secret captains of iniquity who demand unquestioned obedience from their numerous minions."
-#hp 20
+#hp 25
 #str 14
-#att 14
-#def 14
-#mr 14
-#mor 14
+#att 15
+#def 15
+#mr 15
+#mor 15
 #ap 16
-#darkpower 4
+#darkpower 3
 #glamour
 #darkvision 100
 #magicskill 5 1
 #magicskill 7 1
 #custommagic 20480 100
-#stealthy 90
+#holy
+#stealthy 35
 #assassin
 #scalewalls
 #patience 2
