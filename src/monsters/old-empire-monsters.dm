@@ -89,12 +89,12 @@ Sacred Thyreophoroi represent the pinnacle of battlefield achievement and traini
 -- 3881 -- Old Empire Drillmaster
 #newmonster 6881
 #copystats 3356 
-#copyspr 3019
+#copyspr 2486 -- benjamite commander
 #name "Old Empire Drillmaster"
 #descr "After proving oneself time and time again in battle, recognition from ones' immediate superiors became recognition from the gods themselves. Those with divine favor often found themselves in positions of command. Now freed from their lives as slaves and promoted to the rank of Drillmaster, roughly equivalent to that of a scribe, these men and women were perfectly prepared to hold the soldiers under their command to the same exacting standards they themselves formerly suffered and were molded by. 
 
 While older and battle scarred, Drillmasters put their troops through difficult, daily drills and well versed in how to motivate the men under their command. Their slaver ability allows them to recruit Old Empire Slave Spearmen, a tougher bunch than what the Bureaucrats draw."
-#gcost 10025
+#gcost 10010
 #nametype 151
 #hp 22
 #str 13
@@ -106,12 +106,11 @@ While older and battle scarred, Drillmasters put their troops through difficult,
 #clearspec
 #clearweapons
 #cleararmor
-#weapon 1832 -- Elite Javelin
-#weapon 1
+#weapon 8 --  broad sword
 #armor 8
 #armor 2
 #armor 118
-#goodleader
+#okleader
 #nomagicleader
 #noundeadleader
 #holy
@@ -121,10 +120,10 @@ While older and battle scarred, Drillmasters put their troops through difficult,
 #end
 
 -- 200 -- Prince of the Old Empire 
-#selectmonster 200
+#selectmonster 1081
 #name "Prince of the Old Empire"
 #descr "Members of the Old Empire nobility were typical of Mulan ethnicity. Priests, Wizards and Bureaucrats were the typical route, but now and again a noble scion would take up the call to war in the hopes of glory or divinely-inspired vengeance."
-#gcost 10030
+#gcost 250
 #nametype 151
 #hp 24
 #str 12
@@ -134,7 +133,7 @@ While older and battle scarred, Drillmasters put their troops through difficult,
 #def 13
 #prec 11
 #holy
-#goodleader
+#expertleader
 #okmagicleader
 #noundeadleader
 #inspirational 1
@@ -146,12 +145,12 @@ While older and battle scarred, Drillmasters put their troops through difficult,
 -- 3883 -- Bureaucratic Prince
 #newmonster 6883
 #copystats 200 
-#copyspr 1031
+#copyspr 3461 -- tubba
 #name "Vizier"
 #descr "Members of the Old Empire nobility were typical of Mulan ethnicity. Priesthood and arcane mastery were the surest routes to power, but at the top of the heirarchy were the bureaucratic scions of ancient noble houses known as Viziers. They had tremendous power and influence and often kept even the gods they served in the dark about matters of state. 
 
 Viziers serve their gods and their realms with the complex processing of slaves, the collection of taxes, and the improvement of provincial defenses. Their slaver ability allows them to recruit skirmishers."
-#gcost 10025
+#gcost 10010
 #nametype 151
 #hp 14
 #size 3
@@ -168,7 +167,7 @@ Viziers serve their gods and their realms with the complex processing of slaves,
 #armor 249
 #armor 202
 #holy
-#goodleader
+#okleader
 #okmagicleader
 #noundeadleader
 #inspirational 1
@@ -1056,7 +1055,7 @@ The principle temples of the church of Osiris were the Crypt of Shadows located 
 #newmonster 6910
 #copystats 1991
 #copyspr 1991
-#name "Anhurite Crusader"
+#name "Guardian of Skuld"
 #descr "The Guardians of Skuld formed during the Time of Troubles. Led by the church of Anhur, followers of Isis and Osiris were also active in the order, though not without the frustration of Horus-Re. Despite the god's protestations, however, even his clergy were often keen to overlook their activities so long as their mission to protect the capital and temple complexes of Mulhorand was their focus." 
 #hp 15
 #gcost 10018
@@ -1125,11 +1124,102 @@ The principle temples of the church of Osiris were the Crypt of Shadows located 
 #armor 120
 #weapon 10
 #hp 15
-#mor 16
+#mor 14
 #ap 16
 #reinvigoration 1
 -- #stealthy 5
 #pillagebonus 2
 #patrolbonus 2
+#swimming
 #montag 13003
+#end
+
+#newmonster 6020
+#copystats 7100 -- chessentan corsair
+#copyspr 3052 -- soldier of the setting sun
+#name "Myrmidon"
+#descr "Myrmidons were elite troops based at the palace of Sceptanar. Hand-picked from the best of the Chessentan troops, they were the very best this warrior culture had to offer."
+#hp 16
+#mr 12
+#str 12
+#att 13
+#def 13
+#mor 15
+#clearweapons
+#cleararmor
+#weapon 724 -- orichalcum sword
+#armor 242 -- orichalcum hoplon
+#armor 243 -- orichalcum helmet
+#armor 36 -- dragon scale mail
+#holy
+#end
+
+#newmonster 6021 -- Cleric of Horus-Re
+#copyspr 3053 -- grand hierophant
+#name "Cleric of Horus-Re"
+#descr "Horus-Re was the leader of Mulhorandi pantheon. Once the change-promoting deity simply known as Horus, the young god received the powers and personality of his slain father Re, becoming a more staunch traditionalist. His divine portfolio encompassed life, rulership, the sun, kings, and vengeance.
+
+The position of priest in the church of Horus-Re was hereditary; members belonged to the House of Helcaliant, and could claim at least one divine incarnation of Horus-Re among their ancestors. The church of the Lord of the Sun was the leading political body in Mulhorand; it was led by the pharaoh, Horustep III, and the vizier Kalarzim.
+
+Priests of Horus-Re were usually nobles. They tended to be arrogant and expected to receive special treatment from those with lesser standing, and were often motivated by political gain as much as divine calling."
+#gcost 500 --10010
+#rpcost 10000
+#nametype 113
+#maxage 150
+#hp 25
+#str 14
+#mr 16
+#mor 15
+#att 12
+#def 12
+#prec 14
+#clearweapons
+#cleararmor
+#clearmagic
+#weapon 75 -- enchanted sword
+#armor 244 -- magic silk robes
+#armor 212 -- magic crown
+#holy
+#magicskill 0 2
+#magicskill 4 2
+#magicskill 9 3
+#masterrit 1
+#custommagic 2176 100 -- FAWE
+#custommagic 8448 200 -- NGH
+#okleader
+#end
+
+#selectmonster 1555 -- LA arco elephant rider
+#name "Anhurite Crusader"
+#descr "Anhur was the war god of the Mulhorandi pantheon. His faithful typically served in Mulhornad's military and were expected to dedicate their lives to military training. At times suppressed by  Horus-Re, Anhur and his followers would inevitably rise to prominence when the survival of Mulhorand was threatened. Elephants were considered sacred to Anhur and sometimes domesticated in war."
+#holy
+#hp 15
+#mr 14
+#mor 16
+#str 14
+#att 14
+#def 14
+#holycost 2
+#end
+
+#selectmonster 3643 -- elephant spearman
+#name "Anhurite Crusader"
+#descr "Anhur was the war god of the Mulhorandi pantheon. His faithful typically served in Mulhornad's military and were expected to dedicate their lives to military training. At times suppressed by  Horus-Re, Anhur and his followers would inevitably rise to prominence when the survival of Mulhorand was threatened. Elephants were considered sacred to Anhur and sometimes domesticated in war."
+#holy
+#hp 15
+#mr 14
+#mor 16
+#str 14
+#att 14
+#def 14
+#end
+
+#selectmonster 3541
+#name "Anhurite War Elephant"
+#mor 16
+#mr 11
+#att 12
+#def 12
+#holy
+#descr "Elephants, among the largest animals known to man, are trained for use in battle. Their sheer size allows them to trample soldiers and horses. Elephants are intelligent beings with minds of their own. Once hurt, they become enraged and terrified, seeking to leave the battlefield by the shortest possible route and trampling friends and enemies alike. Elephants are sacred to the church of Anhur."
 #end

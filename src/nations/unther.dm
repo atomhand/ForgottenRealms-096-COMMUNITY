@@ -29,7 +29,7 @@ Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance 
 #addgod 6876 -- Gilgeam
 #cheapgod40 6876
 
-#startcom 200 			-- Prince of the Old Empire 
+#startcom 1081 			-- Prince of the Old Empire 
 #startunittype1 6877 	-- Old Empire Skirmisher
 #startunitnbrs1 40
 
@@ -43,7 +43,7 @@ Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance 
 
 #addreccom 431	 	-- Scout
 #addreccom 6881		-- Old Empire Drillmaster
-#addreccom 200 		-- Prince of the Old Empire 
+#addreccom 1081 		-- Prince of the Old Empire 
 #addreccom 6883 	-- Prince Bureaucrat
 #addreccom 7040 	-- Gondar Wonderbringer
 #addreccom 6700 	-- Battlechaplain of Tempus
@@ -52,7 +52,7 @@ Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance 
 
 
 #defcom1 6881 	-- Old Empire Drillmaster
-#defcom2 200 		-- Prince of the Old Empire 
+#defcom2 1081 		-- Prince of the Old Empire 
 #defunit1 6887 -- Old Empire Light Spearmen
 #defunit1b 6878 -- Old Empire Peltast
 #defunit2 1078
@@ -61,7 +61,7 @@ Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance 
 #defmult2 4 
 
 ---------- DEFENCES
-#guardcom 200 		-- Prince of the Old Empire 
+#guardcom 1081 		-- Prince of the Old Empire 
 #guardunit 6887
 #guardmult 15
 #wallcom 6881 	-- Old Empire Drillmaster

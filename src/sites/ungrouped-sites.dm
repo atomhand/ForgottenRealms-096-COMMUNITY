@@ -6290,7 +6290,7 @@
 #gold 50
 #gems 2 1
 #com 6901 -- Cleric of Isis
-#mon 6910 -- Anhurite Crusader -- sacred troops
+#mon 1555 -- Anhurite elephant rider
 #com 7503 	-- Tiefling Spellfilcher 
 #com 7344 	-- Tiefling Priestess
 #com 7502 	-- Tiefling Warlock
@@ -6320,6 +6320,7 @@
 #level 0 -- Was 8, but why?
 #rarity 5
 #gems 0 3
+#com 6021 -- cleric of horus-re
 #end
 
 #newsite 3215

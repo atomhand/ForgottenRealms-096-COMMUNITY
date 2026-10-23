@@ -31,7 +31,8 @@
  * Gnomish
  * Theskan (mixed gnomes and orcs)
 
-### Troops changes
+
+### General troops changes
 
 #### Mounts 
  * Hippogriff buffed - extra talon attack and better stats, unsurroundable 2
@@ -52,6 +53,8 @@
 #### Independents
   * New: Hippogriff Cavalry + Hippogriff Captain (Hippogriff Roost site)
   * New: Griffon Cavalry + Griffon Captain (Griffon Roost site)
+
+### Nation changes
 
 #### Waterdeep
  * Juiced up Griffon Rider
@@ -103,9 +106,20 @@
  * Remove generic Light Cavalry from roster
  * Remove Aglarondan cavalry (medium cavalry unit) from roster
 
- ### Chessenta
+#### General Old Empires changes
+ * Adjusted Vizier, Old Empire Prince, Old Empire Drillmaster stats and sprites (should be better value for money)
+
+#### Chessenta
   * Chessentan Corsair - add swimming tag
-  * TODO: new unit - Myrmidon
+  * Add cap sacred: Myrmdion (elite infantry)
+
+#### Mulhorand
+ * Update nation description
+ * Increase temple cost to 600
+ * Reduce lab cost to 300
+ * Anhurite Crusader is now anyfort, renamed to Guardian of Skuld
+ * New cap-only sacred elephant rider (called Anhurite Crusader)
+ * New + quite powerful cap-only mage - Cleric of Horus-Re - F2S2H3, 100% +1 F/S, +100% +2 A/N, master ritualist 1
 
 ### Other changes
  * Initiate Ceramorphosis and Free a Mindflayer summons a random Illithid directly from the montag instead of doing silly stuff with firstshapes

@@ -36,7 +36,7 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 
 #cheapgod40 6923 -- Tchazzar
 
-#startcom 200 			-- Prince of the Old Empire 
+#startcom 1081 			-- Prince of the Old Empire 
 #startunittype1 199 	-- Cardaces
 #startunitnbrs1 30
 #startunittype2 1078	-- Chariots 
@@ -54,12 +54,12 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 #addreccom 431	 	-- Scout
 #addreccom 13		-- Hoplite Commander
 #addreccom 291		-- Inner Sea Captain
-#addreccom 200 		-- Prince of the Old Empire
+#addreccom 1081 		-- Prince of the Old Empire
 #addreccom 6912 	-- Mulan Adept
 #addreccom 7099 	-- Cultist of Tchazzar
 
 #defcom1 13			-- Hoplite Commander
-#defcom2 200 		-- Prince of the Old Empire
+#defcom2 1081 		-- Prince of the Old Empire
 #defunit1 199 		-- Cardaces
 #defunit1b 6858 	-- Mulan Bowman
 #defunit2 1078 		-- Chariot
