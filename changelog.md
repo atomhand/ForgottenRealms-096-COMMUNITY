@@ -30,6 +30,7 @@
 ### New poptypes
  * Gnomish
  * Theskan (mixed gnomes and orcs)
+ * Pirates
 
 
 ### General troops changes
@@ -109,17 +110,36 @@
 #### General Old Empires changes
  * Adjusted Vizier, Old Empire Prince, Old Empire Drillmaster stats and sprites (should be better value for money)
 
+#### Unther
+  * Add Gladiator and Retiarius recruits
+
 #### Chessenta
   * Chessentan Corsair - add swimming tag
-  * Add cap sacred: Myrmdion (elite infantry)
+  * Add cap sacred: Myrmidon (elite infantry)
+  * Remove Cardaces recruit
+  * Replace Hoplite with Chessentan Soldier (based on Asherite Soldier)
+  * Replace Chariot with Chessentan Mercenary Cavalry (based on Agema Companion)
+  * Add Gladiator and Retiarius recruits
+  * Cimbari Sage rework - now anyfort, renamed to Chessentan Sage, has research bonus and random magic paths (+1 A/S/N, +1 S/N)
 
 #### Mulhorand
  * Update nation description
  * Increase temple cost to 600
  * Reduce lab cost to 300
  * Anhurite Crusader is now anyfort, renamed to Guardian of Skuld
- * New cap-only sacred elephant rider (called Anhurite Crusader)
+ * New cap-only sacred elephant rider (called Anhurite Crusader) - also recruited at Blood Fortress of Anhur site
  * New + quite powerful cap-only mage - Cleric of Horus-Re - F2S2H3, 100% +1 F/S, +100% +2 A/N, master ritualist 1
+ * City of the Gods capsite gets 75 resource bonus (compensation for very few resources in cap circle)
+
+### Duergar
+ * Adjust Duergar Master Artisan startage to be less severelu over their max age
+ * Adjustments to equipment
+ * Duergar Mind Master
+   * guaranteed W2G2 replaced by 2W/G/E random
+   * Increased morale 13->15
+   * Add researchbonus 5
+   * Add stealth ability
+
 
 ### Other changes
  * Initiate Ceramorphosis and Free a Mindflayer summons a random Illithid directly from the montag instead of doing silly stuff with firstshapes

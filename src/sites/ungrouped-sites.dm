@@ -6289,6 +6289,7 @@
 #look 9
 #gold 50
 #gems 2 1
+#res 75
 #com 6901 -- Cleric of Isis
 #mon 1555 -- Anhurite elephant rider
 #com 7503 	-- Tiefling Spellfilcher 
@@ -6351,7 +6352,8 @@
 #rarity 5
 #gems 4 1
 #gems 3 1
-#mon 6910 	-- Anhurite Crusader
+#mon 1555 -- Anhurite Crusader
+#mon 6910 	-- Guardian of Skuld
 #com 6911 	-- Anhurite Infiltrator 
 #end
 

@@ -416,10 +416,16 @@ They provide a useful siege defense bonus for those who can afford them."
 #end
 
 #selectmonster 1070 -- Philosopher
-#name "Cimbari Sage"
-#descr "The Akademeia of Cimbar produced not only learned priests but also the erudite Cimbari Sages."
+#name "Chessentan Sage"
+#copyspr 1997 -- iassacharite sage
+#descr "Chessenta had a highly developed culture of learning. Erudite sages could be found studying and debating philosophy not only in the high halls of the Akademeia of Cimbar but also in the libaries and public squares of even the smaller cities."
 #nobadevents 10
 #magicskill 4 1
+#custommagic 10496 100
+#custommagic 10240 100
+#researchbonus 8
+#armor 158 -- robes
+#armor 249 -- cloth headpiece
 #end
 
 

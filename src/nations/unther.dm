@@ -35,6 +35,9 @@ Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance 
 
 #startscout 6881 	-- Old Empire Drillmaster
 
+#addrecunit 11 -- retiarius
+#addrecunit 12 -- gladiator
+
 #addrecunit 6877 	-- Old Empire Skirmisher
 #addrecunit 6886 	-- Old Empire Slave Spear
 #addrecunit 6874 	-- Dwarven Miner

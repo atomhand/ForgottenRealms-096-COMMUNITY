@@ -115,7 +115,6 @@ While older and battle scarred, Drillmasters put their troops through difficult,
 #noundeadleader
 #holy
 #taskmaster 3
-#sailing 120 3
 #slaver 6886 -- Old Empire Slave Spear
 #end
 
@@ -1222,4 +1221,32 @@ Priests of Horus-Re were usually nobles. They tended to be arrogant and expected
 #def 12
 #holy
 #descr "Elephants, among the largest animals known to man, are trained for use in battle. Their sheer size allows them to trample soldiers and horses. Elephants are intelligent beings with minds of their own. Once hurt, they become enraged and terrified, seeking to leave the battlefield by the shortest possible route and trampling friends and enemies alike. Elephants are sacred to the church of Anhur."
+#end
+
+#selectmonster 14 -- LA arco hoplite
+#descr "Hoplites are the primary corps of Chessenta. They carry long spears, shields and cumbersome plate hauberks. Hoplites are quite slow but very efficient. Few enemies can stand against the massive spear wall of a hoplite army."
+#end
+
+#selectmonster 1990 -- asherite soldier
+#spr1 "ForgottenRealms/chessentan-soldier.tga"
+#spr2 "ForgottenRealms/chessentan-soldier2.tga"
+#name "Chessentan Soldier"
+#descr "Chessenta was a warlike nation. The major cities fielded well-armed and well-trained mercenary troops."
+#gcost 10010
+#str 11
+#att 12
+#def 12
+#end
+
+#selectmonster 1553 -- Agema Companion
+#name "Chessentan Mercenary Cavalry"
+#descr "Chessenta did not have a horse-breeding tradition but nonethless was able to field a significant cavalry complement relying on imported horses. The cavalry mostly consist of experienced mercenaries."
+#end
+
+#selectmonster 12 -- gladiator
+#descr "Gladiators are slaves trained to fight in the arena for the entertainment of the free population. Blood sports were popular throughout the Old Empires, and were one of the few pleasures available to the downtrodden population of Unther. Gladiators who survive become very skilled in combat and often use exotic weapons. In times of crisis, they can be used in warfare in return for their freedom. They are quick to levy, but will only fight until they have been wounded or hit someone in battle before leaving."
+#end
+
+#selectmonster 11 -- gladiator
+#descr "Gladiators are slaves trained to fight in the arena for the entertainment of the free population. Blood sports were popular throughout the Old Empires, and were one of the few pleasures available to the downtrodden population of Unther. Gladiators who survive become very skilled in combat and often use exotic weapons. In times of crisis, they can be used in warfare in return for their freedom. They are quick to levy, but will only fight until they have been wounded or hit someone in battle before leaving."
 #end

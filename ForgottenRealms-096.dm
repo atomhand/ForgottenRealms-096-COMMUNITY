@@ -8445,10 +8445,16 @@ They provide a useful siege defense bonus for those who can afford them."
 #end
 
 #selectmonster 1070 -- Philosopher
-#name "Cimbari Sage"
-#descr "The Akademeia of Cimbar produced not only learned priests but also the erudite Cimbari Sages."
+#name "Chessentan Sage"
+#copyspr 1997 -- iassacharite sage
+#descr "Chessenta had a highly developed culture of learning. Erudite sages could be found studying and debating philosophy not only in the high halls of the Akademeia of Cimbar but also in the libaries and public squares of even the smaller cities."
 #nobadevents 10
 #magicskill 4 1
+#custommagic 10496 100
+#custommagic 10240 100
+#researchbonus 8
+#armor 158 -- robes
+#armor 249 -- cloth headpiece
 #end
 
 
@@ -28597,10 +28603,10 @@ Duergar were in some ways even better adapted to underground living than other d
 #mr 18
 #clearweapons
 #cleararmor
-#weapon 17
-#armor 2
-#armor 13
-#armor 20
+#weapon 1820 -- admantine axe
+#armor 400 -- dwarven chain mail
+#armor 404 -- dwarven half helm
+#armor 403 -- dwarven kite shield
 #size 3
 #mountainsurvival
 #poisonres 15
@@ -28612,7 +28618,7 @@ Duergar were in some ways even better adapted to underground living than other d
 #custommagic 66560 100
 #custommagic 66560 20 --d6x
 #researchbonus -5
-#sailing 2 2
+#sailing 3 3
 #holy
 -- #stealthy 5
 #startage 100
@@ -28844,7 +28850,7 @@ They make excellent warriors when the fight reaches them, though they often pref
 
 -- 7232 -- Duergar Mind Master
 #newmonster 7232
-#copystats 7181
+#copystats 7181 -- Dwarf template
 #name "Duergar Mind Master"
 #spr1 "ForgottenRealms/duergarmindmaster.tga"
 #spr2 "ForgottenRealms/duergarmindmaster2.tga"
@@ -28860,27 +28866,27 @@ Most likely because those servants would excel at herding their masters' other m
 
 — Mordenkainen"
 #weapon 172 -- magic sceptre
-#armor 405 -- Dwarven Full Helm
+--#armor 405 -- Dwarven Full Helm
 #armor 231 -- Heavy Magic Robes
 #armor 408 -- thick skull 
 #hp 24
+#mor 15
 #mr 18
-#magicskill 2 2
 #magicskill 4 3
-#magicskill 7 2
 #magicskill 9 2
+#custommagic 17920 200
 #holy
 #spy
--- #stealthy 50
+#stealthy 50
+#researchbonus 4
 #str 11
 #att 11
 #def 11
 #ap 10
-#gcost 10035
 #darkpower 3
 #darkvision 80
 #spiritsight
-#sailing 2 2
+--#sailing 3 3
 #poisonres 5
 #okleader
 #end
@@ -29054,6 +29060,7 @@ Master arcane artisans tend to have many acquaintances - everyone seems to like 
 #fixforgebonus 2
 #poisonres 5
 -- #stealthy 10
+#startage 345
 #end
 
 
@@ -29364,8 +29371,8 @@ Most act as soldiers in a dwarven citadel, segregated into their own units separ
 #spr2 "ForgottenRealms/dwarventhane2.tga"
 #name "Dwarven Thane"
 #descr "Dwarven Thanes, also known as Mountain Kings, are the pinnacle of dwarven martial might. Eschewing their race's talent for engineering, mining, and metallurgy, these staunch fighters craft only themselves, dedicating their entire existence to forging the ultimate soldier. They exist to defend the dwarven kingdoms from all that threatens them. While some soldiers would stand as a shield against attack, the thanes believe the best way to defend against threats is to threaten back. Wielding the traditional dwarven armament of both axe and hammer, they threaten with all the grim, unswerving focus one expects from a dwarf."
-#weapon 1815 -- Adamantine Battlehammer
-#weapon 1816 -- Adamantine Battleaxe
+#weapon 1815 -- Adamantine Hammer
+#weapon 1820 -- Adamantine Axe
 #armor 405 -- Dwarven Full Helm
 #armor 401 -- Dwarven Platemail
 #hp 40
@@ -29488,7 +29495,6 @@ The chanters, like the Deathwardens as a whole, are an enigma to most people. Th
 #researchbonus -10
 #unsurr 4
 #combatcaster
-#holy
 #startage 220
 #gcost 10050
 #end
@@ -34701,7 +34707,7 @@ Stone Giant Elders who receive the Twiceborn ritual become Dodforerir upon death
 --COMPILED FROM src/monsters\gnome-monsters.dm
 ------------------------------------------------------------------------------------------------------------------
 #selectmonster 483 -- hoburg militia
-#name "Gnome Militia"
+#name "Gnomish Militia"
 #descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. Gnome militia are trained to use very small staffs. Since they are both unskilled and physically weak, they are not very useful in battle."
 #clearspec
 #stealthy 40
@@ -34712,7 +34718,7 @@ Stone Giant Elders who receive the Twiceborn ritual become Dodforerir upon death
 #end
 
 #selectmonster 3787 -- piconye soldier
-#name "Gnome Soldier"
+#name "Gnomish Soldier"
 #descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. Gnomes generally avoid open conflict, but can be courageous when necessary defend their homes. They are equipped with spears or short swords."
 #clearspec
 #stealthy 40
@@ -34723,7 +34729,7 @@ Stone Giant Elders who receive the Twiceborn ritual become Dodforerir upon death
 #end
 
 #selectmonster 272 -- hoburg champion
-#name "Gnome Champion"
+#name "Gnomish Champion"
 #descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. The commanders of the gnomes are armed with short swords and wear heavy plate cuirasses."
 #clearspec
 #stealthy 40
@@ -34734,7 +34740,7 @@ Stone Giant Elders who receive the Twiceborn ritual become Dodforerir upon death
 #end
 
 #selectmonster 3785 -- piconye crossbowman
-#name "Gnome Crossbowman"
+#name "Gnomish Crossbowman"
 #descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. Gnomes have problems using bows due to their size. Instead they use crossbows to great effect."
 #clearspec
 #stealthy 40
@@ -34745,7 +34751,7 @@ Stone Giant Elders who receive the Twiceborn ritual become Dodforerir upon death
 #end
 
 #selectmonster 3798 -- piconye sage priest
-#name "Gnome Illusionist"
+#name "Gnomish Illusionist"
 #descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess. They were well known for their affinity for illusion magic."
 #clearspec
 #stealthy 60
@@ -34756,6 +34762,19 @@ Stone Giant Elders who receive the Twiceborn ritual become Dodforerir upon death
 #magicskill 4 1 -- 1S
 #custommagic 18432 100 -- 100% S/G
 #darkvision 50
+#end
+
+#selectmonster 323 -- dwarven smith
+#name "Gnomish Artificer"
+#descr "Gnomes, or the Forgotten Folk as they were sometimes known, were small humanoids known for their eccentric sense of humor, inquisitiveness, and engineering prowess."
+#clearspec
+#mastersmith 1
+#fixforgebonus 1
+#armor 156 -- robes
+#clearmagic
+#magicskill 3 1
+#custommagic 19840 100
+#custommagic 19840 100
 #end
 
 
@@ -43562,7 +43581,6 @@ While older and battle scarred, Drillmasters put their troops through difficult,
 #noundeadleader
 #holy
 #taskmaster 3
-#sailing 120 3
 #slaver 6886 -- Old Empire Slave Spear
 #end
 
@@ -44669,6 +44687,34 @@ Priests of Horus-Re were usually nobles. They tended to be arrogant and expected
 #def 12
 #holy
 #descr "Elephants, among the largest animals known to man, are trained for use in battle. Their sheer size allows them to trample soldiers and horses. Elephants are intelligent beings with minds of their own. Once hurt, they become enraged and terrified, seeking to leave the battlefield by the shortest possible route and trampling friends and enemies alike. Elephants are sacred to the church of Anhur."
+#end
+
+#selectmonster 14 -- LA arco hoplite
+#descr "Hoplites are the primary corps of Chessenta. They carry long spears, shields and cumbersome plate hauberks. Hoplites are quite slow but very efficient. Few enemies can stand against the massive spear wall of a hoplite army."
+#end
+
+#selectmonster 1990 -- asherite soldier
+#spr1 "ForgottenRealms/chessentan-soldier.tga"
+#spr2 "ForgottenRealms/chessentan-soldier2.tga"
+#name "Chessentan Soldier"
+#descr "Chessenta was a warlike nation. The major cities fielded well-armed and well-trained mercenary troops."
+#gcost 10010
+#str 11
+#att 12
+#def 12
+#end
+
+#selectmonster 1553 -- Agema Companion
+#name "Chessentan Mercenary Cavalry"
+#descr "Chessenta did not have a horse-breeding tradition but nonethless was able to field a significant cavalry complement relying on imported horses. The cavalry mostly consist of experienced mercenaries."
+#end
+
+#selectmonster 12 -- gladiator
+#descr "Gladiators are slaves trained to fight in the arena for the entertainment of the free population. Blood sports were popular throughout the Old Empires, and were one of the few pleasures available to the downtrodden population of Unther. Gladiators who survive become very skilled in combat and often use exotic weapons. In times of crisis, they can be used in warfare in return for their freedom. They are quick to levy, but will only fight until they have been wounded or hit someone in battle before leaving."
+#end
+
+#selectmonster 11 -- gladiator
+#descr "Gladiators are slaves trained to fight in the arena for the entertainment of the free population. Blood sports were popular throughout the Old Empires, and were one of the few pleasures available to the downtrodden population of Unther. Gladiators who survive become very skilled in combat and often use exotic weapons. In times of crisis, they can be used in warfare in return for their freedom. They are quick to levy, but will only fight until they have been wounded or hit someone in battle before leaving."
 #end
 
 
@@ -71992,6 +72038,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #look 9
 #gold 50
 #gems 2 1
+#res 75
 #com 6901 -- Cleric of Isis
 #mon 1555 -- Anhurite elephant rider
 #com 7503 	-- Tiefling Spellfilcher 
@@ -72054,7 +72101,8 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #rarity 5
 #gems 4 1
 #gems 3 1
-#mon 6910 	-- Anhurite Crusader
+#mon 1555 -- Anhurite Crusader
+#mon 6910 	-- Guardian of Skuld
 #com 6911 	-- Anhurite Infiltrator 
 #end
 
@@ -74126,19 +74174,20 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 
 #startscout 431		-- Scout
 
+#addrecunit 11 -- retiarius
+#addrecunit 12 -- gladiator
 
-#addrecunit 199 	-- Cardaces
-#addrecunit 3184 	-- Hoplite
+#addrecunit 1990 -- Chessentan soldier
 #addrecunit 6858 	-- Mulan Bowman
 #addrecunit 7100	-- Corsair
-#addrecunit 1078 	-- Chariot
+#addrecunit 1553 -- Chessentan Mercenary Cavalry
 
 #addreccom 431	 	-- Scout
-#addreccom 13		-- Hoplite Commander
 #addreccom 291		-- Inner Sea Captain
 #addreccom 1081 		-- Prince of the Old Empire
 #addreccom 6912 	-- Mulan Adept
 #addreccom 7099 	-- Cultist of Tchazzar
+#addreccom 1070 -- Chessentan Sage
 
 #defcom1 13			-- Hoplite Commander
 #defcom2 1081 		-- Prince of the Old Empire
@@ -75583,7 +75632,7 @@ Mechanics: Your expansion is severely limited on the Faerun map as nearby indepe
 Some men just want to watch the world burn, and a man named Thayd was one such man. He dove deep into lost secretes of the Imaskari sorcerers to find a way to bring Mulhorand and Unther to their knees. His plot to overthrow and rule both empires failed, but he did manage to open several gates to a world inhabited by gray orcs. Neither Mulhorand nor Unther ever found them all, but the orcs sure did. The war lasted only 7 years and saw the deaths of several gods of the Mulan at the hands of Gruumsh. An alliance between the Mulhorandi and Untheric deities eventually turned the tide but neither Mulhorand nor Unther were able to ever fully recover. 
 
 A divine manifestation of Horus-Re rules the nation in truth, but it is the clergy who orchestrate and administer the state. There are several other deities who maintain a divine presence in the lands of Mulhorand as well: Anhur, god of war, Set, god of destruction, Isis, goddess of life, and Thoth, god of knowledge. Each has their own temple and while they are technically part of the Mulhorandi nation and are willing to defend it, these deities have their own agendas and are not under your direct control."
-#summary "As a theocratic nation, you can field a great quantity of excellent sacred troops, supported by your powerful priests and theurgists. Slaves are a cheap way to add a great quantity of low-quality troops and will improve in strength if they survive for long enough. You also have the divine avatars of your gods, though all are immobile except Horus-Re. You will not struggle for magical research, and you are an astral powerhouse." 
+#summary "As a theocratic nation, you can field a great quantity of excellent sacred troops, supported by your powerful priests and theurgists. Slaves are a cheap source of low-quality chaff and will improve in strength if they survive for long enough. You also have the divine avatars of your gods, though all are immobile except Horus-Re. You will not struggle for magical research, and you are an astral powerhouse." 
 #flag "ForgottenRealms/flag212.tga"
 #templepic 0 -- Pyramid
 #fortera 3 -- Castle standard era 2
@@ -77659,6 +77708,9 @@ Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance 
 
 #startscout 6881 	-- Old Empire Drillmaster
 
+#addrecunit 11 -- retiarius
+#addrecunit 12 -- gladiator
+
 #addrecunit 6877 	-- Old Empire Skirmisher
 #addrecunit 6886 	-- Old Empire Slave Spear
 #addrecunit 6874 	-- Dwarven Miner
@@ -77968,12 +78020,30 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #defcom1 272 -- gnome champion
 #addreccom 272 -- gnome champion
 #addreccom 3798 -- gnome illusionist
+#addreccom 323 -- gnomish artificer
 #addrecunit 483 -- gnome militia
 #addrecunit 3787 -- gnome soldier
 #addrecunit 3785 -- gnome crossbowman
 #defunit1  483 -- militia
 #defmult1 20
 #defunit1b 3785 -- crossbowman
+#defmult1b 10
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/poptypes\pirates.dm
+------------------------------------------------------------------------------------------------------------------
+#selectpoptype 199 -- pirates
+#clearrec
+#cleardef
+#addreccom 7301 -- pirate lord
+#addrecunit 7298 -- sea dog swashbuckler
+#addrecunit 7299 -- sea dog deadeye
+#defcom1 7301 -- pirate lord
+#defunit1 7298 -- sea dog swashbuckler
+#defmult1 10
+#defunit1b 7299 -- sea dog deadeye
 #defmult1b 10
 #end
 
@@ -78900,6 +78970,7 @@ Manshoon sought foremost to consolidate the Moonsea where he discovered several 
 #addreccom 272 -- gnome champion
 #addreccom 3798 -- gnome illusionist
 #addreccom 6737 -- orc warlord
+#addreccom 323 -- gnomish artificer
 #addrecunit 483 -- gnome militia
 #addrecunit 3787 -- gnome soldier
 #addrecunit 3785 -- gnome crossbowman

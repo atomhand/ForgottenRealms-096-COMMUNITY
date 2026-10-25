@@ -44,19 +44,20 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 
 #startscout 431		-- Scout
 
+#addrecunit 11 -- retiarius
+#addrecunit 12 -- gladiator
 
-#addrecunit 199 	-- Cardaces
-#addrecunit 3184 	-- Hoplite
+#addrecunit 1990 -- Chessentan soldier
 #addrecunit 6858 	-- Mulan Bowman
 #addrecunit 7100	-- Corsair
-#addrecunit 1078 	-- Chariot
+#addrecunit 1553 -- Chessentan Mercenary Cavalry
 
 #addreccom 431	 	-- Scout
-#addreccom 13		-- Hoplite Commander
 #addreccom 291		-- Inner Sea Captain
 #addreccom 1081 		-- Prince of the Old Empire
 #addreccom 6912 	-- Mulan Adept
 #addreccom 7099 	-- Cultist of Tchazzar
+#addreccom 1070 -- Chessentan Sage
 
 #defcom1 13			-- Hoplite Commander
 #defcom2 1081 		-- Prince of the Old Empire
