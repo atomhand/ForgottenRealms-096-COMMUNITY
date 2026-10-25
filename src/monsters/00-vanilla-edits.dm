@@ -248,13 +248,11 @@ The Northern Wizards were a powerful group of spellcasters based out northern Un
 #clearmagic
 #nametype 151
 #magicskill 0 1
-#magicskill 1 1
 #magicskill 2 1
-#magicskill 3 1
 #magicskill 4 2
 #magicskill 5 2
 #magicskill 8 2
-#custommagic 1920 100 --d6x
+#custommagic 1920 200 --d6x
 #sailing 3 3
 #hp 15
 #startage 60

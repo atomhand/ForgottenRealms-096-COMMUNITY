@@ -54,6 +54,9 @@
 #### Independents
   * New: Hippogriff Cavalry + Hippogriff Captain (Hippogriff Roost site)
   * New: Griffon Cavalry + Griffon Captain (Griffon Roost site)
+  * Koalinth sergeant loses Summon monster (cave crab) ability
+  * Koalinth shaman gains Summon monster (cave crab) ability
+  * Sorcerer of the Enclave (Towers of the Enclave, Green Lands 164) buffed
 
 ### Nation changes
 
@@ -107,11 +110,26 @@
  * Remove generic Light Cavalry from roster
  * Remove Aglarondan cavalry (medium cavalry unit) from roster
 
+#### Duergar
+
+ * Duergar Mind Master reworked to a stealthy spy with minor magic paths (S1G1)
+ * Duergar Blackguard has fewer magic paths, making it much cheaper
+ * 
+ * Research penalty removed from all mages (Laduguer encourages technical innovation)
+ * Underspires only:
+   * add Duergar Norothar, a priest of Deep Duerra with the paths of the old Mind Master
+   * Remove Duergar Kavalrichni from roster
+ * Gracklstugh only:
+   * Split Duergar Kavalrichni unit and commander into separate troops
+   * (Kavalrichni were already anyfort sacreds, but the )
+
 #### General Old Empires changes
  * Adjusted Vizier, Old Empire Prince, Old Empire Drillmaster stats and sprites (should be better value for money)
 
 #### Unther
   * Add Gladiator and Retiarius recruits
+  * Add Mulan Wizard, a solid anyfort mage with variable paths
+  * Remove Minister of Magic from cap site
 
 #### Chessenta
   * Chessentan Corsair - add swimming tag
@@ -121,6 +139,7 @@
   * Replace Chariot with Chessentan Mercenary Cavalry (based on Agema Companion)
   * Add Gladiator and Retiarius recruits
   * Cimbari Sage rework - now anyfort, renamed to Chessentan Sage, has research bonus and random magic paths (+1 A/S/N, +1 S/N)
+  * Starting armies updated
 
 #### Mulhorand
  * Update nation description
@@ -130,6 +149,7 @@
  * New cap-only sacred elephant rider (called Anhurite Crusader) - also recruited at Blood Fortress of Anhur site
  * New + quite powerful cap-only mage - Cleric of Horus-Re - F2S2H3, 100% +1 F/S, +100% +2 A/N, master ritualist 1
  * City of the Gods capsite gets 75 resource bonus (compensation for very few resources in cap circle)
+  * Starting armies updated
 
 ### Duergar
  * Adjust Duergar Master Artisan startage to be less severelu over their max age

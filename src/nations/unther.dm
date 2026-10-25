@@ -48,6 +48,7 @@ Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance 
 #addreccom 6881		-- Old Empire Drillmaster
 #addreccom 1081 		-- Prince of the Old Empire 
 #addreccom 6883 	-- Prince Bureaucrat
+#addreccom 6012		-- Mulan Wizard
 #addreccom 7040 	-- Gondar Wonderbringer
 #addreccom 6700 	-- Battlechaplain of Tempus
 #addreccom 6885 	-- Paladin of the God-King

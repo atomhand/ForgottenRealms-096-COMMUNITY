@@ -173,7 +173,7 @@ Umberlee is one of the Deities of Fury. She serves Talos, along with Auril and M
 
 -- 7040 -- Gondar Wonderbringer
 #newmonster 7040
-#copystats 6600
+#copystats 1982 -- priest smith
 #copyspr 1654
 #name "Gondar Wonderbringer"
 #descr "The Faerûnian god of craft, smithing, and inventiveness was known by many names in many different lands. Zionill, Nebelun, and Gond were the most common. Along with Milil, Deneir, and Oghma, Gond was one of the Deities of Knowledge and Invention. He had a friendly rivalry with Chauntea, Goddess of Bounty, and was amiable friends with Lathander, Waukeen, and Tempus. The halfling gods, dwarven gods, and gnomish gods were equally on good terms with Gond. His sworn enemy was Talos, God of Destruction.  
@@ -199,7 +199,6 @@ In the Gondar faith it was actions that mattered above all else, including inten
 #mr 15
 #mor 16
 #rcost 1
-#rpcost 10000
 #ap 14
 #mapmove 20
 #siegebonus 10

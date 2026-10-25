@@ -160,7 +160,6 @@ Kaolinth also raised giant crustaceans to guard their caves and grottoes as well
 #amphibian
 #standard 1
 #darkvision 60
-#makemonsters1 2514 -- Cave Crab
 #end
 
 -- 7526 -- Koalinth Shaman
@@ -194,7 +193,6 @@ Kaolinth also raised giant crustaceans to guard their caves and grottoes as well
 #mapmove 18
 #enc 3
 #startage 35
-#maxage 85
 #weapon 81 -- Thorn Staff
 #armor 151 -- Sharskin Armor
 #maxage 50
@@ -206,6 +204,7 @@ Kaolinth also raised giant crustaceans to guard their caves and grottoes as well
 #researchbonus -5
 #poorleader
 #holy
+#makemonsters1 2514 -- Cave Crab
 #end
 
 -- 7528 -- Unused

@@ -37,9 +37,9 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 #cheapgod40 6923 -- Tchazzar
 
 #startcom 1081 			-- Prince of the Old Empire 
-#startunittype1 199 	-- Cardaces
+#startunittype1 1990 --Chessentan Soldier
 #startunitnbrs1 30
-#startunittype2 1078	-- Chariots 
+#startunittype2 1553	-- Chessentan mercenary cavalry
 #startunitnbrs2 10
 
 #startscout 431		-- Scout
@@ -59,20 +59,20 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 #addreccom 7099 	-- Cultist of Tchazzar
 #addreccom 1070 -- Chessentan Sage
 
-#defcom1 13			-- Hoplite Commander
+#defcom1 291			-- Inner sea captain
 #defcom2 1081 		-- Prince of the Old Empire
-#defunit1 199 		-- Cardaces
+#defunit1 1990 --Chessentan Soldier
 #defunit1b 6858 	-- Mulan Bowman
-#defunit2 1078 		-- Chariot
+#defunit2 1553 -- Chessentan Mercenary Cavalry
 #defmult1 24 	
 #defmult1b 12 
 #defmult2 4 	
 
 ---------- DEFENCES
 #guardcom 13
-#guardunit 3184
+#guardunit 1990 --Chessentan Soldier
 #guardmult 15
-#wallcom 1076	-- Myrmidon Champion
+#wallcom 291			-- Inner sea captain
 #wallunit 6858 	-- Mulan Bowman
 #wallmult 25 	-- 
 

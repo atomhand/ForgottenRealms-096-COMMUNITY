@@ -1054,13 +1054,14 @@ The principle temples of the church of Osiris were the Crypt of Shadows located 
 #newmonster 6910
 #copystats 1991
 #copyspr 1991
+#clearspec
 #name "Guardian of Skuld"
 #descr "The Guardians of Skuld formed during the Time of Troubles. Led by the church of Anhur, followers of Isis and Osiris were also active in the order, though not without the frustration of Horus-Re. Despite the god's protestations, however, even his clergy were often keen to overlook their activities so long as their mission to protect the capital and temple complexes of Mulhorand was their focus." 
 #hp 15
 #gcost 10018
 #str 15
 #mr 14
-#mor 20
+#mor 16
 #att 16
 #def 13
 #prec 10
@@ -1167,7 +1168,7 @@ Priests of Horus-Re were usually nobles. They tended to be arrogant and expected
 #maxage 150
 #hp 25
 #str 14
-#mr 16
+#mr 18
 #mor 15
 #att 12
 #def 12
@@ -1224,7 +1225,24 @@ Priests of Horus-Re were usually nobles. They tended to be arrogant and expected
 #end
 
 #selectmonster 14 -- LA arco hoplite
-#descr "Hoplites are the primary corps of Chessenta. They carry long spears, shields and cumbersome plate hauberks. Hoplites are quite slow but very efficient. Few enemies can stand against the massive spear wall of a hoplite army."
+#descr "Hoplites are the primary corps of Akanax. They carry long spears, shields and cumbersome plate hauberks. Hoplites are quite slow but very efficient. Few enemies can stand against the massive spear wall of a hoplite army."
+#end 
+
+#selectmonster 3212 -- Helote crossbowman
+#descr "Although slavery is practiced throughout Chessenta, warlike Akanax is particularly noted for its cruelty and brutality. Unwilling slaves are herded to battle and their lives are sacrificed to weaken the enemy before the hoplites deliver the final blow. Although they are slaves, there is no shortage of arms and armour in Akanax and the helotes are well equipped."
+#end
+
+#selectmonster 3213 -- Helote soldier
+#descr "Although slavery is practiced throughout Chessenta, warlike Akanax is particularly noted for its cruelty and brutality. Unwilling slaves are herded to battle and their lives are sacrificed to weaken the enemy before the hoplites deliver the final blow. Although they are slaves, there is no shortage of arms and armour in Akanax and the helotes are well equipped."
+#end
+
+#selectmonster  746 -- Strategos
+#descr "The Strategos is a general of extraordinary skill. Ability rather than birth decides the rank of the generals in Akanax. Skill and experience comes with age, and many of the strategoi are starting to get old."
+#taskmaster 3
+#end
+
+#selectmonster 325 -- Master Smith
+#descr "Akanax has a tremendous demand for weapons and one of the only ways to thrive without becoming a soldier is to be a productive and talented smith. Master Smiths oversee the forges and can also produce magic weapons and armour. Because Akanax has an excessive demand for weapons, Master Smiths have learned to create magical items very efficiently, thus requiring fewer magic gems to forge them."
 #end
 
 #selectmonster 1990 -- asherite soldier
@@ -1249,4 +1267,25 @@ Priests of Horus-Re were usually nobles. They tended to be arrogant and expected
 
 #selectmonster 11 -- gladiator
 #descr "Gladiators are slaves trained to fight in the arena for the entertainment of the free population. Blood sports were popular throughout the Old Empires, and were one of the few pleasures available to the downtrodden population of Unther. Gladiators who survive become very skilled in combat and often use exotic weapons. In times of crisis, they can be used in warfare in return for their freedom. They are quick to levy, but will only fight until they have been wounded or hit someone in battle before leaving."
+#end
+
+#newmonster 6012
+#copystats 6600
+#copyspr 3358 -- Karib
+#name "Mulan Wizard"
+#descr "Mulan were a generally arrogant, conservative group, resistant to change and convinced of their cultural superiority over all others. In Thay, many even believed they were above the gods. Mulan felt they were more civilized, inventive, and capable than other ethnic groups and believed strongly in the values of order and discipline. All upper- and middle-class Mulan received at least some education, and apprenticeship at a young age was common. Mulan followed the rigid class structures of their society, and the practice of slavery was commonplace. They also had a strong tradition in the use of magic, but disagreed over the pursuit of arcane versus divine magic.
+
+Upper class Mulan with magical talent could afford an excellent education in whatever area took their interest. They would have strong magical abilities, but may be lacking in practical combat skills."
+#nametype 151
+#hp 15
+#def 11
+#mr 16
+#taskmaster 1
+#poorleader
+#magicskill 0 1
+#custommagic 1920 200
+#custommagic 14336 200
+#weapon 9 -- dagger
+#armor 158 -- robes
+#armor 249 -- cloth headpiece
 #end

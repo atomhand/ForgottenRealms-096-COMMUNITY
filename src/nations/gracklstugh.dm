@@ -41,12 +41,12 @@ In 1373 DR, the Silence of Lolth ended and Lolth's priestesses regained their po
 #addrecunit 7227 -- Duergar Heavy Axe - unit ( X )
 #addrecunit 7229 -- Duergar Scorpion - ranged unit ( X )
 #addrecunit 7226 -- Duergar Battlesmith 
-#addrecunit 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#addrecunit 7239 -- Duergar Kavalrachni - unit ( X )
 
 
 #addreccom 7242 -- Duergar Deepscout - commander scout slaver ( X )
 #addreccom 7230 -- Duergar Laird - commander ( X )
-#addreccom 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#addreccom 6011 -- Duergar Kavalrachni - commander ( X )
 #addreccom 7233 -- Duergar Runesmith - mage ( X )
 #addreccom 5072 -- Duergar Blackguard - holy commander ( X )
 #addreccom 7225 -- Duergar Stonereaver - elite unit ( X )
@@ -56,7 +56,7 @@ In 1373 DR, the Silence of Lolth ended and Lolth's priestesses regained their po
 #addreccom 7240 -- Duergar Master Arcane Artisan ( X )
 
 
-#defcom1 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#defcom1 6011 -- Duergar Kavalrachni - commander ( X )
 #defcom2 5072 -- Duergar Blackguard - holy commander ( X )
 #defunit1 7228 -- Duergar Mauler - unit ( X )
 #defmult1 20
@@ -66,7 +66,7 @@ In 1373 DR, the Silence of Lolth ended and Lolth's priestesses regained their po
 #defmult2 10
 
 ---------- DEFENCES
-#guardcom 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#guardcom 6011 -- Duergar Kavalrachni - commander ( X )
 #guardunit 7228 -- Duergar Mauler - unit ( X )
 #guardmult 15
 #wallcom 5072 -- Duergar Blackguard - holy commander ( X )

@@ -4,6 +4,7 @@
 #defcom1 272 -- gnome champion
 #addreccom 272 -- gnome champion
 #addreccom 3798 -- gnome illusionist
+#addreccom 323 -- gnomish artificer
 #addrecunit 483 -- gnome militia
 #addrecunit 3787 -- gnome soldier
 #addrecunit 3785 -- gnome crossbowman

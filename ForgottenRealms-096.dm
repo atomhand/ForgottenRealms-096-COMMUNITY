@@ -8277,13 +8277,11 @@ The Northern Wizards were a powerful group of spellcasters based out northern Un
 #clearmagic
 #nametype 151
 #magicskill 0 1
-#magicskill 1 1
 #magicskill 2 1
-#magicskill 3 1
 #magicskill 4 2
 #magicskill 5 2
 #magicskill 8 2
-#custommagic 1920 100 --d6x
+#custommagic 1920 200 --d6x
 #sailing 3 3
 #hp 15
 #startage 60
@@ -13860,7 +13858,7 @@ Now awake, he seeks his revenge."
 #name "Priestess of Sekolah"
 #nametype 276 -- Sahuagin
 #descr "Sahuagin worshiped Sekolah, god of sharks, as their patron deity. Although they excelled in physical prowess, they greatly feared magic, so they never tried developing or studying it for any purpose. Only priestesses of Sekolah used clerical magic granted by the god and even that magic was regarded with fear and as a necessary evil."
-#gcost 135
+#gcost 10010
 #rcost 1
 #rpcost 2
 #clearweapons
@@ -13904,7 +13902,7 @@ Now awake, he seeks his revenge."
 #name "Priestess of Sekolah"
 #nametype 276 -- Sahuagin
 #descr "Sahuagin worshiped Sekolah, god of sharks, as their patron deity. Although they excelled in physical prowess, they greatly feared magic, so they never tried developing or studying it for any purpose. Only priestesses of Sekolah used clerical magic granted by the god and even that magic was regarded with fear and as a necessary evil."
-#gcost 135
+#gcost 10010
 #rcost 1
 #rpcost 2
 #hp 26
@@ -28593,7 +28591,7 @@ Adepts are early initiates into their faith. They make capable researchers and c
 Duergar adventurers were most commonly concerned with personal gratification, and were frequently fighters or rogues, leaning on their training against the threats of the Underdark. Because of their cruel nature, experienced duergar adventurers often became assassins or blackguards.
 
 Duergar were in some ways even better adapted to underground living than other dwarves. While other dwarves lacked the capacity to see completely in the deepest darkness, this was not a problem for duergar. Duergar were also immune to many of the ancient techniques used by the mind flayers to control them, such as paralysis, phantasms, alchemical poisons, or some types of illusion."
-#gcost 10035
+#gcost 10010
 #rpcost 10000
 #hp 26
 #str 13
@@ -28613,11 +28611,11 @@ Duergar were in some ways even better adapted to underground living than other d
 #darkvision 100
 #darkpower 2
 #magicskill 3 1
-#magicskill 4 1
-#magicskill 9 1
-#custommagic 66560 100
-#custommagic 66560 20 --d6x
-#researchbonus -5
+--#magicskill 4 1
+--#magicskill 9 1
+#custommagic 23680 100
+--#custommagic 66560 20 --d6x
+--#researchbonus -5
 #sailing 3 3
 #holy
 -- #stealthy 5
@@ -28678,14 +28676,14 @@ Master arcane artisans tend to have many acquaintances - everyone seems to like 
 #att 12 
 #def 13
 #prec 6
-#magicskill 0 1
-#magicskill 3 3
-#magicskill 4 1
+--#magicskill 0 1
+#magicskill 3 2
+--#magicskill 4 1
 #magicskill 9 1
-#researchbonus -10
+#custommagic 3200 100
+#custommagic 22528 100
 #unsurr 4
 #combatcaster
-#holy
 #gcost 10050
 #darkvision 80
 #darkpower 3
@@ -28866,6 +28864,50 @@ Most likely because those servants would excel at herding their masters' other m
 
 — Mordenkainen"
 #weapon 172 -- magic sceptre
+#weapon 86 -- mind blast
+--#armor 405 -- Dwarven Full Helm
+#armor 231 -- Heavy Magic Robes
+#armor 408 -- thick skull 
+#hp 20
+#mor 14
+#mr 16
+#magicskill 4 1
+#magicskill 7 1
+#holy
+#spy
+#stealthy 50
+#str 11
+#att 11
+#def 11
+#ap 10
+#darkpower 3
+#darkvision 80
+#spiritsight
+#unseen
+--#sailing 3 3
+#poisonres 5
+#okleader
+#end
+
+
+-- 7232 -- Duergar Norothar
+#newmonster 6010
+#copystats 7181 -- Dwarf template
+#name "Duergar Norothar"
+#spr1 "ForgottenRealms/duergarmindmaster.tga"
+#spr2 "ForgottenRealms/duergarmindmaster2.tga"
+#descr "Wearing fearsome masks, duergar mind masters usually operate as spies, both inside and beyond a duergar stronghold. Their psionically augmented abilities enable them to see through illusions with ease and shrink down to miniature size to spy on their targets. Mindmasters are the chief clergy of Deep Duerra, the duergar goddess of war, conquest, and psionics.
+
+Unlike other dwarves, duergar had a strong tradition of magic, both in the divine and arcane varieties, and duergar clerics, runecasters, runesmiths, and wizards were highly respected for their skill. Clerics were fairly common, serving the duergar gods in order to gain power and influence within society.
+
+In particular, the duergar had a fondness for magically crafted items that they could use to aid them in combat, protect their minds against tampering, or to hide from enemy senses.
+
+'The mental power that duergar wield was given to them by illithids. But why would illithids create servants who could turn invisible or grow to ogre size?
+
+Most likely because those servants would excel at herding their masters' other minions. In retrospect, it seems arguable that duergar escaped bondage because their jailers had given them the keys.'
+
+— Mordenkainen"
+#weapon 172 -- magic sceptre
 --#armor 405 -- Dwarven Full Helm
 #armor 231 -- Heavy Magic Robes
 #armor 408 -- thick skull 
@@ -28876,8 +28918,6 @@ Most likely because those servants would excel at herding their masters' other m
 #magicskill 9 2
 #custommagic 17920 200
 #holy
-#spy
-#stealthy 50
 #researchbonus 4
 #str 11
 #att 11
@@ -28890,7 +28930,6 @@ Most likely because those servants would excel at herding their masters' other m
 #poisonres 5
 #okleader
 #end
-
 
 -- 7233 -- Duergar Runesmith
 #newmonster 7233
@@ -28958,7 +28997,6 @@ Many temples included large stables used to care for and breed steeders: large, 
 #magicskill 9 1
 #autohealer 1
 #autodishealer 1
-#researchbonus -10
 #unsurr 2
 #holy
 #darkvision 80
@@ -29024,9 +29062,41 @@ Only initiates of the church of Ladaguer were able to join the Kavalrachni. Seas
 #holy
 #poisonres 10
 -- #stealthy 15
-#goodleader
 #end
 
+-- 7239 -- Duergar Kavalrachni 
+#newmonster 6011
+#copystats 7181
+#name "Kavalrachni Commander"
+#spr1 "ForgottenRealms/duergarsteederrider.tga"
+#spr2 "ForgottenRealms/duergarsteederrider2.tga"
+#mountmnr 7238
+#unmountedspr1 "ForgottenRealms/duergarsteederriderdismounted.tga"
+#unmountedspr2 "ForgottenRealms/duergarsteederriderdismounted2.tga"
+#descr "The kavalrachni was the duergar cavalry that protected the underground city of Gracklstugh. They rode atop great female steeders, giant-sized tarantulas native to the Underdark and wielded both magically-crafted spears and heavy crossbows, which they wielded with masterful skill.
+
+Only initiates of the church of Ladaguer were able to join the Kavalrachni. Seasoned Blackguards and Thuldor acolytes who showed more promise in battle than among dusty rune tablets were often assigned to the order of the Kavalrachni."
+#weapon 201 -- Spear
+#weapon 25 -- Crossbow
+#armor 406 -- Dwarven Breastplate
+#armor 405 -- Dwarven Full Helm
+#hp 25
+#str 12
+#att 11 
+#def 10
+#mr 12
+#mor 16
+#ap 14
+#unsurr 2
+#okleader
+#gcost 10040
+#darkpower 3
+#darkvision 80
+#holy
+#poisonres 10
+-- #stealthy 15
+#goodleader
+#end
 
 -- 7240 -- Duergar Master Artisan
 #newmonster 7240
@@ -33480,7 +33550,6 @@ Kaolinth also raised giant crustaceans to guard their caves and grottoes as well
 #amphibian
 #standard 1
 #darkvision 60
-#makemonsters1 2514 -- Cave Crab
 #end
 
 -- 7526 -- Koalinth Shaman
@@ -33514,7 +33583,6 @@ Kaolinth also raised giant crustaceans to guard their caves and grottoes as well
 #mapmove 18
 #enc 3
 #startage 35
-#maxage 85
 #weapon 81 -- Thorn Staff
 #armor 151 -- Sharskin Armor
 #maxage 50
@@ -33526,6 +33594,7 @@ Kaolinth also raised giant crustaceans to guard their caves and grottoes as well
 #researchbonus -5
 #poorleader
 #holy
+#makemonsters1 2514 -- Cave Crab
 #end
 
 -- 7528 -- Unused
@@ -37505,9 +37574,7 @@ Leaders, nobles, loremasters, and many who inherited wealth and status venerated
 #spr2 "ForgottenRealms/tethdruid2.tga"
 #name "Tethyrian Druid"
 #nametype 281 -- Tethyrian Female Names
-#descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common. Silvanus, Mielikki and especially Eldath, the Green Goddess and Mother Guardian of Groves were the most common deities worshipped by Tethyrian Druids. Most choose the wildshape form of the gryphon.
-
-Take care of your equipment. The gryphon form taken by the Tethyrian Druid allows for her armor, helm, boots, and misc items to be retained, but weapons may be lost in combat. Adjust accordingly."
+#descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common. Silvanus, Mielikki and especially Eldath, the Green Goddess and Mother Guardian of Groves were the most common deities worshipped by Tethyrian Druids. Most choose the wildshape form of the gryphon."
 #female
 #gcost 10010
 #hp 18
@@ -37544,18 +37611,17 @@ Take care of your equipment. The gryphon form taken by the Tethyrian Druid allow
 #copystats 6679 -- Calishite Template
 #copyspr 2131 -- gryphon
 #name "Tethyrian Druid Wildshape"
-#descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common. Silvanus, Mielikki and especially Eldath, the Green Goddess and Mother Guardian of Groves were the most common deities worshipped by Tethyrian Druids. Most choose the wildshape form of the gryphon.
-
-Take care of your equipment. The Gryphon form taken by the Tethyrian Druid allows for armor, helms, boots, and misc items to be retained, but weapons may be lost in combat. Adjust accordingly."
+#descr "Rangers, druids, and clerics flourished given the diverse faiths and lack of large governments in Tethyrian lands. In the countrysides, Druids were particularly common. Silvanus, Mielikki and especially Eldath, the Green Goddess and Mother Guardian of Groves were the most common deities worshipped by Tethyrian Druids. Most choose the wildshape form of the gryphon."
 #female
 #hp 48
 #size 7
 #prot 8
 #mor 15
 #mr 14
-#str 16
+#str 17
 #att 14
-#def 8
+#def 10
+#unsurr 3
 #prec 12
 #ap 16
 #mapmove 26
@@ -37571,9 +37637,10 @@ Take care of your equipment. The Gryphon form taken by the Tethyrian Druid allow
 #holy
 #okleader
 #maxage 65
-#weapon 408 -- Talons
-#weapon 408 -- Talons
-#weapon 404 -- Beak
+#weapon 408 -- talons
+#weapon 408 -- talons
+#weapon 404 -- beak
+#weapon 753 -- dive attack
 #end
 
 
@@ -39234,7 +39301,7 @@ Umberlee is one of the Deities of Fury. She serves Talos, along with Auril and M
 
 -- 7040 -- Gondar Wonderbringer
 #newmonster 7040
-#copystats 6600
+#copystats 1982 -- priest smith
 #copyspr 1654
 #name "Gondar Wonderbringer"
 #descr "The Faerûnian god of craft, smithing, and inventiveness was known by many names in many different lands. Zionill, Nebelun, and Gond were the most common. Along with Milil, Deneir, and Oghma, Gond was one of the Deities of Knowledge and Invention. He had a friendly rivalry with Chauntea, Goddess of Bounty, and was amiable friends with Lathander, Waukeen, and Tempus. The halfling gods, dwarven gods, and gnomish gods were equally on good terms with Gond. His sworn enemy was Talos, God of Destruction.  
@@ -39260,7 +39327,6 @@ In the Gondar faith it was actions that mattered above all else, including inten
 #mr 15
 #mor 16
 #rcost 1
-#rpcost 10000
 #ap 14
 #mapmove 20
 #siegebonus 10
@@ -44520,13 +44586,14 @@ The principle temples of the church of Osiris were the Crypt of Shadows located 
 #newmonster 6910
 #copystats 1991
 #copyspr 1991
+#clearspec
 #name "Guardian of Skuld"
 #descr "The Guardians of Skuld formed during the Time of Troubles. Led by the church of Anhur, followers of Isis and Osiris were also active in the order, though not without the frustration of Horus-Re. Despite the god's protestations, however, even his clergy were often keen to overlook their activities so long as their mission to protect the capital and temple complexes of Mulhorand was their focus." 
 #hp 15
 #gcost 10018
 #str 15
 #mr 14
-#mor 20
+#mor 16
 #att 16
 #def 13
 #prec 10
@@ -44633,7 +44700,7 @@ Priests of Horus-Re were usually nobles. They tended to be arrogant and expected
 #maxage 150
 #hp 25
 #str 14
-#mr 16
+#mr 18
 #mor 15
 #att 12
 #def 12
@@ -44690,7 +44757,24 @@ Priests of Horus-Re were usually nobles. They tended to be arrogant and expected
 #end
 
 #selectmonster 14 -- LA arco hoplite
-#descr "Hoplites are the primary corps of Chessenta. They carry long spears, shields and cumbersome plate hauberks. Hoplites are quite slow but very efficient. Few enemies can stand against the massive spear wall of a hoplite army."
+#descr "Hoplites are the primary corps of Akanax. They carry long spears, shields and cumbersome plate hauberks. Hoplites are quite slow but very efficient. Few enemies can stand against the massive spear wall of a hoplite army."
+#end 
+
+#selectmonster 3212 -- Helote crossbowman
+#descr "Although slavery is practiced throughout Chessenta, warlike Akanax is particularly noted for its cruelty and brutality. Unwilling slaves are herded to battle and their lives are sacrificed to weaken the enemy before the hoplites deliver the final blow. Although they are slaves, there is no shortage of arms and armour in Akanax and the helotes are well equipped."
+#end
+
+#selectmonster 3213 -- Helote soldier
+#descr "Although slavery is practiced throughout Chessenta, warlike Akanax is particularly noted for its cruelty and brutality. Unwilling slaves are herded to battle and their lives are sacrificed to weaken the enemy before the hoplites deliver the final blow. Although they are slaves, there is no shortage of arms and armour in Akanax and the helotes are well equipped."
+#end
+
+#selectmonster  746 -- Strategos
+#descr "The Strategos is a general of extraordinary skill. Ability rather than birth decides the rank of the generals in Akanax. Skill and experience comes with age, and many of the strategoi are starting to get old."
+#taskmaster 3
+#end
+
+#selectmonster 325 -- Master Smith
+#descr "Akanax has a tremendous demand for weapons and one of the only ways to thrive without becoming a soldier is to be a productive and talented smith. Master Smiths oversee the forges and can also produce magic weapons and armour. Because Akanax has an excessive demand for weapons, Master Smiths have learned to create magical items very efficiently, thus requiring fewer magic gems to forge them."
 #end
 
 #selectmonster 1990 -- asherite soldier
@@ -44715,6 +44799,27 @@ Priests of Horus-Re were usually nobles. They tended to be arrogant and expected
 
 #selectmonster 11 -- gladiator
 #descr "Gladiators are slaves trained to fight in the arena for the entertainment of the free population. Blood sports were popular throughout the Old Empires, and were one of the few pleasures available to the downtrodden population of Unther. Gladiators who survive become very skilled in combat and often use exotic weapons. In times of crisis, they can be used in warfare in return for their freedom. They are quick to levy, but will only fight until they have been wounded or hit someone in battle before leaving."
+#end
+
+#newmonster 6012
+#copystats 6600
+#copyspr 3358 -- Karib
+#name "Mulan Wizard"
+#descr "Mulan were a generally arrogant, conservative group, resistant to change and convinced of their cultural superiority over all others. In Thay, many even believed they were above the gods. Mulan felt they were more civilized, inventive, and capable than other ethnic groups and believed strongly in the values of order and discipline. All upper- and middle-class Mulan received at least some education, and apprenticeship at a young age was common. Mulan followed the rigid class structures of their society, and the practice of slavery was commonplace. They also had a strong tradition in the use of magic, but disagreed over the pursuit of arcane versus divine magic.
+
+Upper class Mulan with magical talent could afford an excellent education in whatever area took their interest. They would have strong magical abilities, but may be lacking in practical combat skills."
+#nametype 151
+#hp 15
+#def 11
+#mr 16
+#taskmaster 1
+#poorleader
+#magicskill 0 1
+#custommagic 1920 200
+#custommagic 14336 200
+#weapon 9 -- dagger
+#armor 158 -- robes
+#armor 249 -- cloth headpiece
 #end
 
 
@@ -53836,7 +53941,7 @@ Each Red Wizard was expected to wholly dedicate themself to a single school of m
 -- 6866 -- Mulan Oppressor
 #newmonster 6866
 #copystats 3228 -- Mulan Oppressor
-#copyspr 3228
+#copyspr 3339 -- Hermit Sahir
 #clearmagic
 #clearspec
 #name "Mulan Oppressor"
@@ -66353,7 +66458,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end
 
 #newsite 1746
-#name "Braesel Marsh"
+#name "Breasal Marsh"
 #path 4
 #level 1
 #rarity 5
@@ -68393,7 +68498,7 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end 
 
 #newsite 1930
-#name "Sythrilian Hills"
+#name "Hills of Sythrilia"
 #path 7
 #level 0
 #rarity 5
@@ -70578,19 +70683,28 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #end
 
 #newsite 3006
-#name "dummy"
-#path 8
+#name "Aarokocra Hunting Grounds"
+#path 1
 #level 0
 #rarity 5
---#mon 
+#mon 6814 -- Aarokocra (hunter)
+#com 6815 -- Aarokocra shaman
+#gems 1 1
 --#com 
 #end
 
 #newsite 3007
-#name "dummy"
-#path 8
+#name "Akanax"
+#path 3
+#look 3
 #level 0
 #rarity 5
+#com 746 -- strategos
+#com 325 -- master smith
+#mon 14 -- Hoplite
+#mon 3213 -- Helote Soldier
+#mon 3212 -- Helote Crossbowman
+#res 100
 --#mon 
 --#com 
 #end
@@ -72010,7 +72124,6 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #level 0 -- Was 8, but why?
 #rarity 5
 #path 9
-#level 0
 #gems 0 1
 #gems 1 1
 #gems 2 1
@@ -72018,7 +72131,6 @@ Size +1 , HP +30%, Str +3, Def -1 (doubled if starting size is less than 6)"
 #gems 4 2
 #com 7503 -- Tiefling Spellfilcher 
 #com 7502 -- Tiefling Warlock
-#com 1894 -- Minister of Magic
 #end
 
 #newsite 3210
@@ -73297,10 +73409,12 @@ There will be no shortage of enemies in the long term - in addition to a scatter
 #summary "The amphibious, bloodthirsty sahuagin are the core of the nation. Cheap labs and temples allow for unique recruitment options outside of forts, however, those forts are going to be costly. A ritual fort will help. The strange morkoth make powerful allies in the darkest depths, where even the deep-sea dwelling sahuagin dare not go. Plenty of commanders take slaves, filling the ranks with chaff to chum the waters. The quasi-deity, Iakhovas, leads the way."
 #flag "ForgottenRealms/flag_aleaxtis.tga"  
 #templepic 1 -- Under Water
-#fortera 0 -- pallisades only
+#fortera 1 -- pallisades only
 #uwnation
 #homefort 7
-#buildfort 3
+#buildfort 2
+#uwbuild 1
+#builduwfort 6
 #labcost 300
 #templecost 300
 #color 0.61 0.63 0.92
@@ -74167,9 +74281,9 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 #cheapgod40 6923 -- Tchazzar
 
 #startcom 1081 			-- Prince of the Old Empire 
-#startunittype1 199 	-- Cardaces
+#startunittype1 1990 --Chessentan Soldier
 #startunitnbrs1 30
-#startunittype2 1078	-- Chariots 
+#startunittype2 1553	-- Chessentan mercenary cavalry
 #startunitnbrs2 10
 
 #startscout 431		-- Scout
@@ -74189,20 +74303,20 @@ Tchazzar returned in 1373 DR to reestablish his kingdom.
 #addreccom 7099 	-- Cultist of Tchazzar
 #addreccom 1070 -- Chessentan Sage
 
-#defcom1 13			-- Hoplite Commander
+#defcom1 291			-- Inner sea captain
 #defcom2 1081 		-- Prince of the Old Empire
-#defunit1 199 		-- Cardaces
+#defunit1 1990 --Chessentan Soldier
 #defunit1b 6858 	-- Mulan Bowman
-#defunit2 1078 		-- Chariot
+#defunit2 1553 -- Chessentan Mercenary Cavalry
 #defmult1 24 	
 #defmult1b 12 
 #defmult2 4 	
 
 ---------- DEFENCES
 #guardcom 13
-#guardunit 3184
+#guardunit 1990 --Chessentan Soldier
 #guardmult 15
-#wallcom 1076	-- Myrmidon Champion
+#wallcom 291			-- Inner sea captain
 #wallunit 6858 	-- Mulan Bowman
 #wallmult 25 	-- 
 
@@ -74940,12 +75054,12 @@ In 1373 DR, the Silence of Lolth ended and Lolth's priestesses regained their po
 #addrecunit 7227 -- Duergar Heavy Axe - unit ( X )
 #addrecunit 7229 -- Duergar Scorpion - ranged unit ( X )
 #addrecunit 7226 -- Duergar Battlesmith 
-#addrecunit 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#addrecunit 7239 -- Duergar Kavalrachni - unit ( X )
 
 
 #addreccom 7242 -- Duergar Deepscout - commander scout slaver ( X )
 #addreccom 7230 -- Duergar Laird - commander ( X )
-#addreccom 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#addreccom 6011 -- Duergar Kavalrachni - commander ( X )
 #addreccom 7233 -- Duergar Runesmith - mage ( X )
 #addreccom 5072 -- Duergar Blackguard - holy commander ( X )
 #addreccom 7225 -- Duergar Stonereaver - elite unit ( X )
@@ -74955,7 +75069,7 @@ In 1373 DR, the Silence of Lolth ended and Lolth's priestesses regained their po
 #addreccom 7240 -- Duergar Master Arcane Artisan ( X )
 
 
-#defcom1 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#defcom1 6011 -- Duergar Kavalrachni - commander ( X )
 #defcom2 5072 -- Duergar Blackguard - holy commander ( X )
 #defunit1 7228 -- Duergar Mauler - unit ( X )
 #defmult1 20
@@ -74965,7 +75079,7 @@ In 1373 DR, the Silence of Lolth ended and Lolth's priestesses regained their po
 #defmult2 10
 
 ---------- DEFENCES
-#guardcom 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#guardcom 6011 -- Duergar Kavalrachni - commander ( X )
 #guardunit 7228 -- Duergar Mauler - unit ( X )
 #guardmult 15
 #wallcom 5072 -- Duergar Blackguard - holy commander ( X )
@@ -75651,7 +75765,9 @@ A divine manifestation of Horus-Re rules the nation in truth, but it is the cler
 
 #startcom 1081 		-- Prince of the Old Empire 
 #startunittype1 6877 	-- Old Empire Skirmisher
-#startunitnbrs1 40
+#startunitnbrs1 30
+#startunittype2 6910 -- Guardian of Skuld
+#startunitnbrs2 10
 
 #startscout 6900	 	-- Ibis
 
@@ -77600,22 +77716,21 @@ This nation will play like your Duergar cousins in Gracklstugh for now, though u
 #addrecunit 7227 -- Duergar Heavy Axe - unit ( X )
 #addrecunit 7229 -- Duergar Scorpion - ranged unit ( X )
 #addrecunit 7226 -- Duergar Battlesmith 
-#addrecunit 7239 -- Duergar Kavalrachni - unit and commander ( X )
 
 
 #addreccom 7242 -- Duergar Deepscout - commander scout slaver ( X )
 #addreccom 7230 -- Duergar Laird - commander ( X )
-#addreccom 7239 -- Duergar Kavalrachni - unit and commander ( X )
 #addreccom 7233 -- Duergar Runesmith - mage ( X )
 #addreccom 5072 -- Duergar Blackguard - holy commander ( X )
 #addreccom 7225 -- Duergar Stonereaver - elite unit ( X )
 #addreccom 7232 -- Duergar Mindmaster - mage ( X )
 
 #addreccom 7237 -- Duerger Thuldor - elite cleric ( X )
+#addreccom 6010 -- Duerger Norothar - elite cleric ( X )
 #addreccom 7240 -- Duergar Master Arcane Artisan ( X )
 
 
-#defcom1 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#defcom1 7232 -- Duergar Mind Master
 #defcom2 5072 -- Duergar Blackguard - holy commander ( X )
 #defunit1 7228 -- Duergar Mauler - unit ( X )
 #defmult1 20
@@ -77625,7 +77740,7 @@ This nation will play like your Duergar cousins in Gracklstugh for now, though u
 #defmult2 10
 
 ---------- DEFENCES
-#guardcom 7239 -- Duergar Kavalrachni - unit and commander ( X )
+#guardcom 7232 -- Duergar Mind Master
 #guardunit 7228 -- Duergar Mauler - unit ( X )
 #guardmult 15
 #wallcom 5072 -- Duergar Blackguard - holy commander ( X )
@@ -77721,6 +77836,7 @@ Gilgeam's tyrannical rule has fostered a fierce but poorly organized resistance 
 #addreccom 6881		-- Old Empire Drillmaster
 #addreccom 1081 		-- Prince of the Old Empire 
 #addreccom 6883 	-- Prince Bureaucrat
+#addreccom 6012		-- Mulan Wizard
 #addreccom 7040 	-- Gondar Wonderbringer
 #addreccom 6700 	-- Battlechaplain of Tempus
 #addreccom 6885 	-- Paladin of the God-King

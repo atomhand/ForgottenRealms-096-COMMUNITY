@@ -11,7 +11,7 @@
 Duergar adventurers were most commonly concerned with personal gratification, and were frequently fighters or rogues, leaning on their training against the threats of the Underdark. Because of their cruel nature, experienced duergar adventurers often became assassins or blackguards.
 
 Duergar were in some ways even better adapted to underground living than other dwarves. While other dwarves lacked the capacity to see completely in the deepest darkness, this was not a problem for duergar. Duergar were also immune to many of the ancient techniques used by the mind flayers to control them, such as paralysis, phantasms, alchemical poisons, or some types of illusion."
-#gcost 10035
+#gcost 10010
 #rpcost 10000
 #hp 26
 #str 13
@@ -21,22 +21,22 @@ Duergar were in some ways even better adapted to underground living than other d
 #mr 18
 #clearweapons
 #cleararmor
-#weapon 17
-#armor 2
-#armor 13
-#armor 20
+#weapon 1820 -- admantine axe
+#armor 400 -- dwarven chain mail
+#armor 404 -- dwarven half helm
+#armor 403 -- dwarven kite shield
 #size 3
 #mountainsurvival
 #poisonres 15
 #darkvision 100
 #darkpower 2
 #magicskill 3 1
-#magicskill 4 1
-#magicskill 9 1
-#custommagic 66560 100
-#custommagic 66560 20 --d6x
-#researchbonus -5
-#sailing 2 2
+--#magicskill 4 1
+--#magicskill 9 1
+#custommagic 23680 100
+--#custommagic 66560 20 --d6x
+--#researchbonus -5
+#sailing 3 3
 #holy
 -- #stealthy 5
 #startage 100
@@ -96,14 +96,14 @@ Master arcane artisans tend to have many acquaintances - everyone seems to like 
 #att 12 
 #def 13
 #prec 6
-#magicskill 0 1
-#magicskill 3 3
-#magicskill 4 1
+--#magicskill 0 1
+#magicskill 3 2
+--#magicskill 4 1
 #magicskill 9 1
-#researchbonus -10
+#custommagic 3200 100
+#custommagic 22528 100
 #unsurr 4
 #combatcaster
-#holy
 #gcost 10050
 #darkvision 80
 #darkpower 3
@@ -268,7 +268,7 @@ They make excellent warriors when the fight reaches them, though they often pref
 
 -- 7232 -- Duergar Mind Master
 #newmonster 7232
-#copystats 7181
+#copystats 7181 -- Dwarf template
 #name "Duergar Mind Master"
 #spr1 "ForgottenRealms/duergarmindmaster.tga"
 #spr2 "ForgottenRealms/duergarmindmaster2.tga"
@@ -284,31 +284,72 @@ Most likely because those servants would excel at herding their masters' other m
 
 — Mordenkainen"
 #weapon 172 -- magic sceptre
-#armor 405 -- Dwarven Full Helm
+#weapon 86 -- mind blast
+--#armor 405 -- Dwarven Full Helm
 #armor 231 -- Heavy Magic Robes
 #armor 408 -- thick skull 
-#hp 24
-#mr 18
-#magicskill 2 2
-#magicskill 4 3
-#magicskill 7 2
-#magicskill 9 2
+#hp 20
+#mor 14
+#mr 16
+#magicskill 4 1
+#magicskill 7 1
 #holy
 #spy
--- #stealthy 50
+#stealthy 50
 #str 11
 #att 11
 #def 11
 #ap 10
-#gcost 10035
 #darkpower 3
 #darkvision 80
 #spiritsight
-#sailing 2 2
+#unseen
+--#sailing 3 3
 #poisonres 5
 #okleader
 #end
 
+
+-- 7232 -- Duergar Norothar
+#newmonster 6010
+#copystats 7181 -- Dwarf template
+#name "Duergar Norothar"
+#spr1 "ForgottenRealms/duergarmindmaster.tga"
+#spr2 "ForgottenRealms/duergarmindmaster2.tga"
+#descr "Wearing fearsome masks, duergar mind masters usually operate as spies, both inside and beyond a duergar stronghold. Their psionically augmented abilities enable them to see through illusions with ease and shrink down to miniature size to spy on their targets. Mindmasters are the chief clergy of Deep Duerra, the duergar goddess of war, conquest, and psionics.
+
+Unlike other dwarves, duergar had a strong tradition of magic, both in the divine and arcane varieties, and duergar clerics, runecasters, runesmiths, and wizards were highly respected for their skill. Clerics were fairly common, serving the duergar gods in order to gain power and influence within society.
+
+In particular, the duergar had a fondness for magically crafted items that they could use to aid them in combat, protect their minds against tampering, or to hide from enemy senses.
+
+'The mental power that duergar wield was given to them by illithids. But why would illithids create servants who could turn invisible or grow to ogre size?
+
+Most likely because those servants would excel at herding their masters' other minions. In retrospect, it seems arguable that duergar escaped bondage because their jailers had given them the keys.'
+
+— Mordenkainen"
+#weapon 172 -- magic sceptre
+--#armor 405 -- Dwarven Full Helm
+#armor 231 -- Heavy Magic Robes
+#armor 408 -- thick skull 
+#hp 24
+#mor 15
+#mr 18
+#magicskill 4 3
+#magicskill 9 2
+#custommagic 17920 200
+#holy
+#researchbonus 4
+#str 11
+#att 11
+#def 11
+#ap 10
+#darkpower 3
+#darkvision 80
+#spiritsight
+--#sailing 3 3
+#poisonres 5
+#okleader
+#end
 
 -- 7233 -- Duergar Runesmith
 #newmonster 7233
@@ -376,7 +417,6 @@ Many temples included large stables used to care for and breed steeders: large, 
 #magicskill 9 1
 #autohealer 1
 #autodishealer 1
-#researchbonus -10
 #unsurr 2
 #holy
 #darkvision 80
@@ -442,9 +482,41 @@ Only initiates of the church of Ladaguer were able to join the Kavalrachni. Seas
 #holy
 #poisonres 10
 -- #stealthy 15
-#goodleader
 #end
 
+-- 7239 -- Duergar Kavalrachni 
+#newmonster 6011
+#copystats 7181
+#name "Kavalrachni Commander"
+#spr1 "ForgottenRealms/duergarsteederrider.tga"
+#spr2 "ForgottenRealms/duergarsteederrider2.tga"
+#mountmnr 7238
+#unmountedspr1 "ForgottenRealms/duergarsteederriderdismounted.tga"
+#unmountedspr2 "ForgottenRealms/duergarsteederriderdismounted2.tga"
+#descr "The kavalrachni was the duergar cavalry that protected the underground city of Gracklstugh. They rode atop great female steeders, giant-sized tarantulas native to the Underdark and wielded both magically-crafted spears and heavy crossbows, which they wielded with masterful skill.
+
+Only initiates of the church of Ladaguer were able to join the Kavalrachni. Seasoned Blackguards and Thuldor acolytes who showed more promise in battle than among dusty rune tablets were often assigned to the order of the Kavalrachni."
+#weapon 201 -- Spear
+#weapon 25 -- Crossbow
+#armor 406 -- Dwarven Breastplate
+#armor 405 -- Dwarven Full Helm
+#hp 25
+#str 12
+#att 11 
+#def 10
+#mr 12
+#mor 16
+#ap 14
+#unsurr 2
+#okleader
+#gcost 10040
+#darkpower 3
+#darkvision 80
+#holy
+#poisonres 10
+-- #stealthy 15
+#goodleader
+#end
 
 -- 7240 -- Duergar Master Artisan
 #newmonster 7240
@@ -478,6 +550,7 @@ Master arcane artisans tend to have many acquaintances - everyone seems to like 
 #fixforgebonus 2
 #poisonres 5
 -- #stealthy 10
+#startage 345
 #end
 
 

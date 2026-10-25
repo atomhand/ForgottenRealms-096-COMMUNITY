@@ -33,7 +33,9 @@ A divine manifestation of Horus-Re rules the nation in truth, but it is the cler
 
 #startcom 1081 		-- Prince of the Old Empire 
 #startunittype1 6877 	-- Old Empire Skirmisher
-#startunitnbrs1 40
+#startunitnbrs1 30
+#startunittype2 6910 -- Guardian of Skuld
+#startunitnbrs2 10
 
 #startscout 6900	 	-- Ibis
 

@@ -301,7 +301,7 @@ Each Red Wizard was expected to wholly dedicate themself to a single school of m
 -- 6866 -- Mulan Oppressor
 #newmonster 6866
 #copystats 3228 -- Mulan Oppressor
-#copyspr 3228
+#copyspr 3339 -- Hermit Sahir
 #clearmagic
 #clearspec
 #name "Mulan Oppressor"

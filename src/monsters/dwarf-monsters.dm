@@ -277,8 +277,8 @@ Most act as soldiers in a dwarven citadel, segregated into their own units separ
 #spr2 "ForgottenRealms/dwarventhane2.tga"
 #name "Dwarven Thane"
 #descr "Dwarven Thanes, also known as Mountain Kings, are the pinnacle of dwarven martial might. Eschewing their race's talent for engineering, mining, and metallurgy, these staunch fighters craft only themselves, dedicating their entire existence to forging the ultimate soldier. They exist to defend the dwarven kingdoms from all that threatens them. While some soldiers would stand as a shield against attack, the thanes believe the best way to defend against threats is to threaten back. Wielding the traditional dwarven armament of both axe and hammer, they threaten with all the grim, unswerving focus one expects from a dwarf."
-#weapon 1815 -- Adamantine Battlehammer
-#weapon 1816 -- Adamantine Battleaxe
+#weapon 1815 -- Adamantine Hammer
+#weapon 1820 -- Adamantine Axe
 #armor 405 -- Dwarven Full Helm
 #armor 401 -- Dwarven Platemail
 #hp 40
@@ -401,7 +401,6 @@ The chanters, like the Deathwardens as a whole, are an enigma to most people. Th
 #researchbonus -10
 #unsurr 4
 #combatcaster
-#holy
 #startage 220
 #gcost 10050
 #end
