@@ -604,7 +604,7 @@
 #end
 
 #newsite 1746
-#name "Braesel Marsh"
+#name "Breasal Marsh"
 #path 4
 #level 1
 #rarity 5
@@ -2644,7 +2644,7 @@
 #end 
 
 #newsite 1930
-#name "Sythrilian Hills"
+#name "Hills of Sythrilia"
 #path 7
 #level 0
 #rarity 5
@@ -4829,11 +4829,13 @@
 #end
 
 #newsite 3006
-#name "dummy"
-#path 8
+#name "Aarokocra Hunting Grounds"
+#path 1
 #level 0
 #rarity 5
---#mon 
+#mon 6814 -- Aarokocra (hunter)
+#com 6815 -- Aarokocra shaman
+#gems 1 1
 --#com 
 #end
 
