@@ -4840,10 +4840,17 @@
 #end
 
 #newsite 3007
-#name "dummy"
-#path 8
+#name "Akanax"
+#path 3
+#look 3
 #level 0
 #rarity 5
+#com 746 -- strategos
+#com 325 -- master smith
+#mon 14 -- Hoplite
+#mon 3213 -- Helote Soldier
+#mon 3212 -- Helote Crossbowman
+#res 100
 --#mon 
 --#com 
 #end
@@ -6263,7 +6270,6 @@
 #level 0 -- Was 8, but why?
 #rarity 5
 #path 9
-#level 0
 #gems 0 1
 #gems 1 1
 #gems 2 1
@@ -6271,7 +6277,6 @@
 #gems 4 2
 #com 7503 -- Tiefling Spellfilcher 
 #com 7502 -- Tiefling Warlock
-#com 1894 -- Minister of Magic
 #end
 
 #newsite 3210

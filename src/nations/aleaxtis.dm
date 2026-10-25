@@ -16,10 +16,13 @@ There will be no shortage of enemies in the long term - in addition to a scatter
 #summary "The amphibious, bloodthirsty sahuagin are the core of the nation. Cheap labs and temples allow for unique recruitment options outside of forts, however, those forts are going to be costly. A ritual fort will help. The strange morkoth make powerful allies in the darkest depths, where even the deep-sea dwelling sahuagin dare not go. Plenty of commanders take slaves, filling the ranks with chaff to chum the waters. The quasi-deity, Iakhovas, leads the way."
 #flag "ForgottenRealms/flag_aleaxtis.tga"  
 #templepic 1 -- Under Water
-#fortera 0 -- pallisades only
+#fortera 1 -- forts only
+#fortcost 50
 #uwnation
 #homefort 7
-#buildfort 3
+#buildfort 2
+#uwbuild 1
+#builduwfort 6
 #labcost 300
 #templecost 300
 #color 0.61 0.63 0.92

@@ -13858,7 +13858,7 @@ Now awake, he seeks his revenge."
 #name "Priestess of Sekolah"
 #nametype 276 -- Sahuagin
 #descr "Sahuagin worshiped Sekolah, god of sharks, as their patron deity. Although they excelled in physical prowess, they greatly feared magic, so they never tried developing or studying it for any purpose. Only priestesses of Sekolah used clerical magic granted by the god and even that magic was regarded with fear and as a necessary evil."
-#gcost 10010
+#gcost 135
 #rcost 1
 #rpcost 2
 #clearweapons
@@ -13902,7 +13902,7 @@ Now awake, he seeks his revenge."
 #name "Priestess of Sekolah"
 #nametype 276 -- Sahuagin
 #descr "Sahuagin worshiped Sekolah, god of sharks, as their patron deity. Although they excelled in physical prowess, they greatly feared magic, so they never tried developing or studying it for any purpose. Only priestesses of Sekolah used clerical magic granted by the god and even that magic was regarded with fear and as a necessary evil."
-#gcost 10010
+#gcost 135
 #rcost 1
 #rpcost 2
 #hp 26
@@ -73409,7 +73409,8 @@ There will be no shortage of enemies in the long term - in addition to a scatter
 #summary "The amphibious, bloodthirsty sahuagin are the core of the nation. Cheap labs and temples allow for unique recruitment options outside of forts, however, those forts are going to be costly. A ritual fort will help. The strange morkoth make powerful allies in the darkest depths, where even the deep-sea dwelling sahuagin dare not go. Plenty of commanders take slaves, filling the ranks with chaff to chum the waters. The quasi-deity, Iakhovas, leads the way."
 #flag "ForgottenRealms/flag_aleaxtis.tga"  
 #templepic 1 -- Under Water
-#fortera 1 -- pallisades only
+#fortera 1 -- forts only
+#fortcost 50
 #uwnation
 #homefort 7
 #buildfort 2

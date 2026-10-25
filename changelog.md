@@ -60,6 +60,9 @@
 
 ### Nation changes
 
+#### Aleaxtis
+ * Can build ordinary forts, but 50% more expensive
+
 #### Waterdeep
  * Juiced up Griffon Rider
     * Benefits from general Griffon buffs
