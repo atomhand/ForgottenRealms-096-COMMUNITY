@@ -74857,6 +74857,10 @@ Iltkazar has proven itself strong and resourceful as the last holdout of the onc
 #buildfort 4
 #noforeignrec
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.62 0.72 0.90
 
 #addgod 7198 -- Statue of Dumathoin
@@ -74944,6 +74948,10 @@ But the drow are their own worst enemies in the end. While the Underdark wars ag
 #homefort 4 -- Citadel
 #cavenation 1
 #buildfort 3
+
+#caveinc 25
+#caverecpt 25
+#caveres 25
 
 #color 0.82 0.15 0.30
 
@@ -75034,6 +75042,10 @@ In 1373 DR, the Silence of Lolth ended and Lolth's priestesses regained their po
 #homefort 4 -- Citadel
 #cavenation  1
 #buildfort 3
+
+#caveinc 25
+#caverecpt 25
+#caveres 25
 
 #color 0.82 0.15 0.30
 
@@ -75332,6 +75344,10 @@ which tended to rear its head in cities marred by unrest where other rival deiti
 #aiwaternation
 #cavenation 2
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #addgod 7215 -- Ghaunadaur 
 -- #addgod 7213 -- Vhaeraun
 -- #addgod 7214 -- Kiaransalee
@@ -75502,6 +75518,10 @@ By the 900s DR, Lolth began losing control over the drow of the region. The arri
 #templecost 650
 #color 0.65 0.12 0.55
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #addgod 7214 -- Kiaransalee 
 #addgod 7338 -- The Undying Temple
 -- #addgod 7176 -- Eilistraee 
@@ -75590,6 +75610,9 @@ The city is split into four provices. You'll need to unify all of Menzoberranzan
 #templecost 300
 #color 0.65 0.75 0.80
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
 
 #addgod 7171 -- Lolth -- PRETENDER
 #cheapgod40 7171 -- Lolth -- PRETENDER
@@ -76121,6 +76144,10 @@ Oryndoll's main united purpose was to acquire knowledge no matter how trivial, t
 #buildfort 2
 #builduwfort 5
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.02 0.15 0.40
 
 #addgod 5048 -- Elder Brain
@@ -76575,6 +76602,10 @@ Whenever possible, yuan-ti choose manipulation over open confrontation, the whis
 #swamplabcost 500
 #swamptemplecost 400
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.05 0.75 0.10
 
 #addgod 7178 -- Merrshaulk
@@ -76919,6 +76950,10 @@ Sloopdilmonpolop was recently flooded by kuo-toan, morkoth, and demon ray refuge
 #fortcost -50
 #bloodnation 
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.27 0.40 0.47
 
 #addgod 8001 -- BANE
@@ -77246,6 +77281,10 @@ While the aboleths venerated Pisaethces, they did not worship her. Instead, thei
 #builduwfort 7
 #dyingdom
 #labcost 300
+
+#caveinc 25
+#caverecpt 25
+#caveres 25
 
 #color 0.02 0.15 0.40
 
@@ -77696,6 +77735,10 @@ This nation will play like your Duergar cousins in Gracklstugh for now, though u
 #homefort 4 -- Citadel
 #cavenation  1
 #buildfort 3
+
+#caveinc 25
+#caverecpt 25
+#caveres 25
 
 #color 0.82 0.55 0.70
 
@@ -79841,6 +79884,23 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #removesite 1726 -- "Darkwell"
 #addsite 1725 -- "Moonwell"
 #msg "The Moonwell's corruption is no more. Let the eyes of Chauntea, the Earthmother, brim over with the water of redemption."
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\pregame-economy.dm
+------------------------------------------------------------------------------------------------------------------
+-- add 2500 pop to all cave provinces
+#newevent
+#rarity 5
+#msg "Cave province population increase"
+#req_pregame 1
+#req_indepok 1
+#req_pop0ok
+#req_cave 1
+#incpop 250
+#nolog
+#notext
 #end
 
 

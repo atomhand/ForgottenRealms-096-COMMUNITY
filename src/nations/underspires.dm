@@ -23,6 +23,10 @@ This nation will play like your Duergar cousins in Gracklstugh for now, though u
 #cavenation  1
 #buildfort 3
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.82 0.55 0.70
 
 #addgod 7243 -- Statue of Duerra

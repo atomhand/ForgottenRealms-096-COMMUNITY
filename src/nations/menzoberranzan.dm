@@ -30,6 +30,9 @@ The city is split into four provices. You'll need to unify all of Menzoberranzan
 #templecost 300
 #color 0.65 0.75 0.80
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
 
 #addgod 7171 -- Lolth -- PRETENDER
 #cheapgod40 7171 -- Lolth -- PRETENDER

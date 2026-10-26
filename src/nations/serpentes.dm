@@ -36,6 +36,10 @@ Whenever possible, yuan-ti choose manipulation over open confrontation, the whis
 #swamplabcost 500
 #swamptemplecost 400
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.05 0.75 0.10
 
 #addgod 7178 -- Merrshaulk

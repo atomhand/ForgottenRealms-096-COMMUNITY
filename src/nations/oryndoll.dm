@@ -27,6 +27,10 @@ Oryndoll's main united purpose was to acquire knowledge no matter how trivial, t
 #buildfort 2
 #builduwfort 5
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.02 0.15 0.40
 
 #addgod 5048 -- Elder Brain

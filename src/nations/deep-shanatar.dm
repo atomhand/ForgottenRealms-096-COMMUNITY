@@ -25,6 +25,10 @@ Iltkazar has proven itself strong and resourceful as the last holdout of the onc
 #buildfort 4
 #noforeignrec
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.62 0.72 0.90
 
 #addgod 7198 -- Statue of Dumathoin

@@ -27,6 +27,10 @@ Sloopdilmonpolop was recently flooded by kuo-toan, morkoth, and demon ray refuge
 #fortcost -50
 #bloodnation 
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.27 0.40 0.47
 
 #addgod 8001 -- BANE

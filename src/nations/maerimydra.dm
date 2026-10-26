@@ -25,6 +25,10 @@ By the 900s DR, Lolth began losing control over the drow of the region. The arri
 #templecost 650
 #color 0.65 0.12 0.55
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #addgod 7214 -- Kiaransalee 
 #addgod 7338 -- The Undying Temple
 -- #addgod 7176 -- Eilistraee 

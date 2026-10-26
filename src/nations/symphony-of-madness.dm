@@ -28,6 +28,10 @@ While the aboleths venerated Pisaethces, they did not worship her. Instead, thei
 #dyingdom
 #labcost 300
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.02 0.15 0.40
 
 #addgod 7367 -- Pisaethces

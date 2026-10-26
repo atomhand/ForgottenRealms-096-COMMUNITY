@@ -20,6 +20,10 @@ But the drow are their own worst enemies in the end. While the Underdark wars ag
 #cavenation 1
 #buildfort 3
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #color 0.82 0.15 0.30
 
 #addgod 7198 -- Statue of Dumathoin

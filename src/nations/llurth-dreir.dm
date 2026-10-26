@@ -30,6 +30,10 @@ which tended to rear its head in cities marred by unrest where other rival deiti
 #aiwaternation
 #cavenation 2
 
+#caveinc 25
+#caverecpt 25
+#caveres 25
+
 #addgod 7215 -- Ghaunadaur 
 -- #addgod 7213 -- Vhaeraun
 -- #addgod 7214 -- Kiaransalee
