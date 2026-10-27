@@ -137,7 +137,7 @@ Commanders
 
  * Duergar Mind Master reworked to a stealthy spy with minor magic paths (S1G1)
  * Duergar Blackguard has fewer magic paths, making it much cheaper
- * 
+ * Adjust Duergar Master Artisan startage to be less severely over their max age
  * Research penalty removed from all mages (Laduguer encourages technical innovation)
  * Underspires only:
    * add Duergar Norothar, a priest of Deep Duerra with the paths of the old Mind Master
@@ -145,6 +145,7 @@ Commanders
  * Gracklstugh only:
    * Split Duergar Kavalrichni unit and commander into separate troops
    * (Kavalrichni were already anyfort sacreds, but the )
+ * Adjustments to equipment
 
 #### General Old Empires changes
  * Adjusted Vizier, Old Empire Prince, Old Empire Drillmaster stats and sprites (should be better value for money)
@@ -177,15 +178,6 @@ Commanders
  * New + quite powerful cap-only mage - Cleric of Horus-Re - F2S2H3, 100% +1 F/S, +100% +2 A/N, master ritualist 1
  * City of the Gods capsite gets 75 resource bonus (compensation for very few resources in cap circle)
   * Starting armies updated
-
-### Duergar
- * Adjust Duergar Master Artisan startage to be less severelu over their max age
- * Adjustments to equipment
- * Duergar Mind Master
-   * guaranteed W2G2 replaced by 2W/G/E random
-   * Increased morale 13->15
-   * Add researchbonus 5
-   * Add stealth ability
 
 
 ### Other changes
@@ -255,20 +247,20 @@ Commanders
  * Nations
    * Halruaa missing foreign recruit archers & peltasts
  * Magic items
-  * Stormsplitter should be 2-handed weapon (not misc)
-  * Dwarven shield counts as magic
-  * Adventuring gear
-   * recuperation for Advanced and above
-  * Heatseeker Longbow - swiftness 20%
-  * morale for Dikar peacekeeper's mantle, Crown of Eadraal
-  * recuperation for Dukar Coral Hand
-  * airshield for Iridea's Tear
+   * Stormsplitter should be 2-handed weapon (not misc)
+   * Dwarven shield counts as magic
+   * Adventuring gear
+     * recuperation for Advanced and above
+   * Heatseeker Longbow - swiftness 20%
+   * morale for Dikar peacekeeper's mantle, Crown of Eadraal
+   * recuperation for Dukar Coral Hand
+   * airshield for Iridea's Tear
  * Sites
-  * Downshadow - dwarven hammer recruit
-  * Tower of Arcane Might - 20% enchantment discount
-  * increased unrest for Trench of Lopok and The Cloakwood
-  * resource bonus for Procampur - Steel City and Ffolk Villages, Iron Tabernacle
-  * Summons for Duskwood Dell (unicorn), Lake of Blood (wraith), Haunted Plains (wraith),Citadel of the Raven (wraith), The Sunglade (unicorn)
+   * Downshadow - dwarven hammer recruit
+   * Tower of Arcane Might - 20% enchantment discount
+   * increased unrest for Trench of Lopok and The Cloakwood
+   * resource bonus for Procampur - Steel City and Ffolk Villages, Iron Tabernacle
+   * Summons for Duskwood Dell (unicorn), Lake of Blood (wraith), Haunted Plains (wraith),Citadel of the Raven (wraith), The Sunglade (unicorn)
  * Spells
    * Missing details for 24 spells
    * Blade Wind - can be cast underwater
