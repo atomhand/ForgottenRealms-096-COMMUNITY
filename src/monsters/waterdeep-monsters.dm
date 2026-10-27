@@ -285,7 +285,7 @@ The school pays for the expensive material components related to crafting magica
 #magicskill 4 1
 #poorleader
 #poormagicleader
-#fixforgebonus 1
+#fixforgebonus 2
 #patrolbonus 2
 #startaff 100
 #end
@@ -538,7 +538,7 @@ Hammers of Moradin are known to operate in other cities and realms throughout Fa
 #magicskill 9 1
 #custommagic 1152 25
 #combatcaster
-#fixforgebonus 1
+#fixforgebonus 2
 #researchbonus -5
 #mountainsurvival
 #end

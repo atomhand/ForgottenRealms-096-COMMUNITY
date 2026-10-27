@@ -933,8 +933,8 @@ Hathrans developed a bond with their land that gave them exceptional power, as l
 From these mile-sized floating fortresses, the Netherese ruled their ancient world. The vast quantities of free-emenating raw magic, however, drew a species of magical creature that fed upon these energies - the Phaerimm. The resulting clashes between the Phaerimm and the Netherese brought about cataclysm. Establish your enclaves at your own risk."
 #name "Mythellaric Enclave"
 #fixedname "Floating Citadel"
-#itemslots 16580096
-#gcost 11000
+#itemslots 3932160
+#gcost 0
 #unsurr 100
 #hp 950
 #size 10
@@ -954,7 +954,6 @@ From these mile-sized floating fortresses, the Netherese ruled their ancient wor
 #noundeadleader
 #nomagicleader
 #mapmove 12
-#clearweapons
 #siegebonus 999
 #bonusspells 4
 #inanimate
@@ -980,8 +979,6 @@ From these mile-sized floating fortresses, the Netherese ruled their ancient wor
 #animalawe 10
 #fear 5
 #magicstudy 50
-#combatcaster
-#unsurr 100
 #indepspells 7
 #nowish
 #end

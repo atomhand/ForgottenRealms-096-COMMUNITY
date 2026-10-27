@@ -451,8 +451,6 @@ High Elves typically gravitated toward a life devoted to magical study as they g
 The elven dualists, however, were the first to challenge this notion. The dualists chose not to ignore the opposed school, but rather focus intently on it, overcoming the difficulty in time of matering a second school of thought. To do this, they had to exclude all of the others. Swearing off so many of the schools gave ample time to develop a deeper understanding of the nature of magic, opening up many new and exciting pathways and eventually, whole new spheres of understanding. 
 
 Of course, this practice often led elven dualists to many untested and poorly understood effects. Over the centuries, more than a few dualists opened portals to abberant places unknown and lost their moral compasses or their minds."
-#clearweapons
-#cleararmor
 #clearspec
 #nametype 273 -- Male Elves
 #gcost 10030
@@ -1439,7 +1437,7 @@ Many elven artificers also spent centuries in study, making a core of artificers
 #poorleader
 #darkvision 60
 #forestsurvival
-#fixforgebonus 1
+#fixforgebonus 2
 #mastersmith 1
 #researchbonus 6
 #magicskill 1 1
@@ -1481,7 +1479,7 @@ Many elven artificers also spent centuries in study, making a core of artificers
 #poorleader
 #darkvision 60
 #forestsurvival
-#fixforgebonus 1
+#fixforgebonus 2
 #mastersmith 1
 #researchbonus 6
 #magicskill 1 2

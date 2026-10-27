@@ -173,8 +173,8 @@ Umberlee is one of the Deities of Fury. She serves Talos, along with Auril and M
 
 -- 7040 -- Gondar Wonderbringer
 #newmonster 7040
-#copystats 1982 -- priest smith
-#copyspr 1654
+#copystats 6600
+#copyspr 1982 -- priest smith
 #name "Gondar Wonderbringer"
 #descr "The Faerûnian god of craft, smithing, and inventiveness was known by many names in many different lands. Zionill, Nebelun, and Gond were the most common. Along with Milil, Deneir, and Oghma, Gond was one of the Deities of Knowledge and Invention. He had a friendly rivalry with Chauntea, Goddess of Bounty, and was amiable friends with Lathander, Waukeen, and Tempus. The halfling gods, dwarven gods, and gnomish gods were equally on good terms with Gond. His sworn enemy was Talos, God of Destruction.  
 
@@ -203,7 +203,7 @@ In the Gondar faith it was actions that mattered above all else, including inten
 #mapmove 20
 #siegebonus 10
 #mason
-#fixforgebonus 1
+#fixforgebonus 2
 #mastersmith 1
 #startage 30
 #magicskill 51 1
@@ -246,10 +246,9 @@ In the Gondar faith it was actions that mattered above all else, including inten
 #mr 16
 #mor 18
 #rcost 1
-#rpcost 10000
 #ap 14
 #mapmove 20
-#fixforgebonus 1
+#fixforgebonus 2
 #siegebonus 10
 #mason
 #mastersmith 1
@@ -344,10 +343,15 @@ In Unther and Chessenta they were primarily concerned with seizing as much power
 While the Cultists of Tchazzar are limited in their power over divine magic - it is not Tchazzar who actually answers their prayers - they are a devoted mob and quite numerous in Cimbar and throughout the lands of Chessenta.
 
 Their prayers for Tchazzar's return are soon to be answered - though Tchazzar's secret nature as a dreaded red dragon are not quite part of their doctrine... " 
+#clearspec
 #nametype 132
+#gcost 10010
+#wastesurvival
+#fireres 5
 #hp 18
 #mr 12
 #mor 20
+#str 12
 #att 14
 #def 13
 #prec 12
@@ -356,7 +360,7 @@ Their prayers for Tchazzar's return are soon to be answered - though Tchazzar's 
 #armor 76
 #armor 158
 #clearmagic
-#magicskill 0 1
+#magicskill 0 2
 #magicskill 9 1
 #researchbonus -4
 #noslowrec

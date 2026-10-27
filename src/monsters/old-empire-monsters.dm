@@ -609,8 +609,8 @@ The secret center of the church of Set was the Cavern of the Jackal, located ben
 #magicskill 4 1
 #magicskill 51 2
 -- #sailing 3 3
-#itemslots 2040326
-#fixforgebonus 1
+#itemslots 2040326 -- extra misc slot
+#fixforgebonus 2
 #mastersmith 1
 #alchemy 50
 #end

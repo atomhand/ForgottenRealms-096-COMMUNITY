@@ -421,7 +421,7 @@ The chanters, like the Deathwardens as a whole, are an enigma to most people. Th
 #magicskill 0 2
 #magicskill 3 2
 #custommagic 17792 100
-#fixforgebonus 1
+#fixforgebonus 2
 #researchbonus 3
 #gcost 10020
 #startage 120
@@ -495,20 +495,19 @@ Aspiring stonelords must undergo an arduous ritual involving immersion in sacred
 Master arcane artisans tend to have many acquaintances - everyone seems to like the wizard with all the toys - but few true friends."
 #hp 30
 #slowrec
-#weapon 283 -- magic staff
+#weapon 172 -- magic sceptre
 #weapon 172 -- magic sceptre
 #armor 405 -- Dwarven Full Helm
 #armor 231 -- Heavy Magic Robes 
-#magicskill 0 3
-#magicskill 1 2
-#magicskill 3 4
+#magicskill 0 2
+#magicskill 1 1
+#magicskill 3 3
 #magicskill 4 3
-#magicskill 6 2
-#magicskill 7 1
-#custommagic 17792 100
+#custommagic 1408 200
+#custommagic 24576 200
 #gcost 10030
 #mastersmith 1
-#fixforgebonus 2
+#fixforgebonus 3
 #startage 375
 #end
 
@@ -657,7 +656,6 @@ Take care in equipping him with anything other than a crown and 2 misc items, as
 #hp 30
 #size 3
 #str 14
-#enc 3
 #att 12
 #def 14
 #prec 9
@@ -675,7 +673,7 @@ Take care in equipping him with anything other than a crown and 2 misc items, as
 #magicskill 4 2
 #magicskill 6 1
 #combatcaster
-#fixforgebonus 1
+#fixforgebonus 2
 #mountainsurvival
 #shapechange 7650 -- Mithbarakaz
 #voidsanity 1 --dragon

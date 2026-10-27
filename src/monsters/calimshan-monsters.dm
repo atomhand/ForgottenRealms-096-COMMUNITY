@@ -442,7 +442,6 @@ Without any political enemies willing to risk setting themselves against el Pesa
 #gcost 10010
 #nametype 267
 #descr "The Amlakkar is the city watch, and among their ranks are many wizards. They are both an elite patrolling force in a dangerous city filled with secretive and dangerous wizards, and also an investigative arm, recovering arcane secrets for the Pasha and engaging in magical research."
-#gcost 10010
 #hp 15
 #ap 12
 #clearweapons

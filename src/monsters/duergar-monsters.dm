@@ -74,7 +74,7 @@ Master arcane artisans tend to have many acquaintances - everyone seems to like 
 #ap 10
 #gcost 10030
 #mastersmith 1
-#fixforgebonus 2
+#fixforgebonus 3
 #startage 345
 #end
 
@@ -377,7 +377,7 @@ Runesmiths have the master smith ability, allowing them access to craft better m
 #magicskill 8 1
 #custommagic 40064 100
 #mastersmith 1
-#fixforgebonus 1
+#fixforgebonus 2
 #researchbonus 3
 #drainimmune
 #gcost 10020
@@ -547,7 +547,7 @@ Master arcane artisans tend to have many acquaintances - everyone seems to like 
 #darkvision 80
 #darkpower 3
 #mastersmith 1
-#fixforgebonus 2
+#fixforgebonus 3
 #poisonres 5
 -- #stealthy 10
 #startage 345

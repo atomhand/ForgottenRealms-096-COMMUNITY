@@ -58,6 +58,26 @@
   * Koalinth shaman gains Summon monster (cave crab) ability
   * Sorcerer of the Enclave (Towers of the Enclave, Green Lands 164) buffed
 
+### Forging discount changes
+
+Items
+ * Dwarven Hammer: Reduce cost to 8, forge discount to 1
+Commanders
+ * Gondar Wonderbringer - forge discount 1->2
+ * High Holy Craftmaster forge discount 1->2
+ * Durzagon Hellforger - forge discount 1->2
+ * Duergar Master Artisan forge discount 2->3
+ * Duergar Runesmith forge discount 1->2
+ * Dwarf Master Artisan forge discount 2->3
+ * Dwarf Runesmith forge discount 1->2
+ * Mithbarakaz forge discount 1->2
+ * Elven Artificer forge discount 1->2
+ * Master Elven Artificer forge discount 1->2
+ * Halruaan Artificer forge discount 1->2
+ * Thaumaturge of Artifice forge discount 1->2
+ * Eltorchul Graduate forge discount 1->2
+ * Dwarven Cleric of Moradin forge discount 1->2
+
 ### Nation changes
 
 #### Aleaxtis
@@ -143,6 +163,10 @@
   * Add Gladiator and Retiarius recruits
   * Cimbari Sage rework - now anyfort, renamed to Chessentan Sage, has research bonus and random magic paths (+1 A/S/N, +1 S/N)
   * Starting armies updated
+  * Cultist of Tchazzar
+     * Lose fortune teller ability
+     * Gain 5 fireres
+     * Str 9->12
 
 #### Mulhorand
  * Update nation description

@@ -5917,6 +5917,11 @@
 #nodemon
 #end
 
+#selectitem 29 --dwarven hammer
+#fixforgebonus 1
+#itemcost1 -46
+#end
+
 
 ------------------------------------------------------------------------------------------------------------------
 --COMPILED FROM src/items\summons-attacks.dm
@@ -9566,8 +9571,8 @@ Hathrans developed a bond with their land that gave them exceptional power, as l
 From these mile-sized floating fortresses, the Netherese ruled their ancient world. The vast quantities of free-emenating raw magic, however, drew a species of magical creature that fed upon these energies - the Phaerimm. The resulting clashes between the Phaerimm and the Netherese brought about cataclysm. Establish your enclaves at your own risk."
 #name "Mythellaric Enclave"
 #fixedname "Floating Citadel"
-#itemslots 16580096
-#gcost 11000
+#itemslots 3932160
+#gcost 0
 #unsurr 100
 #hp 950
 #size 10
@@ -9587,7 +9592,6 @@ From these mile-sized floating fortresses, the Netherese ruled their ancient wor
 #noundeadleader
 #nomagicleader
 #mapmove 12
-#clearweapons
 #siegebonus 999
 #bonusspells 4
 #inanimate
@@ -9613,8 +9617,6 @@ From these mile-sized floating fortresses, the Netherese ruled their ancient wor
 #animalawe 10
 #fear 5
 #magicstudy 50
-#combatcaster
-#unsurr 100
 #indepspells 7
 #nowish
 #end
@@ -18870,7 +18872,6 @@ Without any political enemies willing to risk setting themselves against el Pesa
 #gcost 10010
 #nametype 267
 #descr "The Amlakkar is the city watch, and among their ranks are many wizards. They are both an elite patrolling force in a dangerous city filled with secretive and dangerous wizards, and also an investigative arm, recovering arcane secrets for the Pasha and engaging in magical research."
-#gcost 10010
 #hp 15
 #ap 12
 #clearweapons
@@ -24470,7 +24471,7 @@ The rarity of successfully crossbreeding with dwarves made Durzagon fairly rare,
 #combatcaster
 #unsurr 4 
 #mastersmith 1
-#fixforgebonus 1
+#fixforgebonus 2
 #fireres 5
 #stealthy 20
 #demon
@@ -28654,7 +28655,7 @@ Master arcane artisans tend to have many acquaintances - everyone seems to like 
 #ap 10
 #gcost 10030
 #mastersmith 1
-#fixforgebonus 2
+#fixforgebonus 3
 #startage 345
 #end
 
@@ -28957,7 +28958,7 @@ Runesmiths have the master smith ability, allowing them access to craft better m
 #magicskill 8 1
 #custommagic 40064 100
 #mastersmith 1
-#fixforgebonus 1
+#fixforgebonus 2
 #researchbonus 3
 #drainimmune
 #gcost 10020
@@ -29127,7 +29128,7 @@ Master arcane artisans tend to have many acquaintances - everyone seems to like 
 #darkvision 80
 #darkpower 3
 #mastersmith 1
-#fixforgebonus 2
+#fixforgebonus 3
 #poisonres 5
 -- #stealthy 10
 #startage 345
@@ -29585,7 +29586,7 @@ The chanters, like the Deathwardens as a whole, are an enigma to most people. Th
 #magicskill 0 2
 #magicskill 3 2
 #custommagic 17792 100
-#fixforgebonus 1
+#fixforgebonus 2
 #researchbonus 3
 #gcost 10020
 #startage 120
@@ -29659,20 +29660,19 @@ Aspiring stonelords must undergo an arduous ritual involving immersion in sacred
 Master arcane artisans tend to have many acquaintances - everyone seems to like the wizard with all the toys - but few true friends."
 #hp 30
 #slowrec
-#weapon 283 -- magic staff
+#weapon 172 -- magic sceptre
 #weapon 172 -- magic sceptre
 #armor 405 -- Dwarven Full Helm
 #armor 231 -- Heavy Magic Robes 
-#magicskill 0 3
-#magicskill 1 2
-#magicskill 3 4
+#magicskill 0 2
+#magicskill 1 1
+#magicskill 3 3
 #magicskill 4 3
-#magicskill 6 2
-#magicskill 7 1
-#custommagic 17792 100
+#custommagic 1408 200
+#custommagic 24576 200
 #gcost 10030
 #mastersmith 1
-#fixforgebonus 2
+#fixforgebonus 3
 #startage 375
 #end
 
@@ -29821,7 +29821,6 @@ Take care in equipping him with anything other than a crown and 2 misc items, as
 #hp 30
 #size 3
 #str 14
-#enc 3
 #att 12
 #def 14
 #prec 9
@@ -29839,7 +29838,7 @@ Take care in equipping him with anything other than a crown and 2 misc items, as
 #magicskill 4 2
 #magicskill 6 1
 #combatcaster
-#fixforgebonus 1
+#fixforgebonus 2
 #mountainsurvival
 #shapechange 7650 -- Mithbarakaz
 #voidsanity 1 --dragon
@@ -31187,8 +31186,6 @@ High Elves typically gravitated toward a life devoted to magical study as they g
 The elven dualists, however, were the first to challenge this notion. The dualists chose not to ignore the opposed school, but rather focus intently on it, overcoming the difficulty in time of matering a second school of thought. To do this, they had to exclude all of the others. Swearing off so many of the schools gave ample time to develop a deeper understanding of the nature of magic, opening up many new and exciting pathways and eventually, whole new spheres of understanding. 
 
 Of course, this practice often led elven dualists to many untested and poorly understood effects. Over the centuries, more than a few dualists opened portals to abberant places unknown and lost their moral compasses or their minds."
-#clearweapons
-#cleararmor
 #clearspec
 #nametype 273 -- Male Elves
 #gcost 10030
@@ -32175,7 +32172,7 @@ Many elven artificers also spent centuries in study, making a core of artificers
 #poorleader
 #darkvision 60
 #forestsurvival
-#fixforgebonus 1
+#fixforgebonus 2
 #mastersmith 1
 #researchbonus 6
 #magicskill 1 1
@@ -32217,7 +32214,7 @@ Many elven artificers also spent centuries in study, making a core of artificers
 #poorleader
 #darkvision 60
 #forestsurvival
-#fixforgebonus 1
+#fixforgebonus 2
 #mastersmith 1
 #researchbonus 6
 #magicskill 1 2
@@ -36133,7 +36130,7 @@ This magical economy was fuelled by Halruaan Artificers, specializing in the cra
 #magicskill 4 2
 #magicskill 7 1
 #mastersmith 1
-#fixforgebonus 1
+#fixforgebonus 2
 #str 9
 #att 9
 #def 10
@@ -39301,8 +39298,8 @@ Umberlee is one of the Deities of Fury. She serves Talos, along with Auril and M
 
 -- 7040 -- Gondar Wonderbringer
 #newmonster 7040
-#copystats 1982 -- priest smith
-#copyspr 1654
+#copystats 6600
+#copyspr 1982 -- priest smith
 #name "Gondar Wonderbringer"
 #descr "The Faerûnian god of craft, smithing, and inventiveness was known by many names in many different lands. Zionill, Nebelun, and Gond were the most common. Along with Milil, Deneir, and Oghma, Gond was one of the Deities of Knowledge and Invention. He had a friendly rivalry with Chauntea, Goddess of Bounty, and was amiable friends with Lathander, Waukeen, and Tempus. The halfling gods, dwarven gods, and gnomish gods were equally on good terms with Gond. His sworn enemy was Talos, God of Destruction.  
 
@@ -39331,7 +39328,7 @@ In the Gondar faith it was actions that mattered above all else, including inten
 #mapmove 20
 #siegebonus 10
 #mason
-#fixforgebonus 1
+#fixforgebonus 2
 #mastersmith 1
 #startage 30
 #magicskill 51 1
@@ -39374,10 +39371,9 @@ In the Gondar faith it was actions that mattered above all else, including inten
 #mr 16
 #mor 18
 #rcost 1
-#rpcost 10000
 #ap 14
 #mapmove 20
-#fixforgebonus 1
+#fixforgebonus 2
 #siegebonus 10
 #mason
 #mastersmith 1
@@ -39472,10 +39468,15 @@ In Unther and Chessenta they were primarily concerned with seizing as much power
 While the Cultists of Tchazzar are limited in their power over divine magic - it is not Tchazzar who actually answers their prayers - they are a devoted mob and quite numerous in Cimbar and throughout the lands of Chessenta.
 
 Their prayers for Tchazzar's return are soon to be answered - though Tchazzar's secret nature as a dreaded red dragon are not quite part of their doctrine... " 
+#clearspec
 #nametype 132
+#gcost 10010
+#wastesurvival
+#fireres 5
 #hp 18
 #mr 12
 #mor 20
+#str 12
 #att 14
 #def 13
 #prec 12
@@ -39484,7 +39485,7 @@ Their prayers for Tchazzar's return are soon to be answered - though Tchazzar's 
 #armor 76
 #armor 158
 #clearmagic
-#magicskill 0 1
+#magicskill 0 2
 #magicskill 9 1
 #researchbonus -4
 #noslowrec
@@ -44141,8 +44142,8 @@ The secret center of the church of Set was the Cavern of the Jackal, located ben
 #magicskill 4 1
 #magicskill 51 2
 -- #sailing 3 3
-#itemslots 2040326
-#fixforgebonus 1
+#itemslots 2040326 -- extra misc slot
+#fixforgebonus 2
 #mastersmith 1
 #alchemy 50
 #end
@@ -54624,7 +54625,7 @@ The school pays for the expensive material components related to crafting magica
 #magicskill 4 1
 #poorleader
 #poormagicleader
-#fixforgebonus 1
+#fixforgebonus 2
 #patrolbonus 2
 #startaff 100
 #end
@@ -54877,7 +54878,7 @@ Hammers of Moradin are known to operate in other cities and realms throughout Fa
 #magicskill 9 1
 #custommagic 1152 25
 #combatcaster
-#fixforgebonus 1
+#fixforgebonus 2
 #researchbonus -5
 #mountainsurvival
 #end
@@ -79884,6 +79885,26 @@ The ringleaders have been hunted down and will no longer stir up dissidents in #
 #removesite 1726 -- "Darkwell"
 #addsite 1725 -- "Moonwell"
 #msg "The Moonwell's corruption is no more. Let the eyes of Chauntea, the Earthmother, brim over with the water of redemption."
+#end
+
+
+------------------------------------------------------------------------------------------------------------------
+--COMPILED FROM src/events\mythellaric-events.dm
+------------------------------------------------------------------------------------------------------------------
+#newevent
+#rarity 5 -- always
+#req_commander 1
+#req_targmnr 7084 -- mythellaric enclave
+#msg "Mythellaric enclave gained xp"
+#addseductions 100
+#end
+
+#newevent
+#rarity 5 -- always
+#req_commander 1
+#req_targmnr 7084 -- mythellaric enclave
+#req_targseductions 500
+#msg "Mythellaric seduced a lot of people"
 #end
 
 

@@ -419,7 +419,7 @@ This magical economy was fuelled by Halruaan Artificers, specializing in the cra
 #magicskill 4 2
 #magicskill 7 1
 #mastersmith 1
-#fixforgebonus 1
+#fixforgebonus 2
 #str 9
 #att 9
 #def 10

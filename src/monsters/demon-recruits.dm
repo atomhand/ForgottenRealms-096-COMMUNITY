@@ -463,7 +463,7 @@ The rarity of successfully crossbreeding with dwarves made Durzagon fairly rare,
 #combatcaster
 #unsurr 4 
 #mastersmith 1
-#fixforgebonus 1
+#fixforgebonus 2
 #fireres 5
 #stealthy 20
 #demon
