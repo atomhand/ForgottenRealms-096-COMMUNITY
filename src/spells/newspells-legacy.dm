@@ -10,7 +10,7 @@
 #descr "The caster conjures an area of slimy grease. Units stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
 #spec 4096 -- Mr roll negates
 #school 3 -- construction (conj - creation)
-#researchlevel 1
+#researchlevel 2
 #path 0 3 --earth
 #path 1 7 --glamour (bards get grease too)
 #pathlevel 0 1
@@ -52,7 +52,7 @@
 #pathlevel 0 4
 #range 5020
 #precision 3
-#damage 1050
+#damage 1030
 #fatiguecost 30
 -- AN, MR half, can be cast UW
 #spec 2305843009222082688

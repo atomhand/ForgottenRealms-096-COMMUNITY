@@ -1,12 +1,6 @@
 
 ## 0.96 Candidate A
 
-### Spells rework
- * Around ~211 added or reworked spells
- * Many spells disabled due to overlap, or lacking an equivalent in D&D 3.5e
- * Summon Monster & Summon Nature's Ally
-   * About 100 monsters (many adjusted/templated, some new)
-
 ### New Sites
  * Hippogriff Roost - Umber Marsh (293), Sulduskoon Valley (136), Aglarond (capsite)
     * Hippogriff Cavalry - a well-trained hippogriff rider - a little cheaper and weaker than Cormyr's Talon
